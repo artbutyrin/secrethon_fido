@@ -1,0 +1,34 @@
+.specular-frame {
+  --sf-radius: 12px;
+  position: relative;
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: var(--sf-radius);
+  outline: none;
+  /* Keep menus above the WebGL rim */
+  overflow: visible;
+}
+
+.specular-frame__fx {
+  position: absolute;
+  inset: -20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.specular-frame__fx canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.specular-frame__body {
+  position: relative;
+  z-index: 1;
+  border-radius: inherit;
+  overflow: visible;
+}

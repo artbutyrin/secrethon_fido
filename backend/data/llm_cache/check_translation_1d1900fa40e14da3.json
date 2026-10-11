@@ -1,0 +1,72 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2903,
+  "output_tokens": 757,
+  "latency_ms": 6146,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Tominersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…10.19 years; 18 female) with early-manifest Stage 1 Huntington's disease receiving the huntingtin-lowering antisense oligonucleotide tominersen for 4 months or receiving placebo as well as 39 healthy volunteers (mean age = 44.48 years; standard deviation = 12.94; 22 female) not receiving treatment. Patients on tominersen showed increased resting-state activity within a 4-8 Hz frequency range compared with patients receiving placebo (cluster-based permutation test, P < 0.05). The responsive frequency range overlapped with EEG activity that was strongly reduced in Huntington's disease compared with healthy controls (cluster-based permutation test, P < 0.05). The underlying mechanisms of the observed treatment-related increase a…\"}, {\"id\": \"1\", \"claim\": \"Study result for Tominersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…y 4, 8 or 16 weeks for up to 25 months, were used to develop the PKPD model. The model was utilized to predict tominersen CSF exposure metrics for individual patients in the GENERATION HD1 study for the exposure-response (ER) analysis and to simulate the PK and PD profiles for lower doses. RESULTS: An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL. The ER analysis revealed that the highest exposure quartile showed a 54% mHTT reduction at steady state and transient elevations in biomarkers of neuroinjury and inflammation. In contrast, the lowest exposure quartile had a 24% mHTT reduction and a favourable biomarker profile. CONCLUSIONS: The PKP…\"}, {\"id\": \"2\", \"claim\": \"Study result for Tominersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…sponse (ER) analysis and to simulate the PK and PD profiles for lower doses. RESULTS: An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL. The ER analysis revealed that the highest exposure quartile showed a 54% mHTT reduction at steady state and transient elevations in biomarkers of neuroinjury and inflammation. In contrast, the lowest exposure quartile had a 24% mHTT reduction and a favourable biomarker profile. CONCLUSIONS: The PKPD model quantitatively confirms the relationship between tominersen exposure and CSF mHTT lowering. The …\"}, {\"id\": \"3\", \"claim\": \"Study result for Tominersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL. The ER analysis revealed that the highest exposure quartile showed a 54% mHTT reduction at steady state and transient elevations in biomarkers of neuroinjury and inflammation. In contrast, the lowest exposure quartile had a 24% mHTT reduction and a favourable biomarker profile. CONCLUSIONS: The PKPD model quantitatively confirms the relationship between tominersen exposure and CSF mHTT lowering. The ER analysis suggests that lower tominersen exposure levels may offer a better benefit-risk profile.\"}, {\"id\": \"4\", \"claim\": \"Study result for Tominersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ESULTS: An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL. The ER analysis revealed that the highest exposure quartile showed a 54% mHTT reduction at steady state and transient elevations in biomarkers of neuroinjury and inflammation. In contrast, the lowest exposure quartile had a 24% mHTT reduction and a favourable biomarker profile. CONCLUSIONS: The PKPD model quantitatively confirms the relationship between tominersen exposure and CSF mHTT lowering. The ER analysis suggests that lower tominersen exposure levels may offer a …\"}, {\"id\": \"5\", \"claim\": \"Study result for Tominersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…l with first-order elimination from plasma. Baseline total CSF protein, age, and antidrug antibodies (ADAs) were the significant covariates for CSF clearance. Body weight was a significant covariate for clearances and volumes in plasma. ADAs and sex were significant covariates for plasma clearance. The developed PopPK model was able to describe tominersen PK in plasma and CSF after intrathecal administration across a range of dose levels, and relevant covariate relationships were identified. This model has been applied to guide dose selection for future clinical trials of tominersen in patients with Huntington's disease.\"}, {\"id\": \"6\", \"claim\": \"Study result for Tominersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…ng to make their way through clinical trials. Still, clinical trials are ongoing to discover potential drugs to relieve HD symptoms. However, now being aware of the root cause, the clinical studies are focused on molecular therapies to target it. The road to success has not been without bumps since a big phase III trial of tominersen was unexpectedly discontinued due to exceeding risks than drug's benefit to the patients. Although the trial's conclusion was disappointing, there is still cause to be optimistic about what this technique may achieve. We have reviewed the present disease-modifying therapies in clinical development for HD and examined the current landscape of developing clinical therapies. We further in…\"}, {\"id\": \"7\", \"claim\": \"Study result for the target itself (no drug), in animals: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ase, considerable efforts have gone into developing allele-specific suppression of mHTT expression, given that loss of Htt in mice can lead to embryonic lethality. It remains unknown whether depletion of HTT in the adult brain, regardless of its allele, could be a safe therapy. Here, we report that permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology. The reduction of mHTT expression in striatal neuronal cells in adult HD140Q-knockin mice did not affect viability, but alleviated motor deficits. Our studies suggest that non-allele-specific CRISPR/Cas9-mediated gene editing could be used to efficiently and perm…\"}, {\"id\": \"8\", \"claim\": \"Study result for the target itself (no drug), in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ase, considerable efforts have gone into developing allele-specific suppression of mHTT expression, given that loss of Htt in mice can lead to embryonic lethality. It remains unknown whether depletion of HTT in the adult brain, regardless of its allele, could be a safe therapy. Here, we report that permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology. The reduction of mHTT expression in striatal neuronal cells in adult HD140Q-knockin mice did not affect viability, but alleviated motor deficits. Our studies suggest that non-allele-specific CRISPR/Cas9-mediated gene editing could be used to efficiently and permanently eliminate polyglutamine expa…\"}, {\"id\": \"9\", \"claim\": \"Study result for the target itself (no drug), in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"… regardless of its allele, could be a safe therapy. Here, we report that permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology. The reduction of mHTT expression in striatal neuronal cells in adult HD140Q-knockin mice did not affect viability, but alleviated motor deficits. Our studies suggest that non-allele-specific CRISPR/Cas9-mediated gene editing could be used to efficiently and permanently eliminate polyglutamine expansion-mediated neuronal toxicity in the adult brain.\"}, {\"id\": \"10\", \"claim\": \"Study result for the target itself (no drug), in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ked for proteasomal degradation and that, for reasons still debated, are not properly degraded. We used a novel HD rat model, proteomic analysis, and long-term live neuronal imaging to characterize the effects of ubiquitination on aggregation of mHtt and subsequent cellular responses. We identified two lysine residues, 6 and 9, in the first exon of mHtt that are specifically ubiquitinated in striatal and cortical brain tissues of mHtt-transgenic animals. Expression of mHtt exon 1 lacking these ubiquitination sites in cortical neurons and cultured cells was found to slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones. Importantly, expression of this form of mHtt was as…\"}, {\"id\": \"11\", \"claim\": \"Study result for the target itself (no drug), in cells: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ar responses. We identified two lysine residues, 6 and 9, in the first exon of mHtt that are specifically ubiquitinated in striatal and cortical brain tissues of mHtt-transgenic animals. Expression of mHtt exon 1 lacking these ubiquitination sites in cortical neurons and cultured cells was found to slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones. Importantly, expression of this form of mHtt was associated with elevated death rates. Proteomic analysis indicated that cellular reactions to mHtt expression were weaker in cells expressing the lysineless protein, possibly implying a reduced capacity to cope with the proteotoxic stress. Taken tog…\"}, {\"id\": \"12\", \"claim\": \"Study result for the target itself (no drug), in cells: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ain tissues of mHtt-transgenic animals. Expression of mHtt exon 1 lacking these ubiquitination sites in cortical neurons and cultured cells was found to slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones. Importantly, expression of this form of mHtt was associated with elevated death rates. Proteomic analysis indicated that cellular reactions to mHtt expression were weaker in cells expressing the lysineless protein, possibly implying a reduced capacity to cope with the proteotoxic stress. Taken together, the findings suggest a novel role for ubiquitination-attenuation of the pathogen…\"}, {\"id\": \"13\", \"claim\": \"Study result for the target itself (no drug), in cells: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ical neurons and cultured cells was found to slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones. Importantly, expression of this form of mHtt was associated with elevated death rates. Proteomic analysis indicated that cellular reactions to mHtt expression were weaker in cells expressing the lysineless protein, possibly implying a reduced capacity to cope with the proteotoxic stress. Taken together, the findings suggest a novel role for ubiquitination-attenuation of the pathogenic effect of mHtt.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": true
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": false
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   },
+   {
+    "id": "10",
+    "supports": true
+   },
+   {
+    "id": "11",
+    "supports": true
+   },
+   {
+    "id": "12",
+    "supports": true
+   },
+   {
+    "id": "13",
+    "supports": true
+   }
+  ]
+ }
+}

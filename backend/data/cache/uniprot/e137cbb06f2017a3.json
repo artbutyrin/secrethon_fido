@@ -1,0 +1,302 @@
+{
+ "source": "uniprot",
+ "url": "https://rest.uniprot.org/uniprotkb/search",
+ "params": {
+  "query": "gene_exact:HTT AND organism_id:9606 AND reviewed:true",
+  "fields": "accession,gene_primary,cc_subcellular_location",
+  "format": "json",
+  "size": 5
+ },
+ "fetched_at": "2026-10-09T12:05:13+00:00",
+ "status": 200,
+ "body": {
+  "results": [
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "P31645",
+    "genes": [
+     {
+      "geneName": {
+       "value": "SLC6A4"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+       "texts": [
+        {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P31652"
+          },
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "Q60857"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16870614"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "17506858"
+          }
+         ],
+         "value": "Could be part of recycling endosomes (PubMed:16870614). Density of transporter molecules on the plasma membrane is itself regulated by STX1A (By similarity). Density of transporter molecules on the plasma membrane is also regulated by serotonin (PubMed:17506858). Density of transporter molecules seems to be modulated by ITGAV:ITGB3 (By similarity)"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "12869649"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16870614"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "17506858"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "27049939"
+          }
+         ],
+         "value": "Cell membrane",
+         "id": "SL-0039"
+        },
+        "topology": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "27049939"
+          }
+         ],
+         "value": "Multi-pass membrane protein",
+         "id": "SL-9909"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16870614"
+          }
+         ],
+         "value": "Endomembrane system",
+         "id": "SL-0147"
+        },
+        "topology": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000255"
+          }
+         ],
+         "value": "Multi-pass membrane protein",
+         "id": "SL-9909"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16870614"
+          }
+         ],
+         "value": "Endosome membrane",
+         "id": "SL-0100"
+        },
+        "topology": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000255"
+          }
+         ],
+         "value": "Multi-pass membrane protein",
+         "id": "SL-9909"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "Q60857"
+          }
+         ],
+         "value": "Synapse",
+         "id": "SL-0258"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "Q60857"
+          }
+         ],
+         "value": "Cell junction, focal adhesion",
+         "id": "SL-0118"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "Q60857"
+          }
+         ],
+         "value": "Cell projection, neuron projection",
+         "id": "SL-0518"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI0000135493"
+    }
+   },
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "P42858",
+    "genes": [
+     {
+      "geneName": {
+       "value": "HTT"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "molecule": "Huntingtin",
+      "note": {
+       "texts": [
+        {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "15654337"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16476778"
+          }
+         ],
+         "value": "The mutant Huntingtin protein colocalizes with AKAP8L in the nuclear matrix of Huntington disease neurons. Shuttles between cytoplasm and nucleus in a Ran GTPase-independent manner (PubMed:15654337). Recruits onto early endosomes in a Rab5- and HAP40-dependent fashion (PubMed:16476778)"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "15654337"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16476778"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "7647777"
+          }
+         ],
+         "value": "Cytoplasm",
+         "id": "SL-0086"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "15654337"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16391387"
+          }
+         ],
+         "value": "Nucleus",
+         "id": "SL-0191"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "16476778"
+          }
+         ],
+         "value": "Early endosome",
+         "id": "SL-0094"
+        }
+       }
+      ]
+     },
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "molecule": "Huntingtin, myristoylated N-terminal fragment",
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "24459296"
+          }
+         ],
+         "value": "Cytoplasmic vesicle, autophagosome",
+         "id": "SL-0023"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI000013D567"
+    }
+   }
+  ]
+ }
+}

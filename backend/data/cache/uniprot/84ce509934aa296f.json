@@ -1,0 +1,84 @@
+{
+ "source": "uniprot",
+ "url": "https://rest.uniprot.org/uniprotkb/search",
+ "params": {
+  "query": "gene_exact:SOD1 AND organism_id:9606 AND reviewed:true",
+  "fields": "accession,gene_primary,cc_subcellular_location",
+  "format": "json",
+  "size": 5
+ },
+ "fetched_at": "2026-10-09T11:59:47+00:00",
+ "status": 200,
+ "body": {
+  "results": [
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "P00441",
+    "genes": [
+     {
+      "geneName": {
+       "evidences": [
+        {
+         "evidenceCode": "ECO:0000312",
+         "source": "HGNC",
+         "id": "HGNC:11179"
+        }
+       ],
+       "value": "SOD1"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+       "texts": [
+        {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "19741096"
+          }
+         ],
+         "value": "Predominantly cytoplasmic; the pathogenic variants ALS1 Arg-86 and Ala-94 gradually aggregates and accumulates in mitochondria"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "19741096"
+          }
+         ],
+         "value": "Cytoplasm",
+         "id": "SL-0086"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "22496122"
+          }
+         ],
+         "value": "Nucleus",
+         "id": "SL-0191"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI0000000C20"
+    }
+   }
+  ]
+ }
+}

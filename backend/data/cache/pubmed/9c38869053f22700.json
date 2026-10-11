@@ -1,0 +1,31 @@
+{
+ "source": "pubmed",
+ "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+ "params": {
+  "tool": "unobio",
+  "db": "pubmed",
+  "term": "\"NCT03814187\"[si] OR \"NCT03814187\"[tiab]",
+  "retmax": 3,
+  "retmode": "json",
+  "sort": "relevance"
+ },
+ "fetched_at": "2026-10-10T15:08:04+00:00",
+ "status": 200,
+ "body": {
+  "header": {
+   "type": "esearch",
+   "version": "0.3"
+  },
+  "esearchresult": {
+   "count": "2",
+   "retmax": "2",
+   "retstart": "0",
+   "idlist": [
+    "38753448",
+    "33990512"
+   ],
+   "translationset": [],
+   "querytranslation": "\"NCT03814187\"[Secondary Source ID] OR \"NCT03814187\"[Title/Abstract]"
+  }
+ }
+}

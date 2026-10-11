@@ -1,0 +1,26 @@
+# Test pairs for run_batch.py. One per line:  disease | target or mechanism | phase (optional)
+# Lines starting with # are ignored. "Expect" is a forecast from the rules, not a checked fact.
+
+# Path to Invest: Mendelian genetics + an approved drug with the same mechanism (tofersen)
+amyotrophic lateral sclerosis | SOD1 antisense oligonucleotide
+# Mendelian genetics, gene therapy, class safety signals
+Duchenne muscular dystrophy | DMD gene therapy
+# Strong genetics against a failed program (tominersen): pluses and minuses together
+Huntington disease | HTT antisense oligonucleotide | ph1
+# Classic failures (torcetrapib, dalcetrapib, evacetrapib): efficacy and safety labels
+coronary artery disease | CETP inhibitor
+# Kill rule me-too on a crowded mechanism
+obesity | GLP-1 receptor agonist
+# Oncology, somatic genetics, me-too (sotorasib, adagrasib)
+non-small cell lung carcinoma | KRAS G12C inhibitor
+# Synonym HER2 -> ERBB2, drug type adc
+breast cancer | HER2 antibody-drug conjugate
+# Kill rule: an antibody cannot reach an intracellular target
+chronic myeloid leukemia | ABL1 antibody
+# Abbreviation -> ambiguous, candidates listed
+MS | CD20 antibody
+# Unknown disease -> not_found
+xyzzy disease | BACE1
+# The two pairs already checked live
+Alzheimer disease | BACE1 inhibitor
+familial hypercholesterolemia | anti-PCSK9 antibody

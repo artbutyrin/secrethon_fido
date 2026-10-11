@@ -1,0 +1,60 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2699,
+  "output_tokens": 604,
+  "latency_ms": 4970,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"11\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…ed-start cohort (difference, 3.5 points; 95% CI, 0.4 to 6.7); non-multiplicity-adjusted differences favoring early-start tofersen were seen for other end points. Lumbar puncture-related adverse events were common. Neurologic serious adverse events occurred in 7% of tofersen recipients. CONCLUSIONS: In persons with SOD1 ALS, tofersen reduced concentrations of SOD1 in CSF and of neurofilament light chains in plasma over 28 weeks but did not improve clinical end points and was associated with adverse events. The potential effects of earlier as compared with delayed initiation of tofersen are being further evaluated in the extension phase. (Funded by Biogen; VALOR and OLE ClinicalTrials.gov numbers, NCT02623699 and NCT03070119; EudraCT numbers, 2015-004098-33 and …\"}, {\"id\": \"12\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…FRS-R score was -6.98 with tofersen and -8.14 with placebo (difference, 1.2 points; 95% confidence interval [CI], -3.2 to 5.5; P = 0.97). Results for secondary clinical end points did not differ significantly between the two groups. A total of 95 participants (88%) entered the open-label extension. At 52 weeks, the change in the ALSFRS-R score was -6.0 in the early-start cohort and -9.5 in the delayed-start cohort (difference, 3.5 points; 95% CI, 0.4 to 6.7); non-multiplicity-adjusted differences favoring early-start tofersen were seen for other end points. Lumbar puncture-related adverse events were common. Neurologic serious adverse events occurred in 7% of tofersen recipients. CONCLUSIONS: In persons with SOD1 ALS, tofersen reduced concentrations of…\"}, {\"id\": \"13\", \"claim\": \"Study result for Tofersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…adation of superoxide dismutase 1 (SOD1) messenger RNA to reduce SOD1 protein synthesis. Intrathecal administration of tofersen is being studied for the treatment of amyotrophic lateral sclerosis (ALS) due to SOD1 mutations. METHODS: We conducted a phase 1-2 ascending-dose trial evaluating tofersen in adults with ALS due to SOD1 mutations. In each dose cohort (20, 40, 60, or 100 mg), participants were randomly assigned in a 3:1 ratio to receive five doses of tofersen or placebo, administered intrathecally for 12 weeks. The primary outcomes were safety and pharmacokinetics. The secondary outcome was the change from baseline in the cerebrospinal fluid (CSF) SOD1 concentration at day 85. Clinical function and vital capacity were measured. RESULTS: A total of 50 p…\"}, {\"id\": \"14\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"… [33%]). At OLE completion, participants could have accumulated 3.5 years or more (range, 192-276 weeks) of follow-up from the start of VALOR. Over 148 weeks, earlier initiation of tofersen (compared to later initiation) was associated with numerically less decline in measures of clinical function (Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 v…\"}, {\"id\": \"15\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…-up from the start of VALOR. Over 148 weeks, earlier initiation of tofersen (compared to later initiation) was associated with numerically less decline in measures of clinical function (Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the ex…\"}, {\"id\": \"16\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…iation of tofersen (compared to later initiation) was associated with numerically less decline in measures of clinical function (Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the expected natural history of SOD1-ALS. Most adverse events were consistent w…\"}, {\"id\": \"17\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ally less decline in measures of clinical function (Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the expected natural history of SOD1-ALS. Most adverse events were consistent with ALS progression or known procedural adverse effects. All serious neurological adverse events were rever…\"}, {\"id\": \"18\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ctional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the expected natural history of SOD1-ALS. Most adverse events were consistent with ALS progression or known procedural adverse effects. All serious neurological adverse events were reversible; few led to tofersen discontinuation. CONCLUSIONS AND RELEVANCE: …\"}, {\"id\": \"19\", \"claim\": \"Study result for Tofersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…unction (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the expected natural history of SOD1-ALS. Most adverse events were consistent with ALS progression or known procedural adverse effects. All serious neurological adverse events were reversible; few led to tofersen discontinuation. CONCLUSIONS AND RELEVANCE: Final data from VALOR and the OLE demonstrated the benefit of tofersen in SOD1-ALS a…\"}, {\"id\": \"20\", \"claim\": \"Study result for the target itself (no drug), in cells: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ce. Immunocytochemistry using cell lineage markers shows that these cell lines can be maintained as glial progenitors, because they continue to express A2B5, with very low levels of glial fibrillary acidic protein (astrocyte), betaIII-tubulin (neuron), and undetected GalC (oligodendrocyte) markers. RT-PCR and immunoblot analyses indicate that the chemokine receptor CXCR4 is reduced in SOD1(G93A) GRIPs. Subsequently, SOD1(G93A) GRIPs are unable to respond to SDF1alpha to activate ERK1/2 enzymes and the transcription factor CREB. This may be one pathway leading to a reduction in SOD1(G93A) cell migration. These data indicate that the abnormalities in SOD1(G93A) glial progenitor expression of CXCR4 …\"}, {\"id\": \"21\", \"claim\": \"Study result for the target itself (no drug), in cells: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ecause they continue to express A2B5, with very low levels of glial fibrillary acidic protein (astrocyte), betaIII-tubulin (neuron), and undetected GalC (oligodendrocyte) markers. RT-PCR and immunoblot analyses indicate that the chemokine receptor CXCR4 is reduced in SOD1(G93A) GRIPs. Subsequently, SOD1(G93A) GRIPs are unable to respond to SDF1alpha to activate ERK1/2 enzymes and the transcription factor CREB. This may be one pathway leading to a reduction in SOD1(G93A) cell migration. These data indicate that the abnormalities in SOD1(G93A) glial progenitor expression of CXCR4 and its mediated signaling and function occur during spinal cord development and highlight nonneuronal (glial) abnormalities in …\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "11",
+    "supports": true
+   },
+   {
+    "id": "12",
+    "supports": false
+   },
+   {
+    "id": "13",
+    "supports": false
+   },
+   {
+    "id": "14",
+    "supports": true
+   },
+   {
+    "id": "15",
+    "supports": true
+   },
+   {
+    "id": "16",
+    "supports": true
+   },
+   {
+    "id": "17",
+    "supports": true
+   },
+   {
+    "id": "18",
+    "supports": true
+   },
+   {
+    "id": "19",
+    "supports": true
+   },
+   {
+    "id": "20",
+    "supports": true
+   },
+   {
+    "id": "21",
+    "supports": true
+   }
+  ]
+ }
+}

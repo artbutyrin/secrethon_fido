@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2594,
+  "output_tokens": 434,
+  "latency_ms": 5896,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"60\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…eterminations were ≥70 mg/dL (median 94.0 mg/dL; interquartile range: 83.2-111.0 mg/dL). RESULTS: In the lower LDL-C subgroup, MACE rates were 4.2 and 3.1 per 100 patient-years among placebo-treated patients with baseline lipoprotein(a) greater than or less than or equal to the median (13.7 mg/dL). Corresponding adjusted treatment hazard ratios were 0.68 (95% confidence interval [CI]: 0.52-0.90) and 1.11 (95% CI: 0.83-1.49), with treatment-lipoprotein(a) interaction on MACE (Pinteraction = 0.017). In the higher LDL-C subgroup, MACE rates were 4.7 and 3.8 per 100 patient-years among placebo-treated patients with lipoprotein(a) >13.7 mg/dL or ≤13.7 mg/dL; corresponding adjusted treatment hazard ratios were 0.82 (95% CI: 0.72-0.92) and 0.89 (95% CI: 0.75-1.06), with Pint…\"}, {\"id\": \"61\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…an proprotein convertase subtilisin/kexin type 9 (PCSK9). It is administered by subcutaneous injection every 2 weeks or once monthly. Area covered: Herein, the authors discuss the rationale for inhibiting PCSK9 and describe the pharmacodynamics, pharmacokinetics and clinical trials with evolocumab. Evolocumab reduces low density lipoprotein cholesterol (LDL-C) levels by 50 to 60% in most patients with and without background treatment with statins or other lipid lowering agents. The safety profile appears satisfactory from the completed clinical studies and concerns regarding the risk of neurocognitive events have largely been dispelled. Expert opinion: The reduction of LDL-C with evolocumab to previously unattainable levels has resulted in a reduction in the composite car…\"}, {\"id\": \"62\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…) levels by 50 to 60% in most patients with and without background treatment with statins or other lipid lowering agents. The safety profile appears satisfactory from the completed clinical studies and concerns regarding the risk of neurocognitive events have largely been dispelled. Expert opinion: The reduction of LDL-C with evolocumab to previously unattainable levels has resulted in a reduction in the composite cardiovascular event endpoint in the FOURIER trial and this is likely to impact on future lipid management guidelines. The clinical outcome data and excellent tolerability profile clearly support the use of evolocumab in patients at high cardiovascular risk, including those with heterozygous or homozygous familial hypercholesterolemia, who are unab…\"}, {\"id\": \"63\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…rmal renal function group). No correlations were observed between exposure and baseline creatinine clearance. No adverse event was determined by the investigators to be related to evolocumab, and there were no trends indicative of clinically important effects on laboratory variables or vital signs. Overall, there were no meaningful differences in evolocumab exposure, as assessed by Cmax and AUClast , in patients with severe RI and ESRD hemodialysis compared with patients with normal renal function, and LDL-C-lowering effects were similar across groups. These results support the use of evolocumab without dose adjustment in patients who have severe RI or ESRD.\"}, {\"id\": \"64\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…o trends indicative of clinically important effects on laboratory variables or vital signs. Overall, there were no meaningful differences in evolocumab exposure, as assessed by Cmax and AUClast , in patients with severe RI and ESRD hemodialysis compared with patients with normal renal function, and LDL-C-lowering effects were similar across groups. These results support the use of evolocumab without dose adjustment in patients who have severe RI or ESRD.\"}, {\"id\": \"65\", \"claim\": \"Study result for Evolocumab, in cells: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… ICAM-1), and endothelial function (eNOS) biomarkers were quantified using ELISA and QuantiGene plex assays. Monocyte adhesion to endothelial cells was measured using the Rose Bengal method. RESULTS: Lp(a) stimulation increased PCSK9, IL-6, ICAM-1, E-selectin, NF-κB p65, and reduced eNOS in HCAECs. Both Alirocumab and Evolocumab lowered PCSK9 protein levels, with Alirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression …\"}, {\"id\": \"66\", \"claim\": \"Study result for Evolocumab, in cells: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…s. Monocyte adhesion to endothelial cells was measured using the Rose Bengal method. RESULTS: Lp(a) stimulation increased PCSK9, IL-6, ICAM-1, E-selectin, NF-κB p65, and reduced eNOS in HCAECs. Both Alirocumab and Evolocumab lowered PCSK9 protein levels, with Alirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocum…\"}, {\"id\": \"67\", \"claim\": \"Study result for Evolocumab, in cells: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…timulation increased PCSK9, IL-6, ICAM-1, E-selectin, NF-κB p65, and reduced eNOS in HCAECs. Both Alirocumab and Evolocumab lowered PCSK9 protein levels, with Alirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab. Monocyte adhesion decreased at lower doses of both inhibitors, suggesting protective effects against early atherogenesi…\"}, {\"id\": \"68\", \"claim\": \"Study result for Evolocumab, in cells: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… eNOS in HCAECs. Both Alirocumab and Evolocumab lowered PCSK9 protein levels, with Alirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab. Monocyte adhesion decreased at lower doses of both inhibitors, suggesting protective effects against early atherogenesis. CONCLUSION: PCSK9i exhibits pleiotropic effects beyond lipid-lowering by modulati…\"}, {\"id\": \"69\", \"claim\": \"Study result for Evolocumab, in cells: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…lirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab. Monocyte adhesion decreased at lower doses of both inhibitors, suggesting protective effects against early atherogenesis. CONCLUSION: PCSK9i exhibits pleiotropic effects beyond lipid-lowering by modulating endothelial activation, inflammation, and monocyte adhesion in Lp(a)-stimulated HCAECs. These…\"}, {\"id\": \"70\", \"claim\": \"Study result for Evolocumab, in cells: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…ereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab. Monocyte adhesion decreased at lower doses of both inhibitors, suggesting protective effects against early atherogenesis. CONCLUSION: PCSK9i exhibits pleiotropic effects beyond lipid-lowering by modulating endothelial activation, inflammation, and monocyte adhesion in Lp(a)-stimulated HCAECs. These findings provide mechanistic insights into the potential athe…\"}, {\"id\": \"71\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…site of cardiovascular death, myocardial infarction, stroke, hospitalization for unstable angina, or coronary revascularization. The key secondary efficacy end point was the composite of cardiovascular death, myocardial infarction, or stroke. The median duration of follow-up was 2.2 years. RESULTS: At 48 weeks, the least-squares mean percentage reduction in LDL cholesterol levels with evolocumab, as compared with placebo, was 59%, from a median baseline value of 92 mg per deciliter (2.4 mmol per liter) to 30 mg per deciliter (0.78 mmol per liter) (P<0.001). Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "60",
+    "supports": true
+   },
+   {
+    "id": "61",
+    "supports": true
+   },
+   {
+    "id": "62",
+    "supports": true
+   },
+   {
+    "id": "63",
+    "supports": true
+   },
+   {
+    "id": "64",
+    "supports": true
+   },
+   {
+    "id": "65",
+    "supports": true
+   },
+   {
+    "id": "66",
+    "supports": true
+   },
+   {
+    "id": "67",
+    "supports": true
+   },
+   {
+    "id": "68",
+    "supports": true
+   },
+   {
+    "id": "69",
+    "supports": true
+   },
+   {
+    "id": "70",
+    "supports": true
+   },
+   {
+    "id": "71",
+    "supports": true
+   }
+  ]
+ }
+}

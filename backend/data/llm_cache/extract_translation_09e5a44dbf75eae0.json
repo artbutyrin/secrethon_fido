@@ -1,0 +1,53 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2372,
+  "output_tokens": 882,
+  "latency_ms": 7313,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1\", \"drugs\": [\"TOFERSEN\"], \"documents\": [{\"id\": \"pmid:32840332\", \"about_drug\": \"TOFERSEN\", \"text\": \"Overview of current and emerging therapies for amytrophic lateral sclerosis.. Amyotrophic lateral sclerosis (ALS) is a devastating, fatal neuromuscular disease. Most patients die within 2 to 5 years of diagnosis. The disease stems from death of upper and lower motor neurons leading to degeneration of motor pathways and the paralytic effects of the disease. The economic cost of the disease is not clear, with estimates ranging from about $64,000 per year to $200,000. Two drugs, riluzole and edaravone, are currently FDA approved for the treatment of ALS, and each provides modest benefits in mortality and/or function. Recent developments in the understanding of the underlying pathophysiologic processes that contribute to ALS have led to the development of numerous investigational therapies, with several now in phase 3 trials. This article highlights the oral tyrosine kinase inhibitor masitinib; the antisense drug tofersen; the humanized monoclonal antibody C5 complement inhibitor ravulizumab-cwvz; and mesenchymal stem cell (MSC)-neurotrophic factor (NTF) cells, a proprietary platform that induces autologous bone marrow-derived MSCs to secrete high levels of NTFs.\"}, {\"id\": \"pmid:39706636\", \"about_drug\": \"TARGET\", \"text\": \"Amyotrophic lateral sclerosis caused by SOD1 variants: from genetic discovery to disease prevention.. Pathogenic variants in the superoxide dismutase 1 (SOD1) gene were the first identified genetic cause of amyotrophic lateral sclerosis (ALS), in 1993. This discovery enabled the development of transgenic rodent models for studying the biology of SOD1 ALS. The understanding that SOD1 ALS is driven by a toxic gain-of-function mutation has led to therapeutic strategies that aim to lower concentrations of SOD1 protein, an endeavour that has been complicated by the phenotypic heterogeneity of SOD1 ALS. The successful development of genetically targeted therapies to reduce SOD1 expression, together with a better understanding of pre-symptomatic disease and the discovery of neurofilament light protein as a susceptibility/risk biomarker that predicts phenoconversion, has ushered in a new era of trials that aim to prevent clinically manifest SOD1 ALS. The 30-year journey from gene discovery to gene therapy has not only uncovered the pathophysiology of SOD1 ALS, but has also facilitated the development of biomarkers that should aid therapy development for all forms of ALS.\"}, {\"id\": \"pmid:28405022\", \"about_drug\": \"TARGET\", \"text\": \"Therapeutic reduction of ataxin-2 extends lifespan and reduces pathology in TDP-43 mice.. Amyotrophic lateral sclerosis (ALS) is a rapidly progressing neurodegenerative disease that is characterized by motor neuron loss and that leads to paralysis and death 2-5 years after disease onset. Nearly all patients with ALS have aggregates of the RNA-binding protein TDP-43 in their brains and spinal cords, and rare mutations in the gene encoding TDP-43 can cause ALS. There are no effective TDP-43-directed therapies for ALS or related TDP-43 proteinopathies, such as frontotemporal dementia. Antisense oligonucleotides (ASOs) and RNA-interference approaches are emerging as attractive therapeutic strategies in neurological diseases. Indeed, treatment of a rat model of inherited ALS (caused by a mutation in Sod1) with ASOs against Sod1 has been shown to substantially slow disease progression. However, as SOD1 mutations account for only around 2-5% of ALS cases, additional therapeutic strategies are needed. Silencing TDP-43 itself is probably not appropriate, given its critical cellular functions. Here we present a promising alternative therapeutic strategy for ALS that involves targeting ataxin-2. A decrease in ataxin-2 suppresses TDP-43 toxicity in yeast and flies, and intermediate-length polyglutamine expansions in the ataxin-2 gene increase risk of ALS. We used two independent approaches to test whether decreasing ataxin-2 levels could mitigate disease in a mouse model of TDP-43 proteinopathy. First, we crossed ataxin-2 knockout mice with TDP-43 (also known as TARDBP) transgenic mice. The decrease in ataxin-2 reduced aggregation of TDP-43, markedly increased survival and improved motor function. Second, in a more therapeutically applicable approach, we administered ASOs targeting ataxin-2 to the central nervous system of TDP-43 transgenic mice. This single treatment markedly extended survival. Because TDP-43 aggregation is a component of nearly all cases of ALS, targeting ataxin-2 could represent a broadly effective therapeutic strategy.\"}, {\"id\": \"pmid:17567884\", \"about_drug\": \"TARGET\", \"text\": \"Impaired SDF1/CXCR4 signaling in glial progenitors derived from SOD1(G93A) mice.. Mutations in the superoxide dismutase 1 (SOD1) gene are associated with familial amyotrophic lateral sclerosis (ALS), and the SOD1(G93A) transgenic mouse has been widely used as one animal model for studies of this neurodegenerative disorder. Recently, several reports have shown that abnormalities in neuronal development in other models of neurodegeneration occur much earlier than previously thought. To study the role of mutant SOD1 in glial progenitor biology, we immortalized glial restricted precursors (GRIPs) derived from mouse E11.5 neural tubes of wild-type and SOD1(G93A) mutant mice. Immunocytochemistry using cell lineage markers shows that these cell lines can be maintained as glial progenitors, because they continue to express A2B5, with very low levels of glial fibrillary acidic protein (astrocyte), betaIII-tubulin (neuron), and undetected GalC (oligodendrocyte) markers. RT-PCR and immunoblot analyses indicate that the chemokine receptor CXCR4 is reduced in SOD1(G93A) GRIPs. Subsequently, SOD1(G93A) GRIPs are unable to respond to SDF1alpha to activate ERK1/2 enzymes and the transcription factor CREB. This may be one pathway leading to a reduction in SOD1(G93A) cell migration. These data indicate that the abnormalities in SOD1(G93A) glial progenitor expression of CXCR4 and its mediated signaling and function occur during spinal cord development and highlight nonneuronal (glial) abnormalities in this ALS model.\"}, {\"id\": \"pmid:26174855\", \"about_drug\": \"TARGET\", \"text\": \"HFE p.H63D polymorphism does not influence ALS phenotype and survival.. It has been recently reported that the p.His63Asp polymorphism of the HFE gene accelerates disease progression both in the SOD1 transgenic mouse and in amyotrophic lateral sclerosis (ALS) patients. We have evaluated the effect of HFE p.His63Asp polymorphism on the phenotype in 1351 Italian ALS patients (232 of Sardinian ancestry). Patients were genotyped for the HFE p.His63Asp polymorphism (CC, GC, and GG). All patients were also assessed for C9ORF72, TARDBP, SOD1, and FUS mutations. Of the 1351 ALS patients, 363 (29.2%) were heterozygous (GC) for the p.His63Asp polymorphism and 30 (2.2%) were homozygous for the minor allele (GG). Patients with CC, GC, and GG polymorphisms did not significantly differ by age at onset, site of onset of symptoms, and survival; however, in SOD1 patients with CG or GG polymorphism had a significantly longer survival than those with a CC polymorphism. Differently from what observed in the mouse model of ALS, the HFE p.His63Asp polymorphism has no effect on ALS phenotype in this large series of Italian ALS patients.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:32840332",
+    "findings": []
+   },
+   {
+    "id": "pmid:39706636",
+    "findings": []
+   },
+   {
+    "id": "pmid:28405022",
+    "findings": []
+   },
+   {
+    "id": "pmid:17567884",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": true,
+      "quote": "RT-PCR and immunoblot analyses indicate that the chemokine receptor CXCR4 is reduced in SOD1(G93A) GRIPs."
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": true,
+      "quote": "SOD1(G93A) GRIPs are unable to respond to SDF1alpha to activate ERK1/2 enzymes and the transcription factor CREB."
+     }
+    ]
+   },
+   {
+    "id": "pmid:26174855",
+    "findings": []
+   }
+  ]
+ }
+}

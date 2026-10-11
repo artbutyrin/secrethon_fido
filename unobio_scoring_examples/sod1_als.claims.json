@@ -1,0 +1,251 @@
+{
+ "title": "amyotrophic lateral sclerosis + SOD1 antisense oligonucleotide (real pipeline claims, Open Targets 26.09, cached 8 Oct 2026)",
+ "claims": [
+  {
+   "id": "clm_1",
+   "fact": "moa_direction",
+   "value": "inhibit",
+   "origin": "user",
+   "evidence_type": "source",
+   "statement": "Input: direction of action is inhibit.",
+   "rule": "Given by the user.",
+   "sources": [
+    {
+     "kind": "user_input",
+     "id": "moa_direction"
+    }
+   ]
+  },
+  {
+   "id": "clm_2",
+   "fact": "modality",
+   "value": "rna",
+   "origin": "user",
+   "evidence_type": "source",
+   "statement": "Input: modality is rna.",
+   "rule": "Given by the user.",
+   "sources": [
+    {
+     "kind": "user_input",
+     "id": "modality"
+    }
+   ]
+  },
+  {
+   "id": "clm_3",
+   "fact": "oncology",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "Amyotrophic lateral sclerosis is not in the oncology therapeutic area.",
+   "rule": "Oncology = therapeutic area 'cancer or benign tumor' in Open Targets.",
+   "sources": [
+    {
+     "kind": "open_targets_disease",
+     "id": "MONDO_0004976",
+     "url": "https://platform.opentargets.org/disease/MONDO_0004976"
+    }
+   ]
+  },
+  {
+   "id": "clm_4",
+   "fact": "genetic_support",
+   "value": "mendelian",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "SOD1 has Mendelian genetic evidence for amyotrophic lateral sclerosis (155 records: clingen, eva, genomics_england, orphanet, uniprot_literature).",
+   "rule": "Mendelian: ClinGen, Gene2Phenotype, Genomics England, Orphanet, UniProt literature, or ClinVar with a pathogenic variant. GWAS: credible set with locus-to-gene score >= 0.5. Somatic: IntOGen, Cancer Gene Census. Strongest wins. 'none' needs every evidence row read and genetic data for the disease.",
+   "sources": [
+    {
+     "kind": "open_targets_evidence",
+     "id": "26d889aba862953d846baf38fff0b1639630a9cd",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0004976",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "546cd454ef97a96ddd423778d172fec8d146d8f0",
+     "datasource": "clingen",
+     "disease": "MONDO_0004976",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "78ad5289b5b91c30bb1cb5e605542b250e4d979e",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0005145",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "7b4ebb35b62e5b6156763d65bfd6a80b925f4454",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0005144",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "7e6bc349ee11ba825ec01bf73fb4134030a2cd5d",
+     "datasource": "uniprot_literature",
+     "disease": "MONDO_0004976",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "9c76c3183577266fa54e38af26fc79d9b9e421cb",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0005145",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000142168/MONDO_0004976"
+    }
+   ]
+  },
+  {
+   "id": "clm_5",
+   "fact": "approved_same_moa_count",
+   "value": 1,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "1 drug with the same mechanism (SOD1 inhibit) is approved for amyotrophic lateral sclerosis: Tofersen.",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3833346",
+     "name": "TOFERSEN",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3833346"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "emea/h/c/005493",
+     "source": "EMA Human Drugs",
+     "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qalsody"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "label/2023/215887orig1s000correctedlbl.pdf",
+     "source": "FDA",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215887Orig1s000Correctedlbl.pdf"
+    }
+   ]
+  },
+  {
+   "id": "clm_6",
+   "fact": "moa_clinical_precedent",
+   "value": "approved_same",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "Tofersen with the same mechanism is approved for amyotrophic lateral sclerosis.",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug. Related disease = a shared specific therapeutic area (phenotype, biological process, measurement and 'genetic, familial or congenital disease' do not count).",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3833346",
+     "name": "TOFERSEN",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3833346"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "emea/h/c/005493",
+     "source": "EMA Human Drugs",
+     "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qalsody"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "label/2023/215887orig1s000correctedlbl.pdf",
+     "source": "FDA",
+     "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215887Orig1s000Correctedlbl.pdf"
+    }
+   ]
+  },
+  {
+   "id": "clm_7",
+   "fact": "ph3_same_moa_count",
+   "value": 0,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "0 drugs with the same mechanism have an active Phase 3 trial in amyotrophic lateral sclerosis.",
+   "rule": "Counted: same mechanism, not approved for this disease, a recruiting or active Phase 3 (or 2/3) trial mapped to the disease ID. Terminated or completed trials are not competitors.",
+   "sources": [
+    {
+     "kind": "open_targets_target_drugs",
+     "id": "ENSG00000142168",
+     "url": "https://platform.opentargets.org/target/ENSG00000142168"
+    }
+   ]
+  },
+  {
+   "id": "clm_8",
+   "fact": "approved_therapies_count",
+   "value": 3,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "3 drugs are approved for amyotrophic lateral sclerosis: Edaravone, Riluzole, Tofersen.",
+   "rule": "Approved = an FDA, EMA or DailyMed label mapped to the disease ID. TTD-only and PMDA-only approvals and diagnostic radiotracers are not counted; salt forms are one drug. Zero only if the drug list is complete and has no approval of any kind.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL290916",
+     "name": "EDARAVONE",
+     "url": "https://platform.opentargets.org/drug/CHEMBL290916"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL744",
+     "name": "RILUZOLE",
+     "url": "https://platform.opentargets.org/drug/CHEMBL744"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3833346",
+     "name": "TOFERSEN",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3833346"
+    }
+   ]
+  },
+  {
+   "id": "clm_9",
+   "fact": "essential_gene",
+   "value": true,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "SOD1 is a common essential gene.",
+   "rule": "Open Targets isEssential (DepMap common essential).",
+   "sources": [
+    {
+     "kind": "open_targets_target",
+     "id": "ENSG00000142168",
+     "url": "https://platform.opentargets.org/target/ENSG00000142168"
+    }
+   ]
+  }
+ ],
+ "phase": "ph1",
+ "market": {
+  "us_patients": 16415,
+  "us_patients_range": [
+   10260,
+   21440
+  ],
+  "eligible_share": 0.02,
+  "price_analogues": {
+   "same_moa": [
+    108202
+   ]
+  },
+  "price_ceiling_usd": 108202,
+  "assumed": [],
+  "_provenance": {
+   "us_patients": "Orphanet product 9, ALS (ORPHA:803): median validated point prevalence 4.9/100k x 335m; range = min-max validated",
+   "eligible_share": "analyst input: SOD1 carriers ~2% of ALS",
+   "price_analogues.same_moa": "CMS Part B 2024: tofersen (Qalsody) spending per beneficiary",
+   "segment": "rare: Orphanet prevalence < 60/100k (set by build_market)"
+  },
+  "segment": "rare"
+ },
+ "round_terms": {
+  "pre_money_m": 60,
+  "investment_m": 30,
+  "cash_m": 30
+ }
+}

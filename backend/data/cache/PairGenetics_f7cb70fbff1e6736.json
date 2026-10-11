@@ -1,0 +1,388 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0004976",
+  "ensemblId": "ENSG00000142168",
+  "datasources": [
+   "impc",
+   "crispr",
+   "crispr_screen",
+   "ot_crispr",
+   "ot_crispr_validation",
+   "expression_atlas",
+   "reactome",
+   "progeny",
+   "slapenrich",
+   "sysbio"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T11:59:47+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0004976",
+    "evidences": {
+     "count": 32,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "af5b2956ee88858f97bdff1e36e7fc96c2acfb6d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6008,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0017593",
+        "name": "juvenile amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "40819599389ca0be3157df41e844c8fc178cd0e0",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5911,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0859529",
+        "name": "amyotrophic lateral sclerosis 27, juvenile"
+       }
+      },
+      {
+       "id": "569ba6ecf8548d98d93c2efcbf96e367d210a12e",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5807,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5f6119d2d720701ca65f044dce8deadd42c9dce2",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5711999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0014641",
+        "name": "frontotemporal dementia and/or amyotrophic lateral sclerosis 4"
+       }
+      },
+      {
+       "id": "8867bf538d6799698a4e02ce68cb785019cf7bf9",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5711999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3e490069a3ae5728ee269d1d05d41009525cbfdc",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5671,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c2e7caad2d27706114185cb3b08713c5d655c636",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5640999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0008458",
+        "name": "spinocerebellar ataxia type 2"
+       }
+      },
+      {
+       "id": "258c7bdda2365c716a6a2d79225b11e1b0cc81b8",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5604,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "565bb5f4d5023edaae00b6b9d95a68af476ad512",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5604,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0013501",
+        "name": "frontotemporal dementia and/or amyotrophic lateral sclerosis 6"
+       }
+      },
+      {
+       "id": "408cab5931f74ae3b2cf4ddc9c76f5f9ff183b0e",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5556,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0012077",
+        "name": "amyotrophic lateral sclerosis type 8"
+       }
+      },
+      {
+       "id": "58d66c3f73a307d07e780c5c3dc8ba9db9a75dcc",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5556,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f4422fa856ec91db3036e4086c31e22421218c2b",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5526,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0008458",
+        "name": "spinocerebellar ataxia type 2"
+       }
+      },
+      {
+       "id": "99c8f57915ffce827061110e6f005d6fc25aab35",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5448,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0008780",
+        "name": "amyotrophic lateral sclerosis type 2, juvenile"
+       }
+      },
+      {
+       "id": "f10d89170c983234de1aed2d59a5c87cb4bc95fc",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5448,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0017593",
+        "name": "juvenile amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7621be418a78bd9310f7a02ce2acd78714e196e2",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5394,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0957538",
+        "name": "amyotrophic lateral sclerosis 28"
+       }
+      },
+      {
+       "id": "3db6b12712eef3f1e9baccaaf7d47ef5ed471ca0",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5165,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005145",
+        "name": "sporadic amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "af78487f52fea4b1e14319adcc3eb7a8a19a2eba",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5165,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f814306de07d595b6dc333c9e9cc38ccfc1d3761",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5165,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "324987fbf141f45d41db9a2005cd6f6e799ed9b6",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5147999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "28997c46b440a4f709a127b37e93d37c7960d73c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5138,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011223",
+        "name": "amyotrophic lateral sclerosis type 4"
+       }
+      },
+      {
+       "id": "e2b5283c148e1a692999401bc4bfbe834ca1d9b5",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4989,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007105",
+        "name": "frontotemporal dementia and/or amyotrophic lateral sclerosis 1"
+       }
+      },
+      {
+       "id": "37e54e4daa9893ece4c7909221895b735c294c33",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4987,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "70defdf5705c32c804400cd7c0786a70dffe50d2",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4987,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010459",
+        "name": "amyotrophic lateral sclerosis type 15"
+       }
+      },
+      {
+       "id": "7ffe6633e7186b6d2b7c4f647212ff5f1de13c2a",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4987,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e2cbd426a39a8f0394f13436cbe2a85c2f604bd3",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.49340000000000006,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "088b7e73b53431963d4458e08b17fae457d19b9d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4894,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0017593",
+        "name": "juvenile amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2cae574b9a7d8d05ece08d09fb9f4284303aea6d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4894,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011196",
+        "name": "amyotrophic lateral sclerosis type 5"
+       }
+      },
+      {
+       "id": "916bc9e4781600275f37de8fca43056af5b510c8",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4636,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "38548efddf640cccb04c0ea338afd3c59b2390d0",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4251,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0013891",
+        "name": "amyotrophic lateral sclerosis type 18"
+       }
+      },
+      {
+       "id": "f2e55b8de0cfb7f4488e49bc62c185e6cbf7be1e",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4251,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4d1fbfef319107487bdbe32627eff95a3acb5050",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.42450000000000004,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0030885",
+        "name": "amyotrophic lateral sclerosis 26 with or without frontotemporal dementia"
+       }
+      },
+      {
+       "id": "d7220a29bf2747e960d8c56dae927b402ac69eab",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4182,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011951",
+        "name": "amyotrophic lateral sclerosis type 6"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

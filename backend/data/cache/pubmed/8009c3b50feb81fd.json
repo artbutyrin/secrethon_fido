@@ -1,0 +1,32 @@
+{
+ "source": "pubmed",
+ "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+ "params": {
+  "tool": "unobio",
+  "db": "pubmed",
+  "term": "\"viltolarsen\"[tiab] AND (pharmacokinetic*[tiab] OR pharmacodynamic*[tiab] OR \\\"target engagement\\\"[tiab] OR occupancy[tiab] OR biomarker*[tiab] OR cerebrospinal[tiab]) NOT review[pt] NOT \"systematic review\"[pt] NOT meta-analysis[pt]",
+  "retmax": 4,
+  "retmode": "json",
+  "sort": "relevance"
+ },
+ "fetched_at": "2026-10-09T12:01:42+00:00",
+ "status": 200,
+ "body": {
+  "header": {
+   "type": "esearch",
+   "version": "0.3"
+  },
+  "esearchresult": {
+   "count": "3",
+   "retmax": "3",
+   "retstart": "0",
+   "idlist": [
+    "37468285",
+    "38991781",
+    "38983605"
+   ],
+   "translationset": [],
+   "querytranslation": "(((\"viltolarsen\"[Title/Abstract] AND (\"pharmacokinetic*\"[Title/Abstract] OR \"pharmacodynamic*\"[Title/Abstract] OR \"target engagement\"[Title/Abstract] OR \"occupancy\"[Title/Abstract] OR \"biomarker*\"[Title/Abstract] OR \"cerebrospinal\"[Title/Abstract])) NOT \"review\"[Publication Type]) NOT \"systematic review\"[Publication Type]) NOT \"meta-analysis\"[Publication Type]"
+  }
+ }
+}

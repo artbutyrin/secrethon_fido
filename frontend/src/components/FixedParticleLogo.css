@@ -1,0 +1,28 @@
+.fixed-particle-logo {
+  position: fixed;
+  top: 1.05rem;
+  left: clamp(1rem, 3vw, 2.5rem);
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  /* White dots on dark; invert to black on light paper (screen 2+). */
+  mix-blend-mode: difference;
+}
+
+.fixed-particle-logo.is-visible {
+  opacity: 1;
+}
+
+/* Hero particles draw the word themselves until they land — swap instantly, no fade. */
+.fixed-particle-logo.is-handoff {
+  transition: none;
+}
+
+.fixed-particle-logo.is-handoff:not(.is-landed) {
+  opacity: 0;
+}
+
+.fixed-particle-logo canvas {
+  display: block;
+}

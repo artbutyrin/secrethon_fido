@@ -1,0 +1,278 @@
+{
+ "title": "Alzheimer disease + BACE1 inhibitor (real pipeline claims, Open Targets 26.09, cached 8 Oct 2026)",
+ "claims": [
+  {
+   "id": "clm_1",
+   "fact": "moa_direction",
+   "value": "inhibit",
+   "origin": "user",
+   "evidence_type": "source",
+   "statement": "Input: direction of action is inhibit.",
+   "rule": "Given by the user.",
+   "sources": [
+    {
+     "kind": "user_input",
+     "id": "moa_direction"
+    }
+   ]
+  },
+  {
+   "id": "clm_2",
+   "fact": "oncology",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "Alzheimer disease is not in the oncology therapeutic area.",
+   "rule": "Oncology = therapeutic area 'cancer or benign tumor' in Open Targets.",
+   "sources": [
+    {
+     "kind": "open_targets_disease",
+     "id": "MONDO_0004975",
+     "url": "https://platform.opentargets.org/disease/MONDO_0004975"
+    }
+   ]
+  },
+  {
+   "id": "clm_3",
+   "fact": "genetic_support",
+   "value": "none",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "No qualifying genetic evidence links BACE1 to Alzheimer disease (0 evidence rows read), although the disease has genetic evidence for other targets (e.g. APP, PSEN1, PSEN2).",
+   "rule": "Mendelian: ClinGen, Gene2Phenotype, Genomics England, Orphanet, UniProt literature, or ClinVar with a pathogenic variant. GWAS: credible set with locus-to-gene score >= 0.5. Somatic: IntOGen, Cancer Gene Census. Strongest wins. 'none' needs every evidence row read and genetic data for the disease.",
+   "sources": [
+    {
+     "kind": "open_targets_evidence",
+     "id": null,
+     "url": "https://platform.opentargets.org/evidence/ENSG00000186318/MONDO_0004975"
+    }
+   ]
+  },
+  {
+   "id": "clm_4",
+   "fact": "approved_same_moa_count",
+   "value": 0,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "0 drugs with the same mechanism (BACE1 inhibit) are approved for Alzheimer disease.",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug.",
+   "sources": [
+    {
+     "kind": "open_targets_target_drugs",
+     "id": "ENSG00000186318",
+     "url": "https://platform.opentargets.org/target/ENSG00000186318"
+    }
+   ]
+  },
+  {
+   "id": "clm_5",
+   "fact": "moa_clinical_precedent",
+   "value": "none",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "No drug with the same mechanism (BACE1 inhibit) is approved for any disease (4 drugs on BACE1 checked).",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug. Related disease = a shared specific therapeutic area (phenotype, biological process, measurement and 'genetic, familial or congenital disease' do not count).",
+   "sources": [
+    {
+     "kind": "open_targets_target_drugs",
+     "id": "ENSG00000186318",
+     "url": "https://platform.opentargets.org/target/ENSG00000186318"
+    }
+   ]
+  },
+  {
+   "id": "clm_6",
+   "fact": "ph3_same_moa_count",
+   "value": 0,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "0 drugs with the same mechanism have an active Phase 3 trial in Alzheimer disease.",
+   "rule": "Counted: same mechanism, not approved for this disease, a recruiting or active Phase 3 (or 2/3) trial mapped to the disease ID. Terminated or completed trials are not competitors.",
+   "sources": [
+    {
+     "kind": "open_targets_target_drugs",
+     "id": "ENSG00000186318",
+     "url": "https://platform.opentargets.org/target/ENSG00000186318"
+    }
+   ]
+  },
+  {
+   "id": "clm_7",
+   "fact": "approved_therapies_count",
+   "value": 7,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "7 drugs are approved for Alzheimer disease: Aducanumab, Donanemab, Donepezil, Galantamine, Lecanemab, Memantine, Rivastigmine.",
+   "rule": "Approved = an FDA, EMA or DailyMed label mapped to the disease ID. TTD-only and PMDA-only approvals and diagnostic radiotracers are not counted; salt forms are one drug. Zero only if the drug list is complete and has no approval of any kind.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3039540",
+     "name": "ADUCANUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3039540"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL4297245",
+     "name": "DONANEMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL4297245"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL1678",
+     "name": "DONEPEZIL",
+     "url": "https://platform.opentargets.org/drug/CHEMBL1678"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL1555",
+     "name": "GALANTAMINE",
+     "url": "https://platform.opentargets.org/drug/CHEMBL1555"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3833321",
+     "name": "LECANEMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3833321"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL1699",
+     "name": "MEMANTINE",
+     "url": "https://platform.opentargets.org/drug/CHEMBL1699"
+    }
+   ]
+  },
+  {
+   "id": "clm_8",
+   "fact": "essential_gene",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "BACE1 is not a common essential gene.",
+   "rule": "Open Targets isEssential (DepMap common essential).",
+   "sources": [
+    {
+     "kind": "open_targets_target",
+     "id": "ENSG00000186318",
+     "url": "https://platform.opentargets.org/target/ENSG00000186318"
+    }
+   ]
+  },
+  {
+   "id": "clm_9",
+   "fact": "moa_failures_efficacy_ph23",
+   "value": 2,
+   "origin": "llm",
+   "evidence_type": "source",
+   "statement": "2 drugs with the same mechanism (BACE1 inhibit) stopped Phase 2/3 trials in Alzheimer disease for lack of efficacy: Elenbecestat (NCT02956486: \"no evidence of potential efficacy\"); Lanabecestat (NCT02245737: \"not likely to meet the primary endpoint\").",
+   "rule": "LLM label 'efficacy' with a quote found in the trial's stated reason; counted by code: distinct drugs with the same mechanism, Phase 2, 2/3 or 3, trial mapped to this disease. Never zero from text.",
+   "sources": [
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02956486",
+     "url": "https://clinicaltrials.gov/study/NCT02956486",
+     "sponsor": "Eisai Co., Ltd.",
+     "drugs": [
+      "ELENBECESTAT"
+     ],
+     "stage": "PHASE_3",
+     "label": "efficacy",
+     "quote": "no evidence of potential efficacy",
+     "why_stopped": "Due to an unfavorable risk-benefit ratio including no evidence of potential efficacy, and the adverse event profile of E2609 being worse than placebo."
+    },
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02245737",
+     "url": "https://clinicaltrials.gov/study/NCT02245737",
+     "sponsor": "AstraZeneca",
+     "drugs": [
+      "LANABECESTAT"
+     ],
+     "stage": "PHASE_2_3",
+     "label": "efficacy",
+     "quote": "not likely to meet the primary endpoint",
+     "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility"
+    },
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02783573",
+     "url": "https://clinicaltrials.gov/study/NCT02783573",
+     "sponsor": "AstraZeneca",
+     "drugs": [
+      "LANABECESTAT"
+     ],
+     "stage": "PHASE_3",
+     "label": "efficacy",
+     "quote": "trial stopped for futility",
+     "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility."
+    },
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02972658",
+     "url": "https://clinicaltrials.gov/study/NCT02972658",
+     "sponsor": "AstraZeneca",
+     "drugs": [
+      "LANABECESTAT"
+     ],
+     "stage": "PHASE_3",
+     "label": "efficacy",
+     "quote": "stopped for futility",
+     "why_stopped": "As the feeder study (AZES) was stopped for futility after an independent assessment, this trial was also stopped."
+    }
+   ],
+   "verified": true,
+   "confirmed": false,
+   "quote": "no evidence of potential efficacy",
+   "doc_ids": [
+    "sponsor:astrazeneca",
+    "sponsor:eisai"
+   ]
+  },
+  {
+   "id": "clm_10",
+   "fact": "moa_discontinued_safety_count",
+   "value": 2,
+   "origin": "llm",
+   "evidence_type": "source",
+   "statement": "2 drugs with the same mechanism (BACE1 inhibit) had trials stopped for safety: Atabecestat (NCT02569398: \"elevations in liver enzymes\"); Elenbecestat (NCT02956486: \"adverse event profile of E2609 being worse than placebo\").",
+   "rule": "LLM label 'safety' with a quote found in the trial's stated reason; counted by code: distinct drugs with the same mechanism, any disease. Never zero from text.",
+   "sources": [
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02569398",
+     "url": "https://clinicaltrials.gov/study/NCT02569398",
+     "sponsor": "Janssen Research & Development, LLC",
+     "drugs": [
+      "ATABECESTAT"
+     ],
+     "stage": "PHASE_2_3",
+     "label": "safety",
+     "quote": "elevations in liver enzymes",
+     "why_stopped": "Change in benefit-risk profile for individuals with early sporadic Alzheimer Disease because of elevations in liver enzymes in subjects receiving atabecestat"
+    },
+    {
+     "kind": "clinical_trial",
+     "id": "NCT02956486",
+     "url": "https://clinicaltrials.gov/study/NCT02956486",
+     "sponsor": "Eisai Co., Ltd.",
+     "drugs": [
+      "ELENBECESTAT"
+     ],
+     "stage": "PHASE_3",
+     "label": "safety",
+     "quote": "adverse event profile of E2609 being worse than placebo",
+     "why_stopped": "Due to an unfavorable risk-benefit ratio including no evidence of potential efficacy, and the adverse event profile of E2609 being worse than placebo."
+    }
+   ],
+   "verified": true,
+   "confirmed": false,
+   "quote": "elevations in liver enzymes",
+   "doc_ids": [
+    "sponsor:eisai",
+    "sponsor:janssen"
+   ]
+  }
+ ],
+ "phase": "ph1"
+}

@@ -1,0 +1,99 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0004975"
+ },
+ "fetched_at": "2026-10-08T10:27:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0004975",
+    "name": "Alzheimer disease",
+    "description": "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "AD",
+       "Alzheimer dementia",
+       "Alzheimer disease",
+       "Alzheimer's dementia",
+       "Alzheimer's disease",
+       "Alzheimers disease",
+       "presenile and senile dementia",
+       "AD - Alzheimer's disease",
+       "ALZHEIMER DIS",
+       "ALZHEIMERS DIS",
+       "Alzheimer Dementia, Presenile",
+       "Alzheimer Type Dementia",
+       "Alzheimer's",
+       "Alzheimer's disease (disorder)",
+       "Alzheimer's disease, NOS",
+       "Alzheimers",
+       "Alzheimers Dementia",
+       "DAT - Dementia Alzheimer's type",
+       "Dementia in Alzheimer's disease",
+       "Dementia in Alzheimer's disease (disorder)",
+       "Dementia in Alzheimer's disease, unspecified (disorder)",
+       "Dementia of the Alzheimer's type",
+       "Dementia, Alzheimer Type",
+       "Dementia, Presenile",
+       "Dementia, Presenile Alzheimer",
+       "Disease, Alzheimer",
+       "Disease, Alzheimer's",
+       "Presenile Alzheimer Dementia",
+       "[X]Dementia in Alzheimer's disease",
+       "[X]Dementia in Alzheimer's disease (disorder)",
+       "sporadic Alzheimer's disease"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": [
+       "Alzheimer disease, familial"
+      ]
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:10652",
+     "HP:0002511",
+     "ICD10CM:G30",
+     "ICD10WHO:G30",
+     "ICD9:290.1",
+     "ICD9:331.0",
+     "MEDGEN:1853",
+     "MESH:D000544",
+     "NCIT:C2866",
+     "Orphanet:238616",
+     "SCTID:142811000119104",
+     "UMLS:C0002395",
+     "birnlex:2092",
+     "icd11.foundation:1611724421"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0002025",
+      "name": "psychiatric disorder"
+     },
+     {
+      "id": "MONDO_0005071",
+      "name": "nervous system disorder"
+     },
+     {
+      "id": "EFO_0000651",
+      "name": "phenotype"
+     }
+    ]
+   }
+  }
+ }
+}

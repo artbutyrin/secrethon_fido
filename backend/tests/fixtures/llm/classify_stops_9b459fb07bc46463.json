@@ -1,0 +1,149 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 714,
+  "output_tokens": 877,
+  "latency_ms": 5637,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT90000026\", \"reason\": \"Slow accrual and loss of funding\"}, {\"nct\": \"NCT90000027\", \"reason\": \"Business decision and enrollment difficulties\"}, {\"nct\": \"NCT90000028\", \"reason\": \"FDA hold and toxicity associated with study drug\"}, {\"nct\": \"NCT90000029\", \"reason\": \"The primary endpoint of the core/TF1 was achieved\"}, {\"nct\": \"NCT90000030\", \"reason\": \"Study did not meet Phase Ib primary objective to establish the maximum tolerated dose/recommended dose for Phase II\"}, {\"nct\": \"NCT90000031\", \"reason\": \"Study termination due to program termination.\"}, {\"nct\": \"NCT90000032\", \"reason\": \"Manufacturer discontinued drug development.\"}, {\"nct\": \"NCT90000033\", \"reason\": \"On the advice of the Data Monitoring Committee.\"}, {\"nct\": \"NCT90000034\", \"reason\": \"withdrawn\"}, {\"nct\": \"NCT90000035\", \"reason\": \"Study never started\"}, {\"nct\": \"NCT90000036\", \"reason\": \"No participants recruited. Not able to recruit due to COVID 19.\"}, {\"nct\": \"NCT90000037\", \"reason\": \"Sponsor decided not to continue development for strategic reasons.\"}, {\"nct\": \"NCT90000038\", \"reason\": \"Results of an interim analysis showed that it was unlikely that creatine was effective in slowing loss of function in early symptomatic Huntington's Disease.\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT90000026",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Slow accrual"
+     },
+     {
+      "label": "funding",
+      "quote": "loss of funding"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000027",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Business decision"
+     },
+     {
+      "label": "enrollment",
+      "quote": "enrollment difficulties"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000028",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "FDA hold"
+     },
+     {
+      "label": "safety",
+      "quote": "toxicity associated with study drug"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000029",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "The primary endpoint of the core/TF1 was achieved"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000030",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "did not meet Phase Ib primary objective to establish the maximum tolerated dose/recommended dose for Phase II"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000031",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "program termination"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000032",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Manufacturer discontinued drug development"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000033",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "On the advice of the Data Monitoring Committee."
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000034",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "withdrawn"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000035",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "Study never started"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000036",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "No participants recruited. Not able to recruit"
+     },
+     {
+      "label": "other",
+      "quote": "due to COVID 19"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000037",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Sponsor decided not to continue development for strategic reasons"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000038",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "unlikely that creatine was effective in slowing loss of function"
+     }
+    ]
+   }
+  ]
+ }
+}

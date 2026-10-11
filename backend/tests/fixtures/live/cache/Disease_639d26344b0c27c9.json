@@ -1,0 +1,64 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0005439"
+ },
+ "fetched_at": "2026-10-08T10:29:43+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005439",
+    "name": "familial hypercholesterolemia",
+    "description": "An inheritable form of hyperlipidemia, in which there are excess lipids in the blood.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "hyperlipoproteinemia type II",
+       "familial hypercholesterolaemia"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:13810",
+     "EFO:0004911",
+     "ICD10CM:E78.01",
+     "ICD9:V19.8",
+     "MEDGEN:5688",
+     "NANDO:2200602",
+     "NCIT:C34704",
+     "OMIMPS:143890",
+     "SCTID:190773008",
+     "UMLS:C0020445"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "OTAR_0000020",
+      "name": "nutritional or metabolic disease"
+     },
+     {
+      "id": "OTAR_0000018",
+      "name": "genetic, familial or congenital disease"
+     },
+     {
+      "id": "EFO_0000651",
+      "name": "phenotype"
+     }
+    ]
+   }
+  }
+ }
+}

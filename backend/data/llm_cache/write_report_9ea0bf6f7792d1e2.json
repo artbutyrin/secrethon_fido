@@ -1,0 +1,164 @@
+{
+ "task": "write_report",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3516,
+  "output_tokens": 2157,
+  "latency_ms": 20778,
+  "json_mode": "json_schema"
+ },
+ "system": "You write sections of a biotech investment memo for investors. You get the computed verdict, the\nscorecard, the rules that fired and the claims (facts with sources). The verdict is final: explain it, never\nchange or second-guess it. The verdict is one of Invest, Conditional, Insufficient evidence, Do Not Invest.\n\"Insufficient evidence\" means the public evidence is too thin to decide; it is NOT a negative call: never describe\nit as Do Not Invest, a rejection or evidence against the thesis.\nWrite for these sections: recommendation (2-3 sentences on why the verdict follows from the evidence),\nscientific_thesis (target biology, human genetics, mechanism precedent and failures), human_translation_thesis\n(can the modality reach and engage the target in patients; the input's translation_chain lines are already printed\nabove your text, so do not repeat them: say what the shown and missing links mean for this asset), clinical_development_plan (stage, trial design,\nregulatory path, enrollment), competitive_landscape (approved drugs, same-mechanism drugs, differentiation),\ncommercial_opportunity (unmet need, population, pricing exposure), capital_to_next_milestone (what the next value\ninflection would be and what is unknown about funding), key_risks (the rules that fired and other risks).\nRules:\n- Every paragraph is either \"source\" (it restates what the cited claims say; cite at least one claim ID) or\n  \"inference\" (your own reasoning from the claims; cite the claims it rests on).\n- Use only the claims given. Do not add facts, drug names, trial IDs, dates or numbers that are not in them.\n- Do not write numbers unless the same number is in a cited claim. Write no percentages, prices, market sizes or\n  amounts of money.\n- If a section has no relevant claims, write one short \"inference\" paragraph saying what is not known and why it\n  matters for the decision, with no claim IDs.\n- commercial_opportunity and capital_to_next_milestone already start with code-written lines (economics_lines in\n  the input). Do not repeat their numbers; say in words what they mean for the decision, and which assumptions\n  (tagged [A] or [A default]) matter most.\n- Do not put claim IDs in the text; list them in claim_ids. Plain English, 1-3 short paragraphs per section.\n- If the genetic_support claim is \"mendelian_subtype\", the Mendelian evidence is for a rare subtype only: call it\n  \"Mendelian genetics in a rare subtype\" and name the subtype as the claim does; never call it Mendelian genetic\n  evidence for the disease itself.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9 (proprotein convertase subtilisin/kexin type 9)\", \"input\": {\"mechanism\": \"anti-PCSK9 antibody\", \"phase\": null, \"route\": null}, \"verdict\": {\"decision\": \"Do Not Invest\", \"grounds\": \"the mechanism is already approved for this disease (2 or more drugs) and no advantage of this asset is shown: another drug of the same kind is not worth backing; proven differentiation would change it\", \"reason\": \"Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown\"}, \"scorecard\": [{\"item\": \"Unmet need\", \"color\": \"yellow\", \"claim_ids\": [\"clm_934f712810_5\", \"clm_934f712810_9\"]}, {\"item\": \"Human genetics\", \"color\": \"green\", \"claim_ids\": [\"clm_934f712810_4\", \"clm_934f712810_14\"]}, {\"item\": \"Mechanism clinical precedent\", \"color\": \"green\", \"claim_ids\": [\"clm_934f712810_7\"]}, {\"item\": \"Indication track record\", \"color\": \"green\", \"claim_ids\": [\"clm_934f712810_12\", \"clm_934f712810_13\"]}, {\"item\": \"Translation chain\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Clinical effect shown\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Trial design\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Regulatory path\", \"color\": \"unknown\", \"claim_ids\": []}], \"rules_fired\": [{\"rule\": \"Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown\", \"tier\": \"kill\", \"counted\": true, \"claim_ids\": [\"clm_934f712810_6\"]}], \"what_would_change\": [\"Claimed differentiation from the standard of care: unknown -> structural_cost gives Invest\", \"Claimed differentiation from the standard of care: unknown -> safety gives Invest\", \"Claimed differentiation from the standard of care: unknown -> efficacy gives Invest\", \"Approved drugs with the same mechanism AND the same modality class in this disease: 2 -> 0 gives Invest\"], \"claims\": [{\"id\": \"clm_934f712810_1\", \"fact\": \"moa_direction\", \"value\": \"inhibit\", \"statement\": \"Input: direction of action is inhibit.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_2\", \"fact\": \"modality\", \"value\": \"antibody\", \"statement\": \"Input: modality is antibody.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_3\", \"fact\": \"oncology\", \"value\": false, \"statement\": \"Familial hypercholesterolemia is not in the oncology therapeutic area.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_4\", \"fact\": \"genetic_support\", \"value\": \"mendelian\", \"statement\": \"PCSK9 has Mendelian genetic evidence for familial hypercholesterolemia (14 records: clingen, eva, genomics_england).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_5\", \"fact\": \"approved_same_moa_count\", \"value\": 3, \"statement\": \"3 drugs with the same mechanism (PCSK9 inhibit) are approved for familial hypercholesterolemia: Alirocumab, Evolocumab, Inclisiran.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_6\", \"fact\": \"approved_same_moa_same_modality_count\", \"value\": 2, \"statement\": \"2 drugs with the same mechanism and the same modality class (antibody like) are approved for familial hypercholesterolemia: Alirocumab, Evolocumab.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_7\", \"fact\": \"moa_clinical_precedent\", \"value\": \"approved_same\", \"statement\": \"Alirocumab with the same mechanism is approved for familial hypercholesterolemia.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_8\", \"fact\": \"ph3_same_moa_count\", \"value\": 1, \"statement\": \"1 drug with the same mechanism has an active Phase 3 trial in familial hypercholesterolemia: Lerodalcibep.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_9\", \"fact\": \"approved_therapies_count\", \"value\": 16, \"statement\": \"16 drugs are approved for familial hypercholesterolemia: Alirocumab, Amlodipine, Atorvastatin, Bempedoic Acid, Colesevelam, Evinacumab, Evolocumab, Ezetimibe, Fluvastatin, Inclisiran, Lomitapide, Mipomersen….\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_10\", \"fact\": \"essential_gene\", \"value\": false, \"statement\": \"PCSK9 is not a common essential gene.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_11\", \"fact\": \"modality_target_mismatch\", \"value\": false, \"statement\": \"An antibody can reach PCSK9: surface or secreted location: Cell surface, Secreted.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_12\", \"fact\": \"indication_ph3_outcomes_other_moa\", \"value\": 10, \"statement\": \"10 other target(s) have a known Phase 3 outcome in familial hypercholesterolemia: 7 with an approved drug, 3 without.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_13\", \"fact\": \"indication_ph3_success_share_other_moa\", \"value\": 0.7, \"statement\": \"7 of 10 other targets with a known Phase 3 outcome in familial hypercholesterolemia reached approval (70%).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_14\", \"fact\": \"perturbation_evidence\", \"value\": true, \"statement\": \"PCSK9 has perturbation evidence (mouse knockout or CRISPR screen) for familial hypercholesterolemia (24 records: impc).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_15\", \"fact\": \"class_exposure_human\", \"value\": true, \"statement\": \"Drug exposure at the site of action (pharmacokinetics, tissue or csf levels) is shown in humans for 2 drugs with the same mechanism of the same modality (antibody): Alirocumab, Evolocumab (\\\"After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations (t max ) were 3-7 days.\\\"). [Confirmed automatically: 3 independent sources, quotes found by code and checked a second time.]\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_16\", \"fact\": \"class_target_engagement_human\", \"value\": true, \"statement\": \"Target engagement (the drug binds, blocks or lowers its target) is shown in humans for 3 drugs with the same mechanism: Alirocumab, Evolocumab, Inclisiran (\\\"Alirocumab reduced free PCSK9 in a concentration-dependent manner.\\\"). [Confirmed automatically: 4 independent sources, quotes found by code and checked a second time.]\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_17\", \"fact\": \"class_pd_response_human\", \"value\": true, \"statement\": \"A pharmacodynamic response (a downstream biomarker changes) is shown in humans for 3 drugs with the same mechanism: Alirocumab, Evolocumab, Inclisiran (\\\"Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab.\\\"). [Confirmed automatically: 5 independent sources, quotes found by code and checked a second time.]\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_934f712810_18\", \"fact\": \"moa_ph23_unknown_outcome_count\", \"value\": 3, \"statement\": \"3 drugs with the same mechanism finished a Phase 2/3 trial in familial hypercholesterolemia with no outcome known to this run: Bococizumab (NCT01968980), Ongericimab (NCT05325203), Tafolecimab (NCT04031742, NCT04179669).\", \"origin\": \"structured\", \"status\": \"used\"}], \"section_hints\": {\"scientific_thesis\": [\"essential_gene\", \"genetic_support\", \"moa_clinical_precedent\", \"moa_direction\", \"perturbation_evidence\"], \"human_translation_thesis\": [\"class_exposure_human\", \"class_pd_response_human\", \"class_target_engagement_human\", \"modality\", \"modality_target_mismatch\"], \"clinical_development_plan\": [\"indication_ph3_outcomes_other_moa\", \"indication_ph3_success_share_other_moa\", \"oncology\"], \"competitive_landscape\": [\"approved_same_moa_count\", \"approved_therapies_count\", \"ph3_same_moa_count\"], \"commercial_opportunity\": [\"approved_therapies_count\", \"oncology\"], \"capital_to_next_milestone\": [], \"key_risks\": []}, \"translation_chain\": [\"Link 1, Molecular effect (target perturbation changes the disease phenotype): asset: unknown; target: shown (impc); to settle: Is there a response in a relevant animal model, and who reproduced it?.\", \"Link 2, Human exposure at the site of action: asset: unknown; class: shown (Alirocumab, Evolocumab; FDA label); registered as a trial outcome in NCT00991159, NCT01133522, NCT01592240… (tested; the result is not in the data read); to settle: Is effective exposure reachable safely in humans, and does the drug reach the right tissue?.\", \"Link 3, Target engagement in humans: asset: unknown; class: shown (Alirocumab, Evolocumab, Inclisiran; FDA label, Lunven 2014); registered as a trial outcome in NCT03207945, NCT03515304, NCT04073797… (tested; the result is not in the data read); to settle: Has target engagement been shown in relevant human tissue?.\", \"Link 4, Biological response (pharmacodynamic biomarker) in humans: asset: unknown; class: shown (Alirocumab, Evolocumab, Inclisiran; FDA label, Trankle 2019, Lunven 2014); registered as a trial outcome in NCT00991159, NCT01723735, NCT03067844… (tested; the result is not in the data read); to settle: Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?.\", \"Link 5, Patient benefit: asset: unknown; class: shown (3 drugs with the same mechanism (PCSK9 inhibit) are approved for familial hypercholesterolemia: Alirocumab, Evolocumab, Inclisiran); to settle: What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?.\"], \"economics_lines\": {\"commercial_opportunity\": [\"Economics not run: no market inputs. The verdict rests on the scientific and clinical evidence alone; a market cannot lower or confirm it.\", \"Orphanet epidemiology file not found (backend\\\\data\\\\orphanet\\\\en_product9_prev.xml): no sourced patient count. Download it with `python -m backend.app.market --download` or enter market.us_patients.\", \"Not in CMS Medicare spending data (approved_therapies_count): Amlodipine, Atorvastatin, Colesevelam, Evinacumab\"], \"capital_to_next_milestone\": [\"Value after the milestone, rNPV and the round view need a patient count (Orphanet or market.us_patients).\"]}}",
+ "answer": {
+  "sections": [
+   {
+    "id": "recommendation",
+    "paragraphs": [
+     {
+      "text": "Do Not Invest follows from the evidence provided: PCSK9 inhibition is already approved for familial hypercholesterolemia, including in the antibody modality, and no advantage for this asset is shown. The fired crowded-mechanism rule therefore applies; evidence of meaningful differentiation could change the case.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_5",
+       "clm_934f712810_6"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "scientific_thesis",
+    "paragraphs": [
+     {
+      "text": "PCSK9 has Mendelian genetic evidence for familial hypercholesterolemia, and perturbation evidence is also reported for the indication. The asset’s stated approach is to inhibit the target; an antibody with the same mechanism has already been approved for this disease.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_934f712810_1",
+       "clm_934f712810_4",
+       "clm_934f712810_7",
+       "clm_934f712810_14"
+      ]
+     },
+     {
+      "text": "Together, the genetics and perturbation evidence support the target rationale, while the approved same-mechanism precedent supports clinical plausibility. They do not establish that this asset improves on existing options; the evidence provided does not describe a specific advantage or a failed mechanism precedent.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_4",
+       "clm_934f712810_7",
+       "clm_934f712810_14"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "human_translation_thesis",
+    "paragraphs": [
+     {
+      "text": "The antibody modality is compatible with reaching PCSK9, which is described as secreted or cell-surface located. Human class evidence supports exposure, target engagement, and a downstream pharmacodynamic response for other drugs with this mechanism, but the asset-specific links remain unknown.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_11",
+       "clm_934f712810_15",
+       "clm_934f712810_16",
+       "clm_934f712810_17"
+      ]
+     },
+     {
+      "text": "This class precedent lowers uncertainty about whether an antibody approach can translate in patients, but it cannot establish this asset’s exposure, target engagement, biomarker response, or patient benefit. Those asset-specific data are not provided.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_15",
+       "clm_934f712810_16",
+       "clm_934f712810_17"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "clinical_development_plan",
+    "paragraphs": [
+     {
+      "text": "The asset’s phase, route, trial design, enrollment plan, and regulatory path are not provided. Without these details or asset-specific trial results, its development readiness and next clinical steps cannot be assessed.",
+      "kind": "inference",
+      "claim_ids": []
+     },
+     {
+      "text": "The indication has a clinical development track record beyond this mechanism: other targets with known Phase 3 outcomes include both approved and unapproved drugs. That provides context for the indication, but does not predict this asset’s outcome.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_934f712810_12",
+       "clm_934f712810_13"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "competitive_landscape",
+    "paragraphs": [
+     {
+      "text": "PCSK9 inhibition is already approved for familial hypercholesterolemia through Alirocumab, Evolocumab, and Inclisiran. Alirocumab and Evolocumab are same-mechanism antibody competitors; another same-mechanism drug is in an active Phase 3 trial.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_934f712810_5",
+       "clm_934f712810_6",
+       "clm_934f712810_8"
+      ]
+     },
+     {
+      "text": "The input provides no differentiation for this asset against the approved options, so the crowded field is a material investment concern. A demonstrated advantage in efficacy, safety, or structural cost could alter that assessment.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_5",
+       "clm_934f712810_6"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "commercial_opportunity",
+    "paragraphs": [
+     {
+      "text": "The economics were not assessed because market inputs and a sourced patient count are unavailable; accordingly, the addressable population and pricing exposure remain unknown. The presence of multiple approved therapies indicates an established treatment landscape, but does not by itself establish this asset’s commercial opportunity or change the verdict.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_9"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "capital_to_next_milestone",
+    "paragraphs": [
+     {
+      "text": "A useful next value inflection would be evidence that this asset is meaningfully differentiated from the approved standard of care, supported by asset-specific clinical or development data. The information provided does not specify a milestone, funding plan, or capital requirement; without a patient count, the round view and value after that milestone also remain unresolved.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_5",
+       "clm_934f712810_6"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "key_risks",
+    "paragraphs": [
+     {
+      "text": "The fired risk is that the same mechanism and antibody modality are already represented by approved drugs in this disease, with no advantage shown for the asset. This is the basis for the Do Not Invest verdict, rather than a conclusion that PCSK9 biology is unsupported.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_4",
+       "clm_934f712810_6"
+      ]
+     },
+     {
+      "text": "Asset-specific translation and clinical evidence are also missing from the information provided, including its own exposure, target engagement, pharmacodynamic response, and patient-benefit results. These gaps limit assessment of whether this candidate can match or improve on class precedent.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_934f712810_15",
+       "clm_934f712810_16",
+       "clm_934f712810_17"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

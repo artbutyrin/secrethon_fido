@@ -1,0 +1,33 @@
+{
+ "source": "pubmed",
+ "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+ "params": {
+  "tool": "unobio",
+  "db": "pubmed",
+  "term": "\"dalcetrapib\"[tiab] AND (pharmacokinetic*[tiab] OR pharmacodynamic*[tiab] OR \\\"target engagement\\\"[tiab] OR occupancy[tiab] OR biomarker*[tiab] OR cerebrospinal[tiab]) NOT review[pt] NOT \"systematic review\"[pt] NOT meta-analysis[pt]",
+  "retmax": 4,
+  "retmode": "json",
+  "sort": "relevance"
+ },
+ "fetched_at": "2026-10-09T12:06:27+00:00",
+ "status": 200,
+ "body": {
+  "header": {
+   "type": "esearch",
+   "version": "0.3"
+  },
+  "esearchresult": {
+   "count": "24",
+   "retmax": "4",
+   "retstart": "0",
+   "idlist": [
+    "21175438",
+    "19245299",
+    "21704240",
+    "22456295"
+   ],
+   "translationset": [],
+   "querytranslation": "(((\"dalcetrapib\"[Title/Abstract] AND (\"pharmacokinetic*\"[Title/Abstract] OR \"pharmacodynamic*\"[Title/Abstract] OR \"target engagement\"[Title/Abstract] OR \"occupancy\"[Title/Abstract] OR \"biomarker*\"[Title/Abstract] OR \"cerebrospinal\"[Title/Abstract])) NOT \"review\"[Publication Type]) NOT \"systematic review\"[Publication Type]) NOT \"meta-analysis\"[Publication Type]"
+  }
+ }
+}

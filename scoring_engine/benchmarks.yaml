@@ -1,0 +1,1778 @@
+# unobio: scorecard, rules, clusters and verdict thresholds
+# Version 1.1, 7 October 2026.
+#
+# This is the single source of truth for steps 6–7 (score, verdict). The code in scoring/ only
+# executes what is described here. Anything marked `basis: expert` or having
+# `assumption: true` is an assumption, not a calibrated value.
+#
+# Condition language (fields `when`, `red`, `green`):
+#   atom:   {fact: <name>, <operator>: <value>}         operators: eq ne ge le gt lt in
+#           {fact: <name>, gt: {fact: <other fact>}}    comparison of two numeric facts
+#           {fact: <name>, known: true|false}           whether the fact is known at all
+#           optional default: <value>, used when the fact is unknown
+#   compound: {all: [...]}, {any: [...]}, {not: {...}}
+# Logic is three-valued: an atom on an unknown fact gives "unknown", and the rule does NOT fire.
+# No kill rule has a default (since version 1.3 also me_too), and none fires on an unknown fact.
+# strong_green: condition for a "strong green" item (weights.green_strong points instead of weights.green).
+# Every place where an unknown fact is treated in a specific way is marked `default` or `known`
+# and listed in the README and in SCORING.md, section 10.
+# `python -m scoring version` prints the version and sha256 of this file; both values are written
+# into every result (res.config), so a verdict can always be tied to the exact rule set.
+#
+# Numeric facts cannot be negative; `max` sets the upper bound.
+# Every asset-level fact must have `dd` (a due-diligence question).
+# Before scoring, consequences are derived from the facts (section `derive` at the bottom), so the verdict
+# does not depend on whether a fact that already follows from others was given.
+
+version: "1.3"
+default_variant: v10
+
+weights:
+  green: 1          # plus for a green item
+  green_strong: 2   # plus for a "strong green": Mendelian genetics; the asset's own positive Phase 2 when already in Phase 3
+  red: 2            # minus for a red item
+  strong: 2         # minus for a strong minus
+  warning: 1        # minus for a warning
+  assumption: true
+
+verdict:
+  neg_dni: 4        # minuses >= 4 → Do Not Invest, pluses do not compensate
+  invest_margin: 2  # pluses − minuses >= 2 → Invest
+  dni_margin: 0     # pluses − minuses <= 0 → Do Not Invest
+  min_pos_conditional: 2
+  require_mechanism_green: true
+  # Invest is possible only with at least one green item that is evidence for this very
+  # mechanism (mechanism_evidence: true): genetics, clinical precedent, translation
+  # chain or clinical effect. Pluses only for disease properties (need,
+  # indication track record, regulatory path) are not enough for Invest: on real pairs
+  # such cases succeed no more often than rejected ones (VALIDATION.md).
+  # Between dni_margin and invest_margin → Conditional, but only if there are at least
+  # min_pos_conditional green items. One green with no minus means
+  # "not enough confirmation", not "mixed picture", and gives Do Not Invest.
+  # Value 1 restores the original behaviour (Conditional for any +1).
+  min_science_pos_invest: 2
+  science_short: "Conditional"
+  conditional_requires_mechanism: true
+  invest_min_items_known: 5
+  invest_min_asset_known: 1
+  # Version 1.3 (independent review F44, S6). Invest needs at least 5 of the 8 scorecard items known, or at least one
+  # asset-level item known; otherwise Conditional with the unknowns listed. Before, three mechanism facts and nothing
+  # about the asset could give Invest (Huntington disease + HTT antisense, 3 of 8).
+  # Conditional, like Invest, is impossible without a green item that is mechanism evidence.
+  # In version 0.4, pluses for disease properties with one warning gave Conditional,
+  # while the same pluses without the warning gave Do Not Invest: a minus improved the verdict.
+  # Version 1.0. Invest requires at least two pluses on the SCIENCE axis (genetics, precedent,
+  # indication track record, translation chain, clinical effect). Two pluses come either from one "strong
+  # green" or from two ordinary ones. On real pairs (VALIDATION.md, section 12) one ordinary
+  # science green leads to launch for 14–17% of pairs against a base of 11.7%, two pluses 20–45%.
+  # If the difference already reaches the Invest threshold and there is mechanism evidence, but fewer than two
+  # science pluses, science_short sets the verdict: "Conditional" (condition: a second science piece of evidence) or
+  # "Do Not Invest". Value 0 for min_science_pos_invest restores the version 0.4 behaviour.
+  assumption: true
+
+# ----------------------------------------------------------------------------
+# FACTS
+# scope: mechanism = disease + target, computed from open data;
+#        asset = a specific drug, usually entered by hand.
+# dd: due-diligence question when the fact is unknown.
+# mvp: where the fact comes from in the first pipeline version (a plan; not yet checked with live requests):
+#      input = input field; open_targets, clinicaltrials = structured fields; clinicaltrials_text,
+#      pubmed_text = text classified by the LLM; curated = static table; derived = derived
+#      from other facts; none = not in MVP sources, only a human adds it (POST /evidence).
+# probes: values the "what would change the verdict" analysis tries.
+# ----------------------------------------------------------------------------
+facts:
+  # --- market and need (mechanism) ---
+  approved_therapies_count:
+    type: int
+    scope: mechanism
+    label: "Number of approved drugs in this indication (any mechanism)"
+    source: "openFDA drug/label indications_and_usage; ChEMBL drug_indication max_phase_for_ind=4"
+    mvp: open_targets
+    probes: [0, 3]
+  soc_last_new_moa_years:
+    type: number
+    scope: mechanism
+    label: "Years since the last approval of a new mechanism in the indication"
+    source: "openFDA drug/drugsfda (original approval dates)"
+    mvp: none
+    probes: [2, 20]
+  active_comparator_exists:
+    type: bool
+    scope: mechanism
+    label: "An active comparator exists (not only supportive care)"
+    source: "Guidelines, HTA decisions; manual"
+    mvp: none
+  approved_same_moa_count:
+    type: int
+    scope: mechanism
+    label: "Approved drugs with the same mechanism in this indication"
+    source: "ChEMBL mechanism + drug_indication; Open Targets drugAndClinicalCandidates"
+    mvp: open_targets
+    probes: [0, 2]
+  ph3_same_moa_count:
+    type: int
+    scope: mechanism
+    label: "Drugs with the same mechanism in Phase 3 (including Chinese sponsors)"
+    source: "ClinicalTrials.gov phase=PHASE3, interventions; WHO ICTRP"
+    mvp: open_targets
+    probes: [0, 3]
+  years_behind_first_in_class:
+    type: number
+    scope: mechanism
+    label: "Years from the first approval in the class to the expected launch"
+    source: "openFDA drug/drugsfda"
+    mvp: none
+    probes: [0, 6]
+  soc_loe_before_launch:
+    type: bool
+    scope: mechanism
+    label: "Standard of care loses exclusivity before or soon after launch"
+    source: "FDA Orange Book / Purple Book"
+    mvp: none
+  required_price_unrealistic:
+    type: bool
+    scope: mechanism
+    label: "Required annual price is unrealistic for the addressable population"
+    source: "Calculation: target peak / number treated; epidemiology from open sources"
+    mvp: none
+  medicare_negotiation_exposure:
+    type: bool
+    scope: mechanism
+    label: "The drug falls under Medicare price negotiation (IRA) during its peak"
+    source: "Modality + 65+ population; 9/13-year rule"
+    mvp: none
+
+  # --- biology (mechanism) ---
+  genetic_support:
+    type: enum
+    values: [no_data, none, other_disease, gwas, mendelian, somatic_driver, contradicts]
+    scope: mechanism
+    label: "Genetic support for the target–disease pair. none = the disease has genetic data, but it does not support this target; no_data = the disease has no genetic data at all"
+    source: "Open Targets: datasourceScores of the pair (not the overall score). Mendelian: gene2phenotype, clingen, genomics_england, orphanet, ClinVar (eva), uniprot_literature; GWAS with a confident gene: gwas_credible_sets with L2G ≥ 0.5; somatic: intogen, cancer_gene_census. Validation on pairs used OMIM, which has a restricted licence; the open sources approximate it"
+    mvp: open_targets
+    probes: [none, mendelian, contradicts]
+  moa_clinical_precedent:
+    type: enum
+    values: [none, approved_unrelated, positive_ph2_3_related, approved_related, positive_ph2_3_same, approved_same]
+    scope: mechanism
+    label: "Clinical precedent of the same mechanism (same target and same direction of action): any drug in this disease, or this or another drug in another disease; a related disease means the same therapeutic area"
+    source: "Open Targets knownDrugs of the target (phase, status, mechanism) + disease.therapeuticAreas; ClinicalTrials.gov results"
+    mvp: open_targets
+    probes: [none, approved_same]
+  independent_groups:
+    type: int
+    scope: mechanism
+    label: "How many independent groups reproduced the key result (do not count the authors of the original work)"
+    source: "PubMed; manual"
+    mvp: pubmed_text
+    probes: [0, 2]
+  perturbation_evidence:
+    type: bool
+    scope: mechanism
+    label: "Causal preclinical evidence: knocking out or blocking the target changes the disease phenotype in cells, tissue or animals"
+    source: "PubMed; Open Targets (CRISPR, animal models)"
+    mvp: open_targets
+  correlational_evidence:
+    type: bool
+    scope: mechanism
+    label: "Correlational evidence: target expression, changes in diseased tissue, pathway membership"
+    source: "Open Targets (expression, pathways); PubMed"
+    mvp: open_targets
+  class_exposure_human:
+    type: bool
+    scope: mechanism
+    label: "Link 2 for the class: another drug with the same mechanism and the same modality reaches the site of action in humans (false = documents say it was looked for and not reached)"
+    source: "FDA labels (pharmacokinetics); PubMed abstracts"
+    mvp: pubmed_text
+  class_target_engagement_human:
+    type: bool
+    scope: mechanism
+    label: "Link 3 for the class: another drug with the same mechanism engages the target in humans (binding, occupancy, lower target protein or mRNA)"
+    source: "FDA labels (pharmacodynamics); PubMed abstracts"
+    mvp: pubmed_text
+  class_pd_response_human:
+    type: bool
+    scope: mechanism
+    label: "Link 4 for the class: a downstream biomarker changes in humans with another drug of the same mechanism"
+    source: "FDA labels (pharmacodynamics); PubMed abstracts"
+    mvp: pubmed_text
+  moa_discontinued_safety_count:
+    type: int
+    scope: mechanism
+    label: "How many programs on this target were discontinued for safety"
+    source: "ClinicalTrials.gov whyStopped; press releases; ChEMBL"
+    mvp: clinicaltrials_text
+    probes: [0, 1, 2]
+  moa_crl_safety:
+    type: bool
+    scope: mechanism
+    label: "Another drug with the same mechanism received a CRL for safety"
+    source: "FDA letters (since 2025), press releases, company filings"
+    mvp: none
+  moa_adcom_negative:
+    type: bool
+    scope: mechanism
+    label: "An FDA advisory committee voted against another drug with the same mechanism"
+    source: "FDA advisory committee minutes"
+    mvp: none
+  class_drug_related_deaths:
+    type: bool
+    scope: mechanism
+    label: "Trials of drugs of the same class had drug-related deaths"
+    source: "ClinicalTrials.gov adverseEventsModule; FDA labels"
+    mvp: none
+  indication_accelerated_withdrawn:
+    type: bool
+    scope: mechanism
+    label: "Accelerated approvals in this disease were withdrawn"
+    source: "FDA: withdrawn accelerated approvals"
+    mvp: none
+  indication_enrollment_terminations_high:
+    type: bool
+    scope: mechanism
+    label: "Trials in this disease were often stopped for enrollment"
+    source: "ClinicalTrials.gov whyStopped"
+    mvp: clinicaltrials_text
+  route_of_administration:
+    type: enum
+    values: [oral, subcutaneous, iv_infusion, intrathecal, inhaled, topical, other]
+    scope: mechanism
+    label: "Route of administration"
+    source: "Input"
+    mvp: input
+  foundational_retraction:
+    type: bool
+    scope: mechanism
+    label: "The foundational paper was retracted"
+    source: "Retraction Watch / Crossref; PubMed publication type"
+    mvp: pubmed_text
+  moa_failures_efficacy_ph23:
+    type: int
+    scope: mechanism
+    label: "OTHER drugs (not this asset) with the same mechanism, direction and disease that failed Phase 2/3 for efficacy"
+    source: "ClinicalTrials.gov whyStopped, resultsSection; only futility or a missed endpoint"
+    mvp: clinicaltrials_text
+    probes: [0, 1, 2]
+  moa_successes_same_indication:
+    type: int
+    scope: mechanism
+    label: "Successes of the same mechanism in this disease (positive Phase 2/3 or approval)"
+    source: "ClinicalTrials.gov; openFDA"
+    mvp: open_targets
+    probes: [0, 1]
+
+  # --- indication (mechanism) ---
+  indication_graveyard:
+    type: bool
+    scope: mechanism
+    label: "The indication is on the curated 'graveyard' list (history of failures, poor translation, high placebo response)"
+    source: "Static table indication_graveyards"
+    mvp: curated
+  indication_failures_other_moa_ph3_10y:
+    type: int
+    scope: mechanism
+    label: "Phase 3 efficacy failures of OTHER mechanisms in this indication over 10 years"
+    source: "ClinicalTrials.gov"
+    mvp: clinicaltrials_text
+    probes: [0, 3]
+  indication_ph3_outcomes_other_moa:
+    type: int
+    scope: mechanism
+    label: "How many OTHER targets have a known Phase 3 outcome in this disease"
+    source: "ClinicalTrials.gov; Open Targets drugAndClinicalCandidates"
+    mvp: open_targets
+    probes: [0, 10]
+  indication_ph3_success_share_other_moa:
+    type: number
+    max: 1
+    scope: mechanism
+    label: "Share of OTHER targets that passed Phase 3 in this disease (0–1)"
+    source: "Calculated from the same data"
+    mvp: open_targets
+    probes: [0.2, 0.8]
+  indication_new_moa_approvals_10y:
+    type: int
+    scope: mechanism
+    label: "Approvals of new mechanisms in this indication over 10 years"
+    source: "openFDA drug/drugsfda"
+    mvp: none
+    probes: [0, 1]
+  life_threatening_indication:
+    type: bool
+    scope: mechanism
+    label: "The disease is directly life-threatening (oncology and similar)"
+    source: "Therapeutic area; manual"
+    mvp: derived
+  oncology:
+    type: bool
+    scope: mechanism
+    label: "Oncology indication"
+    source: "Open Targets disease.therapeuticAreas"
+    mvp: open_targets
+  rare_disease:
+    type: bool
+    scope: mechanism
+    label: "Rare disease"
+    source: "Orphadata"
+    mvp: open_targets
+  chronic_non_oncology:
+    type: bool
+    scope: mechanism
+    label: "Chronic non-oncology disease"
+    source: "Therapeutic area; manual"
+    mvp: none
+
+  # --- target and class safety (mechanism) ---
+  class_safety_signal:
+    type: bool
+    scope: mechanism
+    label: "The class (same target or format) has a boxed warning or a known adverse effect"
+    source: "openFDA drug/label boxed_warning; ChEMBL drug_warning"
+    mvp: open_targets
+  class_withdrawal:
+    type: bool
+    scope: mechanism
+    label: "A drug of the same class was withdrawn for safety"
+    source: "ChEMBL withdrawn_flag, drug_warning"
+    mvp: open_targets
+  target_safety_flags:
+    type: int
+    scope: mechanism
+    label: "Composite target safety flag, 0–6"
+    max: 6
+    source: "Open Targets geneticConstraint, prioritisation, safetyLiabilities, interactions"
+    mvp: open_targets
+    probes: [0, 2, 4]
+  essential_gene:
+    type: bool
+    scope: mechanism
+    label: "The target is a common essential gene (DepMap common essential)"
+    source: "Open Targets isEssential / DepMap"
+    mvp: open_targets
+  moa_direction:
+    type: enum
+    values: [inhibit, activate]
+    scope: mechanism
+    label: "Direction of action on the target"
+    source: "ChEMBL mechanism.action_type"
+    mvp: input
+
+  # --- modality (mechanism + modality) ---
+  modality:
+    type: enum
+    values: [small_molecule, antibody, adc, bispecific, cell, gene, rna, radioligand, peptide, vaccine, other]
+    scope: mechanism
+    label: "Modality"
+    source: "Input; ChEMBL molecule_type"
+    mvp: input
+  modality_target_mismatch:
+    type: bool
+    scope: mechanism
+    label: "The modality physically cannot reach the target"
+    source: "Open Targets target.tractability + localisation from UniProt"
+    mvp: open_targets
+  tractability:
+    type: enum
+    values: [none, predicted, clinical, approved]
+    scope: mechanism
+    label: "Highest tractability bucket for this modality and target"
+    source: "Open Targets target.tractability{modality label value}"
+    mvp: open_targets
+    probes: [none, approved]
+
+  # --- regulatory path ---
+  accepted_endpoint_exists:
+    type: bool
+    scope: mechanism
+    label: "A regulator-accepted endpoint exists for the indication"
+    source: "FDA surrogate endpoint table; FDA guidance for the disease"
+    mvp: curated
+  endpoint_approval_precedent:
+    type: bool
+    scope: mechanism
+    label: "There is an approval precedent in the indication on this endpoint (stronger if the mechanism column matches)"
+    source: "FDA Table of Surrogate Endpoints; openFDA label"
+    mvp: curated
+  natural_history_data:
+    type: bool
+    scope: mechanism
+    label: "Natural history data for the disease exist"
+    source: "ClinicalTrials.gov studyType=OBSERVATIONAL; PubMed"
+    mvp: clinicaltrials
+  fda_designations_count:
+    type: int
+    scope: asset
+    label: "Number of FDA designations (orphan, breakthrough, fast track, RMAT)"
+    source: "FDA Orphan Drug Designations; press releases"
+    mvp: none
+    dd: "Which FDA designations does the asset have, and on what data were they granted?"
+    probes: [0, 1]
+
+  # --- asset: stage and evidence of action ---
+  phase:
+    type: enum
+    values: [preclinical, ph1, ph2, ph3, filed]
+    scope: asset
+    label: "Asset stage"
+    source: "Input; ClinicalTrials.gov"
+    mvp: input
+    dd: "At what development stage is the asset in this indication?"
+  animal_model_response:
+    type: bool
+    scope: asset
+    label: "Response in an animal model of the disease"
+    source: "Data room; publications"
+    mvp: input
+    dd: "Is there a response in a relevant animal model, and who reproduced it?"
+  pillars_human:
+    type: int
+    scope: asset
+    label: "How many of the three pillars are shown in humans (exposure at the site of action, target binding, pharmacological effect)"
+    max: 3
+    source: "Phase 1 endpoints in ClinicalTrials.gov; data room"
+    mvp: input
+    dd: "Has exposure at the site of action, target binding and pharmacological effect been shown in humans?"
+    probes: [0, 3]
+  link_exposure:
+    type: bool
+    scope: asset
+    label: "Link 2: effective exposure is reachable in the right tissue in humans (false = known not to be)"
+    source: "Phase 1 (PK); data room; input"
+    mvp: input
+    dd: "Is effective exposure reachable safely in humans, and does the drug reach the right tissue?"
+  link_target_engagement:
+    type: bool
+    scope: asset
+    label: "Link 3: target engagement shown in humans in the relevant tissue (false = known not to be)"
+    source: "Phase 1 (PD, receptor occupancy); data room; input"
+    mvp: input
+    dd: "Has target engagement been shown in relevant human tissue?"
+  link_pd_response:
+    type: bool
+    scope: asset
+    label: "Link 4: biological response in humans, a pharmacodynamic biomarker changes (false = known not to)"
+    source: "Phase 1–2 (biomarkers); data room; input"
+    mvp: input
+    dd: "Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?"
+  own_ph2_positive:
+    type: bool
+    scope: asset
+    label: "The asset's own Phase 2 in this indication met its primary endpoint"
+    source: "ClinicalTrials.gov resultsSection"
+    mvp: none
+    dd: "What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?"
+  own_trial_failed_efficacy:
+    type: bool
+    scope: asset
+    label: "The asset's own trial in this indication failed for efficacy"
+    source: "ClinicalTrials.gov whyStopped, results"
+    mvp: none
+    dd: "What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?"
+  drug_approved_other_indication:
+    type: bool
+    scope: asset
+    label: "This drug is already approved in another indication (whether it is related is set by moa_clinical_precedent)"
+    source: "ChEMBL max_phase=4; openFDA drug/drugsfda"
+    mvp: none
+    dd: "Is this drug approved in another indication, and in which jurisdictions?"
+
+  # --- asset: trial design ---
+  randomized_controlled:
+    type: bool
+    scope: asset
+    label: "The registrational (pivotal) trial is randomized and controlled"
+    source: "ClinicalTrials.gov designInfo.allocation"
+    mvp: none
+    dd: "What is the design of the pivotal trial, and why was it chosen?"
+  endpoint_matches_mechanism:
+    type: bool
+    scope: asset
+    label: "The primary endpoint measures what the drug is supposed to do"
+    source: "ClinicalTrials.gov primaryOutcomes; manual"
+    mvp: none
+    dd: "What is the primary endpoint, and how is it linked to the drug's mechanism of action?"
+  dose_ranging_done:
+    type: bool
+    scope: asset
+    label: "Phase 2 compared at least two dose levels"
+    source: "ClinicalTrials.gov armGroups"
+    mvp: none
+    dd: "Provide the dose-selection data: which levels were compared, and how was the Phase 3 dose chosen?"
+  open_label_subjective_endpoint:
+    type: bool
+    scope: asset
+    label: "Open-label design with a subjective primary endpoint"
+    source: "ClinicalTrials.gov maskingInfo.masking=NONE + endpoint type"
+    mvp: none
+    dd: "What is the design of the pivotal trial, and why was it chosen?"
+  biomarker_selection:
+    type: bool
+    scope: asset
+    label: "Patients are selected by a biomarker"
+    source: "ClinicalTrials.gov eligibilityCriteria"
+    mvp: input
+    dd: "Are patients selected by a biomarker, and is there a validated test for it?"
+  posthoc_subgroup_thesis:
+    type: bool
+    scope: asset
+    label: "The thesis rests on a subgroup found post hoc"
+    source: "ClinicalTrials.gov: failure in all patients, new trial in a subgroup"
+    mvp: none
+    dd: "Does the thesis rest on a subgroup found after a failure in all patients?"
+  single_country_ex_us_pivotal:
+    type: bool
+    scope: asset
+    label: "Registrational data from a single country outside the US"
+    source: "ClinicalTrials.gov contactsLocationsModule"
+    mvp: none
+    dd: "In which countries were the registrational trials run, and has this been agreed with the FDA?"
+  single_arm_pivotal:
+    type: bool
+    scope: asset
+    label: "The registrational trial is single-arm"
+    source: "ClinicalTrials.gov designInfo"
+    mvp: none
+    dd: "What is the design of the pivotal trial, and why was it chosen?"
+  accelerated_only:
+    type: bool
+    scope: asset
+    label: "The path relies only on accelerated approval"
+    source: "FDA surrogate endpoint table, type Accelerated"
+    mvp: none
+    dd: "Does the path rely on accelerated approval, and has a confirmatory trial started?"
+  confirmatory_trial_registered:
+    type: bool
+    scope: asset
+    label: "A randomized confirmatory trial is registered"
+    source: "ClinicalTrials.gov"
+    mvp: none
+    dd: "Does the path rely on accelerated approval, and has a confirmatory trial started?"
+  ph2_under_enrollment:
+    type: bool
+    scope: asset
+    label: "Phase 2 under-enrolled or was stopped for enrollment"
+    source: "ClinicalTrials.gov enrollmentInfo actual vs anticipated, whyStopped"
+    mvp: none
+    dd: "How did enrollment go against plan in previous trials?"
+  primary_endpoint_changed:
+    type: bool
+    scope: asset
+    label: "The primary endpoint was changed after trial registration"
+    source: "ClinicalTrials.gov version history; manual"
+    mvp: none
+    dd: "Was the primary endpoint changed after the trial started, and why?"
+
+  # --- asset: safety and regulatory events ---
+  grade5_related:
+    type: bool
+    scope: asset
+    label: "There were drug-related deaths (grade 5)"
+    source: "ClinicalTrials.gov adverseEventsModule; data room"
+    mvp: none
+    dd: "Were there deaths or serious drug-related events? Provide the full safety table."
+  grade4_related:
+    type: bool
+    scope: asset
+    label: "There were severe, life-threatening drug-related grade 4 adverse events"
+    source: "ClinicalTrials.gov adverseEventsModule; data room"
+    mvp: none
+    dd: "Were there deaths or serious drug-related events? Provide the full safety table."
+  toxicity_at_efficacious_exposure:
+    type: bool
+    scope: asset
+    label: "Toxicity at efficacious exposure (narrow therapeutic index)"
+    source: "Data room (GLP toxicology)"
+    mvp: none
+    dd: "What is the margin between efficacious and toxic exposure in the most sensitive species?"
+  crl_reason:
+    type: enum
+    values: [none, efficacy, safety, manufacturing, undisclosed]
+    scope: asset
+    label: "FDA complete response letter and its reason (undisclosed = there was a letter, the reason was not disclosed; if you do not know whether there was a letter, leave the fact out)"
+    source: "openFDA (published CRLs since 2025); press releases; 8-K"
+    mvp: none
+    dd: "Did the asset receive an FDA complete response letter, and what is the verbatim reason?"
+    probes: [none, efficacy, manufacturing]
+  adcom_negative:
+    type: bool
+    scope: asset
+    label: "Negative FDA advisory committee vote"
+    source: "FDA calendar and minutes; manual"
+    mvp: none
+    dd: "What were the interactions with the FDA: advisory committee votes, letters on data quality or integrity?"
+  fda_data_integrity_letter:
+    type: bool
+    scope: asset
+    label: "FDA letter on unreliable clinical data"
+    source: "FDA Warning Letters; manual"
+    mvp: none
+    dd: "What were the interactions with the FDA: advisory committee votes, letters on data quality or integrity?"
+
+  # --- asset: IP and rights ---
+  patent_status:
+    type: enum
+    values: [granted, pending, expired, none]
+    scope: asset
+    label: "Status of the key patent"
+    source: "Orange Book (approved only); Google Patents, Lens.org, EPO; data room"
+    mvp: none
+    dd: "Provide the patent list: type of protection, jurisdictions, expiry dates, freedom-to-operate opinion."
+    probes: [granted, none]
+  key_patent_license:
+    type: enum
+    values: [owned, exclusive, non_exclusive, field_excludes_lead]
+    scope: asset
+    label: "Rights to the key patent"
+    source: "10-K «License agreements» (EDGAR); USPTO Patent Assignment Search"
+    mvp: none
+    dd: "Who owns the key patent, and is the licence exclusive for the lead indication?"
+    probes: [exclusive, non_exclusive]
+  key_markets_outlicensed:
+    type: bool
+    scope: asset
+    label: "Rights to the US or the EU have already been out-licensed"
+    source: "8-K, press releases; data room"
+    mvp: none
+    dd: "Which territories remain with the company? Are US and EU rights retained?"
+  nonkey_territories_outlicensed_count:
+    type: int
+    scope: asset
+    label: "Number of out-licensed territories outside the US and the EU"
+    source: "8-K, press releases"
+    mvp: none
+    dd: "Which territories remain with the company? Are US and EU rights retained?"
+    probes: [0, 2]
+  royalty_stack_pct:
+    type: number
+    scope: asset
+    label: "Total upper-tier royalties, %"
+    max: 100
+    source: "10-K, agreements in EDGAR"
+    mvp: none
+    dd: "What royalties and milestone payments are owed to licensors? What is the total rate?"
+    probes: [3, 12]
+
+  # --- asset: differentiation ---
+  differentiation_claim:
+    type: enum
+    values: [none, convenience, price_only, structural_cost, safety, efficacy]
+    scope: asset
+    label: "Claimed differentiation from the standard of care"
+    source: "User input; company presentations"
+    mvp: none
+    dd: "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+    probes: [none, efficacy]
+  price_channel_direct:
+    type: bool
+    scope: asset
+    label: "A channel where the payer captures the savings itself (hospitals, tenders, out-of-pocket)"
+    source: "Route of administration; CMS Part B / Part D"
+    mvp: derived
+    dd: "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+  differentiation_evidence:
+    type: bool
+    scope: asset
+    label: "Differentiation is confirmed by clinical data (false = the claim was checked and not confirmed)"
+    source: "ClinicalTrials.gov results; publications"
+    mvp: none
+    dd: "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+
+  # --- company ---
+  sponsor_size:
+    type: enum
+    values: [small, mid, large]
+    scope: asset
+    label: "Sponsor size"
+    source: "EDGAR; input"
+    mvp: none
+    dd: "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+  sponsor_prior_approvals:
+    type: int
+    scope: asset
+    label: "Sponsor's prior approvals"
+    source: "openFDA drug/drugsfda sponsor_name"
+    mvp: none
+    dd: "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+    probes: [0, 1]
+  big_pharma_partner:
+    type: bool
+    scope: asset
+    label: "A big-pharma partner on this asset"
+    source: "ClinicalTrials.gov collaborators; 8-K Item 1.01"
+    mvp: none
+    dd: "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+  partner_returned_asset:
+    type: bool
+    scope: asset
+    label: "A partner returned the asset (licence terminated)"
+    source: "EDGAR 8-K Item 1.02; press releases"
+    mvp: none
+    dd: "Has a partner ever returned rights to the asset, and why?"
+  runway_short:
+    type: bool
+    scope: asset
+    label: "Cash does not last until the next readout plus 6 months, or there is a going-concern warning"
+    source: "XBRL: cash / annual burn; 10-K going concern"
+    mvp: none
+    dd: "How many months of cash are left, and when is the next data readout?"
+  cmo_oai_or_warning_letter:
+    type: bool
+    scope: asset
+    label: "A site or contract manufacturer has an OAI status or a warning letter within 3 years"
+    source: "FDA Inspection Classification Database; Warning Letters"
+    mvp: none
+    dd: "Who manufactures the drug, and what is the status of the last FDA inspection?"
+
+# ----------------------------------------------------------------------------
+# SCORECARD
+# Colour order: red → green → yellow (at least one known fact) → unknown.
+# evidence_facts: which facts count as "something is known"; without the field, facts from red and green are used.
+# set: base = the eight current items; legacy = the unsplit "Biology" and "Drug does what it claims", for comparison only.
+# Rejected candidates (commercial position, target safety, modality, sponsor) were dropped during validation.
+# ----------------------------------------------------------------------------
+scorecard:
+  - id: unmet_need
+    set: base
+    axis: commercial
+    name: "Unmet need"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst (Q&A 6.10.2026); comparator sub-signal: HTA assessments. Rests only on expert logic: on real pairs the item is not associated with launch (VALIDATION.md, sections 5 and 12.5)"
+    red:
+      all:
+        - any:
+            - {fact: approved_therapies_count, ge: 3}
+            - {fact: approved_same_moa_count, ge: 3}
+            - {fact: indication_new_moa_approvals_10y, ge: 3}
+        - {fact: soc_last_new_moa_years, le: 5}
+    green:
+      any:
+        - {fact: approved_therapies_count, eq: 0}
+        - {fact: soc_last_new_moa_years, ge: 15}
+        - {fact: active_comparator_exists, eq: false}
+    thresholds_assumption: "3 drugs, 5 and 15 years"
+
+  - id: biology
+    set: legacy
+    axis: science
+    mechanism_evidence: true
+    name: "Biology"
+    scope: mechanism
+    basis: mixed
+    source: "Minikel 2024 (genetics 2.6×, Mendelian 3.7×); King 2019; Siah 2021 (precedent, rank only)"
+    red:
+      {fact: genetic_support, eq: contradicts}
+    green:
+      any:
+        - {fact: genetic_support, in: [gwas, mendelian, somatic_driver]}
+        - {fact: moa_clinical_precedent, in: [positive_ph2_3_related, approved_related, positive_ph2_3_same, approved_same]}
+    note: "Literature, mice, expression or genetics of an unrelated disease give at most yellow."
+
+  - id: indication_history
+    set: legacy
+    axis: science
+    name: "Indication is not 'cursed' (version 0.3)"
+    scope: mechanism
+    basis: mixed
+    source: "Unobio analyst; Phase 3 success rates by disease; curated list"
+    red:
+      any:
+        - {fact: indication_graveyard, eq: true}
+        - all:
+            - {fact: indication_failures_other_moa_ph3_10y, ge: 3}
+            - {fact: indication_new_moa_approvals_10y, eq: 0}
+    green:
+      all:
+        - {fact: indication_graveyard, ne: true, default: false}
+        - any:
+            - {fact: indication_new_moa_approvals_10y, ge: 1}
+            - {fact: indication_failures_other_moa_ph3_10y, le: 1}
+    note: "Failures of OTHER mechanisms count; failures of this mechanism go to rules. Green means 'not cursed': either something new was approved here, or late failures were almost absent. Many approvals also lower unmet need: these are two different axes, and they can have opposite colours."
+    thresholds_assumption: "3 failures in 10 years"
+
+  - id: does_what_claimed
+    set: legacy
+    axis: science
+    mechanism_evidence: true
+    name: "Drug does what it claims"
+    scope: asset
+    basis: mixed
+    source: "Morgan 2012 (Pfizer's three pillars); Lo 2019 (own prior trial, ranks 1–2)"
+    red:
+      any:
+        - {fact: own_trial_failed_efficacy, eq: true}
+        - all:
+            - {fact: pillars_human, eq: 0}
+            - {fact: phase, in: [ph2, ph3, filed]}
+            - {fact: own_ph2_positive, ne: true, default: false}
+            - {fact: drug_approved_other_indication, ne: true, default: false}
+    green:
+      any:
+        - {fact: pillars_human, eq: 3}
+        - {fact: own_ph2_positive, eq: true}
+        - {fact: drug_approved_other_indication, eq: true}
+    evidence_facts: [pillars_human, own_ph2_positive, own_trial_failed_efficacy, drug_approved_other_indication, animal_model_response]
+    note: "Only an animal response or 1–2 pillars give yellow. Stage alone means nothing."
+
+  - id: trial_design
+    set: base
+    axis: commercial
+    name: "Trial design"
+    scope: asset
+    basis: mixed
+    source: "Unobio analyst; Sacks 2014 (dose uncertainty in 15.9% of failed submissions)"
+    red:
+      any:
+        - {fact: endpoint_matches_mechanism, eq: false}
+        - {fact: open_label_subjective_endpoint, eq: true}
+    green:
+      all:
+        - {fact: endpoint_matches_mechanism, eq: true}
+        - {fact: dose_ranging_done, ne: false, default: true}
+        - any:
+            - {fact: randomized_controlled, eq: true}
+            - {fact: biomarker_selection, eq: true}
+    evidence_facts: [randomized_controlled, endpoint_matches_mechanism, dose_ranging_done, open_label_subjective_endpoint, biomarker_selection]
+    note: "This item rates this particular trial. Whether the regulator accepts such an endpoint in the indication is rated by 'Regulatory path': one precedent must not give two greens."
+
+  - id: regulatory_path
+    set: base
+    axis: commercial
+    name: "Regulatory path"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst (Q&A 6.10.2026: FDA designations, rare and paediatric diseases); FDA Table of Surrogate Endpoints; BIO 2021"
+    red:
+      {fact: accepted_endpoint_exists, eq: false}
+    green:
+      any:
+        - {fact: fda_designations_count, ge: 1}
+        - {fact: endpoint_approval_precedent, eq: true}
+        - {fact: rare_disease, eq: true}
+    evidence_facts: [accepted_endpoint_exists, endpoint_approval_precedent, fda_designations_count, natural_history_data]
+    note: "A rare disease gives green even without known asset designations: the path to orphan status is open (analyst's words; BIO 2021: rare non-oncology diseases 17.0% from Phase 1 to approval vs 5.9% for common chronic ones). Red for a missing accepted endpoint wins."
+
+  # ---------------- the two halves of the former "Drug does what it claims" ----------------
+  - id: mechanism_in_human
+    set: legacy
+    axis: science
+    mechanism_evidence: true
+    name: "Mechanism of action shown in humans (version 0.3)"
+    scope: asset
+    basis: mixed
+    source: "Morgan 2012 (Pfizer's three pillars)"
+    red:
+      all:
+        - {fact: pillars_human, eq: 0}
+        - {fact: phase, in: [ph2, ph3, filed]}
+        - {fact: own_ph2_positive, ne: true, default: false}
+        - {fact: drug_approved_other_indication, ne: true, default: false}
+    green:
+      any:
+        - {fact: pillars_human, eq: 3}
+        - {fact: drug_approved_other_indication, eq: true}
+    evidence_facts: [pillars_human, drug_approved_other_indication, animal_model_response]
+    note: "Exposure at the site of action, target binding, pharmacological effect. Only an animal response or 1–2 pillars give yellow."
+
+  - id: clinical_effect
+    set: base
+    axis: science
+    mechanism_evidence: true
+    name: "Clinical effect shown"
+    scope: asset
+    basis: evidence
+    source: "Lo 2019 (outcome and status of the asset's own trial: ranks 1–2 among all features); BIO 2021 (Phase 2 to approval 15.1%, Phase 3 52.4%)"
+    red:
+      {fact: own_trial_failed_efficacy, eq: true}
+    green:
+      {fact: own_ph2_positive, eq: true}
+    strong_green:
+      all:
+        - {fact: own_ph2_positive, eq: true}
+        - {fact: phase, in: [ph3, filed]}
+    strong_share_assumption: 0.5
+    note: "Outcome of the asset's own trial in this indication. Unknown for assets before Phase 2. Strong green (2 pluses) only when the asset moved to Phase 3 after a positive Phase 2: for exactly these programs BIO 2021 gives 52.4% to approval vs 15.1% from the start of Phase 2. A claim of a positive Phase 2 alone gives an ordinary green: it often comes from the sponsor, and there is no data to check it."
+
+  # ---------------- the two halves of the former "Biology" ----------------
+  - id: human_genetics
+    set: base
+    axis: science
+    mechanism_evidence: true
+    name: "Human genetics"
+    scope: mechanism
+    basis: evidence
+    source: "Minikel 2024 (2.6×, Mendelian 3.7×); Nelson 2015; King 2019; validation on pairs (VALIDATION.md, section 12)"
+    red:
+      {fact: genetic_support, eq: contradicts}
+    green:
+      {fact: genetic_support, in: [gwas, mendelian, somatic_driver]}
+    strong_green:
+      {fact: genetic_support, eq: mendelian}
+    strong_share_assumption: 0.2
+    evidence_facts: [genetic_support, perturbation_evidence, correlational_evidence]
+    note: "Only causal evidence in humans gives green. Causal preclinical (perturbation_evidence), correlational (correlational_evidence), genetics of an unrelated disease or GWAS without a confident gene give at most yellow. Mendelian genetics is a strong green (2 pluses): alone, without precedent or indication track record, it leads to launch for 37–40% of pairs; GWAS with a confident gene alone 14–17%; a somatic driver alone 5–7% (small sample)."
+
+  - id: clinical_precedent
+    set: base
+    axis: science
+    mechanism_evidence: true
+    name: "Mechanism clinical precedent"
+    scope: mechanism
+    basis: evidence
+    source: "Unobio analyst ('validated path'); Siah 2021, Lo 2019 (rank, no magnitude); validation on pairs (VALIDATION.md, section 12)"
+    green:
+      {fact: moa_clinical_precedent, in: [positive_ph2_3_related, approved_related, positive_ph2_3_same, approved_same]}
+    note: "No red: mechanism failures are already counted by rules. Green only for a precedent in this or a related disease (same therapeutic area): on real pairs, approval of the target only in other areas gives no advantage (6.6–7.9% launch vs 5.5–9.2% with no precedent at all)."
+
+  # ---------------- version 0.4 ----------------
+  - id: indication_track_record
+    set: base
+    axis: science
+    name: "Indication track record"
+    scope: mechanism
+    basis: evidence
+    source: "Validated on Minikel 2024 pairs (VALIDATION.md): Phase 3 success share of other targets in the disease"
+    red:
+      {fact: indication_graveyard, eq: true}
+    green:
+      all:
+        - {fact: indication_graveyard, ne: true, default: false}
+        - {fact: indication_ph3_outcomes_other_moa, ge: 5}
+        - {fact: indication_ph3_success_share_other_moa, ge: 0.7}
+    note: "Only OTHER targets count. Fewer than five known Phase 3 outcomes or a share below 70%: yellow. Red for a low share (< 40%) failed validation: on the held-out half of the data such pairs did not differ from yellow ones (7.7% vs 7.0% launch), so only the curated list gives red."
+    thresholds_assumption: "5 outcomes and 70%: chosen on one half of real pairs, green confirmed on the other."
+
+  - id: indication_track_record_with_red
+    set: legacy
+    axis: science
+    name: "Indication track record (variant with red by share; failed validation)"
+    scope: mechanism
+    basis: evidence
+    source: "Validated on Minikel 2024 pairs (VALIDATION.md): Phase 3 success share of other targets in the disease"
+    red:
+      any:
+        - {fact: indication_graveyard, eq: true}
+        - all:
+            - {fact: indication_ph3_outcomes_other_moa, ge: 5}
+            - {fact: indication_ph3_success_share_other_moa, lt: 0.4}
+    green:
+      all:
+        - {fact: indication_graveyard, ne: true, default: false}
+        - {fact: indication_ph3_outcomes_other_moa, ge: 5}
+        - {fact: indication_ph3_success_share_other_moa, ge: 0.7}
+    note: "Only OTHER targets count. Fewer than five known Phase 3 outcomes: yellow."
+    thresholds_assumption: "5 outcomes; 40% and 70%. Thresholds chosen on one half of real pairs and checked on the other."
+
+  - id: translation_chain
+    set: base
+    axis: science
+    mechanism_evidence: true
+    name: "Translation chain"
+    scope: asset
+    basis: mixed
+    source: "Organisers' brief; Morgan 2012 (Pfizer's three pillars)"
+    red:
+      all:
+        - {fact: own_ph2_positive, ne: true, default: false}
+        - {fact: drug_approved_other_indication, ne: true, default: false}
+        - any:
+            - {fact: link_exposure, eq: false}
+            - {fact: link_target_engagement, eq: false}
+            - {fact: link_pd_response, eq: false}
+            - all:
+                - {fact: pillars_human, eq: 0}
+                - {fact: phase, in: [ph2, ph3, filed]}
+    green:
+      any:
+        - all:
+            - {fact: link_exposure, eq: true}
+            - {fact: link_target_engagement, eq: true}
+            - {fact: link_pd_response, eq: true}
+        - {fact: pillars_human, eq: 3}
+    evidence_facts: [link_exposure, link_target_engagement, link_pd_response, pillars_human, drug_approved_other_indication, animal_model_response, class_exposure_human, class_target_engagement_human, class_pd_response_human]
+    note: "Links: 1 molecular effect (animal_model_response; a break is a strong minus), 2 exposure, 3 target engagement, 4 biological response, 5 patient benefit (item 'Clinical effect'). A broken link 2–4 gives red unless there is a positive Phase 2 or an approval elsewhere. Red for 'no link at all' requires an EXPLICIT pillars_human: 0 from a human or from the data room; data not entered give no red. Since version 1.1, approval of the drug in another indication gives no green: it only protects from red and makes the item yellow. It is evidence for THIS disease only when the other disease is related, and that is counted by the 'Clinical precedent' item (on real pairs, approval of the target in an unrelated area gives no advantage). pillars_human is kept for compatibility: the number of shown links 2–4. Since version 1.2 the class facts (links 2–4 shown for another drug of the same mechanism) make the item yellow, never green: green needs the asset's own links."
+
+# Scorecard variants for comparison on cases and in the state-space sweep.
+variants:
+  v10: [unmet_need, human_genetics, clinical_precedent, indication_track_record, translation_chain, clinical_effect, trial_design, regulatory_path]
+  base8: [unmet_need, human_genetics, clinical_precedent, indication_history, mechanism_in_human, clinical_effect, trial_design, regulatory_path]
+  base7: [unmet_need, human_genetics, clinical_precedent, indication_history, does_what_claimed, trial_design, regulatory_path]
+  legacy6: [unmet_need, biology, indication_history, does_what_claimed, trial_design, regulatory_path]
+
+# ----------------------------------------------------------------------------
+# CLUSTERS
+# From each cluster only the strongest firing counts as minuses, not the sum.
+# Cluster membership is an assumption.
+# ----------------------------------------------------------------------------
+cluster_axis:
+  safety: science
+  competition: commercial
+  pricing: commercial
+  trial_conduct: commercial
+  regulatory_events: commercial
+  manufacturing: commercial
+  licensing: commercial
+  sponsor_finance: commercial
+
+clusters:
+  safety: "Asset, class and target safety"
+  competition: "Competition within the mechanism"
+  pricing: "Price and reimbursement"
+  trial_conduct: "Trial design and conduct"
+  regulatory_events: "Regulatory events"
+  manufacturing: "Manufacturing"
+  licensing: "Licensing burden"
+  sponsor_finance: "Sponsor finances and partners"
+
+# ----------------------------------------------------------------------------
+# RULES
+# tier: kill (immediately Do Not Invest) | strong (2 minuses) | warning (1 minus)
+# ----------------------------------------------------------------------------
+rules:
+  # ============ KILL ============
+  - id: mechanism_refuted
+    tier: kill
+    name: "Mechanism refuted"
+    scope: mechanism
+    basis: mixed
+    source: "Hwang 2016 (640 late-phase drugs: 54% failed, 57% of them for efficacy; checked); the 'two failures' threshold is expert"
+    when:
+      all:
+        - {fact: moa_failures_efficacy_ph23, ge: 2}
+        - {fact: moa_successes_same_indication, eq: 0}
+    note: "Kills only when the absence of successes is known. If nothing is known about successes, the strong minus one_mechanism_failure fires instead."
+
+  - id: me_too
+    tier: kill
+    name: "Me-too: differentiation checked and not confirmed"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst; McKinsey, L.E.K.; independent review 2026-10-08 (F38: the old rule killed Trulicity)"
+    when:
+      all:
+        - {fact: approved_same_moa_count, ge: 2}
+        - {fact: differentiation_evidence, eq: false}
+    note: "Since version 1.3 a kill only when the differentiation claim was checked against data and not confirmed. An undeclared or unproven differentiation is the strong minus me_too_unproven instead: the old kill rule gave Do Not Invest for Trulicity at the start of Phase 3 (third-fourth GLP-1, US peak sales $5.69B)."
+
+  - id: me_too_unproven
+    tier: strong
+    cluster: competition
+    name: "Me-too: late, differentiation not shown"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst; McKinsey, L.E.K.; independent review 2026-10-08 (M6)"
+    when:
+      all:
+        - {fact: approved_same_moa_count, ge: 2}
+        - not:
+            any:
+              - all:
+                  - {fact: differentiation_claim, in: [efficacy, safety, structural_cost], default: none}
+                  - {fact: differentiation_evidence, ne: false, default: true}
+              - all:
+                  - {fact: differentiation_claim, eq: price_only, default: none}
+                  - {fact: price_channel_direct, eq: true, default: false}
+                  - {fact: differentiation_evidence, ne: false, default: true}
+    note: "The old me-too kill condition, now a strong minus with due-diligence questions (comparative data, device, payers, sales force). Undeclared differentiation counts as absent (analyst's position); dosing convenience is not differentiation."
+
+  - id: drug_related_deaths
+    tier: kill
+    name: "Drug-related deaths in a non-fatal disease"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst"
+    when:
+      all:
+        - {fact: grade5_related, eq: true}
+        - {fact: life_threatening_indication, eq: false}
+    note: "Kills only when the disease is known not to be life-threatening. Otherwise the strong minus deaths_fatal_disease fires. For oncology, life_threatening_indication is derived as true unless stated otherwise."
+
+  - id: crl_efficacy_safety
+    tier: kill
+    name: "CRL for efficacy or safety"
+    scope: asset
+    basis: mixed
+    source: "Unobio analyst (Q&A 6.10.2026: 'I usually walk away'); Sacks 2014 (efficacy deficiency in 76% of finally rejected vs 39% of later approved; checked)"
+    when:
+      {fact: crl_reason, in: [efficacy, safety]}
+
+  - id: no_patent
+    tier: kill
+    name: "Patent expired or no protection"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst"
+    when:
+      {fact: patent_status, in: [expired, none]}
+
+  - id: modality_mismatch
+    tier: kill
+    name: "The modality physically cannot reach the target"
+    scope: mechanism
+    basis: expert
+    source: "Open Targets tractability; no predictive power for clinical success was found"
+    when:
+      {fact: modality_target_mismatch, eq: true}
+
+  - id: retraction_unreplicated
+    tier: kill
+    name: "Foundational paper retracted, result not reproduced"
+    scope: mechanism
+    basis: expert
+    source: "Begley & Ellis 2012 (6 of 53 'landmark' preclinical papers independently confirmed, 11%; checked)"
+    when:
+      all:
+        - {fact: foundational_retraction, eq: true}
+        - {fact: independent_groups, eq: 0}
+
+  - id: license_not_exclusive
+    tier: kill
+    name: "Key patent licence is non-exclusive or does not cover the lead indication"
+    scope: asset
+    basis: expert
+    source: "BD&L practice"
+    when:
+      {fact: key_patent_license, in: [non_exclusive, field_excludes_lead]}
+
+  - id: data_integrity_letter
+    tier: kill
+    name: "FDA letter on unreliable clinical data"
+    scope: asset
+    basis: expert
+    source: "Regulatory practice"
+    when:
+      {fact: fda_data_integrity_letter, eq: true}
+
+  # ============ STRONG MINUSES ============
+  - id: one_mechanism_failure
+    tier: strong
+    axis: science
+    name: "One mechanism failure for efficacy"
+    scope: mechanism
+    basis: evidence
+    source: "Hwang 2016; Razuvayevskaya 2024 (trials stopped for efficacy less often have genetic support, OR 0.61; checked)"
+    when:
+      all:
+        - {fact: moa_failures_efficacy_ph23, ge: 1}
+        - any:
+            - {fact: moa_successes_same_indication, known: false}
+            - all:
+                - {fact: moa_failures_efficacy_ph23, eq: 1}
+                - {fact: moa_successes_same_indication, eq: 0}
+    note: "One failure with no successes, or any number of failures when nothing is known about successes. Two or more failures with a known absence of successes give the kill rule mechanism_refuted, not this rule."
+
+  - id: engaged_no_benefit
+    tier: strong
+    axis: science
+    name: "Target engaged in humans, still no efficacy"
+    scope: mechanism
+    basis: expert
+    source: "Morgan 2012 (Pfizer's three pillars: a failure with exposure, binding and pharmacology shown tests the mechanism, not the molecule); Unobio analyst"
+    when:
+      all:
+        - any:
+            - {fact: class_target_engagement_human, eq: true}
+            - {fact: class_pd_response_human, eq: true}
+        - {fact: moa_failures_efficacy_ph23, ge: 1}
+        - {fact: approved_same_moa_count, eq: 0}
+    note: "Another drug of this mechanism reached and moved the target or its biomarker in humans and still failed for efficacy, and no drug of the mechanism is approved here: the hypothesis failed, not the molecule, so a better molecule is unlikely to help. Deliberately not in a cluster with one_mechanism_failure: it counts the new fact (target engagement shown), not the failure again; together they reach 4 minuses (Do Not Invest). An approval of the same mechanism in this disease stops it (tofersen lowered SOD1 and missed its primary endpoint, yet was approved)."
+
+  - id: no_animal_response
+    tier: strong
+    axis: science
+    name: "No response in an animal model"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst, Q&A 6.10.2026: 'mice don't lie, they exaggerate… if you see no response in a mouse, it's usually a little bit tricky'; 'a bit of a red flag'"
+    when:
+      {fact: animal_model_response, eq: false}
+    note: "Was a kill rule before version 1.0. The analyst calls it a red flag, not a reason to walk away, so it is a strong minus: with Mendelian genetics or the asset's own clinical effect the program stays alive."
+
+  - id: deaths_fatal_disease
+    tier: strong
+    cluster: safety
+    name: "Drug-related deaths in a fatal disease or of unknown severity"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst (softened for oncology)"
+    when:
+      all:
+        - {fact: grade5_related, eq: true}
+        - any:
+            - {fact: life_threatening_indication, eq: true}
+            - {fact: life_threatening_indication, known: false}
+
+  - id: class_withdrawal
+    tier: strong
+    cluster: safety
+    name: "A drug of the same class was withdrawn for safety"
+    scope: mechanism
+    basis: mixed
+    source: "Downing 2017 (222 new drugs 2001–2010: post-approval safety events in 32%, including 3 withdrawals; checked)"
+    when:
+      {fact: class_withdrawal, eq: true}
+
+  - id: essential_gene_chronic
+    tier: strong
+    cluster: safety
+    name: "Inhibitor of an essential gene in a chronic non-oncology disease"
+    scope: mechanism
+    basis: expert
+    source: "Open Targets prioritisation «Gene Essentiality»"
+    when:
+      all:
+        - {fact: essential_gene, eq: true}
+        - {fact: chronic_non_oncology, eq: true}
+        - {fact: moa_direction, eq: inhibit}
+
+  - id: target_safety_high
+    tier: strong
+    cluster: safety
+    name: "Four or more target safety flags in a chronic non-oncology disease"
+    scope: mechanism
+    basis: mixed
+    source: "Razuvayevskaya 2024; thresholds are expert"
+    when:
+      all:
+        - {fact: target_safety_flags, ge: 4}
+        - {fact: chronic_non_oncology, eq: true}
+
+  - id: toxicity_at_exposure
+    tier: strong
+    cluster: safety
+    name: "Toxicity at efficacious exposure"
+    scope: asset
+    basis: expert
+    source: "Muller & Milton 2012"
+    when:
+      {fact: toxicity_at_efficacious_exposure, eq: true}
+
+  - id: crl_undisclosed
+    tier: strong
+    cluster: regulatory_events
+    name: "CRL with an undisclosed reason"
+    scope: asset
+    basis: mixed
+    source: "Sacks 2014 (302 applications: 151 rejected the first time, 71 of them, i.e. 47%, eventually approved; checked)"
+    when:
+      {fact: crl_reason, eq: undisclosed}
+
+  - id: adcom_negative
+    tier: strong
+    cluster: regulatory_events
+    name: "Negative advisory committee vote"
+    scope: asset
+    basis: evidence
+    source: "Daval 2023 (after a negative vote on a first approval the FDA did not approve 40 of 60, 67%; checked)"
+    when:
+      {fact: adcom_negative, eq: true}
+
+  - id: key_markets_gone
+    tier: strong
+    cluster: licensing
+    name: "US or EU rights out-licensed"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst"
+    when:
+      {fact: key_markets_outlicensed, eq: true}
+
+  - id: royalty_stack_high
+    tier: strong
+    cluster: licensing
+    name: "Total royalties above 10%"
+    scope: asset
+    basis: expert
+    source: "BD&L practice; threshold is expert"
+    when:
+      {fact: royalty_stack_pct, gt: 10}
+
+  - id: posthoc_subgroup
+    tier: strong
+    cluster: trial_conduct
+    absorbed_by: clinical_effect
+    absorbed_when: {fact: own_trial_failed_efficacy, eq: true}
+    name: "The thesis rests on a subgroup found post hoc"
+    scope: asset
+    basis: evidence
+    source: "Wallach 2017 (of 46 statistically supported subgroup claims, 5 were tested and none was confirmed; checked)"
+    when:
+      {fact: posthoc_subgroup_thesis, eq: true}
+    note: "A post hoc subgroup implies a failure in all patients. If that same failure (own_trial_failed_efficacy) already made 'Drug does what it claims' red, the rule adds no minuses."
+
+  - id: single_country
+    tier: strong
+    cluster: trial_conduct
+    name: "Registrational data from a single country outside the US"
+    scope: asset
+    basis: mixed
+    source: "ODAC 2022 (14:1 against the sufficiency of China-only data)"
+    when:
+      {fact: single_country_ex_us_pivotal, eq: true}
+
+  - id: endpoint_changed
+    tier: strong
+    cluster: trial_conduct
+    name: "Primary endpoint changed after registration"
+    scope: asset
+    basis: mixed
+    source: "COMPare, Goldacre 2019 (67 trials in five leading journals: 58 needed a correction letter; checked)"
+    when:
+      {fact: primary_endpoint_changed, eq: true}
+
+  - id: single_arm_outside
+    tier: strong
+    cluster: trial_conduct
+    absorbed_by: trial_design
+    absorbed_when: {fact: open_label_subjective_endpoint, eq: true}
+    name: "Single-arm registrational trial outside oncology and rare diseases"
+    scope: asset
+    basis: mixed
+    source: "Agrawal 2023 (oncology, 2002–2021: 176 indications approved on single-arm trials, 116 accelerated, 10 withdrawn; checked)"
+    when:
+      all:
+        - {fact: single_arm_pivotal, eq: true}
+        - {fact: oncology, eq: false}
+        - {fact: rare_disease, eq: false}
+    note: "Needs known oncology and rare_disease: the pipeline sets them at the normalization step. If an open-label single-arm design already made 'Trial design' red, the rule adds no minuses."
+
+  - id: accelerated_no_confirmatory
+    tier: strong
+    cluster: trial_conduct
+    name: "Accelerated approval without a confirmatory trial"
+    scope: asset
+    basis: evidence
+    source: "Liu 2024 (oncology, 46 accelerated approvals 2013–2017: 22% withdrawn, benefit confirmed in 43%; checked). The overall 13% share is not checked"
+    when:
+      all:
+        - {fact: accelerated_only, eq: true}
+        - {fact: confirmatory_trial_registered, eq: false}
+
+  - id: late_entry
+    tier: strong
+    cluster: competition
+    name: "More than 5 years behind the first in class"
+    scope: mechanism
+    basis: mixed
+    source: "McKinsey; Reuters Events (garbled retelling)"
+    when:
+      all:
+        - {fact: years_behind_first_in_class, gt: 5}
+        - {fact: approved_same_moa_count, ge: 1, default: 1}
+
+  - id: soc_loe
+    tier: strong
+    cluster: pricing
+    name: "Standard of care loses exclusivity before launch"
+    scope: mechanism
+    basis: evidence
+    source: "Analysis Group (the brand keeps 18–23% of units after one year); ASPE"
+    when:
+      {fact: soc_loe_before_launch, eq: true}
+
+  - id: partner_returned
+    tier: strong
+    cluster: sponsor_finance
+    name: "A partner returned the asset"
+    scope: asset
+    basis: expert
+    source: "BD&L practice"
+    when:
+      {fact: partner_returned_asset, eq: true}
+
+  - id: runway_short
+    tier: strong
+    cluster: sponsor_finance
+    name: "Cash does not last until the next readout"
+    scope: asset
+    basis: expert
+    source: "BioSpace (39% of biotechs had < 12 months of cash in 2024)"
+    when:
+      {fact: runway_short, eq: true}
+    caps_at: Conditional
+    note: "Since version 1.3 also caps the verdict at Conditional: a company that will not reach the milestone is not an Invest, whatever the pluses (independent review F31, M7)."
+
+  - id: moa_safety_discontinuations
+    tier: strong
+    cluster: safety
+    name: "Two or more programs on this target discontinued for safety"
+    scope: mechanism
+    basis: expert
+    source: "Organisers' brief (discontinued programs); threshold is expert"
+    when:
+      {fact: moa_discontinued_safety_count, ge: 2}
+
+  - id: moa_crl_safety
+    tier: strong
+    cluster: safety
+    name: "Another drug with the same mechanism received a CRL for safety"
+    scope: mechanism
+    basis: expert
+    source: "Mechanism-level version of the CRL rule"
+    when:
+      {fact: moa_crl_safety, eq: true}
+    note: "A CRL of another drug for efficacy counts as a mechanism failure (moa_failures_efficacy_ph23)."
+
+  - id: class_deaths
+    tier: strong
+    cluster: safety
+    name: "Drug-related deaths in trials of the same class"
+    scope: mechanism
+    basis: expert
+    source: "Mechanism-level version of the deaths rule"
+    when:
+      {fact: class_drug_related_deaths, eq: true}
+
+  # ============ WARNINGS ============
+  - id: no_genetics_no_precedent
+    tier: warning
+    axis: science
+    name: "Neither genetics nor a target precedent in a related disease"
+    scope: mechanism
+    basis: evidence
+    source: "Minikel 2024, validation on 13,030 pairs (VALIDATION.md, section 12): launch 5.9–8.9% vs 18.4–20.4% for the rest"
+    when:
+      all:
+        - {fact: genetic_support, in: [none, other_disease]}
+        - {fact: moa_clinical_precedent, in: [none, approved_unrelated]}
+    note: "Needs both facts known. Since version 1.0 it also fires when the target is approved only in unrelated diseases: on real pairs these reach launch as rarely as pairs with no precedent at all. With genetic_support: no_data (the disease has no genetic data at all) the rule is silent: it was validated only on diseases with genetic data, and in diseases without it such pairs reach launch in 12–15% of cases, i.e. no less often than the base (VALIDATION.md, section 13)."
+
+  - id: moa_safety_discontinuation
+    tier: warning
+    cluster: safety
+    name: "One program on this target discontinued for safety"
+    scope: mechanism
+    basis: expert
+    source: "Organisers' brief (discontinued programs); threshold is expert"
+    when:
+      {fact: moa_discontinued_safety_count, eq: 1}
+
+  - id: moa_adcom_negative
+    tier: warning
+    cluster: regulatory_events
+    name: "An advisory committee voted against another drug with the same mechanism"
+    scope: mechanism
+    basis: expert
+    source: "Mechanism-level version of the advisory committee rule"
+    when:
+      {fact: moa_adcom_negative, eq: true}
+
+  - id: indication_accelerated_withdrawn
+    tier: warning
+    cluster: trial_conduct
+    name: "Accelerated approvals in this disease were withdrawn"
+    scope: mechanism
+    basis: expert
+    source: "Disease-level version of the accelerated approval rule"
+    when:
+      {fact: indication_accelerated_withdrawn, eq: true}
+
+  - id: indication_enrollment_risk
+    tier: warning
+    cluster: trial_conduct
+    name: "Trials in this disease were often stopped for enrollment"
+    scope: mechanism
+    basis: evidence
+    source: "Razuvayevskaya 2024 (28,561 stopped trials: 36.7% for enrollment; checked)"
+    when:
+      {fact: indication_enrollment_terminations_high, eq: true}
+
+  - id: me_too_differentiated
+    tier: warning
+    cluster: competition
+    name: "Me-too with differentiation"
+    scope: mechanism
+    basis: mixed
+    source: "Unobio analyst; McKinsey"
+    when:
+      all:
+        - {fact: approved_same_moa_count, ge: 2}
+        - {fact: differentiation_evidence, ne: false, default: true}
+        - any:
+            - {fact: differentiation_claim, in: [efficacy, safety, structural_cost]}
+            - all:
+                - {fact: differentiation_claim, eq: price_only}
+                - {fact: price_channel_direct, eq: true}
+
+  - id: ph3_competitors
+    tier: warning
+    cluster: competition
+    name: "Three or more competitors of the same mechanism in Phase 3"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst; threshold is expert"
+    when:
+      all:
+        - {fact: ph3_same_moa_count, ge: 3}
+        - {fact: approved_same_moa_count, lt: 2, default: 0}
+
+  - id: class_safety_signal
+    tier: warning
+    cluster: safety
+    name: "Class safety signal"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst; openFDA boxed_warning"
+    when:
+      {fact: class_safety_signal, eq: true}
+
+  - id: grade4_events
+    tier: warning
+    cluster: safety
+    name: "Drug-related grade 4 adverse events in a non-fatal disease"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst, Q&A 6.10.2026: 'any flags that are bad, like grade 4, grade 5'"
+    when:
+      all:
+        - {fact: grade4_related, eq: true}
+        - {fact: life_threatening_indication, ne: true, default: false}
+    note: "In oncology and other fatal diseases grade 4 is common and the rule is silent. Unknown disease severity is treated as non-fatal."
+
+  - id: target_safety_medium
+    tier: warning
+    cluster: safety
+    name: "Two or more target safety flags"
+    scope: mechanism
+    basis: mixed
+    source: "Razuvayevskaya 2024 (OR ≈ 1.3–1.5); Nguyen 2019"
+    when:
+      {fact: target_safety_flags, ge: 2}
+
+  - id: crl_manufacturing
+    tier: warning
+    cluster: regulatory_events
+    name: "CRL for manufacturing"
+    scope: asset
+    basis: evidence
+    source: "Sacks 2014; review of published CRLs (74% mention manufacturing)"
+    when:
+      {fact: crl_reason, eq: manufacturing}
+    note: "In the regulatory events cluster, not manufacturing: otherwise a milder CRL reason could give a worse verdict than an undisclosed one."
+
+  - id: complex_manufacturing_small
+    tier: warning
+    cluster: manufacturing
+    name: "Complex manufacturing (cell, gene therapy, radioligand) outside a big company"
+    scope: mechanism
+    basis: expert
+    source: "Unobio analyst, Q&A 6.10.2026: 'easier for big pharma… more difficult for smaller biotechs'"
+    when:
+      all:
+        - {fact: modality, in: [cell, gene, radioligand]}
+        - {fact: sponsor_size, ne: large, default: small}
+    note: "Since version 1.0, unknown sponsor size is treated as 'not a big company': the assessment takes a small investor's position, and the brief's input has no company name."
+
+  - id: cmo_status
+    tier: warning
+    cluster: manufacturing
+    name: "Problematic status of a site or contract manufacturer"
+    scope: asset
+    basis: mixed
+    source: "FDA Inspection Classification Database"
+    when:
+      {fact: cmo_oai_or_warning_letter, eq: true}
+
+  - id: nonkey_licenses
+    tier: warning
+    cluster: licensing
+    name: "Several territories outside the US and EU out-licensed"
+    scope: asset
+    basis: expert
+    source: "Unobio analyst"
+    when:
+      {fact: nonkey_territories_outlicensed_count, ge: 2}
+
+  - id: royalty_stack_medium
+    tier: warning
+    cluster: licensing
+    name: "Total royalties 5–10%"
+    scope: asset
+    basis: expert
+    source: "BD&L practice; threshold is expert"
+    when:
+      all:
+        - {fact: royalty_stack_pct, ge: 5}
+        - {fact: royalty_stack_pct, le: 10}
+
+  - id: no_replication
+    tier: warning
+    axis: science
+    name: "Hypothesis not independently reproduced"
+    scope: mechanism
+    basis: mixed
+    source: "Begley & Ellis 2012 (6 of 53 'landmark' preclinical papers independently confirmed, 11%; checked)"
+    when:
+      any:
+        - {fact: independent_groups, eq: 0}
+        - all:
+            - {fact: foundational_retraction, eq: true}
+            - {fact: independent_groups, known: false}
+
+  - id: under_enrollment
+    tier: warning
+    cluster: trial_conduct
+    name: "Phase 2 under-enrollment"
+    scope: asset
+    basis: evidence
+    source: "Siah 2021 ('enrollment vs plan' among the leading features)"
+    when:
+      {fact: ph2_under_enrollment, eq: true}
+
+  - id: price_unrealistic
+    tier: warning
+    cluster: pricing
+    name: "Unrealistic required price"
+    scope: mechanism
+    basis: expert
+    source: "Calculation: target peak / number treated"
+    when:
+      {fact: required_price_unrealistic, eq: true}
+
+  - id: medicare_negotiation
+    tier: warning
+    cluster: pricing
+    name: "Exposure to Medicare price negotiation"
+    scope: mechanism
+    basis: evidence
+    source: "KFF, CMS (net Medicare spending reductions: 22% in the first cycle, 44% in the second; checked)"
+    when:
+      {fact: medicare_negotiation_exposure, eq: true}
+
+# ----------------------------------------------------------------------------
+# FACT CONSISTENCY
+# If a condition holds, the fact set contradicts itself and scoring
+# stops with an error: better no verdict than a verdict on wrong input.
+# ----------------------------------------------------------------------------
+constraints:
+  - message: "oncology and chronic_non_oncology cannot both be true"
+    when:
+      all:
+        - {fact: oncology, eq: true}
+        - {fact: chronic_non_oncology, eq: true}
+  - message: "a trial cannot be both single-arm and randomized controlled"
+    when:
+      all:
+        - {fact: single_arm_pivotal, eq: true}
+        - {fact: randomized_controlled, eq: true}
+  - message: "approved_same_moa_count cannot exceed approved_therapies_count"
+    when:
+      {fact: approved_same_moa_count, gt: {fact: approved_therapies_count}}
+  - message: "indication_new_moa_approvals_10y cannot exceed approved_therapies_count"
+    when:
+      {fact: indication_new_moa_approvals_10y, gt: {fact: approved_therapies_count}}
+  - message: "soc_last_new_moa_years > 10 contradicts approvals of new mechanisms in the last 10 years"
+    when:
+      all:
+        - {fact: soc_last_new_moa_years, gt: 10}
+        - {fact: indication_new_moa_approvals_10y, ge: 1}
+  - message: "a mechanism success in this disease (precedent or approved drug) contradicts moa_successes_same_indication: 0"
+    when:
+      all:
+        - {fact: moa_successes_same_indication, eq: 0}
+        - any:
+            - {fact: moa_clinical_precedent, in: [approved_same, positive_ph2_3_same]}
+            - {fact: approved_same_moa_count, ge: 1}
+  - message: "approved_same_moa_count ≥ 1 means moa_clinical_precedent: approved_same"
+    when:
+      all:
+        - {fact: approved_same_moa_count, ge: 1}
+        - {fact: moa_clinical_precedent, ne: approved_same}
+  - message: "moa_clinical_precedent: approved_same contradicts approved_same_moa_count: 0"
+    when:
+      all:
+        - {fact: moa_clinical_precedent, eq: approved_same}
+        - {fact: approved_same_moa_count, eq: 0}
+  - message: "an approval precedent on the endpoint contradicts accepted_endpoint_exists: false"
+    when:
+      all:
+        - {fact: endpoint_approval_precedent, eq: true}
+        - {fact: accepted_endpoint_exists, eq: false}
+  - message: "an asset at the preclinical or ph1 stage cannot have results of its own Phase 2"
+    when:
+      all:
+        - {fact: phase, in: [preclinical, ph1]}
+        - {fact: own_ph2_positive, eq: true}
+
+# ----------------------------------------------------------------------------
+# DERIVED FACTS
+# If a condition holds and the target fact is unknown, it gets the given value.
+# An explicitly given fact is never overwritten. Rules are applied until a
+# fixed point, then the constraints are checked. For counters, a derived
+# value of 1 means "at least one". In the report, a derived fact is replaced by
+# the facts it was derived from.
+# ----------------------------------------------------------------------------
+derive:
+  - when: {fact: approved_therapies_count, eq: 0}
+    set: {approved_same_moa_count: 0, indication_new_moa_approvals_10y: 0}
+  - when: {fact: soc_last_new_moa_years, gt: 10}
+    set: {indication_new_moa_approvals_10y: 0}
+  - when: {fact: moa_clinical_precedent, in: [approved_same, positive_ph2_3_same]}
+    set: {moa_successes_same_indication: 1}
+  - when: {fact: approved_same_moa_count, ge: 1}
+    set: {moa_successes_same_indication: 1, moa_clinical_precedent: approved_same}
+  - when: {fact: oncology, eq: true}
+    set: {chronic_non_oncology: false, life_threatening_indication: true}
+  - when: {fact: chronic_non_oncology, eq: true}
+    set: {oncology: false}
+  - when: {fact: single_arm_pivotal, eq: true}
+    set: {randomized_controlled: false}
+  - when: {fact: randomized_controlled, eq: true}
+    set: {single_arm_pivotal: false}
+  - when: {fact: endpoint_approval_precedent, eq: true}
+    set: {accepted_endpoint_exists: true}
+  - when: {fact: route_of_administration, in: [iv_infusion, intrathecal]}
+    set: {price_channel_direct: true}
+  - when:
+      all:
+        - {fact: link_exposure, eq: true}
+        - {fact: link_target_engagement, eq: true}
+        - {fact: link_pd_response, eq: true}
+    set: {pillars_human: 3}
+
+# ----------------------------------------------------------------------------
+# REFERENCE NUMBERS (do not affect the verdict)
+# ----------------------------------------------------------------------------
+reference:
+  genetics_relative_success_by_phase:      # Minikel 2024, table S27; reproduced on the data
+    phase1_to_2: 1.08
+    phase2_to_3: 1.57
+    phase3_to_launch: 1.28
+    phase1_to_launch: 2.63
+  genetics_relative_success_mendelian: 3.67
+
+  # Share of historical target + disease pairs that reached launch, by mechanism evidence.
+  # The first cell matching the known facts is the reference; an unknown fact does not narrow the cell,
+  # so the exact cells are followed by merged ones. Range: [symmetric estimate, mixed estimate] of the way
+  # precedent is counted (VALIDATION.md, section 12); n and launched are given for the mixed way.
+  # The numbers were produced by the validation script of the scorer (VALIDATION.md, section 12).
+  launch_by_evidence:
+    source: "Minikel et al., Nature 2024: 13,030 pairs with a known Phase I outcome; see VALIDATION.md, section 12"
+    cells:
+      - {id: mendelian, label: "Mendelian genetics", match: {genetics: [mendelian]}, n: 192, launched: 79, from_ph1: [0.411, 0.449], from_ph2: [0.434, 0.472], from_ph3: [0.738, 0.767]}
+      - {id: genetics_precedent, label: "GWAS with a confident gene or a somatic driver, and a precedent in a related disease", match: {genetics: [gwas, somatic], precedent: [related]}, n: 436, launched: 118, from_ph1: [0.256, 0.271], from_ph2: [0.275, 0.300], from_ph3: [0.610, 0.634]}
+      - {id: genetics_track, label: "GWAS with a confident gene or a somatic driver, and a strong indication track record, no precedent", match: {genetics: [gwas, somatic], precedent: [absent], track: [green]}, n: 109, launched: 22, from_ph1: [0.202, 0.259], from_ph2: [0.250, 0.311], from_ph3: [0.629, 0.717]}
+      - {id: gwas_alone, label: "Only GWAS with a confident gene", match: {genetics: [gwas], precedent: [absent], track: [absent]}, n: 238, launched: 33, from_ph1: [0.139, 0.169], from_ph2: [0.185, 0.222], from_ph3: [0.559, 0.575]}
+      - {id: somatic_alone, label: "Only a somatic driver", match: {genetics: [somatic], precedent: [absent], track: [absent]}, n: 65, launched: 3, from_ph1: [0.046, 0.068], from_ph2: [0.060, 0.086], from_ph3: null}
+      - {id: genetics_any, label: "GWAS with a confident gene or a somatic driver; other evidence unknown", match: {genetics: [gwas, somatic]}, n: 848, launched: 176, from_ph1: [0.200, 0.208], from_ph2: [0.240, 0.248], from_ph3: [0.600, 0.611]}
+      - {id: precedent_track, label: "No genetics: precedent in a related disease and a strong indication track record", match: {genetics: [none], precedent: [related], track: [green]}, n: 960, launched: 271, from_ph1: [0.218, 0.282], from_ph2: [0.244, 0.318], from_ph3: [0.618, 0.713]}
+      - {id: precedent_only, label: "No genetics: only a precedent in a related disease", match: {genetics: [none], precedent: [related], track: [absent]}, n: 3184, launched: 532, from_ph1: [0.142, 0.167], from_ph2: [0.162, 0.193], from_ph3: [0.442, 0.501]}
+      - {id: precedent_any, label: "No genetics: precedent in a related disease; indication track record unknown", match: {genetics: [none], precedent: [related]}, n: 4144, launched: 803, from_ph1: [0.159, 0.194], from_ph2: [0.181, 0.222], from_ph3: [0.484, 0.557]}
+      - {id: track_only, label: "No genetics or precedent: only a strong indication track record", match: {genetics: [none], precedent: [absent], track: [green]}, n: 1899, launched: 116, from_ph1: [0.061, 0.112], from_ph2: [0.079, 0.141], from_ph3: [0.448, 0.597]}
+      - {id: nothing, label: "No genetics, precedent or strong indication track record", match: {genetics: [none], precedent: [absent], track: [absent]}, n: 5947, launched: 345, from_ph1: [0.058, 0.082], from_ph2: [0.077, 0.106], from_ph3: [0.354, 0.424]}
+      - {id: no_mechanism, label: "No genetics or precedent; indication track record unknown", match: {genetics: [none], precedent: [absent]}, n: 7846, launched: 461, from_ph1: [0.059, 0.089], from_ph2: [0.077, 0.115], from_ph3: [0.374, 0.465]}
+      - {id: no_genetics, label: "No genetics; precedent unknown", match: {genetics: [none]}, n: 11990, launched: 1264, from_ph1: [0.105, 0.105], from_ph2: [0.132, 0.132], from_ph3: [0.472, 0.473]}
+      - {id: precedent_unknown_genetics, label: "Precedent in a related disease; genetics unknown", match: {precedent: [related]}, n: 4641, launched: 949, from_ph1: [0.173, 0.204], from_ph2: [0.195, 0.234], from_ph3: [0.505, 0.569]}
+      - {id: no_precedent_unknown_genetics, label: "No precedent; genetics unknown", match: {precedent: [absent]}, n: 8389, launched: 570, from_ph1: [0.068, 0.099], from_ph2: [0.089, 0.128], from_ph3: [0.406, 0.490]}
+      - {id: all, label: "All pairs (mechanism evidence unknown)", match: {}, n: 13030, launched: 1519, from_ph1: [0.117, 0.117], from_ph2: [0.145, 0.145], from_ph3: [0.495, 0.495]}
+
+  # Baseline approval share from each stage, regardless of mechanism evidence.
+  stage_loa:
+    source: "BIO, Informa Pharma Intelligence, QLS: Clinical Development Success Rates 2011–2020 (2021), figures 6 and 8"
+    phase_keys: {ph1: from_ph1, ph2: from_ph2, ph3: from_ph3, filed: from_filing}
+    segments:
+      all: {label: "All diseases", from_ph1: 0.079, from_ph2: 0.151, from_ph3: 0.524, from_filing: 0.906}
+      oncology: {label: "Oncology", from_ph1: 0.053, from_ph2: 0.108, from_ph3: 0.439, from_filing: 0.920}
+      non_oncology: {label: "Non-oncology diseases", from_ph1: 0.093, from_ph2: 0.172, from_ph3: 0.553, from_filing: 0.902}
+      rare_non_oncology: {label: "Rare non-oncology diseases", from_ph1: 0.170, from_ph2: 0.252, from_ph3: 0.566, from_filing: 0.936}

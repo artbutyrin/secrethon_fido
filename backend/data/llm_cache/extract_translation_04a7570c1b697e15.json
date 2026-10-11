@@ -1,0 +1,125 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3207,
+  "output_tokens": 2626,
+  "latency_ms": 16956,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"coronary artery disorder\", \"target\": \"CETP\", \"drugs\": [\"ANACETRAPIB\", \"DALCETRAPIB\", \"EVACETRAPIB\", \"OBICETRAPIB\", \"ROCACETRAPIB\", \"TORCETRAPIB\"], \"documents\": [{\"id\": \"pmid:26857125\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"Effect of hepatic or renal impairment on the pharmacokinetics of evacetrapib.. PURPOSE: The aim of this study is to investigate the effect of hepatic or renal impairment on the pharmacokinetics of a single 130-mg evacetrapib dose. METHODS: Two open-label, parallel-design studies in males and females with normal hepatic function or Child-Pugh mild, moderate, or severe hepatic impairment, or with normal renal function or severe renal impairment. Non-compartmental pharmacokinetic parameters were estimated from plasma concentration-time data. Evacetrapib safety and tolerability were assessed. RESULTS: Pharmacokinetic parameter estimates were comparable between controls and mildly hepatically impaired subjects. Geometric mean area under the concentration-time curve (AUC) was greater, half-life (t1/2) was longer, and maximum concentration (Cmax) was lower in subjects with moderate and severe hepatic impairment than in controls. Apparent clearance (CL/F) did not differ between controls and those with mild hepatic impairment, but CL/F decreased for moderate and severe impairment. Spearman correlation coefficient showed no relationship between CL/F and Child-Pugh score. In the renal study, AUC and t1/2 were similar between groups, while Cmax was 15 % lower in subjects with severe impairment. CL/F in severely renally impaired subjects differed by <6 % from that in controls. Spearman correlation coefficient showed no apparent relationship between CL/F and estimated creatinine clearance or glomerular filtration rate. Neither study noted changes in clinical laboratory parameters or clinically significant findings. Adverse event incidence was low, and all were mild or moderate in severity. CONCLUSION: Evacetrapib exposure did not differ between mild hepatic impairment and normal hepatic function, but increased along the progression from mild to moderate to severe hepatic impairment. Severe renal impairment did not affect evacetrapib exposure.\"}, {\"id\": \"pmid:26264702\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"CYP-mediated drug-drug interactions with evacetrapib, an investigational CETP inhibitor: in vitro prediction and clinical outcome.. AIMS: Evacetrapib is a cholesteryl ester transfer protein (CETP) inhibitor under development for reducing cardiovascular events in patients with high risk vascular disease. CETP inhibitors are likely to be utilized as 'add-on' therapy to statins in patients receiving concomitant medications, so the potential for evacetrapib to cause clinically important drug-drug interactions (DDIs) with cytochromes P450 (CYP) was evaluated. METHODS: The DDI potential of evacetrapib was investigated in vitro, followed by predictions to determine clinical relevance. Potential DDIs with possible clinical implications were then investigated in the clinic. RESULTS: In vitro, evacetrapib inhibited all of the major CYPs, with inhibition constants (K(i)) ranging from 0.57 µM (CYP2C9) to 7.6 µM (CYP2C19). Evacetrapib was a time-dependent inhibitor and inducer of CYP3A. The effects of evacetrapib on CYP3A and CYP2C9 were assessed in a phase 1 study using midazolam and tolbutamide as probe substrates, respectively. After 14 days of daily dosing with evacetrapib (100 or 300 mg), midazolam exposures (AUC) changed by factors (95% CI) of 1.19 (1.06, 1.33) and 1.44 (1.28, 1.62), respectively. Tolbutamide exposures (AUC) changed by factors of 0.85 (0.77, 0.94) and 1.06 (0.95, 1.18), respectively. In a phase 2 study, evacetrapib 100 mg had minimal impact on AUC of co-administered simvastatin vs. simvastatin alone with a ratio of 1.25 (1.03, 1.53) at steady-state, with no differences in reported hepatic or muscular adverse events. CONCLUSIONS: Taken together, the extent of CYP-mediated DDI with the potential clinical dose of evacetrapib is weak and clinically important DDIs are not expected to occur in patients taking concomitant medications.\"}, {\"id\": \"pmid:23658137\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"Future of cholesteryl ester transfer protein (CETP) inhibitors: a pharmacological perspective.. In almost 30 years since the introduction of HMG-CoA reductase inhibitors (statins), no other class of lipid modulators has entered the market. Elevation of high-density lipoprotein-cholesterol (HDL-C) via inhibiting cholesteryl ester transfer protein (CETP) is an attractive strategy for reducing the risk of cardiovascular events in high-risk patients. Transfer of triglyceride and cholesteryl ester (CE) between lipoproteins is mediated by CETP; thus inhibition of this pathway can increase the concentration of HDL-C. Torcetrapib was the first CETP inhibitor evaluated in phase III clinical trials. Because of off-target effects, torcetrapib raised blood pressure and increased the concentration of serum aldosterone, leading to higher cardiovascular events and mortality. Torcetrapib showed positive effects on cardiovascular risk especially in patients with a greater increase in HDL-C and apolipoprotein A-1 (apoA-1) levels. The phase III clinical trial of dalcetrapib, the second CETP inhibitor that has entered clinical development, was terminated because of ineffectiveness. Dalcetrapib is a CETP modulator that elevated HDL-C levels but did not reduce the concentration of low-density lipoprotein cholesterol (LDL-C). Both heterotypic and homotypic CE transfer between lipoproteins are mediated by some CETP inhibitors, including torcetrapib, anacetrapib, and evacetrapib, while dalcetrapib only affects the heterotypic CE transfer. Dalcetrapib has a chemical structure that is distinct from other CETP inhibitors, with a smaller molecular weight and a lack of trifluoride moieties. Moreover, dalcetrapib is a pro-drug that must be hydrolyzed to a pharmacologically active thiol form. Two other CETP inhibitors, anacetrapib and evacetrapib, are currently undergoing evaluation in phase III clinical trials. Both molecules have shown beneficial effects by increasing HDL-C and decreasing LDL-C concentration. The success of anacetrapib and evacetrapib remains to be confirmed upon the completion of phase III clinical trials in 2017 and 2015, respectively. Generally, the concentration of HDL-C has been considered a biomarker for the activity of CETP inhibitors. However, it is not clear whether a fundamental relationship exists between HDL-C levels and the risk of coronary artery diseases. The most crucial role for HDL is cholesterol efflux capacity in which HDL can reverse transport cholesterol from foam cells in atherosclerotic plaques. In view of the heterogeneity in HDL particle size, charge, and composition, the mere concentration of HDL-C may not be a good surrogate marker for HDL functionality. Recent clinical studies have reported that increased HDL functionality inversely correlates with the development of atherosclerotic plaque. Future development of CETP inhibitors may therefore benefit from the use of biomarkers of HDL functionality.\"}, {\"id\": \"pmid:31054484\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"Evacetrapib reduces preβ-1 HDL in patients with atherosclerotic cardiovascular disease or diabetes.. BACKGROUND AND AIMS: Cholesteryl ester transfer protein (CETP) inhibitor-mediated induction of HDL-cholesterol has no effect on the protection from cardiovascular disease (CVD). However, the mechanism is still unknown. Data on the effects of this class of drugs on subclasses of HDL are either limited or insufficient. In this study, we investigated the effect of evacetrapib, a CETP inhibitor, on subclasses of HDL in patients with atherosclerotic cardiovascular disease or diabetes. METHODS: Baseline and 3-month post-treatment samples from atorvastatin 40 mg plus evacetrapib 130 mg (n = 70) and atorvastatin 40 mg plus placebo (n = 30) arms were used for this purpose. Four subclasses of HDL (large HDL, medium HDL, small HDL, and preβ-1 HDL) were separated according to their size and quantified by densitometry using a recently developed native polyacrylamide gel electrophoresis (PAGE) system. RESULTS: Relative to placebo, while evacetrapib treatment dramatically increased large HDL and medium HDL subclasses, it significantly reduced small HDL (27%) as well as preβ-1 HDL (36%) particles. Evacetrapib treatment reduced total LDL, but also resulted in polydisperse LDL with LDL particles larger and smaller than the LDL subclasses of the placebo group. CONCLUSION: Evacetrapib reduced preβ-1 HDL and small HDL in patients with ASCVD or diabetes on statin. Preβ-1 HDL and medium HDL are negatively interrelated. The results could give a clue to understand the effect of CETP inhibitors on cardiovascular outcomes.\"}, {\"id\": \"pmid:25736283\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"A Multidose Study to Examine the Effect of Food on Evacetrapib Exposure at Steady State.. PURPOSE: To determine the effect of a high-fat meal on evacetrapib exposure at steady state in healthy participants. METHODS: This was a randomized, 2-period, 2-sequence, open-label, crossover study. Patients were randomly assigned to 1 of the 2 treatment sequences in which they received evacetrapib 130 mg/d for 10 days following a 10-hour fast each day or following a high-fat breakfast each day. Plasma samples collected through 24 hours were analyzed for evacetrapib concentrations and pharmacokinetic parameter estimates including area under the concentration-time curve during a dosing interval (AUCτ), maximum observed concentration (Cmax), and time of Cmax (tmax) were calculated. Pharmacodynamic parameters, including cholesteryl ester transfer protein (CETP) activity, high-density lipoprotein cholesterol (HDL-C), low-density lipoprotein cholesterol (LDL-C), total cholesterol, and triglycerides, were also assessed. RESULTS: A total of 34 males and 6 females, mean age 41.5 years and mean body mass index 26.6 kg/m(2), were enrolled. Statistical analysis showed AUCτ was 44% higher (90% confidence interval [CI]: 29%-62%) and Cmax was 51% higher (90% CI: 28%-79%) in the fed state than in the fasted state, indicating an effect of food. Consistent with higher evacetrapib exposure, changes in HDL-C, LDL-C, and CETP activity appeared to be greater in the fed state than in the fasted state. There were no notable changes in total cholesterol or triglycerides following administration in the fed and fasted states. The 130-mg doses of evacetrapib were well tolerated with and without food. CONCLUSION: A high-fat meal increased evacetrapib mean exposure at steady state by 44% in healthy participants.\"}, {\"id\": \"pmid:28125886\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"Unending saga of fighting cholesterol: Evacetrapib is another fallen warrior.. Despite an enormous success in reducing morbidity and mortality in cardiovascular disease (CVD), statins and modern antihypertensive medications are not universally effective. Research has focused on potential molecular targets in dyslipidemia. Decades-long, expensive trial with CETP (cholesterylester transfer protein) inhibitor evacetrapib, came in April 2016 to crash landing. Despite dramatic improvement in \\\"good\\\" HDL-cholesterol and decline in \\\"bad\\\" LDL-C, the effect of evacetrapib in CVD patients was comparable to placebo. Notwithstanding failure in this molecular target field, results with another agent the PCSK9 inhibitor, may identify the molecular site that would normalize dyslipidemia, without harming physiologically essential lipids (Fig. 2, Ref. 19).\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:26857125",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "exposure",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Pharmacokinetic parameter estimates were comparable between controls and mildly hepatically impaired subjects."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Geometric mean area under the concentration-time curve (AUC) was greater, half-life (t1/2) was longer, and maximum concentration (Cmax) was lower in subjects with moderate and severe hepatic impairment than in controls."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "exposure",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Severe renal impairment did not affect evacetrapib exposure."
+     }
+    ]
+   },
+   {
+    "id": "pmid:26264702",
+    "findings": []
+   },
+   {
+    "id": "pmid:23658137",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Both molecules have shown beneficial effects by increasing HDL-C and decreasing LDL-C concentration."
+     }
+    ]
+   },
+   {
+    "id": "pmid:31054484",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Relative to placebo, while evacetrapib treatment dramatically increased large HDL and medium HDL subclasses, it significantly reduced small HDL (27%) as well as preβ-1 HDL (36%) particles."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Evacetrapib treatment reduced total LDL, but also resulted in polydisperse LDL with LDL particles larger and smaller than the LDL subclasses of the placebo group."
+     }
+    ]
+   },
+   {
+    "id": "pmid:25736283",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Statistical analysis showed AUCτ was 44% higher (90% confidence interval [CI]: 29%-62%) and Cmax was 51% higher (90% CI: 28%-79%) in the fed state than in the fasted state, indicating an effect of food."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Consistent with higher evacetrapib exposure, changes in HDL-C, LDL-C, and CETP activity appeared to be greater in the fed state than in the fasted state."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Consistent with higher evacetrapib exposure, changes in HDL-C, LDL-C, and CETP activity appeared to be greater in the fed state than in the fasted state."
+     }
+    ]
+   },
+   {
+    "id": "pmid:28125886",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Despite dramatic improvement in \"good\" HDL-cholesterol and decline in \"bad\" LDL-C, the effect of evacetrapib in CVD patients was comparable to placebo."
+     }
+    ]
+   }
+  ]
+ }
+}

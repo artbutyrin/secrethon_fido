@@ -1,0 +1,59 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0012586"
+ },
+ "fetched_at": "2026-10-09T12:06:21+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0012586",
+    "name": "coronary artery disease, autosomal dominant 2",
+    "description": "Any coronary artery disease in which the cause of the disease is a mutation in the LRP6 gene.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "LRP6 coronary artery disease",
+       "coronary artery disease caused by mutation in LRP6",
+       "coronary artery disease, autosomal dominant 2",
+       "coronary artery disease, autosomal dominant type 2",
+       "coronary artery disease, autosomal dominant, 2"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": [
+       "ADCAD2"
+      ]
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "MEDGEN:370259",
+     "MESH:C567045",
+     "OMIM:610947",
+     "UMLS:C1970440"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0004995",
+      "name": "cardiovascular disorder"
+     },
+     {
+      "id": "OTAR_0000018",
+      "name": "genetic, familial or congenital disease"
+     }
+    ]
+   }
+  }
+ }
+}

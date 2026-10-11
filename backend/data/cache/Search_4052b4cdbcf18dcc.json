@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "Duchenne muscular dystrophy",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-09T12:01:17+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 1402,
+    "hits": [
+     {
+      "id": "MONDO_0010679",
+      "name": "Duchenne muscular dystrophy",
+      "entity": "disease",
+      "description": "Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle.",
+      "score": 6110.572
+     },
+     {
+      "id": "MONDO_0020121",
+      "name": "muscular dystrophy",
+      "entity": "disease",
+      "description": "Muscular dystrophy (MD) refers to a group of more than 30 genetic diseases characterized by progressive weakness and degeneration of the skeletal muscles that control movement. Some forms of MD are seen in newborns, infants or children, while others have late-onset and may not appear until middle age or later. The disorders differ in terms of the distribution and extent of muscle weakness (some forms of MD also affect cardiac muscle), age of onset, rate of progression, and pattern of inheritance. The prognosis for people with MD varies according to the type and progression of the disorder. There is no specific treatment to stop or reverse any form of MD. Treatment is supportive and may include physical therapy, respiratory therapy, speech therapy, orthopedic appliances used for support, corrective orthopedic surgery, and medicationsincluding corticosteroids, anticonvulsants (seizure medications), immunosuppressants, and antibiotics. Some individuals may need assisted ventilation to treat respiratory muscle weaknessor a pacemaker for cardiac (heart)abnormalities.",
+      "score": 1201.0576
+     },
+     {
+      "id": "MONDO_0016097",
+      "name": "symptomatic form of muscular dystrophy of Duchenne and Becker in female carriers",
+      "entity": "disease",
+      "description": "Symptomatic forms of Duchenne and Becker muscular dystrophies (DMD and BMD) in females carriers are characterized by variable degrees of muscle weakness due to progressive skeletal myopathy, sometimes associated with dilated cardiomyopathy or left ventricle dilation.",
+      "score": 1031.852
+     },
+     {
+      "id": "EFO_0700060",
+      "name": "Duchenne and Becker muscular dystrophy",
+      "entity": "disease",
+      "description": "Duchenne and Becker muscular dystrophies (DMD and BMD) are neuromuscular diseases characterized by progressive muscle wasting and weakness due to degeneration of skeletal, smooth and cardiac muscle.",
+      "score": 996.8299
+     },
+     {
+      "id": "MONDO_0015152",
+      "name": "autosomal recessive limb-girdle muscular dystrophy",
+      "entity": "disease",
+      "description": "Autosomal recessive form of limb-girdle muscular dystrophy.",
+      "score": 973.13684
+     },
+     {
+      "id": "MONDO_0010311",
+      "name": "Becker muscular dystrophy",
+      "entity": "disease",
+      "description": "Becker muscular dystrophy (BMD) is a neuromuscular disease characterized by progressive muscle wasting and weakness due to degeneration of skeletal, smooth and cardiac muscle.",
+      "score": 966.3593
+     },
+     {
+      "id": "MONDO_0009677",
+      "name": "autosomal recessive limb-girdle muscular dystrophy type 2C",
+      "entity": "disease",
+      "description": "Autosomal recessive limb-girdle muscular dystrophy type 2C (LGMD2C) is a subtype of autosomal recessive limb-girdle muscular dystrophy characterized by a childhood onset of progressive shoulder and pelvic girdle muscle weakness and atrophy frequently associated with calf hypertrophy, diaphragmatic weakness, and/or variable cardiac abnormalities. Mild to moderate elevated serum creatine kinase levels and positive Gowers sign are reported.",
+      "score": 855.1902
+     },
+     {
+      "id": "MONDO_0011968",
+      "name": "autosomal recessive limb-girdle muscular dystrophy type 2D",
+      "entity": "disease",
+      "description": "Autosomal recessive limb-girdle muscular dystrophy type 2D (LGMD2D) is a subtype of autosomal recessive limb-girdle muscular dystrophy characterized by childhood onset of progressive proximal weakness of the shoulder and pelvic girdle muscles, resulting in difficulty walking, scapular winging, calf hypertrophy and contractures of the Achilles tendon, which lead to a tiptoe gait pattern. Cardiac and respiratory involvement is rare.",
+      "score": 850.8318
+     },
+     {
+      "id": "MONDO_0011423",
+      "name": "autosomal recessive limb-girdle muscular dystrophy type 2E",
+      "entity": "disease",
+      "description": "Autosomal recessive limb girdle muscular dystrophy type 2E (LGMD2E) is a subtype of autosomal recessive limb girdle muscular dystrophy characterized by a childhood to adolescent onset of progressive pelvic- and shoulder-girdle muscle weakness, particularly affecting the pelvic girdle (adductors and flexors of hip). Usually the knees are the earliest and most affected muscles. In advanced stages, involvement of the shoulder girdle (resulting in scapular winging) and the distal muscle groups are observed. Calf hypertrophy, cardiomyopathy, respiratory impairment, tendon contractures, scoliosis, and exercise-induced myoglobinuria may be observed.",
+      "score": 850.3295
+     },
+     {
+      "id": "MONDO_0011170",
+      "name": "autosomal recessive limb-girdle muscular dystrophy type 2G",
+      "entity": "disease",
+      "description": "Autosomal recessive limb-girdle muscular dystrophy type 2G (LGMD2G) is a mild subtype of autosomal recessive limb-girdle muscular dystrophy characterized by a variable onset (ranging from infancy to adolescence) of progressive proximal upper and lower limb muscle weakness and atrophy. Mild scapular winging, calf hypertrophy, and lack of respiratory and cardiac involvement are also observed.",
+      "score": 847.3561
+     }
+    ]
+   }
+  }
+ }
+}

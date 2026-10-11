@@ -1,0 +1,99 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2685,
+  "output_tokens": 1776,
+  "latency_ms": 18481,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:33417682\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"The neutrophil-lymphocyte ratio and incident atherosclerotic events: analyses from five contemporary randomized trials.. AIMS: The neutrophil-lymphocyte ratio (NLR) is a readily available inflammatory biomarker that may associate with atherosclerosis and predict cardiovascular (CV) events. The aims of this study are to determine whether the NLR predicts incident major adverse cardiovascular events (MACE) and is modified by anti-inflammatory therapy. METHODS AND RESULTS: Baseline and on-treatment NLRs were calculated from complete blood counts among 60 087 participants randomized in the CANTOS, JUPITER, SPIRE-1, SPIRE-2, and CIRT trials to receive placebo or canakinumab, rosuvastatin, bococizumab, or methotrexate, respectively, and followed up for MACE. All analyses were performed first in CANTOS, and then externally validated in the other four trials. For the five trials, hazard ratios for major CV events and mortality comparing NLR quartiles were computed using Cox proportional hazards models, and the effect of each randomized intervention on the NLR was evaluated in comparison to placebo. The NLR modestly correlated with interleukin-6, C-reactive protein, and fibrinogen levels but minimally with lipids. In all five randomized trials, baseline NLR predicted incident CV events and death; the per-quartile increase in risk of MACE was 20% in CANTOS [95% confidence interval (CI) 14-25%, P < 0.0001], 31% in SPIRE-1 (95% CI 14-49%, P = 0.00007), 27% in SPIRE-2 (95% CI 12-43%, P = 0.0002), 9% in CIRT (95% CI 0.2-20%, P = 0.045), and 11% in JUPITER (95% CI 1-22%, P = 0.03). While lipid-lowering agents had no significant impact on the NLR, anti-inflammatory therapy with canakinumab lowered the NLR (P < 0.0001). CONCLUSION: The NLR, an easily obtained inflammatory biomarker, independently predicts CV risk and all-cause mortality, and is reduced by interleukin-1β blockade with canakinumab.\"}, {\"id\": \"pmid:31549625\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Pharmacokinetics and exploratory efficacy biomarkers of bococizumab, an anti-PCSK9 monoclonal antibody, in hypercholesterolemic Japanese subjects .. OBJECTIVE: Bococizumab, a monoclonal antibody targeting proprotein convertase subtilisin/kexin type 9, has been shown to reduce low-density lipoprotein cholesterol (LDL-C). Here, we describe the pharmacokinetics and pharmacodynamics of bococizumab and its effect on lipoprotein particle composition and other biomarkers, based on a double-blind, placebo-controlled, randomized, dose-ranging study. MATERIALS AND METHODS: The study consisted of two populations: Japanese subjects with uncontrolled LDL-C (LDL-C ≥ 100 mg/dL) despite treatment with atorvastatin (n = 121) and Japanese subjects naïve to lipid-lowering agents with LDL-C ≥ 130 mg/dL (n = 97). Subjects were randomized to receive either bococizumab 50, 100, or 150 mg or placebo, every 2 weeks. One arm of subjects in the ator-vastatin-treated population received ezetimibe 10 mg instead of bococizumab. RESULTS: In both populations, bococizumab exposure increased with increasing dose, and subjects with lower body weights tended to have higher exposures. Bococizumab treatment was associated with a dose-dependent reduction in LDL particles and a small increase in total high-density lipoprotein (HDL) particles. Significant reductions in lipoprotein-associated phospholipase A2 (Lp-PLA2) were observed for bococizumab-treated subjects but not for subjects treated with placebo or ezetimibe. CONCLUSION: Increased bococizumab dosage resulted in increased exposure. Levels of LDL and HDL particles and biomarkers such as Lp-PLA2 were also altered with bococizumab treatment. (ClinicalTrials.gov identifier: NCT02055976). .\"}, {\"id\": \"pmid:25784512\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Results of bococizumab, a monoclonal antibody against proprotein convertase subtilisin/kexin type 9, from a randomized, placebo-controlled, dose-ranging study in statin-treated subjects with hypercholesterolemia.. Bococizumab is a humanized monoclonal antibody binding proprotein convertase subtilisin/kexin type 9, which may be a potential therapeutic option for reducing low-density lipoprotein cholesterol (LDL-C) levels in patients with hypercholesterolemia. In this 24-week, multicenter, double-blind, placebo-controlled, dose-ranging study (NCT01592240), subjects with LDL-C levels≥80 mg/dl on stable statin therapy were randomized to Q14 days subcutaneous placebo or bococizumab 50, 100, or 150 mg or Q28 days subcutaneous placebo or bococizumab 200 or 300 mg. Doses of bococizumab were reduced if LDL-C levels persistently decreased to ≤25 mg/dl. The primary end point was the absolute change in LDL-C levels from baseline to week 12 after placebo or bococizumab administration. Continuation of bococizumab administration through to week 24 enabled the collection of safety data over an extended period. Of the 354 subjects randomized, 351 received treatment (placebo [n=100] or bococizumab [n=251]). The most efficacious bococizumab doses were 150 mg Q14 days and 300 mg Q28 days. Compared with placebo, bococizumab 150 mg Q14 days reduced LDL-C at week 12 by 53.4 mg/dl and bococizumab 300 mg Q28 days reduced LDL-C by 44.9 mg/dl; this was despite dose reductions in 32.5% and 34.2% of subjects at week 10 or 8, respectively. Pharmacokinetic/pharmacodynamic model-based simulation assuming no dose reductions predicted that bococizumab would lower LDL-C levels by 72.2 and 55.4 mg/dl, respectively. Adverse events were similar across placebo and bococizumab groups. Few subjects (n=7; 2%) discontinued treatment because of treatment-related adverse events. In conclusion, bococizumab significantly reduced LDL-C across all doses despite dose reductions in many subjects. Model-based simulations predicted greater LDL-C reduction in the absence of bococizumab dose reduction. The Q14 days regimen is being evaluated in phase 3 clinical trials.\"}, {\"id\": \"pmid:30623096\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Pharmacokinetics, pharmacodynamics, and safety of bococizumab, a monoclonal antibody against proprotein convertase subtilisin/kexin type 9, in healthy subjects when administered in co-mixture with recombinant human hyaluronidase: A phase 1 randomized trial.. AIM: Prior to the discontinuation of bococizumab's clinical development, it was considered advantageous to develop an infrequent dosing regimen (eg, monthly). Therefore, we conducted a phase 1 study to evaluate the pharmacokinetics, pharmacodynamics, and safety of bococizumab when administered in co-mixture with recombinant human hyaluronidase (rHuPH20). METHOD: Healthy subjects (N = 60) were randomized equally among 4 groups that received a single subcutaneous dose of either bococizumab 150, 300, or 450 mg co-mixed with rHuPH20 or bococizumab 300 mg alone. Bioavailability and lipid-lowering effect of bococizumab were evaluated by using ANCOVA models. RESULTS: In the groups administered bococizumab co-mixed with rHuPH20, dose-normalized C max and AUCinf were 26.6 to 39.1% and 18.3 to 36.6% greater, respectively, compared with bococizumab 300 mg alone. Despite these increases, mean percent reductions from baseline in low-density lipoprotein cholesterol were smaller in the bococizumab 300 mg + rHuPH20 group than in the bococizumab 300-mg group at Day 21 (52.2% and 59.5%, respectively) and were similar at Day 29 (51.7% and 49.6%, respectively). Compared with the group administered bococizumab 300 mg alone, the bococizumab 300 mg + rHuPH20 group did not show a significantly altered AUEC85 (ratio of adjusted means: 102.5%, 90% confidence interval: 96.1-109.3%) but did show a higher MaxELDL-C (ratio of adjusted means: 125.4%, 90% confidence interval: 103.3-152.2%), indicating diminution of efficacy. The most frequent adverse events were injection-site erythema, injection-site bruising, and nasopharyngitis; all injection-site adverse events were mild. CONCLUSION: Co-mixture with rHuPH20 increased the bioavailability of bococizumab without proportional increase in pharmacodynamic effect. TRIAL REGISTRATION: ClinicalTrials.gov, NCT02667223.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:33417682",
+    "findings": []
+   },
+   {
+    "id": "pmid:31549625",
+    "findings": [
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "In both populations, bococizumab exposure increased with increasing dose"
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Bococizumab treatment was associated with a dose-dependent reduction in LDL particles and a small increase in total high-density lipoprotein (HDL) particles."
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Significant reductions in lipoprotein-associated phospholipase A2 (Lp-PLA2) were observed for bococizumab-treated subjects"
+     }
+    ]
+   },
+   {
+    "id": "pmid:25784512",
+    "findings": [
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Compared with placebo, bococizumab 150 mg Q14 days reduced LDL-C at week 12 by 53.4 mg/dl and bococizumab 300 mg Q28 days reduced LDL-C by 44.9 mg/dl"
+     }
+    ]
+   },
+   {
+    "id": "pmid:30623096",
+    "findings": [
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "dose-normalized C max and AUCinf were 26.6 to 39.1% and 18.3 to 36.6% greater, respectively, compared with bococizumab 300 mg alone."
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "mean percent reductions from baseline in low-density lipoprotein cholesterol were smaller in the bococizumab 300 mg + rHuPH20 group than in the bococizumab 300-mg group at Day 21 (52.2% and 59.5%, respectively) and were similar at Day 29 (51.7% and 49.6%, respectively)."
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "the bococizumab 300 mg + rHuPH20 group did not show a significantly altered AUEC85"
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "but did show a higher MaxELDL-C (ratio of adjusted means: 125.4%, 90% confidence interval: 103.3-152.2%), indicating diminution of efficacy."
+     }
+    ]
+   }
+  ]
+ }
+}

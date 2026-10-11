@@ -1,0 +1,602 @@
+[
+ {
+  "group": "failed_ph3",
+  "disease": "Atherosclerosis",
+  "target": "CETP",
+  "ti_uid": "CETP-D050197",
+  "mesh_id": "D050197",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Hypercholesterolemia",
+  "target": "CETP",
+  "ti_uid": "CETP-D006937",
+  "mesh_id": "D006937",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Alzheimer Disease",
+  "target": "GRIN2B",
+  "ti_uid": "GRIN2B-D000544",
+  "mesh_id": "D000544",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Myocardial Infarction",
+  "target": "ADORA2A",
+  "ti_uid": "ADORA2A-D009203",
+  "mesh_id": "D009203",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Hyperlipidemias",
+  "target": "FDFT1",
+  "ti_uid": "FDFT1-D006949",
+  "mesh_id": "D006949",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Crohn Disease",
+  "target": "MMP9",
+  "ti_uid": "MMP9-D003424",
+  "mesh_id": "D003424",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Myopathies, Structural, Congenital",
+  "target": "MTM1",
+  "ti_uid": "MTM1-D020914",
+  "mesh_id": "D020914",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "mendelian"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Colitis, Ulcerative",
+  "target": "MMP9",
+  "ti_uid": "MMP9-D003093",
+  "mesh_id": "D003093",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Neutropenia",
+  "target": "FAP",
+  "ti_uid": "FAP-D009503",
+  "mesh_id": "D009503",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Hyperlipoproteinemia Type II",
+  "target": "CETP",
+  "ti_uid": "CETP-D006938",
+  "mesh_id": "D006938",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Dry Eye Syndromes",
+  "target": "ADORA3",
+  "ti_uid": "ADORA3-D015352",
+  "mesh_id": "D015352",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Angina Pectoris",
+  "target": "HCN4",
+  "ti_uid": "HCN4-D000787",
+  "mesh_id": "D000787",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Brain Diseases",
+  "target": "ADNP",
+  "ti_uid": "ADNP-D001927",
+  "mesh_id": "D001927",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "COVID-19",
+  "target": "SPINK1",
+  "ti_uid": "SPINK1-D000086382",
+  "mesh_id": "D000086382",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Colorectal Neoplasms",
+  "target": "POLB",
+  "ti_uid": "POLB-D015179",
+  "mesh_id": "D015179",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Hyperargininemia",
+  "target": "DAO",
+  "ti_uid": "DAO-D020162",
+  "mesh_id": "D020162",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Spinal Cord Injuries",
+  "target": "FGF1",
+  "ti_uid": "FGF1-D013119",
+  "mesh_id": "D013119",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Idiopathic Pulmonary Fibrosis",
+  "target": "INPP5D",
+  "ti_uid": "INPP5D-D054990",
+  "mesh_id": "D054990",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Cystic Fibrosis",
+  "target": "P2RY2",
+  "ti_uid": "P2RY2-D003550",
+  "mesh_id": "D003550",
+  "highest_phase": "Phase III",
+  "orphan": true,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph3",
+  "disease": "Brain Ischemia",
+  "target": "PDE3A",
+  "ti_uid": "PDE3A-D002545",
+  "mesh_id": "D002545",
+  "highest_phase": "Phase III",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Kidney Failure, Chronic",
+  "target": "ACVR2A",
+  "ti_uid": "ACVR2A-D007676",
+  "mesh_id": "D007676",
+  "highest_phase": "Phase II",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Purpura, Thrombocytopenic, Idiopathic",
+  "target": "RHD",
+  "ti_uid": "RHD-D016553",
+  "mesh_id": "D016553",
+  "highest_phase": "Phase II",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Atrial Fibrillation",
+  "target": "KCNJ5",
+  "ti_uid": "KCNJ5-D001281",
+  "mesh_id": "D001281",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Inflammation",
+  "target": "IL18R1",
+  "ti_uid": "IL18R1-D007249",
+  "mesh_id": "D007249",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Head and Neck Neoplasms",
+  "target": "CHEK2",
+  "ti_uid": "CHEK2-D006258",
+  "mesh_id": "D006258",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "somatic"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Colitis, Ulcerative",
+  "target": "MAP3K8",
+  "ti_uid": "MAP3K8-D003093",
+  "mesh_id": "D003093",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Hyperlipidemias",
+  "target": "APOA1",
+  "ti_uid": "APOA1-D006949",
+  "mesh_id": "D006949",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Hypercholesterolemia",
+  "target": "APOA1",
+  "ti_uid": "APOA1-D006937",
+  "mesh_id": "D006937",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Hyperlipoproteinemia Type II",
+  "target": "APOA1",
+  "ti_uid": "APOA1-D006938",
+  "mesh_id": "D006938",
+  "highest_phase": "Phase II",
+  "orphan": true,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Endometrial Neoplasms",
+  "target": "AKT1",
+  "ti_uid": "AKT1-D016889",
+  "mesh_id": "D016889",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "somatic"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Heart Failure",
+  "target": "NOS3",
+  "ti_uid": "NOS3-D006333",
+  "mesh_id": "D006333",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Alzheimer Disease",
+  "target": "GRM2",
+  "ti_uid": "GRM2-D000544",
+  "mesh_id": "D000544",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Small Cell Lung Carcinoma",
+  "target": "PRKDC",
+  "ti_uid": "PRKDC-D055752",
+  "mesh_id": "D055752",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Amyloidosis",
+  "target": "APCS",
+  "ti_uid": "APCS-D000686",
+  "mesh_id": "D000686",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Arthritis, Rheumatoid",
+  "target": "GSK3B",
+  "ti_uid": "GSK3B-D001172",
+  "mesh_id": "D001172",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Kidney Neoplasms",
+  "target": "RPS6KB1",
+  "ti_uid": "RPS6KB1-D007680",
+  "mesh_id": "D007680",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Melanoma",
+  "target": "TNFRSF9",
+  "ti_uid": "TNFRSF9-D008545",
+  "mesh_id": "D008545",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Gastrointestinal Neoplasms",
+  "target": "HDAC8",
+  "ti_uid": "HDAC8-D005770",
+  "mesh_id": "D005770",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Endometriosis",
+  "target": "MAPK9",
+  "ti_uid": "MAPK9-D004715",
+  "mesh_id": "D004715",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "failed_ph2",
+  "disease": "Myelodysplastic Syndromes",
+  "target": "HDAC3",
+  "ti_uid": "HDAC3-D009190",
+  "mesh_id": "D009190",
+  "highest_phase": "Phase II",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Thrombocytosis",
+  "target": "FLT3",
+  "ti_uid": "FLT3-D013922",
+  "mesh_id": "D013922",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "Carcinoma, Non-Small-Cell Lung",
+  "target": "ROS1",
+  "ti_uid": "ROS1-D002289",
+  "mesh_id": "D002289",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "COVID-19",
+  "target": "IFNAR2",
+  "ti_uid": "IFNAR2-D000086382",
+  "mesh_id": "D000086382",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "Hypertension",
+  "target": "AGT",
+  "ti_uid": "AGT-D006973",
+  "mesh_id": "D006973",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "Breast Neoplasms",
+  "target": "PIK3CA",
+  "ti_uid": "PIK3CA-D001943",
+  "mesh_id": "D001943",
+  "highest_phase": "Launched",
+  "orphan": true,
+  "genetic_support": "somatic"
+ },
+ {
+  "group": "launched",
+  "disease": "Anxiety Disorders",
+  "target": "DRD2",
+  "ti_uid": "DRD2-D001008",
+  "mesh_id": "D001008",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "Kidney Neoplasms",
+  "target": "FGFR1",
+  "ti_uid": "FGFR1-D007680",
+  "mesh_id": "D007680",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "somatic"
+ },
+ {
+  "group": "launched",
+  "disease": "Psoriasis",
+  "target": "IL12B",
+  "ti_uid": "IL12B-D011565",
+  "mesh_id": "D011565",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "gwas"
+ },
+ {
+  "group": "launched",
+  "disease": "Stomach Neoplasms",
+  "target": "EGFR",
+  "ti_uid": "EGFR-D013274",
+  "mesh_id": "D013274",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "somatic"
+ },
+ {
+  "group": "launched",
+  "disease": "Primary Myelofibrosis",
+  "target": "JAK2",
+  "ti_uid": "JAK2-D055728",
+  "mesh_id": "D055728",
+  "highest_phase": "Launched",
+  "orphan": true,
+  "genetic_support": "mendelian"
+ },
+ {
+  "group": "launched",
+  "disease": "Neuralgia, Postherpetic",
+  "target": "TRPV1",
+  "ti_uid": "TRPV1-D051474",
+  "mesh_id": "D051474",
+  "highest_phase": "Launched",
+  "orphan": true,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Sarcoma, Kaposi",
+  "target": "TOP2A",
+  "ti_uid": "TOP2A-D012514",
+  "mesh_id": "D012514",
+  "highest_phase": "Launched",
+  "orphan": true,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Vomiting",
+  "target": "OPRK1",
+  "ti_uid": "OPRK1-D014839",
+  "mesh_id": "D014839",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Macular Edema",
+  "target": "KDR",
+  "ti_uid": "KDR-D008269",
+  "mesh_id": "D008269",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Pain, Postoperative",
+  "target": "OPRM1",
+  "ti_uid": "OPRM1-D010149",
+  "mesh_id": "D010149",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Muscular Atrophy, Spinal",
+  "target": "SMN2",
+  "ti_uid": "SMN2-D009134",
+  "mesh_id": "D009134",
+  "highest_phase": "Launched",
+  "orphan": true,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Surgical Procedures, Operative",
+  "target": "F2",
+  "ti_uid": "F2-D013514",
+  "mesh_id": "D013514",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Osteoarthritis",
+  "target": "HAS2",
+  "ti_uid": "HAS2-D010003",
+  "mesh_id": "D010003",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Gastroesophageal Reflux",
+  "target": "GAST",
+  "ti_uid": "GAST-D005764",
+  "mesh_id": "D005764",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ },
+ {
+  "group": "launched",
+  "disease": "Macular Edema",
+  "target": "PTGS1",
+  "ti_uid": "PTGS1-D008269",
+  "mesh_id": "D008269",
+  "highest_phase": "Launched",
+  "orphan": false,
+  "genetic_support": "none"
+ }
+]

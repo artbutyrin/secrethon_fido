@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2448,
+  "output_tokens": 747,
+  "latency_ms": 5378,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"31\", \"claim\": \"Study result for Viltolarsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… are amenable to exon 53 skipping. Exon 53 skipping is intended to allow for production of an internally truncated dystrophin protein in patients with genetic mutations that are amenable to exon 53 skipping.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics After treatment with VILTEPSO 80 mg/kg once weekly, all patients evaluated (N=8) were found to produce mRNA for a truncated dystrophin protein, as measured by reverse transcription polymerase chain reaction (RT-PCR), and demonstrated exon 53 skipping, as measured by DNA sequence analysis. In Study 1, all patients who received VILTEPSO 80 mg/kg once weekly for 20 to 24 weeks showed an increase from baseline in dystrophin protein expression, as quantified by a validated Western blot method (mean 5.3%; median 3.8%; range 0.7% to 13.9% of normal le…\"}, {\"id\": \"32\", \"claim\": \"Study result for Viltolarsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ter treatment with VILTEPSO 80 mg/kg once weekly, all patients evaluated (N=8) were found to produce mRNA for a truncated dystrophin protein, as measured by reverse transcription polymerase chain reaction (RT-PCR), and demonstrated exon 53 skipping, as measured by DNA sequence analysis. In Study 1, all patients who received VILTEPSO 80 mg/kg once weekly for 20 to 24 weeks showed an increase from baseline in dystrophin protein expression, as quantified by a validated Western blot method (mean 5.3%; median 3.8%; range 0.7% to 13.9% of normal levels when normalized to myosin heavy chain; p-value 0.01). Mass spectrometry, immunofluorescence staining, and RT-PCR results were supportive of the Western blot data [see Clinical Studies ( 1…\"}, {\"id\": \"33\", \"claim\": \"Study result for Viltolarsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…uantified by a validated Western blot method (mean 5.3%; median 3.8%; range 0.7% to 13.9% of normal levels when normalized to myosin heavy chain; p-value 0.01). Mass spectrometry, immunofluorescence staining, and RT-PCR results were supportive of the Western blot data [see Clinical Studies ( 14 )]. Expected localization of truncated dystrophin to the sarcolemma in muscle fibers of patients treated with viltolarsen was confirmed by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of viltolarsen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 1.25 mg/kg/week (0.016 times the recommended dosage) to 80 mg/kg/week (the recommended dosage). Viltolarsen exposure increased pr…\"}, {\"id\": \"34\", \"claim\": \"Study result for Viltolarsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…d by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of viltolarsen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 1.25 mg/kg/week (0.016 times the recommended dosage) to 80 mg/kg/week (the recommended dosage). Viltolarsen exposure increased proportionally with dose, with minimal accumulation with once-weekly dosing. Inter-subject variability (as %CV) for C max and AUC ranged from 16% to 27% respectively. VILTEPSO is administered as an IV infusion over 60 minutes. Bioavailability is assumed to be 100%, and median T max was around 1 hour (end of infusion). Distribution The mean viltolarsen steady-state volume of…\"}, {\"id\": \"35\", \"claim\": \"Study result for Viltolarsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…rotein binding ranged from 39% to 40% and is not concentration dependent. Elimination Metabolism Data from in vitro metabolism indicate that viltolarsen is metabolically stable. No metabolites were detected in plasma or urine. Excretion VILTEPSO is excreted mainly as an unchanged drug in the urine. Viltolarsen elimination half-life was 2.5 (%CV=8) hours, and plasma clearance was 217 mL/hr/kg (%CV=22). Specific Populations Age, Sex & Race The pharmacokinetics of viltolarsen have been evaluated only in male pediatric DMD patients.There is no experience with VILTEPSO in patients 65 years of age or older. No marked differences in any PK parameters wer…\"}, {\"id\": \"36\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…nt-emergent adverse events (TEAEs) occurred in all casimersen- and placebo-treated participants and were mostly mild (over 91.4%) and unrelated to casimersen or its dose. There were no deaths, dose reductions, abnormalities in laboratory parameters or vital signs, or casimersen-related serious AEs. Casimersen plasma concentration increased with dose and declined similarly for all dose levels over 24 hours postinfusion. All pharmacokinetic parameters were similar at weeks 7 and 60. DISCUSSION: Casimersen was well tolerated in participants with DMD amenable to exon 45 skipping. Most TEAEs were mild, nonserious, and unrelated to casimersen. Plasma exposure was dose proportional with no suggestion of plasma accumulat…\"}, {\"id\": \"37\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…91.4%) and unrelated to casimersen or its dose. There were no deaths, dose reductions, abnormalities in laboratory parameters or vital signs, or casimersen-related serious AEs. Casimersen plasma concentration increased with dose and declined similarly for all dose levels over 24 hours postinfusion. All pharmacokinetic parameters were similar at weeks 7 and 60. DISCUSSION: Casimersen was well tolerated in participants with DMD amenable to exon 45 skipping. Most TEAEs were mild, nonserious, and unrelated to casimersen. Plasma exposure was dose proportional with no suggestion of plasma accumulation. These results support further studies of casimersen in thi…\"}, {\"id\": \"38\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… to 30 or 50 mg/kg eteplirsen (n=2/group) at week 25; treatment was open label thereafter. All patients had muscle biopsies at baseline and week 48. Efficacy included dystrophin-positive fibers and distance walked on the 6MWT. RESULTS: At week 24, the 30 mg/kg eteplirsen patients were biopsied, and percentage of dystrophin-positive fibers was increased to 23% of normal; no increases were detected in placebo-treated patients (p≤0.002). Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively), suggesting that dystrophin increases with longer treatment. Restoration of functional dystrophin was confirmed by detection of sa…\"}, {\"id\": \"39\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… week 48. Efficacy included dystrophin-positive fibers and distance walked on the 6MWT. RESULTS: At week 24, the 30 mg/kg eteplirsen patients were biopsied, and percentage of dystrophin-positive fibers was increased to 23% of normal; no increases were detected in placebo-treated patients (p≤0.002). Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively), suggesting that dystrophin increases with longer treatment. Restoration of functional dystrophin was confirmed by detection of sarcoglycans and neuronal nitric oxide synthase at the sarcolemma. Ambulation-evaluable eteplirsen-treated patients experienced a 67.3 m benefit compared to placebo/delaye…\"}, {\"id\": \"40\", \"claim\": \"Study result for Eteplirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…rcentage of dystrophin-positive fibers was increased to 23% of normal; no increases were detected in placebo-treated patients (p≤0.002). Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively), suggesting that dystrophin increases with longer treatment. Restoration of functional dystrophin was confirmed by detection of sarcoglycans and neuronal nitric oxide synthase at the sarcolemma. Ambulation-evaluable eteplirsen-treated patients experienced a 67.3 m benefit compared to placebo/delayed patients (p≤0.001). INTERPRETATION: Eteplirsen restored dystrophin in the 30 and 50 mg/kg/wk cohorts, and in subsequently treated, placebo-controlled subjects. Duration, more than dose, account…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "31",
+    "supports": true
+   },
+   {
+    "id": "32",
+    "supports": true
+   },
+   {
+    "id": "33",
+    "supports": true
+   },
+   {
+    "id": "34",
+    "supports": true
+   },
+   {
+    "id": "35",
+    "supports": true
+   },
+   {
+    "id": "36",
+    "supports": true
+   },
+   {
+    "id": "37",
+    "supports": true
+   },
+   {
+    "id": "38",
+    "supports": false
+   },
+   {
+    "id": "39",
+    "supports": false
+   },
+   {
+    "id": "40",
+    "supports": true
+   }
+  ]
+ }
+}

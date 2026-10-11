@@ -1,0 +1,79 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 675,
+  "output_tokens": 494,
+  "latency_ms": 4596,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT00608881\", \"reason\": \"Futility analysis failed to showed likelihoo of benefit of CoQ 2400 mg/day.\"}, {\"nct\": \"NCT00712426\", \"reason\": \"Results of an interim analysis showed that it was unlikely that creatine was effective in slowing loss of function in early symptomatic Huntington's Disease.\"}, {\"nct\": \"NCT02342548\", \"reason\": \"Study terminated on 15DEC2016 due to study A8241021 showing no significant difference on primary endpoint between PF-02545920 & placebo. No safety concerns.\"}, {\"nct\": \"NCT02494778\", \"reason\": \"This study served its purpose in providing considerable safety data.\"}, {\"nct\": \"NCT03980938\", \"reason\": \"Due to the long delay because of COVID-19 and results from another study suggesting a higher dose may be more beneficial, EIP Pharma decided on October 15th, 2020, to end the trial prematurely.\"}, {\"nct\": \"NCT05111249\", \"reason\": \"The trial was halted prematurely due to signs and symptoms that suggested the possibility of peripheral neuropathy. All participants who received branaplam continued to undergo routine (safety) evaluations for up to a year following their final dose\"}, {\"nct\": \"NCT05655520\", \"reason\": \"Internal company decision\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT00608881",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Futility analysis failed to showed likelihoo of benefit"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00712426",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "it was unlikely that creatine was effective in slowing loss of function"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02342548",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "showing no significant difference on primary endpoint between PF-02545920 & placebo"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02494778",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "served its purpose"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03980938",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "the long delay because of COVID-19 and results from another study suggesting a higher dose may be more beneficial"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05111249",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "signs and symptoms that suggested the possibility of peripheral neuropathy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05655520",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Internal company decision"
+     }
+    ]
+   }
+  ]
+ }
+}

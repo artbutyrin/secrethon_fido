@@ -1,0 +1,260 @@
+{
+ "version": 2,
+ "evidence": {
+  "action": "add",
+  "claim_id": "clm_8d78ea2e56_15",
+  "fact": "differentiation_claim",
+  "value": "efficacy",
+  "author": "analyst"
+ },
+ "change": {
+  "decision": {
+   "from": "Do Not Invest",
+   "to": "Invest",
+   "changed": true
+  },
+  "grounds": {
+   "from": "crowded",
+   "to": "positive"
+  },
+  "pluses": {
+   "from": 4,
+   "to": 4
+  },
+  "minuses": {
+   "from": 0,
+   "to": 0
+  },
+  "scorecard": [],
+  "rules_added": [
+   {
+    "id": "me_too_differentiated",
+    "name": "Me-too with differentiation",
+    "tier": "note"
+   }
+  ],
+  "rules_removed": [
+   {
+    "id": "me_too",
+    "name": "Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown",
+    "tier": "kill"
+   }
+  ],
+  "pending_resolved": [],
+  "pending_new": [],
+  "caps_added": [],
+  "caps_removed": [],
+  "question": {
+   "from": "thesis",
+   "to": "thesis"
+  },
+  "rnpv_p50_m": {
+   "from": null,
+   "to": null
+  }
+ },
+ "verdict": {
+  "version": 2,
+  "trigger": "add:clm_8d78ea2e56_15",
+  "decision": "Invest",
+  "grounds": "positive",
+  "grounds_text": "pluses outweigh minuses, science evidence is sufficient",
+  "reason": "pluses − minuses = 4 (threshold 2)",
+  "pluses": 4,
+  "minuses": 0,
+  "coverage": {
+   "items_known": 4,
+   "items_total": 8,
+   "mechanism_known": 4,
+   "mechanism_total": 5,
+   "asset_known": 0,
+   "asset_total": 3
+  },
+  "scorecard": [
+   {
+    "id": "unmet_need",
+    "name": "Unmet need",
+    "color": "Y",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "commercial",
+    "basis": "expert",
+    "facts": [],
+    "reads": [
+     "active_comparator_exists",
+     "approved_same_moa_count",
+     "approved_therapies_count",
+     "indication_new_moa_approvals_10y",
+     "soc_last_new_moa_years"
+    ],
+    "claim_ids": [
+     "clm_8d78ea2e56_5",
+     "clm_8d78ea2e56_9"
+    ]
+   },
+   {
+    "id": "human_genetics",
+    "name": "Human genetics",
+    "color": "G",
+    "points": 2,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [
+     "genetic_support"
+    ],
+    "reads": [
+     "correlational_evidence",
+     "genetic_support",
+     "perturbation_evidence"
+    ],
+    "claim_ids": [
+     "clm_8d78ea2e56_4"
+    ]
+   },
+   {
+    "id": "clinical_precedent",
+    "name": "Mechanism clinical precedent",
+    "color": "G",
+    "points": 1,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [
+     "moa_clinical_precedent"
+    ],
+    "reads": [
+     "moa_clinical_precedent"
+    ],
+    "claim_ids": [
+     "clm_8d78ea2e56_7"
+    ]
+   },
+   {
+    "id": "indication_track_record",
+    "name": "Indication track record",
+    "color": "G",
+    "points": 1,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [
+     "indication_ph3_outcomes_other_moa",
+     "indication_ph3_success_share_other_moa"
+    ],
+    "reads": [
+     "indication_graveyard",
+     "indication_ph3_outcomes_other_moa",
+     "indication_ph3_success_share_other_moa"
+    ],
+    "claim_ids": [
+     "clm_8d78ea2e56_12",
+     "clm_8d78ea2e56_13"
+    ]
+   },
+   {
+    "id": "translation_chain",
+    "name": "Translation chain",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "science",
+    "basis": "mixed",
+    "facts": [],
+    "reads": [
+     "animal_model_response",
+     "drug_approved_other_indication",
+     "link_exposure",
+     "link_pd_response",
+     "link_target_engagement",
+     "own_ph2_positive",
+     "phase",
+     "pillars_human"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "clinical_effect",
+    "name": "Clinical effect shown",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [],
+    "reads": [
+     "own_ph2_positive",
+     "own_trial_failed_efficacy",
+     "phase"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "trial_design",
+    "name": "Trial design",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "commercial",
+    "basis": "mixed",
+    "facts": [],
+    "reads": [
+     "biomarker_selection",
+     "dose_ranging_done",
+     "endpoint_matches_mechanism",
+     "open_label_subjective_endpoint",
+     "randomized_controlled"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "regulatory_path",
+    "name": "Regulatory path",
+    "color": "U",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "commercial",
+    "basis": "expert",
+    "facts": [],
+    "reads": [
+     "accepted_endpoint_exists",
+     "endpoint_approval_precedent",
+     "fda_designations_count",
+     "natural_history_data",
+     "rare_disease"
+    ],
+    "claim_ids": []
+   }
+  ],
+  "rules": [
+   {
+    "id": "me_too_differentiated",
+    "name": "Me-too with differentiation",
+    "tier": "note",
+    "counted": false,
+    "absorbed_by": null,
+    "basis": "mixed",
+    "facts": [
+     "approved_same_moa_same_modality_count",
+     "differentiation_claim"
+    ],
+    "claim_ids": [
+     "clm_8d78ea2e56_6",
+     "clm_8d78ea2e56_15"
+    ]
+   }
+  ],
+  "conditions": [],
+  "pending": [],
+  "rejected": [],
+  "conflicts": [],
+  "complete": false,
+  "incomplete_sources": [
+   "uniprot: failed (SourceError: uniprot: offline and no cached response for https://rest.uniprot.org/uniprotkb/search {'query': 'gene_exact)",
+   "fda_labels: failed (SourceError: openfda: offline and no cached response for https://api.fda.gov/drug/label.json {'search': 'openfda.generic)",
+   "pubmed: failed (SourceError: pubmed: offline and no cached response for https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi {'too)",
+   "aact: failed (SourceError: ctgov: offline and no cached response for https://clinicaltrials.gov/api/v2/studies {'query.intr': '\"aliroc)"
+  ],
+  "insufficient": null
+ }
+}

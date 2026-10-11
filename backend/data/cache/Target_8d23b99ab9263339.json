@@ -1,0 +1,76 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000197386"
+ },
+ "fetched_at": "2026-10-09T12:05:11+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000197386",
+    "approvedSymbol": "HTT",
+    "approvedName": "huntingtin",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Huntingtin",
+      "source": "uniprot"
+     },
+     {
+      "label": "Huntingtin, myristoylated N-terminal fragment",
+      "source": "uniprot"
+     },
+     {
+      "label": "HD protein",
+      "source": "uniprot"
+     },
+     {
+      "label": "HTT",
+      "source": "uniprot"
+     },
+     {
+      "label": "HD",
+      "source": "uniprot"
+     },
+     {
+      "label": "IT15",
+      "source": "uniprot"
+     },
+     {
+      "label": "IT15",
+      "source": "HGNC"
+     },
+     {
+      "label": "Huntington disease protein",
+      "source": "uniprot"
+     },
+     {
+      "label": "HD",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "IT15",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "LOMARS",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "huntingtin",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "huntington disease protein",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "HTT",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "coronary artery disease",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-09T12:06:21+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 103,
+    "hits": [
+     {
+      "id": "MONDO_0005010",
+      "name": "coronary artery disorder",
+      "entity": "disease",
+      "description": "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC)",
+      "score": 4598.2817
+     },
+     {
+      "id": "EFO_0003776",
+      "name": "coronary artery bypass",
+      "entity": "disease",
+      "description": "Surgical therapy of ischemic coronary artery disease achieved by grafting a section of saphenous vein, internal mammary artery, or other substitute between the aorta and the obstructed coronary artery distal to the obstructive lesion.",
+      "score": 1049.2993
+     },
+     {
+      "id": "MONDO_0012586",
+      "name": "coronary artery disease, autosomal dominant 2",
+      "entity": "disease",
+      "description": "Any coronary artery disease in which the cause of the disease is a mutation in the LRP6 gene.",
+      "score": 923.74915
+     },
+     {
+      "id": "MONDO_0021661",
+      "name": "coronary atherosclerosis",
+      "entity": "disease",
+      "description": "Atherosclerosis of the coronary vasculature.",
+      "score": 861.7718
+     },
+     {
+      "id": "EFO_0004723",
+      "name": "coronary artery calcification",
+      "entity": "disease",
+      "description": "Calcification of the coronary artery, used as a measure of coronary atherosclerosis, a risk factor for myocardial infarction.",
+      "score": 818.469
+     },
+     {
+      "id": "EFO_0003951",
+      "name": "percutaneous transluminal coronary angioplasty",
+      "entity": "disease",
+      "description": "Dilation of an occluded coronary artery (or arteries) by means of a balloon catheter to restore myocardial blood supply.",
+      "score": 803.69073
+     },
+     {
+      "id": "EFO_1001483",
+      "name": "non-obstructive coronary artery disease",
+      "entity": "disease",
+      "description": "Coronary disease that has not progressed to the point of causing significant occlusion (blockage) of the coronary arteries.",
+      "score": 777.9506
+     },
+     {
+      "id": "HP_0005181",
+      "name": "Premature coronary artery atherosclerosis",
+      "entity": "disease",
+      "description": "Reduction of the diameter of the coronary arteries as the result of an accumulation of atheromatous plaques within the walls of the coronary arteries before age of 45.",
+      "score": 675.285
+     },
+     {
+      "id": "MONDO_0005542",
+      "name": "acute coronary syndrome",
+      "entity": "disease",
+      "description": "Signs and symptoms related to acute ischemia of the myocardium secondary to coronary artery disease. The clinical presentation covers a spectrum of heart diseases from unstable angina to myocardial infarction.",
+      "score": 630.50946
+     },
+     {
+      "id": "MONDO_0006714",
+      "name": "coronary aneurysm",
+      "entity": "disease",
+      "description": "Abnormal balloon- or sac-like dilatation in the wall of coronary vessels. Most coronary aneurysms are due to coronary atherosclerosis, and the rest are due to inflammatory diseases, such as kawasaki disease.",
+      "score": 546.2471
+     }
+    ]
+   }
+  }
+ }
+}

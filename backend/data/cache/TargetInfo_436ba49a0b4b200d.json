@@ -1,0 +1,262 @@
+{
+ "query": "TargetInfo",
+ "variables": {
+  "ensemblId": "ENSG00000197386"
+ },
+ "fetched_at": "2026-10-09T12:05:12+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000197386",
+    "approvedSymbol": "HTT",
+    "isEssential": false,
+    "safetyLiabilities": [],
+    "prioritisation": {
+     "items": [
+      {
+       "key": "geneticConstraint",
+       "value": "-0.8230621747466448"
+      },
+      {
+       "key": "hasHighQualityChemicalProbes",
+       "value": "0"
+      },
+      {
+       "key": "hasLigand",
+       "value": "1"
+      },
+      {
+       "key": "hasPocket",
+       "value": "1"
+      },
+      {
+       "key": "hasSmallMoleculeBinder",
+       "value": "1"
+      },
+      {
+       "key": "isInMembrane",
+       "value": "0"
+      },
+      {
+       "key": "isSecreted",
+       "value": "0"
+      },
+      {
+       "key": "maxClinicalStage",
+       "value": "0.7"
+      },
+      {
+       "key": "mouseKOScore",
+       "value": "-0.9682572371642031"
+      },
+      {
+       "key": "mouseOrthologMaxIdentityPercentage",
+       "value": "0.5114600000000002"
+      },
+      {
+       "key": "tissueDistribution",
+       "value": "-1"
+      },
+      {
+       "key": "tissueSpecificity",
+       "value": "-0.6178425774877652"
+      },
+      {
+       "key": "celltypeSpecificity",
+       "value": "-0.6340065893138519"
+      },
+      {
+       "key": "celltypeDistribution",
+       "value": "0.0117647058823529"
+      },
+      {
+       "key": "geneEssentiality",
+       "value": "0"
+      }
+     ]
+    },
+    "subcellularLocations": [
+     {
+      "location": "Cytoplasm",
+      "source": "uniprot",
+      "termSL": "SL-0086",
+      "labelSL": "Cellular component"
+     },
+     {
+      "location": "Nucleus",
+      "source": "uniprot",
+      "termSL": "SL-0191",
+      "labelSL": "Cellular component"
+     },
+     {
+      "location": "Early endosome",
+      "source": "uniprot",
+      "termSL": "SL-0094",
+      "labelSL": "Cellular component"
+     },
+     {
+      "location": "Cytoplasmic vesicle, autophagosome",
+      "source": "uniprot",
+      "termSL": "SL-0088",
+      "labelSL": "Cellular component"
+     },
+     {
+      "location": "Nucleoplasm",
+      "source": "HPA_main",
+      "termSL": "SL-0190",
+      "labelSL": "Nucleoplasm"
+     },
+     {
+      "location": "Cytosol",
+      "source": "HPA_additional",
+      "termSL": "SL-0091",
+      "labelSL": "Cytosol"
+     }
+    ],
+    "tractability": [
+     {
+      "label": "Approved Drug",
+      "modality": "SM",
+      "value": false
+     },
+     {
+      "label": "Advanced Clinical",
+      "modality": "SM",
+      "value": false
+     },
+     {
+      "label": "Phase 1 Clinical",
+      "modality": "SM",
+      "value": false
+     },
+     {
+      "label": "Structure with Ligand",
+      "modality": "SM",
+      "value": true
+     },
+     {
+      "label": "High-Quality Ligand",
+      "modality": "SM",
+      "value": true
+     },
+     {
+      "label": "High-Quality Pocket",
+      "modality": "SM",
+      "value": true
+     },
+     {
+      "label": "Med-Quality Pocket",
+      "modality": "SM",
+      "value": false
+     },
+     {
+      "label": "Druggable Family",
+      "modality": "SM",
+      "value": true
+     },
+     {
+      "label": "Approved Drug",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "Advanced Clinical",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "Phase 1 Clinical",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "UniProt loc high conf",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "GO CC high conf",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "UniProt loc med conf",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "UniProt SigP or TMHMM",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "GO CC med conf",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "Human Protein Atlas loc",
+      "modality": "AB",
+      "value": false
+     },
+     {
+      "label": "Approved Drug",
+      "modality": "PR",
+      "value": false
+     },
+     {
+      "label": "Advanced Clinical",
+      "modality": "PR",
+      "value": false
+     },
+     {
+      "label": "Phase 1 Clinical",
+      "modality": "PR",
+      "value": false
+     },
+     {
+      "label": "Literature",
+      "modality": "PR",
+      "value": true
+     },
+     {
+      "label": "UniProt Ubiquitination",
+      "modality": "PR",
+      "value": true
+     },
+     {
+      "label": "Database Ubiquitination",
+      "modality": "PR",
+      "value": true
+     },
+     {
+      "label": "Half-life Data",
+      "modality": "PR",
+      "value": true
+     },
+     {
+      "label": "Small Molecule Binder",
+      "modality": "PR",
+      "value": true
+     },
+     {
+      "label": "Approved Drug",
+      "modality": "OC",
+      "value": false
+     },
+     {
+      "label": "Advanced Clinical",
+      "modality": "OC",
+      "value": false
+     },
+     {
+      "label": "Phase 1 Clinical",
+      "modality": "OC",
+      "value": false
+     }
+    ]
+   }
+  }
+ }
+}

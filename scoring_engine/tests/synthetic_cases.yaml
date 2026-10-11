@@ -1,0 +1,36 @@
+# SYNTHETIC cases only for checking the bench. Names and facts are made up.
+cases:
+  - {id: S01, name: "synth. rare monogenic", label: GOOD,
+     facts: {approved_therapies_count: 0, genetic_support: mendelian, moa_clinical_precedent: none,
+             endpoint_approval_precedent: true, fda_designations_count: 2, tractability: clinical,
+             target_safety_flags: 0, class_safety_signal: false, approved_same_moa_count: 0, ph3_same_moa_count: 0}}
+  - {id: S02, name: "synth. confirmed mechanism", label: GOOD,
+     facts: {approved_therapies_count: 2, soc_last_new_moa_years: 8, genetic_support: none,
+             moa_clinical_precedent: approved_related, indication_new_moa_approvals_10y: 2, pillars_human: 3,
+             randomized_controlled: true, endpoint_matches_mechanism: true, tractability: approved,
+             approved_same_moa_count: 0, ph3_same_moa_count: 1, big_pharma_partner: true}}
+  - {id: S03, name: "synth. genetics plus precedent", label: GOOD,
+     facts: {genetic_support: gwas, moa_clinical_precedent: positive_ph2_3_same, approved_therapies_count: 1,
+             class_safety_signal: true, target_safety_flags: 2}}
+  - {id: S04, name: "synth. oncology with a biomarker", label: GOOD,
+     facts: {genetic_support: somatic_driver, approved_therapies_count: 2, soc_last_new_moa_years: 3,
+             biomarker_selection: true, own_ph2_positive: true, single_arm_pivotal: true, oncology: true,
+             rare_disease: false, life_threatening_indication: true, endpoint_approval_precedent: true}}
+  - {id: S05, name: "synth. me-too", label: BAD,
+     facts: {approved_therapies_count: 4, soc_last_new_moa_years: 2, approved_same_moa_count: 3,
+             moa_clinical_precedent: approved_same, genetic_support: gwas, endpoint_approval_precedent: true,
+             tractability: approved}}
+  - {id: S06, name: "synth. refuted mechanism", label: BAD,
+     facts: {approved_therapies_count: 0, indication_graveyard: true, moa_failures_efficacy_ph23: 2,
+             genetic_support: other_disease}}
+  - {id: S07, name: "synth. one green", label: BAD,
+     facts: {approved_therapies_count: 0, genetic_support: none, independent_groups: 1}}
+  - {id: S08, name: "synth. accumulated minuses", label: BAD,
+     facts: {approved_therapies_count: 0, genetic_support: mendelian, endpoint_approval_precedent: true,
+             moa_failures_efficacy_ph23: 1, key_markets_outlicensed: true, runway_short: true}}
+  - {id: S09, name: "synth. strong on paper", label: BAD,
+     facts: {approved_therapies_count: 0, genetic_support: gwas, fda_designations_count: 1,
+             tractability: predicted}}
+  - {id: S10, name: "synth. mixed", label: BAD,
+     facts: {approved_therapies_count: 0, genetic_support: mendelian, endpoint_approval_precedent: true,
+             class_withdrawal: true}}

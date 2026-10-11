@@ -1,0 +1,112 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000142168"
+ },
+ "fetched_at": "2026-10-09T11:59:45+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000142168",
+    "approvedSymbol": "SOD1",
+    "approvedName": "superoxide dismutase 1",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Superoxide dismutase [Cu-Zn]",
+      "source": "uniprot"
+     },
+     {
+      "label": "hSod1",
+      "source": "uniprot"
+     },
+     {
+      "label": "SOD1",
+      "source": "uniprot"
+     },
+     {
+      "label": "IPOA",
+      "source": "HGNC"
+     },
+     {
+      "label": "Hydrogen sulfide oxidase",
+      "source": "uniprot"
+     },
+     {
+      "label": "Superoxide dismutase 1",
+      "source": "uniprot"
+     },
+     {
+      "label": "ALS",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "ALS1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "HEL-S-44",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "IPOA",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "SOD",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "STAHP",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "hSod1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "homodimer",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "superoxide dismutase [Cu-Zn]",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "Cu/Zn superoxide dismutase",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "SOD, soluble",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "epididymis secretory protein Li 44",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "hydrogen sulfide oxidase",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "indophenoloxidase A",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "superoxide dismutase 1, soluble",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "superoxide dismutase, cystolic",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "SOD1",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

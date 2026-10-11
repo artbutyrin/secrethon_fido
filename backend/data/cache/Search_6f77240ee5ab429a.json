@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "familial hypercholesterolemia",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-10T15:07:19+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 638,
+    "hits": [
+     {
+      "id": "MONDO_0005439",
+      "name": "familial hypercholesterolemia",
+      "entity": "disease",
+      "description": "An inheritable form of hyperlipidemia, in which there are excess lipids in the blood.",
+      "score": 5528.909
+     },
+     {
+      "id": "MONDO_0007750",
+      "name": "hypercholesterolemia, familial, 1",
+      "entity": "disease",
+      "description": null,
+      "score": 1042.5123
+     },
+     {
+      "id": "MONDO_0018328",
+      "name": "homozygous familial hypercholesterolemia",
+      "entity": "disease",
+      "description": null,
+      "score": 866.06335
+     },
+     {
+      "id": "HP_0003124",
+      "name": "Hypercholesterolemia",
+      "entity": "disease",
+      "description": "An increased concentration of cholesterol in the blood.",
+      "score": 811.4439
+     },
+     {
+      "id": "MONDO_0011369",
+      "name": "hypercholesterolemia, autosomal dominant, 3",
+      "entity": "disease",
+      "description": "Any familial hypercholesterolemia in which the cause of the disease is a mutation in the PCSK9 gene.",
+      "score": 742.75555
+     },
+     {
+      "id": "MONDO_0007751",
+      "name": "hypercholesterolemia, autosomal dominant, type B",
+      "entity": "disease",
+      "description": null,
+      "score": 687.9805
+     },
+     {
+      "id": "MONDO_0001336",
+      "name": "familial hyperlipidemia",
+      "entity": "disease",
+      "description": "An instance of hyperlipidemia (disease) that is caused by an inherited modification of the individual's genome.",
+      "score": 662.3798
+     },
+     {
+      "id": "MONDO_0016203",
+      "name": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency",
+      "entity": "disease",
+      "description": null,
+      "score": 593.7142
+     },
+     {
+      "id": "MONDO_0009387",
+      "name": "familial lipoprotein lipase deficiency",
+      "entity": "disease",
+      "description": "Familial lipoprotein lipase deficiency is a rare genetic disorder is which a person lacks the enzyme lipoprotein lipase, a protein needed to break down fat molecules. Deficiency of this enzyme prevents affected individuals from properly digesting certain fats. This results in the accumulation of fatty droplets called chylomicrons in the blood and an increase in the blood concentration of triglycerides. Symptoms include episodes of abdominal pain, recurrent inflammation of the pancreas (pancreatitis), abnormal enlargement of the liver and/or spleen (hepatosplenomegaly), and the development of skin lesions known as erruptive xanthomas. Familial lipoprotein lipase deficiency is caused by changes (mutations) in the LPL gene. It is inherited in an autosomal recessive pattern. Treatment aims to control symptoms and blood triglyceride levels with a very low-fat diet. Treatment for individual symptoms (i.e. pancreatitis) involves following established treatment guidelines.",
+      "score": 507.76883
+     },
+     {
+      "id": "MONDO_0018212",
+      "name": "familial cervical artery dissection",
+      "entity": "disease",
+      "description": "An instance of cervical artery dissection that is caused by an inherited modification of the individual's genome.",
+      "score": 501.37323
+     }
+    ]
+   }
+  }
+ }
+}

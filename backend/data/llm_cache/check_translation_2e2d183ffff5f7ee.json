@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2593,
+  "output_tokens": 452,
+  "latency_ms": 3779,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"20\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…teplirsen during once weekly dosing has not been observed. Elimination The total clearance of eteplirsen was 339 mL/hr/kg following 12 weeks of therapy with 30 mg/kg/week. Metabolism Eteplirsen did not appear to be metabolized by hepatic microsomes of any species tested, including humans. Excretion Renal clearance of eteplirsen accounts for approximately two-thirds of the administered dose within 24 hours of intravenous administration. Elimination half-life (t 1/2 ) of eteplirsen was 3 to 4 hours. Specific Populations Age: The pharmacokinetics of eteplirsen have been evaluated in male pediatric DMD patients. There is no experience with the use of EXONDYS 51 in patients 65 years of age or older. Sex: Sex effects have not been eval…\"}, {\"id\": \"21\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… of therapy with 30 mg/kg/week. Metabolism Eteplirsen did not appear to be metabolized by hepatic microsomes of any species tested, including humans. Excretion Renal clearance of eteplirsen accounts for approximately two-thirds of the administered dose within 24 hours of intravenous administration. Elimination half-life (t 1/2 ) of eteplirsen was 3 to 4 hours. Specific Populations Age: The pharmacokinetics of eteplirsen have been evaluated in male pediatric DMD patients. There is no experience with the use of EXONDYS 51 in patients 65 years of age or older. Sex: Sex effects have not been evaluated; EXONDYS 51 has not been studied in female patients. Race…\"}, {\"id\": \"22\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…d <60 mL/min) renal impairment and matched healthy subjects (n=9, creatinine clearance >90 mL/min). Subjects received a single 30 mg/kg intravenous dose of eteplirsen. Subjects with mild and moderate renal impairment showed higher eteplirsen exposure compared to subjects with normal renal function. In subjects with mild and moderate renal impairment, exposure (AUC) increased approximately 1.4-fold and 2.4-fold, respectively. The effect of severe renal impairment or end-stage renal disease on eteplirsen pharmacokinetics and safety has not been studied. Estimated creatinine clearance values derived from the Cockcroft-Gault equation and the threshold definitions for mild, moderate, and severe renal impairment in otherwise…\"}, {\"id\": \"24\", \"claim\": \"Study result for Golodirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…mics After treatment with VYONDYS 53, all patients evaluated (n=25) in Study 1 Part 2 [see Clinical Studies ( 14 )] had an increase in skipping of exon 53 demonstrated by reverse transcription polymerase chain reaction (RT-PCR), compared to baseline. In Study 1 Part 2 [see Clinical Studies ( 14 )], dystrophin levels as assessed by the Sarepta western blot assay increased from 0.10% (SD 0.07) of normal at baseline to 1.02% (SD 1.03) of normal after 48 weeks of treatment with VYONDYS 53. The mean change from baseline in dystrophin after 48 weeks of treatment with VYONDYS 53 was 0.92% (SD 1.01) of normal levels (p<0.001); the median change from baseline was 0.88%. This increase in dystrophin protein expression positively correlated with the level of exon skipping. Dystrophin levels …\"}, {\"id\": \"25\", \"claim\": \"Study result for Golodirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… blot can be meaningfully influenced by differences in sample processing, analytical technique, reference materials, and quantitation methodologies. Therefore, comparing dystrophin results from different assay protocols will require a standardized reference material and additional bridging studies. Correct localization of truncated dystrophin to the sarcolemma in muscle fibers of patients treated with golodirsen was demonstrated by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of golodirsen was evaluated in DMD patients following administration of intravenous doses ranging from 4 mg/kg/week to 30 mg/kg/week (i.e., recommended dosage). Golodirsen exposure increased proportionally with dose, with minimal accumula…\"}, {\"id\": \"26\", \"claim\": \"Study result for Golodirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ents treated with golodirsen was demonstrated by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of golodirsen was evaluated in DMD patients following administration of intravenous doses ranging from 4 mg/kg/week to 30 mg/kg/week (i.e., recommended dosage). Golodirsen exposure increased proportionally with dose, with minimal accumulation with once-weekly dosing. Inter-subject variability (as %CV) for C max and AUC ranged from 38% to 72%, and 34% to 44%, respectively. Distribution Steady-state volume of distribution was similar between DMD patients and healthy subjects. The mean golodirsen steady-state volume of distribution was 668 mL/kg (%CV=32.3) at a do…\"}, {\"id\": \"27\", \"claim\": \"Study result for Golodirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…e increased proportionally with dose, with minimal accumulation with once-weekly dosing. Inter-subject variability (as %CV) for C max and AUC ranged from 38% to 72%, and 34% to 44%, respectively. Distribution Steady-state volume of distribution was similar between DMD patients and healthy subjects. The mean golodirsen steady-state volume of distribution was 668 mL/kg (%CV=32.3) at a dose of 30 mg/kg. Golodirsen plasma protein binding ranged from 33% to 39% and is not concentration dependent. Elimination Golodirsen elimination half-life (SD) was 3.4 (0.6) hours, and plasma clearance was 346 mL/hr/kg at the 30 mg/kg dose. Metabolism Golodirsen is metabolically stable. No metabolites were detected…\"}, {\"id\": \"28\", \"claim\": \"Study result for Golodirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…Steady-state volume of distribution was similar between DMD patients and healthy subjects. The mean golodirsen steady-state volume of distribution was 668 mL/kg (%CV=32.3) at a dose of 30 mg/kg. Golodirsen plasma protein binding ranged from 33% to 39% and is not concentration dependent. Elimination Golodirsen elimination half-life (SD) was 3.4 (0.6) hours, and plasma clearance was 346 mL/hr/kg at the 30 mg/kg dose. Metabolism Golodirsen is metabolically stable. No metabolites were detected in plasma or urine. Excretion Golodirsen is mostly excreted unchanged in the urine. The elimination half-life (t 1/2 ) was 3.4 hours. Specific Populations Age : The pharmacokinetics of golodirsen have been evaluated in male…\"}, {\"id\": \"29\", \"claim\": \"Study result for Golodirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…with Stage 2 chronic kidney disease (CKD) (n=8, estimated glomerular filtration rate (eGFR) ≥60 and <90 mL/min/1.73 m 2 ) or Stage 3 CKD (n=8, eGFR ≥30 and <60 mL/min/1.73 m 2 ) and matched healthy subjects (n=8, eGFR ≥90 mL/min/1.73 m 2 ). Subjects received a single 30 mg/kg IV dose of golodirsen. In subjects with Stage 2 or Stage 3 CKD, exposure (AUC) increased approximately 1.2-fold and 1.9-fold, respectively. There was no change in the C max in subjects with Stage 2 CKD; in subjects with Stage 3 CKD, there was a 1.2-fold increase in C max compared with subjects with normal renal function. The effect of Stage 4 or Stage 5 CKD on golodirsen pharmacokinetics and safety has not been studied. Estimated GFR v…\"}, {\"id\": \"30\", \"claim\": \"Study result for Golodirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… 2 ) or Stage 3 CKD (n=8, eGFR ≥30 and <60 mL/min/1.73 m 2 ) and matched healthy subjects (n=8, eGFR ≥90 mL/min/1.73 m 2 ). Subjects received a single 30 mg/kg IV dose of golodirsen. In subjects with Stage 2 or Stage 3 CKD, exposure (AUC) increased approximately 1.2-fold and 1.9-fold, respectively. There was no change in the C max in subjects with Stage 2 CKD; in subjects with Stage 3 CKD, there was a 1.2-fold increase in C max compared with subjects with normal renal function. The effect of Stage 4 or Stage 5 CKD on golodirsen pharmacokinetics and safety has not been studied. Estimated GFR values derived from MDRD equations and the threshold definitions for various CKD stages in otherwise healthy adults would not be generalizable to pediatric patients with DMD. Therefore…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "20",
+    "supports": true
+   },
+   {
+    "id": "21",
+    "supports": true
+   },
+   {
+    "id": "22",
+    "supports": true
+   },
+   {
+    "id": "24",
+    "supports": true
+   },
+   {
+    "id": "25",
+    "supports": true
+   },
+   {
+    "id": "26",
+    "supports": true
+   },
+   {
+    "id": "27",
+    "supports": true
+   },
+   {
+    "id": "28",
+    "supports": true
+   },
+   {
+    "id": "29",
+    "supports": true
+   },
+   {
+    "id": "30",
+    "supports": true
+   }
+  ]
+ }
+}

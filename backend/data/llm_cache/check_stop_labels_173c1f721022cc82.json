@@ -1,0 +1,32 @@
+{
+ "task": "check_stop_labels",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 741,
+  "output_tokens": 152,
+  "latency_ms": 2287,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"NCT00608881#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Futility analysis failed to showed likelihoo of benefit of CoQ 2400 mg/day.\"}, {\"id\": \"NCT00712426#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Results of an interim analysis showed that it was unlikely that creatine was effective in slowing loss of function in early symptomatic Huntington's Disease.\"}, {\"id\": \"NCT02342548#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Study terminated on 15DEC2016 due to study A8241021 showing no significant difference on primary endpoint between PF-02545920 & placebo. No safety concerns.\"}, {\"id\": \"NCT05111249#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"The trial was halted prematurely due to signs and symptoms that suggested the possibility of peripheral neuropathy. All participants who received branaplam continued to undergo routine (safety) evaluations for up to a year following their final dose\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "NCT00608881#0",
+    "supports": true
+   },
+   {
+    "id": "NCT00712426#0",
+    "supports": true
+   },
+   {
+    "id": "NCT02342548#0",
+    "supports": true
+   },
+   {
+    "id": "NCT05111249#0",
+    "supports": true
+   }
+  ]
+ }
+}

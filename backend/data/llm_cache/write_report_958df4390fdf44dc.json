@@ -1,0 +1,169 @@
+{
+ "task": "write_report",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2867,
+  "output_tokens": 2479,
+  "latency_ms": 18563,
+  "json_mode": "json_schema"
+ },
+ "system": "You write sections of a biotech investment memo for investors. You get the computed verdict, the\nscorecard, the rules that fired and the claims (facts with sources). The verdict is final: explain it, never\nchange or second-guess it.\nWrite for these sections: recommendation (2-3 sentences on why the verdict follows from the evidence),\nscientific_thesis (target biology, human genetics, mechanism precedent and failures), human_translation_thesis\n(can the modality reach and engage the target in patients; the input's translation_chain lines are already printed\nabove your text, so do not repeat them: say what the shown and missing links mean for this asset), clinical_development_plan (stage, trial design,\nregulatory path, enrollment), competitive_landscape (approved drugs, same-mechanism drugs, differentiation),\ncommercial_opportunity (unmet need, population, pricing exposure), capital_to_next_milestone (what the next value\ninflection would be and what is unknown about funding), key_risks (the rules that fired and other risks).\nRules:\n- Every paragraph is either \"source\" (it restates what the cited claims say; cite at least one claim ID) or\n  \"inference\" (your own reasoning from the claims; cite the claims it rests on).\n- Use only the claims given. Do not add facts, drug names, trial IDs, dates or numbers that are not in them.\n- Do not write numbers unless the same number is in a cited claim. Write no percentages, prices, market sizes or\n  amounts of money.\n- If a section has no relevant claims, write one short \"inference\" paragraph saying what is not known and why it\n  matters for the decision, with no claim IDs.\n- commercial_opportunity and capital_to_next_milestone already start with code-written lines (economics_lines in\n  the input). Do not repeat their numbers; say in words what they mean for the decision, and which assumptions\n  (tagged [A] or [A default]) matter most.\n- Do not put claim IDs in the text; list them in claim_ids. Plain English, 1-3 short paragraphs per section.",
+ "user": "{\"disease\": \"Huntington disease\", \"target\": \"HTT (huntingtin)\", \"input\": {\"mechanism\": \"HTT antisense oligonucleotide\", \"phase\": \"ph1\", \"route\": null}, \"verdict\": {\"decision\": \"Invest\", \"grounds\": \"pluses outweigh minuses, science evidence is sufficient\", \"reason\": \"pluses − minuses = 2 (threshold 2)\"}, \"scorecard\": [{\"item\": \"Unmet need\", \"color\": \"yellow\", \"claim_ids\": [\"clm_226cdc733c_6\", \"clm_226cdc733c_10\"]}, {\"item\": \"Human genetics\", \"color\": \"green\", \"claim_ids\": [\"clm_226cdc733c_5\", \"clm_226cdc733c_12\"]}, {\"item\": \"Mechanism clinical precedent\", \"color\": \"yellow\", \"claim_ids\": [\"clm_226cdc733c_8\"]}, {\"item\": \"Indication track record\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Translation chain\", \"color\": \"unknown\", \"claim_ids\": [\"clm_226cdc733c_3\"]}, {\"item\": \"Clinical effect shown\", \"color\": \"unknown\", \"claim_ids\": [\"clm_226cdc733c_3\"]}, {\"item\": \"Trial design\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Regulatory path\", \"color\": \"unknown\", \"claim_ids\": []}], \"rules_fired\": [], \"what_would_change\": [\"Drugs with the same mechanism in Phase 3 (including Chinese sponsors): 0 -> 3 gives Conditional\", \"Standard of care loses exclusivity before or soon after launch: unknown -> yes gives Do Not Invest\", \"Required annual price is unrealistic for the addressable population: unknown -> yes gives Conditional\", \"The drug falls under Medicare price negotiation (IRA) during its peak: unknown -> yes gives Conditional\", \"Genetic support for the target–disease pair: mendelian -> unknown gives Do Not Invest\", \"Genetic support for the target–disease pair: mendelian -> no_data gives Do Not Invest\"], \"claims\": [{\"id\": \"clm_226cdc733c_1\", \"fact\": \"moa_direction\", \"value\": \"inhibit\", \"statement\": \"Input: direction of action is inhibit.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_2\", \"fact\": \"modality\", \"value\": \"rna\", \"statement\": \"Input: modality is rna.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_3\", \"fact\": \"phase\", \"value\": \"ph1\", \"statement\": \"Input: development stage is ph1.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_4\", \"fact\": \"oncology\", \"value\": false, \"statement\": \"Huntington disease is not in the oncology therapeutic area.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_5\", \"fact\": \"genetic_support\", \"value\": \"mendelian\", \"statement\": \"HTT has Mendelian genetic evidence for Huntington disease (12 records: clingen, eva, orphanet, uniprot_literature).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_6\", \"fact\": \"approved_same_moa_count\", \"value\": 0, \"statement\": \"0 drugs with the same mechanism (HTT inhibit) are approved for Huntington disease.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_7\", \"fact\": \"approved_same_moa_same_modality_count\", \"value\": 0, \"statement\": \"0 drugs with the same mechanism and the same modality class (nucleic acid) are approved for Huntington disease.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_8\", \"fact\": \"moa_clinical_precedent\", \"value\": \"none\", \"statement\": \"No drug with the same mechanism (HTT inhibit) is approved for any disease (1 drugs on HTT checked).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_9\", \"fact\": \"ph3_same_moa_count\", \"value\": 0, \"statement\": \"0 drugs with the same mechanism have an active Phase 3 trial in Huntington disease.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_10\", \"fact\": \"approved_therapies_count\", \"value\": 2, \"statement\": \"2 drugs are approved for Huntington disease: Deutetrabenazine, Tetrabenazine.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_11\", \"fact\": \"essential_gene\", \"value\": false, \"statement\": \"HTT is not a common essential gene.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_12\", \"fact\": \"perturbation_evidence\", \"value\": true, \"statement\": \"HTT has perturbation evidence (mouse knockout or CRISPR screen) for Huntington disease (31 records: impc).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_13\", \"fact\": \"class_exposure_human\", \"value\": true, \"statement\": \"Drug exposure at the site of action (pharmacokinetics, tissue or csf levels) is shown in humans for 1 drug with the same mechanism of the same modality (rna): Tominersen (\\\"An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL.\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_14\", \"fact\": \"class_target_engagement_human\", \"value\": true, \"statement\": \"Target engagement (the drug binds, blocks or lowers its target) is shown in humans for 1 drug with the same mechanism: Tominersen (\\\"The highest exposure quartile showed a 54% mHTT reduction at steady state\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_15\", \"fact\": \"class_pd_response_human\", \"value\": true, \"statement\": \"A pharmacodynamic response (a downstream biomarker changes) is shown in humans for 1 drug with the same mechanism: Tominersen (\\\"Patients on tominersen showed increased resting-state activity within a 4-8 Hz frequency range compared with patients receiving placebo\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_226cdc733c_16\", \"fact\": \"perturbation_evidence\", \"value\": true, \"statement\": \"Blocking or removing HTT changes a disease phenotype in a model (Yang 2017: CRISPR/Cas9-mediated gene editing ameliorates neurotoxicity in mouse model of Huntington's disease.: \\\"permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology\\\").\", \"origin\": \"llm\", \"status\": \"not_used\"}], \"section_hints\": {\"scientific_thesis\": [\"essential_gene\", \"genetic_support\", \"moa_clinical_precedent\", \"moa_direction\", \"perturbation_evidence\"], \"human_translation_thesis\": [\"class_exposure_human\", \"class_pd_response_human\", \"class_target_engagement_human\", \"modality\"], \"clinical_development_plan\": [\"oncology\", \"phase\"], \"competitive_landscape\": [\"approved_same_moa_count\", \"approved_therapies_count\", \"ph3_same_moa_count\"], \"commercial_opportunity\": [\"approved_therapies_count\", \"oncology\"], \"capital_to_next_milestone\": [\"phase\"], \"key_risks\": []}, \"translation_chain\": [\"Link 1, Molecular effect (target perturbation changes the disease phenotype): asset: unknown; target: shown (impc); to settle: Is there a response in a relevant animal model, and who reproduced it?.\", \"Link 2, Human exposure at the site of action: asset: unknown; class: shown (Tominersen; Yamamoto 2026, Yamamoto 2023); to settle: Is effective exposure reachable safely in humans, and does the drug reach the right tissue?.\", \"Link 3, Target engagement in humans: asset: unknown; class: shown (Tominersen; Yamamoto 2026); to settle: Has target engagement been shown in relevant human tissue?.\", \"Link 4, Biological response (pharmacodynamic biomarker) in humans: asset: unknown; class: shown (Tominersen; Hawellek 2022, Yamamoto 2026); to settle: Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?.\", \"Link 5, Patient benefit: asset: unknown; to settle: What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?.\"], \"economics_lines\": {\"commercial_opportunity\": [\"Economics not run: no market inputs. The verdict rests on the scientific and clinical evidence alone; a market cannot lower or confirm it.\", \"Orphanet epidemiology file not found (backend/data/orphanet/en_product9_prev.xml): no sourced patient count. Download it with `python -m backend.app.market --download` or enter market.us_patients.\"], \"capital_to_next_milestone\": [\"Next milestone: complete ph1 in 2.3 years, P(success) 55.2%; capital $22m (Sertkaya trial costs plus company overhead) to $34m (DiMasi); capital to approval $172–460m [D].\", \"Value after the milestone, rNPV and the round view need a patient count (Orphanet or market.us_patients).\"]}}",
+ "answer": {
+  "sections": [
+   {
+    "id": "recommendation",
+    "paragraphs": [
+     {
+      "text": "Invest follows because HTT has Mendelian genetic support and perturbation evidence in Huntington disease, providing a substantial scientific basis for inhibiting the target. The thesis is not yet clinically validated for this asset: same-mechanism precedent is absent, and the supplied evidence does not establish patient benefit; those uncertainties temper, but do not outweigh, the supporting biology.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_5",
+       "clm_226cdc733c_12",
+       "clm_226cdc733c_8",
+       "clm_226cdc733c_3"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "scientific_thesis",
+    "paragraphs": [
+     {
+      "text": "HTT inhibition is supported by Mendelian evidence linking HTT to Huntington disease and by perturbation evidence. The supplied model evidence reports that HTT perturbation changes disease-related phenotypes, while HTT is not identified as a common essential gene.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_226cdc733c_5",
+       "clm_226cdc733c_12",
+       "clm_226cdc733c_11",
+       "clm_226cdc733c_16"
+      ]
+     },
+     {
+      "text": "These findings support the target rationale, but do not establish that the asset’s particular degree or pattern of HTT inhibition will be safe or beneficial in patients. There is no approved drug precedent for HTT inhibition, leaving the mechanism’s clinical validation unresolved.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_1",
+       "clm_226cdc733c_8"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "human_translation_thesis",
+    "paragraphs": [
+     {
+      "text": "For the RNA modality and HTT-inhibition mechanism, human class evidence shows exposure at the site of action, target engagement, and a pharmacodynamic response with Tominersen. That supports the possibility of reaching and perturbing the target in people, but these are class-level findings, not evidence that this asset achieves those links.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_226cdc733c_2",
+       "clm_226cdc733c_13",
+       "clm_226cdc733c_14",
+       "clm_226cdc733c_15"
+      ]
+     },
+     {
+      "text": "The asset’s own exposure, target engagement, and biomarker response remain unknown, as does whether any biomarker response predicts patient benefit. Its early clinical stage therefore leaves the most decision-relevant translation step—clinical benefit from this asset—unresolved.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_3",
+       "clm_226cdc733c_13",
+       "clm_226cdc733c_14",
+       "clm_226cdc733c_15"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "clinical_development_plan",
+    "paragraphs": [
+     {
+      "text": "The asset is in Phase 1 development.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_226cdc733c_3"
+      ]
+     },
+     {
+      "text": "The supplied evidence does not specify trial design, enrollment, route, or regulatory path. Without those details, the development plan and the next clinical evidence needed to assess safety and efficacy cannot be evaluated.",
+      "kind": "inference",
+      "claim_ids": []
+     }
+    ]
+   },
+   {
+    "id": "competitive_landscape",
+    "paragraphs": [
+     {
+      "text": "No HTT-inhibition drug is approved for Huntington disease, and none with the same mechanism has an active Phase 3 trial in the indication. Two therapies are approved for Huntington disease: deutetrabenazine and tetrabenazine.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_226cdc733c_6",
+       "clm_226cdc733c_9",
+       "clm_226cdc733c_10"
+      ]
+     },
+     {
+      "text": "The absence of an approved same-mechanism therapy leaves room for differentiation if this asset can demonstrate patient benefit, but no clinical benefit or other asset-specific differentiator is established by the supplied evidence.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_6",
+       "clm_226cdc733c_3"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "commercial_opportunity",
+    "paragraphs": [
+     {
+      "text": "The available approvals do not include an HTT-inhibition therapy, leaving a potential unmet need for a treatment that can establish benefit through this mechanism. However, the supplied economics contain no market inputs or sourced patient count, so the addressable population and commercial scale cannot be assessed.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_6",
+       "clm_226cdc733c_10"
+      ]
+     },
+     {
+      "text": "The decision therefore rests on scientific and clinical evidence rather than a confirmed market case. Patient-count and market assumptions are the key unknowns for assessing pricing exposure and whether the opportunity is commercially meaningful.",
+      "kind": "inference",
+      "claim_ids": []
+     }
+    ]
+   },
+   {
+    "id": "capital_to_next_milestone",
+    "paragraphs": [
+     {
+      "text": "The next value inflection is completion of the current early-stage clinical work; the supplied estimate indicates that reaching it requires meaningful development capital, while the path to approval would require substantially more. No patient count is available to support a value-after-milestone or financing-round view.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_3"
+      ]
+     },
+     {
+      "text": "Funding availability and the financing plan are not established in the supplied evidence. No [A] or [A default] assumptions are provided; patient count and market inputs are the most consequential missing inputs for interpreting the value and funding case.",
+      "kind": "inference",
+      "claim_ids": []
+     }
+    ]
+   },
+   {
+    "id": "key_risks",
+    "paragraphs": [
+     {
+      "text": "The central risks are that asset-specific exposure, target engagement, and pharmacodynamic response are unknown, and that no patient-benefit evidence is supplied. The mechanism also lacks approved clinical precedent, while trial design, regulatory path, enrollment, and commercial inputs remain unspecified.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_226cdc733c_3",
+       "clm_226cdc733c_8",
+       "clm_226cdc733c_13",
+       "clm_226cdc733c_14",
+       "clm_226cdc733c_15"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

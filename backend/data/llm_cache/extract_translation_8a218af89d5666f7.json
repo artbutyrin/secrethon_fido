@@ -1,0 +1,118 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2724,
+  "output_tokens": 2618,
+  "latency_ms": 18581,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"coronary artery disorder\", \"target\": \"CETP\", \"drugs\": [\"ANACETRAPIB\", \"DALCETRAPIB\", \"EVACETRAPIB\", \"OBICETRAPIB\", \"ROCACETRAPIB\", \"TORCETRAPIB\"], \"documents\": [{\"id\": \"pmid:38705341\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Obicetrapib on top of maximally tolerated lipid-modifying therapies in participants with or at high risk for atherosclerotic cardiovascular disease: rationale and designs of BROADWAY and BROOKLYN.. BACKGROUND: Obicetrapib, a novel, selective cholesteryl ester transfer protein (CETP) inhibitor, reduces low-density lipoprotein cholesterol (LDL-C), LDL particles, apolipoprotein (Apo) B, and lipoprotein(a) [Lp(a)] and increases high-density lipoprotein cholesterol (HDL-C) when added to statins with or without ezetimibe. By substantially reducing LDL-C, obicetrapib has the potential to lower atherogenic lipoproteins in patients with atherosclerotic cardiovascular disease (ASCVD) or heterozygous familial hypercholesterolemia (HeFH) whose LDL-C levels remain high despite treatment with available maximally tolerated lipid-modifying therapies, addressing an unmet medical need in a patient population at high risk for cardiovascular events. METHODS AND RESULTS: BROADWAY (NCT05142722) and BROOKLYN (NCT05425745) are ongoing placebo-controlled, double-blind, randomized Phase III trials designed to examine the efficacy, safety, and tolerability of obicetrapib as an adjunct to dietary intervention and maximally tolerated lipid-modifying therapies in participants with a history of ASCVD and/or underlying HeFH whose LDL-C is not adequately controlled. The primary efficacy endpoint was the percent change in LDL-C from baseline to day 84. Other endpoints included changes in Apo B, non-HDL-C, HDL-C, Apo A1, Lp(a), and triglycerides in addition to parameters evaluating safety, tolerability, and pharmacokinetics. BROADWAY also included an adjudicated assessment of major adverse cardiovascular events, measurements of glucose homeostasis, and an ambulatory blood pressure monitoring substudy. A total of 2,532 participants were randomized in BROADWAY and 354 in BROOKLYN to receive obicetrapib 10 mg or placebo (2:1) for 365 days with follow-up through 35 days after the last dose. Results from both trials are anticipated in 2024. CONCLUSION: These trials will provide safety and efficacy data to support the potential use of obicetrapib among patients with ASCVD or HeFH with elevated LDL-C for whom existing therapies are not sufficiently effective or well-tolerated.\"}, {\"id\": \"pmid:41430545\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Obicetrapib: A Novel Cholesterol Ester Transfer Protein Inhibitor.. Despite widespread use of high-intensity statins, ezetimibe, and proprotein convertase subtilisin/kexin type 9 inhibitors, substantial atherosclerotic cardiovascular disease risk persists, especially in people with heterozygous familial hypercholesterolemia or elevated lipoprotein(a) [Lp(a)] levels. Cholesteryl ester transfer protein (CETP) inhibitors block the transfer of hydrophobic cholesteryl esters from high-density lipoprotein to apolipoprotein B (apoB)-containing particles. This process raises high-density lipoprotein-C and lowers low-density lipoprotein-C, apoB, and Lp(a) levels. The first-generation of CETP inhibitors was limited by toxicity, neutral outcomes, or unfavorable pharmacokinetics. Obicetrapib is a next-generation amphipathic CETP inhibitor that selectively targets both CETP's hydrophobic and hydrophilic tunnels. It reduces low-density lipoprotein-C by about 30-51%, apoB by 20-33%, and Lp(a) by 30-57% without causing tissue accumulation or toxicity. Phase 3 trials (BROOKLYN, BROADWAY, TANDEM) show that obicetrapib is effective when added to maximized therapy, with a safety profile similar to placebo. Its consistent reduction of Lp(a) addresses an important unmet need. In addition to lowering atherogenic lipoproteins, early data suggest potential for neuroprotection, such as reductions in p-tau217 seen among APOE4 carriers. A 2025 pooled analysis offers initial evidence that major adverse cardiovascular events are reduced, as studied in the ongoing PREVAIL outcomes trial. This review covers CETP biology and tunnel mechanics, outcomes from earlier CETP inhibitor studies, obicetrapib's pharmacology, and current efficacy and safety data, and will clarify its potential place in lipid management today.\"}, {\"id\": \"pmid:41109840\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Effect of obicetrapib, a potent cholesteryl ester transfer protein inhibitor, on p-tau217 levels in patients with cardiovascular disease.. BACKGROUND: Cholesteryl ester transfer protein (CETP) inhibition reduces low density lipoprotein-cholesterol (LDL-C) while simultaneously increasing high density lipoprotein-cholesterol (HDL-C) levels and improving HDL-particle functionality. These lipoprotein modifications may provide a novel pathway for Alzheimer disease (AD) prevention through effects on lipid modulation, antioxidant activity, and neuro-inflammation. This approach could prove particularly beneficial for APOE4 carriers, who face elevated risks for both AD and atherosclerotic cardiovascular disease (ASCVD). OBJECTIVES: To examine the effects of obicetrapib, an oral CETP inhibitor, on biomarker changes indicative of AD pathology among patients with ASCVD DESIGN: This was a pre-specified substudy of the BROADWAY trial, a phase 3, double-blind, placebo-controlled pivotal registration trial to evaluate the LDL-C lowering efficacy of obicetrapib in adult patients with established ASCVD and/or heterozygous familial hypercholesterolemia (HeFH), whose LDL-C was not adequately controlled, despite being on maximally tolerated lipid-lowering therapy. SETTING: The trial was conducted across 188 sites in China, Europe, Japan, and the United States. Participants were recruited from cardiology clinics and lipid specialty centers from 2021 to 2024. PARTICIPANTS: Participants with ASCVD in BROADWAY who had known ApoE status and phosphorylated tau-217 (p-tau217) measured at baseline and 12 months. INTERVENTION: Participants in BROADWAY were randomized 2:1 to receive oral obicetrapib 10 mg daily or placebo for 12 months. MEASUREMENTS: AD plasma biomarkers were measured at baseline and 12 months using standardized SIMOA assays. The key outcome measure of interest was change in plasma p-tau217 from baseline to 12 months. Other outcome measures included changes in p-tau217/(Aβ42:40), p-tau181, glial fibrillary acidic protein (GFAP), and neurofilament light chain (NfL). RESULTS: The analysis population consisted of 1535 (61 %) of the 2530 BROADWAY participants. Median age was 67 years and 67.0 % were male. Baseline p-tau217 levels varied significantly by ApoE subgroups, with ApoE4 carriers generally having higher concentrations and ApoE4/E4 participants exhibiting the highest median concentration (0.56 pg/mL). Obicetrapib significantly attenuated p-tau217 increases compared to placebo (adjusted mean 2.09 % vs 4.94 %; P = 0.025). Treatment differences were most pronounced in ApoE4 carriers, where adjusted mean increases were 1.92 % and 6.91 %, for obicetrapib and placebo, respectively (P = 0.041). Furthermore, among ApoE4/E4 participants, there was a 7.81 % adjusted mean decrease in p-tau217 with obicetrapib compared to a 12.67 % increase with placebo, representing a 20.48 % treatment difference (P = 0.010). Positive trends were observed across secondary biomarkers, with obicetrapib also significantly limiting increases in the p-tau217/Aβ42:40 ratio compared to placebo (2.51 % vs 6.55 %; P = 0.004). In addition, among ApoE4/E4 participants, obicetrapib demonstrated significant effects on GFAP (-6.39 % vs +8.85 %; P = 0.006) and NfL (-10.49 % vs +6.82 %; P = 0.020). Strong correlations were observed between end-of-study obicetrapib plasma concentrations and biomarker improvements (r=-0.64), suggesting CETP inhibition as a potential mechanism, although other drug effects may also contribute to these changes. CONCLUSIONS: Obicetrapib significantly slowed AD biomarker progression over 12 months in participants with ASCVD, with the greatest effects in ApoE4 carriers. Among ApoE4/E4 participants, obicetrapib reduced p-tau217 levels by a placebo-adjusted 20.48 % and demonstrated consistent effects across multiple AD biomarkers. These findings represent the first demonstration of an oral intervention capable of reducing both beta-amyloid and tau pathology biomarkers in ApoE4 carriers, offering a potential preventive strategy for this high-risk population who currently have no effective prevention options. Future research will need to establish whether these biomarker changes translate to clinical benefits in dedicated AD prevention trials. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT05142722.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:38705341",
+    "findings": []
+   },
+   {
+    "id": "pmid:41430545",
+    "findings": [
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "It reduces low-density lipoprotein-C by about 30-51%."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "apoB by 20-33%,"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Lp(a) by 30-57%."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "A 2025 pooled analysis offers initial evidence that major adverse cardiovascular events are reduced"
+     }
+    ]
+   },
+   {
+    "id": "pmid:41109840",
+    "findings": [
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Obicetrapib significantly attenuated p-tau217 increases compared to placebo (adjusted mean 2.09 % vs 4.94 %; P = 0.025)."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Treatment differences were most pronounced in ApoE4 carriers, where adjusted mean increases were 1.92 % and 6.91 %, for obicetrapib and placebo, respectively (P = 0.041)."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "among ApoE4/E4 participants, there was a 7.81 % adjusted mean decrease in p-tau217 with obicetrapib compared to a 12.67 % increase with placebo"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "obicetrapib also significantly limiting increases in the p-tau217/Aβ42:40 ratio compared to placebo (2.51 % vs 6.55 %; P = 0.004)."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "among ApoE4/E4 participants, obicetrapib demonstrated significant effects on GFAP (-6.39 % vs +8.85 %; P = 0.006)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "among ApoE4/E4 participants, obicetrapib demonstrated significant effects on NfL (-10.49 % vs +6.82 %; P = 0.020)."
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Strong correlations were observed between end-of-study obicetrapib plasma concentrations and biomarker improvements (r=-0.64)"
+     }
+    ]
+   }
+  ]
+ }
+}

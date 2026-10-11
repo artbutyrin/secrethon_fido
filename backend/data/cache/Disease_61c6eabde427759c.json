@@ -1,0 +1,113 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0007739"
+ },
+ "fetched_at": "2026-10-09T12:05:11+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0007739",
+    "name": "Huntington disease",
+    "description": "Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "HD",
+       "Huntington chorea",
+       "Huntington disease",
+       "Huntington's Disease",
+       "Huntington's chorea",
+       "Huntington's disease",
+       "AKINETIC RIGID VARIANT HUNTINGTON DIS",
+       "Akinetic Rigid Variant of Huntington Disease",
+       "Akinetic-Rigid Variant of Huntington Disease",
+       "Chorea, Chronic Progressive Hereditary (Huntington)",
+       "Chorea, Huntington",
+       "Chorea, Huntington's",
+       "Chronic Progressive Hereditary Chorea (Huntington)",
+       "Chronic progressive chorea",
+       "Chronic progressive hereditary chorea",
+       "HC - Huntington chorea",
+       "HD - Huntington chorea",
+       "HUNTINGTON DIS",
+       "HUNTINGTON DIS AKINETIC RIGID VARIANT",
+       "HUNTINGTON DIS JUVENILE",
+       "HUNTINGTON DIS JUVENILE ONSET",
+       "HUNTINGTON DIS LATE ONSET",
+       "HUNTINGTONS DIS",
+       "Huntington Chronic Progressive Hereditary Chorea",
+       "Huntington Disease, Akinetic Rigid Variant",
+       "Huntington Disease, Akinetic-Rigid Variant",
+       "Huntington Disease, Juvenile",
+       "Huntington Disease, Juvenile Onset",
+       "Huntington Disease, Juvenile-Onset",
+       "Huntington Disease, Late Onset",
+       "Huntington Disease, Late-Onset",
+       "Huntington's",
+       "Huntington's chorea (disorder)",
+       "Huntington's disease pathway",
+       "Huntingtons disease",
+       "JUVENILE HUNTINGTON DIS",
+       "JUVENILE ONSET HUNTINGTON DIS",
+       "Juvenile Huntington Disease",
+       "Juvenile Onset Huntington Disease",
+       "Juvenile-Onset Huntington Disease",
+       "LATE ONSET HUNTINGTON DIS",
+       "Late Onset Huntington Disease",
+       "Late-Onset Huntington Disease",
+       "Progressive Chorea, Chronic Hereditary (Huntington)",
+       "Progressive Chorea, Hereditary, Chronic (Huntington)"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:12858",
+     "GARD:0006677",
+     "ICD10CM:G10",
+     "ICD10WHO:G10",
+     "ICD9:333.4",
+     "MEDGEN:5654",
+     "MESH:D006816",
+     "MedDRA:10070668",
+     "NANDO:1200012",
+     "NCIT:C82342",
+     "NORD:1256",
+     "OMIM:143100",
+     "Orphanet:399",
+     "SCTID:58756001",
+     "UMLS:C0020179",
+     "icd11.foundation:2132180242"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0005071",
+      "name": "nervous system disorder"
+     },
+     {
+      "id": "EFO_0000651",
+      "name": "phenotype"
+     },
+     {
+      "id": "OTAR_0000018",
+      "name": "genetic, familial or congenital disease"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "source": "uniprot",
+ "url": "https://rest.uniprot.org/uniprotkb/search",
+ "params": {
+  "query": "gene_exact:CETP AND organism_id:9606 AND reviewed:true",
+  "fields": "accession,gene_primary,cc_subcellular_location",
+  "format": "json",
+  "size": 5
+ },
+ "fetched_at": "2026-10-09T12:06:24+00:00",
+ "status": 200,
+ "body": {
+  "results": [
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "P11597",
+    "genes": [
+     {
+      "geneName": {
+       "evidences": [
+        {
+         "evidenceCode": "ECO:0000312",
+         "source": "HGNC",
+         "id": "HGNC:1869"
+        }
+       ],
+       "value": "CETP"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+       "texts": [
+        {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "3281933"
+          }
+         ],
+         "value": "Secreted in plasma"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "24293641"
+          },
+          {
+           "evidenceCode": "ECO:0000269",
+           "source": "PubMed",
+           "id": "3281933"
+          }
+         ],
+         "value": "Secreted",
+         "id": "SL-0243"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI000013C62C"
+    }
+   }
+  ]
+ }
+}

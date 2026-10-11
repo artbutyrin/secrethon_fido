@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "DMD",
+  "entities": [
+   "target"
+  ]
+ },
+ "fetched_at": "2026-10-09T12:01:18+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 94,
+    "hits": [
+     {
+      "id": "ENSG00000198947",
+      "name": "DMD",
+      "entity": "target",
+      "description": "dystrophin",
+      "score": 5667.1504
+     },
+     {
+      "id": "ENSG00000263600",
+      "name": "MIR3915",
+      "entity": "target",
+      "description": "microRNA 3915",
+      "score": 432.76074
+     },
+     {
+      "id": "ENSG00000221348",
+      "name": "MIR548F5",
+      "entity": "target",
+      "description": "microRNA 548f-5",
+      "score": 408.09125
+     },
+     {
+      "id": "ENSG00000281591",
+      "name": "DBET",
+      "entity": "target",
+      "description": "D4Z4 binding element transcript",
+      "score": 339.20154
+     },
+     {
+      "id": "ENSG00000260468",
+      "name": "LINC01290",
+      "entity": "target",
+      "description": "long independently transcribed non-coding RNA 1290",
+      "score": 335.91254
+     },
+     {
+      "id": "ENSG00000229619",
+      "name": "MBNL1-AS1",
+      "entity": "target",
+      "description": "MBNL1 antisense RNA 1",
+      "score": 278.7254
+     },
+     {
+      "id": "ENSG00000102683",
+      "name": "SGCG",
+      "entity": "target",
+      "description": "sarcoglycan gamma",
+      "score": 202.30118
+     },
+     {
+      "id": "ENSG00000136942",
+      "name": "RPL35",
+      "entity": "target",
+      "description": "ribosomal protein L35",
+      "score": 201.04144
+     },
+     {
+      "id": "ENSG00000125691",
+      "name": "RPL23",
+      "entity": "target",
+      "description": "ribosomal protein L23",
+      "score": 200.61461
+     },
+     {
+      "id": "ENSG00000134419",
+      "name": "RPS15A",
+      "entity": "target",
+      "description": "ribosomal protein S15a",
+      "score": 200.42957
+     }
+    ]
+   }
+  }
+ }
+}

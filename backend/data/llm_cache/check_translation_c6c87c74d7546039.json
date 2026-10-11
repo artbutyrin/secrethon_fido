@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2832,
+  "output_tokens": 298,
+  "latency_ms": 4500,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Alirocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…-density lipoprotein (LDL) receptors (LDLR) on the surface of hepatocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, alirocumab increases the number of LDLRs available to clear LDL, thereby lowering LDL-C levels.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Alirocumab reduced free PCSK9 in a concentration-dependent manner. Following a single subcutaneous administration of alirocumab 75 or 150 mg, maximal suppression of free PCSK9 occurred within 4 to 8 hours. Free PCSK9 concentrations returned to baseline when alirocumab concentrations decreased below the limit of quantitation.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics…\"}, {\"id\": \"1\", \"claim\": \"Study result for Alirocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, alirocumab increases the number of LDLRs available to clear LDL, thereby lowering LDL-C levels.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Alirocumab reduced free PCSK9 in a concentration-dependent manner. Following a single subcutaneous administration of alirocumab 75 or 150 mg, maximal suppression of free PCSK9 occurred within 4 to 8 hours. Free PCSK9 concentrations returned to baseline when alirocumab concentrations decreased below the limit of quantitation.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations (t max ) were 3-7…\"}, {\"id\": \"2\", \"claim\": \"Study result for Alirocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…vailable to clear LDL, thereby lowering LDL-C levels.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Alirocumab reduced free PCSK9 in a concentration-dependent manner. Following a single subcutaneous administration of alirocumab 75 or 150 mg, maximal suppression of free PCSK9 occurred within 4 to 8 hours. Free PCSK9 concentrations returned to baseline when alirocumab concentrations decreased below the limit of quantitation.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations (t max ) were 3-7 days. The pharmacokinetics of alirocumab after single subcutaneous administration of 75 mg into the abdomen, upper arm, …\"}, {\"id\": \"3\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… single subcutaneous administration of alirocumab 75 or 150 mg, maximal suppression of free PCSK9 occurred within 4 to 8 hours. Free PCSK9 concentrations returned to baseline when alirocumab concentrations decreased below the limit of quantitation.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations (t max ) were 3-7 days. The pharmacokinetics of alirocumab after single subcutaneous administration of 75 mg into the abdomen, upper arm, or thigh were similar. The absolute bioavailability of alirocumab after subcutaneous administration was about 85% as determined by population pharmacokinetics analysis. A slightly great…\"}, {\"id\": \"4\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… Pharmacokinetics Absorption After subcutaneous administration of 75 mg to 300 mg alirocumab, median times to maximum serum concentrations (t max ) were 3-7 days. The pharmacokinetics of alirocumab after single subcutaneous administration of 75 mg into the abdomen, upper arm, or thigh were similar. The absolute bioavailability of alirocumab after subcutaneous administration was about 85% as determined by population pharmacokinetics analysis. A slightly greater than dose proportional increase was observed, with a 2.1-fold to 2.7-fold increase in total alirocumab concentrations for a 2-fold increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks. Monthly dose normalized exposure with 300 mg every 4 weeks treatment was similar t…\"}, {\"id\": \"5\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…) were 3-7 days. The pharmacokinetics of alirocumab after single subcutaneous administration of 75 mg into the abdomen, upper arm, or thigh were similar. The absolute bioavailability of alirocumab after subcutaneous administration was about 85% as determined by population pharmacokinetics analysis. A slightly greater than dose proportional increase was observed, with a 2.1-fold to 2.7-fold increase in total alirocumab concentrations for a 2-fold increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks. Monthly dose normalized exposure with 300 mg every 4 weeks treatment was similar to that of 150 mg every 2 weeks. Steady state was reached after 2 to 3 doses with an accumulation ratio up to a maximum of about 2-fold. Distribution Following intravenous administration, the volume of distribution was…\"}, {\"id\": \"6\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…dministration was about 85% as determined by population pharmacokinetics analysis. A slightly greater than dose proportional increase was observed, with a 2.1-fold to 2.7-fold increase in total alirocumab concentrations for a 2-fold increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks. Monthly dose normalized exposure with 300 mg every 4 weeks treatment was similar to that of 150 mg every 2 weeks. Steady state was reached after 2 to 3 doses with an accumulation ratio up to a maximum of about 2-fold. Distribution Following intravenous administration, the volume of distribution was about 0.04 to 0.05 L/kg indicating that alirocumab is distributed primarily in the circulatory system. Eliminatio…\"}, {\"id\": \"7\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…oportional increase was observed, with a 2.1-fold to 2.7-fold increase in total alirocumab concentrations for a 2-fold increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks. Monthly dose normalized exposure with 300 mg every 4 weeks treatment was similar to that of 150 mg every 2 weeks. Steady state was reached after 2 to 3 doses with an accumulation ratio up to a maximum of about 2-fold. Distribution Following intravenous administration, the volume of distribution was about 0.04 to 0.05 L/kg indicating that alirocumab is distributed primarily in the circulatory system. Elimination Specific metabolism studies were not conducted, because alirocumab is a protein. Alirocumab is expecte…\"}, {\"id\": \"8\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…d increase in dose from 75 mg every 2 weeks to 150 mg every 2 weeks. Monthly dose normalized exposure with 300 mg every 4 weeks treatment was similar to that of 150 mg every 2 weeks. Steady state was reached after 2 to 3 doses with an accumulation ratio up to a maximum of about 2-fold. Distribution Following intravenous administration, the volume of distribution was about 0.04 to 0.05 L/kg indicating that alirocumab is distributed primarily in the circulatory system. Elimination Specific metabolism studies were not conducted, because alirocumab is a protein. Alirocumab is expected to degrade to small peptides and individual amino acids. In clinical studies where alirocumab was administered in combination with atorvastatin or rosuvastatin, no relevant changes in…\"}, {\"id\": \"9\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ses were observed for alirocumab. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of alirocumab is largely through a non-saturable proteolytic pathway. Based on a population pharmacokinetic analysis, the median apparent half-life of alirocumab at steady state was 17 to 20 days in patients receiving alirocumab at subcutaneous doses of 75 mg every 2 weeks or 150 mg every 2 weeks. Specific Populations A population pharmacokinetic analysis was conducted on data from 2799 patients. Age, body weight, gender, race, and creatinine clearance were found not to significantly influence alirocumab pharmacokinetics. Pediatric Patients The pharmacokinetics of alirocumab were evaluated i…\"}, {\"id\": \"10\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ses were observed for alirocumab. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of alirocumab is largely through a non-saturable proteolytic pathway. Based on a population pharmacokinetic analysis, the median apparent half-life of alirocumab at steady state was 17 to 20 days in patients receiving alirocumab at subcutaneous doses of 75 mg every 2 weeks or 150 mg every 2 weeks. Specific Populations A population pharmacokinetic analysis was conducted on data from 2799 patients. Age, body weight, gender, race, and creatinine clearance were found not to significantly influence alirocumab pharmacokinetics. Pediatric Patients The pharmacokinetics of …\"}, {\"id\": \"11\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ysis was conducted on data from 2799 patients. Age, body weight, gender, race, and creatinine clearance were found not to significantly influence alirocumab pharmacokinetics. Pediatric Patients The pharmacokinetics of alirocumab were evaluated in 140 pediatric patients aged 8 to 17 years with HeFH. Steady-state concentrations were reached at or before week 8 (first PK sampling during repeated dosing) with recommended dosing regimen [see Dosage and Administration (2.2) ] . Renal Impairment Since monoclonal antibodies are not known to be eliminated via renal pathways, renal function is not expected to impact the pharmacokinetics of alirocumab. No data are available in patients with severe renal impairment. Hepatic Impairment Fol…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": true
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": true
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   },
+   {
+    "id": "10",
+    "supports": true
+   },
+   {
+    "id": "11",
+    "supports": true
+   }
+  ]
+ }
+}

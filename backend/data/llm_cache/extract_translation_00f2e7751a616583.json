@@ -1,0 +1,149 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3634,
+  "output_tokens": 2671,
+  "latency_ms": 17525,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Duchenne muscular dystrophy\", \"target\": \"DMD\", \"drugs\": [\"CASIMERSEN\", \"DRISAPERSEN\", \"ETEPLIRSEN\", \"GOLODIRSEN\", \"SUVODIRSEN\", \"VILTOLARSEN\"], \"documents\": [{\"id\": \"pmid:28944732\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Patient-Centered Drug Approval: The Role of Patient Advocacy in the Drug Approval Process.. UNLABELLED: Recent approval of eteplirsen for Duchenne muscular dystrophy (DMD), a rare disease with few treatment alternatives, has reignited the debate over the U.S. drug approval process. The evolution of legal and regulatory restrictions to the marketing and sale of pharmaceuticals has spanned more than a century, and throughout this history, patient advocacy has played a significant role. Scientific evidence from clinical trials serves as the foundation for drug approval, but the patient voice has become increasingly influential. Although the gold standard for establishing safety and efficacy through randomized controlled trials has been in place for more than 50 years, it poses several limitations for rare disorders where patient recruitment for traditional clinical trials is a major barrier. Organized efforts by patient advocacy groups to help patients with rare diseases access investigational therapy have had a legislative and regulatory effect. After approval by the FDA, patient access to therapy may still be limited by cost. A managed care organization (MCO) with the fiduciary responsibility of managing the health of a population must weigh coverage decisions for costly therapies with questionable effectiveness against alternatives within the constraint of a finite budget. Even when the FDA deems a drug safe and effective, an MCO may determine that the drug should only be made available at a tier level where out-of-pocket costs are still too high for many patients. This limitation of availability may be due to cost, other treatment alternatives, or outcomes from existing clinical evidence. However, if the MCO makes a costly new treatment for a rare disease readily available, it may temporarily satisfy a small contingency at the cost of all of its members. This article examines the risks and benefits of patient-centered drug approval and the potential economic effect of patient-centered drug approval on population health. DISCLOSURES: There is no funding to disclose. Mattingly reports advisory board fees from Summit Therapeutics and an educational grant from ALK, outside of this article. Simoni-Wastila has nothing to disclose. Mattingly took the lead in conceptualizing this Viewpoint article and writing the manuscript, along with Simoni-Wastila. Both authors contributed equally to manucript revision.\"}, {\"id\": \"pmid:32139505\", \"about_drug\": \"GOLODIRSEN\", \"text\": \"Increased dystrophin production with golodirsen in patients with Duchenne muscular dystrophy.. OBJECTIVE: To report safety, pharmacokinetics, exon 53 skipping, and dystrophin expression in golodirsen-treated patients with Duchenne muscular dystrophy (DMD) amenable to exon 53 skipping. METHODS: Part 1 was a randomized, double-blind, placebo-controlled, 12-week dose titration of once-weekly golodirsen; part 2 is an ongoing, open-label evaluation. Safety and pharmacokinetics were primary and secondary objectives of part 1. Primary biological outcome measures of part 2 were blinded exon skipping and dystrophin protein production on muscle biopsies (baseline, week 48) evaluated, respectively, using reverse transcription PCR and Western blot and immunohistochemistry. RESULTS: Twelve patients were randomized to receive golodirsen (n = 8) or placebo (n = 4) in part 1. All from part 1 plus 13 additional patients received 30 mg/kg golodirsen in part 2. Safety findings were consistent with those previously observed in pediatric patients with DMD. Most of the study drug was excreted within 4 hours following administration. A significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48, with a mean percent normal dystrophin protein standard of 1.019% (range, 0.09%-4.30%). Sarcolemmal localization of dystrophin was demonstrated by significantly increased dystrophin-positive fibers (week 48, p < 0.001) and a positive correlation (Spearman r = 0.663; p < 0.001) with dystrophin protein change from baseline, measured by Western blot and immunohistochemistry. CONCLUSION: Golodirsen was well-tolerated; muscle biopsies from golodirsen-treated patients showed increased exon 53 skipping, dystrophin production, and correct dystrophin sarcolemmal localization. CLINICALTRIALSGOV IDENTIFIER: NCT02310906. CLASSIFICATION OF EVIDENCE: This study provides Class I evidence that golodirsen is safe and Class IV evidence that it induces exon skipping and novel dystrophin as confirmed by 3 different assays.\"}, {\"id\": \"pmid:39516029\", \"about_drug\": \"GOLODIRSEN\", \"text\": \"Characterization of Nonclinical Drug Metabolism and Pharmacokinetic Properties of Phosphorodiamidate Morpholino Oligonucleotides, a Novel Drug Class for Duchenne Muscular Dystrophy.. Eteplirsen, golodirsen, and casimersen are phosphorodiamidate morpholino oligomers (PMOs) that are approved in the United States for the treatment of patients with Duchenne muscular dystrophy (DMD) with mutations in the DMD gene that are amenable to exon 51, 53, and 45 skipping, respectively. Here we report a series of in vivo and in vitro studies characterizing the drug metabolism and pharmacokinetic (DMPK) properties of these three PMOs. Following a single intravenous dose, plasma exposure was consistent for all three PMOs in mouse, rat, and nonhuman primate (NHP), and plasma half-lives were similar for eteplirsen (2.0-4.1 h) and golodirsen (2.1-8.7 h) across species and more variable for casimersen (3.2-18.1 h). Plasma protein binding was low (<40%) for all three PMOs in mouse, rat, NHP, and human and was largely concentration independent. In the mdx mouse model of DMD, following a single intravenous injection, extensive biodistribution was observed in the target skeletal muscle tissues and the kidney for all three PMOs; consistent with the latter finding, the predominant route of elimination was renal. In vitro studies using liver microsomes showed no evidence of hepatic metabolism, and none of the PMOs were identified as inhibitors or inducers of the human cytochrome P450 enzymes or membrane drug transporters tested at clinically relevant concentrations. These findings suggest that key DMPK features are consistent for eteplirsen, golodirsen, and casimersen and provide evidence for the concept of a PMO drug class with potential application to novel exon-skipping drug candidates. SIGNIFICANCE STATEMENT: The PMOs eteplirsen, golodirsen, and casimersen share similar absorption, distribution, metabolism, and excretion and DMPK properties, which provides evidence for the concept of a PMO treatment class. A PMO drug class may support a platform approach to enhance understanding of the pharmacokinetic and pharmacodynamic behavior of these molecules. The grouping of novel agent series into platforms could be beneficial in the development of drug candidates for populations in which traditional clinical trials are not feasible.\"}, {\"id\": \"pmid:34788571\", \"about_drug\": \"GOLODIRSEN\", \"text\": \"Long-Term Safety and Efficacy Data of Golodirsen in Ambulatory Patients with Duchenne Muscular Dystrophy Amenable to Exon 53 Skipping: A First-in-human, Multicenter, Two-Part, Open-Label, Phase 1/2 Trial.. The aim of this Phase 1/2, 2-part, multicenter trial was to report clinical safety and efficacy of long-term golodirsen treatment among ambulatory patients with exon 53 skip-amenable Duchenne muscular dystrophy (DMD). Part 1 was a 12-week, randomized, double-blind, placebo-controlled, dose-titration study followed by 9-week safety review. Part 2 was a 168-week, open-label evaluation of golodirsen 30 mg/kg. Part 1 primary endpoint was safety. Part 2 primary endpoints were dystrophin protein expression and 6-minute walk test (6MWT); secondary endpoints were percent predicted forced vital capacity (FVC%p) and safety. Post hoc ambulation analyses used mutation-matched external natural history controls. All patients from Part 1 (golodirsen, n = 8; placebo, n = 4) plus 13 additional patients entered Part 2; 23 completed the study. Adverse events were generally mild, nonserious, and unrelated to golodirsen, with no safety-related discontinuations or deaths. Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-reported rates. This study provides evidence for golodirsen biologic activity and long-term safety in a declining DMD population and suggests functional benefit versus external controls. Clinical Trial Registration number: NCT02310906.\"}, {\"id\": \"pmid:37468285\", \"about_drug\": \"VILTOLARSEN\", \"text\": \"Prediction of Human Pharmacokinetics of Phosphorodiamidate Morpholino Oligonucleotides in Duchenne Muscular Dystrophy Patients Using Viltolarsen.. Several modified antisense oligonucleotides (ASOs) have recently been approved for clinical use. Some are phosphorodiamidate morpholino oligomers (PMOs), which, unlike other nucleic acids, are not negatively charged. Thus, PMOs differ from other ASOs in their pharmacokinetic (PK) properties. Drugs with a PMO backbone have been administered to Duchenne muscular dystrophy pediatric patients; however, appropriate methodologies are not currently available to predict their human PK from nonclinical data. In this study, we used viltolarsen as a representative PMO to investigate the applicability of the allometric scaling approach to human PK prediction. We first summarized the nonclinical and clinical PK data for viltolarsen as showing high total clearance, low serum protein binding, metabolic resistance, and urinary excretion as the unchanged drug in both animals and humans. We then investigate the PK of viltolarsen in mice, rats, cynomolgus monkeys, and dogs and used the results, with body weight, to extrapolate to humans by several methods. The estimate of human total clearance obtained from cynomolgus monkeys was the best, and body weight may be the key factor in accurately predicting human total clearance. In contrast, all of the well-known prediction methods for the volume of distribution at steady state gave underestimates. However, the human PK profiles predicted from the PK parameters in cynomolgus monkeys fit the observed human plasma concentrations well. These results are expected to contribute to the further development of PMOs. SIGNIFICANCE STATEMENT: We investigated how to predict the human PK of phosphorodiamidate morpholino oligomers from nonclinical data. The estimates of human PK parameters and profiles determined from cynomolgus monkeys by an allometric scaling approach were the most suitable, and the cynomolgus monkey body weight may be the key factor in accurately predicting human total clearance.\"}, {\"id\": \"pmid:38991781\", \"about_drug\": \"VILTOLARSEN\", \"text\": \"The Usefulness of Determining Plasma and Tissue Concentrations of Phosphorodiamidate Morpholino Oligonucleotides to Estimate Their Efficacy in Duchenne Muscular Dystrophy Patients.. Currently, four kinds of phosphorodiamidate morpholino oligomers (PMOs), such as viltolarsen, have been approved for the treatment of Duchenne muscular dystrophy (DMD); however, it is unclear whether human efficacy can be estimated using plasma concentrations. This study summarizes the tissue distribution of viltolarsen in mice and cynomolgus monkeys and evaluates the relationship between exposure and efficacy based on exon skipping. In the tissue distribution studies, all muscles in DMD-model mice showed higher concentrations of viltolarsen than those in wild-type mice and cynomolgus monkeys, and the concentrations in skeletal muscle were correlated with the exon-skipping efficiency in mice and cynomolgus monkeys. In addition, a highly sensitive bioanalytical method using liquid chromatography with tandem mass spectrometry shows promise for determining plasma concentrations up to a later time point, and the tissue (muscle)/plasma concentration ratio (Kp) in DMD-model mice was shown to be useful for predicting changes in pharmacodynamic (PD) markers in humans. Our results suggest that pharmacokinetic (PK)/PD analysis can be conducted by using the human PK profile or Kp values and skipping efficiency in DMD-model mice. This information will be useful for the efficient and effective development of PMOs as therapeutic agents. SIGNIFICANCE STATEMENT: We evaluated the relationship between the plasma or tissue concentrations and the efficiency of exon skipping for viltolarsen as an example phosphorodiamidate morpholino oligomers in the skeletal and cardiac muscle of mice and cynomolgus monkeys for pharmacokinetic/pharmacodynamic (PK/PD) analysis. The results suggest that PK/PD analysis can be conducted by using the human PK profile or tissue (muscle)/plasma concentration ratios and skipping efficiency in DMD-model mice.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:28944732",
+    "findings": []
+   },
+   {
+    "id": "pmid:32139505",
+    "findings": [
+     {
+      "drug": "GOLODIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "A significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48."
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "a significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48."
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Sarcolemmal localization of dystrophin was demonstrated by significantly increased dystrophin-positive fibers (week 48, p < 0.001)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:39516029",
+    "findings": [
+     {
+      "drug": "GOLODIRSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": false,
+      "quote": "plasma half-lives were similar for eteplirsen (2.0-4.1 h) and golodirsen (2.1-8.7 h) across species"
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "In the mdx mouse model of DMD, following a single intravenous injection, extensive biodistribution was observed in the target skeletal muscle tissues and the kidney for all three PMOs"
+     }
+    ]
+   },
+   {
+    "id": "pmid:34788571",
+    "findings": [
+     {
+      "drug": "GOLODIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001)."
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001)."
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067)"
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "loss of ambulation occurred in 9% versus 26% (P = 0.21)."
+     },
+     {
+      "drug": "GOLODIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-reported rates."
+     }
+    ]
+   },
+   {
+    "id": "pmid:37468285",
+    "findings": [
+     {
+      "drug": "VILTOLARSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "the human PK profiles predicted from the PK parameters in cynomolgus monkeys fit the observed human plasma concentrations well."
+     }
+    ]
+   },
+   {
+    "id": "pmid:38991781",
+    "findings": [
+     {
+      "drug": "VILTOLARSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "all muscles in DMD-model mice showed higher concentrations of viltolarsen than those in wild-type mice and cynomolgus monkeys"
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "the concentrations in skeletal muscle were correlated with the exon-skipping efficiency in mice and cynomolgus monkeys."
+     }
+    ]
+   }
+  ]
+ }
+}

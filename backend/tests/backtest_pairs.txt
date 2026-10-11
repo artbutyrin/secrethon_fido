@@ -1,0 +1,67 @@
+# Backtest pairs from Minikel 2024 (built by backtest_build.py). disease | target
+
+# failed_ph3: 267 pairs in the data, 20 picked
+Atherosclerosis | CETP
+Hypercholesterolemia | CETP
+Alzheimer Disease | GRIN2B
+Myocardial Infarction | ADORA2A
+Hyperlipidemias | FDFT1
+Crohn Disease | MMP9
+Myopathies, Structural, Congenital | MTM1
+Colitis, Ulcerative | MMP9
+Neutropenia | FAP
+Hyperlipoproteinemia Type II | CETP
+Dry Eye Syndromes | ADORA3
+Angina Pectoris | HCN4
+Brain Diseases | ADNP
+COVID-19 | SPINK1
+Colorectal Neoplasms | POLB
+Hyperargininemia | DAO
+Spinal Cord Injuries | FGF1
+Idiopathic Pulmonary Fibrosis | INPP5D
+Cystic Fibrosis | P2RY2
+Brain Ischemia | PDE3A
+
+# failed_ph2: 2277 pairs in the data, 20 picked
+Kidney Failure, Chronic | ACVR2A
+Purpura, Thrombocytopenic, Idiopathic | RHD
+Atrial Fibrillation | KCNJ5
+Inflammation | IL18R1
+Head and Neck Neoplasms | CHEK2
+Colitis, Ulcerative | MAP3K8
+Hyperlipidemias | APOA1
+Hypercholesterolemia | APOA1
+Hyperlipoproteinemia Type II | APOA1
+Endometrial Neoplasms | AKT1
+Heart Failure | NOS3
+Alzheimer Disease | GRM2
+Small Cell Lung Carcinoma | PRKDC
+Amyloidosis | APCS
+Arthritis, Rheumatoid | GSK3B
+Kidney Neoplasms | RPS6KB1
+Melanoma | TNFRSF9
+Gastrointestinal Neoplasms | HDAC8
+Endometriosis | MAPK9
+Myelodysplastic Syndromes | HDAC3
+
+# launched: 1816 pairs in the data, 20 picked
+Thrombocytosis | FLT3
+Carcinoma, Non-Small-Cell Lung | ROS1
+COVID-19 | IFNAR2
+Hypertension | AGT
+Breast Neoplasms | PIK3CA
+Anxiety Disorders | DRD2
+Kidney Neoplasms | FGFR1
+Psoriasis | IL12B
+Stomach Neoplasms | EGFR
+Primary Myelofibrosis | JAK2
+Neuralgia, Postherpetic | TRPV1
+Sarcoma, Kaposi | TOP2A
+Vomiting | OPRK1
+Macular Edema | KDR
+Pain, Postoperative | OPRM1
+Muscular Atrophy, Spinal | SMN2
+Surgical Procedures, Operative | F2
+Osteoarthritis | HAS2
+Gastroesophageal Reflux | GAST
+Macular Edema | PTGS1

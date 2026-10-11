@@ -1,0 +1,62 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "HTT",
+  "entities": [
+   "target"
+  ]
+ },
+ "fetched_at": "2026-10-09T12:05:11+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 6,
+    "hits": [
+     {
+      "id": "ENSG00000197386",
+      "name": "HTT",
+      "entity": "target",
+      "description": "huntingtin",
+      "score": 5220.624
+     },
+     {
+      "id": "ENSG00000108576",
+      "name": "SLC6A4",
+      "entity": "target",
+      "description": "solute carrier family 6 member 4",
+      "score": 3373.8782
+     },
+     {
+      "id": "ENSG00000251075",
+      "name": "HTT-AS",
+      "entity": "target",
+      "description": "HTT antisense RNA",
+      "score": 529.6243
+     },
+     {
+      "id": "ENSG00000136295",
+      "name": "TTYH3",
+      "entity": "target",
+      "description": "tweety family member 3",
+      "score": 117.39681
+     },
+     {
+      "id": "ENSG00000141540",
+      "name": "TTYH2",
+      "entity": "target",
+      "description": "tweety family member 2",
+      "score": 107.211525
+     },
+     {
+      "id": "ENSG00000167614",
+      "name": "TTYH1",
+      "entity": "target",
+      "description": "tweety family member 1",
+      "score": 95.780495
+     }
+    ]
+   }
+  }
+ }
+}

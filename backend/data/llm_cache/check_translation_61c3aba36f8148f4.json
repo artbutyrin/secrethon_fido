@@ -1,0 +1,72 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3151,
+  "output_tokens": 1929,
+  "latency_ms": 13825,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"55\", \"claim\": \"Study result for Golodirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…matched external natural history controls. All patients from Part 1 (golodirsen, n = 8; placebo, n = 4) plus 13 additional patients entered Part 2; 23 completed the study. Adverse events were generally mild, nonserious, and unrelated to golodirsen, with no safety-related discontinuations or deaths. Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-repo…\"}, {\"id\": \"56\", \"claim\": \"Study result for Golodirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…matched external natural history controls. All patients from Part 1 (golodirsen, n = 8; placebo, n = 4) plus 13 additional patients entered Part 2; 23 completed the study. Adverse events were generally mild, nonserious, and unrelated to golodirsen, with no safety-related discontinuations or deaths. Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-repo…\"}, {\"id\": \"57\", \"claim\": \"Study result for Golodirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…lus 13 additional patients entered Part 2; 23 completed the study. Adverse events were generally mild, nonserious, and unrelated to golodirsen, with no safety-related discontinuations or deaths. Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-reported rates. This study provides evidence for golodirsen biologic activity and long-term safety in a declining DMD population and sug…\"}, {\"id\": \"58\", \"claim\": \"Study result for Golodirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…irsen, with no safety-related discontinuations or deaths. Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-reported rates. This study provides evidence for golodirsen biologic activity and long-term safety in a declining DMD population and suggests functional benefit versus external controls. Clinical Tr…\"}, {\"id\": \"59\", \"claim\": \"Study result for Golodirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"… Golodirsen increased dystrophin protein (16.0-fold; P < 0.001) and exon skipping (28.9-fold; P < 0.001). At 3 years, 6MWT change from baseline was -99.0 m for golodirsen-treated patients versus -181.4 m for external controls (P = 0.067), and loss of ambulation occurred in 9% versus 26% (P = 0.21). FVC%p declined 8.4% over 3 years in golodirsen-treated patients, comparing favorably with literature-reported rates. This study provides evidence for golodirsen biologic activity and long-term safety in a declining DMD population and suggests functional benefit versus external controls. Clinical Trial Registration number: NCT02310906.\"}, {\"id\": \"60\", \"claim\": \"Study result for Viltolarsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…e estimate of human total clearance obtained from cynomolgus monkeys was the best, and body weight may be the key factor in accurately predicting human total clearance. In contrast, all of the well-known prediction methods for the volume of distribution at steady state gave underestimates. However, the human PK profiles predicted from the PK parameters in cynomolgus monkeys fit the observed human plasma concentrations well. These results are expected to contribute to the further development of PMOs. SIGNIFICANCE STATEMENT: We investigated how to predict the human PK of phosphorodiamidate morpholino oligomers from nonclinical data. The estimates of human PK parameters and profiles determined from cynomolgus monkeys by …\"}, {\"id\": \"61\", \"claim\": \"Study result for Viltolarsen, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…er, it is unclear whether human efficacy can be estimated using plasma concentrations. This study summarizes the tissue distribution of viltolarsen in mice and cynomolgus monkeys and evaluates the relationship between exposure and efficacy based on exon skipping. In the tissue distribution studies, all muscles in DMD-model mice showed higher concentrations of viltolarsen than those in wild-type mice and cynomolgus monkeys, and the concentrations in skeletal muscle were correlated with the exon-skipping efficiency in mice and cynomolgus monkeys. In addition, a highly sensitive bioanalytical method using liquid chromatography with tandem mass spectrometry shows promise for determining plasma concentrations up to a lat…\"}, {\"id\": \"62\", \"claim\": \"Study result for Viltolarsen, in animals: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…n of viltolarsen in mice and cynomolgus monkeys and evaluates the relationship between exposure and efficacy based on exon skipping. In the tissue distribution studies, all muscles in DMD-model mice showed higher concentrations of viltolarsen than those in wild-type mice and cynomolgus monkeys, and the concentrations in skeletal muscle were correlated with the exon-skipping efficiency in mice and cynomolgus monkeys. In addition, a highly sensitive bioanalytical method using liquid chromatography with tandem mass spectrometry shows promise for determining plasma concentrations up to a later time point, and the tissue (muscle)/plasma concentration ratio (Kp) in DMD-model mice was shown to be useful for predictin…\"}, {\"id\": \"63\", \"claim\": \"Study result for Viltolarsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… by Western blot in participants' biceps muscles. Secondary outcomes included additional assessments of dystrophin mRNA and protein production as well as clinical muscle strength and function. RESULTS: Of the 16 included boys with DMD, 15 (94%) were white, and the mean (SD) age was 7.4 (1.8) years. After 20 to 24 weeks of treatment, significant drug-induced dystrophin production was seen in both viltolarsen dose cohorts (40 mg/kg per week: mean [range] 5.7% [3.2-10.3] of normal; 80 mg/kg per week: mean [range] 5.9% [1.1-14.4] of normal). Viltolarsen was well tolerated; no treatment-emergent adverse events required dose reduction, interruption, or discontinuation of the study drug. No serious adverse events or deat…\"}, {\"id\": \"64\", \"claim\": \"Study result for Viltolarsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…] of normal). Viltolarsen was well tolerated; no treatment-emergent adverse events required dose reduction, interruption, or discontinuation of the study drug. No serious adverse events or deaths occurred during the study. Compared with 65 age-matched and treatment-matched natural history controls, all 16 participants treated with viltolarsen showed significant improvements in timed function tests from baseline, including time to stand from supine (viltolarsen: -0.19 s; control: 0.66 s), time to run/walk 10 m (viltolarsen: 0.23 m/s; control: -0.04 m/s), and 6-minute walk test (viltolarsen: 28.9 m; control: -65.3 m) at the week 25 visit. CONCLUSIONS AND RELEVANCE: Systemic treatment of participants with DM…\"}, {\"id\": \"65\", \"claim\": \"Study result for the target itself (no drug), in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ied by using polyclonal antibodies directed against fusion proteins containing two distinct regions of the mDMD cDNA. The DMD protein is shown to be approximately 400 kd and to represent approximately 0.002% of total striated muscle protein. This protein is also detected in smooth muscle (stomach). Muscle tissue isolated from both DMD-affected boys and mdx mice contained no detectable DMD protein, suggesting that these genetic disorders are homologous. Since mdx mice present no obvious clinical abnormalities, the identification of the mdx mouse as an animal model for DMD has important implications with regard to the etiology of the lethal DMD phenotype. We have named the protein dystrophin …\"}, {\"id\": \"66\", \"claim\": \"Study result for the target itself (no drug), in animals: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ied by using polyclonal antibodies directed against fusion proteins containing two distinct regions of the mDMD cDNA. The DMD protein is shown to be approximately 400 kd and to represent approximately 0.002% of total striated muscle protein. This protein is also detected in smooth muscle (stomach). Muscle tissue isolated from both DMD-affected boys and mdx mice contained no detectable DMD protein, suggesting that these genetic disorders are homologous. Since mdx mice present no obvious clinical abnormalities, the identification of the mdx mouse as an animal model for DMD has important implications with regard to the etiology of the lethal DMD phenotype. We have named the protein dystrophin …\"}, {\"id\": \"67\", \"claim\": \"Study result for the target itself (no drug), in animals: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… repeats (CRISPR)-Cas9 system to the mdx mouse model of DMD to remove the mutated exon 23 from the dystrophin gene. This includes local and systemic delivery to adult mice and systemic delivery to neonatal mice. Exon 23 deletion by CRISPR-Cas9 resulted in expression of the modified dystrophin gene, partial recovery of functional dystrophin protein in skeletal myofibers and cardiac muscle, improvement of muscle biochemistry, and significant enhancement of muscle force. This work establishes CRISPR-Cas9-based genome editing as a potential therapy to treat DMD.\"}, {\"id\": \"68\", \"claim\": \"Study result for the target itself (no drug), in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"…cal and systemic delivery to adult mice and systemic delivery to neonatal mice. Exon 23 deletion by CRISPR-Cas9 resulted in expression of the modified dystrophin gene, partial recovery of functional dystrophin protein in skeletal myofibers and cardiac muscle, improvement of muscle biochemistry, and significant enhancement of muscle force. This work establishes CRISPR-Cas9-based genome editing as a potential therapy to treat DMD.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "55",
+    "supports": true
+   },
+   {
+    "id": "56",
+    "supports": true
+   },
+   {
+    "id": "57",
+    "supports": false
+   },
+   {
+    "id": "58",
+    "supports": true
+   },
+   {
+    "id": "59",
+    "supports": true
+   },
+   {
+    "id": "60",
+    "supports": true
+   },
+   {
+    "id": "61",
+    "supports": true
+   },
+   {
+    "id": "62",
+    "supports": true
+   },
+   {
+    "id": "63",
+    "supports": false
+   },
+   {
+    "id": "64",
+    "supports": true
+   },
+   {
+    "id": "65",
+    "supports": false
+   },
+   {
+    "id": "66",
+    "supports": false
+   },
+   {
+    "id": "67",
+    "supports": false
+   },
+   {
+    "id": "68",
+    "supports": true
+   }
+  ]
+ }
+}

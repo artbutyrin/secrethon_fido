@@ -1,0 +1,16 @@
+# A made-up demo example: "disease X + target Y", an early asset.
+# Try removing or adding a line and rerun:
+#   python -m scoring score examples/demo_case.yaml
+# The verdict now is Conditional. What changes it:
+#   genetic_support: mendelian            → Invest (Mendelian genetics gives two science pluses)
+#   moa_clinical_precedent: approved_related → Invest (a second science piece of evidence)
+#   moa_failures_efficacy_ph23: 1         → Do Not Invest (a failure of the same mechanism)
+#   patent_status: expired                → Do Not Invest (kill rule)
+facts:
+  phase: ph1
+  oncology: false
+  approved_therapies_count: 0          # no approved treatment
+  genetic_support: gwas                # genetics supports the target in this disease
+  endpoint_approval_precedent: true    # the endpoint has already been the basis for an approval
+  class_safety_signal: true            # the class has a boxed warning
+  target_safety_flags: 2               # two target safety flags (same cluster)

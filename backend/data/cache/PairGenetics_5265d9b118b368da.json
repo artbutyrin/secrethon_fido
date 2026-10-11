@@ -1,0 +1,399 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0010679",
+  "ensemblId": "ENSG00000198947",
+  "datasources": [
+   "impc",
+   "crispr",
+   "crispr_screen",
+   "ot_crispr",
+   "ot_crispr_validation",
+   "expression_atlas",
+   "reactome",
+   "progeny",
+   "slapenrich",
+   "sysbio"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T12:01:31+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0010679",
+    "evidences": {
+     "count": 33,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "48376df419738fd093229918e543c0cf7fd626d0",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.589,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "c2dc5757a6ba5435a1e1aa9d698404d85bfe365c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5795,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "0032aa70cd1538268e0939ae34083359f9d1184c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5716,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "e34e58577b4969e92623a1bf88fb846edcf29ba6",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5700999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "128ab5b75b4c64da0391d50fcd23363c45c05b29",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.562,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "c9d2748255dd73755e67c21a6cf9cbb70e77cb68",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5557,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "419d86f3ea301dc1ef5e46bf0720243ee940ff8f",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5537,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "4d34ac807d18513c7ddfd9eb37e10fb469c23dca",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5379999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a8fe46fa0174e0c6e24260d26f1989197c9805ae",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5257000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "e6c5fbf14cb861365548d485f71b867659e8043c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5257000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "1c7c4d15b335035aa79313ef36e36354f44c61c5",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5253,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "597c92f769c50621f581de7cffb3fa103209479f",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.523,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "4271eda5192cfef2971e68229561230ce75562fa",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.522,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "1c169cf88bf047fdbd42b6e320992fedd0934575",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5201,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "2c61413e81d4bc148062bb7b17e049739ccc718e",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.512,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "7182742a246295a44b8271c229b89548c6754195",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5102,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "dcd31c63a8d1326149977d0aa48da6d16a48d69f",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5065,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "74168f091460d4f4c01796e66d8beb521f12f611",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.495,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "3534b210cf80d6a88a005f7cd54349723aa1e681",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.49340000000000006,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "5aadf6f611626eb1eb109d5768b1f515091f000c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4913,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a759062855479fcf6435f6168202172c0ba9610a",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4829,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "5cfc1af0c01bbdbaf56b1bfbf8067bf0a68c09f2",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4765,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d85d75e5128578b66667f612ee4ecc422e8b264",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4754,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "221336fd3b23eaf43586faa68bf403f65a393f72",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4703,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "527778d074093b3e4b5de1676f7724c4652d83a4",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4703,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8b9cf73386ed00c026a9fa27817b1049368f05c0",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4618,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "89556dbbd065222c16ad709d965b2892934eb375",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.46140000000000003,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "bd3eeeb72e51de194046ecc4db2b1a8355383c18",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4434,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "7ac0b613f28ee4bba6e0c2446d6e6f09c4f10185",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4424,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ecc8dbc50b9def7ca61bc0b441717cdc0f52f441",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.424,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "7df29e739c11eed6f6ab01ebffa2676402f0f2fd",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4201,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "c0152e1c2f887109e58872a1d97dd55dc9e6ff2b",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41490000000000005,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "54c8d1c786d275df4b824d5737ebbe254a8d2099",
+       "datasourceId": "expression_atlas",
+       "datatypeId": "rna_expression",
+       "score": 0.11295152184755315,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

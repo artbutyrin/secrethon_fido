@@ -1,0 +1,73 @@
+{
+ "id": "clm_27fadc1864_11",
+ "run_id": "run_27fadc1864",
+ "n": 11,
+ "fact": "moa_failures_efficacy_ph23",
+ "value": 2,
+ "origin": "llm",
+ "evidence_type": "source",
+ "statement": "2 drugs with the same mechanism (BACE1 inhibit) stopped Phase 2/3 trials in Alzheimer disease for lack of efficacy: Elenbecestat (NCT02956486: \"no evidence of potential efficacy\"); Lanabecestat (NCT02245737: \"primary endpoint\"). [Confirmed automatically: 2 independent sources, quotes found by code and checked a second time.]",
+ "rule": "Distinct drugs with the same mechanism, Phase 2, 2/3 or 3, trial in this disease, counted by code; drugs approved for this disease are never counted (a failed trial of an approved drug is not a failed program). A hit is an LLM label 'efficacy' with a quote found in the stated stop reason and confirmed by a second check, or (AACT) every primary-outcome superiority analysis with p >= 0.05, or a paper or label saying clinical benefit was not shown (quote checked). Never zero from text.",
+ "sources": [
+  {
+   "kind": "clinical_trial",
+   "id": "NCT02956486",
+   "url": "https://clinicaltrials.gov/study/NCT02956486",
+   "sponsor": "Eisai Co., Ltd.",
+   "quote": "no evidence of potential efficacy",
+   "why_stopped": "Due to an unfavorable risk-benefit ratio including no evidence of potential efficacy, and the adverse event profile of E2609 being worse than placebo.",
+   "verified": true,
+   "drugs": [
+    "ELENBECESTAT"
+   ]
+  },
+  {
+   "kind": "clinical_trial",
+   "id": "NCT02245737",
+   "url": "https://clinicaltrials.gov/study/NCT02245737",
+   "sponsor": "AstraZeneca",
+   "quote": "primary endpoint",
+   "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility",
+   "verified": true,
+   "drugs": [
+    "LANABECESTAT"
+   ]
+  },
+  {
+   "kind": "clinical_trial",
+   "id": "NCT02783573",
+   "url": "https://clinicaltrials.gov/study/NCT02783573",
+   "sponsor": "AstraZeneca",
+   "quote": "primary endpoint",
+   "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility.",
+   "verified": true,
+   "drugs": [
+    "LANABECESTAT"
+   ]
+  },
+  {
+   "kind": "clinical_trial",
+   "id": "NCT02972658",
+   "url": "https://clinicaltrials.gov/study/NCT02972658",
+   "sponsor": "AstraZeneca",
+   "quote": "futility",
+   "why_stopped": "As the feeder study (AZES) was stopped for futility after an independent assessment, this trial was also stopped.",
+   "verified": true,
+   "drugs": [
+    "LANABECESTAT"
+   ]
+  }
+ ],
+ "quote": "no evidence of potential efficacy",
+ "verified": true,
+ "confirmed": true,
+ "doc_ids": [
+  "sponsor:astrazeneca",
+  "sponsor:eisai"
+ ],
+ "added_by": "pipeline",
+ "created_at": "2026-10-10T13:33:33+00:00",
+ "status": "used",
+ "fact_label": "OTHER drugs (not this asset) with the same mechanism, direction and disease that failed Phase 2/3 for efficacy",
+ "fact_level": "mechanism"
+}

@@ -1,0 +1,42 @@
+# Second sample: 15 pairs "disease | explicit mechanism", independent of the Minikel sample (live_sample.py).
+# It tests the mechanism logic — same-mechanism drugs, direction, efficacy failures vs other stop reasons, precedents —
+# not a forecast. Run: python -m backend.tests.mechanism_sample   (live data; offline checks: test_mechanism_sample.py)
+#
+# Format: disease | mechanism | expectations (separated by ;) | what the pair tests and the history it rests on
+#   query=TEXT            the parser's target query            (offline)
+#   action=inhibit|activate                                      (offline)
+#   approved_same>=N / approved_same=N    approved_same_moa_count (approved for this disease, same target + direction)
+#   precedent=VALUE       moa_clinical_precedent
+#   same+=A,B / same-=A,B                 drugs that must / must not be in the same-mechanism list
+#   efficacy_failure+=A / efficacy_failure-=A   drugs that must / must not be counted as efficacy failures
+#   verdict_if_confirmed!=V   the verdict once every pending LLM claim is confirmed by a human
+#   verdict=A/B / verdict!=A/B   2.4: the verdict itself is (not) one of A, B. The expected verdicts are for a NEW asset
+#                         with this mechanism today, with no data on its advantage: 2.5 a mechanism already approved
+#                         here 2+ times is Do Not Invest (grounds "crowded"); a failed mechanism is never Invest.
+# A trailing ? marks an expectation that is historically true but depends on whether public data exposes it (a stop
+# reason, a registry result, a paper with an abstract): not met -> "open", not "fail".
+#
+# Leakage: all checks run on today's data and test what the pipeline does with it. An approval or failure that came
+# after the decision date is never used here to say the system "should have known" it at that date. Dates below are
+# for context only.
+
+# --- positive precedents: the same mechanism is approved for this disease ---------------------------------------------
+familial hypercholesterolemia | anti-PCSK9 antibody | query=PCSK9; action=inhibit; approved_same>=2; precedent=approved_same; same+=ALIROCUMAB,EVOLOCUMAB; same-=EVINACUMAB,ATORVASTATIN; verdict=Do Not Invest | Alirocumab and evolocumab approved 2015. Evinacumab (ANGPTL3) and statins treat the same disease through another target: must not count.
+amyotrophic lateral sclerosis | SOD1 antisense oligonucleotide | query=SOD1; action=inhibit; approved_same>=1; same+=TOFERSEN; verdict=Invest/Conditional | Tofersen, an SOD1 antisense, approved (accelerated) 2023: a positive precedent of the same target, direction and modality.
+type 2 diabetes mellitus | SGLT2 inhibitor | query=SGLT2; action=inhibit; approved_same>=3; same+=DAPAGLIFLOZIN,EMPAGLIFLOZIN,CANAGLIFLOZIN; same-=SITAGLIPTIN,METFORMIN; verdict=Do Not Invest | Several SGLT2 inhibitors approved 2013-2017. DPP-4 inhibitors and metformin are other mechanisms in the same disease. Target given by its common name (SGLT2 = SLC5A2).
+psoriasis | IL-17A inhibitor antibody | query=IL-17A; action=inhibit; approved_same>=2; same+=SECUKINUMAB,IXEKIZUMAB; same-=USTEKINUMAB; verdict=Do Not Invest | Secukinumab (2015) and ixekizumab (2016) block IL-17A. Ustekinumab blocks IL-12/23: a neighbouring pathway, another target.
+chronic myeloid leukemia | ABL1 inhibitor | query=ABL1; action=inhibit; approved_same>=3; same+=IMATINIB,NILOTINIB,DASATINIB; verdict=Do Not Invest | BCR-ABL1 kinase inhibitors, approved from 2001: a mature class.
+obesity | GLP-1 receptor agonist | query=GLP-1 receptor; action=activate; approved_same>=2; same+=SEMAGLUTIDE,LIRAGLUTIDE; same-=ORLISTAT; verdict=Do Not Invest | Liraglutide (2014) and semaglutide (2021) approved for weight management; orlistat (lipase) is another mechanism.
+non-small cell lung carcinoma | KRAS G12C inhibitor | query=KRAS; action=inhibit; approved_same>=2; same+=SOTORASIB,ADAGRASIB; efficacy_failure-=SOTORASIB,ADAGRASIB; verdict=Do Not Invest | Sotorasib (2021) and adagrasib (2022) approved. On 9 October both were wrongly counted as efficacy failures through single combination studies: an approved drug must not be a failure.
+spinal muscular atrophy | SMN1 gene therapy | query=SMN1; action=activate; approved_same>=1; same+=ONASEMNOGENE ABEPARVOVEC; same-=NUSINERSEN,RISDIPLAM; verdict!=Do Not Invest | Onasemnogene abeparvovec (2019) replaces SMN1. Nusinersen and risdiplam act on SMN2 splicing: another target, so not the same mechanism.
+
+# --- failures of the same mechanism in the same disease ----------------------------------------------------------------
+Alzheimer disease | BACE1 inhibitor | query=BACE1; action=inhibit; approved_same=0; precedent=none; efficacy_failure+=LANABECESTAT; efficacy_failure-=ATABECESTAT; same-=LECANEMAB,DONEPEZIL; verdict_if_confirmed!=Invest; verdict=Do Not Invest | Lanabecestat Phase 3 stopped for futility (2018). Atabecestat was stopped for liver safety (2018): a safety stop, not an efficacy failure. Lecanemab (amyloid antibody) and donepezil are other mechanisms.
+coronary artery disease | CETP inhibitor | query=CETP; action=inhibit; approved_same=0; efficacy_failure+=EVACETRAPIB; efficacy_failure-=ANACETRAPIB,TORCETRAPIB; verdict_if_confirmed!=Invest; verdict!=Invest; verdict=Do Not Invest | Evacetrapib's outcome trial stopped for futility (2015). Anacetrapib met its primary endpoint (REVEAL, 2017) and torcetrapib stopped for excess deaths (ILLUMINATE, 2006): neither is an efficacy failure.
+Huntington disease | HTT antisense oligonucleotide | query=HTT; action=inhibit; approved_same=0; same+=TOMINERSEN; same-=TETRABENAZINE; efficacy_failure+=TOMINERSEN?; verdict_if_confirmed!=Invest?; verdict!=Invest | Tominersen's Phase 3 (GENERATION HD1) dosing stopped in 2021 after an independent committee review; the registry lists it as Completed with descriptive results only, so finding the failure depends on a paper found by NCT ID. Tetrabenazine (VMAT2) is symptomatic, another target.
+sepsis | TLR4 antagonist | query=TLR4; action=inhibit; approved_same=0; same+=ERITORAN?; efficacy_failure+=ERITORAN?; verdict!=Invest; verdict=Do Not Invest? | Eritoran's Phase 3 (ACCESS, 2011) did not reduce mortality. It completed rather than stopped, so the failure is visible only through registry results or a paper.
+
+# --- same target or same disease, but not the same mechanism; other stop reasons -------------------------------------
+osteoarthritis | NGF inhibitor antibody | query=NGF; action=inhibit; approved_same=0; same+=TANEZUMAB; efficacy_failure-=TANEZUMAB; verdict!=Invest | Tanezumab met efficacy endpoints but was held for joint safety (rapidly progressive osteoarthritis); an FDA advisory committee voted against it in 2021. A safety problem must not be counted as an efficacy failure.
+obesity | GLP-1 receptor antagonist | query=GLP-1 receptor; action=inhibit; approved_same=0; precedent=none; same-=SEMAGLUTIDE,LIRAGLUTIDE; verdict=Do Not Invest | Opposite direction on the same target: approved GLP-1 agonists must not count as precedents or me-too for an antagonist.
+familial hypercholesterolemia | ANGPTL3 inhibitor antibody | query=ANGPTL3; action=inhibit; same+=EVINACUMAB; same-=ALIROCUMAB,EVOLOCUMAB; approved_same>=1?; verdict!=Do Not Invest | Same disease, other target: the PCSK9 antibodies must not count. Evinacumab is approved (2021) for homozygous FH, a subtype; whether it counts as approved for FH depends on how the indication is mapped.

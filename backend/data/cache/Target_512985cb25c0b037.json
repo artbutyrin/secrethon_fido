@@ -1,0 +1,68 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000087237"
+ },
+ "fetched_at": "2026-10-09T12:06:22+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000087237",
+    "approvedSymbol": "CETP",
+    "approvedName": "cholesteryl ester transfer protein",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Cholesteryl ester transfer protein",
+      "source": "uniprot"
+     },
+     {
+      "label": "CETP",
+      "source": "uniprot"
+     },
+     {
+      "label": "BPIFF",
+      "source": "HGNC"
+     },
+     {
+      "label": "Lipid transfer protein I",
+      "source": "uniprot"
+     },
+     {
+      "label": "BPI fold containing family F",
+      "source": "HGNC"
+     },
+     {
+      "label": "BPIFF",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "HDLCQ10",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "cholesteryl ester transfer protein",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "BPI fold containing family F",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "cholesteryl ester transfer protein plasma",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "lipid transfer protein I",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "CETP",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

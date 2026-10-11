@@ -1,0 +1,536 @@
+{
+ "version": 1,
+ "trigger": "pipeline",
+ "created_at": "2026-10-10T13:33:33+00:00",
+ "used": {
+  "moa_direction": [
+   "clm_27fadc1864_1"
+  ],
+  "oncology": [
+   "clm_27fadc1864_2"
+  ],
+  "genetic_support": [
+   "clm_27fadc1864_3"
+  ],
+  "approved_same_moa_count": [
+   "clm_27fadc1864_4"
+  ],
+  "moa_clinical_precedent": [
+   "clm_27fadc1864_5"
+  ],
+  "ph3_same_moa_count": [
+   "clm_27fadc1864_6"
+  ],
+  "approved_therapies_count": [
+   "clm_27fadc1864_7"
+  ],
+  "essential_gene": [
+   "clm_27fadc1864_8"
+  ],
+  "indication_ph3_outcomes_other_moa": [
+   "clm_27fadc1864_9"
+  ],
+  "indication_ph3_success_share_other_moa": [
+   "clm_27fadc1864_10"
+  ],
+  "moa_ph23_unknown_outcome_count": [
+   "clm_27fadc1864_13"
+  ],
+  "moa_discontinued_safety_count": [
+   "clm_27fadc1864_12"
+  ],
+  "moa_failures_efficacy_ph23": [
+   "clm_27fadc1864_11"
+  ]
+ },
+ "rejected": [],
+ "pending": [],
+ "conflicts": [],
+ "question": "thesis",
+ "market": {
+  "input": null,
+  "provenance": {},
+  "notes": [
+   "Orphanet epidemiology file not found (backend/data/orphanet/en_product9_prev.xml): no sourced patient count. Download it with `python -m backend.app.market --download` or enter market.us_patients.",
+   "CMS prices not read: cms: offline and no cached response for https://data.cms.gov/data-api/v1/dataset/7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b/data {'filter[Gnrc_Name]': 'Aducanumab', 'size': 50}"
+  ],
+  "analogues": {
+   "cms_costs_same_moa": [],
+   "cms_costs": [
+    "ADUCANUMAB",
+    "DONANEMAB",
+    "DONEPEZIL",
+    "GALANTAMINE",
+    "LECANEMAB",
+    "MEMANTINE",
+    "RIVASTIGMINE"
+   ]
+  },
+  "orphacode": null
+ },
+ "result": {
+  "config": {
+   "version": "2.5",
+   "sha256": "1d85c7aab422d158ca83791e6f95510c67bc1b7dd7a12cfe3aea462f9a35642b"
+  },
+  "verdict": {
+   "decision": "Do Not Invest",
+   "grounds": "kill",
+   "grounds_text": "a kill rule fired",
+   "reason": "a kill rule fired",
+   "conditions": [],
+   "caps": [],
+   "insufficient": null
+  },
+  "score": {
+   "pos": 0,
+   "neg": 4,
+   "diff": -4,
+   "science_pos": 0,
+   "greens": 0,
+   "axes": {
+    "science": {
+     "greens": 0,
+     "reds": 0,
+     "strong": 2,
+     "warnings": 0,
+     "rating": "weak"
+    },
+    "commercial": {
+     "greens": 0,
+     "reds": 0,
+     "strong": 0,
+     "warnings": 0,
+     "rating": "weak"
+    }
+   },
+   "coverage": {
+    "items_known": 4,
+    "items_total": 8,
+    "mechanism_known": 4,
+    "mechanism_total": 5,
+    "asset_known": 0,
+    "asset_total": 3
+   }
+  },
+  "scorecard": [
+   {
+    "id": "unmet_need",
+    "name": "Unmet need",
+    "color": "Y",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "commercial",
+    "basis": "expert",
+    "facts": [],
+    "reads": [
+     "active_comparator_exists",
+     "approved_same_moa_count",
+     "approved_therapies_count",
+     "indication_new_moa_approvals_10y",
+     "soc_last_new_moa_years"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_4",
+     "clm_27fadc1864_7"
+    ]
+   },
+   {
+    "id": "human_genetics",
+    "name": "Human genetics",
+    "color": "Y",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [],
+    "reads": [
+     "correlational_evidence",
+     "genetic_support",
+     "perturbation_evidence"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_3"
+    ]
+   },
+   {
+    "id": "clinical_precedent",
+    "name": "Mechanism clinical precedent",
+    "color": "Y",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [],
+    "reads": [
+     "moa_clinical_precedent"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_5"
+    ]
+   },
+   {
+    "id": "indication_track_record",
+    "name": "Indication track record",
+    "color": "Y",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [],
+    "reads": [
+     "indication_graveyard",
+     "indication_ph3_outcomes_other_moa",
+     "indication_ph3_success_share_other_moa"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_9",
+     "clm_27fadc1864_10"
+    ]
+   },
+   {
+    "id": "translation_chain",
+    "name": "Translation chain",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "science",
+    "basis": "mixed",
+    "facts": [],
+    "reads": [
+     "animal_model_response",
+     "drug_approved_other_indication",
+     "link_exposure",
+     "link_pd_response",
+     "link_target_engagement",
+     "own_ph2_positive",
+     "phase",
+     "pillars_human"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "clinical_effect",
+    "name": "Clinical effect shown",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "science",
+    "basis": "evidence",
+    "facts": [],
+    "reads": [
+     "own_ph2_positive",
+     "own_trial_failed_efficacy",
+     "phase"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "trial_design",
+    "name": "Trial design",
+    "color": "U",
+    "points": 0,
+    "level": "asset",
+    "axis": "commercial",
+    "basis": "mixed",
+    "facts": [],
+    "reads": [
+     "biomarker_selection",
+     "dose_ranging_done",
+     "endpoint_matches_mechanism",
+     "open_label_subjective_endpoint",
+     "randomized_controlled"
+    ],
+    "claim_ids": []
+   },
+   {
+    "id": "regulatory_path",
+    "name": "Regulatory path",
+    "color": "U",
+    "points": 0,
+    "level": "mechanism",
+    "axis": "commercial",
+    "basis": "expert",
+    "facts": [],
+    "reads": [
+     "accepted_endpoint_exists",
+     "endpoint_approval_precedent",
+     "fda_designations_count",
+     "natural_history_data",
+     "rare_disease"
+    ],
+    "claim_ids": []
+   }
+  ],
+  "rules": [
+   {
+    "id": "mechanism_refuted",
+    "name": "Mechanism refuted",
+    "tier": "kill",
+    "counted": true,
+    "absorbed_by": null,
+    "basis": "mixed",
+    "facts": [
+     "moa_clinical_precedent",
+     "moa_failures_efficacy_ph23"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_5",
+     "clm_27fadc1864_11"
+    ]
+   },
+   {
+    "id": "one_mechanism_failure",
+    "name": "One mechanism failure for efficacy",
+    "tier": "strong",
+    "counted": true,
+    "absorbed_by": null,
+    "basis": "evidence",
+    "facts": [
+     "moa_failures_efficacy_ph23"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_11"
+    ]
+   },
+   {
+    "id": "moa_safety_discontinuations",
+    "name": "Two or more programs on this target discontinued for safety",
+    "tier": "strong",
+    "counted": true,
+    "absorbed_by": null,
+    "basis": "expert",
+    "facts": [
+     "moa_discontinued_safety_count"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_12"
+    ]
+   },
+   {
+    "id": "no_genetics_no_precedent",
+    "name": "Neither genetics nor a target precedent in a related disease",
+    "tier": "note",
+    "counted": false,
+    "absorbed_by": null,
+    "basis": "evidence",
+    "facts": [
+     "genetic_support",
+     "moa_clinical_precedent"
+    ],
+    "claim_ids": [
+     "clm_27fadc1864_3",
+     "clm_27fadc1864_5"
+    ]
+   }
+  ],
+  "facts": {
+   "given": {
+    "moa_direction": "inhibit",
+    "oncology": false,
+    "genetic_support": "none",
+    "approved_same_moa_count": 0,
+    "moa_clinical_precedent": "none",
+    "ph3_same_moa_count": 0,
+    "approved_therapies_count": 7,
+    "essential_gene": false,
+    "indication_ph3_outcomes_other_moa": 32,
+    "indication_ph3_success_share_other_moa": 0.094,
+    "moa_ph23_unknown_outcome_count": 2,
+    "moa_discontinued_safety_count": 2,
+    "moa_failures_efficacy_ph23": 2
+   },
+   "derived": {
+    "approved_same_moa_same_modality_count": 0
+   },
+   "derived_from": {
+    "approved_same_moa_same_modality_count": [
+     "approved_same_moa_count"
+    ]
+   }
+  },
+  "reference": {
+   "evidence": {
+    "cell": "nothing",
+    "label": "No genetics, precedent or strong indication track record",
+    "n": 5947,
+    "launched": 345,
+    "range": [
+     0.058,
+     0.082
+    ],
+    "from": "Phase I",
+    "base": [
+     0.117,
+     0.117
+    ],
+    "classes": {
+     "genetics": "none",
+     "precedent": "absent",
+     "track": "absent"
+    },
+    "source": "Minikel et al., Nature 2024: 13,030 pairs with a known Phase I outcome; see VALIDATION.md, section 12"
+   },
+   "stage": null,
+   "caveats": []
+  },
+  "what_would_change": [],
+  "dd_questions": [
+   {
+    "question": "Is there a response in a relevant animal model, and who reproduced it?",
+    "facts": [
+     "animal_model_response"
+    ],
+    "sources": [
+     "Data room; publications"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "proprietary experimental data"
+    ]
+   },
+   {
+    "question": "Is effective exposure reachable safely in humans, and does the drug reach the right tissue?",
+    "facts": [
+     "link_exposure"
+    ],
+    "sources": [
+     "Phase 1 (PK); data room; input"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "proprietary experimental data"
+    ]
+   },
+   {
+    "question": "Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?",
+    "facts": [
+     "link_pd_response"
+    ],
+    "sources": [
+     "Phase 1–2 (biomarkers); data room; input"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "proprietary experimental data"
+    ]
+   },
+   {
+    "question": "Has target engagement been shown in relevant human tissue?",
+    "facts": [
+     "link_target_engagement"
+    ],
+    "sources": [
+     "Phase 1 (PD, receptor occupancy); data room; input"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "proprietary experimental data"
+    ]
+   },
+   {
+    "question": "Does the path rely on accelerated approval, and has a confirmatory trial started?",
+    "facts": [
+     "accelerated_only",
+     "confirmatory_trial_registered"
+    ],
+    "sources": [
+     "FDA surrogate endpoint table, type Accelerated",
+     "ClinicalTrials.gov"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "regulatory documents"
+    ]
+   },
+   {
+    "question": "What were the interactions with the FDA: advisory committee votes, letters on data quality or integrity?",
+    "facts": [
+     "adcom_negative",
+     "fda_data_integrity_letter"
+    ],
+    "sources": [
+     "FDA calendar and minutes; manual",
+     "FDA Warning Letters; manual"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "regulatory documents"
+    ]
+   },
+   {
+    "question": "Are patients selected by a biomarker, and is there a validated test for it?",
+    "facts": [
+     "biomarker_selection"
+    ],
+    "sources": [
+     "ClinicalTrials.gov eligibilityCriteria"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "trial design documents"
+    ]
+   },
+   {
+    "question": "Who manufactures the drug, and what is the status of the last FDA inspection?",
+    "facts": [
+     "cmo_oai_or_warning_letter"
+    ],
+    "sources": [
+     "FDA Inspection Classification Database; Warning Letters"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "CMC / IP diligence"
+    ]
+   },
+   {
+    "question": "Did the asset receive an FDA complete response letter, and what is the verbatim reason?",
+    "facts": [
+     "crl_reason"
+    ],
+    "sources": [
+     "openFDA (published CRLs since 2025); press releases; 8-K"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "regulatory documents"
+    ]
+   },
+   {
+    "question": "How does the asset differ from approved drugs of the same mechanism, and what data support it?",
+    "facts": [
+     "differentiation_claim",
+     "price_channel_direct",
+     "differentiation_evidence"
+    ],
+    "sources": [
+     "User input; company presentations",
+     "Route of administration; CMS Part B / Part D",
+     "ClinicalTrials.gov results; publications"
+    ],
+    "critical": false,
+    "flips": [],
+    "needs": [
+     "KOL interviews"
+    ]
+   }
+  ],
+  "economics": null,
+  "economics_note": "no market inputs: economics not run"
+ },
+ "incomplete": [
+  "uniprot: failed (SourceError: uniprot: offline and no cached response for https://rest.uniprot.org/uniprotkb/search {'query': 'gene_exact)",
+  "pubmed: failed (SourceError: pubmed: offline and no cached response for https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi {'too)",
+  "aact: failed (SourceError: ctgov: offline and no cached response for https://clinicaltrials.gov/api/v2/studies {'query.intr': '\"atabec)"
+ ]
+}

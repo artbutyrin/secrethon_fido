@@ -1,0 +1,48 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "PCSK9",
+  "entities": [
+   "target"
+  ]
+ },
+ "fetched_at": "2026-10-10T15:07:20+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 4,
+    "hits": [
+     {
+      "id": "ENSG00000169174",
+      "name": "PCSK9",
+      "entity": "target",
+      "description": "proprotein convertase subtilisin/kexin type 9",
+      "score": 5701.8525
+     },
+     {
+      "id": "ENSG00000166261",
+      "name": "ZNF202",
+      "entity": "target",
+      "description": "zinc finger protein 202",
+      "score": 30.109993
+     },
+     {
+      "id": "ENSG00000196381",
+      "name": "ZNF781",
+      "entity": "target",
+      "description": "zinc finger protein 781 (pseudogene)",
+      "score": 29.85687
+     },
+     {
+      "id": "ENSG00000105726",
+      "name": "ATP13A1",
+      "entity": "target",
+      "description": "ATPase 13A1",
+      "score": 26.568586
+     }
+    ]
+   }
+  }
+ }
+}

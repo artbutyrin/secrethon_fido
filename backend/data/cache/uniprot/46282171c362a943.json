@@ -1,0 +1,86 @@
+{
+ "source": "uniprot",
+ "url": "https://rest.uniprot.org/uniprotkb/search",
+ "params": {
+  "query": "gene_exact:PCSK9 AND organism_id:9606 AND reviewed:true",
+  "fields": "accession,gene_primary,cc_subcellular_location",
+  "format": "json",
+  "size": 5
+ },
+ "fetched_at": "2026-10-10T15:07:30+00:00",
+ "status": 200,
+ "body": {
+  "results": [
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "Q8NBP7",
+    "genes": [
+     {
+      "geneName": {
+       "value": "PCSK9"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+       "texts": [
+        {
+         "value": "Autocatalytic cleavage is required to transport it from the endoplasmic reticulum to the Golgi apparatus and for the secretion of the mature protein. Localizes to the endoplasmic reticulum in the absence of LDLR and colocalizes to the cell surface and to the endosomes/lysosomes in the presence of LDLR. The sorting to the cell surface and endosomes is required in order to fully promote LDLR degradation"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "value": "Cytoplasm",
+         "id": "SL-0086"
+        }
+       },
+       {
+        "location": {
+         "value": "Secreted",
+         "id": "SL-0243"
+        }
+       },
+       {
+        "location": {
+         "value": "Endosome",
+         "id": "SL-0101"
+        }
+       },
+       {
+        "location": {
+         "value": "Lysosome",
+         "id": "SL-0158"
+        }
+       },
+       {
+        "location": {
+         "value": "Cell surface",
+         "id": "SL-0310"
+        }
+       },
+       {
+        "location": {
+         "value": "Endoplasmic reticulum",
+         "id": "SL-0095"
+        }
+       },
+       {
+        "location": {
+         "value": "Golgi apparatus",
+         "id": "SL-0132"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI00001615E1"
+    }
+   }
+  ]
+ }
+}

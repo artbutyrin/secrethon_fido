@@ -1,0 +1,35 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0005010",
+  "ensemblId": "ENSG00000087237",
+  "datasources": [
+   "impc",
+   "crispr",
+   "crispr_screen",
+   "ot_crispr",
+   "ot_crispr_validation",
+   "expression_atlas",
+   "reactome",
+   "progeny",
+   "slapenrich",
+   "sysbio"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T12:06:24+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005010",
+    "evidences": {
+     "count": 0,
+     "cursor": null,
+     "rows": []
+    }
+   }
+  }
+ }
+}

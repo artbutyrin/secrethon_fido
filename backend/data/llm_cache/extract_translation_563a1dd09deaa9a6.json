@@ -1,0 +1,65 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2857,
+  "output_tokens": 1628,
+  "latency_ms": 17913,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:28304227\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Lipid-Reduction Variability and Antidrug-Antibody Formation with Bococizumab.. BACKGROUND: Bococizumab, a humanized monoclonal antibody targeting proprotein convertase subtilisin-kexin type 9 (PCSK9), reduces levels of low-density lipoprotein (LDL) cholesterol. However, the variability and durability of this effect are uncertain. METHODS: We conducted six parallel, multinational lipid-lowering trials enrolling 4300 patients with hyperlipidemia who were randomly assigned to receive 150 mg of bococizumab or placebo subcutaneously every 2 weeks and who were followed for up to 12 months; 96% were receiving statin therapy at the time of enrollment. The patients were assessed for lipid changes over time, stratified according to the presence or absence of antidrug antibodies detected during the treatment period. RESULTS: At 12 weeks, patients who received bococizumab had a reduction of 54.2% in the LDL cholesterol level from baseline, as compared with an increase of 1.0% among those who received placebo (absolute between-group difference, -55.2 percentage points). Significant between-group differences were also observed in total cholesterol, non-high-density lipoprotein cholesterol, apolipoprotein B, and lipoprotein(a) (P<0.001 for all comparisons). However, high-titer antidrug antibodies developed in a substantial proportion of the patients who received bococizumab, which markedly diminished the magnitude and durability of the reduction in LDL cholesterol levels. In addition, among patients with no antidrug antibodies, there was wide variability in the reduction in LDL cholesterol levels at both 12 weeks and 52 weeks. Major cardiovascular events occurred in 57 patients (2.5%) who received bococizumab and in 55 (2.7%) who received placebo (hazard ratio, 0.96; 95% confidence interval, 0.66 to 1.39; P=0.83). The most common adverse event among patients who received bococizumab was injection-site reaction (12.7 per 100 person-years). CONCLUSIONS: In six multinational trials evaluating bococizumab, antidrug antibodies developed in a large proportion of the patients and significantly attenuated the lowering of LDL cholesterol levels. Wide variation in the relative reduction in cholesterol levels was also observed among patients in whom antidrug antibodies did not develop. (Funded by Pfizer; SPIRE ClinicalTrials.gov numbers, NCT01968954 , NCT01968967 , NCT01968980 , NCT02100514 , NCT02135029 , and NCT02458287 .).\"}, {\"id\": \"pmid:24284914\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Antibodies to watch in 2014.. Since 2010, mAbs has documented the biopharmaceutical industry's progress in transitioning antibody therapeutics to first Phase 3 clinical studies and regulatory review, and its success at gaining first marketing approvals for antibody-based products. This installment of the \\\"Antibodies to watch\\\" series outlines events anticipated to occur between December 2013 and the end of 2014, including first regulatory actions on marketing applications for vedolizumab, siltuximab, and ramucirumab, as well as the Fc fusion proteins Factor IX-Fc and Factor VIII-Fc; and the submission of first marketing applications for up to five therapeutics (secukinumab, ch14.18, onartuzumab, necitumumab, gevokizumab). Antibody therapeutics in Phase 3 studies are described, with an emphasis on those with study completion dates in 2014, including antibodies targeting interleukin-17a or the interleukin-17a receptor (secukinumab, ixekizumab, brodalumab), proprotein convertase subtilisin/kexin type 9 (alirocumab, evolocumab, bococizumab), and programmed death 1 receptor (lambrolizumab, nivolumab). Five antibodies with US Food and Drug Administration's Breakthrough Therapy designation (obinutuzumab, ofatumumab, lambrolizumab, bimagrumab, daratumumab) are also discussed.\"}, {\"id\": \"pmid:35277540\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Genome-wide pharmacogenetics of anti-drug antibody response to bococizumab highlights key residues in HLA DRB1 and DQB1.. In this largest to-date genetic analysis of anti-drug antibody (ADA) response to a therapeutic monoclonal antibody (MAb), genome-wide association was performed for five measures of ADA status among 8844 individuals randomized to bococizumab, which targets PCSK9 for LDL-C lowering and cardiovascular protection. Index associations prioritized specific amino acid substitutions at the DRB1 and DQB1 MHC class II genes rather than canonical haplotypes. Two clusters of missense variants at DRB1 were associated with general ADA measures (residues 9, 11, 13; and 96, 112, 120, 180) and a third cluster of missense variants in DQB1 was associated with ADA measures including neutralizing antibody (NAb) titers (residues 66, 67, 71, 74, 75). The structural disposition of the missense substitutions implicates peptide antigen binding and CD4 effector function, mechanisms that are potentially generalizable to other therapeutic mAbs.Clinicaltrials.gov: NCT01968954, NCT01968967, NCT01968980, NCT01975376, NCT01975389, NCT02100514.\"}, {\"id\": \"pmid:26651519\", \"about_drug\": \"BOCOCIZUMAB\", \"text\": \"Antibodies to watch in 2016.. The number of novel antibody therapeutics that received first marketing approvals in 2015 met expectations, with 6 (alirocumab (Praluent®), evolocumab (Repatha®), daratumumab (Darzalex®), dinutuximab (Unituxin®), idarucizumab (Praxbind®), mepolizumab (Nucala®)) granted first approvals as of mid-November*. Seven novel antibody therapeutics (begelomab, brodalumab, elotuzumab, ixekizumab, necitumumab, obiltoxaximab, reslizumab) are in regulatory review, and thus a similar number, if not more, are projected to gain first approvals in 2016. Commercial late-stage antibody therapeutics development exceeded expectations by increasing from 39 candidates in Phase 3 studies as of late 2014 to 53 as of late 2015. Of the 53 candidates, transitions to regulatory review by the end of 2016 are projected for 8 (atezolizumab, benralizumab, bimagrumab, durvalumab, inotuzumab ozogamicin, lebrikizumab, ocrelizumab, tremelimumab). Other \\\"antibodies to watch\\\" include 15 candidates (bavituximab, bococizumab, dupilumab, fasinumab, fulranumab, gevokizumab, guselkumab, ibalizumab, LY2951742, onartuzumab, REGN2222, roledumab, romosozumab, sirukumab, Xilonix) undergoing evaluation in Phase 3 studies that have estimated primary completion dates in 2016. As evidenced by the antibody therapeutics discussed in this perspective, the biopharmaceutical industry has a highly active late-stage clinical pipeline that may deliver numerous new products to the global market in the near future. *See Note added in proof for updates through December 31, 2015.\"}, {\"id\": \"pmid:35130916\", \"about_drug\": \"TARGET\", \"text\": \"Lowering blood cholesterol does not affect neuroinflammation in experimental autoimmune encephalomyelitis.. BACKGROUND: Multiple sclerosis (MS) is a chronic disabling disease of the central nervous system (CNS) commonly affecting young adults. There is increasing evidence that environmental factors are important in the development and course of MS. The metabolic syndrome (MetS) which comprises dyslipidemia has been associated with a worse outcome in MS disease. Furthermore, the lipid-lowering drug class of statins has been proposed to improve MS disease course. However, cholesterol is also rate-limiting for myelin biogenesis and promotes remyelination in MS animal models. Thus, the impact of circulating blood cholesterol levels during the disease remains debated and controversial. METHODS: We assessed the role of circulating cholesterol on the murine model of MS, the experimental autoimmune encephalomyelitis (EAE) disease using two different approaches: (1) the mouse model of familial hypercholesterolemia induced by low-density lipoprotein receptor (LDLr) deficiency, and (2) the use of the monoclonal anti-PCSK9 neutralizing antibody alirocumab, which reduces LDLr degradation and consequently lowers blood levels of cholesterol. RESULTS: Elevated blood cholesterol levels induced by LDLr deficiency did not worsen clinical symptoms of mice during EAE. In addition, we observed that the anti-PCSK9 antibody alirocumab did not influence EAE disease course, nor modulate the immune response in EAE. CONCLUSIONS: These findings suggest that blood cholesterol level has no direct role in neuro-inflammatory diseases and that the previously shown protective effects of statins in MS are not related to circulating cholesterol.\"}, {\"id\": \"pmid:32613143\", \"about_drug\": \"TARGET\", \"text\": \"Lipoprotein(a) Cellular Uptake Ex Vivo and Hepatic Capture In Vivo Is Insensitive to PCSK9 Inhibition With Alirocumab.. Lipoprotein(a) (Lp[a]) is the most common genetically inherited risk factor for cardiovascular disease. Many aspects of Lp(a) metabolism remain unknown. We assessed the uptake of fluorescent Lp(a) in primary human lymphocytes as well as Lp(a) hepatic capture in a mouse model in which endogenous hepatocytes have been ablated and replaced with human ones. Modulation of LDLR expression with the PCSK9 inhibitor alirocumab did not alter the cellular or the hepatic uptake of Lp(a), demonstrating that the LDL receptor is not a major route for Lp(a) plasma clearance. These results have clinical implications because they underpin why statins are not efficient at reducing Lp(a).\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:28304227",
+    "findings": [
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At 12 weeks, patients who received bococizumab had a reduction of 54.2% in the LDL cholesterol level from baseline"
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "high-titer antidrug antibodies developed in a substantial proportion of the patients who received bococizumab, which markedly diminished the magnitude and durability of the reduction in LDL cholesterol levels"
+     },
+     {
+      "drug": "BOCOCIZUMAB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Major cardiovascular events occurred in 57 patients (2.5%) who received bococizumab and in 55 (2.7%) who received placebo (hazard ratio, 0.96; 95% confidence interval, 0.66 to 1.39; P=0.83)."
+     }
+    ]
+   },
+   {
+    "id": "pmid:24284914",
+    "findings": []
+   },
+   {
+    "id": "pmid:35277540",
+    "findings": []
+   },
+   {
+    "id": "pmid:26651519",
+    "findings": []
+   },
+   {
+    "id": "pmid:35130916",
+    "findings": []
+   },
+   {
+    "id": "pmid:32613143",
+    "findings": []
+   }
+  ]
+ }
+}

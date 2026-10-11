@@ -1,0 +1,1571 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<JDBOR date="2026-06-23 07:57:58" version="1.3.42 / 4.1.8 [2025-03-03]" copyright="Orphanet (c) 2026" dbserver="jdbc:sybase:Tds:canard.orpha.net:2020">
+  <Availability> 
+    <Licence>
+      <FullName lang="en">Creative Commons Attribution 4.0 International</FullName>
+      <ShortIdentifier>CC-BY-4.0</ShortIdentifier>
+      <LegalCode>https://creativecommons.org/licenses/by/4.0/legalcode</LegalCode>
+    </Licence>
+  </Availability>
+  <DisorderList count="3">
+    <Disorder id="106">
+      <OrphaCode>803</OrphaCode>
+      <ExpertLink lang="en">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=803</ExpertLink>
+      <Name lang="en">Amyotrophic lateral sclerosis</Name>
+      <DisorderType id="21394">
+        <Name lang="en">Disease</Name>
+      </DisorderType>
+      <DisorderGroup id="36547">
+        <Name lang="en">Disorder</Name>
+      </DisorderGroup>
+      <PrevalenceList count="33">
+        <Prevalence id="325">
+          <Source>19710046[PMID]_[EXPERT]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.2</ValMoy>
+          <PrevalenceGeographic id="23795">
+            <Name lang="en">Europe</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="326">
+          <Source>19192301[PMID]_[EXPERT]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>5.2</ValMoy>
+          <PrevalenceGeographic id="23795">
+            <Name lang="en">Europe</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="327">
+          <Source>21665992[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>3.85</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="328">
+          <Source>21665992[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.35</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="329">
+          <Source>17898523[PMID]_17219036[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.06</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="330">
+          <Source>17898523[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.9</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="331">
+          <Source>10025778[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.1</ValMoy>
+          <PrevalenceGeographic id="24586">
+            <Name lang="en">Ireland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="332">
+          <Source>10025778[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.7</ValMoy>
+          <PrevalenceGeographic id="24586">
+            <Name lang="en">Ireland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="333">
+          <Source>6601351[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.4</ValMoy>
+          <PrevalenceGeographic id="24362">
+            <Name lang="en">Finland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="334">
+          <Source>6601351[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>6.4</ValMoy>
+          <PrevalenceGeographic id="24362">
+            <Name lang="en">Finland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="335">
+          <Source>3762972[PMID]_19494548[PMID]_ ORPHANET</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.0</ValMoy>
+          <PrevalenceGeographic id="24124">
+            <Name lang="en">Canada</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="336">
+          <Source>3762972[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.9</ValMoy>
+          <PrevalenceGeographic id="24124">
+            <Name lang="en">Canada</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="337">
+          <Source>25298019[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.46</ValMoy>
+          <PrevalenceGeographic id="25482">
+            <Name lang="en">United States</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="338">
+          <Source>18334826[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.37</ValMoy>
+          <PrevalenceGeographic id="25496">
+            <Name lang="en">Uruguay</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="339">
+          <Source>18334826[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.9</ValMoy>
+          <PrevalenceGeographic id="25496">
+            <Name lang="en">Uruguay</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="340">
+          <Source>2786160[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.4</ValMoy>
+          <PrevalenceGeographic id="24264">
+            <Name lang="en">Denmark</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="341">
+          <Source>2786160[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>3.1</ValMoy>
+          <PrevalenceGeographic id="24264">
+            <Name lang="en">Denmark</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="342">
+          <Source>19237701[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>3.0</ValMoy>
+          <PrevalenceGeographic id="24607">
+            <Name lang="en">Italy</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="343">
+          <Source>19237701[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>7.9</ValMoy>
+          <PrevalenceGeographic id="24607">
+            <Name lang="en">Italy</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="344">
+          <Source>19452307[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.0</ValMoy>
+          <PrevalenceGeographic id="24369">
+            <Name lang="en">France</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="345">
+          <Source>23286747[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.4</ValMoy>
+          <PrevalenceGeographic id="25293">
+            <Name lang="en">Spain</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="346">
+          <Source>23286747[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>5.4</ValMoy>
+          <PrevalenceGeographic id="25293">
+            <Name lang="en">Spain</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="347">
+          <Source>21860251[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.2</ValMoy>
+          <PrevalenceGeographic id="25006">
+            <Name lang="en">Norway</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="348">
+          <Source>21860251[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.0</ValMoy>
+          <PrevalenceGeographic id="25006">
+            <Name lang="en">Norway</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="349">
+          <Source>DOI:10.1016/j.jfma.2013.01.008[OTHER]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.51</ValMoy>
+          <PrevalenceGeographic id="25356">
+            <Name lang="en">Taiwan, Province of China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="350">
+          <Source>DOI:10.1016/j.jfma.2013.01.008[OTHER]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.97</ValMoy>
+          <PrevalenceGeographic id="25356">
+            <Name lang="en">Taiwan, Province of China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="351">
+          <Source>22034926[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.6</ValMoy>
+          <PrevalenceGeographic id="24348">
+            <Name lang="en">Faroe Islands</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="352">
+          <Source>20214678[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.42</ValMoy>
+          <PrevalenceGeographic id="24572">
+            <Name lang="en">Iran, Islamic Republic of</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="353">
+          <Source>20214678[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.57</ValMoy>
+          <PrevalenceGeographic id="24572">
+            <Name lang="en">Iran, Islamic Republic of</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="354">
+          <Source>23052600[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.5</ValMoy>
+          <PrevalenceGeographic id="23851">
+            <Name lang="en">Specific population</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="355">
+          <Source>23052600[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>10.8</ValMoy>
+          <PrevalenceGeographic id="23851">
+            <Name lang="en">Specific population</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="356">
+          <Source>22409362[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.4</ValMoy>
+          <PrevalenceGeographic id="23851">
+            <Name lang="en">Specific population</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="357">
+          <Source>22409362[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>6.0</ValMoy>
+          <PrevalenceGeographic id="23851">
+            <Name lang="en">Specific population</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+      </PrevalenceList>
+    </Disorder>
+    <Disorder id="118">
+      <OrphaCode>399</OrphaCode>
+      <ExpertLink lang="en">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=399</ExpertLink>
+      <Name lang="en">Huntington disease</Name>
+      <DisorderType id="21394">
+        <Name lang="en">Disease</Name>
+      </DisorderType>
+      <DisorderGroup id="36547">
+        <Name lang="en">Disorder</Name>
+      </DisorderGroup>
+      <PrevalenceList count="32">
+        <Prevalence id="444">
+          <Source>21166788[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.0</ValMoy>
+          <PrevalenceGeographic id="24439">
+            <Name lang="en">Greece</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="419">
+          <Source>22692795[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.38</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="420">
+          <Source>22692795[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.7</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="421">
+          <Source>European Medicines Agency 2019[OTHER]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>12.0</ValMoy>
+          <PrevalenceGeographic id="23795">
+            <Name lang="en">Europe</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="422">
+          <Source>20880124[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>10.6</ValMoy>
+          <PrevalenceGeographic id="24586">
+            <Name lang="en">Ireland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="423">
+          <Source>22133668[PMID]_ORPHANET</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.61</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="424">
+          <Source>22133668[PMID]_21088431[PMID]_7994530[PMID]_9231935[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>5.4</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="426">
+          <Source>2151397[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.11</ValMoy>
+          <PrevalenceGeographic id="24607">
+            <Name lang="en">Italy</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="427">
+          <Source>2151397[PMID]_25689972[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>6.35</ValMoy>
+          <PrevalenceGeographic id="24607">
+            <Name lang="en">Italy</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25965">
+            <Name lang="en">Not yet validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="428">
+          <Source>11595021[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.69</ValMoy>
+          <PrevalenceGeographic id="24124">
+            <Name lang="en">Canada</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="429">
+          <Source>8018043[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.3</ValMoy>
+          <PrevalenceGeographic id="25482">
+            <Name lang="en">United States</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="430">
+          <Source>8018043[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.9</ValMoy>
+          <PrevalenceGeographic id="25482">
+            <Name lang="en">United States</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="431">
+          <Source>8700304[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.65</ValMoy>
+          <PrevalenceGeographic id="24621">
+            <Name lang="en">Japan</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="432">
+          <Source>11008591[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.65</ValMoy>
+          <PrevalenceGeographic id="23949">
+            <Name lang="en">Australia</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="433">
+          <Source>11008591[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>6.3</ValMoy>
+          <PrevalenceGeographic id="23949">
+            <Name lang="en">Australia</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="434">
+          <Source>7586664[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23760">
+            <Name lang="en">&lt;1 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.046</ValMoy>
+          <PrevalenceGeographic id="24166">
+            <Name lang="en">China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="435">
+          <Source>7586664[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.37</ValMoy>
+          <PrevalenceGeographic id="24166">
+            <Name lang="en">China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="436">
+          <Source>18976322[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>5.2</ValMoy>
+          <PrevalenceGeographic id="25258">
+            <Name lang="en">Slovenia</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="437">
+          <Source>7586664[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23760">
+            <Name lang="en">&lt;1 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.08</ValMoy>
+          <PrevalenceGeographic id="25356">
+            <Name lang="en">Taiwan, Province of China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="438">
+          <Source>7586664[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.42</ValMoy>
+          <PrevalenceGeographic id="25356">
+            <Name lang="en">Taiwan, Province of China</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="439">
+          <Source>22722209[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.14</ValMoy>
+          <PrevalenceGeographic id="24551">
+            <Name lang="en">Iceland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="440">
+          <Source>22722209[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.0</ValMoy>
+          <PrevalenceGeographic id="24551">
+            <Name lang="en">Iceland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="441">
+          <Source>2938203[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>6.7</ValMoy>
+          <PrevalenceGeographic id="25006">
+            <Name lang="en">Norway</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="442">
+          <Source>22722209[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.7</ValMoy>
+          <PrevalenceGeographic id="25335">
+            <Name lang="en">Sweden</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="443">
+          <Source>21166788[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.33</ValMoy>
+          <PrevalenceGeographic id="24439">
+            <Name lang="en">Greece</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="445">
+          <Source>2889026[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.5</ValMoy>
+          <PrevalenceGeographic id="24362">
+            <Name lang="en">Finland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="13786">
+          <Source>7969703[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>21.0</ValMoy>
+          <PrevalenceGeographic id="24299">
+            <Name lang="en">Egypt</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="13787">
+          <Source>29105741[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.64</ValMoy>
+          <PrevalenceGeographic id="24250">
+            <Name lang="en">Cyprus</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="13788">
+          <Source>29105741[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.12</ValMoy>
+          <PrevalenceGeographic id="24250">
+            <Name lang="en">Cyprus</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="16968">
+          <Source>33568143[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.94</ValMoy>
+          <PrevalenceGeographic id="25293">
+            <Name lang="en">Spain</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="16969">
+          <Source>33568143[PMID]</Source>
+          <PrevalenceType id="23676">
+            <Name lang="en">Annual incidence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.35</ValMoy>
+          <PrevalenceGeographic id="25293">
+            <Name lang="en">Spain</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="14035">
+          <Source>28155235[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>5.8</ValMoy>
+          <PrevalenceGeographic id="24264">
+            <Name lang="en">Denmark</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+      </PrevalenceList>
+    </Disorder>
+    <Disorder id="13913">
+      <OrphaCode>98896</OrphaCode>
+      <ExpertLink lang="en">http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=en&amp;Expert=98896</ExpertLink>
+      <Name lang="en">Duchenne muscular dystrophy</Name>
+      <DisorderType id="21394">
+        <Name lang="en">Disease</Name>
+      </DisorderType>
+      <DisorderGroup id="36547">
+        <Name lang="en">Disorder</Name>
+      </DisorderGroup>
+      <PrevalenceList count="15">
+        <Prevalence id="16647">
+          <Source>32503598[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>9.9</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="7709">
+          <Source>19767415[PMID]_24780148[PMID]_ORPHANET</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.14</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="7712">
+          <Source>12495984[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>14.0</ValMoy>
+          <PrevalenceGeographic id="25482">
+            <Name lang="en">United States</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="7713">
+          <Source>1733827[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>12.0</ValMoy>
+          <PrevalenceGeographic id="24936">
+            <Name lang="en">Netherlands</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="7714">
+          <Source>20080524[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23732">
+            <Name lang="en">1-5 / 10 000</Name>
+          </PrevalenceClass>
+          <ValMoy>10.5</ValMoy>
+          <PrevalenceGeographic id="24124">
+            <Name lang="en">Canada</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="7715">
+          <Source>23340516[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>9.7</ValMoy>
+          <PrevalenceGeographic id="25475">
+            <Name lang="en">United Kingdom</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="12370">
+          <Source>DOI:10.3233/JND-160147[OTHER]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.59</ValMoy>
+          <PrevalenceGeographic id="25097">
+            <Name lang="en">Puerto rico</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11206">
+          <Source>8845721[PMID]_24780148[PMID]</Source>
+          <PrevalenceType id="23683">
+            <Name lang="en">Prevalence at birth</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>8.2</ValMoy>
+          <PrevalenceGeographic id="24586">
+            <Name lang="en">Ireland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11207">
+          <Source>10466417[PMID]_24780148[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>1.7</ValMoy>
+          <PrevalenceGeographic id="24607">
+            <Name lang="en">Italy</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11208">
+          <Source>8845721[PMID]_24780148[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>4.26</ValMoy>
+          <PrevalenceGeographic id="24586">
+            <Name lang="en">Ireland</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11209">
+          <Source>32503598[PMID]</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.8</ValMoy>
+          <PrevalenceGeographic id="23844">
+            <Name lang="en">Worldwide</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11210">
+          <Source>16210862[PMID]_24780148[PMID]</Source>
+          <PrevalenceType id="23690">
+            <Name lang="en">Lifetime Prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>7.66</ValMoy>
+          <PrevalenceGeographic id="24299">
+            <Name lang="en">Egypt</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11211">
+          <Source>1745328[PMID]_24780148[PMID]_ORPHANET</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>3.56</ValMoy>
+          <PrevalenceGeographic id="24621">
+            <Name lang="en">Japan</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11212">
+          <Source>7825085[PMID]_24780148[PMID]_ORPHANET</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23739">
+            <Name lang="en">1-9 / 1 000 000</Name>
+          </PrevalenceClass>
+          <ValMoy>0.47</ValMoy>
+          <PrevalenceGeographic id="25279">
+            <Name lang="en">South Africa</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+        <Prevalence id="11213">
+          <Source>14678803[PMID]_24780148[PMID]_ORPHANET</Source>
+          <PrevalenceType id="23669">
+            <Name lang="en">Point prevalence</Name>
+          </PrevalenceType>
+          <PrevalenceQualification id="23711">
+            <Name lang="en">Value and class</Name>
+          </PrevalenceQualification>
+          <PrevalenceClass id="23746">
+            <Name lang="en">1-9 / 100 000</Name>
+          </PrevalenceClass>
+          <ValMoy>2.75</ValMoy>
+          <PrevalenceGeographic id="24264">
+            <Name lang="en">Denmark</Name>
+          </PrevalenceGeographic>
+          <PrevalenceValidationStatus id="25958">
+            <Name lang="en">Validated</Name>
+          </PrevalenceValidationStatus>
+        </Prevalence>
+      </PrevalenceList>
+    </Disorder>
+    </DisorderList>
+</JDBOR>

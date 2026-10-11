@@ -1,0 +1,92 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2607,
+  "output_tokens": 1382,
+  "latency_ms": 15185,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:31948641\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Effect of Alirocumab on Lipoprotein(a) and Cardiovascular Risk After Acute Coronary Syndrome.. BACKGROUND: Lipoprotein(a) concentration is associated with cardiovascular events. Alirocumab, a proprotein convertase subtilisin/kexin type 9 inhibitor, lowers lipoprotein(a) and low-density lipoprotein cholesterol (LDL-C). OBJECTIVES: A pre-specified analysis of the placebo-controlled ODYSSEY Outcomes trial in patients with recent acute coronary syndrome (ACS) determined whether alirocumab-induced changes in lipoprotein(a) and LDL-C independently predicted major adverse cardiovascular events (MACE). METHODS: One to 12 months after ACS, 18,924 patients on high-intensity statin therapy were randomized to alirocumab or placebo and followed for 2.8 years (median). Lipoprotein(a) was measured at randomization and 4 and 12 months thereafter. The primary MACE outcome was coronary heart disease death, nonfatal myocardial infarction, ischemic stroke, or hospitalization for unstable angina. RESULTS: Baseline lipoprotein(a) levels (median: 21.2 mg/dl; interquartile range [IQR]: 6.7 to 59.6 mg/dl) and LDL-C [corrected for cholesterol content in lipoprotein(a)] predicted MACE. Alirocumab reduced lipoprotein(a) by 5.0 mg/dl (IQR: 0 to 13.5 mg/dl), corrected LDL-C by 51.1 mg/dl (IQR: 33.7 to 67.2 mg/dl), and reduced the risk of MACE (hazard ratio [HR]: 0.85; 95% confidence interval [CI]: 0.78 to 0.93). Alirocumab-induced reductions of lipoprotein(a) and corrected LDL-C independently predicted lower risk of MACE, after adjustment for baseline concentrations of both lipoproteins and demographic and clinical characteristics. A 1-mg/dl reduction in lipoprotein(a) with alirocumab was associated with a HR of 0.994 (95% CI: 0.990 to 0.999; p = 0.0081). CONCLUSIONS: Baseline lipoprotein(a) and corrected LDL-C levels and their reductions by alirocumab predicted the risk of MACE after recent ACS. Lipoprotein(a) lowering by alirocumab is an independent contributor to MACE reduction, which suggests that lipoprotein(a) should be an independent treatment target after ACS. (ODYSSEY Outcomes: Evaluation of Cardiovascular Outcomes After an Acute Coronary Syndrome During Treatment With Alirocumab; NCT01663402).\"}, {\"id\": \"pmid:34325831\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Lipoprotein(a) and Benefit of PCSK9 Inhibition in Patients With Nominally Controlled LDL Cholesterol.. BACKGROUND: Guidelines recommend nonstatin lipid-lowering agents in patients at very high risk for major adverse cardiovascular events (MACE) if low-density lipoprotein cholesterol (LDL-C) remains ≥70 mg/dL on maximum tolerated statin treatment. It is uncertain if this approach benefits patients with LDL-C near 70 mg/dL. Lipoprotein(a) levels may influence residual risk. OBJECTIVES: In a post hoc analysis of the ODYSSEY Outcomes (Evaluation of Cardiovascular Outcomes After an Acute Coronary Syndrome During Treatment With Alirocumab) trial, the authors evaluated the benefit of adding the proprotein subtilisin/kexin type 9 inhibitor alirocumab to optimized statin treatment in patients with LDL-C levels near 70 mg/dL. Effects were evaluated according to concurrent lipoprotein(a) levels. METHODS: ODYSSEY Outcomes compared alirocumab with placebo in 18,924 patients with recent acute coronary syndromes receiving optimized statin treatment. In 4,351 patients (23.0%), screening or randomization LDL-C was <70 mg/dL (median 69.4 mg/dL; interquartile range: 64.3-74.0 mg/dL); in 14,573 patients (77.0%), both determinations were ≥70 mg/dL (median 94.0 mg/dL; interquartile range: 83.2-111.0 mg/dL). RESULTS: In the lower LDL-C subgroup, MACE rates were 4.2 and 3.1 per 100 patient-years among placebo-treated patients with baseline lipoprotein(a) greater than or less than or equal to the median (13.7 mg/dL). Corresponding adjusted treatment hazard ratios were 0.68 (95% confidence interval [CI]: 0.52-0.90) and 1.11 (95% CI: 0.83-1.49), with treatment-lipoprotein(a) interaction on MACE (Pinteraction = 0.017). In the higher LDL-C subgroup, MACE rates were 4.7 and 3.8 per 100 patient-years among placebo-treated patients with lipoprotein(a) >13.7 mg/dL or ≤13.7 mg/dL; corresponding adjusted treatment hazard ratios were 0.82 (95% CI: 0.72-0.92) and 0.89 (95% CI: 0.75-1.06), with Pinteraction = 0.43. CONCLUSIONS: In patients with recent acute coronary syndromes and LDL-C near 70 mg/dL on optimized statin therapy, proprotein subtilisin/kexin type 9 inhibition provides incremental clinical benefit only when lipoprotein(a) concentration is at least mildly elevated. (ODYSSEY Outcomes: Evaluation of Cardiovascular Outcomes After an Acute Coronary Syndrome During Treatment With Alirocumab; NCT01663402).\"}, {\"id\": \"pmid:28812389\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Evolocumab for the treatment of hypercholesterolemia.. Evolocumab is a fully human monoclonal immunoglobulin G2 directed against human proprotein convertase subtilisin/kexin type 9 (PCSK9). It is administered by subcutaneous injection every 2 weeks or once monthly. Area covered: Herein, the authors discuss the rationale for inhibiting PCSK9 and describe the pharmacodynamics, pharmacokinetics and clinical trials with evolocumab. Evolocumab reduces low density lipoprotein cholesterol (LDL-C) levels by 50 to 60% in most patients with and without background treatment with statins or other lipid lowering agents. The safety profile appears satisfactory from the completed clinical studies and concerns regarding the risk of neurocognitive events have largely been dispelled. Expert opinion: The reduction of LDL-C with evolocumab to previously unattainable levels has resulted in a reduction in the composite cardiovascular event endpoint in the FOURIER trial and this is likely to impact on future lipid management guidelines. The clinical outcome data and excellent tolerability profile clearly support the use of evolocumab in patients at high cardiovascular risk, including those with heterozygous or homozygous familial hypercholesterolemia, who are unable to achieve LDL-C targets with statins with or without other lipid-lowering drugs. The high cost of evolocumab will restrict its use, however.\"}, {\"id\": \"pmid:30676701\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Influence of Renal Function on Evolocumab Exposure, Pharmacodynamics, and Safety.. We evaluated the pharmacokinetics, pharmacodynamics, and safety of evolocumab, a fully human monoclonal antibody against proprotein convertase subtilisin kexin type 9 (PCSK9), in an open-label, parallel-design study in participants with normal renal function (n = 6), severe renal impairment (RI; n = 6), or end-stage renal disease (ESRD) receiving hemodialysis (n = 6) who received a single 140-mg dose of evolocumab. The effects of evolocumab treatment on low-density lipoprotein cholesterol (LDL-C) lowering and unbound PCSK9 concentrations were similar in the normal renal function group and the renally impaired groups. Geometric mean Cmax and AUClast values in the severe RI and ESRD hemodialysis groups compared with the normal renal function group were lower but within 37% of the normal renal function group (Jonckheere-Terpstra trend test; Cmax , P = .23; AUClast , P = .22) and within 26% after adjusting for body weight (mean body weight was approximately 9% higher in the renally impaired groups compared with the normal renal function group). No correlations were observed between exposure and baseline creatinine clearance. No adverse event was determined by the investigators to be related to evolocumab, and there were no trends indicative of clinically important effects on laboratory variables or vital signs. Overall, there were no meaningful differences in evolocumab exposure, as assessed by Cmax and AUClast , in patients with severe RI and ESRD hemodialysis compared with patients with normal renal function, and LDL-C-lowering effects were similar across groups. These results support the use of evolocumab without dose adjustment in patients who have severe RI or ESRD.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:31948641",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Alirocumab reduced lipoprotein(a) by 5.0 mg/dl (IQR: 0 to 13.5 mg/dl), corrected LDL-C by 51.1 mg/dl (IQR: 33.7 to 67.2 mg/dl)"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "reduced the risk of MACE (hazard ratio [HR]: 0.85; 95% confidence interval [CI]: 0.78 to 0.93)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:34325831",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Corresponding adjusted treatment hazard ratios were 0.68 (95% confidence interval [CI]: 0.52-0.90) and 1.11 (95% CI: 0.83-1.49), with treatment-lipoprotein(a) interaction on MACE"
+     }
+    ]
+   },
+   {
+    "id": "pmid:28812389",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Evolocumab reduces low density lipoprotein cholesterol (LDL-C) levels by 50 to 60% in most patients with and without background treatment with statins or other lipid lowering agents."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "The reduction of LDL-C with evolocumab to previously unattainable levels has resulted in a reduction in the composite cardiovascular event endpoint in the FOURIER trial"
+     }
+    ]
+   },
+   {
+    "id": "pmid:30676701",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Overall, there were no meaningful differences in evolocumab exposure, as assessed by Cmax and AUClast, in patients with severe RI and ESRD hemodialysis compared with patients with normal renal function"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "LDL-C-lowering effects were similar across groups."
+     }
+    ]
+   }
+  ]
+ }
+}

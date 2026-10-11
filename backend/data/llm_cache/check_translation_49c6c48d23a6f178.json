@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3246,
+  "output_tokens": 320,
+  "latency_ms": 3769,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"72\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…f follow-up was 2.2 years. RESULTS: At 48 weeks, the least-squares mean percentage reduction in LDL cholesterol levels with evolocumab, as compared with placebo, was 59%, from a median baseline value of 92 mg per deciliter (2.4 mmol per liter) to 30 mg per deciliter (0.78 mmol per liter) (P<0.001). Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001). The results were consistent across key subgroups, including the subgroup of patients in the lowest quartile for baseline LDL cholesterol levels (median, 74 mg per deciliter [1.9 mmol per…\"}, {\"id\": \"73\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…2.4 mmol per liter) to 30 mg per deciliter (0.78 mmol per liter) (P<0.001). Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001). The results were consistent across key subgroups, including the subgroup of patients in the lowest quartile for baseline LDL cholesterol levels (median, 74 mg per deciliter [1.9 mmol per liter]). There was no significant difference between the study groups with regard to adverse events (including …\"}, {\"id\": \"74\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ization (4-point MACE). RESULTS: A total of 12,257 patients were randomly assigned to receive evolocumab (6129 patients) or placebo (6128) and were included in the efficacy analyses. The median age of the patients was 66 years, 43% were women, and 93% were White. The median follow-up was 4.6 years. A 3-point MACE event occurred in 336 patients (5-year Kaplan-Meier estimate, 6.2%) in the evolocumab group, as compared with 443 (8.0%) in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.65 to 0.86; P<0.001). A 4-point MACE event occurred in 747 patients (5-year Kaplan-Meier estimate, 13.4%) in the evolocumab group, as compared with 907 (16.2%) in the placebo group (hazard ratio, 0.81; 95% CI, 0.73 to 0.89; P<0.001). No evidence …\"}, {\"id\": \"75\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…were women, and 93% were White. The median follow-up was 4.6 years. A 3-point MACE event occurred in 336 patients (5-year Kaplan-Meier estimate, 6.2%) in the evolocumab group, as compared with 443 (8.0%) in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.65 to 0.86; P<0.001). A 4-point MACE event occurred in 747 patients (5-year Kaplan-Meier estimate, 13.4%) in the evolocumab group, as compared with 907 (16.2%) in the placebo group (hazard ratio, 0.81; 95% CI, 0.73 to 0.89; P<0.001). No evidence of a between-group difference was seen in the incidence of safety events. CONCLUSIONS: PCSK9 inhibition with evolocumab led to a lower risk of first cardiovascular events than placebo among patients with atherosclerosis or diabetes an…\"}, {\"id\": \"76\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… In the placebo arm, patients with baseline Lp(a) in the highest quartile had a higher risk of coronary heart disease death, myocardial infarction, or urgent revascularization (adjusted hazard ratio quartile 4: quartile 1, 1.22; 95% CI, 1.01-1.48) independent of low-density lipoprotein cholesterol. At 48 weeks, evolocumab significantly reduced Lp(a) by a median (interquartile range) of 26.9% (6.2%-46.7%). The percent change in Lp(a) and low-density lipoprotein cholesterol at 48 weeks in patients taking evolocumab was moderately positively correlated ( r=0.37; 95% CI, 0.36-0.39; P<0.001). Evolocumab reduced the risk of coronary heart disease death, myocardial infarction, or urgent revascularization b…\"}, {\"id\": \"77\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…rol. At 48 weeks, evolocumab significantly reduced Lp(a) by a median (interquartile range) of 26.9% (6.2%-46.7%). The percent change in Lp(a) and low-density lipoprotein cholesterol at 48 weeks in patients taking evolocumab was moderately positively correlated ( r=0.37; 95% CI, 0.36-0.39; P<0.001). Evolocumab reduced the risk of coronary heart disease death, myocardial infarction, or urgent revascularization by 23% (hazard ratio, 0.77; 95% CI, 0.67-0.88) in patients with a baseline Lp(a) >median, and by 7% (hazard ratio, 0.93; 95% CI, 0.80-1.08; P interaction=0.07) in those ≤median. Coupled with the higher baseline risk, the absolute risk reductions, and number needed to treat over 3 years were 2.49% and 40 versus 0.95% and 105, respectively. CONCLUSIONS: Higher levels of Lp(a) are associa…\"}, {\"id\": \"78\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…nts taking evolocumab was moderately positively correlated ( r=0.37; 95% CI, 0.36-0.39; P<0.001). Evolocumab reduced the risk of coronary heart disease death, myocardial infarction, or urgent revascularization by 23% (hazard ratio, 0.77; 95% CI, 0.67-0.88) in patients with a baseline Lp(a) >median, and by 7% (hazard ratio, 0.93; 95% CI, 0.80-1.08; P interaction=0.07) in those ≤median. Coupled with the higher baseline risk, the absolute risk reductions, and number needed to treat over 3 years were 2.49% and 40 versus 0.95% and 105, respectively. CONCLUSIONS: Higher levels of Lp(a) are associated with an increased risk of cardiovascular events in patients with established cardiov…\"}, {\"id\": \"79\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…scular events were prospectively collected. RESULTS: A total of 6635 patients were enrolled in FOURIER-OLE (3355 randomized to evolocumab and 3280 to placebo in the parent study). Median follow-up in FOURIER-OLE was 5.0 years; maximum exposure to evolocumab in parent plus FOURIER-OLE was 8.4 years. At 12 weeks in FOURIER-OLE, median LDL-C was 30 mg/dL, and 63.2% of patients achieved LDL-C <40 mg/dL on evolocumab. Incidences of serious adverse events, muscle-related events, new-onset diabetes, hemorrhagic stroke, and neurocognitive events with evolocumab long term did not exceed those for placebo-treated patients during the parent study and did not increase over time. During the FOURIER-OLE follow-up period,…\"}, {\"id\": \"80\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…Incidences of serious adverse events, muscle-related events, new-onset diabetes, hemorrhagic stroke, and neurocognitive events with evolocumab long term did not exceed those for placebo-treated patients during the parent study and did not increase over time. During the FOURIER-OLE follow-up period, patients originally randomized in the parent trial to evolocumab versus placebo had a 15% lower risk of cardiovascular death, myocardial infarction, stroke, or hospitalization for unstable angina or coronary revascularization (hazard ratio, 0.85 [95% CI, 0.75-0.96]; P=0.008); a 20% lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80 [95% CI, 0.68-0.93]; P=0.003); and a 23% lower risk of cardiovascular death (hazard ratio, 0.77 [95% CI, 0.60-0.99]; P=0.04). CONCLUSIONS: Long-term LDL-…\"}, {\"id\": \"81\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…-OLE follow-up period, patients originally randomized in the parent trial to evolocumab versus placebo had a 15% lower risk of cardiovascular death, myocardial infarction, stroke, or hospitalization for unstable angina or coronary revascularization (hazard ratio, 0.85 [95% CI, 0.75-0.96]; P=0.008); a 20% lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80 [95% CI, 0.68-0.93]; P=0.003); and a 23% lower risk of cardiovascular death (hazard ratio, 0.77 [95% CI, 0.60-0.99]; P=0.04). CONCLUSIONS: Long-term LDL-C lowering with evolocumab was associated with persistently low rates of adverse events for >8 years that did not exceed those observed in the original placebo arm during the p…\"}, {\"id\": \"82\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"… cardiovascular death, myocardial infarction, stroke, or hospitalization for unstable angina or coronary revascularization (hazard ratio, 0.85 [95% CI, 0.75-0.96]; P=0.008); a 20% lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80 [95% CI, 0.68-0.93]; P=0.003); and a 23% lower risk of cardiovascular death (hazard ratio, 0.77 [95% CI, 0.60-0.99]; P=0.04). CONCLUSIONS: Long-term LDL-C lowering with evolocumab was associated with persistently low rates of adverse events for >8 years that did not exceed those observed in the original placebo arm during the parent study and led to further reductions in cardiovascular events compared with delayed treatme…\"}, {\"id\": \"83\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…y, 5.8% vs. 6.0%; total executive, 3.6% vs. 3.7%). The proportion of patients reporting a decline in total cognitive score was similar among the 2,338 patients who achieved very low LDL-C levels (<20 mg/dl) compared to the 3,613 patients with LDL-C ≥100 mg/dl (3.8% vs. 4.5%, p = 0.57). CONCLUSIONS: The addition of evolocumab to maximally tolerated statin therapy had no impact on patient-reported cognition after an average of 2.2 years of treatment, even among patients who achieved LDL-C <20 mg/dl.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "72",
+    "supports": true
+   },
+   {
+    "id": "73",
+    "supports": true
+   },
+   {
+    "id": "74",
+    "supports": true
+   },
+   {
+    "id": "75",
+    "supports": true
+   },
+   {
+    "id": "76",
+    "supports": true
+   },
+   {
+    "id": "77",
+    "supports": true
+   },
+   {
+    "id": "78",
+    "supports": true
+   },
+   {
+    "id": "79",
+    "supports": true
+   },
+   {
+    "id": "80",
+    "supports": true
+   },
+   {
+    "id": "81",
+    "supports": true
+   },
+   {
+    "id": "82",
+    "supports": true
+   },
+   {
+    "id": "83",
+    "supports": true
+   }
+  ]
+ }
+}

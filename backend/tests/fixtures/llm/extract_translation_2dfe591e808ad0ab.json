@@ -1,0 +1,94 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 858,
+  "output_tokens": 1345,
+  "latency_ms": 8157,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1\", \"drugs\": [\"DRUGOMERSEN\", \"OTHERSEN\"], \"documents\": [{\"id\": \"doc:01\", \"about_drug\": \"DRUGOMERSEN\", \"text\": \"In the Phase 1 part, drugomersen reduced total SOD1 protein in cerebrospinal fluid by 35% compared with placebo in adults with ALS.\"}, {\"id\": \"doc:02\", \"about_drug\": \"DRUGOMERSEN\", \"text\": \"Drugomersen concentrations in CSF increased with dose and were measurable in all participants.\"}, {\"id\": \"doc:03\", \"about_drug\": \"DRUGOMERSEN\", \"text\": \"Plasma neurofilament light chain, a marker of axonal injury, fell by 50% with drugomersen and rose with placebo.\"}, {\"id\": \"doc:04\", \"about_drug\": \"DRUGOMERSEN\", \"text\": \"PET imaging showed 70% receptor occupancy in the motor cortex four hours after a single dose of drugomersen.\"}, {\"id\": \"doc:05\", \"about_drug\": \"DRUGOMERSEN\", \"text\": \"Drugomersen met its primary endpoint: ALSFRS-R decline was slower than with placebo (difference 3.1 points, P=0.01).\"}, {\"id\": \"doc:06\", \"about_drug\": \"OTHERSEN\", \"text\": \"After intravenous dosing, othersen was not detected in cerebrospinal fluid in any participant.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "doc:01",
+    "findings": [
+     {
+      "drug": "DRUGOMERSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "drugomersen reduced total SOD1 protein in cerebrospinal fluid by 35% compared with placebo in adults with ALS."
+     }
+    ]
+   },
+   {
+    "id": "doc:02",
+    "findings": [
+     {
+      "drug": "DRUGOMERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Drugomersen concentrations in CSF increased with dose and were measurable in all participants."
+     }
+    ]
+   },
+   {
+    "id": "doc:03",
+    "findings": [
+     {
+      "drug": "DRUGOMERSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Plasma neurofilament light chain, a marker of axonal injury, fell by 50% with drugomersen and rose with placebo."
+     }
+    ]
+   },
+   {
+    "id": "doc:04",
+    "findings": [
+     {
+      "drug": "DRUGOMERSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "PET imaging showed 70% receptor occupancy in the motor cortex four hours after a single dose of drugomersen."
+     }
+    ]
+   },
+   {
+    "id": "doc:05",
+    "findings": [
+     {
+      "drug": "DRUGOMERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Drugomersen met its primary endpoint: ALSFRS-R decline was slower than with placebo (difference 3.1 points, P=0.01)."
+     }
+    ]
+   },
+   {
+    "id": "doc:06",
+    "findings": [
+     {
+      "drug": "OTHERSEN",
+      "link": "exposure",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "After intravenous dosing, othersen was not detected in cerebrospinal fluid in any participant."
+     }
+    ]
+   }
+  ]
+ }
+}

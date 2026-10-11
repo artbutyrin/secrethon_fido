@@ -1,0 +1,96 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0004976"
+ },
+ "fetched_at": "2026-10-09T11:59:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0004976",
+    "name": "amyotrophic lateral sclerosis",
+    "description": "Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by progressive muscular paralysis reflecting degeneration of motor neurons in the primary motor cortex, corticospinal tracts, brainstem and spinal cord.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "ALS",
+       "Charcot disease",
+       "Lou Gehrig disease",
+       "amyotrophic lateral sclerosis",
+       "ALS (Amyotrophic Lateral Sclerosis)",
+       "ALS - Amyotrophic lateral sclerosis",
+       "AMYOTROPHIC SCLEROSIS",
+       "Amyotrophic Lateral Sclerosis With Dementia",
+       "Amyotrophic Lateral Sclerosis, Guam Form",
+       "Amyotrophic Lateral Sclerosis-Parkinsonism/dementia Complex 1",
+       "Amyotrophic lateral sclerosis (disorder)",
+       "Amyotrophic lateral sclerosis, Parkinsonism/Dementia complex of Guam",
+       "Bulbar motor neuron disease",
+       "Dementia With Amyotrophic Lateral Sclerosis",
+       "Disease, Lou-Gehrigs",
+       "GEHRIGS DIS",
+       "Gehrig Disease",
+       "Gehrig's Disease",
+       "Gehrigs Disease",
+       "Guam Form of Amyotrophic Lateral Sclerosis",
+       "LOU GEHRIG DIS",
+       "LOU GEHRIGS DIS",
+       "Lateral Scleroses, Amyotrophic",
+       "Lou Gehrig's Disease",
+       "Lou Gehrigs Disease",
+       "Lou-Gehrigs Disease",
+       "MOTOR NEURON DIS AMYOTROPHIC LATERAL SCLEROSIS",
+       "Motor Neuron Disease, Amyotrophic Lateral Sclerosis",
+       "Motor neuron disease, bulbar",
+       "Sclerosis, Amyotrophic Lateral"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": [
+       "Lou Gehrig's disease"
+      ]
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:332",
+     "GARD:0005786",
+     "HP:0007354",
+     "ICD10CM:G12.21",
+     "ICD9:335.20",
+     "MEDGEN:274",
+     "MESH:D000690",
+     "MedDRA:10002026",
+     "NANDO:1200002",
+     "NCIT:C34373",
+     "NORD:768",
+     "Orphanet:803",
+     "SCTID:86044005",
+     "UMLS:C0002736",
+     "birnlex:12566",
+     "icd11.foundation:1982355687"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0005071",
+      "name": "nervous system disorder"
+     },
+     {
+      "id": "EFO_0000651",
+      "name": "phenotype"
+     }
+    ]
+   }
+  }
+ }
+}

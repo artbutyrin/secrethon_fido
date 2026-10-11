@@ -1,0 +1,143 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2837,
+  "output_tokens": 2766,
+  "latency_ms": 19292,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"coronary artery disorder\", \"target\": \"CETP\", \"drugs\": [\"ANACETRAPIB\", \"DALCETRAPIB\", \"EVACETRAPIB\", \"OBICETRAPIB\", \"ROCACETRAPIB\", \"TORCETRAPIB\"], \"documents\": [{\"id\": \"pmid:40337982\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Safety and Efficacy of Obicetrapib in Patients at High Cardiovascular Risk.. BACKGROUND: Obicetrapib is a highly selective cholesteryl ester transfer protein inhibitor that reduces low-density lipoprotein (LDL) cholesterol levels. The efficacy and safety of obicetrapib have not been fully characterized among patients at high risk for cardiovascular events. METHODS: We conducted a multinational, randomized, placebo-controlled trial involving patients with heterozygous familial hypercholesterolemia or a history of atherosclerotic cardiovascular disease who were receiving maximum tolerated doses of lipid-lowering therapy. Patients with an LDL cholesterol level of 100 mg per deciliter or higher or a non-high-density lipoprotein (HDL) cholesterol level of 130 mg per deciliter or higher, as well as those with an LDL cholesterol level of 55 to 100 mg per deciliter or a non-HDL cholesterol level of 85 to 130 mg per deciliter and at least one additional cardiovascular risk factor, were eligible for inclusion. The patients were randomly assigned in a 2:1 ratio to receive either 10 mg of obicetrapib once daily or matching placebo for 365 days. The primary end point was the percent change in the LDL cholesterol level from baseline to day 84. RESULTS: A total of 2530 patients underwent randomization; 1686 patients were assigned to receive obicetrapib and 844 to receive placebo. The mean age of the patients was 65 years, 34% were women, and the mean baseline LDL cholesterol level was 98 mg per deciliter. The least-squares mean percent change from baseline to day 84 in the LDL cholesterol level was -29.9% (95% confidence interval [CI], -32.1 to -27.8) in the obicetrapib group, as compared with 2.7% (95% CI, -0.4 to 5.8) in the placebo group, for a between-group difference of -32.6 percentage points (95% CI, -35.8 to -29.5; P<0.001). The incidence of adverse events appeared to be similar in the two groups. CONCLUSIONS: Among patients with atherosclerotic cardiovascular disease or heterozygous familial hypercholesterolemia who were receiving maximum tolerated doses of lipid-lowering therapy and were at high risk for cardiovascular events, obicetrapib reduced LDL cholesterol levels by 29.9%. (Funded by NewAmsterdam Pharma; BROADWAY ClinicalTrials.gov number, NCT05142722.).\"}, {\"id\": \"pmid:41113338\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Efficacy and safety of obicetrapib in patients with dyslipidemia: An updated meta-analysis of randomized controlled trials.. INTRODUCTION: Obicetrapib is a novel cholesteryl ester transfer protein (CETP) inhibitor with promising lipid-lowering effects. While earlier CETP inhibitors have shown inconsistent cardiovascular outcomes and safety concerns, the efficacy and safety of obicetrapib remain under active investigation. METHODS: We systematically searched PubMed, Embase, and Cochrane Central databases for randomized controlled trials (RCTs) comparing obicetrapib versus placebo in adults with dyslipidemia or at high cardiovascular risk. We pooled mean differences (MDs) with 95 % confidence intervals (CI) with a random effects model. We used R software version 4.4.2 for statistical analysis. RESULTS: We included 7 RCTs comprising 3381 participants, of whom 2151 (63 %) received obicetrapib. The mean age was 64.3 years, and 36 % were women. Compared with placebo, obicetrapib significantly reduced mean LDL-C (MD: -37.21 %; 95 % CI: -41.53 to -32.90; p < 0.01; I2=64 %), lipoprotein(a) (MD: -37.16 %; 95 % CI: -43.63 to -30.70; p < 0.01, I2=48 %), apolipoprotein B (MD: -24.65 %; 95 % CI: -28.71 to -20.59; p < 0.01; I²=83 %), non-HDL-C (MD: -31.90 %; 95 % CI: -34.81 to -28.99; p < 0.01; I2=0 %), and triglyceride levels (MD: -7.21 %; 95 % CI: -11.13 to -3.30; p < 0.01; I2=0 %). Interestingly, obicetrapib also reduced the incidence of new-onset diabetes (RR: 0.88; 95 % CI: 0.80 to 0.97; p = 0.01; I²=0 %). In contrast, obicetrapib significantly increased HDL-C (MD: 142.17 %; 95 % CI: 117.56 to 166.78; p < 0.01; I2=98.3 %), total cholesterol (MD: 11.94 %; 95 % CI: 5.61 to 18.28; p = 0.01; I2=91 %), and apolipoprotein A1 concentrations (MD: 52.76 %; 95 % CI: 41.87 to 63.66; p < 0.01; I²=94 %). There were no significant differences in adverse events. CONCLUSION: Among patients with dyslipidemia and/or high cardiovascular risk, obicetrapib significantly reduces LDL-C, lipoprotein(a), apolipoprotein B, and non-HDL-C. No significant differences were observed in adverse events, supporting the favorable safety profile of obicetrapib.\"}, {\"id\": \"pmid:40347969\", \"about_drug\": \"OBICETRAPIB\", \"text\": \"Fixed-dose combination of obicetrapib and ezetimibe for LDL cholesterol reduction (TANDEM): a phase 3, randomised, double-blind, placebo-controlled trial.. BACKGROUND: Reducing LDL cholesterol prevents atherosclerotic cardiovascular disease (ASCVD) events. The aim of this study was to evaluate the LDL cholesterol-lowering efficacy of a fixed-dose combination (FDC) of obicetrapib, a CETP inhibitor, and ezetimibe. METHODS: This randomised, double-blind trial across 48 US sites including hospitals, private and group practices, and independent research centres included participants at least 18 years old with pre-existing or high risk for ASVCD or heterozygous familial hypercholesterolaemia with LDL cholesterol concentrations of 1·8 mmol/L (70 mg/dL) or greater despite maximally tolerated lipid-lowering therapy excluding ezetimibe, or having statin intolerance. Participants were randomly assigned (1:1:1:1) to obicetrapib 10 mg plus ezetimibe 10 mg FDC, obicetrapib 10 mg monotherapy, ezetimibe 10 mg monotherapy, or placebo administered daily for 84 days. The co-primary endpoints in the intention-to-treat population were the percent LDL cholesterol changes in the FDC group compared with placebo, ezetimibe monotherapy, and obicetrapib monotherapy, and the placebo-adjusted change in the obicetrapib monotherapy group. The trial was prospectively registered (NCT06005597) and is completed. FINDINGS: Between March 4 and July 3, 2024, 407 participants were randomly assigned. The median age was 68·0 years (IQR 62·0-73·0) and 177 (43%) were female. Mean baseline LDL cholesterol was 2·4 mmol/L, 2·5 mmol/L, 2·6 mmol/L, and 2·5 mmol/L in the placebo (n=102), ezetimibe monotherapy (n=101), obicetrapib monotherapy (n=102), and FDC groups (n=102), respectively. At day 84, percent differences in LDL cholesterol reduction with the FDC were -48·6% (95% CI -58·3 to -38·9) versus placebo, -27·9% (-37·5 to -18·4) versus ezetimibe, and -16·8% (-26·4 to -7·1) versus obicetrapib. Obicetrapib monotherapy decreased LDL cholesterol by 31·9% (22·1 to 41·6) versus placebo. Adverse event rates were similar in the FDC (52 [51%] of 102), obicetrapib (55 [54%] of 102), and ezetimibe (54 [53%] of 101) groups and lowest with placebo (38 [37%] of 102). Serious adverse event rates were generally similar across FDC (three [3%] of 102), obicetrapib (six [6%] of 102), ezetimibe (seven [7%] of 101), and placebo (four [4%] of 102) groups. Deaths occurred in one [1%] of 102 participants with FDC, one [1%] of 102 with obicetrapib, one [1%] of 101 with ezetimibe, and none with placebo. INTERPRETATION: Combination therapy of obicetrapib and ezetimibe significantly reduced LDL cholesterol. This oral, single-pill therapy could improve LDL cholesterol management in patients with pre-existing or high risk for ASCVD. FUNDING: NewAmsterdam Pharma.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:40337982",
+    "findings": [
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The least-squares mean percent change from baseline to day 84 in the LDL cholesterol level was -29.9%"
+     }
+    ]
+   },
+   {
+    "id": "pmid:41113338",
+    "findings": [
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Compared with placebo, obicetrapib significantly reduced mean LDL-C (MD: -37.21 %; 95 % CI: -41.53 to -32.90; p < 0.01; I2=64 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "lipoprotein(a) (MD: -37.16 %; 95 % CI: -43.63 to -30.70; p < 0.01, I2=48 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "apolipoprotein B (MD: -24.65 %; 95 % CI: -28.71 to -20.59; p < 0.01; I²=83 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "non-HDL-C (MD: -31.90 %; 95 % CI: -34.81 to -28.99; p < 0.01; I2=0 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "triglyceride levels (MD: -7.21 %; 95 % CI: -11.13 to -3.30; p < 0.01; I2=0 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "obicetrapib also reduced the incidence of new-onset diabetes (RR: 0.88; 95 % CI: 0.80 to 0.97; p = 0.01; I²=0 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "obicetrapib significantly increased HDL-C (MD: 142.17 %; 95 % CI: 117.56 to 166.78; p < 0.01; I2=98.3 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "total cholesterol (MD: 11.94 %; 95 % CI: 5.61 to 18.28; p = 0.01; I2=91 %)"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "apolipoprotein A1 concentrations (MD: 52.76 %; 95 % CI: 41.87 to 63.66; p < 0.01; I²=94 %)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:40347969",
+    "findings": [
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At day 84, percent differences in LDL cholesterol reduction with the FDC were -48·6% (95% CI -58·3 to -38·9) versus placebo"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At day 84, percent differences in LDL cholesterol reduction with the FDC were -27·9% (-37·5 to -18·4) versus ezetimibe"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At day 84, percent differences in LDL cholesterol reduction with the FDC were -16·8% (-26·4 to -7·1) versus obicetrapib"
+     },
+     {
+      "drug": "OBICETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Obicetrapib monotherapy decreased LDL cholesterol by 31·9% (22·1 to 41·6) versus placebo"
+     }
+    ]
+   }
+  ]
+ }
+}

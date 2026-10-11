@@ -1,0 +1,342 @@
+{
+ "query": "TargetDrugs",
+ "variables": {
+  "ensemblId": "ENSG00000142168"
+ },
+ "fetched_at": "2026-10-09T11:59:46+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000142168",
+    "drugAndClinicalCandidates": {
+     "count": 1,
+     "rows": [
+      {
+       "id": "e64309660798ddd86db5e62ae16387c22204bfe5cc15b33741581d08b1e2f0af",
+       "maxClinicalStage": "PHASE_4",
+       "drug": {
+        "id": "CHEMBL3833346",
+        "name": "TOFERSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "BIIB-067"
+         },
+         {
+          "label": "BIIB067"
+         },
+         {
+          "label": "ISIS-SOD1Rx"
+         },
+         {
+          "label": "Tofersen"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Qalsody"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "ANTISENSE INHIBITOR",
+           "mechanismOfAction": "SOD1 mRNA antisense inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000142168"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 1,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0004976",
+            "name": "amyotrophic lateral sclerosis",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct07223723",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT07223723",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_4",
+         "trialPhase": "PHASE4",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2025-12-11",
+         "trialSponsor": {
+          "name": "Biogen"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "08e7b1bc8534f9657168cedeade324b63c3ec57b2c9db5e0a4a03352d0d68c23",
+         "source": "PMDA",
+         "url": "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0001.html",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "35c0f4dfebe8388281cc81c1d861066af40d6d4012c702bd7f37e0f29e7be9e1",
+         "source": "PMDA",
+         "url": "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0001.html",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "functional impairment"
+          }
+         ]
+        },
+        {
+         "id": "d0i1cq/amyotrophic lateral sclerosis",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0I1CQ",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "emea/h/c/005493",
+         "source": "EMA Human Drugs",
+         "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/qalsody",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "label/2023/215887orig1s000correctedlbl.pdf",
+         "source": "FDA",
+         "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215887Orig1s000Correctedlbl.pdf",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct04972487",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04972487",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": "APPROVED_FOR_MARKETING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": "Biogen"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct02623699",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02623699",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2016-01-20",
+         "trialSponsor": {
+          "name": "Biogen"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "superoxide dismutase 1 mutation"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct03070119",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03070119",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2017-03-08",
+         "trialSponsor": {
+          "name": "Biogen"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct07294144",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT07294144",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2025-12-29",
+         "trialSponsor": {
+          "name": "Washington University School of Medicine"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct07259980",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT07259980",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2026-01-02",
+         "trialSponsor": {
+          "name": "Biogen"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004976"
+           },
+           "diseaseFromSource": "amyotrophic lateral sclerosis"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

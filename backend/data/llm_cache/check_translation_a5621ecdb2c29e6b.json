@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2587,
+  "output_tokens": 225,
+  "latency_ms": 2239,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Anacetrapib, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…l impairment and 12 matched healthy controls). In the hepatic insufficiency study, the geometric mean ratio (GMR; mean value for the group with moderate hepatic insufficiency/mean value for the healthy controls) and 90% CIs for the area under the concentration-time curve from time zero to infinity (AUC(0-∞)) and the maximum concentration of drug in plasma (C(max)) were 1.16 (0.84, 1.60) and 1.02 (0.71, 1.49), respectively. In the renal insufficiency study, the GMRs (mean value for the group with severe renal insufficiency/mean value for the healthy controls) and 90% CIs for AUC(0-∞) and Cmax were 1.14 (0.80, 1.63) and 1.31 (0.93, 1.83), respectively. Anacetrapib was generally well tolerated and there was no clinicall…\"}, {\"id\": \"1\", \"claim\": \"Study result for Anacetrapib, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… zero to infinity (AUC(0-∞)) and the maximum concentration of drug in plasma (C(max)) were 1.16 (0.84, 1.60) and 1.02 (0.71, 1.49), respectively. In the renal insufficiency study, the GMRs (mean value for the group with severe renal insufficiency/mean value for the healthy controls) and 90% CIs for AUC(0-∞) and Cmax were 1.14 (0.80, 1.63) and 1.31 (0.93, 1.83), respectively. Anacetrapib was generally well tolerated and there was no clinically meaningful effect of moderate hepatic or severe renal insufficiency on the pharmacokinetics of anacetrapib.\"}, {\"id\": \"2\", \"claim\": \"Study result for the target itself (no drug), in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…and rs1968905) to estimate causal effects per unit (µg/mL) increase in CETP on 159 standardized metabolic biomarkers, primarily lipoprotein subclasses. Metabolic biomarkers were measured by nuclear magnetic resonance (NMR) in 5672 participants of the Netherlands Epidemiology of Obesity (NEO) study. Higher CETP concentrations were associated with less large HDL (largest effect XL-HDL-C, P = 6 × 10-22) and more small VLDL components (largest effect S-VLDL cholesteryl esters, P = 6 × 10-6). No causal effects were observed with LDL subclasses. All these effects were replicated in an independent cohort from European ancestry (MAGNETIC NMR GWAS; n ~20,000). Additionally, we assessed observational associations between ELISA-measured CETP concentration and metabolic measures. In contrast t…\"}, {\"id\": \"3\", \"claim\": \"Study result for the target itself (no drug), in people: a pharmacodynamic response (a downstream biomarker changes) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…lear magnetic resonance (NMR) in 5672 participants of the Netherlands Epidemiology of Obesity (NEO) study. Higher CETP concentrations were associated with less large HDL (largest effect XL-HDL-C, P = 6 × 10-22) and more small VLDL components (largest effect S-VLDL cholesteryl esters, P = 6 × 10-6). No causal effects were observed with LDL subclasses. All these effects were replicated in an independent cohort from European ancestry (MAGNETIC NMR GWAS; n ~20,000). Additionally, we assessed observational associations between ELISA-measured CETP concentration and metabolic measures. In contrast to results from Mendelian randomization, observational…\"}, {\"id\": \"4\", \"claim\": \"Study result for Anacetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…of the key regulators of the homeostasis of lipid particles, including high-density lipoprotein (HDL) and low-density lipoprotein (LDL) particles. Epidemiological evidence correlates increased HDL and decreased LDL to coronary heart disease (CHD) risk reduction. This relationship is consistent with a clinical outcomes trial of a CETP inhibitor (anacetrapib) combined with standard of care (statin), which led to a 9% additional risk reduction compared to standard of care alone. We discuss here the discovery of MK-8262, a CETP inhibitor with the potential for being the best-in-class molecule. Novel in vitro and in vivo paradigms were integrated to drug discovery to guide optimization informed by a critical understanding of key clinical adverse effect profiles. We present p…\"}, {\"id\": \"5\", \"claim\": \"Study result for Anacetrapib, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ype (WT) lean, WT diet-induced obese (DIO), natural flanking region (NFR) CETP-transgenic lean, and NFR-DIO mice. Mice were dosed orally with 10 mg/kg anacetrapib daily for 42 days. Drug concentrations in blood, brown and white adipose tissue, liver, and brain were measured up to 35 weeks postdose. During dosing, a 3- to 9-fold accumulation in 72-hour postdose blood concentrations of anacetrapib was observed. Drug concentrations in white adipose tissue accumulated ∼20- to 40-fold, whereas 10- to 17-fold accumulation occurred in brown adipose and approximately 4-fold in liver. Brain levels were very low (<0.1 μM), and a trend of accumulation was not seen. The presence of CETP as well as adiposity seems t…\"}, {\"id\": \"6\", \"claim\": \"Study result for Anacetrapib, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… Mice were dosed orally with 10 mg/kg anacetrapib daily for 42 days. Drug concentrations in blood, brown and white adipose tissue, liver, and brain were measured up to 35 weeks postdose. During dosing, a 3- to 9-fold accumulation in 72-hour postdose blood concentrations of anacetrapib was observed. Drug concentrations in white adipose tissue accumulated ∼20- to 40-fold, whereas 10- to 17-fold accumulation occurred in brown adipose and approximately 4-fold in liver. Brain levels were very low (<0.1 μM), and a trend of accumulation was not seen. The presence of CETP as well as adiposity seems to play a role in determining the blood concentrations of anacetrapib. The highest blood concentrations were observed in NFR DIO mice, whereas the lowest concentrations we…\"}, {\"id\": \"7\", \"claim\": \"Study result for Anacetrapib, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… weeks postdose. During dosing, a 3- to 9-fold accumulation in 72-hour postdose blood concentrations of anacetrapib was observed. Drug concentrations in white adipose tissue accumulated ∼20- to 40-fold, whereas 10- to 17-fold accumulation occurred in brown adipose and approximately 4-fold in liver. Brain levels were very low (<0.1 μM), and a trend of accumulation was not seen. The presence of CETP as well as adiposity seems to play a role in determining the blood concentrations of anacetrapib. The highest blood concentrations were observed in NFR DIO mice, whereas the lowest concentrations were seen in WT lean mice. In adipose and liver tissue, higher concentrations were…\"}, {\"id\": \"8\", \"claim\": \"Study result for Anacetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ive either 100 mg of anacetrapib once daily (15,225 patients) or matching placebo (15,224 patients). The primary outcome was the first major coronary event, a composite of coronary death, myocardial infarction, or coronary revascularization. RESULTS: During the median follow-up period of 4.1 years, the primary outcome occurred in significantly fewer patients in the anacetrapib group than in the placebo group (1640 of 15,225 patients [10.8%] vs. 1803 of 15,224 patients [11.8%]; rate ratio, 0.91; 95% confidence interval, 0.85 to 0.97; P=0.004). The relative difference in risk was similar across multiple prespecified subgroups. At the trial midpoint, the mean level of HDL cholesterol was higher by 43 mg per deciliter (1.12 mmol per liter) in the anacetrapib group than in the placebo group (a relative difference of 104%), and the mean level…\"}, {\"id\": \"9\", \"claim\": \"Study result for Anacetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ignificantly fewer patients in the anacetrapib group than in the placebo group (1640 of 15,225 patients [10.8%] vs. 1803 of 15,224 patients [11.8%]; rate ratio, 0.91; 95% confidence interval, 0.85 to 0.97; P=0.004). The relative difference in risk was similar across multiple prespecified subgroups. At the trial midpoint, the mean level of HDL cholesterol was higher by 43 mg per deciliter (1.12 mmol per liter) in the anacetrapib group than in the placebo group (a relative difference of 104%), and the mean level of non-HDL cholesterol was lower by 17 mg per deciliter (0.44 mmol per liter), a relative difference of -18%. There were no significant between-group differences in the risk of death, cancer, or other serious adverse events. CONCLUSIONS: Among patients with atherosclerotic vascular disease who were receiving intensive statin therapy, the use of anacetrapib resulted in a lower incidence of major coronary ev…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": false
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": true
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   }
+  ]
+ }
+}

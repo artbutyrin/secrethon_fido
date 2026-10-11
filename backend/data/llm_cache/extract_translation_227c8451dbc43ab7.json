@@ -1,0 +1,63 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2789,
+  "output_tokens": 797,
+  "latency_ms": 7755,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:28153102\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Safety of Very Low Low-Density Lipoprotein Cholesterol Levels With Alirocumab: Pooled Data From Randomized Trials.. BACKGROUND: Proprotein convertase subtilisin/kexin type 9 monoclonal antibodies can reduce low-density lipoprotein cholesterol (LDL-C) to very low levels when added to background lipid-lowering therapy. OBJECTIVES: The safety of alirocumab was evaluated in patients with at least 2 consecutive LDL-C values <25 or <15 mg/dl in the ODYSSEY program, with follow-up as long as 104 weeks. METHODS: Pooled data from 14 trials were analyzed (double-blind treatment 8 to 104 weeks; n = 3,340 alirocumab, n = 1,894 control [placebo or ezetimibe]; representing 4,029 [alirocumab] and 2,114 [control] double-blind patient-years' exposure). RESULTS: In alirocumab-treated patients, 839 (25.1%) achieved 2 consecutive LDL-C values <25 mg/dl, and 314 (9.4%) achieved <15 mg/dl. Baseline LDL-C was lower (mean 100.3 vs. 134.3 mg/dl) in patients with LDL-C <25 versus ≥25 mg/dl. Similar rates of adverse events occurred in patients achieving LDL-C <25 and <15 mg/dl (72.7% and 71.7%, respectively), compared with 76.6% in those who did not achieve LDL-C <25 mg/dl. Neurological and neurocognitive events were similar among the 3 groups. In a propensity score analysis, the rate of cataracts was higher in patients with LDL-C <25 mg/dl (2.6%) versus ≥25 mg/dl (0.8%; hazard ratio: 3.40; 95% confidence interval: 1.58 to 7.35). However, no difference in cataract incidence was observed between pooled alirocumab and control groups. CONCLUSIONS: LDL-C levels <25 or <15 mg/dl on alirocumab were not associated with an increase in overall treatment-emergent adverse event rates or neurocognitive events, although cataract incidence appeared to be increased in the group achieving LDL-C levels <25 mg/dl. (Pooled analyses of already reported trials; NCT01288443, NCT01288469, NCT01266876, NCT01812707, NCT01507831, NCT01617655, NCT01623115, NCT01709500, NCT01644175, NCT01644188, NCT01730040, NCT01730053, NCT01644474, and NCT01709513).\"}, {\"id\": \"pmid:27777279\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Reductions in Atherogenic Lipids and Major Cardiovascular Events: A Pooled Analysis of 10 ODYSSEY Trials Comparing Alirocumab With Control.. BACKGROUND: A continuous relationship between reductions in low-density lipoprotein cholesterol (LDL-C) and major adverse cardiovascular events (MACE) has been observed in statin and ezetimibe outcomes trials down to achieved levels of 54 mg/dL. However, it is uncertain whether this relationship extends to LDL-C levels <50 mg/dL. We assessed the relationship between additional LDL-C, non-high-density lipoprotein cholesterol, and apolipoprotein B100 reductions and MACE among patients within the ODYSSEY trials that compared alirocumab with controls (placebo/ezetimibe), mainly as add-on therapy to maximally tolerated statin. METHODS: Data were pooled from 10 double-blind trials (6699 patient-years of follow-up). Randomization was to alirocumab 75/150 mg every 2 weeks or control for 24 to 104 weeks, added to background statin therapy in 8 trials. This analysis included 4974 patients (3182 taking alirocumab, 1174 taking placebo, 618 taking ezetimibe). In a post hoc analysis, the relationship between average on-treatment lipid levels and percent reductions in lipids from baseline were correlated with MACE (coronary heart disease death, nonfatal myocardial infarction, ischemic stroke, or unstable angina requiring hospitalization) in multivariable analyses. RESULTS: Overall, 33.1% of the pooled cohort achieved average LDL-C <50 mg/dL (44.7%-52.6% allocated to alirocumab, 6.5% allocated to ezetimibe, and 0% allocated to placebo). In total, 104 patients experienced MACE (median time to event, 36 weeks). For every 39 mg/dL lower achieved LDL-C, the risk of MACE appeared to be 24% lower (adjusted hazard ratio, 0.76; 95% confidence interval, 0.63-0.91; P=0.0025). Percent reductions in LDL-C from baseline were inversely correlated with MACE rates (hazard ratio, 0.71; 95% confidence interval, 0.57-0.89 per additional 50% reduction from baseline; P=0.003). Strengths of association materially similar to those described for LDL-C were observed with achieved non-high-density lipoprotein cholesterol and apolipoprotein B100 levels or percentage reductions. CONCLUSIONS: In a post hoc analysis from 10 ODYSSEY trials, greater percentage reductions in LDL-C and lower on-treatment LDL-C were associated with a lower incidence of MACE, including very low levels of LDL-C (<50 mg/dL). These findings require further validation in the ongoing prospective ODYSSEY OUTCOMES trial. CLINICAL TRIAL REGISTRATION: URL: https://www.clinicaltrials.gov. Unique identifiers: NCT01507831, NCT01623115, NCT01709500, NCT01617655, NCT01644175, NCT01644188, NCT01644474, NCT01730040, NCT01730053, and NCT01709513.\"}, {\"id\": \"pmid:24825642\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Effect of evolocumab or ezetimibe added to moderate- or high-intensity statin therapy on LDL-C lowering in patients with hypercholesterolemia: the LAPLACE-2 randomized clinical trial.. IMPORTANCE: In phase 2 studies, evolocumab, a fully human monoclonal antibody to PCSK9, reduced LDL-C levels in patients receiving statin therapy. OBJECTIVE: To evaluate the efficacy and tolerability of evolocumab when used in combination with a moderate- vs high-intensity statin. DESIGN, SETTING, AND PATIENTS: Phase 3, 12-week, randomized, double-blind, placebo- and ezetimibe-controlled study conducted between January and December of 2013 in patients with primary hypercholesterolemia and mixed dyslipidemia at 198 sites in 17 countries. INTERVENTIONS: Patients (n = 2067) were randomized to 1 of 24 treatment groups in 2 steps. Patients were initially randomized to a daily, moderate-intensity (atorvastatin [10 mg], simvastatin [40 mg], or rosuvastatin [5 mg]) or high-intensity (atorvastatin [80 mg], rosuvastatin [40 mg]) statin. After a 4-week lipid-stabilization period, patients (n = 1899) were randomized to compare evolocumab (140 mg every 2 weeks or 420 mg monthly) with placebo (every 2 weeks or monthly) or ezetimibe (10 mg or placebo daily; atorvastatin patients only) when added to statin therapies. MAIN OUTCOMES AND MEASURES: Percent change from baseline in low-density lipoprotein cholesterol (LDL-C) level at the mean of weeks 10 and 12 and at week 12. RESULTS: Evolocumab reduced LDL-C levels by 66% (95% CI, 58% to 73%) to 75% (95% CI, 65% to 84%) (every 2 weeks) and by 63% (95% CI, 54% to 71%) to 75% (95% CI, 67% to 83%) (monthly) vs placebo at the mean of weeks 10 and 12 in the moderate- and high-intensity statin-treated groups; the LDL-C reductions at week 12 were comparable. For moderate-intensity statin groups, evolocumab every 2 weeks reduced LDL-C from a baseline mean of 115 to 124 mg/dL to an on-treatment mean of 39 to 49 mg/dL; monthly evolocumab reduced LDL-C from a baseline mean of 123 to 126 mg/dL to an on-treatment mean of 43 to 48 mg/dL. For high-intensity statin groups, evolocumab every 2 weeks reduced LDL-C from a baseline mean of 89 to 94 mg/dL to an on-treatment mean of 35 to 38 mg/dL; monthly evolocumab reduced LDL-C from a baseline mean of 89 to 94 mg/dL to an on-treatment mean of 33 to 35 mg/dL. Adverse events were reported in 36%, 40%, and 39% of evolocumab-, ezetimibe-, and placebo-treated patients, respectively. The most common adverse events in evolocumab-treated patients were back pain, arthralgia, headache, muscle spasms, and pain in extremity (all <2%). CONCLUSIONS AND RELEVANCE: In this 12-week trial conducted among patients with primary hypercholesterolemia and mixed dyslipidemia, evolocumab added to moderate- or high-intensity statin therapy resulted in additional LDL-C lowering. Further studies are needed to evaluate the longer-term clinical outcomes and safety of this approach for LDL-C lowering. TRIAL REGISTRATION: clinicaltrials.gov Identifier: NCT01763866.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:28153102",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "In alirocumab-treated patients, 839 (25.1%) achieved 2 consecutive LDL-C values <25 mg/dl, and 314 (9.4%) achieved <15 mg/dl."
+     }
+    ]
+   },
+   {
+    "id": "pmid:27777279",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Overall, 33.1% of the pooled cohort achieved average LDL-C <50 mg/dL (44.7%-52.6% allocated to alirocumab, 6.5% allocated to ezetimibe, and 0% allocated to placebo)."
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "For every 39 mg/dL lower achieved LDL-C, the risk of MACE appeared to be 24% lower (adjusted hazard ratio, 0.76; 95% confidence interval, 0.63-0.91; P=0.0025)."
+     }
+    ]
+   },
+   {
+    "id": "pmid:24825642",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Evolocumab reduced LDL-C levels by 66% (95% CI, 58% to 73%) to 75% (95% CI, 65% to 84%) (every 2 weeks) and by 63% (95% CI, 54% to 71%) to 75% (95% CI, 67% to 83%) (monthly) vs placebo at the mean of weeks 10 and 12 in the moderate- and high-intensity statin-treated groups;"
+     }
+    ]
+   }
+  ]
+ }
+}

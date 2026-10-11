@@ -1,0 +1,28 @@
+# Template for 28 deals. Copy as cases.yaml and fill in.
+#   python -m scoring bench cases.yaml --out out
+#
+# Filling rules (they matter more than the format itself):
+#   1. Facts as of the DEAL DATE. Do not enter anything that became known later:
+#      otherwise the system "knows" the outcome, and the check is worthless.
+#   2. Every fact has a source in `sources` (a link or a document name).
+#   3. Leave unknown facts out entirely. Do not guess: "don't know" beats a made-up value.
+#   4. Whoever fills in the facts must not look at the GOOD / BAD label.
+#   5. Full list of facts and allowed values: docs/facts.md.
+cases:
+  - id: C01
+    name: "Drug, company"
+    label: GOOD              # GOOD or BAD from the organisers' table
+    deal_date: "2020-03"
+    disease: "disease name"
+    target: "target / mechanism"
+    facts:
+      phase: ph2
+      approved_therapies_count: 1
+      genetic_support: gwas
+      moa_clinical_precedent: none
+      approved_same_moa_count: 0
+      ph3_same_moa_count: 1
+    sources:
+      approved_therapies_count: "https://..."
+      genetic_support: "Open Targets, release ..., datasource gwas_credible_sets"
+    notes: "What could not be established and why"

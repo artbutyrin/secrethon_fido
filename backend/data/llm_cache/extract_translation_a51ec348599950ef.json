@@ -1,0 +1,100 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2758,
+  "output_tokens": 1579,
+  "latency_ms": 17087,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:32381158\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Cognition After Lowering LDL-Cholesterol With Evolocumab.. BACKGROUND: The EBBINGHAUS (Evaluating PCSK9 Binding Antibody Influence on Cognitive Health in High Cardiovascular Risk Subjects) trial demonstrated that evolocumab added to a background statin did not affect cognitive performance in a subset of 1,204 patients enrolled in FOURIER (Further Cardiovascular Outcomes Research With PCSK9 inhibitors in Subjects With Elevated Risk). OBJECTIVES: The authors describe patient-reported cognition in the entire FOURIER trial using a self-survey. METHODS: FOURIER was a randomized, double-blind, placebo-controlled trial involving patients with atherosclerotic cardiovascular disease and low-density lipoprotein cholesterol (LDL-C) levels ≥70 mg/dl or non-high-density cholesterol ≥100 mg/dl despite statin therapy. At the final visit, patients completed a 23-item survey on memory and executive domains from the Everyday Cognition (ECog) scale. Patients compared their levels of everyday function at the end of the trial with their levels at the beginning and scored as 1 (no change or improvement), 2 (occasionally worse), 3 (consistently little worse), or 4 (consistently much worse). ECog scores were compared by the 2 randomized treatment arms and by achieved LDL-C at 4 weeks. RESULTS: A total of 22,655 patients completed ECog after a median duration of 2.2 years. The proportions of patients reporting cognitive decline (ECog score ≥2) at the end of the study were similar for placebo versus evolocumab, both for total score 3.6% versus 3.7% (p = 0.62) and for subdomains (memory, 5.8% vs. 6.0%; total executive, 3.6% vs. 3.7%). The proportion of patients reporting a decline in total cognitive score was similar among the 2,338 patients who achieved very low LDL-C levels (<20 mg/dl) compared to the 3,613 patients with LDL-C ≥100 mg/dl (3.8% vs. 4.5%, p = 0.57). CONCLUSIONS: The addition of evolocumab to maximally tolerated statin therapy had no impact on patient-reported cognition after an average of 2.2 years of treatment, even among patients who achieved LDL-C <20 mg/dl.\"}, {\"id\": \"pmid:25773607\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Efficacy and safety of evolocumab in reducing lipids and cardiovascular events.. BACKGROUND: Evolocumab, a monoclonal antibody that inhibits proprotein convertase subtilisin-kexin type 9 (PCSK9), significantly reduced low-density lipoprotein (LDL) cholesterol levels in short-term studies. We conducted two extension studies to obtain longer-term data. METHODS: In two open-label, randomized trials, we enrolled 4465 patients who had completed 1 of 12 phase 2 or 3 studies (\\\"parent trials\\\") of evolocumab. Regardless of study-group assignments in the parent trials, eligible patients were randomly assigned in a 2:1 ratio to receive either evolocumab (140 mg every 2 weeks or 420 mg monthly) plus standard therapy or standard therapy alone. Patients were followed for a median of 11.1 months with assessment of lipid levels, safety, and (as a prespecified exploratory analysis) adjudicated cardiovascular events including death, myocardial infarction, unstable angina, coronary revascularization, stroke, transient ischemic attack, and heart failure. Data from the two trials were combined. RESULTS: As compared with standard therapy alone, evolocumab reduced the level of LDL cholesterol by 61%, from a median of 120 mg per deciliter to 48 mg per deciliter (P<0.001). Most adverse events occurred with similar frequency in the two groups, although neurocognitive events were reported more frequently in the evolocumab group. The risk of adverse events, including neurocognitive events, did not vary significantly according to the achieved level of LDL cholesterol. The rate of cardiovascular events at 1 year was reduced from 2.18% in the standard-therapy group to 0.95% in the evolocumab group (hazard ratio in the evolocumab group, 0.47; 95% confidence interval, 0.28 to 0.78; P=0.003). CONCLUSIONS: During approximately 1 year of therapy, the use of evolocumab plus standard therapy, as compared with standard therapy alone, significantly reduced LDL cholesterol levels and reduced the incidence of cardiovascular events in a prespecified but exploratory analysis. (Funded by Amgen; OSLER-1 and OSLER-2 ClinicalTrials.gov numbers, NCT01439880 and NCT01854918.).\"}, {\"id\": \"pmid:27959715\", \"about_drug\": \"INCLISIRAN\", \"text\": \"A Highly Durable RNAi Therapeutic Inhibitor of PCSK9.. BACKGROUND: Inclisiran (ALN-PCSsc) is a long-acting RNA interference (RNAi) therapeutic agent that inhibits the synthesis of proprotein convertase subtilisin-kexin type 9 (PCSK9), a target for the lowering of low-density lipoprotein (LDL) cholesterol. METHODS: In this phase 1 trial, we randomly assigned healthy volunteers with an LDL cholesterol level of at least 100 mg per deciliter in a 3:1 ratio to receive a subcutaneous injection of inclisiran or placebo in either a single-ascending-dose phase (at a dose of 25, 100, 300, 500, or 800 mg) or a multiple-dose phase (125 mg weekly for four doses, 250 mg every other week for two doses, or 300 or 500 mg monthly for two doses, with or without concurrent statin therapy); each dose cohort included four to eight participants. Safety, the side-effect profile, and pharmacodynamic measures (PCSK9 level, LDL cholesterol level, and exploratory lipid variables) were evaluated. RESULTS: The most common adverse events were cough, musculoskeletal pain, nasopharyngitis, headache, back pain, and diarrhea. All the adverse events were mild or moderate in severity. There were no serious adverse events or discontinuations due to adverse events. There was one grade 3 elevation in the γ-glutamyltransferase level, which was considered by the investigator to be related to statin therapy. In the single-dose phase, inclisiran doses of 300 mg or more reduced the PCSK9 level (up to a least-squares mean reduction of 74.5% from baseline to day 84), and doses of 100 mg or more reduced the LDL cholesterol level (up to a least-squares mean reduction of 50.6% from baseline). Reductions in the levels of PCSK9 and LDL cholesterol were maintained at day 180 for doses of 300 mg or more. All multiple-dose regimens reduced the levels of PCSK9 (up to a least-squares mean reduction of 83.8% from baseline to day 84) and LDL cholesterol (up to a least-squares mean reduction of 59.7% from baseline to day 84). CONCLUSIONS: In this phase 1 trial, no serious adverse events were observed with inclisiran. Doses of 300 mg or more (in single or multiple doses) significantly reduced levels of PCSK9 and LDL cholesterol for at least 6 months. (Funded by Alnylam Pharmaceuticals and the Medicines Company; ClinicalTrials.gov number, NCT02314442 .).\"}, {\"id\": \"pmid:38220186\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Efficacy, Safety, and Pharmacokinetics of Inclisiran in Japanese Patients: Results from ORION-15.. AIM: To evaluate the efficacy, safety, and pharmacokinetics (PK) of inclisiran in Japanese patients with high cardiovascular risk and elevated low-density lipoprotein cholesterol (LDL-C). METHODS: ORION-15 was a phase 2, double-blind, placebo-controlled randomized trial. Patients with hypercholesterolemia, including heterozygous familial hypercholesterolemia (HeFH), were randomized to inclisiran sodium 100, 200, or 300 mg, or placebo and dosed subcutaneously on Days 1, 90, and 270. The primary endpoint was the percentage change from baseline to Day 180 to demonstrate the superiority of inclisiran vs. placebo. Patients who consented to the PK substudy had additional study procedures for blood collection and safety assessment. RESULTS: Overall, 312 patients (mean age, 63.6 years; male, 74.4%; baseline LDL-C, 114.0 mg/dL) were randomized. Baseline characteristics were well balanced among the groups. At Day 180, inclisiran at all doses demonstrated significant LDL-C and proprotein convertase subtilisin/kexin type 9 (PCSK9) reductions (p＜0.0001 for both), which showed a dose-response relationship. The greatest reductions (LDL-C, 65.3%; PCSK9, 79.2%) were with inclisiran sodium 300 mg. At Day 180, ＞86% of the patients receiving inclisiran achieved the Japan Atherosclerosis Society 2017 lipid management targets compared to 8.9% for placebo. The mean (SD) plasma half-life for inclisiran was 6.8 (2.0)-7.6 (0.8) h. The incidence of adverse events with inclisiran was similar to that with placebo. CONCLUSION: Inclisiran sodium 100, 200, and 300 mg demonstrated clinically meaningful and statistically significant LDL-C and PCSK9 reductions at Day 180, which were consistent over 12 months. Inclisiran was effective and well tolerated in Japanese patients with hypercholesterolemia, including HeFH.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:32381158",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "The addition of evolocumab to maximally tolerated statin therapy had no impact on patient-reported cognition"
+     }
+    ]
+   },
+   {
+    "id": "pmid:25773607",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "evolocumab reduced the level of LDL cholesterol by 61%, from a median of 120 mg per deciliter to 48 mg per deciliter"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "The rate of cardiovascular events at 1 year was reduced from 2.18% in the standard-therapy group to 0.95% in the evolocumab group"
+     }
+    ]
+   },
+   {
+    "id": "pmid:27959715",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "inclisiran doses of 300 mg or more reduced the PCSK9 level (up to a least-squares mean reduction of 74.5% from baseline to day 84)"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "doses of 100 mg or more reduced the LDL cholesterol level (up to a least-squares mean reduction of 50.6% from baseline)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:38220186",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Day 180, inclisiran at all doses demonstrated significant LDL-C and proprotein convertase subtilisin/kexin type 9 (PCSK9) reductions"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Day 180, inclisiran at all doses demonstrated significant LDL-C and proprotein convertase subtilisin/kexin type 9 (PCSK9) reductions"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The mean (SD) plasma half-life for inclisiran was 6.8 (2.0)-7.6 (0.8) h"
+     }
+    ]
+   }
+  ]
+ }
+}

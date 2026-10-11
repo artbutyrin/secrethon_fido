@@ -1,0 +1,67 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2534,
+  "output_tokens": 1101,
+  "latency_ms": 12293,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:37939861\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Identification of benzothiazoles as novel PCSK9 inhibitors.. Proprotein convertase subtilisin kexin type 9 (PCSK9) is a clinically validated target on the treatment of cardiovascular disease (CVD). PCSK9 can regulate the hepatocyte surface low density lipoprotein receptor (LDLR) level by binding to LDLR and leading to their degradation in the lysosome. The clinical use of two monoclonal antibodies (alirocumab and evolocumab, approved in 2015) and one small interfering RNA (inclisiran, approved in 2020) which can inhibit PCSK9 function proved that they are very effective in lowering low density lipoprotein cholesterol (LDL-C). However, the high treatment costs and parenteral administration of these drugs prohibited widespread use and reduced their long-term advantage. Comparatively, small molecule drugs have many incomparable advantages of macromolecules, such as lower treatment cost, more drug administration options, superior pharmacokinetic properties, less adverse immunogenic responses and better affordable production. In this paper, we identified a series of benzothiazoles small molecule PCSK9 inhibitors through extensive screening. The structure and activity relationship (SAR) was summarized to facilitate further optimization. Moreover, the primary mechanism of action of the most potent compound was also investigated.\"}, {\"id\": \"pmid:35288146\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Evaluation of the distribution and excretion of [14C]-inclisiran following single subcutaneous administration in cynomolgus monkeys.. Inclisiran is a small interfering RNA molecule that was designed to reduce plasma low-density lipoprotein cholesterol (LDL-C) levels by inhibiting proprotein convertase subtilisin/kexin type 9 synthesis in the liver. This study aimed to characterize the tissue distribution and excretion of inclisiran after dosing in monkeys. A single 20 mg/kg subcutaneous injection of [14C]-inclisiran was administered to 12 male cynomolgus monkeys. Plasma concentrations and tissue binding parameters for inclisiran were assessed up to 42 days after injection using liquid scintillation of blood samples and tissue homogenates, as well as quantitative whole-body autoradiography. Radioactivity was highest in the liver at all time points from 24 h onward and remained elevated throughout the entire study period. Radioactivity was also detected in the kidneys and bladder wall, returning to low levels by 24 h. The concentration of radioactivity in the liver (402.97 μg equivalent/g) was 15.7-fold higher than in the kidneys (25.70 μg equivalent/g). Very low amounts of radioactivity were detected in all other tissues examined. The highest radioactivity in tissue homogenates was in the liver and kidney pyramid (327 and 351 μg equivalent/g, respectively). This study confirmed the selective uptake of inclisiran by the liver, indicating that the N-acetylgalactosamine linker allows for selective uptake via the asialoglycoprotein receptors expressed on hepatocytes compared with other tissues that lack asialoglycoprotein receptors. The long tissue retention in the liver supports the infrequent, biannual dosing schedule for inclisiran in the clinic and the temporal disconnect between short-term systemic exposure and sustained lowering of LDL-C.\"}, {\"id\": \"pmid:32187462\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Two Phase 3 Trials of Inclisiran in Patients with Elevated LDL Cholesterol.. BACKGROUND: Inclisiran inhibits hepatic synthesis of proprotein convertase subtilisin-kexin type 9. Previous studies suggest that inclisiran might provide sustained reductions in low-density lipoprotein (LDL) cholesterol levels with infrequent dosing. METHODS: We enrolled patients with atherosclerotic cardiovascular disease (ORION-10 trial) and patients with atherosclerotic cardiovascular disease or an atherosclerotic cardiovascular disease risk equivalent (ORION-11 trial) who had elevated LDL cholesterol levels despite receiving statin therapy at the maximum tolerated dose. Patients were randomly assigned in a 1:1 ratio to receive either inclisiran (284 mg) or placebo, administered by subcutaneous injection on day 1, day 90, and every 6 months thereafter over a period of 540 days. The coprimary end points in each trial were the placebo-corrected percentage change in LDL cholesterol level from baseline to day 510 and the time-adjusted percentage change in LDL cholesterol level from baseline after day 90 and up to day 540. RESULTS: A total of 1561 and 1617 patients underwent randomization in the ORION-10 and ORION-11 trials, respectively. Mean (±SD) LDL cholesterol levels at baseline were 104.7±38.3 mg per deciliter (2.71±0.99 mmol per liter) and 105.5±39.1 mg per deciliter (2.73±1.01 mmol per liter), respectively. At day 510, inclisiran reduced LDL cholesterol levels by 52.3% (95% confidence interval [CI], 48.8 to 55.7) in the ORION-10 trial and by 49.9% (95% CI, 46.6 to 53.1) in the ORION-11 trial, with corresponding time-adjusted reductions of 53.8% (95% CI, 51.3 to 56.2) and 49.2% (95% CI, 46.8 to 51.6) (P<0.001 for all comparisons vs. placebo). Adverse events were generally similar in the inclisiran and placebo groups in each trial, although injection-site adverse events were more frequent with inclisiran than with placebo (2.6% vs. 0.9% in the ORION-10 trial and 4.7% vs. 0.5% in the ORION-11 trial); such reactions were generally mild, and none were severe or persistent. CONCLUSIONS: Reductions in LDL cholesterol levels of approximately 50% were obtained with inclisiran, administered subcutaneously every 6 months. More injection-site adverse events occurred with inclisiran than with placebo. (Funded by the Medicines Company; ORION-10 and ORION-11 ClinicalTrials.gov numbers, NCT03399370 and NCT03400800.).\"}, {\"id\": \"pmid:38753448\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Inclisiran administration potently and durably lowers LDL-C over an extended-term follow-up: the ORION-8 trial.. AIMS: Data describing the long-term efficacy and tolerability of inclisiran are limited. This was explored in ORION-8, an open-label extension of preceding Phase 2 and Phase 3 placebo-controlled and open-label extension trials. METHODS AND RESULTS: Following completion of the parent trial, adult patients with atherosclerotic cardiovascular disease (ASCVD), ASCVD risk equivalent, or heterozygous familial hypercholesterolaemia received open-label inclisiran twice yearly (after initial and 3-month doses) until Day 990, followed by an end-of-study visit at Day 1080 or ≥ 90 days after the last dose. The study endpoints included the proportion of patients achieving pre-specified low-density lipoprotein cholesterol (LDL-C) goals [ASCVD: < 1.8 mmol/L (< 70 mg/dL); ASCVD risk equivalent: < 2.6 mmol/L (< 100 mg/dL)], percentage and absolute changes in LDL-C at end-of-study, and safety of inclisiran. Of 3274 patients, 2446 (74.7%) were followed until end-of-study. Mean age was 64.9 ± 9.9 years, 82.7% (n = 2709) had ASCVD, and mean baseline LDL-C was 2.9 ± 1.2 mmol/L. Mean cumulative exposure to inclisiran (including parent trials) was 3.7 years; maximum exposure was 6.8 years. With inclisiran, 78.4% [95% confidence interval (CI): 76.8, 80.0] of patients achieved pre-specified LDL-C goals and mean percentage change in LDL-C was -49.4% (95% CI: -50.4, -48.3). No attenuation of LDL-C lowering over time was observed. Treatment-emergent adverse events at injection site (all mild/moderate) occurred in 5.9% of the patients. Inclisiran-associated anti-drug antibodies were infrequent (5.5%) and had no impact on the efficacy or safety of inclisiran. No new safety signals were identified. CONCLUSION: In the largest and longest follow-up to date with >12 000 patient-years exposure, inclisiran demonstrated consistent and effective LDL-C lowering with a favourable long-term safety and tolerability profile. TRIAL REGISTRATION NUMBER: ClinicalTrials.gov identifier: NCT03814187.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:37939861",
+    "findings": []
+   },
+   {
+    "id": "pmid:35288146",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": false,
+      "quote": "Radioactivity was highest in the liver at all time points from 24 h onward and remained elevated throughout the entire study period."
+     }
+    ]
+   },
+   {
+    "id": "pmid:32187462",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At day 510, inclisiran reduced LDL cholesterol levels by 52.3% in the ORION-10 trial and by 49.9% in the ORION-11 trial."
+     }
+    ]
+   },
+   {
+    "id": "pmid:38753448",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "With inclisiran, 78.4% [95% confidence interval (CI): 76.8, 80.0] of patients achieved pre-specified LDL-C goals"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "mean percentage change in LDL-C was -49.4% (95% CI: -50.4, -48.3)."
+     }
+    ]
+   }
+  ]
+ }
+}

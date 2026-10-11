@@ -1,0 +1,11 @@
+{
+ "source": "cms",
+ "url": "https://data.cms.gov/data-api/v1/dataset/7e0b4365-fd63-4a29-8f5e-e0ac9f66a81b/data",
+ "params": {
+  "filter[Gnrc_Name]": "Givinostat",
+  "size": 50
+ },
+ "fetched_at": "2026-10-09T12:04:47+00:00",
+ "status": 200,
+ "body": []
+}

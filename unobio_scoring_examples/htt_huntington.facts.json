@@ -1,0 +1,28 @@
+{
+ "title": "Huntington disease + HTT antisense (illustrative facts; no analogue price -> reference class)",
+ "facts": {
+  "genetic_support": "mendelian",
+  "moa_clinical_precedent": "none",
+  "approved_therapies_count": 2,
+  "approved_same_moa_count": 0,
+  "modality": "rna",
+  "oncology": false,
+  "rare_disease": true,
+  "phase": "ph2"
+ },
+ "market": {
+  "us_patients": 6365,
+  "us_patients_range": [
+   6365,
+   22445
+  ],
+  "_provenance": {
+   "us_patients": "Orphanet product 9, Huntington (ORPHA:399): US point prevalence 1.9/100k x 335m; range = min-max validated point prevalences"
+  }
+ },
+ "round_terms": {
+  "pre_money_m": 120,
+  "investment_m": 40,
+  "cash_m": 60
+ }
+}

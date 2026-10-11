@@ -1,0 +1,241 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1194,
+  "output_tokens": 1533,
+  "latency_ms": 10490,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT00561366\", \"reason\": \"Not moving forward with program.\"}, {\"nct\": \"NCT00690118\", \"reason\": \"The interim analysis showed no tendency in favour of the verum group. Therefore it was decided to stop the study prematurely.\"}, {\"nct\": \"NCT00818389\", \"reason\": \"NINDS DSMB recommended trial be terminated for futility after reviewing an interim analysis of 84 subjects.\"}, {\"nct\": \"NCT00982150\", \"reason\": \"Core study unsuccessful\"}, {\"nct\": \"NCT01622088\", \"reason\": \"The Initial Phase 3 Study (NCTO1281189) did not meet its primary efficacy endpoint.\"}, {\"nct\": \"NCT02988297\", \"reason\": \"Withdrawn prior to initiation\"}, {\"nct\": \"NCT03068754\", \"reason\": \"As recommended by the study's independent Data and Safety Monitoring Board (DSMB)\"}, {\"nct\": \"NCT03377309\", \"reason\": \"Study halted due to adverse events\"}, {\"nct\": \"NCT03457753\", \"reason\": \"The Sponsor stopped the study due to a change in study plans\"}, {\"nct\": \"NCT03474263\", \"reason\": \"No enrollment\"}, {\"nct\": \"NCT03508453\", \"reason\": \"No participants enrolled in study\"}, {\"nct\": \"NCT03580616\", \"reason\": \"Study was terminated by the IRB due to continued noncompliance.\"}, {\"nct\": \"NCT03679975\", \"reason\": \"The study is no longer required\"}, {\"nct\": \"NCT03755167\", \"reason\": \"Study was suspended due to IPL344 shortage and may resume once drug supply is available. Survival follow-up is still ongoing following participants' consent\"}, {\"nct\": \"NCT03836716\", \"reason\": \"As a consequence of the results of ORARIALS-01 which did not meet any of its efficacy endpoints. The planned duration was 152 weeks. After termination, the actual mean duration of treatment was approx. 28 weeks (range approx. 2 to 71 weeks).\"}, {\"nct\": \"NCT03948178\", \"reason\": \"This was an open label extension for patients completing the REFALS study (3119002; NCT03505021). Study 3119002 showed lack of efficacy of ODM109 so the sponsor decided to terminate this study\"}, {\"nct\": \"NCT04066244\", \"reason\": \"Study terminated after assessment of potential benefit-risk from available data\"}, {\"nct\": \"NCT04248465\", \"reason\": \"The IDMC recommended the study be discontinued due to lack of efficacy with ravulizumab.\"}, {\"nct\": \"NCT04428775\", \"reason\": \"Low enrollment\"}, {\"nct\": \"NCT04505358\", \"reason\": \"Samus Therapeutics company closure\"}, {\"nct\": \"NCT04569084\", \"reason\": \"Futility was met.\"}, {\"nct\": \"NCT04579666\", \"reason\": \"The study did not meet primary endpoint at Week 52. The study also did not meet key secondary efficacy endpoints. Pegcetacoplan (APL-2) was well tolerated in the study, and the data were consistent with the established safety profile.\"}, {\"nct\": \"NCT04944784\", \"reason\": \"The DMC recommended the trial be discontinued due to futility following a planned second interim analysis.\"}, {\"nct\": \"NCT05053035\", \"reason\": \"The Sponsor is considering a subsequent study in ALS, potentially with different inclusion/exclusion criteria.\"}, {\"nct\": \"NCT05151471\", \"reason\": \"Futility Analysis of parent study MT-1186-A02 was met.\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT00561366",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Not moving forward with program."
+     }
+    ]
+   },
+   {
+    "nct": "NCT00690118",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "no tendency in favour of the verum group"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00818389",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "terminated for futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00982150",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Core study unsuccessful"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01622088",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet its primary efficacy endpoint"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02988297",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "Withdrawn prior to initiation"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03068754",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "As recommended by the study's independent Data and Safety Monitoring Board (DSMB)"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03377309",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "halted due to adverse events"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03457753",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "change in study plans"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03474263",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "No enrollment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03508453",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "No participants enrolled"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03580616",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "continued noncompliance"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03679975",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "The study is no longer required"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03755167",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "IPL344 shortage"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03836716",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet any of its efficacy endpoints"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03948178",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "showed lack of efficacy of ODM109"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04066244",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "assessment of potential benefit-risk from available data"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04248465",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "due to lack of efficacy with ravulizumab"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04428775",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Low enrollment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04505358",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "company closure"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04569084",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Futility was met."
+     }
+    ]
+   },
+   {
+    "nct": "NCT04579666",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet primary endpoint at Week 52"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04944784",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "discontinued due to futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05053035",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "potentially with different inclusion/exclusion criteria"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05151471",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Futility Analysis of parent study MT-1186-A02 was met."
+     }
+    ]
+   }
+  ]
+ }
+}

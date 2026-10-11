@@ -1,0 +1,87 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2515,
+  "output_tokens": 2583,
+  "latency_ms": 19478,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Duchenne muscular dystrophy\", \"target\": \"DMD\", \"drugs\": [\"CASIMERSEN\", \"DRISAPERSEN\", \"ETEPLIRSEN\", \"GOLODIRSEN\", \"SUVODIRSEN\", \"VILTOLARSEN\"], \"documents\": [{\"id\": \"pmid:32453377\", \"about_drug\": \"VILTOLARSEN\", \"text\": \"Safety, Tolerability, and Efficacy of Viltolarsen in Boys With Duchenne Muscular Dystrophy Amenable to Exon 53 Skipping: A Phase 2 Randomized Clinical Trial.. IMPORTANCE: An unmet need remains for safe and efficacious treatments for Duchenne muscular dystrophy (DMD). To date, there are limited agents available that address the underlying cause of the disease. OBJECTIVE: To evaluate the safety, tolerability, and efficacy of viltolarsen, a novel antisense oligonucleotide, in participants with DMD amenable to exon 53 skipping. DESIGN, SETTING, AND PARTICIPANTS: This phase 2 study was a 4-week randomized clinical trial for safety followed by a 20-week open-label treatment period of patients aged 4 to 9 years with DMD amenable to exon 53 skipping. To enroll 16 participants, with 8 participants in each of the 2 dose cohorts, 17 participants were screened. Study enrollment occurred between December 16, 2016, and August 17, 2017, at sites in the US and Canada. Data were collected from December 2016 to February 2018, and data were analyzed from April 2018 to May 2019. INTERVENTIONS: Participants received 40 mg/kg (low dose) or 80 mg/kg (high dose) of viltolarsen administered by weekly intravenous infusion. MAIN OUTCOMES AND MEASURES: Primary outcomes of the trial included safety, tolerability, and de novo dystrophin protein production measured by Western blot in participants' biceps muscles. Secondary outcomes included additional assessments of dystrophin mRNA and protein production as well as clinical muscle strength and function. RESULTS: Of the 16 included boys with DMD, 15 (94%) were white, and the mean (SD) age was 7.4 (1.8) years. After 20 to 24 weeks of treatment, significant drug-induced dystrophin production was seen in both viltolarsen dose cohorts (40 mg/kg per week: mean [range] 5.7% [3.2-10.3] of normal; 80 mg/kg per week: mean [range] 5.9% [1.1-14.4] of normal). Viltolarsen was well tolerated; no treatment-emergent adverse events required dose reduction, interruption, or discontinuation of the study drug. No serious adverse events or deaths occurred during the study. Compared with 65 age-matched and treatment-matched natural history controls, all 16 participants treated with viltolarsen showed significant improvements in timed function tests from baseline, including time to stand from supine (viltolarsen: -0.19 s; control: 0.66 s), time to run/walk 10 m (viltolarsen: 0.23 m/s; control: -0.04 m/s), and 6-minute walk test (viltolarsen: 28.9 m; control: -65.3 m) at the week 25 visit. CONCLUSIONS AND RELEVANCE: Systemic treatment of participants with DMD with viltolarsen induced de novo dystrophin production, and clinical improvement of timed function tests was observed. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT02740972.\"}, {\"id\": \"pmid:3319190\", \"about_drug\": \"TARGET\", \"text\": \"Dystrophin: the protein product of the Duchenne muscular dystrophy locus.. The protein product of the human Duchenne muscular dystrophy locus (DMD) and its mouse homolog (mDMD) have been identified by using polyclonal antibodies directed against fusion proteins containing two distinct regions of the mDMD cDNA. The DMD protein is shown to be approximately 400 kd and to represent approximately 0.002% of total striated muscle protein. This protein is also detected in smooth muscle (stomach). Muscle tissue isolated from both DMD-affected boys and mdx mice contained no detectable DMD protein, suggesting that these genetic disorders are homologous. Since mdx mice present no obvious clinical abnormalities, the identification of the mdx mouse as an animal model for DMD has important implications with regard to the etiology of the lethal DMD phenotype. We have named the protein dystrophin because of its identification via the isolation of the Duchenne muscular dystrophy locus.\"}, {\"id\": \"pmid:33827972\", \"about_drug\": \"TARGET\", \"text\": \"Urolithin A improves muscle function by inducing mitophagy in muscular dystrophy.. Duchenne muscular dystrophy (DMD) is the most common muscular dystrophy, and despite advances in genetic and pharmacological disease-modifying treatments, its management remains a major challenge. Mitochondrial dysfunction contributes to DMD, yet the mechanisms by which this occurs remain elusive. Our data in experimental models and patients with DMD show that reduced expression of genes involved in mitochondrial autophagy, or mitophagy, contributes to mitochondrial dysfunction. Mitophagy markers were reduced in skeletal muscle and in muscle stem cells (MuSCs) of a mouse model of DMD. Administration of the mitophagy activator urolithin A (UA) rescued mitophagy in DMD worms and mice and in primary myoblasts from patients with DMD, increased skeletal muscle respiratory capacity, and improved MuSCs' regenerative ability, resulting in the recovery of muscle function and increased survival in DMD mouse models. These data indicate that restoration of mitophagy alleviates symptoms of DMD and suggest that UA may have potential therapeutic applications for muscular dystrophies.\"}, {\"id\": \"pmid:26721684\", \"about_drug\": \"TARGET\", \"text\": \"In vivo genome editing improves muscle function in a mouse model of Duchenne muscular dystrophy.. Duchenne muscular dystrophy (DMD) is a devastating disease affecting about 1 out of 5000 male births and caused by mutations in the dystrophin gene. Genome editing has the potential to restore expression of a modified dystrophin gene from the native locus to modulate disease progression. In this study, adeno-associated virus was used to deliver the clustered regularly interspaced short palindromic repeats (CRISPR)-Cas9 system to the mdx mouse model of DMD to remove the mutated exon 23 from the dystrophin gene. This includes local and systemic delivery to adult mice and systemic delivery to neonatal mice. Exon 23 deletion by CRISPR-Cas9 resulted in expression of the modified dystrophin gene, partial recovery of functional dystrophin protein in skeletal myofibers and cardiac muscle, improvement of muscle biochemistry, and significant enhancement of muscle force. This work establishes CRISPR-Cas9-based genome editing as a potential therapy to treat DMD.\"}, {\"id\": \"pmid:39587049\", \"about_drug\": \"TARGET\", \"text\": \"GSK3 inhibition improves skeletal muscle function and whole-body metabolism in male mouse models of Duchenne muscular dystrophy.. Inhibiting glycogen synthase kinase 3 (GSK3) improves muscle function, metabolism, and bone health in many diseases and conditions; however, whether GSK3 should be targeted for Duchenne muscular dystrophy (DMD), a severe muscle wasting disorder with no cure, remains unknown. Here, we show the effects of GSK3 inhibition in male DBA/2J (D2) and C57BL/10 (C57) mdx mice. Treating D2 mdx mice with GSK3 inhibitors alone or in combination with aerobic exercise improves muscle strength, endurance, and morphology, attenuates the hypermetabolic phenotype, and enhances insulin sensitivity. GSK3 inhibition in C57 mdx mice also improves muscle fatigue resistance and increases cage ambulation. Moreover, muscle-specific GSK3 knockdown in mdx mice augments muscle force production and endurance. In both mdx strains, GSK3 inhibition increases bone mineral content and density. Overall, these improvements to muscle, metabolic, and bone health with GSK3 inhibition in mdx mice may have clinical implications for patients with DMD, where the current standard of care, glucocorticoids, delay the loss of ambulation but increase the risk for insulin resistance and osteoporosis. Along with our observation of lowered β-catenin content in DMD myoblasts, a known cellular target for GSK3, this study provides ample evidence in support of inhibiting GSK3 for this disease.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:32453377",
+    "findings": [
+     {
+      "drug": "VILTOLARSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "After 20 to 24 weeks of treatment, significant drug-induced dystrophin production was seen in both viltolarsen dose cohorts"
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "all 16 participants treated with viltolarsen showed significant improvements in timed function tests from baseline"
+     }
+    ]
+   },
+   {
+    "id": "pmid:3319190",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Muscle tissue isolated from both DMD-affected boys and mdx mice contained no detectable DMD protein"
+     },
+     {
+      "drug": "TARGET",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "Muscle tissue isolated from both DMD-affected boys and mdx mice contained no detectable DMD protein"
+     }
+    ]
+   },
+   {
+    "id": "pmid:33827972",
+    "findings": []
+   },
+   {
+    "id": "pmid:26721684",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "partial recovery of functional dystrophin protein in skeletal myofibers and cardiac muscle"
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "significant enhancement of muscle force"
+     }
+    ]
+   },
+   {
+    "id": "pmid:39587049",
+    "findings": []
+   }
+  ]
+ }
+}

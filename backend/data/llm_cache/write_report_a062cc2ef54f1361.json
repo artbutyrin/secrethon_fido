@@ -1,0 +1,169 @@
+{
+ "task": "write_report",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3004,
+  "output_tokens": 3008,
+  "latency_ms": 20594,
+  "json_mode": "json_schema"
+ },
+ "system": "You write sections of a biotech investment memo for investors. You get the computed verdict, the\nscorecard, the rules that fired and the claims (facts with sources). The verdict is final: explain it, never\nchange or second-guess it.\nWrite for these sections: recommendation (2-3 sentences on why the verdict follows from the evidence),\nscientific_thesis (target biology, human genetics, mechanism precedent and failures), human_translation_thesis\n(can the modality reach and engage the target in patients; the input's translation_chain lines are already printed\nabove your text, so do not repeat them: say what the shown and missing links mean for this asset), clinical_development_plan (stage, trial design,\nregulatory path, enrollment), competitive_landscape (approved drugs, same-mechanism drugs, differentiation),\ncommercial_opportunity (unmet need, population, pricing exposure), capital_to_next_milestone (what the next value\ninflection would be and what is unknown about funding), key_risks (the rules that fired and other risks).\nRules:\n- Every paragraph is either \"source\" (it restates what the cited claims say; cite at least one claim ID) or\n  \"inference\" (your own reasoning from the claims; cite the claims it rests on).\n- Use only the claims given. Do not add facts, drug names, trial IDs, dates or numbers that are not in them.\n- Do not write numbers unless the same number is in a cited claim. Write no percentages, prices, market sizes or\n  amounts of money.\n- If a section has no relevant claims, write one short \"inference\" paragraph saying what is not known and why it\n  matters for the decision, with no claim IDs.\n- commercial_opportunity and capital_to_next_milestone already start with code-written lines (economics_lines in\n  the input). Do not repeat their numbers; say in words what they mean for the decision, and which assumptions\n  (tagged [A] or [A default]) matter most.\n- Do not put claim IDs in the text; list them in claim_ids. Plain English, 1-3 short paragraphs per section.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1 (superoxide dismutase 1)\", \"input\": {\"mechanism\": \"SOD1 antisense oligonucleotide\", \"phase\": null, \"route\": null}, \"verdict\": {\"decision\": \"Invest\", \"grounds\": \"pluses outweigh minuses, science evidence is sufficient\", \"reason\": \"pluses − minuses = 3 (threshold 2)\"}, \"scorecard\": [{\"item\": \"Unmet need\", \"color\": \"yellow\", \"claim_ids\": [\"clm_2d9144a7dd_5\", \"clm_2d9144a7dd_9\"]}, {\"item\": \"Human genetics\", \"color\": \"green\", \"claim_ids\": [\"clm_2d9144a7dd_4\", \"clm_2d9144a7dd_11\"]}, {\"item\": \"Mechanism clinical precedent\", \"color\": \"green\", \"claim_ids\": [\"clm_2d9144a7dd_7\"]}, {\"item\": \"Indication track record\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Translation chain\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Clinical effect shown\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Trial design\", \"color\": \"unknown\", \"claim_ids\": []}, {\"item\": \"Regulatory path\", \"color\": \"unknown\", \"claim_ids\": []}], \"rules_fired\": [], \"what_would_change\": [\"Years since the last approval of a new mechanism in the indication: unknown -> 2 gives Conditional\", \"Years from the first approval in the class to the expected launch: unknown -> 6 gives Conditional\", \"Standard of care loses exclusivity before or soon after launch: unknown -> yes gives Conditional\", \"Genetic support for the target–disease pair: mendelian -> unknown gives Do Not Invest\", \"Genetic support for the target–disease pair: mendelian -> no_data gives Do Not Invest\", \"Genetic support for the target–disease pair: mendelian -> none gives Do Not Invest\"], \"claims\": [{\"id\": \"clm_2d9144a7dd_1\", \"fact\": \"moa_direction\", \"value\": \"inhibit\", \"statement\": \"Input: direction of action is inhibit.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_2\", \"fact\": \"modality\", \"value\": \"rna\", \"statement\": \"Input: modality is rna.\", \"origin\": \"user\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_3\", \"fact\": \"oncology\", \"value\": false, \"statement\": \"Amyotrophic lateral sclerosis is not in the oncology therapeutic area.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_4\", \"fact\": \"genetic_support\", \"value\": \"mendelian\", \"statement\": \"SOD1 has Mendelian genetic evidence for amyotrophic lateral sclerosis (155 records: clingen, eva, genomics_england, orphanet, uniprot_literature).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_5\", \"fact\": \"approved_same_moa_count\", \"value\": 1, \"statement\": \"1 drug with the same mechanism (SOD1 inhibit) is approved for amyotrophic lateral sclerosis: Tofersen.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_6\", \"fact\": \"approved_same_moa_same_modality_count\", \"value\": 1, \"statement\": \"1 drug with the same mechanism and the same modality class (nucleic acid) is approved for amyotrophic lateral sclerosis: Tofersen.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_7\", \"fact\": \"moa_clinical_precedent\", \"value\": \"approved_same\", \"statement\": \"Tofersen with the same mechanism is approved for amyotrophic lateral sclerosis.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_8\", \"fact\": \"ph3_same_moa_count\", \"value\": 0, \"statement\": \"0 drugs with the same mechanism have an active Phase 3 trial in amyotrophic lateral sclerosis.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_9\", \"fact\": \"approved_therapies_count\", \"value\": 3, \"statement\": \"3 drugs are approved for amyotrophic lateral sclerosis: Edaravone, Riluzole, Tofersen.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_10\", \"fact\": \"essential_gene\", \"value\": true, \"statement\": \"SOD1 is a common essential gene.\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_11\", \"fact\": \"perturbation_evidence\", \"value\": true, \"statement\": \"SOD1 has perturbation evidence (mouse knockout or CRISPR screen) for amyotrophic lateral sclerosis (32 records: impc).\", \"origin\": \"structured\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_12\", \"fact\": \"class_exposure_human\", \"value\": true, \"statement\": \"Drug exposure at the site of action (pharmacokinetics, tissue or csf levels) is shown in humans for 1 drug with the same mechanism of the same modality (rna): Tofersen (\\\"The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period.\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_13\", \"fact\": \"class_target_engagement_human\", \"value\": true, \"statement\": \"Target engagement (the drug binds, blocks or lowers its target) is shown in humans for 1 drug with the same mechanism: Tofersen (\\\"At Week 28 in Study 1 Part C, a reduction in total CSF SOD1 protein of 35% (geometric mean ratio to baseline) in the tofersen-treated group\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_14\", \"fact\": \"class_pd_response_human\", \"value\": true, \"statement\": \"A pharmacodynamic response (a downstream biomarker changes) is shown in humans for 1 drug with the same mechanism: Tofersen (\\\"At Week 28 in Study 1 Part C, mean plasma NfL was reduced 55% (geometric mean ratio to baseline) in the QALSODY-treated subjects\\\").\", \"origin\": \"llm\", \"status\": \"used\"}, {\"id\": \"clm_2d9144a7dd_15\", \"fact\": \"perturbation_evidence\", \"value\": true, \"statement\": \"Blocking or removing SOD1 changes a disease phenotype in a model (Luo 2007: Impaired SDF1/CXCR4 signaling in glial progenitors derived from SOD1(G93A) mice.: \\\"RT-PCR and immunoblot analyses indicate that the chemokine receptor CXCR4 is reduced in SOD1(G93A) GRIPs.\\\").\", \"origin\": \"llm\", \"status\": \"not_used\"}, {\"id\": \"clm_2d9144a7dd_16\", \"fact\": \"moa_failures_efficacy_ph23\", \"value\": 1, \"statement\": \"1 drug with the same mechanism (SOD1 inhibit) stopped Phase 2/3 trials in amyotrophic lateral sclerosis for lack of efficacy: Tofersen (pmid:36129998: \\\"In persons with SOD1 ALS, tofersen reduced concentrations of SOD1 in CSF and of neurofilament light chains in plasma over 28 weeks but did not improve clinical end points\\\").\", \"origin\": \"llm\", \"status\": \"used\"}], \"section_hints\": {\"scientific_thesis\": [\"essential_gene\", \"genetic_support\", \"moa_clinical_precedent\", \"moa_direction\", \"moa_failures_efficacy_ph23\", \"perturbation_evidence\"], \"human_translation_thesis\": [\"class_exposure_human\", \"class_pd_response_human\", \"class_target_engagement_human\", \"modality\"], \"clinical_development_plan\": [\"oncology\"], \"competitive_landscape\": [\"approved_same_moa_count\", \"approved_therapies_count\", \"ph3_same_moa_count\"], \"commercial_opportunity\": [\"approved_therapies_count\", \"oncology\"], \"capital_to_next_milestone\": [], \"key_risks\": []}, \"translation_chain\": [\"Link 1, Molecular effect (target perturbation changes the disease phenotype): asset: unknown; target: shown (impc); to settle: Is there a response in a relevant animal model, and who reproduced it?.\", \"Link 2, Human exposure at the site of action: asset: unknown; class: shown (Tofersen; FDA label); to settle: Is effective exposure reachable safely in humans, and does the drug reach the right tissue?.\", \"Link 3, Target engagement in humans: asset: unknown; class: shown (Tofersen; FDA label, Miller 2022); to settle: Has target engagement been shown in relevant human tissue?.\", \"Link 4, Biological response (pharmacodynamic biomarker) in humans: asset: unknown; class: shown (Tofersen; FDA label, Miller 2022); to settle: Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?.\", \"Link 5, Patient benefit: asset: unknown; class: shown (1 drug with the same mechanism (SOD1 inhibit) is approved for amyotrophic lateral sclerosis: Tofersen); class: not shown for 1 drug(s) that failed for efficacy; to settle: What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?.\"], \"economics_lines\": {\"commercial_opportunity\": [\"Economics not run: no market inputs. The verdict rests on the scientific and clinical evidence alone; a market cannot lower or confirm it.\", \"Orphanet epidemiology file not found (backend/data/orphanet/en_product9_prev.xml): no sourced patient count. Download it with `python -m backend.app.market --download` or enter market.us_patients.\"], \"capital_to_next_milestone\": [\"Value after the milestone, rNPV and the round view need a patient count (Orphanet or market.us_patients).\"]}}",
+ "answer": {
+  "sections": [
+   {
+    "id": "recommendation",
+    "paragraphs": [
+     {
+      "text": "Invest follows from Mendelian support for SOD1 in ALS and an approved drug with the same inhibitory mechanism, giving the thesis both human genetic support and clinical precedent. That evidence supports the verdict, while the reported efficacy-related setback and the absence of asset-specific clinical evidence leave important execution risks.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_4",
+       "clm_2d9144a7dd_7",
+       "clm_2d9144a7dd_16"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "scientific_thesis",
+    "paragraphs": [
+     {
+      "text": "SOD1 has Mendelian genetic evidence for ALS and reported perturbation evidence in disease-related records. The proposed approach inhibits SOD1 using an RNA modality; SOD1 is also classified as a common essential gene.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_2d9144a7dd_1",
+       "clm_2d9144a7dd_2",
+       "clm_2d9144a7dd_4",
+       "clm_2d9144a7dd_10",
+       "clm_2d9144a7dd_11"
+      ]
+     },
+     {
+      "text": "Tofersen provides same-mechanism clinical precedent and is approved for ALS. However, a report on tofersen describes reductions in CSF SOD1 and plasma neurofilament light without improvement in clinical endpoints, underscoring that target and biomarker effects do not by themselves establish patient benefit.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_2d9144a7dd_7",
+       "clm_2d9144a7dd_16"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "human_translation_thesis",
+    "paragraphs": [
+     {
+      "text": "Human experience with the same mechanism and modality shows drug exposure in CSF, reduction of CSF SOD1, and a downstream plasma neurofilament response. These class observations support the feasibility of reaching and engaging the target and changing a biomarker in people, but they do not establish that this asset can do so.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_2d9144a7dd_12",
+       "clm_2d9144a7dd_13",
+       "clm_2d9144a7dd_14"
+      ]
+     },
+     {
+      "text": "The key gap is asset-specific translation: the supplied evidence does not establish its exposure, target engagement, biomarker response, or patient benefit. The precedent also includes a report of biomarker reductions without clinical endpoint improvement, so a biomarker response alone would not settle the clinical question.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_12",
+       "clm_2d9144a7dd_13",
+       "clm_2d9144a7dd_14",
+       "clm_2d9144a7dd_16"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "clinical_development_plan",
+    "paragraphs": [
+     {
+      "text": "The evidence includes approval of same-mechanism tofersen and a reported Phase 2/3 efficacy-related setback, but does not specify this asset’s development stage, route, trial design, enrollment plan, or regulatory path. Without those details, its route to clinical proof and the development effort required remain unassessable.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_7",
+       "clm_2d9144a7dd_16"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "competitive_landscape",
+    "paragraphs": [
+     {
+      "text": "Edaravone, riluzole, and tofersen are approved for ALS. Tofersen is the identified approved drug with the same mechanism and modality class, and no drugs with the same mechanism are reported to have an active Phase 3 trial.",
+      "kind": "source",
+      "claim_ids": [
+       "clm_2d9144a7dd_5",
+       "clm_2d9144a7dd_6",
+       "clm_2d9144a7dd_8",
+       "clm_2d9144a7dd_9"
+      ]
+     },
+     {
+      "text": "The asset’s differentiation from tofersen is not established by the supplied evidence. Existing approvals create a competitive context, while the absence of asset-specific comparative or clinical results prevents judging whether it offers a meaningful advantage.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_5",
+       "clm_2d9144a7dd_9"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "commercial_opportunity",
+    "paragraphs": [
+     {
+      "text": "The approved ALS therapies establish an existing treatment landscape, but do not quantify the remaining unmet need or the opportunity for this asset. With no sourced patient count or market inputs, the addressable population and pricing exposure cannot be assessed; the investment case therefore remains grounded in science and clinical evidence rather than market sizing.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_9"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "capital_to_next_milestone",
+    "paragraphs": [
+     {
+      "text": "A meaningful next value inflection would be asset-specific evidence connecting target engagement and a biological response to clinical benefit, given that class-level biomarker changes have not consistently established improvement in clinical endpoints.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_13",
+       "clm_2d9144a7dd_14",
+       "clm_2d9144a7dd_16"
+      ]
+     },
+     {
+      "text": "The supplied information does not establish the funding available, financing needs, or timing to that milestone. Without a patient count and funding details, the value of the milestone and the capital case remain unknown.",
+      "kind": "inference",
+      "claim_ids": []
+     }
+    ]
+   },
+   {
+    "id": "key_risks",
+    "paragraphs": [
+     {
+      "text": "The principal evidence-based risk is the gap between pharmacodynamic activity and patient benefit: a same-mechanism drug was reported to lower SOD1 and neurofilament light without improving clinical endpoints. Separately, SOD1’s common-essential classification raises a potential tolerability concern for inhibition, though the supplied claims do not establish an actual safety outcome for this asset.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_10",
+       "clm_2d9144a7dd_16"
+      ]
+     },
+     {
+      "text": "Asset-specific translation and clinical results remain unknown, including whether it reaches and engages the target in patients and whether any biomarker effect predicts benefit. These gaps limit confidence in execution despite the genetic support and class precedent.",
+      "kind": "inference",
+      "claim_ids": [
+       "clm_2d9144a7dd_4",
+       "clm_2d9144a7dd_7",
+       "clm_2d9144a7dd_12",
+       "clm_2d9144a7dd_13",
+       "clm_2d9144a7dd_14"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

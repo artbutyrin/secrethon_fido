@@ -1,0 +1,132 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000198947"
+ },
+ "fetched_at": "2026-10-09T12:01:18+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000198947",
+    "approvedSymbol": "DMD",
+    "approvedName": "dystrophin",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Dystrophin",
+      "source": "uniprot"
+     },
+     {
+      "label": "DMD",
+      "source": "uniprot"
+     },
+     {
+      "label": "BMD",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS142",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS164",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS206",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS230",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS239",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS268",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS269",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS270",
+      "source": "HGNC"
+     },
+     {
+      "label": "DXS272",
+      "source": "HGNC"
+     },
+     {
+      "label": "muscular dystrophy, Duchenne and Becker types",
+      "source": "HGNC"
+     },
+     {
+      "label": "BMD",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "CMD3B",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS142",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS164",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS206",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS230",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS239",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS268",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS269",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS270",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DXS272",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "MRX85",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "dystrophin",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "mutant dystrophin",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "DMD",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

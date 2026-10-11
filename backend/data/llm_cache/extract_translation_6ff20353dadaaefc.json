@@ -1,0 +1,77 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2229,
+  "output_tokens": 696,
+  "latency_ms": 5552,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1\", \"drugs\": [\"TOFERSEN\"], \"documents\": [{\"id\": \"pmid:41661214\", \"about_drug\": \"TOFERSEN\", \"text\": \"Long-Term Tofersen in SOD1 Amyotrophic Lateral Sclerosis.. IMPORTANCE: Approximately 2% of amyotrophic lateral sclerosis (ALS) cases are attributable to a pathogenic variant in the superoxide dismutase 1 (SOD1) gene. Tofersen, an intrathecal antisense oligonucleotide designed to reduce SOD1 protein synthesis, is the first and only approved therapy for the treatment of ALS in adults who have a variant in the SOD1 gene. OBJECTIVE: To evaluate the long-term effects of tofersen in adults with SOD1-ALS. DESIGN, SETTING, AND PARTICIPANTS: The phase 3, randomized, double-blind, placebo-controlled VALOR trial (A Study to Evaluate Efficacy, Safety, Tolerability, Pharmacokinetics and Pharmacodynamics of Tofersen in SOD1-ALS; conducted from March 2019 to July 2021) evaluated tofersen use over 28 weeks in adults (18 years and older) with weaknesses attributable to ALS and a confirmed SOD1 pathogenic variant at 32 sites in 10 countries; participants could then enroll in an open-label extension (OLE; completed August 2024). INTERVENTION AND EXPOSURE: Adults with SOD1-ALS were randomly assigned 2:1 to receive tofersen (100 mg) or placebo over a 24-week period in the VALOR study. All participants in the OLE were treated with tofersen. MAIN OUTCOMES AND MEASURES: Integrated analysis of VALOR and the OLE study aimed to compare early start vs placebo/delayed start (approximately 6 months later) treatment with tofersen. Key efficacy end points included measures of axonal injury and neurodegeneration (neurofilament), function and strength, quality of life, and survival. RESULTS: VALOR enrolled 108 participants with 42 unique SOD1 pathogenic variants (mean [SD] age: placebo/delayed-start group 51.2 [11.6] [n = 36]; early-start group: 48.1 [12.6] [n = 72]) with 19 (53%) and 43 (60%) of participants being male in the placebo/delayed- and early-start groups, respectively. Overall, 95/108 participants (88%) enrolled in the OLE, and 46 participants completed the OLE (early-start group, 34 [47%]; placebo/delayed-start group, 12 [33%]). At OLE completion, participants could have accumulated 3.5 years or more (range, 192-276 weeks) of follow-up from the start of VALOR. Over 148 weeks, earlier initiation of tofersen (compared to later initiation) was associated with numerically less decline in measures of clinical function (Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points), respiratory function (slow vital capacity, -13.8% vs -18.1%), muscle strength (handheld dynamometry megascore, -0.38 vs -0.43 points), and quality of life (Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points; EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points). Tofersen prolonged survival relative to the expected natural history of SOD1-ALS. Most adverse events were consistent with ALS progression or known procedural adverse effects. All serious neurological adverse events were reversible; few led to tofersen discontinuation. CONCLUSIONS AND RELEVANCE: Final data from VALOR and the OLE demonstrated the benefit of tofersen in SOD1-ALS and provide clear rationale for its use in this population. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: VALOR NCT02623699; OLE NCT03070119.\"}, {\"id\": \"pmid:35585374\", \"about_drug\": \"TOFERSEN\", \"text\": \"Design of a Randomized, Placebo-Controlled, Phase 3 Trial of Tofersen Initiated in Clinically Presymptomatic SOD1 Variant Carriers: the ATLAS Study.. Despite extensive research, amyotrophic lateral sclerosis (ALS) remains a progressive and invariably fatal neurodegenerative disease. Limited knowledge of the underlying causes of ALS has made it difficult to target upstream biological mechanisms of disease, and therapeutic interventions are usually administered relatively late in the course of disease. Genetic forms of ALS offer a unique opportunity for therapeutic development, as genetic associations may reveal potential insights into disease etiology. Genetic ALS may also be amenable to investigating earlier intervention given the possibility of identifying clinically presymptomatic, at-risk individuals with causative genetic variants. There is increasing evidence for a presymptomatic phase of ALS, with biomarker data from the Pre-Symptomatic Familial ALS (Pre-fALS) study showing that an elevation in blood neurofilament light chain (NfL) precedes phenoconversion to clinically manifest disease. Tofersen is an investigational antisense oligonucleotide designed to reduce synthesis of superoxide dismutase 1 (SOD1) protein through degradation of SOD1 mRNA. Informed by Pre-fALS and the tofersen clinical development program, the ATLAS study (NCT04856982) is designed to evaluate the impact of initiating tofersen in presymptomatic carriers of SOD1 variants associated with high or complete penetrance and rapid disease progression who also have biomarker evidence of disease activity (elevated plasma NfL). The ATLAS study will investigate whether tofersen can delay the emergence of clinically manifest ALS. To our knowledge, ATLAS is the first interventional trial in presymptomatic ALS and has the potential to yield important insights into the design and conduct of presymptomatic trials, identification, and monitoring of at-risk individuals, and future treatment paradigms in ALS.\"}, {\"id\": \"pmid:41653006\", \"about_drug\": \"TOFERSEN\", \"text\": \"Introduction to the Supplement.. Amyotrophic lateral sclerosis (ALS) is a progressive and fatal neuromuscular disease with marked phenotypic and clinical heterogeneity. Three active pharmaceutical agents are currently approved by the United States Food and Drug Administration (FDA) for ALS: riluzole, edaravone (including intravenous [IV] and oral suspension formulations), and tofersen. Study MCI186-19 (Study 19) was a pivotal, phase 3 randomized controlled trial that demonstrated a significant reduction in physical functional decline vs. placebo in Japanese patients with ALS and contributed to FDA approval of IV edaravone in 2017. Edaravone oral suspension was FDA-approved in May 2022 following the results of Study MT-1186-A01, which showed it was well tolerated with a safety profile consistent with IV edaravone. Following Study 19, the clinical benefit of edaravone has remained an active area of investigation. This supplement presents data from clinical trials, post hoc analyses, and clinical studies that expand understanding of the use of edaravone in broader ALS populations. Topics include safety in clinical practice, generalizability of efficacy, clinical treatment outcomes, and health economics and outcomes research studies. Together, these findings aim to inform clinicians, researchers, and stakeholders regarding the evolving evidence base for edaravone in the management of ALS.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:41661214",
+    "findings": [
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Amyotrophic Lateral Sclerosis Functional Rating Scale-Revised score, -9.9 vs -13.5 points"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "slow vital capacity, -13.8% vs -18.1%"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "handheld dynamometry megascore, -0.38 vs -0.43 points"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Amyotrophic Lateral Sclerosis Assessment Questionnaire 5 score, 17.0 vs 22.5 points"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "EuroQol 5 Dimension, 5 Level Questionnaire score, -0.1 vs -0.2 points"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Tofersen prolonged survival relative to the expected natural history of SOD1-ALS."
+     }
+    ]
+   },
+   {
+    "id": "pmid:35585374",
+    "findings": []
+   },
+   {
+    "id": "pmid:41653006",
+    "findings": []
+   }
+  ]
+ }
+}

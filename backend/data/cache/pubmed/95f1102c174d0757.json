@@ -1,0 +1,35 @@
+{
+ "source": "pubmed",
+ "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+ "params": {
+  "tool": "unobio",
+  "db": "pubmed",
+  "term": "\"anacetrapib\"[tiab] AND (randomized[tiab] OR randomised[tiab] OR \\\"phase 3\\\"[tiab] OR \\\"phase III\\\"[tiab] OR \\\"primary end point\\\"[tiab] OR \\\"primary endpoint\\\"[tiab] OR placebo[tiab]) NOT review[pt] NOT \"systematic review\"[pt] NOT meta-analysis[pt]",
+  "retmax": 6,
+  "retmode": "json",
+  "sort": "relevance"
+ },
+ "fetched_at": "2026-10-09T12:06:25+00:00",
+ "status": 200,
+ "body": {
+  "header": {
+   "type": "esearch",
+   "version": "0.3"
+  },
+  "esearchresult": {
+   "count": "56",
+   "retmax": "6",
+   "retstart": "0",
+   "idlist": [
+    "20653333",
+    "28847206",
+    "34910136",
+    "23172660",
+    "24782116",
+    "30567880"
+   ],
+   "translationset": [],
+   "querytranslation": "(((\"anacetrapib\"[Title/Abstract] AND (\"randomized\"[Title/Abstract] OR \"randomised\"[Title/Abstract] OR \"phase 3\"[Title/Abstract] OR \"phase iii\"[Title/Abstract] OR \"primary end point\"[Title/Abstract] OR \"primary endpoint\"[Title/Abstract] OR \"placebo\"[Title/Abstract])) NOT \"review\"[Publication Type]) NOT \"systematic review\"[Publication Type]) NOT \"meta-analysis\"[Publication Type]"
+  }
+ }
+}

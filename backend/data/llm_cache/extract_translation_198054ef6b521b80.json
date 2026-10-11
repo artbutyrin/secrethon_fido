@@ -1,0 +1,116 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2548,
+  "output_tokens": 1957,
+  "latency_ms": 16028,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:36696131\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Association of Lipid-Lowering Drugs With Risk of Psoriasis: A Mendelian Randomization Study.. IMPORTANCE: Lipid pathways have been implicated in the pathogenesis of psoriasis, and some lipid-lowering drugs, such as statins, are hypothesized to have disease-modifying properties. However, large population-level studies are scarce, and causal interpretation of results from traditional observational designs is limited by confounding. OBJECTIVE: To investigate the causal association between genetically proxied lipid-lowering drugs and psoriasis risk. DESIGN, SETTING, AND PARTICIPANTS: This 2-sample mendelian randomization study was performed from August to October 2022 and included population-level genome-wide association studies of psoriasis in the UK Biobank and FinnGen studies and low-density lipoprotein (LDL) by the Global Lipids Genetics Consortium. The inverse variance-weighted method was used with pleiotropy robust methods and colocalization as sensitivity analyses. EXPOSURES: Genetically proxied inhibition of 3-hydroxy-3-methylglutaryl CoA reductase (HMGCR, targeted by statins), Niemann-Pick C1-like 1 (NPC1L1, targeted by ezetimibe), and proprotein convertase subtilisin/kexin type 9 (PCSK9, targeted by, eg, alirocumab), using LDL as the biomarker. MAIN OUTCOMES AND MEASURES: Risk of psoriasis. RESULTS: Data from 12 116 patients with psoriasis and approximately 1.3 million individuals with LDL measurement were analyzed. Genetically proxied PCSK9 inhibition was associated with reduced risk of psoriasis (odds ratio, 0.69 per standard deviation reduction in LDL; 95% CI, 0.55-0.88; P = .003), which was replicated in FinnGen (odds ratio, 0.71; 95% CI, 0.57-0.88; P = .002). Sensitivity analyses did not provide statistical evidence of bias from pleiotropy or genetic confounding. No robust association was found for HMGCR or NPC1L1 inhibition. CONCLUSIONS AND RELEVANCE: This mendelian randomization study suggests that PCSK9 is implicated in psoriasis pathogenesis, and its inhibition is associated with reduced psoriasis risk. These findings potentially pave the way for future studies that may allow personalized selection of lipid-lowering drugs for those at risk of psoriasis.\"}, {\"id\": \"pmid:31121022\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Effects of alirocumab on types of myocardial infarction: insights from the ODYSSEY OUTCOMES trial.. AIMS: The third Universal Definition of Myocardial Infarction (MI) Task Force classified MIs into five types: Type 1, spontaneous; Type 2, related to oxygen supply/demand imbalance; Type 3, fatal without ascertainment of cardiac biomarkers; Type 4, related to percutaneous coronary intervention; and Type 5, related to coronary artery bypass surgery. Low-density lipoprotein cholesterol (LDL-C) reduction with statins and proprotein convertase subtilisin-kexin Type 9 (PCSK9) inhibitors reduces risk of MI, but less is known about effects on types of MI. ODYSSEY OUTCOMES compared the PCSK9 inhibitor alirocumab with placebo in 18 924 patients with recent acute coronary syndrome (ACS) and elevated LDL-C (≥1.8 mmol/L) despite intensive statin therapy. In a pre-specified analysis, we assessed the effects of alirocumab on types of MI. METHODS AND RESULTS: Median follow-up was 2.8 years. Myocardial infarction types were prospectively adjudicated and classified. Of 1860 total MIs, 1223 (65.8%) were adjudicated as Type 1, 386 (20.8%) as Type 2, and 244 (13.1%) as Type 4. Few events were Type 3 (n = 2) or Type 5 (n = 5). Alirocumab reduced first MIs [hazard ratio (HR) 0.85, 95% confidence interval (CI) 0.77-0.95; P = 0.003], with reductions in both Type 1 (HR 0.87, 95% CI 0.77-0.99; P = 0.032) and Type 2 (0.77, 0.61-0.97; P = 0.025), but not Type 4 MI. CONCLUSION: After ACS, alirocumab added to intensive statin therapy favourably impacted on Type 1 and 2 MIs. The data indicate for the first time that a lipid-lowering therapy can attenuate the risk of Type 2 MI. Low-density lipoprotein cholesterol reduction below levels achievable with statins is an effective preventive strategy for both MI types.\"}, {\"id\": \"pmid:31356537\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Alirocumab in Acute Myocardial Infarction: Results From the Virginia Commonwealth University Alirocumab Response Trial (VCU-AlirocRT).. Alirocumab improves outcomes in patients with a history of recent acute coronary syndrome, but treatment acutely at the time of myocardial infarction is untested. We present the results of a randomized, placebo-controlled, double-blinded pilot study of alirocumab treatment at the time of non-ST elevation MI (NSTEMI). Twenty patients with type 1 NSTEMI and low-density lipoprotein cholesterol (LDL-C) >70 mg/dL despite high intensity statin therapy were randomized 1:1 to one dose of alirocumab 150 mg subcutaneously or placebo within 24 hours of presentation. LDL-C and inflammatory biomarkers-including C-reactive protein-were obtained at baseline, 72 hours, and 14 days. Median (interquartile range) and number (%) were: age 59 (49, 65) years, 7 (35%) men, 16 (80%) black; baseline characteristics were similar between groups. Alirocumab significantly reduced LDL-C from baseline to 14 days by 64 mg/dL (-96, -47) compared with placebo [+1 mg/dL (-25, +16)] (primary endpoint). There were no significant between-group differences in C-reactive protein changes at any time point (all P > 0.2) or serious adverse events attributable to the study treatment. In conclusion, alirocumab administration at the time of NSTEMI significantly reduced LDL-C levels at 14 days, was safe, and had neutral effects on inflammatory biomarkers. Further studies are warranted to explore the effects on clinical outcomes.\"}, {\"id\": \"pmid:25256660\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"A randomized study of the relative pharmacokinetics, pharmacodynamics, and safety of alirocumab, a fully human monoclonal antibody to PCSK9, after single subcutaneous administration at three different injection sites in healthy subjects.. AIMS: We investigated the relative pharmacokinetics, pharmacodynamics, and safety of the proprotein convertase subtilisin/kexin type 9 (PCSK9) inhibitor alirocumab following injection at three different sites. METHODS: Sixty healthy subjects (39 male, 21 female; age 20-45 years) were randomized to receive a single subcutaneous injection of alirocumab 75 mg via 1-mL prefilled pen into the abdomen, upper arm, or thigh (NCT01785329). Subjects were followed for 85 days ± 2 days following study drug administration. Pharmacokinetic (PK) parameters for the systemic exposure of alirocumab were calculated, and levels of free PCSK9 were assessed. Percentage changes from baseline in LDL-C were compared between injection site groups using linear mixed-effects models. RESULTS: Alirocumab concentration-time profiles were similar, and free PCSK9 levels were reduced to approximately zero between Day 3 and Day 4 postinjection in all groups. LDL-C levels reached nadir on Day 15 postinjection in all groups with mean percentage reductions of 48.4% (abdomen), 39.5% (upper arm), and 45.6% (thigh) at this time point. A similar effect on LDL-C levels was seen across the entire time course of the study at all three injection sites. Treatment-emergent adverse events were experienced by 8/20 (abdomen), 11/20 (upper arm), and 13/20 (thigh) subjects. There were 2 mild/transient injection site reactions. There were no serious adverse events. DISCUSSION: A single subcutaneous administration of alirocumab 75 mg via prefilled pen was well tolerated with similar pharmacokinetics and pharmacodynamics when injected into the abdomen, upper arm, or thigh. CONCLUSION: These results suggest that alirocumab can be interchangeably injected in the abdomen, upper arm, or thigh.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:36696131",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Genetically proxied PCSK9 inhibition was associated with reduced risk of psoriasis (odds ratio, 0.69 per standard deviation reduction in LDL; 95% CI, 0.55-0.88; P = .003)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:31121022",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Alirocumab reduced first MIs [hazard ratio (HR) 0.85, 95% confidence interval (CI) 0.77-0.95; P = 0.003]"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "reductions in both Type 1 (HR 0.87, 95% CI 0.77-0.99; P = 0.032)"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Type 2 (0.77, 0.61-0.97; P = 0.025)"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "but not Type 4 MI."
+     }
+    ]
+   },
+   {
+    "id": "pmid:31356537",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Alirocumab significantly reduced LDL-C from baseline to 14 days by 64 mg/dL (-96, -47) compared with placebo [+1 mg/dL (-25, +16)]"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "There were no significant between-group differences in C-reactive protein changes at any time point (all P > 0.2)"
+     }
+    ]
+   },
+   {
+    "id": "pmid:25256660",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Alirocumab concentration-time profiles were similar"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "free PCSK9 levels were reduced to approximately zero between Day 3 and Day 4 postinjection in all groups"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "LDL-C levels reached nadir on Day 15 postinjection in all groups with mean percentage reductions of 48.4% (abdomen), 39.5% (upper arm), and 45.6% (thigh) at this time point"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1457 @@
+{
+ "query": "DiseaseGenetics",
+ "variables": {
+  "efoId": "MONDO_0010679",
+  "size": 100
+ },
+ "fetched_at": "2026-10-09T12:01:30+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0010679",
+    "associatedTargets": {
+     "count": 2530,
+     "rows": [
+      {
+       "target": {
+        "id": "ENSG00000198947",
+        "approvedSymbol": "DMD"
+       },
+       "score": 0.8683877887777448,
+       "datatypeScores": [
+        {
+         "id": "rna_expression",
+         "score": 0.06866670876822943
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8435001837011329
+        },
+        {
+         "id": "clinical",
+         "score": 0.9638381334468995
+        },
+        {
+         "id": "literature",
+         "score": 0.9652636500577997
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9138630375074558
+        },
+        {
+         "id": "somatic_mutation",
+         "score": 0.6228419891197061
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5681202110407236
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000113580",
+        "approvedSymbol": "NR3C1"
+       },
+       "score": 0.5868338886074015,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2549114002382153
+        },
+        {
+         "id": "clinical",
+         "score": 0.9525516166298862
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000151623",
+        "approvedSymbol": "NR3C2"
+       },
+       "score": 0.5581630533410797,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.3048759134359928
+        },
+        {
+         "id": "clinical",
+         "score": 0.9028920440223498
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000068024",
+        "approvedSymbol": "HDAC4"
+       },
+       "score": 0.5332019780574652,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.5143145208694115
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000048052",
+        "approvedSymbol": "HDAC9"
+       },
+       "score": 0.5259158986905159,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2746135747889001
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000196591",
+        "approvedSymbol": "HDAC2"
+       },
+       "score": 0.5244640924102969,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.226851352972774
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000163517",
+        "approvedSymbol": "HDAC11"
+       },
+       "score": 0.5212643947595432,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.12158615952232422
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147099",
+        "approvedSymbol": "HDAC8"
+       },
+       "score": 0.5209054403256808,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.10977710377871848
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000094631",
+        "approvedSymbol": "HDAC6"
+       },
+       "score": 0.5207633060732332,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.10510110272708909
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000108840",
+        "approvedSymbol": "HDAC5"
+       },
+       "score": 0.5183077559220656,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.024317231904464845
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000171720",
+        "approvedSymbol": "HDAC3"
+       },
+       "score": 0.5181229659947232,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.01823792392834863
+        },
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000061273",
+        "approvedSymbol": "HDAC7"
+       },
+       "score": 0.5175685962126962,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000100429",
+        "approvedSymbol": "HDAC10"
+       },
+       "score": 0.5175685962126962,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000116478",
+        "approvedSymbol": "HDAC1"
+       },
+       "score": 0.5175685962126962,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8513610401810024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000137154",
+        "approvedSymbol": "RPS6"
+       },
+       "score": 0.505957928550987,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.10486806258800464
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000100316",
+        "approvedSymbol": "RPL3"
+       },
+       "score": 0.5056973747534342,
+       "datatypeScores": [
+        {
+         "id": "rna_expression",
+         "score": 0.09629623834168079
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000168028",
+        "approvedSymbol": "RPSA"
+       },
+       "score": 0.5036942519410432,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.030396539880581056
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000137818",
+        "approvedSymbol": "RPLP1"
+       },
+       "score": 0.5036942519410432,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.030396539880581056
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000156482",
+        "approvedSymbol": "RPL30"
+       },
+       "score": 0.5036942519410432,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.030396539880581056
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000083845",
+        "approvedSymbol": "RPS5"
+       },
+       "score": 0.5036942519410432,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.030396539880581056
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000143947",
+        "approvedSymbol": "RPS27A"
+       },
+       "score": 0.5035094620137008,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.024317231904464845
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000142541",
+        "approvedSymbol": "RPL13A"
+       },
+       "score": 0.5031398821590161,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.012158615952232422
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000105372",
+        "approvedSymbol": "RPS19"
+       },
+       "score": 0.5031398821590161,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.012158615952232422
+        },
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000161016",
+        "approvedSymbol": "RPL8"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000142534",
+        "approvedSymbol": "RPS11"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000197756",
+        "approvedSymbol": "RPL37A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000144713",
+        "approvedSymbol": "RPL32"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000233927",
+        "approvedSymbol": "RPS28"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000162244",
+        "approvedSymbol": "RPL29"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000134419",
+        "approvedSymbol": "RPS15A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000171863",
+        "approvedSymbol": "RPS7"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000142676",
+        "approvedSymbol": "RPL11"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000110700",
+        "approvedSymbol": "RPS13"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000138326",
+        "approvedSymbol": "RPS24"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000198242",
+        "approvedSymbol": "RPL23A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000105193",
+        "approvedSymbol": "RPS16"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000008988",
+        "approvedSymbol": "RPS20"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000172809",
+        "approvedSymbol": "RPL38"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000265681",
+        "approvedSymbol": "RPL17"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000182899",
+        "approvedSymbol": "RPL35A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000241343",
+        "approvedSymbol": "RPL36A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000089157",
+        "approvedSymbol": "RPLP0"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000145592",
+        "approvedSymbol": "RPL37"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000140988",
+        "approvedSymbol": "RPS2"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000231500",
+        "approvedSymbol": "RPS18"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000114391",
+        "approvedSymbol": "RPL24"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147604",
+        "approvedSymbol": "RPL7"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000171858",
+        "approvedSymbol": "RPS21"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000198755",
+        "approvedSymbol": "RPL10A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000198034",
+        "approvedSymbol": "RPS4X"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000130255",
+        "approvedSymbol": "RPL36"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000148303",
+        "approvedSymbol": "RPL7A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000131469",
+        "approvedSymbol": "RPL27"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000177954",
+        "approvedSymbol": "RPS27"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000115268",
+        "approvedSymbol": "RPS15"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000198918",
+        "approvedSymbol": "RPL39"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000122026",
+        "approvedSymbol": "RPL21"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000213741",
+        "approvedSymbol": "RPS29"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000129824",
+        "approvedSymbol": "RPS4Y1"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000167526",
+        "approvedSymbol": "RPL13"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000105640",
+        "approvedSymbol": "RPL18A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000125691",
+        "approvedSymbol": "RPL23"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000174444",
+        "approvedSymbol": "RPL4"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000163682",
+        "approvedSymbol": "RPL9"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000112306",
+        "approvedSymbol": "RPS12"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000149806",
+        "approvedSymbol": "FAU"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000186468",
+        "approvedSymbol": "RPS23"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000166441",
+        "approvedSymbol": "RPL27A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000108298",
+        "approvedSymbol": "RPL19"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000122406",
+        "approvedSymbol": "RPL5"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000188846",
+        "approvedSymbol": "RPL14"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000124614",
+        "approvedSymbol": "RPS10"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000116251",
+        "approvedSymbol": "RPL22"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000182774",
+        "approvedSymbol": "RPS17"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000063177",
+        "approvedSymbol": "RPL18"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000108107",
+        "approvedSymbol": "RPL28"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147403",
+        "approvedSymbol": "RPL10"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000142937",
+        "approvedSymbol": "RPS8"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000197958",
+        "approvedSymbol": "RPL12"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000118181",
+        "approvedSymbol": "RPS25"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000145425",
+        "approvedSymbol": "RPS3A"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000170889",
+        "approvedSymbol": "RPS9"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000149273",
+        "approvedSymbol": "RPS3"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000136942",
+        "approvedSymbol": "RPL35"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000071082",
+        "approvedSymbol": "RPL31"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000197728",
+        "approvedSymbol": "RPS26"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000089009",
+        "approvedSymbol": "RPL6"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000229117",
+        "approvedSymbol": "RPL41"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000109475",
+        "approvedSymbol": "RPL34"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000161970",
+        "approvedSymbol": "RPL26"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000174748",
+        "approvedSymbol": "RPL15"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000164587",
+        "approvedSymbol": "RPS14"
+       },
+       "score": 0.5027703023043314,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.8270189703820996
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000221348",
+        "approvedSymbol": "MIR548F5"
+       },
+       "score": 0.46279610692184325,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.7612644543425522
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000090006",
+        "approvedSymbol": "LTBP4"
+       },
+       "score": 0.4228019782137099,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.3024734590975599
+        },
+        {
+         "id": "animal_model",
+         "score": 0.34983377748560734
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.3039653988058105
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000263600",
+        "approvedSymbol": "MIR3915"
+       },
+       "score": 0.3400134663099256,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.5592963338026914
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000109320",
+        "approvedSymbol": "NFKB1"
+       },
+       "score": 0.3092300365493327,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.38804578999935785
+        },
+        {
+         "id": "clinical",
+         "score": 0.48925763982785253
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000173039",
+        "approvedSymbol": "RELA"
+       },
+       "score": 0.30146746806862484,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.13266907570211606
+        },
+        {
+         "id": "clinical",
+         "score": 0.48925763982785253
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000077150",
+        "approvedSymbol": "NFKB2"
+       },
+       "score": 0.2983587368548374,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.030396539880581056
+        },
+        {
+         "id": "clinical",
+         "score": 0.48925763982785253
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000152818",
+        "approvedSymbol": "UTRN"
+       },
+       "score": 0.29713176917863615,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.837100174651204
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.4377101742803672
+        },
+        {
+         "id": "clinical",
+         "score": 0.08274613634158175
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000091831",
+        "approvedSymbol": "ESR1"
+       },
+       "score": 0.2870545891826057,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.6286634798326138
+        },
+        {
+         "id": "clinical",
+         "score": 0.44074982826842524
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

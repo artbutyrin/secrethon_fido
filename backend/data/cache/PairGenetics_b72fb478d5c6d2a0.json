@@ -1,0 +1,6538 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0010679",
+  "ensemblId": "ENSG00000198947",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": "eyJpbmRleCI6Niwic2l6ZSI6NTAwfQ=="
+ },
+ "fetched_at": "2026-10-09T12:01:27+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0010679",
+    "evidences": {
+     "count": 9641,
+     "cursor": "eyJpbmRleCI6Nywic2l6ZSI6NTAwfQ==",
+     "rows": [
+      {
+       "id": "83c4daa634313d9fd6ea05e021c4e9000bcd4954",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "83cc2396f5543e9ddec04db115402e146cd72f04",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "83cd7f4560dd3a4a32f6a65da0b09031a7db2ade",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8406af3514a3fdbb5cb2544e6524694311234445",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8475af7264469fe080fcafc2be6c0a7cf8000423",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "84885f27b0e7b3023474f5aefaba1ddb317868f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "84915cf3b8b73d3c2ea9c6c25accdca4ddcf893e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "84c2d9534a2167da61de5d5b457a9a526ea84ca5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "84f4c203ab4383cf217755950906a6929e6fa0ce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8553f0ef97a4acdcdd4397be0e08a4ce3c011f62",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "857449dec5a98033ec17cacbd53c43acc8d62851",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "85da83d9ca2d90d45b8fb4b73ddc7bffe89bea6b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "85f49cbb08ca5d128f10e64f259795b2b0e2654f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "85fa3d51d31c8f64d914485e3c74bf5d9f33d2bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "85fb0c373ff189f47cc1f2af28aa69383b658096",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "861184727529013fb839831b0a640ba8b442c6ca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8628eeed7f623a52fbf64374d7d0b137a8b143f8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "862a120b96a3baba12a4a9d31ed0547170ac4d66",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "86530af69576ffb8bcc83b3fb4ec424345ce52da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "86a99c45f7e05556cc77bdf5cdfe3e7b8847f0c5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "86c5fb211ca20458f1b3ec9933cbd2e5bc9929e2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8714ad7671753d89679403228c4977749bdfa953",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "872850764ae1eb4893cf1fcef146ea33ab4c8965",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "872ce6114b4ad4f4a34fa5ea3752273c627cfd9c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8762d05a53d5ccbf8065ccc8fb417ed53b180c4c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "87680ca82a387fe6de13727eedfb59cbc83934d2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8796cb08a0312b27f4111ad555851380b2d9586b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "87a36a7329b9ec488382941a675b6b0c25fc49bb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "87a4a6ede00a641b3a9e62fe08c0e1a821fe6610",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "87b61b672622d09eae455eb45ea7dc1d019469e2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "87d3fbf782382411f2f67b98120c970250f8cbe9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "884fa5cfd4ae4724fa360bbbf8e7d8df4d800cc1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8857789476f576a305add920d5991809014ae399",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "88fad808011077519db40f0aeb270e0127af3f0c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "88ffeb2d7fb23d41fcd8fcb85f1d7f3195819bbd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8988104429d0f77344ba2b073d8484908d6934bd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "89ad1b73d2c3304ff7fe9f0114b85dc794955622",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "89dca7b9c96c1b59b312710db338419de3d4dba2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "89fe2c2edfd7642b31b5091bc0f3cf5a0aca896e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a268ccd06d9e4b0b32c9cd56afbc0205e6516d9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a27478d1c1d1fda6a0dc0e3cace3c49424eb247",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a2adbff51d2723df53c5796104f19e7500831a7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a30dae1ce5fadf4bb5a48b9044d26ee1f9a622a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a3905003941e382eabaa0263e98ab0105dbfe3a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a58eda9c40ea380002afaaeaf97ead1adc37051",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a649303eb92b378e348aa0c1c955250c309d3ea",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a64e18571cad00b3ba81c7aff30c0196b8d00e4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a6b7ea9fce19bbc1b0081eae7887c8e90f5ce94",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8a910143cc7608cab1f86a90b582f580d7c5b902",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8abc1ca761d19a818524b3d6f87aed4b534dfda3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ac4dd95c5ebc11f8dc48383bbb68605918ff53c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8adbdf6308fd6396d7b24652413b1b409b8be261",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8aec11d0414c531e74275a50a2a85f64379b14af",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8aefb517e90174bded468190afecea0c3b79b541",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8af5ddbb4feb603f2c9fc96fddc68a2ea1659945",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8afb0d66459553c169ae0164de0304e65aedd35b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8b1b73873d7e2f1fc74d6041403d01139c8394d7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8b76177e08489b7a777ea48070015a166eae70b5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8b888afb4c0f72116612a7de02ab6e115eccd48d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8bc2e98aa09a7d74478a07f814f44ad7564fad6a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8bca437e43c0b39d5740a5690ab913ea0b4cde9e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8bfd06ad989c6d6d87bb46ba80e0a86f89e613fb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8c1438c79dd1b29f4f6c73abb8110c0eb3059de0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8c17b5381fd3656aad3832ca7719edfa97125ef4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8c4250cc8acc635fccaea67c5992f7546ebf1d7b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8c91d1fcde1f394936317b1671e50294ff047a54",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8cd7a39d2433889c37dddc6dc4dd75eee4e88cb9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8cd8363fe3b109c59959eb09f6744d5b1e6a50ad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8cdf21f64f68ebda9771ef8b0680ed98c183f835",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ce4cbaab148c1565007dc7c7d8257fe28f921c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8cff4eeb6e736be75823a67ab8436d6de8a3b30d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8d01d0f63244d569170de16e4cf7bf8470813d8e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8d216348f1e8c3068192bcd104721f8317c1e2a0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8d4b2fdc9fda2fc838b0c4ec823da1978d02949d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8d8fae9ca41b2cecd14cf259c3d9b8a3ade1dc00",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8da9b5839817c4444438186a432263e15edae8b3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8db9cc365a794eb67a0991f652b20029c2f112f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8dbcecff3befbb17436bdf3c21a07a075c80082e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8dd283ab11b217a591d26e7f55541382e9c58604",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ddfa7f793d2cd12a77e071646649d188996e3f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8df6f2361c0ebc46e8450e18d84b112e23101d84",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e0db7c2e4970d34261d9bfb210d5e1d8ee8c308",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e2a14c3500af665d45daa8621d55b8012f33608",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e580fa06a93684149ab18cfdcd2f234759d29be",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e6cd0c625e0149f93324ac43c4170a0cfc73dcb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e71266e9b398159545cea52c2149f571da36feb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e885b57acfb59bbb0b60b06ca94393f17198905",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8e9aefd6178481045b219f10c01f1cce67d83e2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ea91e5aa0004932a49cc1b6c303f43c6fe9999d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ed16c097a2d2af710fd7dd7fe23e28eee1dada2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8ef2e628574ba981adaac1f2832b4bcba928308a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f1dc6eb8f2ec3b4245c80ec5bc3fd776826c93a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f37cd6d063e85a7f584a796a87082f654b7802b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f3d103ddc6d13296e1672548ebb9c018c43d1fd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f3f04b2b9d3e4d8647c3e172df667500ae44813",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f6a82b516a08f35d3e88bfa43233ba236ccc0f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f801a15b97c5e2034ff80aa05ff76eded87a70c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8f9e92233a9e8d639648e43dd00fc936f51cfb4e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8fc0849922f418c47a655eacc3c086287e274a48",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8fd720a7b5c4090e702cc1ab65363cd113e0e0f5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "8fec7e9281f5c09bf3e0e86902fdb21a7287b226",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "900e03828fb2e77c3ca87cdf03a46b01aa09cb3e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "903b672d10d1922196d1b0c92ed0d9bf4969c2db",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "90562b36db6ad5c99e1344077b6683132f36e458",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "907b3303cb9f97ee60e99eda887b981f18b88828",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "90b4845cff5b85bb9cf78f391e466bdf9484bfdd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "90b62be60ff0c70363e75b05cd3846049a530de5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "90f611cd07407f598522525212db600fd8421901",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9136e3611586d8132200bec4f31094f114477657",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "913ad5befc1aa79401742a1ed95ade9e4bea4f77",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9146da30b89b69177cca8b95cd8e7253c960740e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "914e2cf2a827591eaf72020505b5f3c769f88217",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91554f85c14a85d22589032bc8179487c379bde4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91614d0fbb0e9ec9dc8f69553ebd852f23bcadc3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9198777d54f4352d01337cf565df0350fd25f38d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91a45d1ad6a6e49228dc73b09456a55d1c18024a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91ae5c8c12e02c13b8e3cbd555c18b7bc7c87072",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91b256001ad8bfa855bd3d81f7c93dc4327ad5df",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91b46650554a66d38ce1522ae6ae62c38eb7d88a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "91f99aec406a5b3a372d25872c3254cc91ff22f5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "921248d2b48042aa8ec829db77b186e86d159f73",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "922d269e67701310b859515ed0365719b813faa3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9254227f7b73359267c934007f742a773eefd3dd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "92636c933edb52e0abb406730584b158ed1b9612",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9265ec59370840e8073e61e15b0d76de6335d5b7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "926e67cfbdf8b2d3876b898a11101cf575c471fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9284ebffeee82da68d42f8ef20c040972e33e646",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "929969903e3f68af366cdfed7c0f583d7bb9fb37",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "929ae008aabcff3de03f4d4acfe2317fd47efc28",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "92d756a04c51ffc00d0357a4cb4fa73f3abe6a35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "92e91bb551cefddab63619f67fcb89136a2bd590",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9308897b6c1b6bc1b71dadd0b1952b8d984746f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9308cb377348b1e4d17f2b191b1c6224cbc13b1d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9316a25e5be5059a426445ad841b7cc856f0a463",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "934a5d42546d7990a89b093863b744f95dab4f40",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "936488b3e1333b80f082f48536d3ea6441004a24",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "941eacf6f04517257ef57e60dad7c0a315ead3c4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9422ebc0d7cf8641f526375f54ac32ef7a4173f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "94710871a9acff62bd43d7eec842a004abb36853",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "948aac47ea80219e471e7669bb8fade9775a2087",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "94916ddde1024022bb147ab94b28c890e6c0ed3b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "94991f6f1dbe7d893819d3abb6b8a8d6bf972f2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "94c17a747f5be2764b92ee54025b7247f6095e6b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "954125c3a3a2db2c60e3d5f68957eec35cc13898",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "954a50226b2e0a4cfd5aa678c5991be99b04730d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "954cfa46dc0f104de91bb2b3ef14ab23d0d17cf7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9567e2b84c832fba93c8ac4ac3d460d8fc622f73",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "957a21f728c2effeadc103cd1cc13cecc1aa0d24",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95965afa925bcdd2fb00cb4fc95227ac5a1f800f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9598871c777418304d04a877b250b49055be399d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95a32d2a8917f03a7bc633e7be75b9149a4a1b36",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95a3c62c43766f9e6ba44edd01b0e2ede22105fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95ad80065e13b300b871ee5bc64aa3935a9c49a2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95ea72db21eac30f68b485e690ede7ec845a0d7f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95f40e83748a50f1764cc8113729fc4a276d1835",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "95fff4004e5fd9d49d2bd5a593f29dc1968d88f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "962bde9f78dfa5fe71739b5a3aedb418c8d3f227",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "965b9d8f61cecc339be6a09935824b2eb1e4540d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9677210ba5cfdf87a13cc308755cbce529e31bdd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "969b231617d99dc98e1ce37e3c943ec551cd488c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "969c837d9898407c2cfb03708b98c6c23fc7a23c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "96a5a8e3f9d651d283698981dd88cea331ed5558",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "96a9fe20c291c54594873902c25ef2b17d51d265",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "96be8c34796fc8c1f167647f20260ab1f7ec44a5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "96ec6c6c1f581ea98a23a4bbf8455936058cc4ab",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "96f8ac44b69f69495ac1c199bb95a92d8cb4661d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "972069d9e98f8d21dd5ff637c720f407de4c7238",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "972a03fad752f9836bcba942e5022d6c9fbd85a9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9744d607481320cfc97a89f85ea0c428326ba642",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "974a7172484a1ece8f7ee833def90793b08be3b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "974e734b13db9eb5d7297204c351906047a0a73f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9784b447065c838ff529b7b43251a2447df55379",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97934223c0c03bfe9e552519b9ebf49dd70bb06a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "979c41d13aabd38d61fc0db615ffbea743829d2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97a6af7b7d51f7ac9f9facc60603f4f2a100e837",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97abb0f744463b84c5eecc96697489d40c3edbbd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97bdbe21e563b196dc0aa97773052ee812e822f1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97c259b972f1970940918b53c467eb7efc24e733",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97c8b243faf9f894aec632c5abadfcf94bf83145",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97e173b6dd88f24e8068429caaaa555dc12bc307",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97ea03178a02fae49f2c64d96cf7f4bfaccaa497",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "97fc8eb5621ac36dff52c1fa2fb9f6dae46db8f0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98331e68842bd1844656f52a70e99d13566088d3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "983851b7d624d1d4f716e3517e1993ccdff2d387",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9838c9ac8f8e01a420dde47aff7ae8dcec0df155",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "983ea04e21b317fe34e976632857e8b71b50b984",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "984586d964ebc9e8fddddc8716276d5d67a3c435",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "989792420c599afde88d7c4d121a4be29cec0312",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98af86a48d25f032f08a29625eb70e9e371c3273",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98b26f513a755934b63946debeeda5ab91485331",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98ce2820eae6f4b7ad25f074275fc4ea00c3dd4e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98d2e5781aebea0acba626e3a9d90a2709d95ae5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98e15f4a860ca9afb1b33ec723a411e33f625e29",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "98e3d17ae55595feb6e870c34178773e132de038",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "99364ef15d30af7eb35e2d95be591949e4285e9c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9959339949807492f7729c16e99896c226287054",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9989cf4e5729c33e91f3fd69b63393b38416209e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "99bf25a4f2e8a8bbc6a5a7d6fa3a9e4872e22881",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "99f1b111b331b8e08dd6ddee51d478b8f46b9189",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9a02daf381c4810a5c93c22592dba9bc0c939889",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9a2d21112a89f52eca58ad42fd06da9027db0457",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9a42456c048ed6eabba0cf9342ae0c57094fd7f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9a5915dab3519c1dd963da565d5750b3475f4b40",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ac964420aa07d362c12f582d1ae9ade9a01a6eb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ad0adfae133e485d9481be1fec6e79d165211c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ad2eba907446e0769924ba55a1869045ca65a77",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ae53e6ac38aaa869bbd8629b4eb52a473e13d9e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9af427e727defc4a2824cceb8e05dd2b86719b14",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b2d0e5cdb64063d8ff196d157b6d85e165dc448",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b4195dafbe0ff2765e5db85301cff5b30d1dc23",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b51a0e79f655fab3e3b48c89e134aadec61d566",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b55b9f8bff3633a79a9f99a93d0eedf4ee63e95",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b697ad1c69804b7dbcf80f5e90a06d11af4c41a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b6eef49d2e730400ec1395b14755fee8168191d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b860135d3c556b81034158705fd385a0522f24f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9b9d584ad4aa6e305fab8b4489815706eacc9ee4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ba21798ca7572f7267a058ffe42f44da669a6e0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9bb8f371e6fcd227cb6d9fff6940991662c4d2cf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9bbed89daebdd31e328b8334873f2b6c8924f635",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9c58ea2c5ab4a53a246acc10ee4c0125763849c4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9c8c2ccd1bb598998c36c59a71ac7e060701dded",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9c993864f78396f3bf43cdb06075155197e11543",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ca4f8e2e774edfeca8df64d5b984cd1168485fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9cacc0163cd0f70bdafa00b70d61a8e5d03d27f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ce02da331c0d69a2fa3672b97add18447399603",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d1fde7166939d4457c169f52c91501205539953",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d2e5a3d47501d8bbf24e93f9ec5b2edba86df66",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d3a954bf0393e922eacd186d6891eef7532c81b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d6768f376fc561176ea9dabd3c9b85003c393b0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9d6bbdbc9fac49820e92e56bfb2447daf202c241",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9dacaaa3de7dd16b27f957291d991949b23c4ab0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9dd33209147ca8e2de565ab4619bf3eabfeaaec2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9deebd21a5ef68fd7b1d671393528c3645957928",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9df64673410102a547a86cb2eb5b578b9a81c5ef",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9e472d8f9909d7e113bb3368b9261580d9be68e3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9e5412ae239b3bfb5a36e33ffa65b158df13693c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9e5d50b1bf00b96f798dc3965c36c49c379ff9e3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9e855b08ee0e0a99ce0b75f3c2161d49941f85b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ea063ea6a68c780431edcba0db5792dfe47b1de",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9ec84c47b149ae4e26e6dd28d8c393c17d3035df",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f1677411bc71814fa1485b29f1b415c9689bc97",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f3fba2bc3c65a2f67cac0162e3c25d9e546af78",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f5adf947aaf6dcd120e014daa895f940375bd50",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f6c163c3c616685a8991b80d0b03a2df294d4c0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f7123a7eb6fbb1648a51d70d3ca0a7b1cb7f8ae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f7d7da2c7ebc7d6606bfd278ae186b9ce2cc68f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9f9effc36610e244ec62b689c5893257cc4bb1df",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9fa07bd99a7149ae9ed01f93f103b2d7f92d8277",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9fa6b71b828be8a5b2b72f154e225a07eb57f97d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9fb375a6d85b0f676a2387cddcc9547ea79fc38a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "9fb5d115835f96731d2dce01d7d02cfa7cc8b972",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a01d619fd93c33d894fbb9d97976abe959f50002",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a03a557be5e862de7d7da728eaf68e5dff1050b8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a04aebcddfb295b915c63d61fb049f12dd82df35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a0505b56db384043228b5e1340cf9d7485a700a6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a069340b07bca077fb8df288d873f1321256dfde",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a06e2abb10899e30b73cd72b19887f8926f2409d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a077c3f694f85ceb9ef44afaf667f3147606e2a8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a08de8939aef433b9b06ad3fe9e987ece301b923",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a0c81c7a392d9e141eed93ab0dfaccc2a641f563",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a0cc98843c62f280f4629377ff61f42aed873434",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a0e3010c8def8f8b29c3cf394522fccd9732dc3c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a0e769707e9151fc516f1dfe620bebf726f9f53d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a101b5000a4f107abefa581748bcacf4933e46b7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a12896c418251427cda9d4a02fdb37ec4c81e445",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1313b2b1afa58ba499592089dca5c8ae21e8e86",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1472efd63e1a9d1c03419748c5e983d6f84d5e6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1483a98cf12c12c8b400373bbb7ff38c9b88a62",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a14beefd5a30345e2bd1fb9381f24257e1ede098",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1674f9efb1ac042cacd80a01d706fec89042b80",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a16a9a1da9658b05cdd66fb2c57bb288095ede72",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1acc8d2eceb93417b5e9889b8d91ff1748babd5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1ce142416bccde8ecc5e2010700d6e20adf5143",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1cf881e8690f67478ad7c7b1d8c30e820654bb3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1e473cb01e3d9b623d7a2a12584e26cae7d5f31",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1e5effb0af2e4d3b38b96954dd0b3ea732559c5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1e760141c4ee475934a7e450725e58eecae510f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1f73497cc34a80fd35ec06ac4d7a004d60d3f35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1f843057ae10a0d65ed76677bddc91f64cc912f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a1faafe6bcfee6062a41fd613007f8dbd0cbcf21",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a238d2f59c058d30b293da88bb2fb5510d309e01",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a28d2f284112a321402a87021e7f4b634740ff90",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a2bccbc1c14b730f7e54a6f2bce448333529d455",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a2c3d40b1e7e5bc93c0f6d3bc8b757333e1d4473",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a2dc736360d98e3add4a90376c84711738faa9cc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a2ff27890604033b3a912f88a1da9dd337f49ea3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3009b402bf19c2cbdafd789ceb5f93173b0f6ba",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a30fe49a08beb3af41a0e0b6d85f7995f1d7198c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a316ed6e6968f46699a648902d71be3d2555f2c6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3253a0cd3f58ead471324058e4426b3b412efd0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a35b208fa7ef45c28db70f117a86bd5e9be8377b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3605c057fcb3352357e6e89515bbb70ae5c3c1c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a364bf64651ad7f25b2c4d1d78bb2bf8e30fd652",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a38769290e5ae9c5992a288f71408e5c753af571",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a38eb8b95b1b06bc7d16c13f833caa67e4a88bc1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3a738f6135dd91bfa9ced65a48495ed940ca17d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3a7e38b3007a9ec7fccc878308ab872fb3a99a7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3ac7970d6949b941cfdba6c5b35d2015d76e7a3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3c1350903bf419b522c5f939b403843c68603d3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3de9ad37a239be1a684075e76c06fca9c67f5d4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3df4ec606ce69375aa34e1ea8ae421e0009c64a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3f496bbdd19bd54703cca816cbbd0672b3675e2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a3f5d613d514054053c3ab898de3e74ebf20e64c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4185adf4dfae6bff809c1a47c2c2bcdc15c6dd4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4363d3a5943bb73b38b8c5d98e3c0756b9d8ca4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a442929a0776134c88ac09c63bc76e10238afac7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a462ce467098d05c5825e71c136972e4d5003af1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4690ffc116e446b3279cfa80491f0b2624b3464",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4ac927472d10be69ce5928c792282b79d7b73f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4ad9774cfe757a6e04a061c4707c645b4e77a73",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4bc214d9ae289cd4a7dd8f983fc2a279d543eb4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4d6a561e167091566763b1036492cf946cc0be4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a4f2c9ea815b2d26258b8971872c1c483075ac93",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a510cdf2777b384de60007f14078129c158199fb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5348519d87980e4aaef711f1976d070828537da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a54506e9d6eade80d12239e935b8e26321b7382d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a54cc5fd62420165ef2bb8bd84b8b6f6b0e6076c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5af7e8bb34212459723d4c81f1919cf1343bad9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5b055b03504135e205321b9f0063d5187288d63",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5b1c550b6353ebe0d74e52edaa980c8d3083401",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5c3b9336ea075afc79cca3395257866a5ae55ca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5e47eda60f7065ef8dcb70ec1778191c773e1a1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a5e59cd4f32d98e09e9fe7e0ac60ef779ac2a29f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a611d0babad1492025ceab2a527868fb49193869",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6186eb8654751ed9727f203b66e9af9b0bb5e0f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6284e828875a0186dabc060cf68925082245fd7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a63f38b52b04440dfbff288c92383b15e528bd1e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a64222a6391bc2649552d11ecc73c5c805987348",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6633ef296df158528d53ee0a0fee739f3aebac1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a66631cf72e3f647aaf8ef4d79371b2d3873820e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6665460874f8d9d5d981cf2029f77e2f8c8ac54",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a66da0d01fb5d7004bfed46872c1f57a972a13fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a677f56483fb4f08d3d03aa596504bbbd6a9574b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6958f4cdc9ac2194d5d8f8362899b7c2009a12f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6a44408ce0afb8e0fd4284d8b687395a0c1ee5a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6ace7bbb324f57e9e6a1c8fc7b903f415c9bcbd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6c7253c0664136c6917d02ab0c674ecf0d32cd7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6e1d5510198562a194154034d169b37c01c4abf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a6e566cecd3a224efd34cc7cb25b9eb4e91a2edd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7379875d681b4ac7489a381f5f83ba948c6078e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7534f61f6e7c093b182a8f7f2be57f23645f6ce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a770e9096a9c56671395aab7d2cdc10838aea5c8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a78a933b5a42de30fae37dbea28ba6cdc77d4b95",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a79e2ea7e9c79fb247f27e88288d718cae779a37",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7b13e37dd44d58150d9ca7027224773b8dcd642",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7b4dfcab8f32bb8a833d55b02c60a5ea8df0838",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7c2da33e87a8ec4710df2adb9a004b7ca6ef8fd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a7fc17807b2cdc6a446b41b95472978e6c50c6b2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a81206f4c735401b0a1cc92ef8e58c7b87a00768",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a832829511356eab20515a261459d51a40cdce76",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a84989597566e49ae4c443edaa06a65b77cc1754",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a86a82af440030338d6e857ddb4cc1a0aa48f9ee",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a876757086ca6e40b61d6628d6937c3ac8df7409",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a8a7010619c902ff42b10726751f196859de20e9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a8e129a5d50e1255ce48da7dd33b642a55f41b4a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a8e4a7dabaf1fdedbac89e79827d1be2a3a1fe30",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a902b093aa85e54748c91df137e25672786457fc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a90cf57ac9d098a08e40eefdb26f7f870eae7dfb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a90e1561d4c6c56b79f4e2a499990cd6388ad671",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a911778110b4bbcd12264480470d89f5dbb051ff",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a92a02c6a9ce9cc2d56e051dabf351d3c7eb4e8b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a92c38bf75401ea6cbd52932206814f98c914225",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a948ade8f9babd8472908a403b5fe187fcc82b88",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a94b5e2645a8edb78fbb4ca533c986b28ad18736",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a94d520a09b07b52210563f802c661d917e9c70e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9aa357794c87d870423b51cfc78698322b92350",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9bb31eee952363a2e177051a79b0e7eb2fd1df2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9cb3f7814ddc3e7d69abb48c30e26b55727b0e7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9dcfe49053fd5e2592756a1b12123b9c4f8d068",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9dd845a1b27078db81a119236859130289f212b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "a9e385eac0df666cfc2f2bcc2daefaae416fc849",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aae798e9fb5836e157371089629d4e51a26bafda",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aaea3fe9395989e2aa89146b5058ed04f7b5d6f7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aaf568003b40991493e2d9e2bec50a9e6402befd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aaf7718b44eff7494bcaad15d06184b68b9a589c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ab67a7eddfe5e028077504ab3bd6d494019d173c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aba3309bcf1f99413ba8d9432174a8f457ba465a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "abe3a484721c65aed089749fbf3df7b1f1948f23",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ac2fce827d5b25b65fb687be708edd0e1619c267",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ac47f99cafaeae5965b5365732b597574e5b4354",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ac5565b755237d3e5262f20b27a3113509b18794",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ac5f8add1964ab82e725840ef6e2ef51a8278622",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ac88161ef207d663941ccb12792c9415b5638541",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "acb99afb514e963eb81c822b69b0b2d9710901f7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "acdf562506b75fae9456402ccb4b3e218733841d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "acecdb7ab690347a9bc41a59b53fcbdf1caf03b5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "acf07fef33017af72b096a3bc8657d5833a243f2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "acfcb29325f0fe3085b686392e73dcddb410b851",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad033bdcb220cfa6ddfda9585e19116a4f60fb36",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad26524fcb9fc1b426672452a513632aa2d22679",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad42ad72892dd3be581211acb2c1fcbc0bc080b1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad5c7f5fc986af4f49f610fddb6c079a97331590",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad767d05158e0e3d1a6b43d41e50ce14fdad4080",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ad8a34ed0237f4f1f286dc4fd216dce631515034",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "adb4e7b46fc2f5c8da64a6ba87503970d4064634",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "adbe4dff0c426812b81305797ebdf85080421a84",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "adc8570bf4c168d6646a85e3321d81d263369a31",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "adcf0fe7cbb4bbb1e5623bd7464d3410d045291c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "add5190687376a4c8cd6a2700143d004d72d6e86",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "addb806a7e01962d65daf75bc392014b463e6974",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae0e9cd92e767342b88e250ec7b91b1ead070e64",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae17060d407f311defc6d5fec2814c38caca6b4f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae20954cc01ec9a7c450d6aa589602d13e171fb8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae5c41e5021b94dbea5a295a9cd944e366fbf1f3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae60f7270d3d1a79f63e1d1a41ecc10278b369cf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "ae7dbbf60fde2a92b8c4a7382dcdd7f21cae831c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aea976df57ebb0d973860248b74a38a916a0497d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "aedd1c784d6b7413a518ee7c969042a77567216f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "af0cfcb3a7ed699e88e93e683dd5bef98ccfdc6b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "af2852199c9addfe092222dc4e2be65f4857ad80",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "af68e7acd9b3510440d732ede6d112398dc8effe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "af6b1f45bb6681db2cf2ab0c8d894993ba232f3e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "af964e5d2ffd5e0e96ec0490c2fe9bc7233a1748",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "afaea6e34d91b519e3db9c5766e68530365dd4cb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "afbabfdd815458b9bf62d0a94239538d64f9abe7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b015b6301078c085adac098bca885d6f476b7813",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b01c6215bb4a3670619026bdf96b5c239577b4cd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0999bf15e595704fc13b49c059baaffef185a19",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0a20e87ac099f8a4d1f186d32acc3278eccd3cb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0b6ba48ac79fed8826216a88c1da49ed7a37abb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0d755de8bf173c5ff5243231df88ab5bcb1feed",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0ebe36459137f09a093b5ae544229b16adaf223",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b0ed4392472b2054e1d551c215d12fc6a238fa9c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b10e00b4215d79022723c60f4854565eef50ffba",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1112c5e751b2b4c170c8dee2af775dc28d10214",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b115930337b4197b2239ff7379307c41228dad4c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b12b7437cd7b7d940a843d80471a575186f648ef",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1494121dea0a8a650a0b3205d5de564d1e37d67",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b169c882e57d7e04950598f777c2b40327b66f9d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1a41963012de38745fe893450621713180f152e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1dd5c5b9ba06792af355bcb50fc6723b1971780",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1e0d7d93dbb0c39d2edf132534979247e24f18e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b1e6ef33b334c0848638f98879698703e45947ca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b200c10a0721fd979588b3e1e56da994ae1a6a16",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b211f7f4af1ea5c804c3e31b7d6dbbafe25b12bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b21d89d737d0af1d2df90d26d3a1e0fec8b1075f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b22585f5a17a0698b0c8fda735571c862042bd58",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b23df1316b2c67f277142dd7ee92059c9c9f6d12",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b29bf8adbb114e53a30caa30298e1a833ca87b1b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b2a271e0f4f1c21d86e556e0b6a839b94d238d83",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b2ae98b06576dca70eaea82941f31dd3b792d73e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b2ddee6d6617ec80713bbdaddcd307ada80dca5f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b2ee2430c1035934e0ffba9494d5b77aa927efd8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b2f4fd044e3b4890304e97086368502d083dd956",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b310db2b2dfbc61c690423e95f8472d5d87bf0a4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b337331e746908f16bee73f4a88dfa7ecab900c0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b361a1afb522ba0e301d8d4d16fa60949e408c6e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b377e5cb223b542c7889cb433da8e5e050f0cd95",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b379cb5da6bad5d6fdf475670a135e965e716d4d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b3988cc041e28a8ab3ee5c9d056b5bb3c2b71be6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b3a9bdea4b4f9725472951016f109780d94e446c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b3b16261c13b9e87e909e906abe2bbe40f6eefb7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b3dfce466f2960e69a1b5eb2ec4afb388bc615f3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b40e5226e8eaa51c9246b24b03cb226b0347435f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b415a8d417eaa8d66aa6417135e13d2f9a05c58d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b41b8eed4ae4fd7995ea35b9678db811faf1b8b0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b429bd32c32da17e2d991299f8cd5ae8afddbddb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b42d699e48a7dfdd658aaa0ed19ac6dc123fa4aa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b42f4b80fcd05be8c551d96fcd9022606ea14397",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b449c9c9d9d7d6e47a610bc2762c054f6fa3638f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b45dfd3d67d1eb45ec2c296cd76332b5e443c082",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b46bda7a2b609e2afdc9b414502426d2c20715c2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b46d0e35a8c88dd14cbb824d9361099cb5ed70ae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4797f6f430111e83d19567ae82ada1b9d826cf0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b47efd0010361e232d345ee4a67aaf0ad872b0fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4a9f146851cca3edf482dcb6a870ccdbc373410",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4ab9576e527a9b9adae9c310af8ee394574a5ea",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4bbf270147cc13786c7bbc92e7ae53ff8956a61",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4c0f3e2470844da42e9e39594a00b1decaa0310",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b4e4dca2eb59b3c964078afd8308afcbd58f4b19",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b51011e8ad0fe941a2304583707743dca4ea2bb5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b55ec7a8fc17e3f710d27d1940ba3a7f35543692",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b59ab9737fbc394bd5c2a8382e346642c4ba7a70",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b5c739c4173ce5bca298255d4e838288f50e1c51",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b65987f62032b745ba5464d5e40139b1cf196720",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b66f76a59144eb001e0e6c2cf7149c9eb9e23bae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b6949c1e07a49220529c055e4ba72b8b8fa25b73",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b6a3aabb8bd997f66d7fd2d793db554cb0e692f8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b6c28ab8ddbe89190d47af52a1f29f983dc60677",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b6eed0402dc05c016b1cafa236b323e7e8b35a3b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b70e47074c068e9fac37e60453d1a7912db23cad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b71c49ad137dff5bf3d5761a21200ce1c50cc68e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b7324fd085b2e7bd5a9d9ed04edcd08dc789d33a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b76d58f7be7a74a3f32272da4907e886f4e71088",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b7701ca87ecc0ac0653145ba02acf9f023f31752",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b7b93ce0848024d79c130470141c823c2b351cf0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b7f1f7c954be92bd7abd20d47820d70b26b0f229",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b7faf31fdfa3499351abd1acb2f17cfe251418ad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8021ebace7af2f4e724a65d5c7f63f7e485a9b6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b81f6bc92546dddcf15abd07f40c40f6657ac46c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b82728848c48987771d2ae02497a183e2592be2d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b82ab994ae3e0a4aa3613a6581bf95104b48da2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b83a9903e321671fb17a15ddc98e8b6e3ea25e8a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b83f029963bb68f9b74e86359d6e2e4e4be5d484",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8945b1e54c3884698fd4356b9e799eaf62caef7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8b15d1254ffdb150e4c60d8d4062430b1999cbc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8ce014d6802a186fc84adf7135452f052a253d5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8d7e5baa8869c5bb0afc843a1d02eacfb7850ad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b8d896bbe30340d01e4d0442c6a5db3a00a44b0b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      },
+      {
+       "id": "b9034d2c52b2bdf4b7aa0309f4d4295a4e1f2ec5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0010679",
+        "name": "Duchenne muscular dystrophy"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

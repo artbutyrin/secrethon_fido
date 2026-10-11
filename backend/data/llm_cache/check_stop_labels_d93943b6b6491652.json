@@ -1,0 +1,80 @@
+{
+ "task": "check_stop_labels",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2222,
+  "output_tokens": 450,
+  "latency_ms": 4094,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"NCT00690118#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The interim analysis showed no tendency in favour of the verum group. Therefore it was decided to stop the study prematurely.\"}, {\"id\": \"NCT00818389#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"NINDS DSMB recommended trial be terminated for futility after reviewing an interim analysis of 84 subjects.\"}, {\"id\": \"NCT00982150#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Core study unsuccessful\"}, {\"id\": \"NCT01622088#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The Initial Phase 3 Study (NCTO1281189) did not meet its primary efficacy endpoint.\"}, {\"id\": \"NCT03377309#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"Study halted due to adverse events\"}, {\"id\": \"NCT03836716#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"As a consequence of the results of ORARIALS-01 which did not meet any of its efficacy endpoints. The planned duration was 152 weeks. After termination, the actual mean duration of treatment was approx. 28 weeks (range approx. 2 to 71 weeks).\"}, {\"id\": \"NCT03948178#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"This was an open label extension for patients completing the REFALS study (3119002; NCT03505021). Study 3119002 showed lack of efficacy of ODM109 so the sponsor decided to terminate this study\"}, {\"id\": \"NCT04248465#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The IDMC recommended the study be discontinued due to lack of efficacy with ravulizumab.\"}, {\"id\": \"NCT04569084#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Futility was met.\"}, {\"id\": \"NCT04579666#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The study did not meet primary endpoint at Week 52. The study also did not meet key secondary efficacy endpoints. Pegcetacoplan (APL-2) was well tolerated in the study, and the data were consistent with the established safety profile.\"}, {\"id\": \"NCT04944784#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The DMC recommended the trial be discontinued due to futility following a planned second interim analysis.\"}, {\"id\": \"NCT05151471#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Futility Analysis of parent study MT-1186-A02 was met.\"}, {\"id\": \"NCT05193994#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"A planned interim analysis resulted in the recommendation that the trial be stopped. The results showed no benefit of Triumeq for people with ALS compared with placebo on survival, the primary outcome measure.\"}, {\"id\": \"NCT05237284#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The study was terminated as its Part A did not meet the primary endpoint.\"}, {\"id\": \"NCT05442775#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The DMC recommended the trial be discontinued due to futility following a planned second interim analysis of the parent trial (CY 5031).\"}, {\"id\": \"NCT06008249#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The planned interim analysis showed no survival benefit of taking the drug when compared with placebo.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "NCT00690118#0",
+    "supports": true
+   },
+   {
+    "id": "NCT00818389#0",
+    "supports": true
+   },
+   {
+    "id": "NCT00982150#0",
+    "supports": false
+   },
+   {
+    "id": "NCT01622088#0",
+    "supports": true
+   },
+   {
+    "id": "NCT03377309#0",
+    "supports": true
+   },
+   {
+    "id": "NCT03836716#0",
+    "supports": true
+   },
+   {
+    "id": "NCT03948178#0",
+    "supports": true
+   },
+   {
+    "id": "NCT04248465#0",
+    "supports": true
+   },
+   {
+    "id": "NCT04569084#0",
+    "supports": true
+   },
+   {
+    "id": "NCT04579666#0",
+    "supports": true
+   },
+   {
+    "id": "NCT04944784#0",
+    "supports": true
+   },
+   {
+    "id": "NCT05151471#0",
+    "supports": true
+   },
+   {
+    "id": "NCT05193994#0",
+    "supports": true
+   },
+   {
+    "id": "NCT05237284#0",
+    "supports": true
+   },
+   {
+    "id": "NCT05442775#0",
+    "supports": true
+   },
+   {
+    "id": "NCT06008249#0",
+    "supports": true
+   }
+  ]
+ }
+}

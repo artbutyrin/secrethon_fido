@@ -1,0 +1,33 @@
+{
+ "source": "pubmed",
+ "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+ "params": {
+  "tool": "unobio",
+  "db": "pubmed",
+  "term": "\"DMD\"[tiab] AND \"Duchenne muscular dystrophy\"[tiab] AND (knockout[tiab] OR knockdown[tiab] OR \\\"mouse model\\\"[tiab] OR transgenic[tiab] OR \\\"animal model\\\"[tiab]) NOT review[pt] NOT \"systematic review\"[pt] NOT meta-analysis[pt]",
+  "retmax": 4,
+  "retmode": "json",
+  "sort": "relevance"
+ },
+ "fetched_at": "2026-10-09T12:01:44+00:00",
+ "status": 200,
+ "body": {
+  "header": {
+   "type": "esearch",
+   "version": "0.3"
+  },
+  "esearchresult": {
+   "count": "1181",
+   "retmax": "4",
+   "retstart": "0",
+   "idlist": [
+    "3319190",
+    "33827972",
+    "26721684",
+    "39587049"
+   ],
+   "translationset": [],
+   "querytranslation": "(((\"DMD\"[Title/Abstract] AND \"Duchenne muscular dystrophy\"[Title/Abstract] AND (\"knockout\"[Title/Abstract] OR \"knockdown\"[Title/Abstract] OR \"mouse model\"[Title/Abstract] OR \"transgenic\"[Title/Abstract] OR \"animal model\"[Title/Abstract])) NOT \"review\"[Publication Type]) NOT \"systematic review\"[Publication Type]) NOT \"meta-analysis\"[Publication Type]"
+  }
+ }
+}

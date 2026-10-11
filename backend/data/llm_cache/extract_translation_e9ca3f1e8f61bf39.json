@@ -1,0 +1,45 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1164,
+  "output_tokens": 636,
+  "latency_ms": 6553,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:30755061\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Relationship Between Low-Density Lipoprotein Cholesterol and Lipoprotein(a) Lowering in Response to PCSK9 Inhibition With Evolocumab.. Background Beyond their potent LDL (low-density lipoprotein) cholesterol ( LDL -C)-lowering efficacy (50-60%), PCSK9 (proprotein convertase subtilisin/kexin type 9) inhibitors also reduce Lp(a) (lipoprotein[a]) levels by 25% to 30%, suggesting a 2:1 response ratio. We aimed to characterize the relationship between LDL -C and Lp(a) lowering by evolocumab, a PCSK 9 inhibitor, in a large clinical trial population and to determine the prevalence of concordant/discordant LDL -C and Lp(a) responses to PCSK 9 inhibition. Methods and Results Data were analyzed from 4 randomized, 12-week, multicenter, phase 3 evolocumab trials. Patients with familial hypercholesterolemia, nonfamilial hypercholesterolemia, or statin intolerance participated in the trials. The main measure was the degree of concordance or discordance of LDL -C and Lp(a) in response to PCSK 9 inhibition; concordant response was defined as LDL -C reduction >35% and Lp(a) reduction >10%. The study cohort comprised 895 patients (438 female; median age: 59.0 years [interquartile range: 51-66 years]). Baseline mean level of LDL -C was 133.6 mg/dL (SE: 1.7) and median Lp(a) level was 46.4 mg/dL (interquartile range: 18.4-82.4 mg/dL). A discordant response was observed in 165 (19.7%) patients. With these cutoffs, the prevalence of discordance was higher when considering baseline Lp(a) concentrations >30 mg/dL (26.5%) or >50 mg/dL (28.6%). Conclusions We demonstrate high prevalence of discordance in LDL -C and Lp(a) reduction in response to evolocumab, particularly when considering higher baseline Lp(a) concentrations, indicating the possibility of alternative pathways beyond LDLR ( LDL receptor)-mediated clearance involved in Lp(a) reduction by evolocumab. Clinical Trial Registration URL : http://www.clinicaltrials.gov . Unique identifiers: NCT 01763827, NCT 01763866, NCT 01763905, NCT 01763918.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:30755061",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "A discordant response was observed in 165 (19.7%) patients."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "With these cutoffs, the prevalence of discordance was higher when considering baseline Lp(a) concentrations >30 mg/dL (26.5%)"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "or >50 mg/dL (28.6%)."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1364 @@
+{
+ "approved_therapies_count": {
+  "label": "Number of approved drugs in this indication (any mechanism)",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "openFDA drug/label indications_and_usage; ChEMBL drug_indication max_phase_for_ind=4",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "soc_last_new_moa_years": {
+  "label": "Years since the last approval of a new mechanism in the indication",
+  "type": "number",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "openFDA drug/drugsfda (original approval dates)",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": []
+ },
+ "active_comparator_exists": {
+  "label": "An active comparator exists (not only supportive care)",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "Guidelines, HTA decisions; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "approved_same_moa_count": {
+  "label": "Approved drugs with the same mechanism in this indication",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "ChEMBL mechanism + drug_indication; Open Targets drugAndClinicalCandidates",
+  "min": 0,
+  "max": null,
+  "critical_values": {
+   "2": "strong"
+  },
+  "absence_values": [
+   0
+  ]
+ },
+ "ph3_same_moa_count": {
+  "label": "Drugs with the same mechanism in Phase 3 (including Chinese sponsors)",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "ClinicalTrials.gov phase=PHASE3, interventions; WHO ICTRP",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "years_behind_first_in_class": {
+  "label": "Years from the first approval in the class to the expected launch",
+  "type": "number",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "openFDA drug/drugsfda",
+  "min": 0,
+  "max": null,
+  "critical_values": {
+   "6": "strong"
+  },
+  "absence_values": []
+ },
+ "soc_loe_before_launch": {
+  "label": "Standard of care loses exclusivity before or soon after launch",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "FDA Orange Book / Purple Book",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": []
+ },
+ "required_price_unrealistic": {
+  "label": "Required annual price is unrealistic for the addressable population",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "Calculation: target peak / number treated; epidemiology from open sources",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "medicare_negotiation_exposure": {
+  "label": "The drug falls under Medicare price negotiation (IRA) during its peak",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "Modality + 65+ population; 9/13-year rule",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "genetic_support": {
+  "label": "Genetic support for the target–disease pair. none = the disease has genetic data, but it does not support this target; no_data = the disease has no genetic data at all",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets: datasourceScores of the pair (not the overall score). Mendelian: gene2phenotype, clingen, genomics_england, orphanet, ClinVar (eva), uniprot_literature; GWAS with a confident gene: gwas_credible_sets with L2G ≥ 0.5; somatic: intogen, cancer_gene_census. Validation on pairs used OMIM, which has a restricted licence; the open sources approximate it",
+  "values": [
+   "no_data",
+   "none",
+   "other_disease",
+   "gwas",
+   "mendelian",
+   "somatic_driver",
+   "contradicts"
+  ],
+  "critical_values": {
+   "contradicts": "strong"
+  },
+  "absence_values": [
+   "no_data",
+   "none"
+  ]
+ },
+ "moa_clinical_precedent": {
+  "label": "Clinical precedent of the same mechanism (same target and same direction of action): any drug in this disease, or this or another drug in another disease; a related disease means the same therapeutic area",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets knownDrugs of the target (phase, status, mechanism) + disease.therapeuticAreas; ClinicalTrials.gov results",
+  "values": [
+   "none",
+   "approved_unrelated",
+   "positive_ph2_3_related",
+   "approved_related",
+   "positive_ph2_3_same",
+   "approved_same"
+  ],
+  "critical_values": {},
+  "absence_values": [
+   "none"
+  ]
+ },
+ "independent_groups": {
+  "label": "How many independent groups reproduced the key result (do not count the authors of the original work)",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "pubmed_text",
+  "source": "PubMed; manual",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "perturbation_evidence": {
+  "label": "Causal preclinical evidence: knocking out or blocking the target changes the disease phenotype in cells, tissue or animals",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "PubMed; Open Targets (CRISPR, animal models)",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "correlational_evidence": {
+  "label": "Correlational evidence: target expression, changes in diseased tissue, pathway membership",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets (expression, pathways); PubMed",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "moa_discontinued_safety_count": {
+  "label": "How many programs on this target were discontinued for safety",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "clinicaltrials_text",
+  "source": "ClinicalTrials.gov whyStopped; press releases; ChEMBL",
+  "min": 0,
+  "max": null,
+  "critical_values": {
+   "2": "strong"
+  },
+  "absence_values": [
+   0
+  ]
+ },
+ "moa_crl_safety": {
+  "label": "Another drug with the same mechanism received a CRL for safety",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "FDA letters (since 2025), press releases, company filings",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": []
+ },
+ "moa_adcom_negative": {
+  "label": "An FDA advisory committee voted against another drug with the same mechanism",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "FDA advisory committee minutes",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "class_drug_related_deaths": {
+  "label": "Trials of drugs of the same class had drug-related deaths",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov adverseEventsModule; FDA labels",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": []
+ },
+ "indication_accelerated_withdrawn": {
+  "label": "Accelerated approvals in this disease were withdrawn",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "FDA: withdrawn accelerated approvals",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "indication_enrollment_terminations_high": {
+  "label": "Trials in this disease were often stopped for enrollment",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "clinicaltrials_text",
+  "source": "ClinicalTrials.gov whyStopped",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "route_of_administration": {
+  "label": "Route of administration",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "input",
+  "source": "Input",
+  "values": [
+   "oral",
+   "subcutaneous",
+   "iv_infusion",
+   "intrathecal",
+   "inhaled",
+   "topical",
+   "other"
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "foundational_retraction": {
+  "label": "The foundational paper was retracted",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "pubmed_text",
+  "source": "Retraction Watch / Crossref; PubMed publication type",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "moa_failures_efficacy_ph23": {
+  "label": "OTHER drugs (not this asset) with the same mechanism, direction and disease that failed Phase 2/3 for efficacy",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "clinicaltrials_text",
+  "source": "ClinicalTrials.gov whyStopped, resultsSection; only futility or a missed endpoint",
+  "min": 0,
+  "max": null,
+  "critical_values": {
+   "1": "strong",
+   "2": "strong"
+  },
+  "absence_values": [
+   0
+  ]
+ },
+ "moa_successes_same_indication": {
+  "label": "Successes of the same mechanism in this disease (positive Phase 2/3 or approval)",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "ClinicalTrials.gov; openFDA",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "indication_graveyard": {
+  "label": "The indication is on the curated 'graveyard' list (history of failures, poor translation, high placebo response)",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "curated",
+  "source": "Static table indication_graveyards",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": []
+ },
+ "indication_failures_other_moa_ph3_10y": {
+  "label": "Phase 3 efficacy failures of OTHER mechanisms in this indication over 10 years",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "clinicaltrials_text",
+  "source": "ClinicalTrials.gov",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "indication_ph3_outcomes_other_moa": {
+  "label": "How many OTHER targets have a known Phase 3 outcome in this disease",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "ClinicalTrials.gov; Open Targets drugAndClinicalCandidates",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "indication_ph3_success_share_other_moa": {
+  "label": "Share of OTHER targets that passed Phase 3 in this disease (0–1)",
+  "type": "number",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Calculated from the same data",
+  "min": 0,
+  "max": 1,
+  "critical_values": {},
+  "absence_values": []
+ },
+ "indication_new_moa_approvals_10y": {
+  "label": "Approvals of new mechanisms in this indication over 10 years",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "openFDA drug/drugsfda",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "life_threatening_indication": {
+  "label": "The disease is directly life-threatening (oncology and similar)",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "derived",
+  "source": "Therapeutic area; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "oncology": {
+  "label": "Oncology indication",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets disease.therapeuticAreas",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "rare_disease": {
+  "label": "Rare disease",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Orphadata",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "chronic_non_oncology": {
+  "label": "Chronic non-oncology disease",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "Therapeutic area; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "class_safety_signal": {
+  "label": "The class (same target or format) has a boxed warning or a known adverse effect",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "openFDA drug/label boxed_warning; ChEMBL drug_warning",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "class_withdrawal": {
+  "label": "A drug of the same class was withdrawn for safety",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "ChEMBL withdrawn_flag, drug_warning",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": []
+ },
+ "target_safety_flags": {
+  "label": "Composite target safety flag, 0–6",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets geneticConstraint, prioritisation, safetyLiabilities, interactions",
+  "min": 0,
+  "max": 6,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ]
+ },
+ "essential_gene": {
+  "label": "The target is a common essential gene (DepMap common essential)",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets isEssential / DepMap",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "moa_direction": {
+  "label": "Direction of action on the target",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "input",
+  "source": "ChEMBL mechanism.action_type",
+  "values": [
+   "inhibit",
+   "activate"
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "modality": {
+  "label": "Modality",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "input",
+  "source": "Input; ChEMBL molecule_type",
+  "values": [
+   "small_molecule",
+   "antibody",
+   "adc",
+   "bispecific",
+   "cell",
+   "gene",
+   "rna",
+   "radioligand",
+   "peptide",
+   "protein",
+   "vaccine",
+   "other"
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "modality_target_mismatch": {
+  "label": "The modality physically cannot reach the target",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets target.tractability + localisation from UniProt",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "kill"
+  },
+  "absence_values": []
+ },
+ "tractability": {
+  "label": "Highest tractability bucket for this modality and target",
+  "type": "enum",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets target.tractability{modality label value}",
+  "values": [
+   "none",
+   "predicted",
+   "clinical",
+   "approved"
+  ],
+  "critical_values": {},
+  "absence_values": [
+   "none"
+  ]
+ },
+ "accepted_endpoint_exists": {
+  "label": "A regulator-accepted endpoint exists for the indication",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "curated",
+  "source": "FDA surrogate endpoint table; FDA guidance for the disease",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": []
+ },
+ "endpoint_approval_precedent": {
+  "label": "There is an approval precedent in the indication on this endpoint (stronger if the mechanism column matches)",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "curated",
+  "source": "FDA Table of Surrogate Endpoints; openFDA label",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "natural_history_data": {
+  "label": "Natural history data for the disease exist",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "clinicaltrials",
+  "source": "ClinicalTrials.gov studyType=OBSERVATIONAL; PubMed",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "fda_designations_count": {
+  "label": "Number of FDA designations (orphan, breakthrough, fast track, RMAT)",
+  "type": "int",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA Orphan Drug Designations; press releases",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ],
+  "dd": "Which FDA designations does the asset have, and on what data were they granted?"
+ },
+ "phase": {
+  "label": "Asset stage",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Input; ClinicalTrials.gov",
+  "values": [
+   "preclinical",
+   "ph1",
+   "ph2",
+   "ph3",
+   "filed"
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "At what development stage is the asset in this indication?"
+ },
+ "animal_model_response": {
+  "label": "Response in an animal model of the disease",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Data room; publications",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": [],
+  "dd": "Is there a response in a relevant animal model, and who reproduced it?"
+ },
+ "pillars_human": {
+  "label": "How many of the three pillars are shown in humans (exposure at the site of action, target binding, pharmacological effect)",
+  "type": "int",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Phase 1 endpoints in ClinicalTrials.gov; data room",
+  "min": 0,
+  "max": 3,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ],
+  "dd": "Has exposure at the site of action, target binding and pharmacological effect been shown in humans?"
+ },
+ "link_exposure": {
+  "label": "Link 2: effective exposure is reachable in the right tissue in humans (false = known not to be)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Phase 1 (PK); data room; input",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": [],
+  "dd": "Is effective exposure reachable safely in humans, and does the drug reach the right tissue?"
+ },
+ "link_target_engagement": {
+  "label": "Link 3: target engagement shown in humans in the relevant tissue (false = known not to be)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Phase 1 (PD, receptor occupancy); data room; input",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": [],
+  "dd": "Has target engagement been shown in relevant human tissue?"
+ },
+ "link_pd_response": {
+  "label": "Link 4: biological response in humans, a pharmacodynamic biomarker changes (false = known not to)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "Phase 1–2 (biomarkers); data room; input",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": [],
+  "dd": "Does a pharmacodynamic biomarker change in humans, and does it predict clinical benefit?"
+ },
+ "own_ph2_positive": {
+  "label": "The asset's own Phase 2 in this indication met its primary endpoint",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov resultsSection",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?"
+ },
+ "own_trial_failed_efficacy": {
+  "label": "The asset's own trial in this indication failed for efficacy",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov whyStopped, results",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "What are the results of the asset's own trials in this indication: were primary endpoints met, were there failures?"
+ },
+ "drug_approved_other_indication": {
+  "label": "This drug is already approved in another indication (whether it is related is set by moa_clinical_precedent)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ChEMBL max_phase=4; openFDA drug/drugsfda",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Is this drug approved in another indication, and in which jurisdictions?"
+ },
+ "randomized_controlled": {
+  "label": "The registrational (pivotal) trial is randomized and controlled",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov designInfo.allocation",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "What is the design of the pivotal trial, and why was it chosen?"
+ },
+ "endpoint_matches_mechanism": {
+  "label": "The primary endpoint measures what the drug is supposed to do",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov primaryOutcomes; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "False": "strong"
+  },
+  "absence_values": [],
+  "dd": "What is the primary endpoint, and how is it linked to the drug's mechanism of action?"
+ },
+ "dose_ranging_done": {
+  "label": "Phase 2 compared at least two dose levels",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov armGroups",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Provide the dose-selection data: which levels were compared, and how was the Phase 3 dose chosen?"
+ },
+ "open_label_subjective_endpoint": {
+  "label": "Open-label design with a subjective primary endpoint",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov maskingInfo.masking=NONE + endpoint type",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "What is the design of the pivotal trial, and why was it chosen?"
+ },
+ "biomarker_selection": {
+  "label": "Patients are selected by a biomarker",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "input",
+  "source": "ClinicalTrials.gov eligibilityCriteria",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Are patients selected by a biomarker, and is there a validated test for it?"
+ },
+ "posthoc_subgroup_thesis": {
+  "label": "The thesis rests on a subgroup found post hoc",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov: failure in all patients, new trial in a subgroup",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "Does the thesis rest on a subgroup found after a failure in all patients?"
+ },
+ "single_country_ex_us_pivotal": {
+  "label": "Registrational data from a single country outside the US",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov contactsLocationsModule",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "In which countries were the registrational trials run, and has this been agreed with the FDA?"
+ },
+ "single_arm_pivotal": {
+  "label": "The registrational trial is single-arm",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov designInfo",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "What is the design of the pivotal trial, and why was it chosen?"
+ },
+ "accelerated_only": {
+  "label": "The path relies only on accelerated approval",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA surrogate endpoint table, type Accelerated",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Does the path rely on accelerated approval, and has a confirmatory trial started?"
+ },
+ "confirmatory_trial_registered": {
+  "label": "A randomized confirmatory trial is registered",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Does the path rely on accelerated approval, and has a confirmatory trial started?"
+ },
+ "ph2_under_enrollment": {
+  "label": "Phase 2 under-enrolled or was stopped for enrollment",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov enrollmentInfo actual vs anticipated, whyStopped",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "How did enrollment go against plan in previous trials?"
+ },
+ "primary_endpoint_changed": {
+  "label": "The primary endpoint was changed after trial registration",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov version history; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "Was the primary endpoint changed after the trial started, and why?"
+ },
+ "grade5_related": {
+  "label": "There were drug-related deaths (grade 5)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov adverseEventsModule; data room",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "Were there deaths or serious drug-related events? Provide the full safety table."
+ },
+ "grade4_related": {
+  "label": "There were severe, life-threatening drug-related grade 4 adverse events",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov adverseEventsModule; data room",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Were there deaths or serious drug-related events? Provide the full safety table."
+ },
+ "toxicity_at_efficacious_exposure": {
+  "label": "Toxicity at efficacious exposure (narrow therapeutic index)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "Data room (GLP toxicology)",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "What is the margin between efficacious and toxic exposure in the most sensitive species?"
+ },
+ "crl_reason": {
+  "label": "FDA complete response letter and its reason (undisclosed = there was a letter, the reason was not disclosed; if you do not know whether there was a letter, leave the fact out)",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "openFDA (published CRLs since 2025); press releases; 8-K",
+  "values": [
+   "none",
+   "efficacy",
+   "safety",
+   "manufacturing",
+   "undisclosed"
+  ],
+  "critical_values": {
+   "efficacy": "kill",
+   "safety": "kill",
+   "undisclosed": "strong"
+  },
+  "absence_values": [
+   "none"
+  ],
+  "dd": "Did the asset receive an FDA complete response letter, and what is the verbatim reason?"
+ },
+ "adcom_negative": {
+  "label": "Negative FDA advisory committee vote",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA calendar and minutes; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "What were the interactions with the FDA: advisory committee votes, letters on data quality or integrity?"
+ },
+ "fda_data_integrity_letter": {
+  "label": "FDA letter on unreliable clinical data",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA Warning Letters; manual",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "kill"
+  },
+  "absence_values": [],
+  "dd": "What were the interactions with the FDA: advisory committee votes, letters on data quality or integrity?"
+ },
+ "patent_status": {
+  "label": "Status of the key patent",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "Orange Book (approved only); Google Patents, Lens.org, EPO; data room",
+  "values": [
+   "granted",
+   "pending",
+   "expired",
+   "none"
+  ],
+  "critical_values": {
+   "expired": "kill",
+   "none": "kill"
+  },
+  "absence_values": [
+   "none"
+  ],
+  "dd": "Provide the patent list: type of protection, jurisdictions, expiry dates, freedom-to-operate opinion."
+ },
+ "key_patent_license": {
+  "label": "Rights to the key patent",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "10-K «License agreements» (EDGAR); USPTO Patent Assignment Search",
+  "values": [
+   "owned",
+   "exclusive",
+   "non_exclusive",
+   "field_excludes_lead"
+  ],
+  "critical_values": {
+   "non_exclusive": "kill",
+   "field_excludes_lead": "kill"
+  },
+  "absence_values": [],
+  "dd": "Who owns the key patent, and is the licence exclusive for the lead indication?"
+ },
+ "key_markets_outlicensed": {
+  "label": "Rights to the US or the EU have already been out-licensed",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "8-K, press releases; data room",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "Which territories remain with the company? Are US and EU rights retained?"
+ },
+ "nonkey_territories_outlicensed_count": {
+  "label": "Number of out-licensed territories outside the US and the EU",
+  "type": "int",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "8-K, press releases",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ],
+  "dd": "Which territories remain with the company? Are US and EU rights retained?"
+ },
+ "royalty_stack_pct": {
+  "label": "Total upper-tier royalties, %",
+  "type": "number",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "10-K, agreements in EDGAR",
+  "min": 0,
+  "max": 100,
+  "critical_values": {
+   "12": "strong"
+  },
+  "absence_values": [],
+  "dd": "What royalties and milestone payments are owed to licensors? What is the total rate?"
+ },
+ "differentiation_claim": {
+  "label": "Claimed differentiation from the standard of care",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "User input; company presentations",
+  "values": [
+   "none",
+   "convenience",
+   "price_only",
+   "structural_cost",
+   "safety",
+   "efficacy"
+  ],
+  "critical_values": {},
+  "absence_values": [
+   "none"
+  ],
+  "dd": "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+ },
+ "price_channel_direct": {
+  "label": "A channel where the payer captures the savings itself (hospitals, tenders, out-of-pocket)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "derived",
+  "source": "Route of administration; CMS Part B / Part D",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+ },
+ "differentiation_evidence": {
+  "label": "Differentiation is confirmed by clinical data (false = the claim was checked and not confirmed)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov results; publications",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "How does the asset differ from approved drugs of the same mechanism, and what data support it?"
+ },
+ "sponsor_size": {
+  "label": "Sponsor size",
+  "type": "enum",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "EDGAR; input",
+  "values": [
+   "small",
+   "mid",
+   "large"
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+ },
+ "sponsor_prior_approvals": {
+  "label": "Sponsor's prior approvals",
+  "type": "int",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "openFDA drug/drugsfda sponsor_name",
+  "min": 0,
+  "max": null,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ],
+  "dd": "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+ },
+ "big_pharma_partner": {
+  "label": "A big-pharma partner on this asset",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "ClinicalTrials.gov collaborators; 8-K Item 1.01",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "What is the sponsor's track record: prior approvals, partners on this asset, company size?"
+ },
+ "partner_returned_asset": {
+  "label": "A partner returned the asset (licence terminated)",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "EDGAR 8-K Item 1.02; press releases",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "Has a partner ever returned rights to the asset, and why?"
+ },
+ "runway_short": {
+  "label": "Cash does not last until the next readout plus 6 months, or there is a going-concern warning",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "XBRL: cash / annual burn; 10-K going concern",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "How many months of cash are left, and when is the next data readout?"
+ },
+ "cmo_oai_or_warning_letter": {
+  "label": "A site or contract manufacturer has an OAI status or a warning letter within 3 years",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA Inspection Classification Database; Warning Letters",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Who manufactures the drug, and what is the status of the last FDA inspection?"
+ },
+ "approved_same_moa_same_modality_count": {
+  "label": "Approved drugs with the same mechanism AND the same modality class in this disease",
+  "type": "int",
+  "level": "mechanism",
+  "mvp_source": "open_targets",
+  "source": "Open Targets knownDrugs + ChEMBL molecule type (small molecule / antibody-like / nucleic acid / gene / cell)",
+  "min": 0,
+  "max": null,
+  "critical_values": {
+   "2": "strong"
+  },
+  "absence_values": [
+   0
+  ]
+ },
+ "moa_approved_any_indication": {
+  "label": "The mechanism (target + direction) is approved in any indication",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "derived",
+  "source": "Open Targets knownDrugs, all indications",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "acute_indication": {
+  "label": "Acute (not chronic) indication, e.g. acute infection or injury",
+  "type": "bool",
+  "level": "mechanism",
+  "mvp_source": "none",
+  "source": "Analyst",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": []
+ },
+ "regulatory_exclusivity_years": {
+  "label": "Statutory exclusivity expected after approval (NCE 5, orphan 7, biologic 12 years)",
+  "type": "int",
+  "level": "asset",
+  "mvp_source": "none",
+  "source": "FDA Orange/Purple Book rules; orphan designation",
+  "min": 0,
+  "max": 15,
+  "critical_values": {},
+  "absence_values": [
+   0
+  ],
+  "dd": "Which regulatory exclusivities (NCE, orphan, BPCIA) will the asset get, and for which indication?"
+ },
+ "economics_negative": {
+  "label": "Economics negative: P(rNPV > 0) below 10% in the Monte Carlo",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "derived",
+  "source": "unobio_scoring.economics (computed, never from an LLM)",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {
+   "True": "strong"
+  },
+  "absence_values": [],
+  "dd": "How many patients will actually be treated and at what net price? Can development be narrowed or made cheaper?"
+ },
+ "economics_weak": {
+  "label": "Economics weak: median (P50) rNPV below zero",
+  "type": "bool",
+  "level": "asset",
+  "mvp_source": "derived",
+  "source": "unobio_scoring.economics (computed, never from an LLM)",
+  "values": [
+   true,
+   false
+  ],
+  "critical_values": {},
+  "absence_values": [],
+  "dd": "Which assumption (patients, price, share, cost) would have to move to make the median rNPV positive?"
+ }
+}

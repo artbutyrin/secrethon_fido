@@ -1,0 +1,92 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0005010"
+ },
+ "fetched_at": "2026-10-09T12:06:21+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005010",
+    "name": "coronary artery disorder",
+    "description": "Narrowing of the coronary arteries due to fatty deposits inside the arterial walls. The diagnostic criteria may include documented history of any of the following: documented coronary artery stenosis greater than or equal to 50% (by cardiac catheterization or other modality of direct imaging of the coronary arteries); previous coronary artery bypass surgery (CABG); previous percutaneous coronary intervention (PCI); previous myocardial infarction. (ACC)",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "CAD",
+       "CHD (coronary heart disease)",
+       "coronary artery disease",
+       "coronary artery disease or disorder",
+       "coronary disease",
+       "coronary heart disease",
+       "disease of coronary artery",
+       "disease or disorder of coronary artery",
+       "disorder of coronary artery",
+       "Arterioscleroses, Coronary",
+       "Arteriosclerosis, Coronary",
+       "Artery Disease, Coronary",
+       "Artery Diseases, Coronary",
+       "Atheroscleroses, Coronary",
+       "Atherosclerosis, Coronary",
+       "CHD",
+       "CHD - Coronary heart disease",
+       "CORONARY ARTERY DIS",
+       "CORONARY DIS",
+       "CORONARY HEART DIS",
+       "Coronary Arterioscleroses",
+       "Coronary Arteriosclerosis",
+       "Coronary Artery Diseases",
+       "Coronary Atheroscleroses",
+       "Coronary Atherosclerosis",
+       "Coronary Diseases",
+       "Coronary Heart Diseases",
+       "Disease, Coronary",
+       "Disease, Coronary Artery",
+       "Disease, Coronary Heart",
+       "Diseases, Coronary",
+       "Diseases, Coronary Artery",
+       "Diseases, Coronary Heart",
+       "Heart Disease, Coronary",
+       "Heart Diseases, Coronary"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": [
+       "coronary arteriosclerosis"
+      ]
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:3393",
+     "EFO:0001645",
+     "ICD9:410-414",
+     "ICD9:414.0",
+     "ICD9:414.9",
+     "MEDGEN:365486",
+     "MESH:D003324",
+     "NCIT:C26732",
+     "SCTID:414024009",
+     "UMLS:C1956346",
+     "icd11.foundation:1059873720"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0004995",
+      "name": "cardiovascular disorder"
+     }
+    ]
+   }
+  }
+ }
+}

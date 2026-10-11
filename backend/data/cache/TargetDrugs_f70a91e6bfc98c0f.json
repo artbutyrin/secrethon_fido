@@ -1,0 +1,2418 @@
+{
+ "query": "TargetDrugs",
+ "variables": {
+  "ensemblId": "ENSG00000198947"
+ },
+ "fetched_at": "2026-10-09T12:01:30+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000198947",
+    "drugAndClinicalCandidates": {
+     "count": 8,
+     "rows": [
+      {
+       "id": "0f532afab3bb18e19bc8d11bd7455a7b4e9d886df230c6c306bad32196e44869",
+       "maxClinicalStage": "APPROVAL",
+       "drug": {
+        "id": "CHEMBL4650241",
+        "name": "DELANDISTROGENE MOXEPARVOVEC",
+        "drugType": "Gene",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "Delandistrogene moxeparvovec"
+         },
+         {
+          "label": "SRP-9001"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Delandistrogene moxeparvovec component of elevidys"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "EXOGENOUS GENE",
+           "mechanismOfAction": "Dystrophin exogenous gene",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 2,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0010311",
+            "name": "Becker muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_1",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "https://www.fda.gov/vaccines-blood-biologics/elevidys",
+         "source": "FDA",
+         "url": "https://www.fda.gov/media/184855/download?attachment",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010311"
+           },
+           "diseaseFromSource": "becker muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d9m8fk/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D9M8FK",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct06241950",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06241950",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Study is being terminated due to a business decision.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2024-01-29",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "delandistrogene moxeparvovec",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/DELANDISTROGENE%20MOXEPARVOVEC/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "emea/h/c/005293",
+         "source": "EMA Human Drugs",
+         "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/elevidys",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "muscular dystrophy, duchenne"
+          }
+         ]
+        },
+        {
+         "id": "nct06270719",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06270719",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "ENROLLING_BY_INVITATION",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2024-02-07",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "4103f80472ea649300196f2afad26139d5477f8c6f99ea77f6c15d719610535f",
+       "maxClinicalStage": "UNKNOWN",
+       "drug": {
+        "id": "CHEMBL4298193",
+        "name": "SUVODIRSEN SODIUM",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "UNKNOWN",
+        "synonyms": [
+         {
+          "label": "BMTR0139 SODIUM"
+         },
+         {
+          "label": "Suvodirsen sodium"
+         },
+         {
+          "label": "WLS-4176 SODIUM"
+         },
+         {
+          "label": "WV3473"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 1,
+         "rows": [
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "suvodirsen sodium",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/SUVODIRSEN%20SODIUM/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "65afe758784172ff00dde1b14a21ff5d25dd219303c5c36d0c580dfedab40ec6",
+       "maxClinicalStage": "PHASE_2_3",
+       "drug": {
+        "id": "CHEMBL4298192",
+        "name": "SUVODIRSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "PHASE_2_3",
+        "synonyms": [
+         {
+          "label": "BMTR0139"
+         },
+         {
+          "label": "Suvodirsen"
+         },
+         {
+          "label": "WLS-4176"
+         },
+         {
+          "label": "WV-3473"
+         },
+         {
+          "label": "WVE-210201"
+         },
+         {
+          "label": "Wve-210201"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 1,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_2_3",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d06szu/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D06SZU",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d4ozc7/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D4OZC7",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03907072",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03907072",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2_3",
+         "trialPhase": "PHASE2/PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Lack of efficacy",
+         "trialStopReasonCategories": [
+          "Negative"
+         ],
+         "trialStartDate": "2019-09-04",
+         "trialSponsor": {
+          "name": "Wave Life Sciences USA, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03508947",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03508947",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2018-01-24",
+         "trialSponsor": {
+          "name": "Wave Life Sciences USA, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "suvodirsen",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/SUVODIRSEN/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "6c24e8c4c8c5a5bcf0b5a1124897c0b04f19107e1d5bbe33a104fe7f024cd4d9",
+       "maxClinicalStage": "APPROVAL",
+       "drug": {
+        "id": "CHEMBL2108278",
+        "name": "ETEPLIRSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "AVI-4658"
+         },
+         {
+          "label": "Eteplirsen"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Eteplirsen component of exondys 51"
+         },
+         {
+          "label": "Exondys 51"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 2,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0020121",
+            "name": "muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "33bff678-7829-479e-9110-b8e33a0bc0aa",
+         "source": "DailyMed",
+         "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33bff678-7829-479e-9110-b8e33a0bc0aa",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0020121"
+           },
+           "diseaseFromSource": "muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d04aiv/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D04AIV",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "label/2016/206488lbl.pdf",
+         "source": "FDA",
+         "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2016/206488lbl.pdf",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02255552",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02255552",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2014-11-17",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03992430",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03992430",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2020-07-13",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01396239",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01396239",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2011-07-31",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01540409",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01540409",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2012-02-27",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02286947",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02286947",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2014-11-30",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02420379",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02420379",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2015-06-30",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03218995",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03218995",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2017-08-16",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03985878",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03985878",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Participants were either transitioned to a post-trial access program or another Sarepta study, or they declined further treatment. There are no safety concerns with Eteplirsen.",
+         "trialStopReasonCategories": [
+          "Another_Study",
+          "Study_Design"
+         ],
+         "trialStartDate": "2019-06-26",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04179409",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04179409",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2020-02-18",
+         "trialSponsor": {
+          "name": "Kevin Flanigan"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct00159250",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00159250",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1_2",
+         "trialPhase": "PHASE1/PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2007-10-26",
+         "trialSponsor": {
+          "name": "Imperial College London"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "emea/h/c/004355",
+         "source": "EMA Human Drugs",
+         "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exondys",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "muscular dystrophy, duchenne"
+          }
+         ]
+        },
+        {
+         "id": "nct06606340",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06606340",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "ENROLLING_BY_INVITATION",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-01-07",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "95243fa259265f084954edcd46b7055459a18baf1a3fa4d8fb70538472299d77",
+       "maxClinicalStage": "PHASE_4",
+       "drug": {
+        "id": "CHEMBL4298062",
+        "name": "VILTOLARSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "NCNP-01"
+         },
+         {
+          "label": "NS-065"
+         },
+         {
+          "label": "NS-065/NCNP-01"
+         },
+         {
+          "label": "Ns-065/ncnp-01"
+         },
+         {
+          "label": "Viltolarsen"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Viltepso"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 2,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0020121",
+            "name": "muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct04687020",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04687020",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_4",
+         "trialPhase": "PHASE4",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-06-10",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "1ffff9a8-6d6a-4dcb-8493-1b6cc3a5d123",
+         "source": "DailyMed",
+         "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1ffff9a8-6d6a-4dcb-8493-1b6cc3a5d123",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0020121"
+           },
+           "diseaseFromSource": "muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "52b38acf4696ca3ef4240b09bde7d0e17e41554d0d6f36d04009cf61ab89f7a6",
+         "source": "PMDA",
+         "url": "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0001.html",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "dmd"
+          }
+         ]
+        },
+        {
+         "id": "7f960c407ffb1ba0adfbd80ec34e269022a1afc400edf2be4962fab672ffe1f8",
+         "source": "PMDA",
+         "url": "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0001.html",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "941018ee6c794587a2f040e1038135cae6cc870179c42a0601f49d8600983967",
+         "source": "PMDA",
+         "url": "https://www.pmda.go.jp/english/review-services/reviews/approved-information/drugs/0001.html",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "deficiency of the dystrophin gene"
+          }
+         ]
+        },
+        {
+         "id": "d0g6dr/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0G6DR",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "label/2020/212154s000lbl.pdf",
+         "source": "FDA",
+         "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/212154s000lbl.pdf",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04337112",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04337112",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": "APPROVED_FOR_MARKETING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04060199",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04060199",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2020-04-14",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04768062",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04768062",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "UNKNOWN",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-04-13",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02740972",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02740972",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2016-12-31",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03167255",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03167255",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2017-07-06",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04956289",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04956289",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-07-01",
+         "trialSponsor": {
+          "name": "NS Pharma, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02081625",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02081625",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-06-30",
+         "trialSponsor": {
+          "name": "National Center of Neurology and Psychiatry, Japan"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "viltolarsen",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/VILTOLARSEN/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c60c9ed1aad41378bb847723e5228b80f47843f3965dbd96d8fdce6117e97b39",
+       "maxClinicalStage": "PHASE_4",
+       "drug": {
+        "id": "CHEMBL4297762",
+        "name": "GOLODIRSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "Golodirsen"
+         },
+         {
+          "label": "NG-12-0163"
+         },
+         {
+          "label": "SRP-4053"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Vyondys 53"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 2,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0020121",
+            "name": "muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct04708314",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04708314",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_4",
+         "trialPhase": "PHASE4",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "The Sponsor has decided to focus their resources on other areas of therapy.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2020-10-31",
+         "trialSponsor": {
+          "name": "Rare Disease Research, LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "35c227d1-5b24-44b0-b5d3-f0f6b1c46bd5",
+         "source": "DailyMed",
+         "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35c227d1-5b24-44b0-b5d3-f0f6b1c46bd5",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0020121"
+           },
+           "diseaseFromSource": "muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d0m6er/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0M6ER",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "label/2019/211970s000lbl.pdf",
+         "source": "FDA",
+         "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/211970s000lbl.pdf",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02500381",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02500381",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2016-09-28",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03532542",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03532542",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "The trial was stopped to reduce the clinical trial burden on participants while ensuring continued treatment via a post-trial access program with commercially available casimersen and golodirsen. Study was not terminated due to safety concerns.",
+         "trialStopReasonCategories": [
+          "Study_Design"
+         ],
+         "trialStartDate": "2018-08-02",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d0ad5s/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0AD5S",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04179409",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04179409",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2020-02-18",
+         "trialSponsor": {
+          "name": "Kevin Flanigan"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02310906",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02310906",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1_2",
+         "trialPhase": "PHASE1/PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2015-01-13",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "golodirsen",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/GOLODIRSEN/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct06606340",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06606340",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "ENROLLING_BY_INVITATION",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-01-07",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "c73604eb9a58659fb70b08c675037818015c846525e42cf316f6c409bd00ec59",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL2108735",
+        "name": "DRISAPERSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "Drisapersen"
+         },
+         {
+          "label": "GSK-2402968"
+         },
+         {
+          "label": "GSK-2402968A"
+         },
+         {
+          "label": "GSK2402968"
+         },
+         {
+          "label": "GSK2402968A"
+         },
+         {
+          "label": "Gsk 2402968a"
+         },
+         {
+          "label": "H51AON23"
+         },
+         {
+          "label": "PRO-051"
+         },
+         {
+          "label": "PRO051"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 1,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d0pe2l/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0PE2L",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "d0x4db/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0X4DB",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01254019",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01254019",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2010-12-02",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01480245",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01480245",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "The study was formally terminated given that GSK is not submitting an application for regulatory approval for drisapersen in Duchenne Muscular Dystrophy.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2011-09-30",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01803412",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01803412",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-05-01",
+         "trialSponsor": {
+          "name": "BioMarin Pharmaceutical"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01890798",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01890798",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "WITHDRAWN",
+         "trialWhyStopped": "Rights for the further development of drisapersen have been transferred to Prosensa. Therefore this study has been cancelled before enrollment.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2014-01-31",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01153932",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01153932",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2010-09-30",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01462292",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01462292",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2011-10-26",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01910649",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01910649",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Regulatory approval was not obtained for drisapersen, hence BioMarin is stopping the development of all exon skipping oligonucleotides in DMD.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2008-03-31",
+         "trialSponsor": {
+          "name": "BioMarin Pharmaceutical"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct01128855",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01128855",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2010-07-12",
+         "trialSponsor": {
+          "name": "GlaxoSmithKline"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02636686",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02636686",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "NO_LONGER_AVAILABLE",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": "BioMarin Pharmaceutical"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "e3beaf6ec2553517074e745ff42437db04c22f61e2ffe2a8758afcec552b72a2",
+       "maxClinicalStage": "APPROVAL",
+       "drug": {
+        "id": "CHEMBL4297566",
+        "name": "CASIMERSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "APPROVAL",
+        "synonyms": [
+         {
+          "label": "Casimersen"
+         },
+         {
+          "label": "EXON-45: NG-12-0064"
+         },
+         {
+          "label": "SRP-4045"
+         }
+        ],
+        "tradeNames": [
+         {
+          "label": "Amondys 45"
+         }
+        ],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "POSITIVE MODULATOR",
+           "mechanismOfAction": "Dystrophin pre-mRNA positive modulator",
+           "targets": [
+            {
+             "id": "ENSG00000198947"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 2,
+         "rows": [
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0020121",
+            "name": "muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "APPROVAL",
+           "disease": {
+            "id": "MONDO_0010679",
+            "name": "Duchenne muscular dystrophy",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000006",
+              "name": "musculoskeletal or connective tissue disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d0r1gj/duchenne dystrophy",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0R1GJ",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "duchenne dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "e9e5fd44-eeda-4580-bba1-a734828bbcc3",
+         "source": "DailyMed",
+         "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e9e5fd44-eeda-4580-bba1-a734828bbcc3",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0020121"
+           },
+           "diseaseFromSource": "muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "label/2021/213026lbl.pdf",
+         "source": "FDA",
+         "url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2021/213026lbl.pdf",
+         "type": "INDICATION",
+         "clinicalStage": "APPROVAL",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02500381",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02500381",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2016-09-28",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct03532542",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03532542",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "The trial was stopped to reduce the clinical trial burden on participants while ensuring continued treatment via a post-trial access program with commercially available casimersen and golodirsen. Study was not terminated due to safety concerns.",
+         "trialStopReasonCategories": [
+          "Study_Design"
+         ],
+         "trialStartDate": "2018-08-02",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct04179409",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04179409",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2020-02-18",
+         "trialSponsor": {
+          "name": "Kevin Flanigan"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct02530905",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02530905",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2015-10-08",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "Duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "casimersen",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/CASIMERSEN/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        },
+        {
+         "id": "nct06606340",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06606340",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": "ENROLLING_BY_INVITATION",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-01-07",
+         "trialSponsor": {
+          "name": "Sarepta Therapeutics, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0010679"
+           },
+           "diseaseFromSource": "duchenne muscular dystrophy"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

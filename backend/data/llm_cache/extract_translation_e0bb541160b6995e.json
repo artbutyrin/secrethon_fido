@@ -1,0 +1,86 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3646,
+  "output_tokens": 1928,
+  "latency_ms": 14949,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Duchenne muscular dystrophy\", \"target\": \"DMD\", \"drugs\": [\"CASIMERSEN\", \"DRISAPERSEN\", \"ETEPLIRSEN\", \"GOLODIRSEN\", \"SUVODIRSEN\", \"VILTOLARSEN\"], \"documents\": [{\"id\": \"label:1ffff9a8-6d6a-4dcb-8493-1b6cc3a5d123\", \"about_drug\": \"VILTOLARSEN\", \"text\": \"MECHANISM OF ACTION: 12.1 Mechanism of Action VILTEPSO is designed to bind to exon 53 of dystrophin pre-mRNA resulting in exclusion of this exon during mRNA processing in patients with genetic mutations that are amenable to exon 53 skipping. Exon 53 skipping is intended to allow for production of an internally truncated dystrophin protein in patients with genetic mutations that are amenable to exon 53 skipping.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics After treatment with VILTEPSO 80 mg/kg once weekly, all patients evaluated (N=8) were found to produce mRNA for a truncated dystrophin protein, as measured by reverse transcription polymerase chain reaction (RT-PCR), and demonstrated exon 53 skipping, as measured by DNA sequence analysis. In Study 1, all patients who received VILTEPSO 80 mg/kg once weekly for 20 to 24 weeks showed an increase from baseline in dystrophin protein expression, as quantified by a validated Western blot method (mean 5.3%; median 3.8%; range 0.7% to 13.9% of normal levels when normalized to myosin heavy chain; p-value 0.01). Mass spectrometry, immunofluorescence staining, and RT-PCR results were supportive of the Western blot data [see Clinical Studies ( 14 )]. Expected localization of truncated dystrophin to the sarcolemma in muscle fibers of patients treated with viltolarsen was confirmed by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of viltolarsen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 1.25 mg/kg/week (0.016 times the recommended dosage) to 80 mg/kg/week (the recommended dosage). Viltolarsen exposure increased proportionally with dose, with minimal accumulation with once-weekly dosing. Inter-subject variability (as %CV) for C max and AUC ranged from 16% to 27% respectively. VILTEPSO is administered as an IV infusion over 60 minutes. Bioavailability is assumed to be 100%, and median T max was around 1 hour (end of infusion). Distribution The mean viltolarsen steady-state volume of distribution was 300 mL/kg (%CV=14 at a dose of 80 mg/kg. Viltolarsen plasma protein binding ranged from 39% to 40% and is not concentration dependent. Elimination Metabolism Data from in vitro metabolism indicate that viltolarsen is metabolically stable. No metabolites were detected in plasma or urine. Excretion VILTEPSO is excreted mainly as an unchanged drug in the urine. Viltolarsen elimination half-life was 2.5 (%CV=8) hours, and plasma clearance was 217 mL/hr/kg (%CV=22). Specific Populations Age, Sex & Race The pharmacokinetics of viltolarsen have been evaluated only in male pediatric DMD patients.There is no experience with VILTEPSO in patients 65 years of age or older. No marked differences in any PK parameters were observed between White and Asian patients. Patients with Renal or Hepatic Impairment VILTEPSO has not been studied in patients with renal or hepatic impairment. Viltolarsen was found to be metabolically stable, and hepatic metabolism does not contribute to the elimination of viltolarsen. In addition, viltolarsen was mainly excreted unchanged in the urine. Viltolarsen is eliminated renally, and renal impairment is expected to result in increasing exposure of viltolarsen. However, because of the effect of reduced skeletal muscle mass on creatinine measurements in DMD patients, no specific dosage adjustment can be recommended for DMD patients with renal impairment based on glomerular filtration rate estimated by serum creatinine [see Use in Specific Populations ( 8.6 )]. In Vitro Drug Interaction Studies Viltolarsen did not inhibit CYP3A4/5, CYP1A2, CYP2A6, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP2E1, UGT1A1, or UGT2B7. Viltolarsen did not induce CYP1A2, CYP2B6, or CYP3A4. Viltolarsen is not metabolized by CYP enzymes and is not a substrate of transporters BCRP, BSEP, MDR1, OAT1, OAT3, OCT1, OCT2, MATE1, or MATE2-K. Viltolarsen did not inhibit the transporters tested (OATP1B1, OATP1B3, OAT3, BCRP, MDR1, BSEP, OAT1, OCT1, OCT2, MATE1, and MATE2-K). Based on in vitro data, viltolarsen has a low potential for drug-drug interactions with major CYP enzymes and drug transporters in humans.\\nCLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action VILTEPSO is designed to bind to exon 53 of dystrophin pre-mRNA resulting in exclusion of this exon during mRNA processing in patients with genetic mutations that are amenable to exon 53 skipping. Exon 53 skipping is intended to allow for production of an internally truncated dystrophin protein in patients with genetic mutations that are amenable to exon 53 skipping. 12.2 Pharmacodynamics After treatment with VILTEPSO 80 mg/kg once weekly, all patients evaluated (N=8) were found to produce mRNA for a truncated dystrophin protein, as measured by reverse transcription polymerase chain reaction (RT-PCR), and demonstrated exon 53 skipping, as measured by DNA sequence analysis. In Study 1, all patients who received VILTEPSO 80 mg/kg once weekly for 20 to 24 weeks showed an increase from baseline in dystrophin protein expression, as quantified by a validated Western blot method (mean 5.3%; median 3.8%; range 0.7% to 13.9% of normal levels when normalized to myosin heavy chain; p-value 0.01). Mass spectrometry, immunofluorescence staining, and RT-PCR results were supportive of the Western blot data [see Clinical Studies ( 14 )]. Expected localization of truncated dystrophin to the sarcolemma in muscle fibers of patients treated with viltolarsen was confirmed by immunofluorescence staining. 12.3 Pharmacokinetics The pharmacokinetics of viltolarsen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 1.25 mg/kg/week (0.016 times the recommended dosage) to 80 mg/kg/week (the recommended dosage). Viltolarsen exposure increased proportionally with dose, with minimal accumulation with once-weekly dosing. Inter-subject variability (as %CV) for C max and AUC ranged from 16% to 27% respectively. VILTEPSO is administered as an IV infusion over 60 minutes. Bioavailability is assumed to be 100%, and median T max was around 1 hour (end of infusion). Distribution The mean viltolarsen steady-state volume of distribution was 300 mL/kg (%CV=14 at a dose of 80 mg/kg. Viltolarsen plasma protein binding ranged from 39% to 40% and is not concentration dependent. Elimination Metabolism Data from in vitro metabolism indicate that viltolarsen is metabolically stable. No metabolites were detected in plasma or urine. Excretion VILTEPSO is excreted mainly as an unchanged drug in the urine. Viltolarsen elimination half-life was 2.5 (%CV=8) hours, and plasma clearance was 217 mL/hr/kg (%CV=22). Specific Populations Age, Sex & Race The pharmacokinetics of viltolarsen have been evaluated only in male pediatric DMD patients.There is no experience with VILTEPSO in patients 65 years of age or older. No marked differences in any PK parameters were observed between White and Asian patients. Patients with Renal or Hepatic Impairment VILTEPSO has not been studied in patients with renal or hepatic impairment. Viltolarsen was found to be metabolically stable, and hepatic metabolism does not contribute to the elimination of viltolarsen. In addition, viltolarsen was mainly excreted unchanged in the urine. Viltolarsen is eliminated renally, and renal impairment is expected to result in increasing exposure of viltolarsen. However, because of the effect of reduced skeletal muscle mass on creatinine measurements in DMD patients, no specific dosage adjustment can be recommended for DMD patients with renal impairment based on glomerular filtration rate estimated by serum creatinine [see Use in Specific Populations ( 8.6 )]. In Vitro Drug Interaction Studies Viltolarsen did not inhibit CYP3A4/5, CYP1A2, CYP2A6, CYP2B6, CYP2C8, CYP2C9, CYP2C19, CYP2D6, CYP2E1, UGT1A1, or UGT2B7. Viltolarsen did not induce CYP1A2, CYP2B6, or CYP3A4. Viltolarsen is not metabolized by CYP enzymes and is not a substrate of transporters BCRP, BSEP, MDR1, OAT1, OAT3, OCT1, OCT2, MATE1, or MATE2-K. Viltolarsen did not inhibit the transporters tested (OATP1B1, OATP1B3, OAT3, BCRP, MDR1, BSEP, OAT1, OCT1, OCT2, MATE1, and MATE2-K). Based on in vitro data, viltolarsen has a low potential for drug-drug interactions with major CYP enzymes and drug transporters in humans.\"}, {\"id\": \"pmid:34909800\", \"about_drug\": \"CASIMERSEN\", \"text\": \"Casimersen for Duchenne muscular dystrophy.. Duchenne muscular dystrophy (DMD) is a genetic disorder affecting 1 in 5,000 males which causes progressive muscle deterioration, loss of mobility and eventual death, with an average lifespan of around 25 years. While no cure currently exists for DMD, a novel treatment known as antisense-mediated exon skipping therapy has shown great promise. Exon skipping therapy induces the skipping of mutated exons, restoring the reading frame in dystrophin transcripts and resulting in a truncated but partially functional protein product. In February 2021, Sarepta Therapeutics received accelerated Food and Drug Administration (FDA) approval for their new antisense oligonucleotide, casimersen (brand name Amondys 45). Casimersen targets exon 45 of the dystrophin gene and is expected to treat ~8% of the DMD patient population. The continued approval of this drug will be dependent on satisfactory clinical results from an ongoing phase III trial. This article summarizes the preclinical and clinical data currently available for casimersen, emphasizing pharmacokinetics and safety.\"}, {\"id\": \"pmid:34105177\", \"about_drug\": \"CASIMERSEN\", \"text\": \"Safety, tolerability, and pharmacokinetics of casimersen in patients with Duchenne muscular dystrophy amenable to exon 45 skipping: A randomized, double-blind, placebo-controlled, dose-titration trial.. INTRODUCTION/AIMS: Duchenne muscular dystrophy (DMD) is caused by mutations in the DMD gene resulting in the absence of dystrophin. Casimersen is a phosphorodiamidate morpholino oligomer designed to bypass frameshift DMD mutations and produce internally truncated, yet functional, dystrophin protein in patients amenable to exon 45 skipping. Our primary study objective was to evaluate safety and tolerability of casimersen; the secondary objective was to characterize the plasma pharmacokinetics. METHODS: This multicenter, phase 1/2 trial enrolled 12 participants (aged 7-21 years, who had limited ambulation or were nonambulatory) and comprised a 12-week, double-blind dose titration, then an open-label extension for up to 132 weeks. During dose titration, participants were randomized 2:1 to weekly casimersen infusions at escalating doses of 4, 10, 20, and 30 mg/kg (≥2 weeks per dose), or placebo. RESULTS: Participants received casimersen for a mean 139.6 weeks. Treatment-emergent adverse events (TEAEs) occurred in all casimersen- and placebo-treated participants and were mostly mild (over 91.4%) and unrelated to casimersen or its dose. There were no deaths, dose reductions, abnormalities in laboratory parameters or vital signs, or casimersen-related serious AEs. Casimersen plasma concentration increased with dose and declined similarly for all dose levels over 24 hours postinfusion. All pharmacokinetic parameters were similar at weeks 7 and 60. DISCUSSION: Casimersen was well tolerated in participants with DMD amenable to exon 45 skipping. Most TEAEs were mild, nonserious, and unrelated to casimersen. Plasma exposure was dose proportional with no suggestion of plasma accumulation. These results support further studies of casimersen in this population.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "label:1ffff9a8-6d6a-4dcb-8493-1b6cc3a5d123",
+    "findings": [
+     {
+      "drug": "VILTOLARSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "all patients evaluated (N=8) were found to produce mRNA for a truncated dystrophin protein, as measured by reverse transcription polymerase chain reaction (RT-PCR), and demonstrated exon 53 skipping"
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "all patients who received VILTEPSO 80 mg/kg once weekly for 20 to 24 weeks showed an increase from baseline in dystrophin protein expression"
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Expected localization of truncated dystrophin to the sarcolemma in muscle fibers of patients treated with viltolarsen was confirmed by immunofluorescence staining."
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Viltolarsen exposure increased proportionally with dose, with minimal accumulation with once-weekly dosing."
+     },
+     {
+      "drug": "VILTOLARSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Viltolarsen elimination half-life was 2.5 (%CV=8) hours"
+     }
+    ]
+   },
+   {
+    "id": "pmid:34909800",
+    "findings": []
+   },
+   {
+    "id": "pmid:34105177",
+    "findings": [
+     {
+      "drug": "CASIMERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Casimersen plasma concentration increased with dose and declined similarly for all dose levels over 24 hours postinfusion."
+     },
+     {
+      "drug": "CASIMERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "All pharmacokinetic parameters were similar at weeks 7 and 60."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,3260 @@
+{
+ "trials": [
+  {
+   "nct": "NCT02245737",
+   "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility",
+   "status": "TERMINATED",
+   "stage": "PHASE_2_3",
+   "sponsor": "AstraZeneca",
+   "start": "2014-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT02245737",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LANABECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "LANABECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT02322021",
+   "why_stopped": "This study was terminated early by the sponsor on the recommendation of an independent data safety monitoring board following review of unblinded data from the Phase 3 studies E2609-G000-301 (NCT02956486) and E2609-G000-302 (NCT03036280).",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Eisai Inc.",
+   "start": "2014-11-26",
+   "url": "https://clinicaltrials.gov/study/NCT02322021",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0001627"
+   ],
+   "in_disease": false,
+   "drugs": [
+    "ELENBECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "ELENBECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT02569398",
+   "why_stopped": "Change in benefit-risk profile for individuals with early sporadic Alzheimer Disease because of elevations in liver enzymes in subjects receiving atabecestat",
+   "status": "TERMINATED",
+   "stage": "PHASE_2_3",
+   "sponsor": "Janssen Research & Development, LLC",
+   "start": "2015-10-29",
+   "url": "https://clinicaltrials.gov/study/NCT02569398",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ATABECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "ATABECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT02783573",
+   "why_stopped": "An independent assessment concluded the trial was not likely to meet the primary endpoint upon completion and therefore, trial stopped for futility.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "AstraZeneca",
+   "start": "2016-07-01",
+   "url": "https://clinicaltrials.gov/study/NCT02783573",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LANABECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "LANABECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT02956486",
+   "why_stopped": "Due to an unfavorable risk-benefit ratio including no evidence of potential efficacy, and the adverse event profile of E2609 being worse than placebo.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Eisai Co., Ltd.",
+   "start": "2016-10-20",
+   "url": "https://clinicaltrials.gov/study/NCT02956486",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ELENBECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "ELENBECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT02972658",
+   "why_stopped": "As the feeder study (AZES) was stopped for futility after an independent assessment, this trial was also stopped.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "AstraZeneca",
+   "start": "2017-03-15",
+   "url": "https://clinicaltrials.gov/study/NCT02972658",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LANABECESTAT"
+   ],
+   "same_mechanism_drugs": [
+    "LANABECESTAT"
+   ]
+  },
+  {
+   "nct": "NCT00165750",
+   "why_stopped": "Lack of patients to enroll.",
+   "status": "TERMINATED",
+   "stage": "PHASE_4",
+   "sponsor": "Eisai Korea Inc.",
+   "start": "2005-03-31",
+   "url": "https://clinicaltrials.gov/study/NCT00165750",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00174382",
+   "why_stopped": "See Detailed Description",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2005-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT00174382",
+   "ot_categories": [
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004648",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00322036",
+   "why_stopped": "Myriad has discontinued the development of Flurizan.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Myrexis Inc.",
+   "start": "2006-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT00322036",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TARENFLURBIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00334568",
+   "why_stopped": "Slow recruitment",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "GlaxoSmithKline",
+   "start": "2004-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT00334568",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ROSIGLITAZONE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00369603",
+   "why_stopped": "Reduced access to AchEI medication-naive mild AD patients.",
+   "status": "TERMINATED",
+   "stage": "PHASE_4",
+   "sponsor": "Duke University",
+   "start": "2006-10-31",
+   "url": "https://clinicaltrials.gov/study/NCT00369603",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL",
+    "GALANTAMINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00380276",
+   "why_stopped": "Myriad has discontinued the development of Flurizan.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Myrexis Inc.",
+   "start": "2006-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT00380276",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TARENFLURBIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00490568",
+   "why_stopped": "Based on preliminary parent study results",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "GlaxoSmithKline",
+   "start": "2007-08-08",
+   "url": "https://clinicaltrials.gov/study/NCT00490568",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ROSIGLITAZONE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00500500",
+   "why_stopped": "Inability to recruit sufficient number of patients",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Ipsen",
+   "start": "2005-07-31",
+   "url": "https://clinicaltrials.gov/study/NCT00500500",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GINKGO"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00550420",
+   "why_stopped": "Based on preliminary parent study results",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "GlaxoSmithKline",
+   "start": "2007-10-01",
+   "url": "https://clinicaltrials.gov/study/NCT00550420",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ROSIGLITAZONE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00602680",
+   "why_stopped": "Insufficient expected benefit risk",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Sanofi",
+   "start": "2008-01-31",
+   "url": "https://clinicaltrials.gov/study/NCT00602680",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SSR180711"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00649220",
+   "why_stopped": "Study terminated due to too slow enrollment",
+   "status": "TERMINATED",
+   "stage": "PHASE_4",
+   "sponsor": "Merz Pharmaceuticals GmbH",
+   "start": "2008-07-31",
+   "url": "https://clinicaltrials.gov/study/NCT00649220",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "MEMANTINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00667810",
+   "why_stopped": "The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2008-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT00667810",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BAPINEUZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00676143",
+   "why_stopped": "The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2008-01-31",
+   "url": "https://clinicaltrials.gov/study/NCT00676143",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BAPINEUZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00679627",
+   "why_stopped": "Due to a pre-specified imbalance of deaths between treatment groups, the DSMB recommended early termination of the trial",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Janssen Research & Development, LLC",
+   "start": "2008-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT00679627",
+   "ot_categories": [
+    "Safety_Sideeffects"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GALANTAMINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00704782",
+   "why_stopped": "The study was halted after a Phase 3 study of dimebon failed to show efficacy.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Medivation, Inc.",
+   "start": "2008-04-30",
+   "url": "https://clinicaltrials.gov/study/NCT00704782",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LATREPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00711204",
+   "why_stopped": "No patients were enrolled in the study.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_4",
+   "sponsor": "Eisai Inc.",
+   "start": "2008-01-31",
+   "url": "https://clinicaltrials.gov/study/NCT00711204",
+   "ot_categories": [
+    "Invalid_Reason"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00857233",
+   "why_stopped": "Please see explanation in the Detailed Description field.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "H. Lundbeck A/S",
+   "start": "2004-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT00857233",
+   "ot_categories": [
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "MEMANTINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00895895",
+   "why_stopped": "See termination reason in detailed description.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Pfizer",
+   "start": "2009-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT00895895",
+   "ot_categories": [
+    "Invalid_Reason",
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CERLAPIRDINE",
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00912288",
+   "why_stopped": "See termination reason in detailed description.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2009-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT00912288",
+   "ot_categories": [
+    "Invalid_Reason",
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LATREPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00916617",
+   "why_stopped": "The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Pfizer",
+   "start": "2009-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT00916617",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BAPINEUZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00939783",
+   "why_stopped": "See termination reason in detailed description.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2009-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT00939783",
+   "ot_categories": [
+    "Invalid_Reason",
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LATREPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00996918",
+   "why_stopped": "The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2009-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT00996918",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BAPINEUZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT00998764",
+   "why_stopped": "The study was terminated on August 6, 2012, because 2 large Phase 3 studies showed no clinical benefit. This decision was not based on any new safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2009-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT00998764",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BAPINEUZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01028911",
+   "why_stopped": "This study terminated 27Apr2010 due to slow recruitment and the need to use the existing information to determine dosing for another study.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "Pfizer",
+   "start": "2009-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT01028911",
+   "ot_categories": [
+    "Another_Study",
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "PF-03654746"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01066546",
+   "why_stopped": "See termination reason in detailed description.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Pfizer",
+   "start": "2010-04-30",
+   "url": "https://clinicaltrials.gov/study/NCT01066546",
+   "ot_categories": [
+    "Invalid_Reason",
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LATREPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01082965",
+   "why_stopped": "The study was terminated because of slow enrollment. The decision to terminate the trial was not based on any safety or efficacy concerns.",
+   "status": "TERMINATED",
+   "stage": "UNKNOWN",
+   "sponsor": "Pfizer",
+   "start": "2010-07-31",
+   "url": "https://clinicaltrials.gov/study/NCT01082965",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01117948",
+   "why_stopped": "Lack of Efficacy",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "JSW Lifesciences",
+   "start": "2009-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT01117948",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LORNOXICAM"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01125683",
+   "why_stopped": "Poor recruitment.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "AstraZeneca",
+   "start": "2010-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT01125683",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "AZD1446",
+    "DONEPEZIL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01127633",
+   "why_stopped": "Solanezumab did not meet the primary endpoint in study H8A-MC-LZAX.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Eli Lilly and Company",
+   "start": "2010-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT01127633",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SOLANEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01181921",
+   "why_stopped": "The recruitment rate was very low (one screening failure and one early withdrawal patient)",
+   "status": "TERMINATED",
+   "stage": "PHASE_4",
+   "sponsor": "Janssen-Cilag, S.A.",
+   "start": "2011-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT01181921",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GALANTAMINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01211782",
+   "why_stopped": "Study never started. Study was redesgined.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2_3",
+   "sponsor": "Cerecin",
+   "start": null,
+   "url": "https://clinicaltrials.gov/study/NCT01211782",
+   "ot_categories": [
+    "Invalid_Reason",
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TRICAPRILIN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01255163",
+   "why_stopped": "AstraZeneca withdrew support for the study.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "National Institute on Aging (NIA)",
+   "start": "2010-11-21",
+   "url": "https://clinicaltrials.gov/study/NCT01255163",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "EXENATIDE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01345864",
+   "why_stopped": "See termination reason in detailed description.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "Pfizer",
+   "start": "2011-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT01345864",
+   "ot_categories": [
+    "Invalid_Reason",
+    "No_Context"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL",
+    "PF-04995274"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01362686",
+   "why_stopped": "Low study accrual caused the study to be ended early.",
+   "status": "TERMINATED",
+   "stage": "UNKNOWN",
+   "sponsor": "Indiana University",
+   "start": "2011-04-30",
+   "url": "https://clinicaltrials.gov/study/NCT01362686",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DONEPEZIL",
+    "GALANTAMINE",
+    "RIVASTIGMINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01524887",
+   "why_stopped": "The study was terminated because the first Phase 3 did not demonstrate efficacy on the co-primary endpoints. The known safety profile remained unchanged.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Baxalta now part of Shire",
+   "start": "2012-01-23",
+   "url": "https://clinicaltrials.gov/study/NCT01524887",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "HUMAN IMMUNOGLOBULIN G"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01560585",
+   "why_stopped": "Adverse events in 2/3 participants; study was halted but not restarted after this due to insufficnet funds as well",
+   "status": "TERMINATED",
+   "stage": "PHASE_1_2",
+   "sponsor": "University Hospitals Cleveland Medical Center",
+   "start": "2012-04-30",
+   "url": "https://clinicaltrials.gov/study/NCT01560585",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ISOTRETINOIN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01561430",
+   "why_stopped": "Study terminated due to abnormal liver biochemical tests in some participants.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1_2",
+   "sponsor": "Eli Lilly and Company",
+   "start": "2012-03-31",
+   "url": "https://clinicaltrials.gov/study/NCT01561430",
+   "ot_categories": [
+    "Safety_Sideeffects"
+   ],
+   "diseases": [
+    "HP_0100543",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LY-2886721"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01626391",
+   "why_stopped": "This study has been terminated for administrative reasons only.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "TauRx Therapeutics Ltd",
+   "start": "2012-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT01626391",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "HYDROMETHYLTHIONINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01676935",
+   "why_stopped": "Data obtained from the M11-427 study is not critical to the continued evaluation of ABT-126.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "AbbVie (prior sponsor, Abbott)",
+   "start": "2012-08-31",
+   "url": "https://clinicaltrials.gov/study/NCT01676935",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ABT-126"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01677572",
+   "why_stopped": "Study was discontinued based on futility analysis conducted on Phase 3 trials (NCT02477800 and NCT02484547) and not based on safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "Biogen",
+   "start": "2012-10-05",
+   "url": "https://clinicaltrials.gov/study/NCT01677572",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01690195",
+   "why_stopped": "Data obtained from the M11-428 study is not critical to the continued evaluation of ABT-126.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "AbbVie (prior sponsor, Abbott)",
+   "start": "2012-09-30",
+   "url": "https://clinicaltrials.gov/study/NCT01690195",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ABT-126"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01712074",
+   "why_stopped": "The study was terminated October 23, 2015 as pre-specified, interim analysis futility criteria were met. The termination was not due to safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Pfizer",
+   "start": "2012-11-30",
+   "url": "https://clinicaltrials.gov/study/NCT01712074",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "PF-05212377"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01736579",
+   "why_stopped": "The study was terminated because the first Phase 3 did not demonstrate efficacy on the co-primary endpoints. The known safety profile remained unchanged.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Baxalta now part of Shire",
+   "start": "2012-11-29",
+   "url": "https://clinicaltrials.gov/study/NCT01736579",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "HUMAN IMMUNOGLOBULIN G"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01852110",
+   "why_stopped": "Stage 1 interim analysis of efficacy met the criteria for early trial termination (futility). The trial was terminated at Stage 1; did not proceed to Stage 2.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Merck Sharp & Dohme LLC",
+   "start": "2013-10-22",
+   "url": "https://clinicaltrials.gov/study/NCT01852110",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "MK-7622"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01883648",
+   "why_stopped": "Funding limitations and enrollment was too low.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2_3",
+   "sponsor": "University of South Florida",
+   "start": "2013-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT01883648",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "WAX, EMULSIFYING"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01900665",
+   "why_stopped": "Solanezumab did not meet the study's primary endpoint.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Eli Lilly and Company",
+   "start": "2013-07-31",
+   "url": "https://clinicaltrials.gov/study/NCT01900665",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0001627",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SOLANEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01969123",
+   "why_stopped": "Study has been suspended due to clinical hold.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "FORUM Pharmaceuticals Inc",
+   "start": "2013-10-31",
+   "url": "https://clinicaltrials.gov/study/NCT01969123",
+   "ot_categories": [
+    "Invalid_Reason"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ENCENICLINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT01969136",
+   "why_stopped": "Study has been suspended due to clinical hold.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "FORUM Pharmaceuticals Inc",
+   "start": "2013-10-31",
+   "url": "https://clinicaltrials.gov/study/NCT01969136",
+   "ot_categories": [
+    "Invalid_Reason"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ENCENICLINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02004392",
+   "why_stopped": "Study has been suspended due to clinical hold.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "FORUM Pharmaceuticals Inc",
+   "start": "2014-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT02004392",
+   "ot_categories": [
+    "Invalid_Reason"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ENCENICLINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02080364",
+   "why_stopped": "Not due to safety but due to a lack of efficacy at the 5 mg azeliragon dose.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "vTv Therapeutics",
+   "start": "2015-04-30",
+   "url": "https://clinicaltrials.gov/study/NCT02080364",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "AZELIRAGON"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02085265",
+   "why_stopped": "Lack of recruitment.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Sunnybrook Health Sciences Centre",
+   "start": "2014-03-31",
+   "url": "https://clinicaltrials.gov/study/NCT02085265",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "PERINDOPRIL",
+    "TELMISARTAN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02221947",
+   "why_stopped": "Part 2 of study replaced by NTRP-101-202, assessing 3 doses of bryostatin.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1_2",
+   "sponsor": "Neurotrope Bioscience, Inc.",
+   "start": "2014-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT02221947",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BRYOSTATIN 1"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02246075",
+   "why_stopped": "Forum has decided not to proceed with this study at this time.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "FORUM Pharmaceuticals Inc",
+   "start": "2015-07-31",
+   "url": "https://clinicaltrials.gov/study/NCT02246075",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ENCENICLINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02327182",
+   "why_stopped": "This study was terminated due to the benefit-risk balance of MT-4666.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Tanabe Pharma Corporation",
+   "start": "2014-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT02327182",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ENCENICLINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02477800",
+   "why_stopped": "Study was discontinued based on futility analysis done and not based on safety concerns. Follow-up visits and closing out study activities are completed",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Biogen",
+   "start": "2015-08-13",
+   "url": "https://clinicaltrials.gov/study/NCT02477800",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02484547",
+   "why_stopped": "Study was discontinued based on futility analysis done and not based on safety concerns. Follow-up visits and closing out study activities are completed",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Biogen",
+   "start": "2015-09-15",
+   "url": "https://clinicaltrials.gov/study/NCT02484547",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02500784",
+   "why_stopped": "Funding ran out before study started, prior PI left institution.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "Palo Alto Veterans Institute for Research",
+   "start": "2023-01-31",
+   "url": "https://clinicaltrials.gov/study/NCT02500784",
+   "ot_categories": [
+    "Business_Administrative",
+    "Study_Staff_Moved"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "FORMOTEROL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02503501",
+   "why_stopped": "Study will not have power to show a difference between groups.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "HealthPartners Institute",
+   "start": "2015-09-28",
+   "url": "https://clinicaltrials.gov/study/NCT02503501",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "INSULIN GLULISINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02586909",
+   "why_stopped": "Intepirdine did't meet primary efficacy endpoints in lead-in study RVT-101-3001",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Axovant Sciences Ltd.",
+   "start": "2016-04-26",
+   "url": "https://clinicaltrials.gov/study/NCT02586909",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "INTEPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02614131",
+   "why_stopped": "New data suggests that insufficient target engagement would be achieved for efficacy.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "Eli Lilly and Company",
+   "start": "2015-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT02614131",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "HP_0100543",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "LY-2599666",
+    "SOLANEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02667496",
+   "why_stopped": "Slow recruitment",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "Sanofi",
+   "start": "2016-11-30",
+   "url": "https://clinicaltrials.gov/study/NCT02667496",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SARGRAMOSTIM"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02670083",
+   "why_stopped": "This study was discontinued due to an interim analysis in this study, which indicated that Crenezumab was unlikely to meet its primary endpoint.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2016-03-22",
+   "url": "https://clinicaltrials.gov/study/NCT02670083",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CRENEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02760602",
+   "why_stopped": "Insufficient scientific evidence that solanezumab would likely demonstrate a meaningful benefit to participants with prodromal AD as defined by study protocol.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Eli Lilly and Company",
+   "start": "2016-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT02760602",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SOLANEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02769065",
+   "why_stopped": "Terminated prematurely as data from cohort no longer needed due to indication change.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "Takeda",
+   "start": "2016-05-05",
+   "url": "https://clinicaltrials.gov/study/NCT02769065",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TAK-071"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT02916056",
+   "why_stopped": "Not due to safety but due to a lack of efficacy at the 5 mg azeliragon dose.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "vTv Therapeutics",
+   "start": "2016-12-31",
+   "url": "https://clinicaltrials.gov/study/NCT02916056",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "AZELIRAGON"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03056495",
+   "why_stopped": "Insufficient Recruitment",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "German Center for Neurodegenerative Diseases (DZNE)",
+   "start": "2017-09-28",
+   "url": "https://clinicaltrials.gov/study/NCT03056495",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "VORINOSTAT"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03062449",
+   "why_stopped": "Stability of investigational product could not be established.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Aleksandra Stark",
+   "start": "2017-03-01",
+   "url": "https://clinicaltrials.gov/study/NCT03062449",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SERINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03114657",
+   "why_stopped": "This study was discontinued due to an interim analysis in the BN29552 study, which indicated that Crenezumab was unlikely to meet its primary endpoint.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2017-03-29",
+   "url": "https://clinicaltrials.gov/study/NCT03114657",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CRENEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03281694",
+   "why_stopped": "Drug supplier did not come through.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_1",
+   "sponsor": "University of Maryland, Baltimore",
+   "start": "2018-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT03281694",
+   "ot_categories": [
+    "Logistics_Resources"
+   ],
+   "diseases": [
+    "MONDO_0004975",
+    "MONDO_0005090"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "(+/-)NICOTINE",
+    "AVL-3288",
+    "NICOTINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03289143",
+   "why_stopped": "Study was terminated during Open Label Extension period because analyses of placebo-controlled Blinded portion of study did not show any evidence of clinical efficacy or modulation of accumulation of tau PET signal at any of the doses studied.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Genentech, Inc.",
+   "start": "2017-10-04",
+   "url": "https://clinicaltrials.gov/study/NCT03289143",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SEMORINEMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03307993",
+   "why_stopped": "The study was terminated for strategic reasons.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "H. Lundbeck A/S",
+   "start": "2017-09-22",
+   "url": "https://clinicaltrials.gov/study/NCT03307993",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "IDALOPIRDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03352557",
+   "why_stopped": "The study (NCT03352557) was terminated based on lack of efficacy following the placebo-controlled period readout.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Biogen",
+   "start": "2018-05-03",
+   "url": "https://clinicaltrials.gov/study/NCT03352557",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GOSURANEMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03443973",
+   "why_stopped": "Decision to terminate development of Gantenerumab for treatment of prodromal/mild/early stage Alzheimer's disease following results of a pre-planned analysis of the safety and efficacy of Gant in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2018-08-22",
+   "url": "https://clinicaltrials.gov/study/NCT03443973",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03444870",
+   "why_stopped": "Decision to terminate development of Gantenerumab for treatment of prodromal/mild/early-stage Alzheimer's disease following results of a pre-planned analysis of the safety and efficacy of Gant in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2018-06-06",
+   "url": "https://clinicaltrials.gov/study/NCT03444870",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03491150",
+   "why_stopped": "This study was discontinued due to an interim analysis in the BN29552 study, which indicated that Crenezumab was unlikely to meet its primary endpoint.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2018-04-11",
+   "url": "https://clinicaltrials.gov/study/NCT03491150",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CRENEZUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03639987",
+   "why_stopped": "Study was discontinued based on futility analysis conducted on Phase 3 trials (NCT02477800 and NCT02484547) and not based on safety concerns.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Biogen",
+   "start": "2018-12-20",
+   "url": "https://clinicaltrials.gov/study/NCT03639987",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03712787",
+   "why_stopped": "Discontinued because of lack of efficacy in the parent study (Study M15-566; NCT02880956).",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "AbbVie",
+   "start": "2019-03-22",
+   "url": "https://clinicaltrials.gov/study/NCT03712787",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TILAVONEMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03748303",
+   "why_stopped": "Study interrupted by COVID-19 pandemic and could not be restarted at current location. Study investigators determined that relocating and continuing the study under its original scope was not feasible given preliminary results from IM injections.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "University of Arizona",
+   "start": "2019-10-01",
+   "url": "https://clinicaltrials.gov/study/NCT03748303",
+   "ot_categories": [
+    "Covid19"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BREXANOLONE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03752294",
+   "why_stopped": "Investigator left institution",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_1",
+   "sponsor": "University of Rhode Island",
+   "start": "2019-05-31",
+   "url": "https://clinicaltrials.gov/study/NCT03752294",
+   "ot_categories": [
+    "Study_Staff_Moved"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DABIGATRAN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03919162",
+   "why_stopped": "It has been made the strategic decision to terminate the study. This decision to terminate the study early is not being made for safety reasons.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Vivoryon Therapeutics N.V.",
+   "start": "2021-11-15",
+   "url": "https://clinicaltrials.gov/study/NCT03919162",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "VAROGLUTAMSTAT"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03959553",
+   "why_stopped": "The study was stopped due to protocol amendment and project name change.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "GemVax & Kael",
+   "start": "2019-09-01",
+   "url": "https://clinicaltrials.gov/study/NCT03959553",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TERTOMOTIDE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT03980730",
+   "why_stopped": "for business reasons",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "vTv Therapeutics",
+   "start": "2019-06-27",
+   "url": "https://clinicaltrials.gov/study/NCT03980730",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "AZELIRAGON"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04187547",
+   "why_stopped": "Study replaced with a new study",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_3",
+   "sponsor": "Cerecin",
+   "start": "2022-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT04187547",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TRICAPRILIN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04205539",
+   "why_stopped": "Pending COVID-19 pandemic",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_1",
+   "sponsor": "Neurological Associates of West Los Angeles",
+   "start": "2021-12-10",
+   "url": "https://clinicaltrials.gov/study/NCT04205539",
+   "ot_categories": [
+    "Covid19"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DEXMEDETOMIDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04241068",
+   "why_stopped": "Sponsor's Decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Biogen",
+   "start": "2020-03-02",
+   "url": "https://clinicaltrials.gov/study/NCT04241068",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04263519",
+   "why_stopped": "Covid restrictions",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "Massachusetts General Hospital",
+   "start": "2021-12-01",
+   "url": "https://clinicaltrials.gov/study/NCT04263519",
+   "ot_categories": [
+    "Covid19"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TACROLIMUS"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04311515",
+   "why_stopped": "Samus Therapeutics company closure",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Samus Therapeutics, Inc.",
+   "start": "2020-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT04311515",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ICAPAMESPIB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04339413",
+   "why_stopped": "Decision to terminate development of Gantenerumab for treatment of prodromal/mild/early stage Alzheimer's disease following results of a pre-planned analysis of the safety and efficacy of Gant in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2020-05-22",
+   "url": "https://clinicaltrials.gov/study/NCT04339413",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04374253",
+   "why_stopped": "Decision to terminate development of Gantenerumab for treatment of prodromal/mild/early-stage Alzheimer's disease following results of a pre-planned analysis of the safety and efficacy of Gant in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2021-01-26",
+   "url": "https://clinicaltrials.gov/study/NCT04374253",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04464564",
+   "why_stopped": "The AVP-786 program was discontinued, the recruitment was stopped and all participants are no longer being examined or receiving intervention.",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Otsuka Pharmaceutical Development & Commercialization, Inc.",
+   "start": "2020-09-11",
+   "url": "https://clinicaltrials.gov/study/NCT04464564",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "HP_0000713",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "DEUDEXTROMETHORPHAN",
+    "QUINIDINE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04520412",
+   "why_stopped": "The quality of study was seriously affected by the COVID-19, so it was decided to suspend the trial and restart it at the right time.",
+   "status": "SUSPENDED",
+   "stage": "PHASE_3",
+   "sponsor": "Green Valley (Shanghai) Pharmaceuticals Co., Ltd.",
+   "start": "2020-10-27",
+   "url": "https://clinicaltrials.gov/study/NCT04520412",
+   "ot_categories": [
+    "Covid19"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GV-971"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04592341",
+   "why_stopped": "Decision to terminate development of Gantenerumab for treatment of prodromal/mild/early-stage Alzheimer's disease following results of a pre-planned analysis of the safety and efficacy of Gant in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2020-11-18",
+   "url": "https://clinicaltrials.gov/study/NCT04592341",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04619420",
+   "why_stopped": "Posdinemab did not achieve statistical significance in slowing clinical decline",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Janssen Research & Development, LLC",
+   "start": "2021-01-06",
+   "url": "https://clinicaltrials.gov/study/NCT04619420",
+   "ot_categories": [
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "POSDINEMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04678453",
+   "why_stopped": "The study was terminated after completing the dose escalation portion of the study. The expansion cohort was not initiated to conduct a global trial based on the approved US IND using a new manufacturing process.",
+   "status": "TERMINATED",
+   "stage": "PHASE_1",
+   "sponsor": "NKGen Biotech, Inc.",
+   "start": "2021-01-06",
+   "url": "https://clinicaltrials.gov/study/NCT04678453",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TROCULEUCEL"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04795466",
+   "why_stopped": "Terminated by Sponsor",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Novartis Pharmaceuticals",
+   "start": "2021-10-28",
+   "url": "https://clinicaltrials.gov/study/NCT04795466",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "HP_0100543",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CANAKINUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04798989",
+   "why_stopped": "Due to enrollment challenges",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Tisento Therapeutics",
+   "start": "2021-11-02",
+   "url": "https://clinicaltrials.gov/study/NCT04798989",
+   "ot_categories": [
+    "Insufficient_Enrollment"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ZAGOCIGUAT"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT04886063",
+   "why_stopped": "ATH-1017-AD-0203 was terminated after the Ph2/3 parent trial (LIFT-AD; NCT04488419) did not meet its primary endpoint, the GST score.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2_3",
+   "sponsor": "LeonaBio",
+   "start": "2021-06-30",
+   "url": "https://clinicaltrials.gov/study/NCT04886063",
+   "ot_categories": [
+    "Another_Study",
+    "Negative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "FOSGONIMETON"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05006781",
+   "why_stopped": "The trial was suspended due to the budget issue",
+   "status": "SUSPENDED",
+   "stage": "PHASE_2",
+   "sponsor": "Chang Gung Memorial Hospital",
+   "start": "2027-01-31",
+   "url": "https://clinicaltrials.gov/study/NCT05006781",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SODIUM BENZOATE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05026177",
+   "why_stopped": "Sponsor decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Cassava Sciences, Inc.",
+   "start": "2021-11-18",
+   "url": "https://clinicaltrials.gov/study/NCT05026177",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SIMUFILAM"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05256134",
+   "why_stopped": "Decision to terminate development of gantenerumab for treatment of people at risk for or at earliest stages of Alzheimer disease (AD) following results of a pre-planned analysis of safety & efficacy of gantenerumab in Graduate I&II (WN29922/WN39658).",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Hoffmann-La Roche",
+   "start": "2022-04-19",
+   "url": "https://clinicaltrials.gov/study/NCT05256134",
+   "ot_categories": [
+    "Another_Study"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05310071",
+   "why_stopped": "Sponsor's Decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Biogen",
+   "start": "2022-06-02",
+   "url": "https://clinicaltrials.gov/study/NCT05310071",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "ADUCANUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05332678",
+   "why_stopped": "Sponsor Decision",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_2",
+   "sponsor": "Seelos Therapeutics, Inc.",
+   "start": "2023-03-03",
+   "url": "https://clinicaltrials.gov/study/NCT05332678",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "TREHALOSE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05352763",
+   "why_stopped": "Sponsor Decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Cassava Sciences, Inc.",
+   "start": "2022-05-12",
+   "url": "https://clinicaltrials.gov/study/NCT05352763",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SIMUFILAM"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05522387",
+   "why_stopped": "Sponsor resource allocation",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Inmune Bio, Inc.",
+   "start": "2023-02-21",
+   "url": "https://clinicaltrials.gov/study/NCT05522387",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "PEGIPANERMIN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05575076",
+   "why_stopped": "sponsor decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Cassava Sciences, Inc.",
+   "start": "2022-11-07",
+   "url": "https://clinicaltrials.gov/study/NCT05575076",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SIMUFILAM"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT05858515",
+   "why_stopped": "This submission for the pilot study has been withdrawn as the full trial opened under a different NCT number before participants enrolled in the pilot.",
+   "status": "WITHDRAWN",
+   "stage": "PHASE_3",
+   "sponsor": "Vanderbilt University Medical Center",
+   "start": "2024-10-21",
+   "url": "https://clinicaltrials.gov/study/NCT05858515",
+   "ot_categories": [
+    "Uncategorised"
+   ],
+   "diseases": [
+    "HP_0100543",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "BARICITINIB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT06185543",
+   "why_stopped": "Company will improve study desig",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "NeuroSense Therapeutics Ltd.",
+   "start": "2023-11-19",
+   "url": "https://clinicaltrials.gov/study/NCT06185543",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CELECOXIB",
+    "CIPROFLOXACIN"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT06217146",
+   "why_stopped": "Part I: Open-label was completed.",
+   "status": "TERMINATED",
+   "stage": "UNKNOWN",
+   "sponsor": "M. H MediCane Ltd.",
+   "start": "2022-10-12",
+   "url": "https://clinicaltrials.gov/study/NCT06217146",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "HP_0000713",
+    "MONDO_0001627",
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "CANNABIDIOL",
+    "DRONABINOL",
+    "NABIXIMOLS"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT06304883",
+   "why_stopped": "Sponsor business decision",
+   "status": "TERMINATED",
+   "stage": "PHASE_3",
+   "sponsor": "Alzheon Inc.",
+   "start": "2024-04-02",
+   "url": "https://clinicaltrials.gov/study/NCT06304883",
+   "ot_categories": [
+    "Business_Administrative"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "VALILTRAMIPROSATE"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT06424236",
+   "why_stopped": "DIAN-TU announced the discontinuation of the DIAN-TU-001 OLE based on the status of the drug program and findings from an interim efficacy analysis and.",
+   "status": "TERMINATED",
+   "stage": "PHASE_2_3",
+   "sponsor": "Washington University School of Medicine",
+   "start": "2020-06-03",
+   "url": "https://clinicaltrials.gov/study/NCT06424236",
+   "ot_categories": [
+    "Regulatory"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "GANTENERUMAB"
+   ],
+   "same_mechanism_drugs": []
+  },
+  {
+   "nct": "NCT06833281",
+   "why_stopped": "patients treated on compassionate use program",
+   "status": "TERMINATED",
+   "stage": "PHASE_2",
+   "sponsor": "Spinogenix",
+   "start": "2025-03-25",
+   "url": "https://clinicaltrials.gov/study/NCT06833281",
+   "ot_categories": [
+    "Study_Design"
+   ],
+   "diseases": [
+    "MONDO_0004975"
+   ],
+   "in_disease": true,
+   "drugs": [
+    "SPG-302"
+   ],
+   "same_mechanism_drugs": []
+  }
+ ],
+ "labels": {
+  "labels": {
+   "NCT02245737": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02569398": [
+    {
+     "label": "safety",
+     "quote": "liver enzymes",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02783573": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02956486": [
+    {
+     "label": "efficacy",
+     "quote": "no evidence of potential efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "adverse event profile",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02972658": [
+    {
+     "label": "efficacy",
+     "quote": "futility",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02322021": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT00174382": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00322036": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00334568": [
+    {
+     "label": "enrollment",
+     "quote": "recruitment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00380276": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00490568": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00500500": [
+    {
+     "label": "enrollment",
+     "quote": "recruit",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00550420": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00602680": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00667810": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT00676143": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT00679627": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00704782": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT00857233": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00895895": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00912288": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00916617": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT00939783": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT00996918": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT00998764": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT01066546": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01117948": [
+    {
+     "label": "efficacy",
+     "quote": "Efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01125683": [
+    {
+     "label": "enrollment",
+     "quote": "recruitment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01127633": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01211782": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01255163": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01524887": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01626391": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01676935": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01690195": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01712074": [
+    {
+     "label": "efficacy",
+     "quote": "futility",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT01736579": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01852110": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01883648": [
+    {
+     "label": "enrollment",
+     "quote": "enrollment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01900665": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT01969123": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT01969136": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02004392": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02080364": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT02085265": [
+    {
+     "label": "enrollment",
+     "quote": "recruitment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02246075": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02327182": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02477800": [
+    {
+     "label": "efficacy",
+     "quote": "futility",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT02484547": [
+    {
+     "label": "efficacy",
+     "quote": "futility",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT02500784": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02503501": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02586909": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02667496": [
+    {
+     "label": "enrollment",
+     "quote": "recruitment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02670083": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT02760602": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT02916056": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT03062449": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT03114657": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03289143": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03352557": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03443973": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03444870": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03491150": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03639987": [
+    {
+     "label": "efficacy",
+     "quote": "futility",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT03712787": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT03919162": [
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": false,
+     "support": null,
+     "negated": true
+    }
+   ],
+   "NCT03959553": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT03980730": [
+    {
+     "label": "business",
+     "quote": "business reasons",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04187547": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04241068": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04263519": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04311515": [
+    {
+     "label": "business",
+     "quote": "company closure",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04339413": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT04374253": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT04464564": [
+    {
+     "label": "enrollment",
+     "quote": "recruitment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04520412": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04592341": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT04619420": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04795466": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04798989": [
+    {
+     "label": "enrollment",
+     "quote": "enrollment",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT04886063": [
+    {
+     "label": "efficacy",
+     "quote": "primary endpoint",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT05006781": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05026177": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05256134": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    },
+    {
+     "label": "safety",
+     "quote": "safety",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT05310071": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05332678": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05352763": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05522387": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05575076": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT05858515": [
+    {
+     "label": "enrollment",
+     "quote": "enrolled",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT06185543": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT06304883": [
+    {
+     "label": "business",
+     "quote": "business decision",
+     "verified": true,
+     "support": null
+    }
+   ],
+   "NCT06424236": [
+    {
+     "label": "efficacy",
+     "quote": "efficacy",
+     "verified": true,
+     "support": true
+    }
+   ],
+   "NCT06833281": [
+    {
+     "label": "unknown",
+     "quote": "",
+     "verified": true,
+     "support": null
+    }
+   ]
+  },
+  "errors": []
+ }
+}

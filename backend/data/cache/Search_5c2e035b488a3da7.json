@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "amyotrophic lateral sclerosis",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-09T11:59:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 371,
+    "hits": [
+     {
+      "id": "MONDO_0004976",
+      "name": "amyotrophic lateral sclerosis",
+      "entity": "disease",
+      "description": "Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by progressive muscular paralysis reflecting degeneration of motor neurons in the primary motor cortex, corticospinal tracts, brainstem and spinal cord.",
+      "score": 6756.1235
+     },
+     {
+      "id": "MONDO_0005144",
+      "name": "familial amyotrophic lateral sclerosis",
+      "entity": "disease",
+      "description": "An instance of amyotrophic lateral sclerosis that is caused by an inherited modification of the individual's genome.",
+      "score": 1950.5598
+     },
+     {
+      "id": "MONDO_0017593",
+      "name": "juvenile amyotrophic lateral sclerosis",
+      "entity": "disease",
+      "description": "Juvenile amyotrophic lateral sclerosis (JALS) is a very rare severe motor neuron disease characterized by progressive upper and lower motor neuron degeneration causing facial spasticity, dysarthria, and gait disorders with onset before 25 years of age.",
+      "score": 1632.5142
+     },
+     {
+      "id": "MONDO_0008780",
+      "name": "amyotrophic lateral sclerosis type 2, juvenile",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the ALS2 gene.",
+      "score": 1520.0071
+     },
+     {
+      "id": "MONDO_0011223",
+      "name": "amyotrophic lateral sclerosis type 4",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the SETX gene.",
+      "score": 1460.38
+     },
+     {
+      "id": "MONDO_0011196",
+      "name": "amyotrophic lateral sclerosis type 5",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the SPG11 gene.",
+      "score": 1339.621
+     },
+     {
+      "id": "MONDO_0018155",
+      "name": "lateral sclerosis",
+      "entity": "disease",
+      "description": "Primary lateral sclerosis (PLS) is an idiopathic non-familial motor neuron disease characterized by slowly progressive upper motor neuron dysfunction leading to spasticity, mild weakness in voluntary muscle movement, hyperreflexia, and loss of motor speech production.",
+      "score": 1152.1344
+     },
+     {
+      "id": "MONDO_0010459",
+      "name": "amyotrophic lateral sclerosis type 15",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the UBQLN2 gene.",
+      "score": 1133.2042
+     },
+     {
+      "id": "MONDO_0014181",
+      "name": "amyotrophic lateral sclerosis type 20",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the HNRNPA1 gene.",
+      "score": 1124.7367
+     },
+     {
+      "id": "MONDO_0012077",
+      "name": "amyotrophic lateral sclerosis type 8",
+      "entity": "disease",
+      "description": "Any amyotrophic lateral sclerosis in which the cause of the disease is a mutation in the VAPB gene.",
+      "score": 1115.8749
+     }
+    ]
+   }
+  }
+ }
+}

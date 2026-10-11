@@ -1,0 +1,9 @@
+{"_source": "data.cms.gov Medicare Part D (7e0b4365-...) and Part B (76a714ad-...) Spending by Drug, fetched 2026-10-09; Part D rows trimmed to the fields used",
+ "Evolocumab": [
+  {"part": "D", "Brnd_Name": "Repatha Pushtronex", "Gnrc_Name": "Evolocumab", "Mftr_Name": "Overall", "Tot_Benes_2024": "19325", "Avg_Spnd_Per_Bene_2024": "2926.0826028"},
+  {"part": "D", "Brnd_Name": "Repatha Pushtronex", "Gnrc_Name": "Evolocumab", "Mftr_Name": "Amgen USA Inc.", "Tot_Benes_2024": "19325", "Avg_Spnd_Per_Bene_2024": "2926.0826028"},
+  {"part": "D", "Brnd_Name": "Repatha Sureclick", "Gnrc_Name": "Evolocumab", "Mftr_Name": "Overall", "Tot_Benes_2024": "382461", "Avg_Spnd_Per_Bene_2024": "4469.9713384"},
+  {"part": "D", "Brnd_Name": "Repatha Sureclick", "Gnrc_Name": "Evolocumab", "Mftr_Name": "Amgen USA Inc.", "Tot_Benes_2024": "382461", "Avg_Spnd_Per_Bene_2024": "4469.9713384"},
+  {"part": "D", "Brnd_Name": "Repatha Syringe", "Gnrc_Name": "Evolocumab", "Mftr_Name": "Overall", "Tot_Benes_2024": "58146", "Avg_Spnd_Per_Bene_2024": "3370.5521075"}],
+ "Tofersen": [
+  {"part": "B", "HCPCS_Cd": "J1304", "HCPCS_Desc": "Injection, tofersen, 1 mg", "Brnd_Name": "Qalsody", "Gnrc_Name": "Tofersen", "Tot_Spndng_2024": "5842932.61", "Tot_Dsg_Unts_2024": "39207", "Tot_Clms_2024": "394", "Tot_Benes_2024": "54", "Avg_Spndng_Per_Dsg_Unt_2024": "149.0277912", "Avg_Spndng_Per_Clm_2024": "14829.7782", "Avg_Spndng_Per_Bene_2024": "108202.4557", "Outlier_Flag_2024": "0", "Avg_DY24_ASP_Price": "151.54175"}]}

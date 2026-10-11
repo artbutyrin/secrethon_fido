@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2432,
+  "output_tokens": 857,
+  "latency_ms": 6636,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"10\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ith EXONDYS 51 in Study 1, it is not possible to estimate dystrophin production in response to EXONDYS 51 in Study 1. In Study 3, the average dystrophin protein level was 0.16% of normal before treatment, and 0.44% of normal after 48 weeks of treatment with EXONDYS 51 [see Clinical Studies ( 14 )]. The median increase in truncated dystrophin in Study 3 was 0.1% [see Clinical Studies ( 14 )] . Dystrophin levels assessed by western blot can be meaningfully influenced by differences in sample processing, analytical technique, reference materials, and quantitation methodologies. Therefore, comparing dystrophin results from different assay protocols will requi…\"}, {\"id\": \"11\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…hodologies. Therefore, comparing dystrophin results from different assay protocols will require a standardized reference material and additional bridging studies.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Following single or multiple intravenous infusions of EXONDYS 51 in male pediatric DMD patients, plasma concentration-time profiles of eteplirsen were generally similar and showed multi-phasic decline. The majority of drug elimination occurred within 24 hours. Approximate dose-proportionality and linearity in PK properties were observed following multiple-dose studies (0.5 mg/kg/week [0.017 times the recommended dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significa…\"}, {\"id\": \"12\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…dized reference material and additional bridging studies.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Following single or multiple intravenous infusions of EXONDYS 51 in male pediatric DMD patients, plasma concentration-time profiles of eteplirsen were generally similar and showed multi-phasic decline. The majority of drug elimination occurred within 24 hours. Approximate dose-proportionality and linearity in PK properties were observed following multiple-dose studies (0.5 mg/kg/week [0.017 times the recommended dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significant drug accumulation following weekly dosing across this dos…\"}, {\"id\": \"13\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…HARMACOKINETICS: 12.3 Pharmacokinetics Following single or multiple intravenous infusions of EXONDYS 51 in male pediatric DMD patients, plasma concentration-time profiles of eteplirsen were generally similar and showed multi-phasic decline. The majority of drug elimination occurred within 24 hours. Approximate dose-proportionality and linearity in PK properties were observed following multiple-dose studies (0.5 mg/kg/week [0.017 times the recommended dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significant drug accumulation following weekly dosing across this dose range. The inter-subject variability for eteplirsen C max and AUC range from 20 to 55%. Following single or …\"}, {\"id\": \"14\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…d multi-phasic decline. The majority of drug elimination occurred within 24 hours. Approximate dose-proportionality and linearity in PK properties were observed following multiple-dose studies (0.5 mg/kg/week [0.017 times the recommended dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significant drug accumulation following weekly dosing across this dose range. The inter-subject variability for eteplirsen C max and AUC range from 20 to 55%. Following single or multiple intravenous infusions of EXONDYS 51, the peak plasma concentrations (C max ) of eteplirsen occurred near the end of infusion (i.e., 1.1 to 1.2 hours across a dose range of 0.5 mg/kg/week to…\"}, {\"id\": \"15\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ate dose-proportionality and linearity in PK properties were observed following multiple-dose studies (0.5 mg/kg/week [0.017 times the recommended dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significant drug accumulation following weekly dosing across this dose range. The inter-subject variability for eteplirsen C max and AUC range from 20 to 55%. Following single or multiple intravenous infusions of EXONDYS 51, the peak plasma concentrations (C max ) of eteplirsen occurred near the end of infusion (i.e., 1.1 to 1.2 hours across a dose range of 0.5 mg/kg/week to 50 mg/kg/week). Distribution In vitro investigation suggested that plasma protei…\"}, {\"id\": \"16\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…dosage] to 50 mg/kg/week [1.7 times the recommended dosage]). There was no significant drug accumulation following weekly dosing across this dose range. The inter-subject variability for eteplirsen C max and AUC range from 20 to 55%. Following single or multiple intravenous infusions of EXONDYS 51, the peak plasma concentrations (C max ) of eteplirsen occurred near the end of infusion (i.e., 1.1 to 1.2 hours across a dose range of 0.5 mg/kg/week to 50 mg/kg/week). Distribution In vitro investigation suggested that plasma protein binding of eteplirsen in human ranges between 6 to 17%. The mean apparent volume of distribution (Vss) of eteplirsen was 600 mL/kg following weekly intravenous infusion of EXONDYS 51 at 30 mg/kg. Twenty-four hours after the end of th…\"}, {\"id\": \"17\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…NDYS 51, the peak plasma concentrations (C max ) of eteplirsen occurred near the end of infusion (i.e., 1.1 to 1.2 hours across a dose range of 0.5 mg/kg/week to 50 mg/kg/week). Distribution In vitro investigation suggested that plasma protein binding of eteplirsen in human ranges between 6 to 17%. The mean apparent volume of distribution (Vss) of eteplirsen was 600 mL/kg following weekly intravenous infusion of EXONDYS 51 at 30 mg/kg. Twenty-four hours after the end of the infusion, mean concentrations of eteplirsen were 0.07% of C max . Accumulation of eteplirsen during once weekly dosing has not been observed. Elimination The total clearance of eteplirsen was 339 mL/hr/kg following 12 weeks of therapy with 30 mg/kg/week. Metab…\"}, {\"id\": \"18\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… of 0.5 mg/kg/week to 50 mg/kg/week). Distribution In vitro investigation suggested that plasma protein binding of eteplirsen in human ranges between 6 to 17%. The mean apparent volume of distribution (Vss) of eteplirsen was 600 mL/kg following weekly intravenous infusion of EXONDYS 51 at 30 mg/kg. Twenty-four hours after the end of the infusion, mean concentrations of eteplirsen were 0.07% of C max . Accumulation of eteplirsen during once weekly dosing has not been observed. Elimination The total clearance of eteplirsen was 339 mL/hr/kg following 12 weeks of therapy with 30 mg/kg/week. Metabolism Eteplirsen did not appear to be metabolized by hepatic microsomes of any species tested, including …\"}, {\"id\": \"19\", \"claim\": \"Study result for Eteplirsen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ibution (Vss) of eteplirsen was 600 mL/kg following weekly intravenous infusion of EXONDYS 51 at 30 mg/kg. Twenty-four hours after the end of the infusion, mean concentrations of eteplirsen were 0.07% of C max . Accumulation of eteplirsen during once weekly dosing has not been observed. Elimination The total clearance of eteplirsen was 339 mL/hr/kg following 12 weeks of therapy with 30 mg/kg/week. Metabolism Eteplirsen did not appear to be metabolized by hepatic microsomes of any species tested, including humans. Excretion Renal clearance of eteplirsen accounts for approximately two-thirds of the administered dose within 24 hours of intravenous administration. Elimination half-life (t 1/2 ) …\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "10",
+    "supports": false
+   },
+   {
+    "id": "11",
+    "supports": true
+   },
+   {
+    "id": "12",
+    "supports": true
+   },
+   {
+    "id": "13",
+    "supports": true
+   },
+   {
+    "id": "14",
+    "supports": true
+   },
+   {
+    "id": "15",
+    "supports": true
+   },
+   {
+    "id": "16",
+    "supports": true
+   },
+   {
+    "id": "17",
+    "supports": true
+   },
+   {
+    "id": "18",
+    "supports": true
+   },
+   {
+    "id": "19",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,377 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0007739",
+  "ensemblId": "ENSG00000197386",
+  "datasources": [
+   "impc",
+   "crispr",
+   "crispr_screen",
+   "ot_crispr",
+   "ot_crispr_validation",
+   "expression_atlas",
+   "reactome",
+   "progeny",
+   "slapenrich",
+   "sysbio"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T12:05:13+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0007739",
+    "evidences": {
+     "count": 31,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "43fcb3adbb7fa5627feaa0b20129db1b9acd55bc",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.703,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "8e65a10cf6f5190303a7a46818dca80d90ab60b9",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.703,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "7deb240bb4723e03bdeac90ceb97e2c8d6fb81a4",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6593000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "9322cdd0a3d810b018e64dff6e9623f25d059aac",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6593000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "7faebf0bf3254ee93f8a366020ae25f70257aedf",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6589,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "e6bd353eacdb78e104693aea200c486358a4afc5",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6589,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "00cfb4adc537874ba55a59d70ccfccd8839a723e",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6498,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "7af844a49954290d6ff3b8cfa2e323ffcaf887ca",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6186,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "a670cf0610eb5b722fa218085553849d3ac05d8c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.615,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "551e97cacaed36cbfcd027a8e89f181f14ad2abe",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5945,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "65273de2d587fa8db9f86f86dab06cb19b8d20ce",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5945,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "274c9cb7b73f6779fc8f3c28904d5501b7368dc2",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5768,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "52f9f421d1eaa5eb87bdfde9343748a8cdcce363",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5768,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "1965f92357f02a006127049375a756b21d27bb16",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5727,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "2d2a0adc9ea1c49feb1c8d0fef33e62a8bb4dc07",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5636,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "ae5919d343d8be72edcace5b9eebac8e05a29df7",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5636,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "b159385a3930365d71b5fb0a414e9eab24190c7c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5405,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "6a1b324eb223b3d55e2a7547015ffabe994c51e9",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5218,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "10c4f15b6fcfb83792813be547b46fe11150e086",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5202,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "dd164a06c8733ea3348bc54e7d70d8062ebd5c7b",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5202,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "537a8abc9e92920b1e4d929e75434542dc65ab43",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5153,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "a5836378d03a6eb7bbf12718093577a01e86235c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5153,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "063a56900b041806fdcca67720c33fc92b2d5f88",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5078,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "ce9a69f6715623438e4bc0915d0fd200dcfb2404",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4915,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "d08e9101b0ff6586ef0d2791774390b2e9e4bf8d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4915,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "195a2fab198308190d76189c7ffa7fef843c8584",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.48100000000000004,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "1a6e1ed49a58d45301d7671e3719680e88b848db",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.48100000000000004,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "7a376a6ce660cdb1fae4b4fdeaca7f6239d2c346",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.48009999999999997,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "743bec7276c97f0407f78d486fd0a4326e9f8837",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41700000000000004,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "d1e1fbd6875a64f8a07bdde6e5af53c76b3bffdc",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41700000000000004,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "5e744235fe3e3d0649ded7dedcfc00b7d6d951f3",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41619999999999996,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2848,
+  "output_tokens": 1503,
+  "latency_ms": 12452,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"label:cd61e902-166d-4aa6-9f3c-a18c1008d07e\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"MECHANISM OF ACTION: 12.1 Mechanism of Action Evolocumab is a human monoclonal IgG2 directed against human proprotein convertase subtilisin kexin type 9 (PCSK9). PCSK9 binds to the low-density lipoprotein receptor (LDLR) on the surface of hepatocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, evolocumab increases the number of LDLRs available to clear LDL from the blood, thereby lowering LDL-C levels.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Following single subcutaneous administration of 140 mg or 420 mg of evolocumab, maximum suppression of circulating unbound PCSK9 occurred by 4 hours. Unbound PCSK9 concentrations returned toward baseline when evolocumab concentrations decreased below the limit of quantitation. Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Evolocumab exhibits non-linear kinetics as a result of binding to PCSK9. Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL. Following a single 420 mg intravenous dose, the mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough serum concentrations (C min 7.21) following 140 mg doses administered subcutaneously every 2 weeks or following 420 mg doses administered subcutaneously monthly (C min 11.2), and serum trough concentrations approached steady-state by 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 mg evolocumab administered to healthy adults, median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%. Distribution Following a single 420 mg intravenous dose, the mean steady-state volume of distribution was estimated to be 3.3 L. Elimination Two elimination phases were observed for REPATHA. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of REPATHA is largely through a non-saturable proteolytic pathway. REPATHA was estimated to have an effective half-life of 11 to 17 days. Specific Populations The pharmacokinetics of evolocumab were not affected by age, gender, race, or creatinine clearance across all approved populations [see Use in Specific Populations (8.5) ] . The exposure of evolocumab decreased with increasing body weight. These differences are not clinically meaningful. Pediatric Patients The pharmacokinetics of REPATHA were evaluated in 103 pediatric patients aged 10 to 17 years with HeFH (Study 6) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean trough serum concentrations were 22.4 mcg/mL and 25.8 mcg/mL over the Week 12 and Week 24 time points, respectively. The pharmacokinetics of REPATHA were evaluated in 12 pediatric patients aged 11 to 17 years with HoFH (Study 9) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean serum trough concentrations were 20.3 mcg/mL and 17.6 mcg/mL at Week 12 and Week 80, respectively. Renal Impairment Since monoclonal antibodies are not known to be eliminated via renal pathways, renal function is not expected to impact the pharmacokinetics of evolocumab. In a clinical trial of 18 patients with either normal renal function (estimated glomerular filtration rate [eGFR] ≥ 90 mL/min/1.73 m 2 , n = 6), severe renal impairment (eGFR < 30 mL/min/1.73 m 2 , n = 6), or end-stage renal disease (ESRD) receiving hemodialysis (n = 6), exposure to evolocumab after a single 140 mg subcutaneous dose was decreased in patients with severe renal impairment or ESRD receiving hemodialysis. Reductions in PCSK9 levels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function [see Use in Specific Populations (8.6) ] . Hepatic Impairment Following a single 140 mg subcutaneous dose of evolocumab in patients with mild or moderate hepatic impairment, a 20-30% lower mean C max and 40-50% lower mean AUC were observed as compared to healthy patients [see Use in Specific Populations (8.7) ] . Drug Interaction Studies An approximately 20% decrease in the C max and AUC of evolocumab was observed in adult patients co-administered with a high-intensity statin regimen. This difference is not clinically meaningful.\\nCLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Evolocumab is a human monoclonal IgG2 directed against human proprotein convertase subtilisin kexin type 9 (PCSK9). PCSK9 binds to the low-density lipoprotein receptor (LDLR) on the surface of hepatocytes to promote LDLR degradation within the liver. By inhibiting the binding of PCSK9 to LDLR, evolocumab increases the number of LDLRs available to clear LDL from the blood, thereby lowering LDL-C levels. 12.2 Pharmacodynamics Following single subcutaneous administration of 140 mg or 420 mg of evolocumab, maximum suppression of circulating unbound PCSK9 occurred by 4 hours. Unbound PCSK9 concentrations returned toward baseline when evolocumab concentrations decreased below the limit of quantitation. Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab. 12.3 Pharmacokinetics Evolocumab exhibits non-linear kinetics as a result of binding to PCSK9. Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL. Following a single 420 mg intravenous dose, the mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough serum concentrations (C min 7.21) following 140 mg doses administered subcutaneously every 2 weeks or following 420 mg doses administered subcutaneously monthly (C min 11.2), and serum trough concentrations approached steady-state by 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 mg evolocumab administered to healthy adults, median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%. Distribution Following a single 420 mg intravenous dose, the mean steady-state volume of distribution was estimated to be 3.3 L. Elimination Two elimination phases were observed for REPATHA. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of REPATHA is largely through a non-saturable proteolytic pathway. REPATHA was estimated to have an effective half-life of 11 to 17 days. Specific Populations The pharmacokinetics of evolocumab were not affected by age, gender, race, or creatinine clearance across all approved populations [see Use in Specific Populations (8.5) ] . The exposure of evolocumab decreased with increasing body weight. These differences are not clinically meaningful. Pediatric Patients The pharmacokinetics of REPATHA were evaluated in 103 pediatric patients aged 10 to 17 years with HeFH (Study 6) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean trough serum concentrations were 22.4 mcg/mL and 25.8 mcg/mL over the Week 12 and Week 24 time points, respectively. The pharmacokinetics of REPATHA were evaluated in 12 pediatric patients aged 11 to 17 years with HoFH (Study 9) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean serum trough concentrations were 20.3 mcg/mL and 17.6 mcg/mL at Week 12 and Week 80, respectively. Renal Impairment Since monoclonal antibodies are not known to be eliminated via renal pathways, renal function is not expected to impact the pharmacokinetics of evolocumab. In a clinical trial of 18 patients with either normal renal function (estimated glomerular filtration rate [eGFR] ≥ 90 mL/min/1.73 m 2 , n = 6), severe renal impairment (eGFR < 30 mL/min/1.73 m 2 , n = 6), or end-stage renal disease (ESRD) receiving hemodialysis (n = 6), exposure to evolocumab after a single 140 mg subcutaneous dose was decreased in patients with severe renal impairment or ESRD receiving hemodialysis. Reductions in PCSK9 levels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function [see Use in Specific Populations (8.6) ] . He\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "label:cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "maximum suppression of circulating unbound PCSK9 occurred by 4 hours."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "An approximate 2- to 3-fold accumulation was observed in trough serum concentrations"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "serum trough concentrations approached steady-state by 12 weeks of dosing."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "the mean steady-state volume of distribution was estimated to be 3.3 L."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "REPATHA was estimated to have an effective half-life of 11 to 17 days."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "The exposure of evolocumab decreased with increasing body weight."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Following subcutaneous administration of 420 mg REPATHA once monthly, mean trough serum concentrations were 22.4 mcg/mL and 25.8 mcg/mL over the Week 12 and Week 24 time points, respectively."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Following subcutaneous administration of 420 mg REPATHA once monthly, mean serum trough concentrations were 20.3 mcg/mL and 17.6 mcg/mL at Week 12 and Week 80, respectively."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "exposure to evolocumab after a single 140 mg subcutaneous dose was decreased in patients with severe renal impairment or ESRD receiving hemodialysis."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Reductions in PCSK9 levels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "a 20-30% lower mean C max and 40-50% lower mean AUC were observed as compared to healthy patients"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "An approximately 20% decrease in the C max and AUC of evolocumab was observed in adult patients co-administered with a high-intensity statin regimen."
+     }
+    ]
+   }
+  ]
+ }
+}

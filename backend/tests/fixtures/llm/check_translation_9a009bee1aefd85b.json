@@ -1,0 +1,84 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1451,
+  "output_tokens": 268,
+  "latency_ms": 2263,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Drugomersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"In the Phase 1 part, drugomersen reduced total SOD1 protein in cerebrospinal fluid by 35% compared with placebo in adults with ALS.\"}, {\"id\": \"1\", \"claim\": \"Study result for Drugomersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"Drugomersen concentrations in CSF increased with dose and were measurable in all participants.\"}, {\"id\": \"2\", \"claim\": \"Study result for Drugomersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"Plasma neurofilament light chain, a marker of axonal injury, fell by 50% with drugomersen and rose with placebo.\"}, {\"id\": \"3\", \"claim\": \"Study result for Drugomersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"PET imaging showed 70% receptor occupancy in the motor cortex four hours after a single dose of drugomersen.\"}, {\"id\": \"4\", \"claim\": \"Study result for Drugomersen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"Drugomersen met its primary endpoint: ALSFRS-R decline was slower than with placebo (difference 3.1 points, P=0.01).\"}, {\"id\": \"5\", \"claim\": \"Study result for Othersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"After intravenous dosing, othersen was not detected in cerebrospinal fluid in any participant.\"}, {\"id\": \"6\", \"claim\": \"Study result for Othersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"Othersen did not improve the primary endpoint, change in ALSFRS-R at 28 weeks, versus placebo.\"}, {\"id\": \"7\", \"claim\": \"Study result for Othersen, in people: target engagement (the drug binds, blocks or lowers its target) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"CSF SOD1 levels did not differ between othersen and placebo at week 12.\"}, {\"id\": \"8\", \"claim\": \"Study result for Othersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"Although othersen lowered CSF SOD1, the change in ALSFRS-R did not reach statistical significance.\"}, {\"id\": \"9\", \"claim\": \"Study result for Othersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"Although othersen lowered CSF SOD1, the change in ALSFRS-R did not reach statistical significance.\"}, {\"id\": \"10\", \"claim\": \"Study result for the target itself (no drug), in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"SOD1 knockdown in transgenic mice delayed disease onset and extended survival.\"}, {\"id\": \"11\", \"claim\": \"Study result for Drugomersen, in animals: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"In SOD1-G93A rats, intrathecal drugomersen lowered spinal cord SOD1 mRNA by 60% and prolonged survival.\"}, {\"id\": \"12\", \"claim\": \"Study result for Drugomersen, in animals: a response in an animal or cell model of the disease was shown.\", \"quote\": \"In SOD1-G93A rats, intrathecal drugomersen lowered spinal cord SOD1 mRNA by 60% and prolonged survival.\"}, {\"id\": \"13\", \"claim\": \"Study result for Drugomersen, in cells: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"In cultured motor neurons, drugomersen reduced SOD1 mRNA in a dose-dependent manner.\"}, {\"id\": \"14\", \"claim\": \"Study result for Drugomersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"Mean CSF SOD1 concentration decreased from baseline by 36% in the 100 mg group.\"}, {\"id\": \"15\", \"claim\": \"Study result for Othersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"There was a trend toward slower decline with othersen that was not statistically significant (P=0.21).\"}, {\"id\": \"16\", \"claim\": \"Study result for Othersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"The study was stopped after an interim analysis showed worse outcomes in the othersen arm than with placebo.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": true
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": true
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   },
+   {
+    "id": "10",
+    "supports": true
+   },
+   {
+    "id": "11",
+    "supports": true
+   },
+   {
+    "id": "12",
+    "supports": true
+   },
+   {
+    "id": "13",
+    "supports": true
+   },
+   {
+    "id": "14",
+    "supports": true
+   },
+   {
+    "id": "15",
+    "supports": true
+   },
+   {
+    "id": "16",
+    "supports": true
+   }
+  ]
+ }
+}

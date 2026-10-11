@@ -1,0 +1,74 @@
+{
+ "id": "run_9c9179af0b",
+ "created_at": "2026-10-10T13:33:34+00:00",
+ "updated_at": "2026-10-10T13:33:34+00:00",
+ "disease_input": "AD",
+ "target_input": "BACE1",
+ "disease_id": null,
+ "target_id": null,
+ "phase": null,
+ "route": null,
+ "status": "ambiguous",
+ "message": "disease: 'AD' looks like an abbreviation; pick the disease",
+ "ot_release": "26.09",
+ "llm_model": null,
+ "round_terms": null,
+ "license_terms": null,
+ "incomplete": null,
+ "market": null,
+ "complete": true,
+ "disease": {
+  "status": "ambiguous",
+  "query": "AD",
+  "match": null,
+  "candidates": [
+   {
+    "id": "MONDO_0004975",
+    "name": "Alzheimer disease",
+    "description": "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+    "score": 3334.7102
+   },
+   {
+    "id": "MONDO_0004980",
+    "name": "atopic eczema",
+    "description": "A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.",
+    "score": 3249.6519
+   },
+   {
+    "id": "MONDO_0007088",
+    "name": "Alzheimer disease type 1",
+    "description": null,
+    "score": 2710.2212
+   },
+   {
+    "id": "MONDO_0011913",
+    "name": "Alzheimer disease 3",
+    "description": "Alzheimer's disease with an early onset (starts before the age of 65). It is caused by mutations in the PSEN1 gene.",
+    "score": 2701.3357
+   },
+   {
+    "id": "EFO_0920013",
+    "name": "axial diffusivity measurement",
+    "description": "A quantitative parameter derived from diffusion tensor imaging that measures water molecule diffusion parallel to the principal direction of the diffusion tensor. Axial diffusivity (AD or AxD) represents the largest eigenvalue (λ1) of the diffusion tensor and provides information about axonal integrity and tissue microstructure. This measurement can be applied to various biological tissues including brain white matter, skeletal muscle, kidney, and other organs.",
+    "score": 1016.3288
+   }
+  ],
+  "message": "'AD' looks like an abbreviation; pick the disease"
+ },
+ "target": {
+  "status": "resolved",
+  "query": "BACE1",
+  "match": "exact_name",
+  "candidates": [],
+  "message": null,
+  "raw": "BACE1",
+  "action": null,
+  "drug_type": null,
+  "variant": null,
+  "id": "ENSG00000186318",
+  "symbol": "BACE1",
+  "name": "beta-secretase 1",
+  "biotype": "protein_coding"
+ },
+ "verdict": null
+}

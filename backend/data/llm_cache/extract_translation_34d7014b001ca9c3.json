@@ -1,0 +1,102 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2445,
+  "output_tokens": 1364,
+  "latency_ms": 14084,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:36007987\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Biomarker Prediction of Complex Coronary Revascularization Procedures in the FOURIER Trial.. BACKGROUND: Biomarkers are known to predict major adverse cardiovascular events. However, the association of biomarkers with complex coronary revascularization procedures or high-risk coronary anatomy at the time of revascularization is not understood. OBJECTIVES: We examined the associations between baseline biomarkers and major coronary events (MCE) and complex revascularization procedures. METHODS: FOURIER was a randomized trial of the proprotein convertase subtilisin-kexin type 9 inhibitor evolocumab vs placebo in 27,564 patients with stable atherosclerosis. We analyzed adjusted associations among the biomarkers, MCE (coronary death, myocardial infarction, or revascularization), and complex revascularization (coronary artery bypass graft or complex percutaneous coronary intervention) using a multimarker score with 1 point assigned for each elevated biomarker (high-sensitivity C-reactive protein ≥2 mg/L; N-terminal pro-B-type natriuretic peptide ≥450 pg/mL; high-sensitivity troponin I ≥6 ng/L; growth-differentiation factor-15 ≥1,800 pg/mL). RESULTS: When patients were grouped by the number of elevated biomarkers (0 biomarkers, n = 6,444; 1-2 biomarkers, n = 12,439; ≥3 biomarkers, n = 2,761), there was a significant graded association between biomarker score and the risk of MCE (intermediate score: HRadj: 1.57 [95% CI: 1.38-1.78]; high score: HRadj: 2.90 [95% CI: 2.47-3.40]), and for complex revascularization (intermediate: HRadj: 1.33 [95% CI: 1.06-1.67]; high score: HRadj: 2.07 [95% CI: 1.52-2.83]) and its components (Ptrend <0.05 for each). The number of elevated biomarkers also correlated with the presence of left main disease, multivessel disease, or chronic total occlusion at the time of revascularization (P < 0.05 for each). CONCLUSIONS: A biomarker-based strategy identifies stable patients at risk for coronary events, including coronary artery bypass graft surgery and complex percutaneous coronary intervention, and predicts high-risk coronary anatomy at the time of revascularization. These findings provide insight into the relationships between cardiovascular biomarkers, coronary anatomical complexity, and incident clinical events. (Further Cardiovascular Outcomes Research With PCSK9 Inhibition in Subjects With Elevated Risk [FOURIER]; NCT01764633).\"}, {\"id\": \"pmid:40702432\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Modulation of atherogenesis biomarkers by PCSK9 inhibitors in Lp(a)-stimulated human coronary artery endothelial cells.. BACKGROUND: Atherosclerosis is a complex inflammatory disease driven by endothelial dysfunction. However, most in vitro studies rely on lipopolysaccharide (LPS) or oxidized LDL (oxLDL) as stimulants, overlooking the pathogenic role of lipoprotein(a) [Lp(a)]. Lp(a) is an independent and genetically determined risk factor for cardiovascular disease (CVD), but its precise mechanisms in promoting endothelial activation, inflammation, and monocyte adhesion remain poorly understood. The underlying mechanisms remain unclear despite clinical evidence that PCSK9 inhibitors (PCSK9i) lower plasma Lp(a) levels. This study explores the critical role of Lp(a) in driving PCSK9 expression and atherogenesis biomarkers, evaluates the protective effects of PCSK9i on endothelial activation, dysfunction and inflammation in Lp(a)-stimulated human coronary artery endothelial cells (HCAECs), and investigates their potential to mitigate monocyte adhesion, a key process in early atherogenesis. METHODOLOGY: HCAECs were stimulated with Lp(a) and treated with Alirocumab or Evolocumab. Cell viability was assessed using the MTS assay. The expression of PCSK9, inflammatory (IL-6, NF-κB p65), endothelial activation (E-selectin, ICAM-1), and endothelial function (eNOS) biomarkers were quantified using ELISA and QuantiGene plex assays. Monocyte adhesion to endothelial cells was measured using the Rose Bengal method. RESULTS: Lp(a) stimulation increased PCSK9, IL-6, ICAM-1, E-selectin, NF-κB p65, and reduced eNOS in HCAECs. Both Alirocumab and Evolocumab lowered PCSK9 protein levels, with Alirocumab showing more potent effects. Evolocumab consistently reduced PCSK9 gene expression, whereas Alirocumab elicited variable effects. IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab. Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied. eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab. Monocyte adhesion decreased at lower doses of both inhibitors, suggesting protective effects against early atherogenesis. CONCLUSION: PCSK9i exhibits pleiotropic effects beyond lipid-lowering by modulating endothelial activation, inflammation, and monocyte adhesion in Lp(a)-stimulated HCAECs. These findings provide mechanistic insights into the potential atheroprotective properties of PCSK9i, highlighting their role in early atherogenesis prevention. CLINICAL TRIAL NUMBER: Not applicable.\"}, {\"id\": \"pmid:28304224\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Evolocumab and Clinical Outcomes in Patients with Cardiovascular Disease.. BACKGROUND: Evolocumab is a monoclonal antibody that inhibits proprotein convertase subtilisin-kexin type 9 (PCSK9) and lowers low-density lipoprotein (LDL) cholesterol levels by approximately 60%. Whether it prevents cardiovascular events is uncertain. METHODS: We conducted a randomized, double-blind, placebo-controlled trial involving 27,564 patients with atherosclerotic cardiovascular disease and LDL cholesterol levels of 70 mg per deciliter (1.8 mmol per liter) or higher who were receiving statin therapy. Patients were randomly assigned to receive evolocumab (either 140 mg every 2 weeks or 420 mg monthly) or matching placebo as subcutaneous injections. The primary efficacy end point was the composite of cardiovascular death, myocardial infarction, stroke, hospitalization for unstable angina, or coronary revascularization. The key secondary efficacy end point was the composite of cardiovascular death, myocardial infarction, or stroke. The median duration of follow-up was 2.2 years. RESULTS: At 48 weeks, the least-squares mean percentage reduction in LDL cholesterol levels with evolocumab, as compared with placebo, was 59%, from a median baseline value of 92 mg per deciliter (2.4 mmol per liter) to 30 mg per deciliter (0.78 mmol per liter) (P<0.001). Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001) and the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001). The results were consistent across key subgroups, including the subgroup of patients in the lowest quartile for baseline LDL cholesterol levels (median, 74 mg per deciliter [1.9 mmol per liter]). There was no significant difference between the study groups with regard to adverse events (including new-onset diabetes and neurocognitive events), with the exception of injection-site reactions, which were more common with evolocumab (2.1% vs. 1.6%). CONCLUSIONS: In our trial, inhibition of PCSK9 with evolocumab on a background of statin therapy lowered LDL cholesterol levels to a median of 30 mg per deciliter (0.78 mmol per liter) and reduced the risk of cardiovascular events. These findings show that patients with atherosclerotic cardiovascular disease benefit from lowering of LDL cholesterol levels below current targets. (Funded by Amgen; FOURIER ClinicalTrials.gov number, NCT01764633 .).\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:36007987",
+    "findings": []
+   },
+   {
+    "id": "pmid:40702432",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "Both Alirocumab and Evolocumab lowered PCSK9 protein levels"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "Evolocumab consistently reduced PCSK9 gene expression"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "IL-6 and NF-κB p65 were elevated by both inhibitors, especially Alirocumab."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "Both treatments reduced ICAM-1 and E-selectin proteins, but gene expression varied."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "eNOS expression improved only at high concentrations (100 µg/ml), particularly with Evolocumab."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "Monocyte adhesion decreased at lower doses of both inhibitors"
+     }
+    ]
+   },
+   {
+    "id": "pmid:28304224",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At 48 weeks, the least-squares mean percentage reduction in LDL cholesterol levels with evolocumab, as compared with placebo, was 59%"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Relative to placebo, evolocumab treatment significantly reduced the risk of the primary end point (1344 patients [9.8%] vs. 1563 patients [11.3%]; hazard ratio, 0.85; 95% confidence interval [CI], 0.79 to 0.92; P<0.001)"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "the key secondary end point (816 [5.9%] vs. 1013 [7.4%]; hazard ratio, 0.80; 95% CI, 0.73 to 0.88; P<0.001)"
+     }
+    ]
+   }
+  ]
+ }
+}

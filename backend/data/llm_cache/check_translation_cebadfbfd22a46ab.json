@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2900,
+  "output_tokens": 223,
+  "latency_ms": 3161,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"24\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…macokinetics of evolocumab. In a clinical trial of 18 patients with either normal renal function (estimated glomerular filtration rate [eGFR] ≥ 90 mL/min/1.73 m 2 , n = 6), severe renal impairment (eGFR < 30 mL/min/1.73 m 2 , n = 6), or end-stage renal disease (ESRD) receiving hemodialysis (n = 6), exposure to evolocumab after a single 140 mg subcutaneous dose was decreased in patients with severe renal impairment or ESRD receiving hemodialysis. Reductions in PCSK9 levels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function [see Use in Specific Populations (8.6) ] . Hepatic Impairment Following a single 140 mg subcutaneous dose of evolocumab in patients with mild or moderat…\"}, {\"id\": \"25\", \"claim\": \"Study result for Evolocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…min/1.73 m 2 , n = 6), severe renal impairment (eGFR < 30 mL/min/1.73 m 2 , n = 6), or end-stage renal disease (ESRD) receiving hemodialysis (n = 6), exposure to evolocumab after a single 140 mg subcutaneous dose was decreased in patients with severe renal impairment or ESRD receiving hemodialysis. Reductions in PCSK9 levels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function [see Use in Specific Populations (8.6) ] . Hepatic Impairment Following a single 140 mg subcutaneous dose of evolocumab in patients with mild or moderate hepatic impairment, a 20-30% lower mean C max and 40-50% lower mean AUC were observed as compared to healthy patients [see Use in Specific Popula…\"}, {\"id\": \"26\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…evels in patients with severe renal impairment or ESRD receiving hemodialysis was similar to those with normal renal function [see Use in Specific Populations (8.6) ] . Hepatic Impairment Following a single 140 mg subcutaneous dose of evolocumab in patients with mild or moderate hepatic impairment, a 20-30% lower mean C max and 40-50% lower mean AUC were observed as compared to healthy patients [see Use in Specific Populations (8.7) ] . Drug Interaction Studies An approximately 20% decrease in the C max and AUC of evolocumab was observed in adult patients co-administered with a high-intensity statin regimen. This difference is not clinically meaningful.\\nCLINICAL PHARMACOLOGY: 12 CLINICAL …\"}, {\"id\": \"27\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… . Hepatic Impairment Following a single 140 mg subcutaneous dose of evolocumab in patients with mild or moderate hepatic impairment, a 20-30% lower mean C max and 40-50% lower mean AUC were observed as compared to healthy patients [see Use in Specific Populations (8.7) ] . Drug Interaction Studies An approximately 20% decrease in the C max and AUC of evolocumab was observed in adult patients co-administered with a high-intensity statin regimen. This difference is not clinically meaningful.\\nCLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1 Mechanism of Action Evolocumab is a human monoclonal IgG2 directed against human proprotein convertase subtilisin kexin type 9 (PCSK9). PCSK9 binds to the low-density lipoprotein receptor (LDLR) on th…\"}, {\"id\": \"28\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…reakdown of mRNA for PCSK9. This increases LDL-C receptor recycling and expression on the hepatocyte cell surface, which increases LDL-C uptake and lowers LDL-C levels in the circulation.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Following a single subcutaneous administration of 284 mg of inclisiran, LDL-C reduction was apparent within 14 days post dose. Mean reductions of 38% to 51% for LDL-C were observed 30 to 180 days post dose. At Day 180, LDL-C levels were still reduced by approximately 53%. Following a dose at Day 1 and Day 90 of 284 mg of inclisiran, mean serum PCSK9 levels were reduced by approximately 75% and 69% at Day 120, and Day 180, …\"}, {\"id\": \"29\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…or recycling and expression on the hepatocyte cell surface, which increases LDL-C uptake and lowers LDL-C levels in the circulation.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Following a single subcutaneous administration of 284 mg of inclisiran, LDL-C reduction was apparent within 14 days post dose. Mean reductions of 38% to 51% for LDL-C were observed 30 to 180 days post dose. At Day 180, LDL-C levels were still reduced by approximately 53%. Following a dose at Day 1 and Day 90 of 284 mg of inclisiran, mean serum PCSK9 levels were reduced by approximately 75% and 69% at Day 120, and Day 180, respectively. In the clinical trials, following four doses of LEQVIO at Day 1, D…\"}, {\"id\": \"30\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…C uptake and lowers LDL-C levels in the circulation.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Following a single subcutaneous administration of 284 mg of inclisiran, LDL-C reduction was apparent within 14 days post dose. Mean reductions of 38% to 51% for LDL-C were observed 30 to 180 days post dose. At Day 180, LDL-C levels were still reduced by approximately 53%. Following a dose at Day 1 and Day 90 of 284 mg of inclisiran, mean serum PCSK9 levels were reduced by approximately 75% and 69% at Day 120, and Day 180, respectively. In the clinical trials, following four doses of LEQVIO at Day 1, Day 90 (3 months), Day 270 (~6 months) and Day 450 (~12 months), LD…\"}, {\"id\": \"31\", \"claim\": \"Study result for Inclisiran, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…inistration of 284 mg of inclisiran, LDL-C reduction was apparent within 14 days post dose. Mean reductions of 38% to 51% for LDL-C were observed 30 to 180 days post dose. At Day 180, LDL-C levels were still reduced by approximately 53%. Following a dose at Day 1 and Day 90 of 284 mg of inclisiran, mean serum PCSK9 levels were reduced by approximately 75% and 69% at Day 120, and Day 180, respectively. In the clinical trials, following four doses of LEQVIO at Day 1, Day 90 (3 months), Day 270 (~6 months) and Day 450 (~12 months), LDL-C, total cholesterol, ApoB, and non-HDL-C were reduced [see Clinical Studies (14)] . Cardiac Electrophysiology At a dose 3 times the maximum recommended dose, inclis…\"}, {\"id\": \"32\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…-C were observed 30 to 180 days post dose. At Day 180, LDL-C levels were still reduced by approximately 53%. Following a dose at Day 1 and Day 90 of 284 mg of inclisiran, mean serum PCSK9 levels were reduced by approximately 75% and 69% at Day 120, and Day 180, respectively. In the clinical trials, following four doses of LEQVIO at Day 1, Day 90 (3 months), Day 270 (~6 months) and Day 450 (~12 months), LDL-C, total cholesterol, ApoB, and non-HDL-C were reduced [see Clinical Studies (14)] . Cardiac Electrophysiology At a dose 3 times the maximum recommended dose, inclisiran does not prolong the QT interval to any clinically relevant extent.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption Following a single subcutaneous administration, systemic exposure…\"}, {\"id\": \"33\", \"claim\": \"Study result for Inclisiran, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…DL-C were reduced [see Clinical Studies (14)] . Cardiac Electrophysiology At a dose 3 times the maximum recommended dose, inclisiran does not prolong the QT interval to any clinically relevant extent.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption Following a single subcutaneous administration, systemic exposure to inclisiran increased in a linear and dose proportional manner over a range from 25 mg to 800 mg of inclisiran sodium. At the recommended dosing regimen of 284 mg of LEQVIO, plasma concentrations reached peak in approximately 4 hours post dose with a mean C max of 509 ng/mL. Concentrations reached undetectable levels after 24 to 48 hours post dosing. The mean area under the plasma concentration-time curve from dosi…\"}, {\"id\": \"34\", \"claim\": \"Study result for Inclisiran, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…xtent.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Absorption Following a single subcutaneous administration, systemic exposure to inclisiran increased in a linear and dose proportional manner over a range from 25 mg to 800 mg of inclisiran sodium. At the recommended dosing regimen of 284 mg of LEQVIO, plasma concentrations reached peak in approximately 4 hours post dose with a mean C max of 509 ng/mL. Concentrations reached undetectable levels after 24 to 48 hours post dosing. The mean area under the plasma concentration-time curve from dosing extrapolated to infinity was 7,980 ng*h/mL. Pharmacokinetic findings following multiple subcutaneous administrations of LEQVIO were similar to single-dose…\"}, {\"id\": \"35\", \"claim\": \"Study result for Inclisiran, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…on, systemic exposure to inclisiran increased in a linear and dose proportional manner over a range from 25 mg to 800 mg of inclisiran sodium. At the recommended dosing regimen of 284 mg of LEQVIO, plasma concentrations reached peak in approximately 4 hours post dose with a mean C max of 509 ng/mL. Concentrations reached undetectable levels after 24 to 48 hours post dosing. The mean area under the plasma concentration-time curve from dosing extrapolated to infinity was 7,980 ng*h/mL. Pharmacokinetic findings following multiple subcutaneous administrations of LEQVIO were similar to single-dose administration. Distribution Inclisiran is 87% protein bound in vitro at the…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "24",
+    "supports": true
+   },
+   {
+    "id": "25",
+    "supports": true
+   },
+   {
+    "id": "26",
+    "supports": true
+   },
+   {
+    "id": "27",
+    "supports": true
+   },
+   {
+    "id": "28",
+    "supports": true
+   },
+   {
+    "id": "29",
+    "supports": true
+   },
+   {
+    "id": "30",
+    "supports": true
+   },
+   {
+    "id": "31",
+    "supports": true
+   },
+   {
+    "id": "32",
+    "supports": true
+   },
+   {
+    "id": "33",
+    "supports": true
+   },
+   {
+    "id": "34",
+    "supports": true
+   },
+   {
+    "id": "35",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 646,
+  "output_tokens": 297,
+  "latency_ms": 2452,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1\", \"drugs\": [\"DRUGOMERSEN\", \"OTHERSEN\"], \"documents\": [{\"id\": \"doc:19\", \"about_drug\": \"OTHERSEN\", \"text\": \"There was a trend toward slower decline with othersen that was not statistically significant (P=0.21).\"}, {\"id\": \"doc:20\", \"about_drug\": \"OTHERSEN\", \"text\": \"The study was stopped after an interim analysis showed worse outcomes in the othersen arm than with placebo.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "doc:19",
+    "findings": [
+     {
+      "drug": "OTHERSEN",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "There was a trend toward slower decline with othersen that was not statistically significant (P=0.21)."
+     }
+    ]
+   },
+   {
+    "id": "doc:20",
+    "findings": [
+     {
+      "drug": "OTHERSEN",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The study was stopped after an interim analysis showed worse outcomes in the othersen arm than with placebo."
+     }
+    ]
+   }
+  ]
+ }
+}

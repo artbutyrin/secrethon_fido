@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2837,
+  "output_tokens": 965,
+  "latency_ms": 11378,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"12\", \"claim\": \"Study result for Evolocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…dation within the liver. By inhibiting the binding of PCSK9 to LDLR, evolocumab increases the number of LDLRs available to clear LDL from the blood, thereby lowering LDL-C levels.\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics Following single subcutaneous administration of 140 mg or 420 mg of evolocumab, maximum suppression of circulating unbound PCSK9 occurred by 4 hours. Unbound PCSK9 concentrations returned toward baseline when evolocumab concentrations decreased below the limit of quantitation. Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab.\\nPHARMACOKINETICS: 12.3 …\"}, {\"id\": \"13\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…12.2 Pharmacodynamics Following single subcutaneous administration of 140 mg or 420 mg of evolocumab, maximum suppression of circulating unbound PCSK9 occurred by 4 hours. Unbound PCSK9 concentrations returned toward baseline when evolocumab concentrations decreased below the limit of quantitation. Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Evolocumab exhibits non-linear kinetics as a result of binding to PCSK9. Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers…\"}, {\"id\": \"14\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…eased below the limit of quantitation. Maximum LDL-C reduction occurred by 2 weeks after a single-dose of 140 mg of evolocumab and by 3 weeks after a single-dose of 420 mg of evolocumab.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Evolocumab exhibits non-linear kinetics as a result of binding to PCSK9. Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL. Following a single 420 mg intravenous dose, the mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough se…\"}, {\"id\": \"15\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…by 3 weeks after a single-dose of 420 mg of evolocumab.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics Evolocumab exhibits non-linear kinetics as a result of binding to PCSK9. Administration of the 140 mg dose in healthy volunteers resulted in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL. Following a single 420 mg intravenous dose, the mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough serum concentrations (C min 7.21) following 140 mg doses administered subcutaneously every 2 weeks or following 420 mg doses administ…\"}, {\"id\": \"16\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… in a C max mean of 18.6 µg/mL and AUC last mean of 188 day∙µg/mL. Administration of the 420 mg dose in healthy volunteers resulted in a C max mean of 59.0 µg/mL and AUC last mean of 924 day∙µg/mL. Following a single 420 mg intravenous dose, the mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough serum concentrations (C min 7.21) following 140 mg doses administered subcutaneously every 2 weeks or following 420 mg doses administered subcutaneously monthly (C min 11.2), and serum trough concentrations approached steady-state by 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 m…\"}, {\"id\": \"17\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…he mean systemic clearance was estimated to be 12 mL/hr. An approximate 2- to 3-fold accumulation was observed in trough serum concentrations (C min 7.21) following 140 mg doses administered subcutaneously every 2 weeks or following 420 mg doses administered subcutaneously monthly (C min 11.2), and serum trough concentrations approached steady-state by 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 mg evolocumab administered to healthy adults, median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%. Distribution Following a single 420 mg intravenous dose, the mean steady-stat…\"}, {\"id\": \"18\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ered subcutaneously every 2 weeks or following 420 mg doses administered subcutaneously monthly (C min 11.2), and serum trough concentrations approached steady-state by 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 mg evolocumab administered to healthy adults, median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%. Distribution Following a single 420 mg intravenous dose, the mean steady-state volume of distribution was estimated to be 3.3 L. Elimination Two elimination phases were observed for REPATHA. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while a…\"}, {\"id\": \"19\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… 12 weeks of dosing. Absorption Following a single subcutaneous dose of 140 mg or 420 mg evolocumab administered to healthy adults, median peak serum concentrations were attained in 3 to 4 days, and estimated absolute bioavailability was 72%. Distribution Following a single 420 mg intravenous dose, the mean steady-state volume of distribution was estimated to be 3.3 L. Elimination Two elimination phases were observed for REPATHA. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of REPATHA is largely through a non-saturable proteolytic pathway. REPATHA was estimated …\"}, {\"id\": \"20\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…estimated to be 3.3 L. Elimination Two elimination phases were observed for REPATHA. At low concentrations, the elimination is predominately through saturable binding to target (PCSK9), while at higher concentrations the elimination of REPATHA is largely through a non-saturable proteolytic pathway. REPATHA was estimated to have an effective half-life of 11 to 17 days. Specific Populations The pharmacokinetics of evolocumab were not affected by age, gender, race, or creatinine clearance across all approved populations [see Use in Specific Populations (8.5) ] . The exposure of evolocumab decreased with increasing body weight. These differences are not clinically m…\"}, {\"id\": \"21\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…on-saturable proteolytic pathway. REPATHA was estimated to have an effective half-life of 11 to 17 days. Specific Populations The pharmacokinetics of evolocumab were not affected by age, gender, race, or creatinine clearance across all approved populations [see Use in Specific Populations (8.5) ] . The exposure of evolocumab decreased with increasing body weight. These differences are not clinically meaningful. Pediatric Patients The pharmacokinetics of REPATHA were evaluated in 103 pediatric patients aged 10 to 17 years with HeFH (Study 6) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg …\"}, {\"id\": \"22\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…volocumab decreased with increasing body weight. These differences are not clinically meaningful. Pediatric Patients The pharmacokinetics of REPATHA were evaluated in 103 pediatric patients aged 10 to 17 years with HeFH (Study 6) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean trough serum concentrations were 22.4 mcg/mL and 25.8 mcg/mL over the Week 12 and Week 24 time points, respectively. The pharmacokinetics of REPATHA were evaluated in 12 pediatric patients aged 11 to 17 years with HoFH (Study 9) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean serum trough concentrations were 20.3 mcg/…\"}, {\"id\": \"23\", \"claim\": \"Study result for Evolocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…volocumab decreased with increasing body weight. These differences are not clinically meaningful. Pediatric Patients The pharmacokinetics of REPATHA were evaluated in 103 pediatric patients aged 10 to 17 years with HeFH (Study 6) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean trough serum concentrations were 22.4 mcg/mL and 25.8 mcg/mL over the Week 12 and Week 24 time points, respectively. The pharmacokinetics of REPATHA were evaluated in 12 pediatric patients aged 11 to 17 years with HoFH (Study 9) [see Use in Specific Populations (8.4 ) and Clinical Studies (14) ] . Following subcutaneous administration of 420 mg REPATHA once monthly, mean serum trough concentrati…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "12",
+    "supports": true
+   },
+   {
+    "id": "13",
+    "supports": true
+   },
+   {
+    "id": "14",
+    "supports": true
+   },
+   {
+    "id": "15",
+    "supports": true
+   },
+   {
+    "id": "16",
+    "supports": true
+   },
+   {
+    "id": "17",
+    "supports": true
+   },
+   {
+    "id": "18",
+    "supports": true
+   },
+   {
+    "id": "19",
+    "supports": true
+   },
+   {
+    "id": "20",
+    "supports": true
+   },
+   {
+    "id": "21",
+    "supports": true
+   },
+   {
+    "id": "22",
+    "supports": true
+   },
+   {
+    "id": "23",
+    "supports": true
+   }
+  ]
+ }
+}

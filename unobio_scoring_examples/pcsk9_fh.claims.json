@@ -1,0 +1,297 @@
+{
+ "title": "familial hypercholesterolemia + anti-PCSK9 antibody (real pipeline claims, Open Targets 26.09, cached 8 Oct 2026)",
+ "claims": [
+  {
+   "id": "clm_1",
+   "fact": "moa_direction",
+   "value": "inhibit",
+   "origin": "user",
+   "evidence_type": "source",
+   "statement": "Input: direction of action is inhibit.",
+   "rule": "Given by the user.",
+   "sources": [
+    {
+     "kind": "user_input",
+     "id": "moa_direction"
+    }
+   ]
+  },
+  {
+   "id": "clm_2",
+   "fact": "modality",
+   "value": "antibody",
+   "origin": "user",
+   "evidence_type": "source",
+   "statement": "Input: modality is antibody.",
+   "rule": "Given by the user.",
+   "sources": [
+    {
+     "kind": "user_input",
+     "id": "modality"
+    }
+   ]
+  },
+  {
+   "id": "clm_3",
+   "fact": "oncology",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "Familial hypercholesterolemia is not in the oncology therapeutic area.",
+   "rule": "Oncology = therapeutic area 'cancer or benign tumor' in Open Targets.",
+   "sources": [
+    {
+     "kind": "open_targets_disease",
+     "id": "MONDO_0005439",
+     "url": "https://platform.opentargets.org/disease/MONDO_0005439"
+    }
+   ]
+  },
+  {
+   "id": "clm_4",
+   "fact": "genetic_support",
+   "value": "mendelian",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "PCSK9 has Mendelian genetic evidence for familial hypercholesterolemia (71 records: clingen, eva, genomics_england, orphanet, uniprot_literature).",
+   "rule": "Mendelian: ClinGen, Gene2Phenotype, Genomics England, Orphanet, UniProt literature, or ClinVar with a pathogenic variant. GWAS: credible set with locus-to-gene score >= 0.5. Somatic: IntOGen, Cancer Gene Census. Strongest wins. 'none' needs every evidence row read and genetic data for the disease.",
+   "sources": [
+    {
+     "kind": "open_targets_evidence",
+     "id": "049c24d14c0dcbdac57a3bb3166302d42392ab27",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0005439",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "0d165d5d08921f48bfd58d738aae7ac3811cb25e",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0011369",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "149102e8512e50a1fe1c013fd148f0a691a7c569",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0005439",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "1c730d170e276b7bfc78c68076664cc3d3f29488",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0011369",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "41278ec76e75b45481344621eea89129ceb0965b",
+     "datasource": "genomics_england",
+     "disease": "MONDO_0011369",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    },
+    {
+     "kind": "open_targets_evidence",
+     "id": "43741a299fb2be21ab9c26b468d74ffa6d626016",
+     "datasource": "clingen",
+     "disease": "MONDO_0011369",
+     "url": "https://platform.opentargets.org/evidence/ENSG00000169174/MONDO_0005439"
+    }
+   ]
+  },
+  {
+   "id": "clm_5",
+   "fact": "approved_same_moa_count",
+   "value": 3,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "3 drugs with the same mechanism (PCSK9 inhibit) are approved for familial hypercholesterolemia: Alirocumab, Evolocumab, Inclisiran.",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL2109540",
+     "name": "ALIROCUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL2109540"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "446f6b5c-0dd4-44ff-9bc2-c2b41f2806b4",
+     "source": "DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=446f6b5c-0dd4-44ff-9bc2-c2b41f2806b4"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL2364655",
+     "name": "EVOLOCUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL2364655"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "709338ae-ab8f-44a9-b7d5-abaabec3493a",
+     "source": "DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=709338ae-ab8f-44a9-b7d5-abaabec3493a"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "cd61e902-166d-4aa6-9f3c-a18c1008d07e",
+     "source": "DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cd61e902-166d-4aa6-9f3c-a18c1008d07e"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL5095052",
+     "name": "INCLISIRAN SODIUM",
+     "url": "https://platform.opentargets.org/drug/CHEMBL5095052"
+    }
+   ]
+  },
+  {
+   "id": "clm_6",
+   "fact": "moa_clinical_precedent",
+   "value": "approved_same",
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "Alirocumab with the same mechanism is approved for familial hypercholesterolemia.",
+   "rule": "Same mechanism = same target and same direction of action (unknown direction counts as same). Approval = an FDA, EMA or DailyMed label mapped to the disease ID; salt forms are one drug. Related disease = a shared specific therapeutic area (phenotype, biological process, measurement and 'genetic, familial or congenital disease' do not count).",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL2109540",
+     "name": "ALIROCUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL2109540"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "446f6b5c-0dd4-44ff-9bc2-c2b41f2806b4",
+     "source": "DailyMed",
+     "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=446f6b5c-0dd4-44ff-9bc2-c2b41f2806b4"
+    }
+   ]
+  },
+  {
+   "id": "clm_7",
+   "fact": "ph3_same_moa_count",
+   "value": 1,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "1 drug with the same mechanism has an active Phase 3 trial in familial hypercholesterolemia: Lerodalcibep.",
+   "rule": "Counted: same mechanism, not approved for this disease, a recruiting or active Phase 3 (or 2/3) trial mapped to the disease ID. Terminated or completed trials are not competitors.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL4650405",
+     "name": "LERODALCIBEP",
+     "url": "https://platform.opentargets.org/drug/CHEMBL4650405"
+    },
+    {
+     "kind": "clinical_report",
+     "id": "nct04798430",
+     "source": "ClinicalTrials.gov",
+     "url": "https://clinicaltrials.gov/study/NCT04798430"
+    }
+   ]
+  },
+  {
+   "id": "clm_8",
+   "fact": "approved_therapies_count",
+   "value": 16,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "16 drugs are approved for familial hypercholesterolemia: Alirocumab, Amlodipine, Atorvastatin, Bempedoic Acid, Colesevelam, Evinacumab, Evolocumab, Ezetimibe, Fluvastatin, Inclisiran, Lomitapide, Mipomersen….",
+   "rule": "Approved = an FDA, EMA or DailyMed label mapped to the disease ID. TTD-only and PMDA-only approvals and diagnostic radiotracers are not counted; salt forms are one drug. Zero only if the drug list is complete and has no approval of any kind.",
+   "sources": [
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL2109540",
+     "name": "ALIROCUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL2109540"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL1200402",
+     "name": "AMLODIPINE",
+     "url": "https://platform.opentargets.org/drug/CHEMBL1200402"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL393220",
+     "name": "ATORVASTATIN",
+     "url": "https://platform.opentargets.org/drug/CHEMBL393220"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3545313",
+     "name": "BEMPEDOIC ACID",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3545313"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL1201473",
+     "name": "COLESEVELAM",
+     "url": "https://platform.opentargets.org/drug/CHEMBL1201473"
+    },
+    {
+     "kind": "open_targets_drug",
+     "id": "CHEMBL3545191",
+     "name": "EVINACUMAB",
+     "url": "https://platform.opentargets.org/drug/CHEMBL3545191"
+    }
+   ]
+  },
+  {
+   "id": "clm_9",
+   "fact": "essential_gene",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "PCSK9 is not a common essential gene.",
+   "rule": "Open Targets isEssential (DepMap common essential).",
+   "sources": [
+    {
+     "kind": "open_targets_target",
+     "id": "ENSG00000169174",
+     "url": "https://platform.opentargets.org/target/ENSG00000169174"
+    }
+   ]
+  },
+  {
+   "id": "clm_10",
+   "fact": "modality_target_mismatch",
+   "value": false,
+   "origin": "structured",
+   "evidence_type": "source",
+   "statement": "An antibody can reach PCSK9: located in Cell surface, Cytoplasm, Endoplasmic reticulum, Endosome.",
+   "rule": "A large-molecule drug (antibody, ADC, bispecific, cell therapy) cannot reach the target only if no location is membrane, secreted, extracellular or cell surface, and no antibody tractability flag is set.",
+   "sources": [
+    {
+     "kind": "open_targets_target",
+     "id": "ENSG00000169174",
+     "url": "https://platform.opentargets.org/target/ENSG00000169174"
+    }
+   ]
+  }
+ ],
+ "phase": "ph1",
+ "market": {
+  "us_patients": 1300000,
+  "price_analogues": {
+   "same_moa": [
+    3330
+   ]
+  },
+  "price_ceiling_usd": 3330,
+  "assumed": [
+   "us_patients"
+  ],
+  "_provenance": {
+   "us_patients": "ASSUMPTION: heterozygous FH ~1 in 250 x 335m (not from a loaded source)",
+   "price_analogues.same_moa": "CMS Part D 2024, evolocumab, beneficiary-weighted, minus 25% rebate [A]"
+  }
+ },
+ "round_terms": {
+  "pre_money_m": 150,
+  "investment_m": 50
+ }
+}

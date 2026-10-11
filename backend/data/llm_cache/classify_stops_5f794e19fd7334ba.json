@@ -1,0 +1,245 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1211,
+  "output_tokens": 1429,
+  "latency_ms": 9859,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT01480245\", \"reason\": \"The study was formally terminated given that GSK is not submitting an application for regulatory approval for drisapersen in Duchenne Muscular Dystrophy.\"}, {\"nct\": \"NCT01890798\", \"reason\": \"Rights for the further development of drisapersen have been transferred to Prosensa. Therefore this study has been cancelled before enrollment.\"}, {\"nct\": \"NCT01910649\", \"reason\": \"Regulatory approval was not obtained for drisapersen, hence BioMarin is stopping the development of all exon skipping oligonucleotides in DMD.\"}, {\"nct\": \"NCT03532542\", \"reason\": \"The trial was stopped to reduce the clinical trial burden on participants while ensuring continued treatment via a post-trial access program with commercially available casimersen and golodirsen. Study was not terminated due to safety concerns.\"}, {\"nct\": \"NCT03907072\", \"reason\": \"Lack of efficacy\"}, {\"nct\": \"NCT03985878\", \"reason\": \"Participants were either transitioned to a post-trial access program or another Sarepta study, or they declined further treatment. There are no safety concerns with Eteplirsen.\"}, {\"nct\": \"NCT04708314\", \"reason\": \"The Sponsor has decided to focus their resources on other areas of therapy.\"}, {\"nct\": \"NCT00308113\", \"reason\": \"New enrollment has been suspended, currently following previously enrolled participants\"}, {\"nct\": \"NCT00759876\", \"reason\": \"Terminated early because similar study with Ataluren (PTC124-GD-007-DMD; NCT00592553) exhibited lack of efficacy at the high dose (not due to safety concerns).\"}, {\"nct\": \"NCT01009294\", \"reason\": \"Terminated early because a similar study with Ataluren exhibited lack of efficacy at the high dose (not due to safety concerns).\"}, {\"nct\": \"NCT01099761\", \"reason\": \"Based on preliminary safety data.\"}, {\"nct\": \"NCT01239758\", \"reason\": \"This study was terminated based on preliminary safety data.\"}, {\"nct\": \"NCT01865084\", \"reason\": \"The study is being terminated for lack of efficacy\"}, {\"nct\": \"NCT01978366\", \"reason\": \"Dosing stopped\"}, {\"nct\": \"NCT02036463\", \"reason\": \"No funding for project.\"}, {\"nct\": \"NCT02090959\", \"reason\": \"Sponsor decision due to commercial availability of ataluren.\"}, {\"nct\": \"NCT02310763\", \"reason\": \"Termination Date 30AUG2018: Reason for termination: Lack of Efficacy\"}, {\"nct\": \"NCT02525302\", \"reason\": \"Dosing stopped\"}, {\"nct\": \"NCT02606136\", \"reason\": \"Sponsor Decision\"}, {\"nct\": \"NCT02814019\", \"reason\": \"Interim analysis concluded to futility\"}, {\"nct\": \"NCT02858362\", \"reason\": \"The study was terminated due to lack of efficacy in Cohorts 1 and 2.\"}, {\"nct\": \"NCT02907619\", \"reason\": \"Termination Date: 30Aug2018; Reason for termination: Lack of Efficacy\"}, {\"nct\": \"NCT03558958\", \"reason\": \"Terminated due to lack of funding.\"}, {\"nct\": \"NCT03603288\", \"reason\": \"Interim analysis concluded to futility of main study SIDEROS (SNT-III-012)\"}, {\"nct\": \"NCT03642145\", \"reason\": \"Study is no longer necessary given the safety and efficacy of emflaza in this age range has already been established after review of already available data.\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT01480245",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "GSK is not submitting an application for regulatory approval"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01890798",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Rights for the further development of drisapersen have been transferred to Prosensa"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01910649",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "Regulatory approval was not obtained for drisapersen"
+     },
+     {
+      "label": "business",
+      "quote": "stopping the development of all exon skipping oligonucleotides in DMD"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03532542",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "reduce the clinical trial burden on participants"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03907072",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Lack of efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03985878",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "Participants were either transitioned to a post-trial access program or another Sarepta study, or they declined further treatment."
+     }
+    ]
+   },
+   {
+    "nct": "NCT04708314",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "focus their resources on other areas of therapy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00308113",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "New enrollment has been suspended"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00759876",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "similar study with Ataluren (PTC124-GD-007-DMD; NCT00592553) exhibited lack of efficacy at the high dose"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01009294",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "a similar study with Ataluren exhibited lack of efficacy at the high dose"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01099761",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "preliminary safety data"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01239758",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "terminated based on preliminary safety data"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01865084",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "lack of efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01978366",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "Dosing stopped"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02036463",
+    "labels": [
+     {
+      "label": "funding",
+      "quote": "No funding for project"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02090959",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "commercial availability of ataluren"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02310763",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Lack of Efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02525302",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "Dosing stopped"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02606136",
+    "labels": [
+     {
+      "label": "unknown",
+      "quote": "Sponsor Decision"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02814019",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Interim analysis concluded to futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02858362",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "lack of efficacy in Cohorts 1 and 2"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02907619",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Lack of Efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03558958",
+    "labels": [
+     {
+      "label": "funding",
+      "quote": "lack of funding"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03603288",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Interim analysis concluded to futility of main study SIDEROS (SNT-III-012)"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03642145",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "already been established after review of already available data"
+     }
+    ]
+   }
+  ]
+ }
+}

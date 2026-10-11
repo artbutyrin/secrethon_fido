@@ -1,0 +1,185 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0005010",
+  "ensemblId": "ENSG00000087237",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T12:06:22+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005010",
+    "evidences": {
+     "count": 13,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "2d19ad869784ab58eb73b23cb5369a50e6eb4b96",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9824817776679993,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "a173cdc12ba1856cb31a7edf24d70af8da85ec12",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9809922575950623,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "05816c8fee43f95684479c4b206f0ee2ef93ed4d",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9777171611785889,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "1805102bd33de32c2b34a92c943785e1655e9555",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9749924540519714,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "3e8992c1877fb114b0b809ba097ce780ff28c616",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.965503454208374,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "c6b6d0614318f24401e18df28063e3638a942722",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.962486207485199,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0021661",
+        "name": "coronary atherosclerosis"
+       }
+      },
+      {
+       "id": "b058de0e0cf77c0ce24bc757cfe550c512f6eb4e",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9600445628166199,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "97ad6e1cbdb61efa569a30c86838f5d4a355d292",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9425888657569885,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "0bf83a950f8233340d0f653c110010a05109a1fd",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.941714346408844,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "f77e93133bb37662be1dcb234d59aef6c1b4f23e",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9377050399780273,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0021661",
+        "name": "coronary atherosclerosis"
+       }
+      },
+      {
+       "id": "d9a03417919ea13b8d71aa0bb213ab592b08a93a",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9264588952064514,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "50415fbc621a4b14b2971e3424ad8ef5d91de7d8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      },
+      {
+       "id": "9dad1f03af4936ed129d5885eb48e889ff0639bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005010",
+        "name": "coronary artery disorder"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

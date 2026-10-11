@@ -1,0 +1,18 @@
+{
+ "task": "revise_memo",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 294,
+  "output_tokens": 523,
+  "latency_ms": 4418,
+  "json_mode": "json_schema"
+ },
+ "system": "You propose one small wording edit to an investment memo the reader already sees. before must be copied exactly from a single section, including punctuation. after replaces only that span. Do not invent numbers, study names, citations, drug facts, or sources that are not already in the memo. Keep an existing citation marker such as [1] when it stays attached to the same sentence. If the instruction is unclear, or it asks for a fact the memo does not contain, leave before and after as empty strings and ask one short question in note. note is one sentence: what changed, or that question.",
+ "user": "Instruction:\nRewrite the marked passage in Recommendation. Keep only facts already in that passage.\n\nMemo passages:\n\n[recommendation] Recommendation\nRecommendation: Do Not Invest. Grounds: the mechanism is already approved for this disease (2 or more drugs) and no advantage of this asset is shown: another drug of the same kind is not worth backing; proven differentiation would change it. Scorer: Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown. Pluses 4, minuses 0; data for 4 of 8 scorecard items.",
+ "answer": {
+  "section_id": "recommendation",
+  "before": "Recommendation: Do Not Invest. Grounds: the mechanism is already approved for this disease (2 or more drugs) and no advantage of this asset is shown: another drug of the same kind is not worth backing; proven differentiation would change it. Scorer: Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown. Pluses 4, minuses 0; data for 4 of 8 scorecard items.",
+  "after": "Recommendation: Do Not Invest. Grounds: the mechanism is already approved for this disease by at least two drugs, and no advantage of this asset is shown. Another drug of the same kind is not worth backing; proven differentiation would change that. Scorer: Crowded: the mechanism is already approved here by at least two drugs, and no advantage is shown. Pluses: 4; minuses: 0; data for 4 of 8 scorecard items.",
+  "note": "Clarified the wording and punctuation while preserving the passage’s facts."
+ }
+}

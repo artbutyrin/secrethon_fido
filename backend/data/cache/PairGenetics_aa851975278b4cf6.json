@@ -1,0 +1,4726 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0004976",
+  "ensemblId": "ENSG00000142168",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T11:59:45+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0004976",
+    "evidences": {
+     "count": 374,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "0c0fc7bcc1683137eac461fb1bb6bc3415df5dad",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0d5149cf436fade841ff52764fbc3e1820a6b8bc",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1001d09798b15af4e7877dda7678be1bc8726896",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "17984cd33453396e93990a79be58c4fecfe58039",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1ef4e77406e89b379782fe638748ad46d856e472",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2689090fa42559698e9c4b2df3c9ec70d1c40bd1",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "26d889aba862953d846baf38fff0b1639630a9cd",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "284fdf124b61cc6a171f81c837a9674de2f83e0d",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2b4ef7cb047ea581f267a581cdea0b4a28f2afdd",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2bfb7a32f7a25768d597405f0ada2a00fb124f24",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "30bf1e19b2d35859a68a21af257bcf2694738d00",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "34987958b4ffaf2672236554d3ff361d742105c2",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "36c5c4e4363da71bb8577edefdd89d6433afbbbc",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3765cd1561dff0716bb3d3415abe5363085be722",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "39084211f0448c93b9d1e250ef0d6b14ed563f87",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "393708304d211080b35e06cf4a197514fbe3814e",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3a1c9fa6b0ffcaff17e91efdbc0b40b61fae8ed7",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3ac9401d43e72eed872165112191eec21720978d",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3c4123884d7f354016705ccf4fef33f99d28b067",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3da3da536917ff8d4597b0e63a0eec632075a934",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3dcea900c3aafe00879429dd5ca6bc60dbd72316",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "41b54cfa806f6e9bf2f7d6e9dce6cec8fdff2266",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "43e356cfe9ff0d3b3ce97d8e2720091c7bb0dd7e",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "468aa69ce16ac942253ca9810fb042f826878689",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4ada42fb45db1d0fd592218a151409ae79574620",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4b39015970d0749dcde0256b226648f903f4b3da",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "526d6bab162e2b64ee483e212eae652f838a147b",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "546cd454ef97a96ddd423778d172fec8d146d8f0",
+       "datasourceId": "clingen",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "550f253d81f55db8236c4e850c4b11836dc34f10",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "55359bb563f6b09834f509986f9495ad053c000c",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5d24d9f4f61dc94f3d0f0b7857ed0c4c0010be66",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5e2b0b2b03ca55cc03aa37d4f58936786f1bd339",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5f322bedae6bdef73050ee4cfc586d04de6cb18c",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "60e605b1cf9f34b4cb14145ea4dcd33ed9a5833f",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "612151294e2d9609a491928ea5d12d288642209f",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "62d0154cb16e3900866e6487d75cb27f0a53f4f6",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "65baadb79ca7ee56e31cd3867f2195f3b7c48bc8",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "67f6b7da671d9369babc3ee9fb30584b77ba9367",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6afec356b26f1d73b76f86313674e4ff65765810",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6b4bd359bae427748912f1d78db78f4b244ddefb",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6bf7fd6a94a81fc7e002a0fa82c1f6a5d574a63e",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "70b13535e57aadfe4ce05bc5fd2d6d260b401340",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "71e5abcdf85cbcf66c10340532c2e8aa59c5bbb3",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "78ad5289b5b91c30bb1cb5e605542b250e4d979e",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005145",
+        "name": "sporadic amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7b4ebb35b62e5b6156763d65bfd6a80b925f4454",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7e6bc349ee11ba825ec01bf73fb4134030a2cd5d",
+       "datasourceId": "uniprot_literature",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7f37ca89799a7976293175c936fac58fffb04001",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "811e833bf6af89cd9a437647844b056f1980fbc6",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8b975a902ba04f6f3abd569f6d06dc2b8cf828a8",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8ee2a5117b22ca5d805b842d8146aa97a415404c",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "917513edddb9e473ea82eb9f6ed03e0015cc69d7",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9582c8cf44dd2228e96499ede0c3932c5cdec4e0",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9702c20c78d74b36cc056e90a767fd2fcd528a83",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "989b375f9eb4c6a3e3d87e2bac49387f62ace3de",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "997e48a7fd796948f22c4a0b53262f9e26a4133e",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9ab2bf3572d2cfcf694f54015d0ddf69e9d59a25",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9c76c3183577266fa54e38af26fc79d9b9e421cb",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005145",
+        "name": "sporadic amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9e38f8b6307f9adb9bcd32408fdd3225fb8f2adb",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9ef5086151c3a05823d0ab46d76c597440018e4a",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a42c27fd219f833bdee5716c678c4962e634df32",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a469500a19a744535f1669a8c326db3736f2ab8a",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ab09de6d8fc666561e22a1be98934754f4b42495",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ad4a164574f1fe64e59f796fb1a8d9be1f637b09",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "aec485c4856708239749db144829316d89116b77",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b1880c98dc7e4820656786708736bb83e633cbd2",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bba2d9edd14e53082c0f93b0049155d8357549e9",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bc6833484e2bacda704cc00a8e7e068af49bcba5",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c37f4cd8558984e226404105a1bb56b8ac498b80",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c42374edd26cdfc441e1685176c81cecf3146748",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cb54b1168dc49fd092bae90f5015e78836a953dc",
+       "datasourceId": "orphanet",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cb8cb4d3ddfa407c6ee0aedbafefe2f896b422b5",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d259070e6b4eede1c07b103227e5894ddd7b62b7",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d4b1b7b0c1bdfd568ae522b0b42cf3ce65dcca22",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d4f9bf8d3d974dba7a93a84cd547d365fe2a75d7",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d7117e10dbdfbf2ce3e061f0a5e61870494e321b",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d86fd0971841b0ab668e4c9a4ca284fdcedc2212",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "da77361fc74baf18d8921f80a5c2886b6719029e",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "dc30ab70d30694f6e4563ef5a85c601860b1c112",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "de13b4f84843aad8313af7689a0560870b1c5820",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e311f4da91ad55c6609c908682a7fdc9353213f5",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e35511c81322de9b7afb409a1a8b935b6f41987b",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e4c855968ca128608c0d50a5d29718dd0ec2f618",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e8e07c989907ce18731a39f3439272434250ffd3",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e9c702e9ad944f15398ef5fc3bce308108fb735b",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ec0d153464865732964b67df639e02361c4e1004",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ed9e8ce057b6fb8ac39ef95d4327b3213df473b4",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f09d01deaa455e8b89c5353ea912ed57c198fb10",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fcee7ec24d07d06b1896b1c3d734fc81d2c03eaf",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fec34d76f569d3e7dae855a75c3541959830e5d7",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fee73382626281864c5660ebc7c616005c4c8697",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ff79c8858cdaaa4cb7d14d3249cceaedf8b93eec",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ffa43f90e69d2f7808554743238b61dd2606c289",
+       "datasourceId": "uniprot_variants",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0b5eb173bd6687a8dcff9b18016048d1ff1aa3da",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9520189166069031,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c887c3b57385932970be61d0e0ba20e2050a4ba3",
+       "datasourceId": "gwas_credible_sets",
+       "datatypeId": "genetic_association",
+       "score": 0.9520189166069031,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0ccd61cad149203a9546b967e01929efb909f0eb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0f72b8312e80ed20ae57ce801a7c4bf84297eb47",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "11c36dc596004d1c7968734fc8e24dff8328bbab",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "12509efbd46c2c423b6ac921056a4bb28ca3d2d7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2e218bcf1e1a7f798edd50d01676ed510292064a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "363a86f1e886d9a13869edcefedd3d7fe6da1f3d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3893aba4993e389947333317ac152cda2c3905aa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "42b10c07e5ab0629aa34063033ef47864ba71aa0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "43689fbd3985736fba16249c515190253c3224d4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4c5facf740c4e837d9244f45cdff795ffb76fcd2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6cb58aed2d8c52ffd73cf8ea3ad8a473d78c7046",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6e1f3e148edbc3f73072565e2a5f03fcf58a2ce4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "759e9499007d182acb86827f89e69589e6927686",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "776887ad7e26d01e0ada1ed9876978c64eb865ef",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7874e55558dcde19135da76dfa1abc2e4bbabd2e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "81820371eefc8b9c4f5bc7ab2bf5b7730fa92e35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "879e20ad91fd9aa077455814cb94f5a1ad611131",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8fced93e9b2c1ad6e7d348c1aea53e7cbff1225e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "963317cb8f9f7c96b25d82bd4c93c4b7dbfaffd8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "979488ceb6cea6c04d54102b9771ea6ccfeb0b37",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a0588bab9f38f18dcd0c95a2f3c50be6df4553b6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a8925b5a94a70e8cde79f2be85908b2becf150c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c76bfcf25c46434f155f63f45e6caa2d2875a8f1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ce58ac8e539ec507124ea3c7e541ec927d43d9d6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cf610209481cead1930b7009f59840c9ea7a70c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d55206978030cd5b461ab2397c243de83fab760d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d6294bb74415c6f9a3274464deb3c634ae4fb512",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d8dcb1a6ab83208db6aa444a369b78904e7b69b6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d97d16482c4ac0bdc4b3e3679eeced39c8a793ec",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "df292fc43b994da95992cdd0c5ccbea66ae70d12",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e0fe593c314e870a2c9ef07e153f5e5d79ba07b4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e7b330e1094ce48637026507bcc81fe445c69a05",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ea4b38e4e0aa5fd1d4cbb4af90b15c6e03afe0bb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f35db0b39a69b6f0f0d418dfee0e02e7559bc7d2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fd2b99773b77da4197dfcfc06f15415fbfea9508",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.95,
+       "clinicalSignificances": [
+        "likely pathogenic",
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "010055a2407f41fd80023a70c160cd942de2bad6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "06b722d9b4193cfa2bd5a358dae3d577c53db3c7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0ffe4854456e578bd6f04aab93aebfb00f96bfc5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "160653d72e76530969ae36133c647f68e4500324",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1941e17ee7a7426af24bb00ca399fab825c3e5b1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1ac47618235687142f68e4b7e26194a1a5384efd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "205ad25824d6bead0b39f99d1a6221eaad416946",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2219dcc011c88730c1e3a86f79f1c0ccdeba3609",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "290df7c40f8e1872d8e321658a55b697491c00b1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2a96b2b32883b838b924778113aa2d93458423da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2e107cb482d4926082b823f0b7c815dd4345ed2e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3f7f06ee20846a535996dc7faf9a9d1545e7335c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3fefed15aaae3bfd74d5b9c728dd8b6b4e829717",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "454b0c48338d0f10c04fe9993bdea6e114fd23af",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "468ccb533ecfe9a4038b173c4c3195abae953457",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "50da576f402cacc23613adb3c6f4788ec90b6898",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5dca134fa96d920d33da5ef9504eeef435f26b14",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5df4259844e083b47497ddb18f940483d40c13a5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6a36d7d81a4eaab8db66636beb06697c8f6a1abe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "849678e81927da7dac369b29f26b3454146000de",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "869705a53770f61f202f23268d569658a5cd7bff",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8c45bb75a2c5c9fd542b7c1e50d07c93638cfc29",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9bd5cfcaaff40f1be52ce3a74f8e8db6a2bbe19b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9f15e242a5ff701aa11212b10b83bf2cc418a48a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a88dd26668f2486443e65ebe7967a75036262695",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ae87d66b20529f62ff2cb51a039353e7ef7d9df0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ae9937ffc40819110496c3ef244acd926b0ba529",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c6a18b9eb1e784f5355242bdb4b7e3811a8a971f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c79a1ba5d7d4f62126a30ed7084ce0d1529d2db6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cdc9a775bca8d2f70d2dc94b84cb9eba34946fc0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d05af9be5488e852a21274eac33674881927fa7c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "dbb0fd03064f0bb3e4f30f675dcfe300376ae498",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e1b8b16a261f987ce8866cb3ff86f22086b0378f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ea40a68efe89fc2b9fb0718d80cc25d0ce4cdd93",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f216e4b966f4e64ac46f179eae300b67eba80ca3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f363021467a904f4d8aef4ae746225d35df1bd18",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f4e9535a82ab9971c32241edf992bcf563e964d6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f652781f7afc75ede75d81a5c532e7976cf69b77",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f71d0dd7286abee8814f57ff708bdc4f84f14335",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f7a9b70ae2df14830c48ef7ecd6ae02358e8372f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fd37887f56ab8893485af48d565b160659bad39f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "feddb34757f9bc96bc02aaa92b43e66c586cf631",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.92,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "331f7303e2621dd91ede5cf67d08976ad0888226",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "34dcd11699a91d65a7097ff8a07bdc015535fcb4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3cb41ffe1fee0ae13c325875bd3c03d2e950565f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3dc7db52e45be2f9a5deb479ef5f1f7a0b707a00",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3f181da1a85c4de1985f87a3562af068c2a08f47",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4754cccff0afab009ea4b6dee2dc61b8e149a56d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "91d399e996a837dbc460f723ef82eac6b2fe89d6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a743b5da77df3bad39c2be7cf16e655bbe5f7160",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "aaba65d2d0b9485c4781e432a7d39a17864fdb7d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bb9493a98a6a6227aa19b9a9c27c20062f333e28",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e3668e51e5458f7b6550f49da1efb68edf4506e2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.9,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "64b3ca2778e9f36e9c38a3513a09cf6fb479b025",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.75,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fb68cbd79954411a3fb848e512cbf3ce9b498ef5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.75,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "00cb706b6dd4a3c7ee21a3cddc7cdd82095fc82b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "01aefb2f01effbce5d584b15a88c0412cb64ca2a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1136cd2ddc62cb8da72b4d5e945b8df0d38415d5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "17e9821ac16420dc40ac0fa9409999f86d3b76a2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1c385da6abf633d55dc7332ca47037158778878c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2343145aa475557c65a2cd05d8a51bde03ca8c7b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "25756c5ae8a969484767d934ae0d140fd73f662b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "28c0012b30f177af2ae511694348bc11b3fc6bc9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2c59348a7a3a862a0d20d0c246acfee1444ec107",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "32e32663ba76e5defdf2b56f2322d57460117a2d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3b8341111093a1313ab9931cb912cfbb5724ab8f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "42d5cfd074779c1c454f7e552918dbc7b95cee41",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "48856cfe97cde1eedc1b7c30638fbec87954238d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4a540221db0be69c871d1dbee02488a92fb02e11",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4a59110a9cec62f42b05c981c35a3c7e65998f93",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "502a07603155a063d5151826d7a341b5d7105bc0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "52360e979c542afb6ad7e122d9df6d89113d3e81",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5386af5cabf3c4fb029862026a17d10a153879ec",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5f77c885fa2b1e8a43be3e2e5d66ccbf2e62d1da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "607cebe05168d8cec9e258e3b7d203fc0300e7c6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "60e906d34585b20dd535f7ac2c09b254adccc39a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "633e00a22b95fae58fa1b92c8780a96665b8c980",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6369c2c5edb0513c11b105f5c8230fa297e0911b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6923d561e0fd6ec8c242d77aaae992f1c5728b26",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "734eb0b22380be52680efb1ed33d2164c6615961",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7b2166f21ca87ae408aab2796f1d1643bb3ff7de",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "801d638317997b77742a1b652b82564377ac2675",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "82370c6030ce3bd263c544936d35b82b1a9a4e98",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "86a82eee72570984f6dd45a4d6acef160b43b416",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "910b1dd58c34ff42e756dfc8848d337cb9274d59",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a69da5119ecfba187075f2decb696dcf136737fc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a7a534159ee7d1c5b3c2f11c9b1d4c7637f83bb7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a82510b861fba432597cdb642b9d7969ff815207",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ac3e49387fff3ec3ceebc9a5e6b9baa572e18fd3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b16f5cac7bac7f3e234fdb2fb29f5efe9bc80608",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b4c514b080668ca4c76bd420165c15bd6cbe0317",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ba807ae410c18e3b3fcc8962275cd816d56c970c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bc34f59cf7779f126172b865e7f6a1ada986c1c0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c59698e4dd1154df461b2dae3872a24d4f331cbd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c5b2acdb3945dbbe844b0865351c5256b92870f0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c63b768f9c8476e8f0c8752d9b6a791dd0cd3e74",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cca424b1375cc4acd86a509251054a4046f70d14",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cd4a7a7309c7d827a084991b0ebde9fba3c38206",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cf8525c986644c096292da5bb267c67a1eb0bea7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d0a486257c009fcce434c204f435a8fdd12e6b08",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d83f579b002661e68970f43e63ff28d36cd101f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d88f93b7ee0f9a93068ad58831b96ab2b5e78881",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e3c817d6748b1ef5753c8a809a34007bcf2fdf15",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "eb3771051d0c231c4727ab183996d38aaf71ccf1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "eb76ce515bc3dfbab7a4af3fa142a7703278e430",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ece27f1b20731a9b58e260a0d0dc9540fc9a9fb7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fc6462102ee55a587962fe3ae17495d7e7fbbadf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fcd9680caa06f593829e7e95a9e4d6c74befd618",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0d40ff9017b3d86fe4fcc1fc7766b46387711ecc",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 0.5,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "37e55a7663c560e58b0d66faf6a04ad96928c74c",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 0.5,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005145",
+        "name": "sporadic amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d58013c25166899e7ccd8a3de2c0ca67b992444b",
+       "datasourceId": "genomics_england",
+       "datatypeId": "genetic_literature",
+       "score": 0.5,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005144",
+        "name": "familial amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8b0348c6a9b4acf5587c2f001eb40db1bc44b3f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.35,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9ff5a1046fa14a278862b45162e54748c7769ec2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.35,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fe455c1ae9a6acfe6226a57aaabee369a9bcf181",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.35,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0313abed68d5efe130ae77d467572f4fee25662c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "06c58ad74ebd35d399fce9df7c15d57e7351a56e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "07f995c134145117a701013f62b748a5eceab8a1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0b01a78bc97bc6e46c30fe561f22322f114cbcc9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "0fb42061e4fa08c95a7e06993827fbf3d9f6ab46",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "11e8caca67a5cab6c625fcbd0822a3914b7171c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "17d94be19e53d3d9917654f372876d90356804af",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1ac6c6d53907bf758837508bce714ba53f1957ac",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1c911ef502a858923c8f00635889fb4a2d54b810",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "1e6d81c5261242a79bf12a643743cdf7bad953bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "20c313abe3efe15360d6f669d62d858bcee2db78",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2234daca51e9ca46e3ec62f1d4f29387d19a7c0d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "283ea3a4f9c7a04fbf7a4e349750fc3e08525cc6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "28c8ad661a70f2e1870439ee55e1d7688e4b5b47",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "33cc22eeaec888114067228d3f9aefd8c861d1e0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "36c79d5e65cf2818fdb9307a0932946970a5d3f0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "39bc64c0d8498e981033a7eae1442af64536f16f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3d15354c9487792a11d6ffe4b3d140bc16674e87",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "464285e3596674369e11f276b55b4c2f200b5647",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4aa4447276808efa0c418e6e6de8a287f7a4707f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "55e6c983815816a799dccbd49a9d0e7a188fcb3e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5ef1778e7e5d97e682b497ba312745c583dca042",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5f2236dcea56a006b256332779d81b16acfe6b0e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "68aa1dabe0027fa3fbbe4193e24729a43993e666",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6fafe8b4dcf6a4d5eb5cbaf7dcf87088763c3a60",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "77ff2bdfceb8a62f2d77e432bb422068e64dd4ee",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "817acb4136b390365f1c9876a850d341bab4539d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "877858f85aa42ca2d6cdb63020362c032b58307c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8dac80aaf515f7e2a6abad6c1f8efa632bf57b5b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "93be454cc1989d76c4667ad9509599bbf5402251",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "94a86150d77432833502b12b94c97626a6215412",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "94b66208123c4c0715f8e6ff7999c308584270cd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "96dce45b7c4a6703f84caff91a28f2e415cc6a8c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "980eb55d632791031fa9171daff9839ebedbd95d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9b5b74d86987c59242d622a8b011fb230d1fc66f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9dd0c87056eb61852c4647659f012d48c21daa61",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9f2a4cf57823c5cf9911645fa9a6f2c4fbf0cc21",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a0cfae07d4aff8428110e3d2cfa18d062ea50179",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a3d0de6e88cb6bffde8b7acc526a1f81b650cc71",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a413e445f207717909a9d3e47a82ffbc4c16a6d0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ab37502c3a0b059d50280b63154834c0d431f326",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "abdbeb94b927786df79c73731b26e868b45d040a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b090b7c884fd58ce9acfe91abab68c1c64631b4d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b2e7411f71995e01bda1d52bca14ad2795858a21",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b322160fcc754f3ef6e90d1c59368d44129495e4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b5aaefa1bc1e2dfd47118f626a7a429bf6e84596",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b65ba5d848175fdf9b3ee172a8071f0148e288fc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b7736738d66f738c55ac4b37cd48451d7f306774",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b9473f8737f57fc2cc8eea49dab007da5b82550a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c505381aa74df629f5510cb2c42195791125bb42",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ca8adedbd281e67161039d02e8eca3c12a9c710d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "caccfa9a92d26ee76bcc3e6628112023abf9f3ca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d6c39560fd0ab8dac53f0dd2b07fce39c7f4a1e1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "da631bd435f93236cf7ee8d05f686364c387b52c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e16d60843255964455dde8103cd8c7e0135d271f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e2af81b50350c471f0c301a87e9bd775179b6a4f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e2d9e7f6817bb62e8c645d652af87b9d60d467a2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e4b9f644b24529ad79fe8c4b1c481f5397410f02",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e72e2242e8c653fdeac6f501898fd5aacbd1c2ee",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e8c37460e09d5a074939eefde1657fa57beac746",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e8cf5ace42892f173e264d8d9c8e7ed493a5c380",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "eb3af4af228a30708f91c4116de76eecbb3a1cbe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ec53300f643593513cef4aa8e26658f92193fa04",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ed428f1dd2e1cd8c789aaad1565bacef53887192",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f2e96c6241ee5a939a311c009d8e5127c1b335a7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f8ddb023ba1bc30a7eb11b25533dc9c57fec7b97",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fa68514264463f69527ead72da4e56e41fdb58b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "fd4704b2f4d47543aefb770ac8ae1500afc8db54",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2d516ea5bebb0322a6fe5900a9e4d84ea3242db3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.05,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c84d70725a828814339ec9fe3cbe3789ba45bb47",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.05,
+       "clinicalSignificances": [
+        "benign",
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "12aa541e69faeb1e46e4e551a2a897d5a4eafebb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "254584823d638e6152847b4a4f63a36720106631",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2c2ee1482c666fa9c3539898e863e01c655b4982",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "2f1813c9db83188053ea948fd2c2bdc2b4bea588",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "31a69d8c96934f4b732d5cc734442a28e240c74e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "323876a1c040ff1684b20882d4e0863d7387f443",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "3ad192f9af4125774bd143ee22dfbae019677665",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "402ccd6b362d2c035e630d0b85a6d6009ead05b2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4041e2ebd47fea4b742766317394bd5caa7ccc17",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "44c7b13e0bb13ad36f76d7abd43f67b54723ba77",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "44fa2ecd44b2a077a14e5c46eadc2914c5beab34",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "473e6257843a870a42fa81274f707da54f871234",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "4fee238b5e85a92e224a4161d00003eb540ee223",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5536df57e6388d5cf9db28b557157ced7e2741fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "56846fb302be420b71f35243767b49264c0e09d1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "586b634c4af4ebade7b1d38756e7e3b12b35fcfd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5ae17cc4f1bbfddd5943f2b7b7a4de310c2248b0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5c5f2d3de6036a3c58a30726935e3685400ad1f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "5da0494ef7de4e2a6142adbbafe615072b9a3233",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6b90719872b1c8d5fb4b53589dec0d328ef96117",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7571a0a8b13f3929078281ef1892aac1ffeb5d6e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7965ee3f1f39f683b5a64ca94ea3dd9f3c0bd253",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7ee3f382d3f1739501d3383260fb99292d668375",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "7ffe73dfad5d0485208dfed3e26f3d0b899621fd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "8064fbc6f11b4b6abf5d8183c1cc4657cad675d3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9946e6d060dfdf267e775495a56d124eee2fe341",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "9f58a64381b187abaf6cf28c01fe982094a945bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a36185a65765c0f6078a1618008b17664aaf62cb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "acb80a63b59cf338d6bfb8ae3d84cdb0b82850f8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b0f5fc4cd80979c41fdebf3d072bdc5311fb5a1c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b2f3a0d4ced0a8e83d2ebad244029bcd15bf93ff",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b75bf9768b54813069aa9cd556e533977a0c7106",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b960a03d991a030ec25265777bdf987ffdc07b11",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b9a577503a02693dc2fa08e2f6b9935142e08f18",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bd46aa76b39e2e8ec7317d8a90d3b5bbda344571",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bd790644ede234f5740d0a7eca14fe03e3fec35c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "bf16ead6b3cac1f30b88c2512cbe91ca19a2e359",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c35830f964478ae444ee8d7bcbf93a05c7492f99",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c710467f84a241b08b495b473319f4e3aed879ee",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "c7995ac745df841a67a7651d68ba85ac5016f6b2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "cbd10000957877e826a1cc55f4de9ed0ee05c9f3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d17e489d125578e708cdfcde1755796a63c4b67e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d3795b6c5b99729850eb8aa0eb0b09a121829170",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d3c724b9b072fc512bb99fd43e6ffa4a4ea3657f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "d6b12ecfcf21c1d13e2a655c4450dc72cb993a43",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e2443867dd88d502a90d485bb632815075396d7a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e25d8a2e8f914df1245e2a780c3f73b8d7121ee9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e2e1c8a85d942c111539464b603089d2f6b93894",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e92f4bf6d3e8f03a76e40339aad8d7a082eda859",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "ed70bc74a2d578c5a1237d8dbf1e76d4d92cebb0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "edefefa8d47d5275886b414cda145f8d35e17a0b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f03a7d099612aad2392f077fde7de3595330846a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f5156488733a06896e8a24a124b3dd235a67dd44",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f65fc50a2b74013e2cd70fcd53c1fa4e33ccf80d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "f7f7cf7d510686c6bbc1271cccafd58398e93e5a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "6573c1883ccbb286e0a4743f49a4aab6dc493f32",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "65bcd2636141d3a1a4320fe999b8d0d335fa1026",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "a0b4d41d29865504a41f0b4e0b52a187189f29e5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "b8b60a598712b1d856e72c5467378bc53bd3c4ee",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "dc70c8c0f92c3199aaff911d445bcc36af31c717",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      },
+      {
+       "id": "e56a78efbc5c698ba9188c7c78bd98240ece146a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0004976",
+        "name": "amyotrophic lateral sclerosis"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

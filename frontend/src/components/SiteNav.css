@@ -1,0 +1,132 @@
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 clamp(1rem, 3vw, 2.5rem);
+  color: var(--paper);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+/* Stay mounted (GSAP pin + React must not remount siblings) — only hide visually. */
+.site-nav--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.site-nav a {
+  pointer-events: auto;
+}
+
+.site-nav--hero {
+  mix-blend-mode: normal;
+  color: #f4f1ea;
+}
+
+.site-nav__logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav--hero .site-nav__logo-wrap {
+  pointer-events: none;
+}
+
+.site-nav__spacer {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+}
+
+.site-nav--solid {
+  mix-blend-mode: normal;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* Fixed black wordmark on the content screen — does not scroll away. */
+.site-nav--solid .site-nav__logo {
+  color: #0b1f1e;
+  font-weight: 400;
+}
+
+.site-nav__logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav__logo-text {
+  display: inline-block;
+}
+
+.site-nav__links {
+  display: none;
+  gap: 1.4rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.site-nav__links a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.72;
+}
+
+.site-nav__links a:hover,
+.site-nav__links a.active {
+  opacity: 1;
+}
+
+.site-nav__cta {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--teal-500);
+  padding: 0.7rem 1rem;
+  border: 1px solid transparent;
+  mix-blend-mode: normal;
+}
+
+.site-nav--solid .site-nav__cta {
+  color: var(--paper);
+}
+
+.site-nav__cta:hover {
+  background: var(--teal-700);
+}
+
+.site-nav--no-cta .site-nav__cta {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Landing keeps particle wordmark only — never swap to solid type during scroll. */
+.site-nav--no-logo .site-nav__logo-wrap {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (min-width: 860px) {
+  .site-nav__links {
+    display: flex;
+  }
+}

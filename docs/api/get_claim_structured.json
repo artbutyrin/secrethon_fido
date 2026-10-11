@@ -1,0 +1,27 @@
+{
+ "id": "clm_27fadc1864_3",
+ "run_id": "run_27fadc1864",
+ "n": 3,
+ "fact": "genetic_support",
+ "value": "none",
+ "origin": "structured",
+ "evidence_type": "source",
+ "statement": "No qualifying genetic evidence links BACE1 to Alzheimer disease (0 evidence rows read), although the disease has genetic evidence for other targets (e.g. APP, PSEN1, PSEN2).",
+ "rule": "Mendelian: ClinGen, Gene2Phenotype, Genomics England, Orphanet, UniProt literature, or ClinVar with a pathogenic variant. Mendelian, subtype: every such record is for a subtype (a more specific disease under this one in the ontology, as Open Targets returns it), none for the disease itself. GWAS: credible set with locus-to-gene score >= 0.5. Somatic: IntOGen, Cancer Gene Census. Strongest wins. 'none' needs every evidence row read and genetic data for the disease.",
+ "sources": [
+  {
+   "kind": "open_targets_evidence",
+   "id": null,
+   "url": "https://platform.opentargets.org/evidence/ENSG00000186318/MONDO_0004975"
+  }
+ ],
+ "quote": null,
+ "verified": null,
+ "confirmed": null,
+ "doc_ids": null,
+ "added_by": "pipeline",
+ "created_at": "2026-10-10T13:33:33+00:00",
+ "status": "used",
+ "fact_label": "Genetic support for the target–disease pair. none = the disease has genetic data, but it does not support this target; no_data = the disease has no genetic data at all; mendelian_subtype = Mendelian evidence only for a subtype (a more specific disease under it in the ontology), not for the disease itself: +1, not the +2 of Mendelian evidence",
+ "fact_level": "mechanism"
+}

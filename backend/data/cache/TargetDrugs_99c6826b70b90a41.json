@@ -1,0 +1,389 @@
+{
+ "query": "TargetDrugs",
+ "variables": {
+  "ensemblId": "ENSG00000197386"
+ },
+ "fetched_at": "2026-10-09T12:05:12+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000197386",
+    "drugAndClinicalCandidates": {
+     "count": 1,
+     "rows": [
+      {
+       "id": "5f356dd49a680c83c8c2328c9244afad8e05a705a8093856a37862786139b414",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL4297581",
+        "name": "TOMINERSEN",
+        "drugType": "Oligonucleotide",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "ISIS-443139 FREE ACID"
+         },
+         {
+          "label": "Ionis httrx"
+         },
+         {
+          "label": "Isis 443139"
+         },
+         {
+          "label": "RG-6042 FREE ACID"
+         },
+         {
+          "label": "RG6042"
+         },
+         {
+          "label": "RG6042 FREE ACID"
+         },
+         {
+          "label": "Rg6042"
+         },
+         {
+          "label": "Ro7234292"
+         },
+         {
+          "label": "Tominersen"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "ANTISENSE INHIBITOR",
+           "mechanismOfAction": "Huntingtin mRNA antisense inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000197386"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 5,
+         "rows": [
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "MONDO_0015492",
+            "name": "anti-neutrophil cytoplasmic antibody-associated vasculitis",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "EFO_0006835",
+            "name": "pyoderma gangrenosum",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "MONDO_0006559",
+            "name": "hidradenitis suppurativa",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0002051",
+              "name": "integumentary system disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "MP_0001845",
+            "name": "inflammation",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0007739",
+            "name": "Huntington disease",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d07oao/huntington disease",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D07OAO",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "huntington disease"
+          }
+         ]
+        },
+        {
+         "id": "dmov12/huntington disease",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/DMOV12",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "huntington disease"
+          }
+         ]
+        },
+        {
+         "id": "nct03761849",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03761849",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-01-23",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct03842969",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03842969",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-04-23",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct03342053",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT03342053",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2018-01-02",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct05686551",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05686551",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2023-02-03",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct02519036",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02519036",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1_2",
+         "trialPhase": "PHASE1/PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2015-08-06",
+         "trialSponsor": {
+          "name": "Ionis Pharmaceuticals, Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct04000594",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04000594",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2019-09-02",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "Huntington's disease"
+          }
+         ]
+        },
+        {
+         "id": "tominersen",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/TOMINERSEN/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "EFO_0006835"
+           },
+           "diseaseFromSource": "pyoderma gangrenosum"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0007739"
+           },
+           "diseaseFromSource": "huntington disease"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0015492"
+           },
+           "diseaseFromSource": "anti-neutrophil cytoplasmic antibody-associated vasculitis"
+          },
+          {
+           "disease": {
+            "id": "MP_0001845"
+           },
+           "diseaseFromSource": "inflammation"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0006559"
+           },
+           "diseaseFromSource": "hidradenitis suppurativa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

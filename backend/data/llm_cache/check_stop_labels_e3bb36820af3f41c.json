@@ -1,0 +1,24 @@
+{
+ "task": "check_stop_labels",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 439,
+  "output_tokens": 56,
+  "latency_ms": 1317,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"NCT02260635#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Study termination due to insufficient efficacy.\"}, {\"id\": \"NCT02260648#0\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Study termination due to insufficient efficacy.\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "NCT02260635#0",
+    "supports": true
+   },
+   {
+    "id": "NCT02260648#0",
+    "supports": true
+   }
+  ]
+ }
+}

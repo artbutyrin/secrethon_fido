@@ -1,0 +1,103 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2521,
+  "output_tokens": 1393,
+  "latency_ms": 15213,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:41211925\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Evolocumab in Patients without a Previous Myocardial Infarction or Stroke.. BACKGROUND: The proprotein convertase subtilisin-kexin type 9 (PCSK9) inhibitor evolocumab reduces the risk of major adverse cardiovascular events (MACE) among patients with a previous myocardial infarction, stroke, or symptomatic peripheral artery disease. The effect of evolocumab on the risk of MACE among patients without a previous myocardial infarction or stroke is unknown. METHODS: We conducted an international, double-blind, randomized, placebo-controlled trial of evolocumab in patients with atherosclerosis or diabetes and without a previous myocardial infarction or stroke who had a low-density lipoprotein cholesterol level of at least 90 mg per deciliter. Patients were randomly assigned in a 1:1 ratio to receive evolocumab at a dose of 140 mg every 2 weeks or placebo. The two primary end points were a composite of death from coronary heart disease, myocardial infarction, or ischemic stroke (3-point MACE) and a composite of 3-point MACE or ischemia-driven arterial revascularization (4-point MACE). RESULTS: A total of 12,257 patients were randomly assigned to receive evolocumab (6129 patients) or placebo (6128) and were included in the efficacy analyses. The median age of the patients was 66 years, 43% were women, and 93% were White. The median follow-up was 4.6 years. A 3-point MACE event occurred in 336 patients (5-year Kaplan-Meier estimate, 6.2%) in the evolocumab group, as compared with 443 (8.0%) in the placebo group (hazard ratio, 0.75; 95% confidence interval [CI], 0.65 to 0.86; P<0.001). A 4-point MACE event occurred in 747 patients (5-year Kaplan-Meier estimate, 13.4%) in the evolocumab group, as compared with 907 (16.2%) in the placebo group (hazard ratio, 0.81; 95% CI, 0.73 to 0.89; P<0.001). No evidence of a between-group difference was seen in the incidence of safety events. CONCLUSIONS: PCSK9 inhibition with evolocumab led to a lower risk of first cardiovascular events than placebo among patients with atherosclerosis or diabetes and without a previous myocardial infarction or stroke. (Funded by Amgen; VESALIUS-CV ClinicalTrials.gov number, NCT03872401.).\"}, {\"id\": \"pmid:30586750\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Lipoprotein(a), PCSK9 Inhibition, and Cardiovascular Risk.. BACKGROUND: Lipoprotein(a) [Lp(a)] may play a causal role in atherosclerosis. PCSK9 (proprotein convertase subtilisin/kexin 9) inhibitors have been shown to significantly reduce plasma Lp(a) concentration. However, the relationship between Lp(a) levels, PCSK9 inhibition, and cardiovascular risk reduction remains undefined. METHODS: Lp(a) was measured in 25 096 patients in the FOURIER trial (Further Cardiovascular Outcomes Research with PCSK9 Inhibition in Subjects with Elevated Risk), a randomized trial of evolocumab versus placebo in patients with established atherosclerotic cardiovascular disease (median follow-up, 2.2 years). Cox models were used to assess the independent prognostic value of Lp(a) and the efficacy of evolocumab for coronary risk reduction by baseline Lp(a) concentration. RESULTS: The median (interquartile range) baseline Lp(a) concentration was 37 (13-165) nmol/L. In the placebo arm, patients with baseline Lp(a) in the highest quartile had a higher risk of coronary heart disease death, myocardial infarction, or urgent revascularization (adjusted hazard ratio quartile 4: quartile 1, 1.22; 95% CI, 1.01-1.48) independent of low-density lipoprotein cholesterol. At 48 weeks, evolocumab significantly reduced Lp(a) by a median (interquartile range) of 26.9% (6.2%-46.7%). The percent change in Lp(a) and low-density lipoprotein cholesterol at 48 weeks in patients taking evolocumab was moderately positively correlated ( r=0.37; 95% CI, 0.36-0.39; P<0.001). Evolocumab reduced the risk of coronary heart disease death, myocardial infarction, or urgent revascularization by 23% (hazard ratio, 0.77; 95% CI, 0.67-0.88) in patients with a baseline Lp(a) >median, and by 7% (hazard ratio, 0.93; 95% CI, 0.80-1.08; P interaction=0.07) in those ≤median. Coupled with the higher baseline risk, the absolute risk reductions, and number needed to treat over 3 years were 2.49% and 40 versus 0.95% and 105, respectively. CONCLUSIONS: Higher levels of Lp(a) are associated with an increased risk of cardiovascular events in patients with established cardiovascular disease irrespective of low-density lipoprotein cholesterol. Evolocumab significantly reduced Lp(a) levels, and patients with higher baseline Lp(a) levels experienced greater absolute reductions in Lp(a) and tended to derive greater coronary benefit from PCSK9 inhibition. CLINICAL TRIAL REGISTRATION: URL: https://www.clinicaltrials.gov . Unique identifier: NCT01764633.\"}, {\"id\": \"pmid:36031810\", \"about_drug\": \"EVOLOCUMAB\", \"text\": \"Long-Term Evolocumab in Patients With Established Atherosclerotic Cardiovascular Disease.. BACKGROUND: In FOURIER (Further Cardiovascular Outcomes Research With PCSK9 Inhibition in Subjects With Elevated Risk), the proprotein convertase subtilisin-kexin type 9 inhibitor evolocumab reduced low-density lipoprotein cholesterol (LDL-C) and risk of cardiovascular events and was safe and well tolerated over a median of 2.2 years of follow-up. However, large-scale, long-term data are lacking. METHODS: The parent FOURIER trial randomized 27 564 patients with atherosclerotic cardiovascular disease and LDL-C ≥70 mg/dL on statin to evolocumab versus placebo. Patients completing FOURIER at participating sites were eligible to receive evolocumab in 2 open-label extension studies (FOURIER-OLE [FOURIER Open-Label Extension]) in the United States and Europe; primary analyses were pooled across studies. The primary end point was the incidence of adverse events. Lipid values and major adverse cardiovascular events were prospectively collected. RESULTS: A total of 6635 patients were enrolled in FOURIER-OLE (3355 randomized to evolocumab and 3280 to placebo in the parent study). Median follow-up in FOURIER-OLE was 5.0 years; maximum exposure to evolocumab in parent plus FOURIER-OLE was 8.4 years. At 12 weeks in FOURIER-OLE, median LDL-C was 30 mg/dL, and 63.2% of patients achieved LDL-C <40 mg/dL on evolocumab. Incidences of serious adverse events, muscle-related events, new-onset diabetes, hemorrhagic stroke, and neurocognitive events with evolocumab long term did not exceed those for placebo-treated patients during the parent study and did not increase over time. During the FOURIER-OLE follow-up period, patients originally randomized in the parent trial to evolocumab versus placebo had a 15% lower risk of cardiovascular death, myocardial infarction, stroke, or hospitalization for unstable angina or coronary revascularization (hazard ratio, 0.85 [95% CI, 0.75-0.96]; P=0.008); a 20% lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80 [95% CI, 0.68-0.93]; P=0.003); and a 23% lower risk of cardiovascular death (hazard ratio, 0.77 [95% CI, 0.60-0.99]; P=0.04). CONCLUSIONS: Long-term LDL-C lowering with evolocumab was associated with persistently low rates of adverse events for >8 years that did not exceed those observed in the original placebo arm during the parent study and led to further reductions in cardiovascular events compared with delayed treatment initiation. REGISTRATION: URL: https://www. CLINICALTRIALS: gov; Unique identifiers: NCT02867813 and NCT03080935.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:41211925",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "A 3-point MACE event occurred in 336 patients (5-year Kaplan-Meier estimate, 6.2%) in the evolocumab group, as compared with 443 (8.0%) in the placebo group"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "A 4-point MACE event occurred in 747 patients (5-year Kaplan-Meier estimate, 13.4%) in the evolocumab group, as compared with 907 (16.2%) in the placebo group"
+     }
+    ]
+   },
+   {
+    "id": "pmid:30586750",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At 48 weeks, evolocumab significantly reduced Lp(a) by a median (interquartile range) of 26.9% (6.2%-46.7%)."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Evolocumab reduced the risk of coronary heart disease death, myocardial infarction, or urgent revascularization by 23% (hazard ratio, 0.77; 95% CI, 0.67-0.88) in patients with a baseline Lp(a) >median"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "and by 7% (hazard ratio, 0.93; 95% CI, 0.80-1.08; P interaction=0.07) in those ≤median"
+     }
+    ]
+   },
+   {
+    "id": "pmid:36031810",
+    "findings": [
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At 12 weeks in FOURIER-OLE, median LDL-C was 30 mg/dL, and 63.2% of patients achieved LDL-C <40 mg/dL on evolocumab."
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "patients originally randomized in the parent trial to evolocumab versus placebo had a 15% lower risk of cardiovascular death, myocardial infarction, stroke, or hospitalization for unstable angina or coronary revascularization"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "a 20% lower risk of cardiovascular death, myocardial infarction, or stroke (hazard ratio, 0.80 [95% CI, 0.68-0.93]; P=0.003)"
+     },
+     {
+      "drug": "EVOLOCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "and a 23% lower risk of cardiovascular death (hazard ratio, 0.77 [95% CI, 0.60-0.99]; P=0.04)."
+     }
+    ]
+   }
+  ]
+ }
+}

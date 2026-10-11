@@ -1,0 +1,187 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 853,
+  "output_tokens": 1391,
+  "latency_ms": 8948,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT01059682\", \"reason\": \"Termination of the clinical development program by the Sponsor\"}, {\"nct\": \"NCT02227784\", \"reason\": \"Study termination due to program termination.\"}, {\"nct\": \"NCT02260635\", \"reason\": \"Study termination due to insufficient efficacy.\"}, {\"nct\": \"NCT02260648\", \"reason\": \"Study termination due to insufficient efficacy.\"}, {\"nct\": \"NCT00060554\", \"reason\": \"Drug sold to Sanofi-Aventis who sold it to GSK; OBS no longer owns study and does not have data.\"}, {\"nct\": \"NCT00448864\", \"reason\": \"Experience gained from this study is sufficient to design and facilitate the follow-on study.\"}, {\"nct\": \"NCT00664469\", \"reason\": \"Poor enrollment\"}, {\"nct\": \"NCT00878969\", \"reason\": \"insufficient enrollment and retention\"}, {\"nct\": \"NCT00910299\", \"reason\": \"Due to the low rate of primary endpoint events experienced in the study to date\"}, {\"nct\": \"NCT00911339\", \"reason\": \"prematurely interrupted because of difficulty in enrolment of patients.\"}, {\"nct\": \"NCT01183442\", \"reason\": \"unable to recruit\"}, {\"nct\": \"NCT01798277\", \"reason\": \"Low Enrolment\"}, {\"nct\": \"NCT01848106\", \"reason\": \"Clinical Hold\"}, {\"nct\": \"NCT03078465\", \"reason\": \"Competitive studies were conducted at the same time, and enrollment was suspended.\"}, {\"nct\": \"NCT03105219\", \"reason\": \"Shortfall in funding\"}, {\"nct\": \"NCT03369184\", \"reason\": \"Slow recruitment\"}, {\"nct\": \"NCT03451006\", \"reason\": \"difficult recruitment and not achieved\"}, {\"nct\": \"NCT03606642\", \"reason\": \"The DSMC March 16, 2022 reviewed of Interim Analysis and recommendation due to no glaring outcomes found to date.\"}, {\"nct\": \"NCT03618108\", \"reason\": \"COVID-19\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT01059682",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Termination of the clinical development program by the Sponsor"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02227784",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "program termination"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02260635",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "insufficient efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT02260648",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "insufficient efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00060554",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Drug sold to Sanofi-Aventis who sold it to GSK; OBS no longer owns study"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00448864",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "sufficient to design and facilitate the follow-on study"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00664469",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Poor enrollment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00878969",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "insufficient enrollment and retention"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00910299",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "low rate of primary endpoint events experienced in the study to date"
+     }
+    ]
+   },
+   {
+    "nct": "NCT00911339",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "difficulty in enrolment of patients"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01183442",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "unable to recruit"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01798277",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Low Enrolment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT01848106",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "Clinical Hold"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03078465",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "enrollment was suspended"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03105219",
+    "labels": [
+     {
+      "label": "funding",
+      "quote": "Shortfall in funding"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03369184",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Slow recruitment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03451006",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "difficult recruitment and not achieved"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03606642",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "no glaring outcomes found to date"
+     }
+    ]
+   },
+   {
+    "nct": "NCT03618108",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "COVID-19"
+     }
+    ]
+   }
+  ]
+ }
+}

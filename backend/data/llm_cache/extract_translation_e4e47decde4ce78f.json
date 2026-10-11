@@ -1,0 +1,125 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2741,
+  "output_tokens": 2181,
+  "latency_ms": 13713,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Huntington disease\", \"target\": \"HTT\", \"drugs\": [\"TOMINERSEN\"], \"documents\": [{\"id\": \"pmid:35774187\", \"about_drug\": \"TOMINERSEN\", \"text\": \"Changes in brain activity with tominersen in early-manifest Huntington's disease.. It is unknown whether alterations in EEG brain activity caused by Huntington's disease may be responsive to huntingtin-lowering treatment. We analysed EEG recordings of 46 patients (mean age = 47.02 years; standard deviation = 10.19 years; 18 female) with early-manifest Stage 1 Huntington's disease receiving the huntingtin-lowering antisense oligonucleotide tominersen for 4 months or receiving placebo as well as 39 healthy volunteers (mean age = 44.48 years; standard deviation = 12.94; 22 female) not receiving treatment. Patients on tominersen showed increased resting-state activity within a 4-8 Hz frequency range compared with patients receiving placebo (cluster-based permutation test, P < 0.05). The responsive frequency range overlapped with EEG activity that was strongly reduced in Huntington's disease compared with healthy controls (cluster-based permutation test, P < 0.05). The underlying mechanisms of the observed treatment-related increase are unknown and may reflect neural plasticity as a consequence of the molecular pathways impacted by tominersen treatment. Hawellek et al. report that patients with Huntington's disease treated with the huntingtin-lowering antisense oligonucleotide tominersen exhibited increased EEG power in the theta/alpha frequency range. The underlying mechanisms of the observed changes are unknown and may reflect neural plasticity as a consequence of the molecular pathways impacted by tominersen treatment.\"}, {\"id\": \"pmid:35763342\", \"about_drug\": \"TOMINERSEN\", \"text\": \"A Remote Digital Monitoring Platform to Assess Cognitive and Motor Symptoms in Huntington Disease: Cross-sectional Validation Study.. BACKGROUND: Remote monitoring of Huntington disease (HD) signs and symptoms using digital technologies may enhance early clinical diagnosis and tracking of disease progression, guide treatment decisions, and monitor response to disease-modifying agents. Several recent studies in neurodegenerative diseases have demonstrated the feasibility of digital symptom monitoring. OBJECTIVE: The aim of this study was to evaluate a novel smartwatch- and smartphone-based digital monitoring platform to remotely monitor signs and symptoms of HD. METHODS: This analysis aimed to determine the feasibility and reliability of the Roche HD Digital Monitoring Platform over a 4-week period and cross-sectional validity over a 2-week interval. Key criteria assessed were feasibility, evaluated by adherence and quality control failure rates; test-retest reliability; known-groups validity; and convergent validity of sensor-based measures with existing clinical measures. Data from 3 studies were used: the predrug screening phase of an open-label extension study evaluating tominersen (NCT03342053) and 2 untreated cohorts-the HD Natural History Study (NCT03664804) and the Digital-HD study. Across these studies, controls (n=20) and individuals with premanifest (n=20) or manifest (n=179) HD completed 6 motor and 2 cognitive tests at home and in the clinic. RESULTS: Participants in the open-label extension study, the HD Natural History Study, and the Digital-HD study completed 89.95% (1164/1294), 72.01% (2025/2812), and 68.98% (1454/2108) of the active tests, respectively. All sensor-based features showed good to excellent test-retest reliability (intraclass correlation coefficient 0.89-0.98) and generally low quality control failure rates. Good overall convergent validity of sensor-derived features to Unified HD Rating Scale outcomes and good overall known-groups validity among controls, premanifest, and manifest participants were observed. Among participants with manifest HD, the digital cognitive tests demonstrated the strongest correlations with analogous in-clinic tests (Pearson correlation coefficient 0.79-0.90). CONCLUSIONS: These results show the potential of the HD Digital Monitoring Platform to provide reliable, valid, continuous remote monitoring of HD symptoms, facilitating the evaluation of novel treatments and enhanced clinical monitoring and care for individuals with HD.\"}, {\"id\": \"pmid:41287980\", \"about_drug\": \"TOMINERSEN\", \"text\": \"Quantitative relationship between tominersen concentrations in cerebrospinal fluid and biomarker changes in Huntington's disease patients.. AIM: Intrathecally administered antisense oligonucleotide tominersen aims to slow Huntington's disease progression by lowering mutant huntingtin (mHTT) protein levels. This study used non-linear mixed effects population pharmacokinetic and pharmacodynamic (PKPD) modelling to characterize the relationship between tominersen concentration in cerebrospinal fluid (CSF) and CSF mHTT reduction. Additionally, the relationship between tominersen CSF exposure and changes in other CSF biomarkers was investigated to understand tominersen's pharmacodynamic profile. Finally, PKPD model simulations were conducted to inform the dose selection in the GENERATION HD2 study. METHODS: Data from four clinical studies, including 915 participants receiving placebo or tominersen doses (30-120 mg) every 4, 8 or 16 weeks for up to 25 months, were used to develop the PKPD model. The model was utilized to predict tominersen CSF exposure metrics for individual patients in the GENERATION HD1 study for the exposure-response (ER) analysis and to simulate the PK and PD profiles for lower doses. RESULTS: An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL. The ER analysis revealed that the highest exposure quartile showed a 54% mHTT reduction at steady state and transient elevations in biomarkers of neuroinjury and inflammation. In contrast, the lowest exposure quartile had a 24% mHTT reduction and a favourable biomarker profile. CONCLUSIONS: The PKPD model quantitatively confirms the relationship between tominersen exposure and CSF mHTT lowering. The ER analysis suggests that lower tominersen exposure levels may offer a better benefit-risk profile.\"}, {\"id\": \"pmid:37221972\", \"about_drug\": \"TOMINERSEN\", \"text\": \"Development of a population pharmacokinetic model to characterize the pharmacokinetics of intrathecally administered tominersen in cerebrospinal fluid and plasma.. Tominersen is an intrathecally administered antisense oligonucleotide targeting huntingtin mRNA which leads to a dose-dependent, reversible lowering of cerebrospinal fluid (CSF) mutant huntingtin protein concentration in individuals with Huntington's disease. Nonlinear mixed-effect population pharmacokinetic (PopPK) modeling was conducted to characterize the CSF and plasma pharmacokinetics (PK) of tominersen, and to identify and quantify the covariates that affect tominersen PKs. A total of 750 participants from five clinical studies with a dose range from 10 to 120 mg contributed CSF (n = 6302) and plasma (n = 5454) PK samples. CSF PK was adequately described by a three-compartment model with first-order transfer from CSF to plasma. Plasma PK was adequately described by a three-compartment model with first-order elimination from plasma. Baseline total CSF protein, age, and antidrug antibodies (ADAs) were the significant covariates for CSF clearance. Body weight was a significant covariate for clearances and volumes in plasma. ADAs and sex were significant covariates for plasma clearance. The developed PopPK model was able to describe tominersen PK in plasma and CSF after intrathecal administration across a range of dose levels, and relevant covariate relationships were identified. This model has been applied to guide dose selection for future clinical trials of tominersen in patients with Huntington's disease.\"}, {\"id\": \"pmid:36913762\", \"about_drug\": \"TOMINERSEN\", \"text\": \"Therapeutic targeting of Huntington's disease: Molecular and clinical approaches.. Huntington's disease (HD) is an autosomal dominant ailment that affects a larger population. Due to its complex pathology operating at DNA, RNA, and protein levels, it is regarded as a protein-misfolding disease and an expansion repeat disorder. Despite the availability of early genetic diagnostics, disease-modifying treatments are still missing. Importantly, potential therapies are starting to make their way through clinical trials. Still, clinical trials are ongoing to discover potential drugs to relieve HD symptoms. However, now being aware of the root cause, the clinical studies are focused on molecular therapies to target it. The road to success has not been without bumps since a big phase III trial of tominersen was unexpectedly discontinued due to exceeding risks than drug's benefit to the patients. Although the trial's conclusion was disappointing, there is still cause to be optimistic about what this technique may achieve. We have reviewed the present disease-modifying therapies in clinical development for HD and examined the current landscape of developing clinical therapies. We further investigated the pharmaceutical development of Huntington's medicine in the pharma industries and addressed the existing challenges in their therapeutic success.\"}, {\"id\": \"pmid:28628038\", \"about_drug\": \"TARGET\", \"text\": \"CRISPR/Cas9-mediated gene editing ameliorates neurotoxicity in mouse model of Huntington's disease.. Huntington's disease is a neurodegenerative disorder caused by a polyglutamine repeat in the Huntingtin gene (HTT). Although suppressing the expression of mutant HTT (mHTT) has been explored as a therapeutic strategy to treat Huntington's disease, considerable efforts have gone into developing allele-specific suppression of mHTT expression, given that loss of Htt in mice can lead to embryonic lethality. It remains unknown whether depletion of HTT in the adult brain, regardless of its allele, could be a safe therapy. Here, we report that permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology. The reduction of mHTT expression in striatal neuronal cells in adult HD140Q-knockin mice did not affect viability, but alleviated motor deficits. Our studies suggest that non-allele-specific CRISPR/Cas9-mediated gene editing could be used to efficiently and permanently eliminate polyglutamine expansion-mediated neuronal toxicity in the adult brain.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:35774187",
+    "findings": [
+     {
+      "drug": "TOMINERSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Patients on tominersen showed increased resting-state activity within a 4-8 Hz frequency range compared with patients receiving placebo"
+     }
+    ]
+   },
+   {
+    "id": "pmid:35763342",
+    "findings": []
+   },
+   {
+    "id": "pmid:41287980",
+    "findings": [
+     {
+      "drug": "TOMINERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "An indirect-response model described the relationship between tominersen CSF concentration and mHTT reduction, estimating a half-maximal inhibitory concentration (IC50) of 4.18 ng/mL."
+     },
+     {
+      "drug": "TOMINERSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The highest exposure quartile showed a 54% mHTT reduction at steady state"
+     },
+     {
+      "drug": "TOMINERSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "the lowest exposure quartile had a 24% mHTT reduction"
+     },
+     {
+      "drug": "TOMINERSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "transient elevations in biomarkers of neuroinjury and inflammation"
+     }
+    ]
+   },
+   {
+    "id": "pmid:37221972",
+    "findings": [
+     {
+      "drug": "TOMINERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The developed PopPK model was able to describe tominersen PK in plasma and CSF after intrathecal administration across a range of dose levels"
+     }
+    ]
+   },
+   {
+    "id": "pmid:36913762",
+    "findings": [
+     {
+      "drug": "TOMINERSEN",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "a big phase III trial of tominersen was unexpectedly discontinued due to exceeding risks than drug's benefit to the patients"
+     }
+    ]
+   },
+   {
+    "id": "pmid:28628038",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates"
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "permanent suppression of endogenous mHTT expression in the striatum of mHTT-expressing mice (HD140Q-knockin mice) using CRISPR/Cas9-mediated inactivation effectively depleted HTT aggregates and attenuated early neuropathology"
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "The reduction of mHTT expression in striatal neuronal cells in adult HD140Q-knockin mice did not affect viability, but alleviated motor deficits."
+     }
+    ]
+   }
+  ]
+ }
+}

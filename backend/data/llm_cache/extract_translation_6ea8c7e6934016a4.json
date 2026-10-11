@@ -1,0 +1,93 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2547,
+  "output_tokens": 1537,
+  "latency_ms": 10562,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"amyotrophic lateral sclerosis\", \"target\": \"SOD1\", \"drugs\": [\"TOFERSEN\"], \"documents\": [{\"id\": \"label:81356b45-1cb7-4eef-88ea-e44cc18b47c5\", \"about_drug\": \"TOFERSEN\", \"text\": \"MECHANISM OF ACTION: 12.1. Mechanism of Action Tofersen is an antisense oligonucleotide that causes degradation of SOD1 mRNA through binding to SOD1 mRNA, which results in a reduction of SOD1 protein synthesis.\\nPHARMACODYNAMICS: 12.2. Pharmacodynamics Effect of Tofersen on Total CSF SOD1 Protein Total CSF SOD1, an indirect measure of target engagement, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, a reduction in total CSF SOD1 protein of 35% (geometric mean ratio to baseline) in the tofersen-treated group versus a 2% decrease from baseline in the corresponding placebo subjects in the ITT population was observed (difference in geometric mean ratios for tofersen to placebo: 34%; nominal p<0.0001). Effect of Tofersen on Neurofilament Proteins Plasma NfL, a blood-based biomarker of axonal injury and neurodegeneration, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, mean plasma NfL was reduced 55% (geometric mean ratio to baseline) in the QALSODY-treated subjects, compared to a 12% increase with placebo in ITT population (difference in geometric mean ratios for QALSODY to placebo: 60%; nominal p<0.0001). Plasma NfL declined until approximately Day 113, after which the reductions were sustained. The reductions in phosphorylated neurofilament heavy chain (pNfH) were similar compared to reductions in NfL, as were reductions in CSF compared to plasma. Cardiac Electrophysiology At the maximum approved recommended dosing regimen, QALSODY does not prolong the QTc interval to any clinically relevant extent.\\nPHARMACOKINETICS: 12.3. Pharmacokinetics Absorption Intrathecal administration of QALSODY into the CSF allows tofersen to be distributed from the CSF to central nervous system tissues. The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues. Elimination Metabolism Tofersen is expected to be metabolized through exonuclease (3'- and 5')-mediated hydrolysis and is not a substrate for, or inhibitor or inducer of CYP450 enzymes. Excretion The primary route of elimination has not been characterized. The effective half-life in CSF is estimated to be 4 weeks. Drug Interaction Studies No clinical drug interaction studies have been performed. In vitro, QALSODY is not a substrate or inhibitor/inducer of major CYP enzymes or a substrate or inhibitor of major transporters. Specific Populations Effect of sex, race, age, and body weight on tofersen exposure in plasma was not clinically significant. The effect of these factors on tofersen exposure in CSF is unknown. Patients with Renal or Hepatic Impairment No clinical studies have been conducted to evaluate the pharmacokinetics of tofersen in patients with renal or hepatic impairment. Tofersen is not expected to undergo metabolism by hepatic enzymes.\\nCLINICAL PHARMACOLOGY: 12 CLINICAL PHARMACOLOGY 12.1. Mechanism of Action Tofersen is an antisense oligonucleotide that causes degradation of SOD1 mRNA through binding to SOD1 mRNA, which results in a reduction of SOD1 protein synthesis. 12.2. Pharmacodynamics Effect of Tofersen on Total CSF SOD1 Protein Total CSF SOD1, an indirect measure of target engagement, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, a reduction in total CSF SOD1 protein of 35% (geometric mean ratio to baseline) in the tofersen-treated group versus a 2% decrease from baseline in the corresponding placebo subjects in the ITT population was observed (difference in geometric mean ratios for tofersen to placebo: 34%; nominal p<0.0001). Effect of Tofersen on Neurofilament Proteins Plasma NfL, a blood-based biomarker of axonal injury and neurodegeneration, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, mean plasma NfL was reduced 55% (geometric mean ratio to baseline) in the QALSODY-treated subjects, compared to a 12% increase with placebo in ITT population (difference in geometric mean ratios for QALSODY to placebo: 60%; nominal p<0.0001). Plasma NfL declined until approximately Day 113, after which the reductions were sustained. The reductions in phosphorylated neurofilament heavy chain (pNfH) were similar compared to reductions in NfL, as were reductions in CSF compared to plasma. Cardiac Electrophysiology At the maximum approved recommended dosing regimen, QALSODY does not prolong the QTc interval to any clinically relevant extent. 12.3. Pharmacokinetics Absorption Intrathecal administration of QALSODY into the CSF allows tofersen to be distributed from the CSF to central nervous system tissues. The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues. Elimination Metabolism Tofersen is expected to be metabolized through exonuclease (3'- and 5')-mediated hydrolysis and is not a substrate for, or inhibitor or inducer of CYP450 enzymes. Excretion The primary route of elimination has not been characterized. The effective half-life in CSF is estimated to be 4 weeks. Drug Interaction Studies No clinical drug interaction studies have been performed. In vitro, QALSODY is not a substrate or inhibitor/inducer of major CYP enzymes or a substrate or inhibitor of major transporters. Specific Populations Effect of sex, race, age, and body weight on tofersen exposure in plasma was not clinically significant. The effect of these factors on tofersen exposure in CSF is unknown. Patients with Renal or Hepatic Impairment No clinical studies have been conducted to evaluate the pharmacokinetics of tofersen in patients with renal or hepatic impairment. Tofersen is not expected to undergo metabolism by hepatic enzymes. 12.6. Immunogenicity As with all therapeutic oligonucleotides, there is a potential for immunogenicity. Immunogenicity assay results are highly dependent on the sensitivity and specificity of the assay and may be influenced by several factors such as: assay methodology, sample handling, timing of sample collection, concomitant medications, and underlying disease. For these reasons, comparison of the incidence of antibodies to tofersen with the incidence of antibodies to other products may be misleading. The immunogenic response to QALSODY was evaluated in 166 patients with post-baseline plasma samples for anti-drug antibodies (ADAs). Overall, 97 QALSODY-treated patients (58.4%) developed treatment-emergent ADAs, of which 14 were transient and 83 were persistent. The presence of anti-drug antibodies (ADA) appeared to decrease plasma tofersen clearance by 32%. Effects of ADA on CSF tofersen clearance is unknown. No discernible effects of ADAs on total SOD1 protein reduction or plasma NfL reduction have been observed. No discernible effects of ADAs on safety (incidence of AEs including hypersensitivity, anaphylactic reaction, and angioedema) have been observed. Medical review of individual cases of serious neurological events also showed no association with ADA status.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "label:81356b45-1cb7-4eef-88ea-e44cc18b47c5",
+    "findings": [
+     {
+      "drug": "TOFERSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Week 28 in Study 1 Part C, a reduction in total CSF SOD1 protein of 35% (geometric mean ratio to baseline) in the tofersen-treated group"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Week 28 in Study 1 Part C, mean plasma NfL was reduced 55% (geometric mean ratio to baseline) in the QALSODY-treated subjects"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The reductions in phosphorylated neurofilament heavy chain (pNfH) were similar compared to reductions in NfL"
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period."
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase."
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours."
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "There was no accumulation in plasma tofersen exposure following monthly maintenance dosing."
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues."
+     },
+     {
+      "drug": "TOFERSEN",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The effective half-life in CSF is estimated to be 4 weeks."
+     }
+    ]
+   }
+  ]
+ }
+}

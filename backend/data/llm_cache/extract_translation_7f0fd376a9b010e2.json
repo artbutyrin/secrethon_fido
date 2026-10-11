@@ -1,0 +1,107 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2851,
+  "output_tokens": 1769,
+  "latency_ms": 17632,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:32197277\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Inclisiran for the Treatment of Heterozygous Familial Hypercholesterolemia.. BACKGROUND: Familial hypercholesterolemia is characterized by an elevated level of low-density lipoprotein (LDL) cholesterol and an increased risk of premature atherosclerotic cardiovascular disease. Monoclonal antibodies directed against proprotein convertase subtilisin-kexin type 9 (PCSK9) have been shown to reduce LDL cholesterol levels by more than 50% but require administration every 2 to 4 weeks. In a phase 2 trial, a twice-yearly injection of inclisiran, a small interfering RNA, was shown to inhibit hepatic synthesis of PCSK9 in adults with heterozygous familial hypercholesterolemia. METHODS: In this phase 3, double-blind trial, we randomly assigned, in a 1:1 ratio, 482 adults who had heterozygous familial hypercholesterolemia to receive subcutaneous injections of inclisiran sodium (at a dose of 300 mg) or matching placebo on days 1, 90, 270, and 450. The two primary end points were the percent change from baseline in the LDL cholesterol level on day 510 and the time-adjusted percent change from baseline in the LDL cholesterol level between day 90 and day 540. RESULTS: The median age of the patients was 56 years, and 47% were men; the mean baseline level of LDL cholesterol was 153 mg per deciliter. At day 510, the percent change in the LDL cholesterol level was a reduction of 39.7% (95% confidence interval [CI], -43.7 to -35.7) in the inclisiran group and an increase of 8.2% (95% CI, 4.3 to 12.2) in the placebo group, for a between-group difference of -47.9 percentage points (95% CI, -53.5 to -42.3; P<0.001). The time-averaged percent change in the LDL cholesterol level between day 90 and day 540 was a reduction of 38.1% (95% CI, -41.1 to -35.1) in the inclisiran group and an increase of 6.2% (95% CI, 3.3 to 9.2) in the placebo group, for a between-group difference of -44.3 percentage points (95% CI, -48.5 to -40.1; P<0.001). There were robust reductions in LDL cholesterol levels in all genotypes of familial hypercholesterolemia. Adverse events and serious adverse events were similar in the two groups. CONCLUSIONS: Among adults with heterozygous familial hypercholesterolemia, those who received inclisiran had significantly lower levels of LDL cholesterol than those who received placebo, with an infrequent dosing regimen and an acceptable safety profile. (Funded by the Medicines Company; ORION-9 ClinicalTrials.gov number, NCT03397121.).\"}, {\"id\": \"pmid:36331326\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Inclisiran and cardiovascular events: a patient-level analysis of phase III trials.. BACKGROUND: Inclisiran, an siRNA administered twice-yearly, significantly reduced LDL cholesterol (LDL-C) in Phase III trials. Whether lowering LDL-C with inclisiran translates into a lower risk of cardiovascular (CV) events is not yet established. METHODS AND RESULTS: Patient-level, pooled analysis of ORION-9, -10 and -11, included patients with heterozygous familial hypercholesterolaemia, atherosclerotic CV disease (ASCVD), or ASCVD risk equivalent on maximally tolerated statin-therapy, randomized 1:1 to receive 284 mg inclisiran or placebo on Days 1, 90, and 6-monthly thereafter for 18 months. Prespecified exploratory endpoint of major cardiovascular events (MACEs) included non-adjudicated CV death, cardiac arrest, non-fatal myocardial infarction (MI), and fatal and non-fatal stroke, evaluated as part of safety assessments using a standard Medical Dictionary for Regulatory Activities basket. Although not prespecified, total fatal and non-fatal MI, and stroke were also evaluated. Mean LDL-C at baseline was 2.88 mmol/L. At Day 90, the placebo-corrected percentage reduction in LDL-C with inclisiran was 50.6%, corresponding to an absolute reduction of 1.37 mmol/L (both P < 0.0001). Among 3655 patients over 18 months, 303 (8.3%) experienced MACE, including 74 (2.0%) fatal and non-fatal MIs, and 28 (0.8%) fatal and non-fatal strokes. Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)], but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)] or fatal and non-fatal stroke [OR (95% CI): 0.86 (0.41-1.81)]. CONCLUSION: This analysis offers early insights into the potential CV benefits of lowering LDL-C with inclisiran and suggests potential benefits for MACE reduction. These findings await confirmation in the larger CV outcomes trials of longer duration.\"}, {\"id\": \"pmid:33710846\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Guideline recommendations, clinical trial data, and new and emerging therapies.. Nearly 93 million American adults have hyperlipidemia, a major risk factor for the development of atherosclerotic cardiovascular disease. Use of HMG-CoA reductase inhibitors (ie, statins) and ezetimibe have decreased hypercholesterolemia's prevalence in the past decade, but poor adherence is common and leads to scenarios where patients do not derive the greatest possible benefit. In addition, statin resistance may play a role when patients' LDL-C levels are not lowered to the expected extent despite good medication adherence. When statins fail to control hyperlipidemia, guidelines recommend furthering treatment by adding ezetimibe or a PCSK9 inhibitor. In November 2018, the American College of Cardiology and the American Heart Association updated their hyperlipidemia guideline. This revision recommends a more aggressive approach to hyperlipidemia. In patients who fail to respond to or cannot tolerate statins or ezetimibe, PCSK9 inhibitors are a reasonable treatment option. Large outcomes trials have compared the currently approved PCSK9 inhibitors with placebo and established that PCSK9 inhibitors lowered LDL-C by more than 50% below the statin-treated baseline and reduce cardiovascular outcomes. In addition, bempedoic acid, lomitapide, and evinacumab are available options that may be instituted in select patients. In development is inclisiran, a small interfering RNA molecule, which antagonizes PCSK9 production. With good adherence and the use of a greater assortment of medications, patients may experience atherogenic lipoprotein lowering, leading to a decrease in cardiovascular disease.\"}, {\"id\": \"pmid:33663735\", \"about_drug\": \"INCLISIRAN\", \"text\": \"Pooled Patient-Level Analysis of Inclisiran Trials in Patients With Familial Hypercholesterolemia or Atherosclerosis.. BACKGROUND: Inclisiran is a double-stranded small interfering RNA that suppresses proprotein convertase subtilisin-kexin type 9 (PCSK9) translation in the liver, leading to sustained reductions in low-density lipoprotein cholesterol (LDL-C) and other atherogenic lipoproteins with twice-yearly dosing. OBJECTIVES: The purpose of this study was to conduct a patient-level pooled analysis from 3 phase 3 studies of inclisiran. METHODS: Participants with heterozygous familial hypercholesterolemia (ORION-9 [Trial to Evaluate the Effect of Inclisiran Treatment on Low Density Lipoprotein Cholesterol (LDL-C) in Subjects With Heterozygous Familial Hypercholesterolemia (HeFH)]), atherosclerotic cardiovascular disease (ASCVD) (ORION-10 [Inclisiran for Participants With Atherosclerotic Cardiovascular Disease and Elevated Low-density Lipoprotein Cholesterol]), or ASCVD and ASCVD risk equivalents (ORION-11 [Inclisiran for Subjects With ASCVD or ASCVD-Risk Equivalents and Elevated Low-density Lipoprotein Cholesterol]) taking maximally tolerated statin therapy, with or without other LDL-C-lowering agents, were randomly assigned in a 1:1 ratio to receive either inclisiran or placebo, administered by subcutaneous injection on day 1, day 90, and every 6 months thereafter for 540 days. The coprimary endpoints were the placebo-corrected percentage change in LDL-C level from baseline to day 510 and the time-adjusted percentage change in LDL-C level from baseline after day 90 to day 540. Levels of other atherogenic lipoproteins and treatment-emergent adverse events were also assessed. RESULTS: A total of 3,660 participants (n = 482, n = 1,561, and n = 1,617 from ORION-9, -10, and -11, respectively) underwent randomization. The placebo-corrected change in LDL-C with inclisiran at day 510 was -50.7% (95% confidence interval: -52.9% to -48.4%; p < 0.0001). The corresponding time-adjusted change in LDL-C was -50.5% (95% confidence interval: -52.1% to -48.9%; p < 0.0001). Safety was similar in both groups. Treatment-emergent adverse events at the injection site were more frequent with inclisiran than placebo (5.0% vs. 0.7%), but were predominantly mild, and none were severe or persistent. Liver and kidney function tests, creatine kinase values, and platelet counts did not differ between groups. CONCLUSIONS: These pooled safety and efficacy data show that inclisiran, given twice yearly in addition to maximally tolerated statin therapy with or without other LDL-C lowering agents, is an effective, safe, and well-tolerated treatment to lower LDL-C in adults with heterozygous familial hypercholesterolemia, ASCVD, or ASCVD risk equivalents.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:32197277",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "a twice-yearly injection of inclisiran, a small interfering RNA, was shown to inhibit hepatic synthesis of PCSK9 in adults with heterozygous familial hypercholesterolemia."
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At day 510, the percent change in the LDL cholesterol level was a reduction of 39.7% (95% confidence interval [CI], -43.7 to -35.7) in the inclisiran group"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The time-averaged percent change in the LDL cholesterol level between day 90 and day 540 was a reduction of 38.1% (95% CI, -41.1 to -35.1) in the inclisiran group"
+     }
+    ]
+   },
+   {
+    "id": "pmid:36331326",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Day 90, the placebo-corrected percentage reduction in LDL-C with inclisiran was 50.6%, corresponding to an absolute reduction of 1.37 mmol/L (both P < 0.0001)."
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)]"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)]"
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "or fatal and non-fatal stroke [OR (95% CI): 0.86 (0.41-1.81)]."
+     }
+    ]
+   },
+   {
+    "id": "pmid:33710846",
+    "findings": []
+   },
+   {
+    "id": "pmid:33663735",
+    "findings": [
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The placebo-corrected change in LDL-C with inclisiran at day 510 was -50.7% (95% confidence interval: -52.9% to -48.4%; p < 0.0001)."
+     },
+     {
+      "drug": "INCLISIRAN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The corresponding time-adjusted change in LDL-C was -50.5% (95% confidence interval: -52.1% to -48.9%; p < 0.0001)."
+     }
+    ]
+   }
+  ]
+ }
+}

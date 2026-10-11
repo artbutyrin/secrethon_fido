@@ -1,0 +1,132 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000186318"
+ },
+ "fetched_at": "2026-10-08T10:27:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000186318",
+    "approvedSymbol": "BACE1",
+    "approvedName": "beta-secretase 1",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Beta-secretase 1",
+      "source": "uniprot"
+     },
+     {
+      "label": "ASP2",
+      "source": "uniprot"
+     },
+     {
+      "label": "Asp 2",
+      "source": "uniprot"
+     },
+     {
+      "label": "Beta-site APP cleaving enzyme 1",
+      "source": "uniprot"
+     },
+     {
+      "label": "BACE1",
+      "source": "uniprot"
+     },
+     {
+      "label": "BACE",
+      "source": "uniprot"
+     },
+     {
+      "label": "KIAA1149",
+      "source": "uniprot"
+     },
+     {
+      "label": "Asp2",
+      "source": "HGNC"
+     },
+     {
+      "label": "Aspartyl protease 2",
+      "source": "uniprot"
+     },
+     {
+      "label": "Beta-site amyloid precursor protein cleaving enzyme 1",
+      "source": "uniprot"
+     },
+     {
+      "label": "Memapsin-2",
+      "source": "uniprot"
+     },
+     {
+      "label": "Membrane-associated aspartic protease 2",
+      "source": "uniprot"
+     },
+     {
+      "label": "memapsin 2",
+      "source": "HGNC"
+     },
+     {
+      "label": "aspartyl protease 2",
+      "source": "HGNC"
+     },
+     {
+      "label": "ASP2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "BACE",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "HSPC104",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "beta-secretase 1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "APP beta-secretase",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "asp 2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "aspartyl protease 2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "beta-site APP cleaving enzyme 1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "beta-site APP-cleaving enzyme",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "beta-site amyloid beta A4 precursor protein-cleaving enzyme",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "memapsin-2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "membrane-associated aspartic protease 2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "transmembrane aspartic proteinase Asp2",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "BACE1",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

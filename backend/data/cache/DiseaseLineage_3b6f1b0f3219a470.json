@@ -1,0 +1,56 @@
+{
+ "query": "DiseaseLineage",
+ "variables": {
+  "id": "MONDO_0005439"
+ },
+ "fetched_at": "2026-10-10T15:07:22+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005439",
+    "therapeuticAreas": [
+     {
+      "id": "OTAR_0000020"
+     },
+     {
+      "id": "OTAR_0000018"
+     },
+     {
+      "id": "EFO_0000651"
+     }
+    ],
+    "parents": [
+     {
+      "id": "MONDO_0037748",
+      "name": "hyperlipoproteinemia",
+      "parents": [
+       {
+        "id": "HP_0003119",
+        "name": "Abnormal circulating lipid concentration"
+       },
+       {
+        "id": "MONDO_0005066",
+        "name": "metabolic disease"
+       }
+      ]
+     },
+     {
+      "id": "MONDO_0001336",
+      "name": "familial hyperlipidemia",
+      "parents": [
+       {
+        "id": "MONDO_0002525",
+        "name": "inherited lipid metabolism disorder"
+       },
+       {
+        "id": "MONDO_0021187",
+        "name": "hyperlipidemia"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

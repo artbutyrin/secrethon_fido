@@ -1,0 +1,2444 @@
+{
+ "query": "TargetDrugs",
+ "variables": {
+  "ensemblId": "ENSG00000087237"
+ },
+ "fetched_at": "2026-10-09T12:06:23+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000087237",
+    "drugAndClinicalCandidates": {
+     "count": 6,
+     "rows": [
+      {
+       "id": "01e03734285b568d0c5f3743a768a12737fbe5fc3a8b70282c262bf0a5149731",
+       "maxClinicalStage": "PHASE_2",
+       "drug": {
+        "id": "CHEMBL4297601",
+        "name": "ROCACETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_2",
+        "synonyms": [
+         {
+          "label": "CKD-519"
+         },
+         {
+          "label": "Ckd-519"
+         },
+         {
+          "label": "Rocacetrapib"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 1,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0002525",
+            "name": "inherited lipid metabolism disorder",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct02977065",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02977065",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2017-03-23",
+         "trialSponsor": {
+          "name": "Chong Kun Dang Pharmaceutical"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "167079d2c88c1284c838d20e01169d8abb72c94aca615c19602864737cb944ad",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL3785197",
+        "name": "OBICETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "AMG-899"
+         },
+         {
+          "label": "CASA"
+         },
+         {
+          "label": "DEZ-001"
+         },
+         {
+          "label": "Obicetrapib"
+         },
+         {
+          "label": "TA-8995"
+         },
+         {
+          "label": "Ta-8995"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 10,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0004995",
+            "name": "cardiovascular disorder",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005148",
+            "name": "type 2 diabetes mellitus",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "MONDO_0005151",
+              "name": "endocrine system disorder"
+             },
+             {
+              "id": "EFO_0010282",
+              "name": "gastrointestinal disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0004975",
+            "name": "Alzheimer disease",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0002025",
+              "name": "psychiatric disorder"
+             },
+             {
+              "id": "MONDO_0005071",
+              "name": "nervous system disorder"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005311",
+            "name": "atherosclerosis",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "EFO_0000195",
+            "name": "metabolic syndrome",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "HP_0003124",
+            "name": "Hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005439",
+            "name": "familial hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "UNKNOWN",
+           "disease": {
+            "id": "HP_0003119",
+            "name": "Abnormal circulating lipid concentration",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0002525",
+            "name": "inherited lipid metabolism disorder",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0001336",
+            "name": "familial hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct05142722",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05142722",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-12-15",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "heterozygous familial hypercholesterolemia"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005311"
+           },
+           "diseaseFromSource": "atherosclerotic cardiovascular disease"
+          }
+         ]
+        },
+        {
+         "id": "nct05425745",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05425745",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2022-07-25",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005439"
+           },
+           "diseaseFromSource": "familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct06005597",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06005597",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2024-03-01",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "heterozygous familial hypercholesterolemia"
+          },
+          {
+           "disease": null,
+           "diseaseFromSource": "atherosclerotic cardiovascular disease"
+          }
+         ]
+        },
+        {
+         "id": "nct06305559",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06305559",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2024-05-16",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "atherosclerotic cardiovascular disease"
+          }
+         ]
+        },
+        {
+         "id": "nct07219602",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT07219602",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2025-12-11",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "EFO_0000195"
+           },
+           "diseaseFromSource": "metabolic syndrome"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005148"
+           },
+           "diseaseFromSource": "type 2 diabetes mellitus"
+          }
+         ]
+        },
+        {
+         "id": "d0g7mm/cardiovascular disease",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0G7MM",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004995"
+           },
+           "diseaseFromSource": "cardiovascular disease"
+          }
+         ]
+        },
+        {
+         "id": "d0g7mm/hyperlipidaemia",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D0G7MM",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0001336"
+           },
+           "diseaseFromSource": "hyperlipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01970215",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01970215",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-08-31",
+         "trialSponsor": {
+          "name": "Xention Ltd"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct04753606",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04753606",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-02-18",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "high low-density lipoprotein cholesterol"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct04770389",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04770389",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-02-23",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct05161715",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05161715",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2022-01-12",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004975"
+           },
+           "diseaseFromSource": "Alzheimer's disease"
+          }
+         ]
+        },
+        {
+         "id": "nct05266586",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05266586",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2022-03-09",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct05421078",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05421078",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2022-06-27",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct06496243",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT06496243",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2024-12-02",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct02241772",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02241772",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1_2",
+         "trialPhase": "PHASE1/PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2014-09-30",
+         "trialSponsor": {
+          "name": "Xention Ltd"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "elevated Lp(a)"
+          }
+         ]
+        },
+        {
+         "id": "nct05972278",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT05972278",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "ACTIVE_NOT_RECRUITING",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2023-12-01",
+         "trialSponsor": {
+          "name": "NewAmsterdam Pharma"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "elevated low-density lipoprotein cholesterol"
+          }
+         ]
+        },
+        {
+         "id": "obicetrapib",
+         "source": "USAN",
+         "url": "https://searchusan.ama-assn.org/finder/usan/search/OBICETRAPIB/relevant/1/",
+         "type": "INDICATION",
+         "clinicalStage": "UNKNOWN",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "HP_0003119"
+           },
+           "diseaseFromSource": "abnormal circulating lipid concentration"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "21137afeff0100bd84cbe8a64c5fd41b6cd43e77603d6287560482cbef7945cf",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL2017179",
+        "name": "EVACETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "Evacetrapib"
+         },
+         {
+          "label": "LY-2484595"
+         },
+         {
+          "label": "LY2484595"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 3,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005015",
+            "name": "diabetes mellitus",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "MONDO_0005151",
+              "name": "endocrine system disorder"
+             },
+             {
+              "id": "EFO_0010282",
+              "name": "gastrointestinal disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0004995",
+            "name": "cardiovascular disorder",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "HP_0003124",
+            "name": "Hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d02xxn/cardiovascular disease",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D02XXN",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0004995"
+           },
+           "diseaseFromSource": "cardiovascular disease"
+          }
+         ]
+        },
+        {
+         "id": "nct02227784",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02227784",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Study termination due to program termination.",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2014-10-31",
+         "trialSponsor": {
+          "name": "Eli Lilly and Company"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "atherosclerotic cardiovascular disease"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005015"
+           },
+           "diseaseFromSource": "diabetes"
+          }
+         ]
+        },
+        {
+         "id": "nct02260635",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02260635",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Study termination due to insufficient efficacy.",
+         "trialStopReasonCategories": [
+          "Negative"
+         ],
+         "trialStartDate": "2014-11-30",
+         "trialSponsor": {
+          "name": "Eli Lilly and Company"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "primary hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct02260648",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT02260648",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Study termination due to insufficient efficacy.",
+         "trialStopReasonCategories": [
+          "Negative"
+         ],
+         "trialStartDate": "2015-01-31",
+         "trialSponsor": {
+          "name": "Eli Lilly and Company"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "primary hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01105975",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01105975",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2010-04-30",
+         "trialSponsor": {
+          "name": "Eli Lilly and Company"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low HDL-C"
+          },
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01375075",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01375075",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2011-06-30",
+         "trialSponsor": {
+          "name": "Eli Lilly and Company"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "high-density lipoprotein cholesterol"
+          },
+          {
+           "disease": null,
+           "diseaseFromSource": "low-density lipoprotein cholesterol"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "76ac6932bf3355ba67faeec3cba755840006358f14809813332e412247133221",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL313006",
+        "name": "DALCETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "Dalcetrapib"
+         },
+         {
+          "label": "JTT-705"
+         },
+         {
+          "label": "RO-4607381"
+         },
+         {
+          "label": "RO4607381"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 5,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0001336",
+            "name": "familial hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0021187",
+            "name": "hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0100096",
+            "name": "COVID-19",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005550",
+              "name": "infectious disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005010",
+            "name": "coronary artery disorder",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005542",
+            "name": "acute coronary syndrome",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d05ssc/acute coronary syndrome",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D05SSC",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005542"
+           },
+           "diseaseFromSource": "acute coronary syndrome"
+          }
+         ]
+        },
+        {
+         "id": "d05ssc/hyperlipidaemia",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D05SSC",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0001336"
+           },
+           "diseaseFromSource": "hyperlipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01059682",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01059682",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": "Termination of the clinical development program by the Sponsor",
+         "trialStopReasonCategories": [
+          "Business_Administrative"
+         ],
+         "trialStartDate": "2010-01-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary artery disease"
+          }
+         ]
+        },
+        {
+         "id": "nct01323153",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01323153",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2011-03-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005542"
+           },
+           "diseaseFromSource": "acute coronary syndrome"
+          }
+         ]
+        },
+        {
+         "id": "nct00353522",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00353522",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-07-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct00400439",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00400439",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2007-01-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct00655473",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00655473",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2008-03-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "atherosclerotic plaque"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct00655538",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00655538",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2008-02-29",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "coronary heart disease risk equivalents"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct00686010",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00686010",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2000-05-31",
+         "trialSponsor": {
+          "name": "Japan Tobacco Inc."
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "type II hyperlipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00688558",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00688558",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2004-02-29",
+         "trialSponsor": {
+          "name": "Akros Pharma Inc."
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low HDL levels"
+          }
+         ]
+        },
+        {
+         "id": "nct00688896",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00688896",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2002-06-30",
+         "trialSponsor": {
+          "name": "Akros Pharma Inc."
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0021187"
+           },
+           "diseaseFromSource": "type II hyperlipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00689442",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00689442",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2004-01-31",
+         "trialSponsor": {
+          "name": "Akros Pharma Inc."
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low HDL levels"
+          }
+         ]
+        },
+        {
+         "id": "nct00697203",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00697203",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-07-31",
+         "trialSponsor": {
+          "name": "Hoffmann-La Roche"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "average HDL-cholesterol levels"
+          },
+          {
+           "disease": null,
+           "diseaseFromSource": "low HDL-cholesterol levels"
+          }
+         ]
+        },
+        {
+         "id": "nct04676867",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT04676867",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2021-01-11",
+         "trialSponsor": {
+          "name": "DalCor Pharmaceuticals"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0100096"
+           },
+           "diseaseFromSource": "coronavirus disease 2019"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "a2fb801955bd761e3570b218fc71690322a55b068c506e459379c596c8d14fa4",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL1800807",
+        "name": "ANACETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "Anacetrapib"
+         },
+         {
+          "label": "MK-0859"
+         },
+         {
+          "label": "MK0859"
+         },
+         {
+          "label": "ana"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 7,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0002525",
+            "name": "inherited lipid metabolism disorder",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005010",
+            "name": "coronary artery disorder",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "HP_0003124",
+            "name": "Hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "Orphanet_79211",
+            "name": "Combined hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005151",
+              "name": "endocrine system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005439",
+            "name": "familial hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0001336",
+            "name": "familial hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "EFO_0009086",
+            "name": "arteriosclerosis",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "d07hls/arteriosclerosis",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D07HLS",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "EFO_0009086"
+           },
+           "diseaseFromSource": "arteriosclerosis"
+          }
+         ]
+        },
+        {
+         "id": "nct00685776",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00685776",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2008-03-24",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "coronary heart disease risk-equivalent disease"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct01524289",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01524289",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2012-02-03",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low-density lipoprotein cholesterol concentration"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005439"
+           },
+           "diseaseFromSource": "familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01717300",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01717300",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2012-11-06",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low high-density lipoprotein cholesterol"
+          },
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01760460",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01760460",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-03-14",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01824238",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01824238",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-05-31",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "heterozygous familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01841684",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01841684",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-06-30",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005439"
+           },
+           "diseaseFromSource": "familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct01860729",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT01860729",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2013-05-13",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "low high-density lipoprotein cholesterol"
+          },
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "d07hls/hyperlipidaemia",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D07HLS",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0001336"
+           },
+           "diseaseFromSource": "hyperlipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00325455",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00325455",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-06-30",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "primary hypercholesterolemia"
+          },
+          {
+           "disease": {
+            "id": "Orphanet_79211"
+           },
+           "diseaseFromSource": "mixed hyperlipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00977288",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00977288",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": "PHASE2",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2009-09-30",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00565006",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00565006",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-07-31",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00565292",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00565292",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-07-31",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "primary hypercholesterolemia"
+          },
+          {
+           "disease": {
+            "id": "Orphanet_79211"
+           },
+           "diseaseFromSource": "mixed hyperlipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00990808",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00990808",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_1",
+         "trialPhase": "PHASE1",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2009-11-30",
+         "trialSponsor": {
+          "name": "Merck Sharp & Dohme LLC"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "cf8592814b07851bfe32fdc9191b75a178a694ce9910859e7f1bb9a242e3f0e1",
+       "maxClinicalStage": "PHASE_3",
+       "drug": {
+        "id": "CHEMBL479527",
+        "name": "TORCETRAPIB",
+        "drugType": "Small molecule",
+        "maximumClinicalStage": "PHASE_3",
+        "synonyms": [
+         {
+          "label": "CP-529,414"
+         },
+         {
+          "label": "CP-529414"
+         },
+         {
+          "label": "Torcetrapib"
+         }
+        ],
+        "tradeNames": [],
+        "drugWarnings": [],
+        "mechanismsOfAction": {
+         "rows": [
+          {
+           "actionType": "INHIBITOR",
+           "mechanismOfAction": "Cholesteryl ester transfer protein inhibitor",
+           "targets": [
+            {
+             "id": "ENSG00000087237"
+            }
+           ]
+          }
+         ]
+        },
+        "indications": {
+         "count": 8,
+         "rows": [
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "Orphanet_79211",
+            "name": "Combined hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0005151",
+              "name": "endocrine system disorder"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "HP_0003124",
+            "name": "Hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0002525",
+            "name": "inherited lipid metabolism disorder",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005010",
+            "name": "coronary artery disorder",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0005439",
+            "name": "familial hypercholesterolemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0005294",
+            "name": "peripheral vascular disease",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_3",
+           "disease": {
+            "id": "MONDO_0021661",
+            "name": "coronary atherosclerosis",
+            "therapeuticAreas": [
+             {
+              "id": "MONDO_0004995",
+              "name": "cardiovascular disorder"
+             }
+            ]
+           }
+          },
+          {
+           "maxClinicalStage": "PHASE_2",
+           "disease": {
+            "id": "MONDO_0001336",
+            "name": "familial hyperlipidemia",
+            "therapeuticAreas": [
+             {
+              "id": "OTAR_0000018",
+              "name": "genetic, familial or congenital disease"
+             },
+             {
+              "id": "OTAR_0000020",
+              "name": "nutritional or metabolic disease"
+             },
+             {
+              "id": "EFO_0000651",
+              "name": "phenotype"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       "clinicalReports": [
+        {
+         "id": "nct00134173",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00134173",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2003-10-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0021661"
+           },
+           "diseaseFromSource": "coronary atherosclerosis"
+          },
+          {
+           "disease": {
+            "id": "MONDO_0005010"
+           },
+           "diseaseFromSource": "coronary heart disease"
+          }
+         ]
+        },
+        {
+         "id": "nct00134238",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00134238",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2003-11-30",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "Orphanet_79211"
+           },
+           "diseaseFromSource": "mixed hyperlipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00134485",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00134485",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-03-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "heterozygous familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00134498",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00134498",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-02-28",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "Fredrickson type IV hypertriglyceridemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00134511",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00134511",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-03-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005439"
+           },
+           "diseaseFromSource": "familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00136981",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00136981",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2003-12-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "heterozygous familial hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00137462",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00137462",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2004-11-30",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00138762",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00138762",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2004-07-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "mixed dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00139061",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00139061",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-03-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "Fredrickson Type IIB dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00145431",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00145431",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2005-03-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": null,
+           "diseaseFromSource": "Fredrickson type III hyperlipoproteinemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00267254",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00267254",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "COMPLETED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-01-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00267267",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00267267",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-01-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0002525"
+           },
+           "diseaseFromSource": "dyslipidemia"
+          }
+         ]
+        },
+        {
+         "id": "nct00267280",
+         "source": "ClinicalTrials.gov",
+         "url": "https://clinicaltrials.gov/study/NCT00267280",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_3",
+         "trialPhase": "PHASE3",
+         "trialOverallStatus": "TERMINATED",
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": "2006-01-31",
+         "trialSponsor": {
+          "name": "Pfizer"
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "HP_0003124"
+           },
+           "diseaseFromSource": "hypercholesterolemia"
+          }
+         ]
+        },
+        {
+         "id": "d07gdn/hyperlipidaemia",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D07GDN",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0001336"
+           },
+           "diseaseFromSource": "hyperlipidaemia"
+          }
+         ]
+        },
+        {
+         "id": "d07gdn/peripheral vascular disease",
+         "source": "TTD",
+         "url": "https://ttd.idrblab.cn/data/drug/details/D07GDN",
+         "type": "INDICATION",
+         "clinicalStage": "PHASE_2",
+         "trialPhase": null,
+         "trialOverallStatus": null,
+         "trialWhyStopped": null,
+         "trialStopReasonCategories": [],
+         "trialStartDate": null,
+         "trialSponsor": {
+          "name": null
+         },
+         "diseases": [
+          {
+           "disease": {
+            "id": "MONDO_0005294"
+           },
+           "diseaseFromSource": "peripheral vascular disease"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}

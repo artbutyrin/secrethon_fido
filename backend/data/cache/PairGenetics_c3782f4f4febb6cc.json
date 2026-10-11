@@ -1,0 +1,6538 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0005439",
+  "ensemblId": "ENSG00000169174",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": "eyJpbmRleCI6Mywic2l6ZSI6NTAwfQ=="
+ },
+ "fetched_at": "2026-10-10T15:07:25+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005439",
+    "evidences": {
+     "count": 2085,
+     "cursor": "eyJpbmRleCI6NCwic2l6ZSI6NTAwfQ==",
+     "rows": [
+      {
+       "id": "40399015e56e8305df002bea48c019c2cd398289",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "409e8070386675b349a5e5bdabecd5af3e0a6d2e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "40a8b540d229594bbad31936b36df95d6cf670db",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "41302cae417890f31433036e163c57794efd8771",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "41611558d74f6575d8387aebea0a618526fde1e7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4181cd5b7e31d21ebd47ef8aaed743100bc092db",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "418f38ae0a03324e03c74b3d05bd865a636b7cae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4205c5afb5238997bb81ec93c8f57bf679027430",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "421f84697f2895f6954c62c3add44cc67c707985",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "42275ff59fb61a42ed30f4aa72dc4c00c7559a39",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "429654bc82c3d35fa118e96444be9d76715c23e4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "42f29ecdddd105fd088692604efe7fbb6d8992d1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4316efd096d99cbeaed9d6a52db7cd53ceaee685",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "43c22d01d3e1c64c07c6dc14caf121a10abb09fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "43d2c9c0b1be1b159b06063a79bd617c3e796f09",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "440ad773381673eab8e80d1e32c94b7fdd49b988",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "44d44ca3225e1b3e1d06b2dd549743e2f02df292",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "452dd3862b9c5fe9b50c6ac980f3d55714f0550a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "45ca05dbdcf9e258742e307c1bae98bce56698bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "45d5a4a2240c1032a0fdcddd1d4e482d081ea3c9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "45fb650a67fe34d1069cccd297bcf947a7cee0a4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4607d4036792ea7275d5ca6183f71f8e91b491bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4677f650579996ec798ce06d38ec9becae05161f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "47e857d60a54d190eb07e8d0c369ef42007c83b7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4815f7b4afe46824d29a2616eb234ba3174dc568",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "496aee1832e7e0464e228f151d5fd27ee598076b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "497e2499639abdb37bb526b2ac03b2401b326933",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4a32d9dadb864dbbc1832d0ce24ea90cb23507b6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4af9661f915f6a986b1675abb6c520cd405e9c9e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4b2e418673eedb5f481f41ce1434068eed3a8a22",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4bc2a69900e36d09f6181aa4ea24a67c59d9189d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4c1eef867b24082486fd61a5bd3f0727d9bef78f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4c36d8d8c8df648a889aa7f0755943e0c57fd236",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4cb818c9b6dd4808e4d57cf4a8299af4278ac856",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4d0647c5b30622fc49d86f9d968f14fd09f5dd2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "4d8ef52f4e17b16a66665735cd757c3c142ad56a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4ddedadfca986517ca765ee391392b1ef52880a3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4e40649a1d070fd5d715c460f3cbe78a9a765d36",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4eadef3fe0bf6a76e2ab3ad278eb9db78866ab41",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4f18ace0bec5207b559f400c18cb5f914886b906",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4f34d5fb5ae13e09e9e72f71c6369c7c60f6df72",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4f9bcb4f77b60b64fc62d63bce94e0a83e17ffaa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "4fea5d889299b481b01b61a02f0776cffc3898b8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5001a0126e0f8a2db0c4cb0deb60dd2e8fddd8bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5034c8d49847b85501599c57963d711ae6183484",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5249fd76abf1570104fef85307e371958920d032",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5282ca6a841f7bcc4e559f1b6f7d8d813bb84431",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "52940bcacd55cd33e425718d5c1bdcc2698fb2ba",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "52d4e14ab9cfda371689131a2e588fb458459b3b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "533edd212d36b7624624b8a818edfd6c40a2b09a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "537356bc5b3a1bef133f60eaa7d552bc6aa90288",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "53dbbac031339f3e0425a8dcb21423027b9efd60",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "53fc9d3105bf8b980f5fd82457349d4dd358daef",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "542f350be670688861e4b5971c86c9c8b09cd738",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5449e4847f65b8883eef8f311646f9c3fe552262",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "545452e771c78e2139d6ee46685af934c2a633bc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "54c191e13ab42708605c4cea5d46d5c4233ac601",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "552bb89ff425897f9b1d58473ed6ae55a9f125a5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "55411ad34fa21c15a529cb47c612a1a90552b6ec",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "556c332620946ec6c414e5722a9a3a16d074672e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "55d8d14c1eb8cfca953d643d2b61d57706ebf69c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "55ed5d25c134eb7df1a165527a26380c5dec3f89",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "56b8df0a8d42b4b3bd40bb63762a94e6bda06efc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "56ba6ab5665a280e0a838c12778beac856cbeaab",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "577558f2e6c827d8dc434f54b2e9cab34f654f08",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "579cf590d80aca9a1caf1a73417a1edac553df85",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5810d649369311653fcbc5b9bdcc5b8c1303020b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "596d937d8c9c19eaaae22f342ece4a2ebe1ab0fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "59abbd76e7dbe3839b78ce96923deba48652f640",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "59ac7de5a045c76480a5a47ebe251280e312363b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "5a1346ac911d6fb1980057833a54864d4fec1017",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5b9958a10682a5217f64e1e23a670768c4022cce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "5bd658473fe775522eba58f98325fbb1da674a9e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "5ce14153fd9e90bbe05df2ca7d0ed25f5b0a300f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "5d29248ecd798f6826a246551f488dbd6d963290",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5d7967e35c715809400705b398d90c287975c165",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5da6600b03da79a5d125038fcbdc95a745c2ca0a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5e4df581d4b332de9581c92a008f8cc1267df102",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5ea0ce9a3f4b5db25b80dc4f1bad13e4367aa31d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5f8a433d967759d4c50e98ca61de1c67534d44bc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5fc345052056152a1689cb332f4380518d4a33cd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "60021103b8a72b25d1b4c458ed180815c76366bd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6031a4191eeba54323dedf218f06de24a6ec39f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "614ec34a249d19603c42cb2ac29b8112991a3a36",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "619913ceb47b67f3f084afbded13d707e3d601b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "61e7eb4e807a16524867e1574d7e452e56486fad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6235bc9ccfbd3bbac36d9fdd5c450bae7bf58bbd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "62959f0ee49da65422cc0ec9b35dd65cab647a56",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "629a5471cf679a6d0094d36332f14bf634cfd05d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "62fb26e7445a1015d53516dbef3dc517f8e55bd1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "62ffa67ed7ed22d1a1af609f14373e27008bf687",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6303858b94defe5cbfe52ae7045a67e08ee095dc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6337c17171a0dec8a4863b9f8626b1ea08ea327e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "63667c92e1cbbc20b4083f691413b30c96d204e0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "63d723ed6a568240d3f51f4d607f83d0a1d9fb99",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "63ded63ed3ab20878fbc1be745eefaf810642c0a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "65bd10f00571d70c0121194b0a4b93ffa20516f0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "660ac93e01118bd207039b6be2d414f81ccea6ec",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "663142720a65a457d6e0138713f461d206ae75d2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "671cce12cdc7790460e2848d6efeef789cc2ebb1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "673fe281d3a9f98a7b7fd8fa43e979a7d3066251",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "67e7e1bb80aa4c3c2e0ca56ee05e847736b04551",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "68e367426b3b3d55ffa0131e7fca974d8bbc77d6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "68faf4f1045e74c9de3ca59eddfa53f65f29d714",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "69866a37c5176790c1ab94f9df95cde022a1349d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "69b014b6ab16dac2499a4995ab1dace3bb1ff618",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6a59327f63d084958d2ed4135aeefc6d38940549",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6b20202e1fccc8149e1f51f9808e984b819f631a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6cdc3fc43e4d60d468da3987e4886ef5385d1f10",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6ce06f546ff274350569e6ec5f6cd06c9705ce72",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6d4dddefddb4ea6c4ee3c6dd78bdd15ce2b5f834",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6d60cb50be8c4d1720a8163b0a6c93ac35fa5571",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6d628066db2f359f2463c8cd9f8fbb1abc60d9ca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "6d9835f4dd3f1bcd3043ada9d9fdc80b43b0cab4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6df8c311d4960aa506db5aec2e03629e906051c5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6e1f40302346fdd3c248b00f0d65f6d5d6eae769",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6e482282b9686d1e4279a3f9eeb3499238f195da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6efdd5f3406f82802b200956915f72546fb0427f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6f084c639d7cb183506c06aaa25d03e22f208c12",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "6f9a6c728374bb0c6cafc727e8b62c8a4f4a1726",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7012f255c7f13acf62df9d6eb875e08ccea3adfc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "706a0509fe2dc29967ddb282b63573518db787c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "70b78b15b1d98f1e59872bd5ae37bfa72e83b862",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7137ef01593ea39810dc58460ca3a8123a64a729",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "719bee235a0fd8c6d594d7b73f3b2efcbac95022",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "71a21d7485e34b8ec92f0e67b4ce03341abddbb2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "71a9822a034265652703b338c6b8bfb435d42a25",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "722ed46c3fff26670d3d492cd150f8dff96a0fb6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "724cb29d8d895763a66fb99e12c65081f66d6fc6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "72e8299ef10cdec4514611d41620092de22d8e5c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "73509abbcd91ef32f85034c181fe1978bd6208a5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "73eeb404d761ec3c9309922274b77750c3d93a04",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "741612dda7640ef5146d70654bf2cae307135242",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "744991845e64537af270d0df934924df29615f2b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "744ae0cbb80420f3659031329d85faf5bbc79e44",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7501e95500c20197277e807f341ee271060e5df5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "753b8ad42de0b9c4d3870856b89fe27623d446ba",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7583c4434b5eaff04fc6859769cededc698e1977",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "75ae9f080ed810e8121b56ed042d0ada37078967",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "75d6045066075a7658cf69a88bbc374c634fc1cf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "764f0527604892768c670c5ddd6f42890d59b4f7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "771143708e8e801a9dbe0460a90bcbcc978c53a6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "778e40ae0ea5dd5e509ef866c11cf7edb357f4fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7815fa5dd37ba04670499d80ff3d41e7614a5075",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7889f55b4db8418058752d4dfa58b803a827381d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7983b989ee9173d62a88662fffb5c64597591221",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "79963981f6ac09ffcbe15f29ca73fabf95b226c2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7a327fb5e1f07c030a2c06c01617e5401eb479f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7b13891aa7e42861ad00fb92bfef82433e36c05b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7b1cdaeafe2095ff2502e360800b16536434875a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7b3f9b9a1ab96cf1a143dc9ae99deeb4d69a9063",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7b53a8cc60a118713dd09fab2f2a31c390943b50",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7c3cbc362dc3f03ad3ce7d20bf87dbfa547b5955",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7cf86259ec9667194e5da96ae010563ff1969059",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7d63d11053dcd8229edadb2e74f8e6733299b03f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7e077828d41889e08577409a22addeaf360d311b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7e8cb969b8506646eff77865f54a232cd9abec82",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7f795da55dc78c4fee41a77cf4fcecb90a35993d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7fc88a70313ba26ceee148f4f1ffc8cdffb74e18",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7fe60acaed352be3d0af97f905a1a90403af2051",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8034d0bfb891ec0e904c1ec04d8f4814d7722aaf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8061c39a955934cc96e1c170a6eb6cde4320f4d5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "80a11057edcc1de203b2a832552d9ed0e124c2aa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "80a731968d2b5c4da75f41ffca655c07f2ac354e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "80d83b9c2afc3d92206e5a7a45195a589f861256",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "80dd01cbcd500aa2f7f2480c6ffc70bd599b8dc1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "81209de85ac292b845d889324cd59ce8688c83ed",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8127cd1c54359cb9c5b5c9d1a017718cb2babdf2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "812ab28c8d2216266ba6246f58d256e50566316a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8183c31a55aad967906b333caf8fc74661a2b385",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "81ffccd18da03159e52cd1016bca702659de709c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8202404533c020db66613340b0a174fa4cdf82eb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8211518e83029aa2ff76ab409040874deacfa47f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8290ece5bbb40ceaece2ee49ce221dd8db3ed987",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "829112b2f3a03ef7fa6b48c181d5cd30250c9b08",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "8297144bc37c6c5f7ab1b1bb59e74f1d2e67b3d1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "829e5d48f2bdb0cfe894bc153dd5fbbfffd578a0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "83119610a403f99df1e57235f35903e0af972af8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "83b91119f4a5a5c4e116472a7730163e6f5614fd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "854ab40d6648f812cf83f7dc988f130aa9ae54a2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "85cf8d5bb9c55e6f675c0c8cf39f36e7bcd90afe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "85fdbeb0176a580533fa510dadf58351005d529d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "86025a117388886422efa390441dcf0fe38acaf8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8615fad78cdf9fd4fa93ed6db41a3d359309fbea",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8665308a44dcf7cb699aaa9ae9ebad52bdcade5e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "874024d30aabc58cb7032b93dee31e301e72d94f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8744d22a82f07601d27a351e618aa000bbab7399",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "879f4dd4e0ce61069395dc5801c2cdfad34162a1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8873dca7d9acb5dd2f95a9b4e41bc3b0eb327cd1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "88cb561625f541aee640ef50d41856d7564a1c68",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8971acbd2a90a4060b6db79a9d3ee17c23d8b5f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "898c76f90424eac498e15a962cfbfbab8e86ddf6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "89e7e5cf19c520820b682d3a0244fb981de10ad9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "89f12c3a40146e6b3eb8b1f679ba0758d83f5c5a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8a05ca8bb400293fdc0eec97b7915c3e21259e36",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8a341142f8747d1ef6ca867d341ce35dcfaba4c4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8a9e6155194b2435e721ec058417bd885886cb9d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8af36688e29d57b97033eb1f648398fabbf9413a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8b081d6a5db3ffd659dca0c79a78c75be7888b8c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8b1f65a4afcd683c389cbb654716bd1644977b3a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8b87fc60642fe3bba1db3353151f497ee32b9a19",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8bd089b246bbefe8b180964e067cf2b9c32ef797",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8c92314c4525dcc10e86296734a172fee6094b10",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8cff3b9a4aaafc70902ab1ee3da17931020362b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8d1c6a935041c3041010e9391f90e4c5fd012769",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8d3e72a08a6d1794898e9851986eb2cd93607c46",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8ea7298577096ce5bbb277ee5b6873a6bde77824",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8f1bcd016cce86bbe188afb205b548b74fe8e7ea",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8f22cecff3d6e49ede23c6ac6f3a504b39bebcbb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "8f3df91efc548a901dd97d814ac9f7d9a1d3eff1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8fb9fbe5d350f4e9febf0d9527358b4926001c82",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8fd2c01318a0f303b5228e4fb53b949c6e469feb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9016affed0f55151151d747095b7e911c8cc309c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "904f596ac5088a409a1742cc67ac435393f55241",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "90c28dc39dedd55abc44248c9b6b6d63b2a1ba27",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9138a2571060cf9654a6b640b0a3395181df1b9b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "920a3cf87ddfb81f1e53d77a03bb8bbcdc11d94b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "929da0474f8e3ce6d88894ad7747d05a90aadd86",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "92a52aeaae311b5cf859207e9d58f71330091714",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9326181908f4011ae04cac46d254f302fa1899da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "93fec32486017dc73be986ed664d432e2b64f8b5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "94bd32039d64eba4596fbd1edcf16f7d034370f3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "952689460451fbcb9ff20672f87ff1073b64c544",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "955cc19daacbf1ce9cedfa6ca2664c1f18b8bca1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "955d77ca228b62a911c1e548b3ee9a81bb248377",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "95a361a3642254a295970a0476f9d980b172566f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "95b8c289dc4dbd8c3dfa004d8cbe880f17caac2d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "95bee9fecf6ca78af23b08703a21a0321dcb6788",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "95eaa14bb944b25fa21a046e2803e96ec9a05304",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "96de7135a82eb8c50b115a1b729490a7a4ce4e90",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9732dd8dcee2da0a6f08cd5cf1a2f6677aedc630",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "97bf6c4b637d1cdd64c8247a3a5acecb8c7c7a59",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "97d79947fde264c707aee689fc4426541d659e50",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "985c574c1c49a58a1d86d00e1e8d0e13014eea01",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "99305bde1dda9b7dce87aa6c26201e06e1a39408",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "99b2743fc6d651b2dedb634250008ec488361d5f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9af6e76cf9aedc1004f1e8c17d1908c7e9e799b2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9b5e22ca89715b2089cf14d9cfbcd7630419bfa1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9b721dd96430d39ed83c420bc0a76c4b94821c2d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9c1eafdc4935f1c579644128e14ca3a12a248d11",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9cef72dd67e9b4106b19a9f1e7cce23326c3b9fc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9d026f345bcfa266ec29469055eaeb7a4910bca5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9daa4c99e9777aa9ce597caa3bddbf9fb56c2d3e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9e23791af09cd23495089297d108dba819a93862",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9e5cf3e99f0eaa6200511f312a512a3ae59234f1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a08be298e95bdb07dc27f96d34b5ea78eba0c140",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a0a005ed74cb6f8c83425d618894541db1a0e43a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a0ad8e97ddb83c4f3da2f73791e112b2e50798b8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a0df55ea1771b53a90f37accf9f6319cdb22b904",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a0eb121a31549a558d2d01001bf393241066d317",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a1c63ec8afc0cc6f8757fab6c2e7529ea7517277",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a25678e8606ea41373e7f67ed2216def2b52c1b5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a2cf80ca8610ecb35ee9d724a27874a76c43b910",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a31df0ffa90fff40d86dd68816fb212ae5247399",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a34e5f0f2fbbbea1675e45539aebece0cd110646",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a3935054e3719b460b6d29fd7e14573c2697cb69",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a3ef2f6d7ba9e5b23b7a899863e0301784c9dcf4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a432b4191154791ea13093e1c7d26684300c6971",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a4c2cfb8cd0f0427db8b1afd54d0598a048ce4ac",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a630d7da1069bf09191fec1cbed2864fe2eb47c0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a6659beb10c8de48327c0e2d5407221e67ceb58b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a6dd1a6b5e59b57c1dcd5fd7c875efaf719136da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a6e0735bea85960b1a70cea761d33c75b3b2c374",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a7b03712723ad5ef0a0b2cdf093052f23f561281",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a8ada05ed79891e76b3bbcf94914d70a098b8b78",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a8e5565ffebdf3082207a6bf5f4783375590394f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a9034442801b703f192ff0d5283ee8e52f0c3d05",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a946fe00e53ba83194ca92e0508d01b60bf8b20f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a98cb9da6a390769c26878f44d1ce4f17ff29f53",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "aa437c37b8f9a05b2310a660c7af740c1b3a297f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "aa7ebe635365b6597e13f3381e66caedef49b86d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ab9f61c797f770979713a8d73b7544cc9b4dbfc8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "abd2abbf1c916bdea590e8804a66bda6a9ad6837",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ac01fbce8031a079e37f127b92c06d42b66b529d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ac049fffb5e947acdb4d5b88d22cbf3439fd8b2a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "ac155723b049e56e080caf112d0a65f9b5ed3082",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ac2754131a756ce3ef1a940dfa05b2c651500cca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ac6c70eec5f9d73ce1fa5c52c16593735c10e29c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ac954b3605a63378838d20c84bd692f15ed8d205",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ad2d67709a51e75c296216426225611c7ae6c891",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ad7962b02bfa74ac419b4ae414cd923cebeed589",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ad90bd3f93562a693d7382cb72ce9d6c55fe45a7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ae14ad8103aea4c4e076cf2a1abc68acba4ab855",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ae2b535b168167431efd3b834181a0cda041a0f5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ae792f909723bbefeae05608e003df306d762e0a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ae8a5d558703b942e3ed26b152ae882a7c902d9f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ae968a5b204df4519b4dc0884e1099c053e01926",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "af106432eef70e7a2320537b969cc7cb74035a04",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "af14edda2706c0728155e016409c5633d2a167e6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "af9b6648fa896ecc7d6f013ab49dae41ee5c598d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b05ac0c76b7b9879c7288e7a1963cdc43862d91c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b07fa4b0bf26d6c5ba58d36e004387443edbbeca",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b08f168690d698d6b4e5d643301e8942272747e2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b0a5019119ca6f1e23a20179bd86537505d5408e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b0c74d6f3d31f8f1dc7eada35a572ba63319349b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b10718afcb52416a66ed2f73ec9cb16388395e05",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b1124cbd75964555d584a110b5da9413bbb12894",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "b15b658776c6d783e9ab0000a896f48d9edf636c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b1684ea1ac6656f8b78d1d4dca38ff6ba2a7ca16",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b17c6420b6d9cd2c90d4c9dba1952bf8d02983e8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b1b338c19305c28a13ebf31f365e00d6fb6ca8e4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b3117f116482628fefa45ef9d295ea8632eb829b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b3441fcb95e4a4c6f273f1baf1cfa71b47440583",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b358b3b761702876dbd5a9f15ffc01004ad93b6a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b394348e9d4efd8aa9c12332104815127ad9eba8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b3ade9d39450a15ed6784042560b752efed015df",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b3c0afa1adf97798cae7031f051126c106df9b55",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b4d784146fdc6711f65537a24456204eebd94172",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b4f889b204286e51150ff17a4c54c75836bfac83",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b543b9d7a3ddac031ba574d4d242c193d0ac5c03",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b59bd29d57c72a2fa5f0eee7fa9795a7f3ce9fc7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b5ff0eabec35e9cc0e34a0c4d29f6af741c03244",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b60a0ba9b182979bf1dfabe152984780367e4f9a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b689e9d079ce4a7dacd10284f7bc9a6db2666c5e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b68c1a912fc8acdcfd7a5acbe4df64639fa439b3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b6aade3991fbc0b09f030d9f2da985a13876c997",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b72781d262869e50df62e5931ddcf248ad65726b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b7a27896bbc4c0b3b6cf520e7788899d2f7bc107",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b83a2165892870d6bc120fa96d44f76a90dff30f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b83d3489c3961f7ef81c5e0e6d4ad5380d3ba0ae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b8d38ce58a26ad01191df84b8029932ab6a513a0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b9d16bf9312067cadc4921a1e83752f4e0d0ecc0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "b9fbe4a5624352a9202a4781b2ebe7fc22e1333c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ba02bd911abe40546b58916a7ee858c3643e00af",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ba27aa3935e257d2260a1bf168f0d4b95bec150f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ba340a73485ee25904f5dcfa3b2d968c80abda0e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ba9de57a2b4556da9eb39ef1a617e61c6fcdc615",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bad888b315fadb033e8469babccad6d7affd065d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bae8b47317b592f6af515f33b435639d2715974f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "bbc091177cfa59a91dc9e293c653c6a11cdb01ea",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bd975d8f59a0560fffcc1f8e8c879459476cc000",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "bdc23ffe659a48b0ff77a91cb0d3ba847088a5fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "be477fd196c2d3e613d839dc77bcff142846a82c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "be75b1817c5f4d773198222f9925ece36c4a33b4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bed042326248cb19e18c45d5252a0f5f8a661728",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bf65814ae93dc52a3febb86c7faffa8b5fce50b0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bff34926cfae357ec7c03c34d136f7f524b758d2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c09affc238acc173fd12c521b16674db590c18b3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c12e66f1368ea6baf8af38ed75b7678dd7dc4303",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c2df4b2efddeaa3cbaac5b4a6c45423a64b3cf4f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c3954df90ae6903311c4ee947443384d463b7711",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c399794a100c88bbbb0548c9452aab9bc382b9f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c3d5787935f9336803732cdc29ffd3fc0deb3106",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c4d567c7fc69b5c7385713c812859148039e7eb5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c5da48d5c458b79d2ce6787fb72023888cde3417",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c5f49312daa92967e26799c0275da22d08b01411",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c6224a7528d540733afe274dff021e9c159cc593",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c636d9abd4a82badcd1aa7eb6b904cc8d1f89120",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c639a494cd9d2a389d149d6dc6b27c39a24f9ea5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c643b60a20b47a01d6d0543f8ef86addca96f6dd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c653b1368033135fa228ae1306440a14112b29c5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c78700f097435b2c334d41b71eb0367e00d4d18a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c809f3f5fdac75575edb05283b1c963c950bb839",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c83608ba8f4f7846423aeb725552ad86885350d4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c89a34241cb1a808e712627d571931fe2ae2f978",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c8d9228a2f823ad13dceda1512b4904d6d0a49f1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c8dac38b514dc17e1ac58e2192cbf265abc7d158",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c92168ffabb851d420cbdd403d6de05a31404467",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c95dbf43300ec3187198e285e2910b7254260c49",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "cbafb8c60d1f3fa75277ac67618e12510f3bc525",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "cccf3d9a057a3da0d8599cb080d9d366bb541a88",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ccdeea485c14704fe824ad4749a4c632ba632053",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "cd4fcddb99db556328bf389d78426dfbb357e073",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "cdf66b4388083729eba98a84ca3bfdbac93c5a17",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ce2a379c2a7efa0f04f295115c8c3bd0eb078398",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ce2b63b4bd5beb75d13c7663624ad1cbc38b6451",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "cf9098847d63ea511be9188ac46f6b37699a87f4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d0421c674c146c90696231c17a013c6c0da3b89f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d07ec770564cc22ed24f6cada9dc6544b43cfc31",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d08ca508a2db47db66e826d39a70ff0076468799",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d114b52f044485e22cb13ee21e7c7d758974b407",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d13f1af02a5e89c8110ace4ef2a0dadca04ecea2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d1ca7061b900bc6424c018362d723e877ac3f7d6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d1d001ab7e08232184581e81529355315caec2ff",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d1f237540363c05f85808f3cbdbbb773192595ce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d236e974b30797f2667dacf1927dcc6d3edb4741",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d248983ac0bed883c807f5bbf52021207b66d510",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d27b1fb30d288b42eb8ead7a97e7dfe47a893fde",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d3627217d74350ca68d7c1a8279d75a8ee5458be",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d37c9340ee7aef0c4824c2684a457bdb5a8727d5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d3ce14a6821cb4b605ba3219fdc5c90a045cec49",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d3cf1280096cec0aa657b8fce2279d38d629b26b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d4219eeacb1a31142a9a3b11343da375b874970c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d514de9cb5f64ba9cb806e96a076b12c04d6ba35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d55df3d3243cdfa9dbd2d4ff927bad13d8c24343",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d5b9475ebf128b02be5ecff9d19480bd6703d2f2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d5db60085a988b6cf51e683ef78b77445b684ce1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d6172fa7c283fd77237b868ab2ce904feffd27e8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d6d3ac2ba213a5ac9324af84af12d077fe1ad979",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "d771e211ee3caf13e1552c3a3856e558062568bc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d7aa0cf2bedcc2556dcd6162f2b723e89d4c884d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d896ba51320ff0eed5a4e313a0e4a15f01a43fa8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d8a4da350796bfd833a94132022747cb7afc8b44",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d8a7a7a98796f0d56b0e4956f7aafd408310e40e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d9475ef867cec4445b8a8a35d26bd46cbdb68569",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d9b739c5b0284e67541836b4a32d4655b2451b35",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "da1713ff36f0588e584c85c9b8e49fbd9862ab79",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "da3c98f865e9ca6efd655ed001e45de93804557f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "da66fd30f29540f2fafb080a1eb6f64ad2eb3af9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "da99c59767e42db6e6f18adbb4e34d8a348c4751",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "dc3aa466971a1ce23eeb027e740b0b525046fb4b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "dc8a8c3719061e4685f1a990d9fa7cf13010eb1f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "dd41f8f19ffaf1dc6a0afa14dde9e8b3e0385a88",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "dd76ec5fb02144ffa8533f8a1d0449d6b87d4f34",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "de524276b039e21438ecedeac5cec7cc4dded659",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "de9b0a405da0d7ef708507991bf0986f29087dda",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "df21be7186cdeadf9032cf0800b080ab393ef537",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "dffe25184d7b1e9cd477e21d30cea2269807c202",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e046effbbee0815175493cd1a9fed6d111a14c86",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "e0a3312b53160cae3f3872ecc98ce7e36a8a6346",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e0ccefc5af7dca27bb35193094099b397c9a2cb9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e1285ad5cebe67f44488032715926c2942ec568d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e1711ce9b608de0d5c96b339bf40cc856769b8c3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e253dddf5ded456688d7edda40210c1f18e02ea8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e271dbeab93a134d97d07a41a1ddf5d752617691",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e2ea2872897551efbac8f0df8b2709759729c070",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e2fe2247b5ac9af255c5382ab00d0c4395ad49e4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "e44b8adef184404048ae7c96d5bb9a47218b99ce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e4651a4fa98928237106c3626e6d33ea7a18d4ec",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e4c0a013405c04d84b4b14d202750a6962b8dc7f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e4ec108ce43f913f4063d320627796bf4a6769cb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e56ec01036b07a844bdbe25ee45996d34e3e5120",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e5800d39b103b7355513b7fab66a9ceadaf8405f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e5d9c7fa48890454fd1c29ee41b3097fea5502da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e5f9dc2559f83a88e31751330e2423b3c25e656d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "e62bf8512d83c1d73f7468426c293b79da20b899",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e66828d7e63c98637d49edac78c91aeccce3888d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e6ccf56477baae42ce941e08ff954c914e2ee9a3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e758fbd68f1e742cbddf709855ddf69fd34dd09e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e872a20264978ecc94ee7fa9dc9f3fb5899d2b49",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e912dae98a63884a30f8d0ab282ad24dcf4859d9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "eaccacf31f9f4004368d01fe2c11ad12e25d6b45",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ead6a999becaeb6b553d7be8a131c9b8f07552b5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "eaf13715ed1ddcc1df560eafa8d3903fb254274e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "eb215c863882b8201c208a2b6b11a5f861a69803",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "eb227aca6475477ed9b8156656816dd52eab478c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ebf3a9ef8b16c1c271c05d2b3bac228c31bf6fe6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ec6990cdceae6877859c1c0f174762e5dfb567a5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ec7eee534a866b620422b16e95a1407468543d65",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ecbdb4f9bb07d077743ae06938deac085029c9b4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ed078daa0a88f6158b76f67cbf6cee82a0ffedd8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ed232367c1005a88090ca4e1cc052861664ecf39",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ed3007808320cee95af406641b4ac7e8ed2aff8c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ed472b1edc5aef8a879f743702166387615a8b9f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ed6f5e455fc14d5f9f7a0a381404dcbb927b6c2d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "ed849e9ecf2026747f5fa7218992ab1b3c35c057",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ed9835874d76e662e00b7d6182916279ea83a94b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "edd7fa73c9ad2badf3cc60b5ad056e30f32a9065",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ee221a257e322415b549a876ac62390bfa2ebeff",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ee6d4dc833e413276d660e01e3b6be90b742e009",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ee85f1c14f4d7bfb0ea01f256b0e44d5fd03b8bb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "ee95e32ff6edb513b4ef36b56354ea41d14cf492",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "eec218dec5671f5dab615c399ca3006d664c8fb9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "eece8165b0c84f57d82c36b883a99683a51c58b9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "eefa9dd5550a999f579e018d08d734a68ae561d0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "efdfc24d89e4f4af80a781798087c0fc15f4c726",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f02cea2cd0800ca87937cebfd20ef633e36214a3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "f050de8ca312634146c581a5147a7a8aded3ea10",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f09af67d8df0b809425d55b5bd0537916a66b2bf",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f0d35aa4f7010bd53efbdfc18f4b3ca1c04a0237",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f13f8c21bac35a0944a48c78c581c067342ce793",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f18139a040fe1a53bb013053ce5850760f46eaa0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f2075f66d6b36cd8e1b232a4bea3b4dbd5ff0b44",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f2374a8601392674e008b6888f8608003faf26e8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f23b24b2d1a3d1c1976905feee3ab62d0ccf97f0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "f27a1c046a03e240ee8547f84af826460d4a8238",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f2879ecbecad0223e0997dd5ab505cb841e0d914",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f2b3f31c9f19d80b6ab78ae8637efee1110fa83f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f3593d0c0a6abf7c4ec8a73bf74fee4b690d7a87",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f392cefea92942dabdd9e070a826bb5d24dd6aa7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f3b73a42896e7674db93f5d153d9b8ea728e9375",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f3c139e8eae5cc2191188fbb491141194aa25f21",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f539884385e7fdf96aa1a3a56a0dc2a2d359eace",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f5d013e9062c6b51d339714a5ce8ad26b44383bd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f6f4c1666ffba3a4bde8384036b6e232d9ed1bad",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f74a36d228abda3c5c16db4c2f3e6857812509e3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f7928fd32417b0b67fba0bcd54085ad88fe3f409",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f833aae2786d8bffc1508c2929d149399c730a5e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f874dd90d591160d61d20801e31e78e4fee7f01b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f90997ed59054ed6d4ebddedb9fa7b1aa06b46c1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f9125d1790a4153eaffb51b2de0afa01a36fe305",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fa4bcc8c80294120c6317d127adbbbf7ba9520dd",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "fafd6c9400ba4214c26bc6b7567ad343c28edd19",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "fbc500f4c35ea5bfe3a08efab592e9358ace1584",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fbe1faaa3b79f8e4bd55a2c78a53371dbb7567be",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "fc756a9ff1fcc21effa936ce9159b0a29f8a1e9d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "fcc2b460d35f96fee8497732d9a6244c6fa65f48",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fd0802e711debc0fd0b539c322f6da690fe81b5d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "fd13233288a8117aad1bdc986c85d7b0750026c1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "fd9bee7de29bb029407df00fc629c02ee19d3e06",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fda7566f608bac4fe8afefba9ac88a52c80b8e1c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fdc18b633feeb164d6616532849227fd94988def",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fdd2ca2273ad242748c5b3d5cbf6e0e914a2140c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "fe13d838bfda3576ef14fde7dde91e90926d2a62",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fecc488fa36543e4ea1156f052b47348c8760a8a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "09eb67584c53efaaf641f785e913365184d71947",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "18beb1d30578369a0f3dfaebac43bc9a3904c1e0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "19aa1b74985d9e100d6a568251c62529162b0605",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "1d1b41d84f8a47f2adedb2a173717daaa4ebce24",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "1f3ca6fc2e0978363dc8531469c1d11c4ec9c6f6",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

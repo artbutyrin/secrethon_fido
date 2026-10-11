@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "Alzheimer disease",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-08T10:27:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 885,
+    "hits": [
+     {
+      "id": "MONDO_0004975",
+      "name": "Alzheimer disease",
+      "entity": "disease",
+      "description": "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+      "score": 5750.1904
+     },
+     {
+      "id": "MONDO_0100087",
+      "name": "familial Alzheimer disease",
+      "entity": "disease",
+      "description": "A degenerative disease of the brain that causes gradual loss of memory, judgment, and the ability to function socially. About 25% of all Alzheimer disease is familial (more than 2 people in a family have AD). When Alzheimer disease begins before 60 or 65 years of age (early-onset AD) about 60% of the cases are familial (also known as Early-onset familial AD). These cases appear to be inherited in an autosomal dominant manner.",
+      "score": 887.60785
+     },
+     {
+      "id": "MONDO_0015140",
+      "name": "early-onset autosomal dominant Alzheimer disease",
+      "entity": "disease",
+      "description": "A progressive dementia with reduction of cognitive functions. It presents the same phenotype as sporadic Alzheimer disease (AD) but has an early age of onset, usually before 60 years old.",
+      "score": 832.3278
+     },
+     {
+      "id": "EFO_1001870",
+      "name": "late-onset Alzheimers disease",
+      "entity": "disease",
+      "description": "This is the most common form of the disease, which happens to people age 65 and older. It may or may not run in families. So far, researchers haven’t found a particular gene that causes it. No one knows for sure why some people get it and others don’t.",
+      "score": 769.20435
+     },
+     {
+      "id": "MONDO_0011913",
+      "name": "Alzheimer disease 3",
+      "entity": "disease",
+      "description": "Alzheimer's disease with an early onset (starts before the age of 65). It is caused by mutations in the PSEN1 gene.",
+      "score": 760.76166
+     },
+     {
+      "id": "EFO_0009268",
+      "name": "family history of Alzheimer’s disease",
+      "entity": "disease",
+      "description": "A reported family history of Alzheimer’s disease in one or more family members.",
+      "score": 759.51697
+     },
+     {
+      "id": "EFO_0006514",
+      "name": "Alzheimer's disease biomarker measurement",
+      "entity": "disease",
+      "description": "Alzheimer's disease biomarkers are used as indicators for Alzheimer's disease screening and as predictors for therapeutic responses and prognoses in Alzheimer patients",
+      "score": 746.9777
+     },
+     {
+      "id": "EFO_0022957",
+      "name": "early-onset Alzheimers disease",
+      "entity": "disease",
+      "description": "A rare form of Alzheimer's disease, occurring before the age of 65.",
+      "score": 698.98975
+     },
+     {
+      "id": "MONDO_0007088",
+      "name": "Alzheimer disease type 1",
+      "entity": "disease",
+      "description": null,
+      "score": 685.7645
+     },
+     {
+      "id": "MONDO_0014265",
+      "name": "Alzheimer disease 18",
+      "entity": "disease",
+      "description": "Any Alzheimer disease in which the cause of the disease is a mutation in the ADAM10 gene.",
+      "score": 672.3893
+     }
+    ]
+   }
+  }
+ }
+}

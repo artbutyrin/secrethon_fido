@@ -1,0 +1,139 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2790,
+  "output_tokens": 1679,
+  "latency_ms": 11684,
+  "json_mode": "prompt"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Duchenne muscular dystrophy\", \"target\": \"DMD\", \"drugs\": [\"CASIMERSEN\", \"DRISAPERSEN\", \"ETEPLIRSEN\", \"GOLODIRSEN\", \"SUVODIRSEN\", \"VILTOLARSEN\"], \"documents\": [{\"id\": \"pmid:42814297\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Development of Antisense Gapmers for the Treatment of Huntington's Disease.. The field of neuromuscular and neurodegenerative diseases has been revolutionized by the advent of genetics and molecular biology to evaluate the pathogenicity, thereby providing considerable insight to develop suitable therapies. With the successful translation of antisense oligonucleotides (AOs) from in vitro into animal models and clinical practice, modifications are being continuously made to the AOs to enhance their pharmacokinetics and pharmacodynamics. In order to activate RNase H1-mediated cleavage of the target mRNA, as well as to increase the binding affinity and specificity, gapmer AOs are designed with a central DNA gap, often with a phosphorothioate (PS) backbone, flanked with the modified AOs on both sides that improve stability and binding affinity. Antisense-mediated knockdown of mutated huntingtin is a promising therapeutic approach for Huntington's disease (HD), a devastating disorder affecting motor and cognitive abilities. This chapter focuses on the modified gapmer AOs for the treatment of HD.\"}, {\"id\": \"pmid:23907995\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Eteplirsen for the treatment of Duchenne muscular dystrophy.. OBJECTIVE: In prior open-label studies, eteplirsen, a phosphorodiamidate morpholino oligomer, enabled dystrophin production in Duchenne muscular dystrophy (DMD) with genetic mutations amenable to skipping exon 51. The present study used a double-blind placebo-controlled protocol to test eteplirsen's ability to induce dystrophin production and improve distance walked on the 6-minute walk test (6MWT). METHODS: DMD boys aged 7 to 13 years, with confirmed deletions correctable by skipping exon 51 and ability to walk 200 to 400 m on 6 MWT, were randomized to weekly intravenous infusions of 30 or 50 mg/kg/wk eteplirsen or placebo for 24 weeks (n = 4/group). Placebo patients switched to 30 or 50 mg/kg eteplirsen (n=2/group) at week 25; treatment was open label thereafter. All patients had muscle biopsies at baseline and week 48. Efficacy included dystrophin-positive fibers and distance walked on the 6MWT. RESULTS: At week 24, the 30 mg/kg eteplirsen patients were biopsied, and percentage of dystrophin-positive fibers was increased to 23% of normal; no increases were detected in placebo-treated patients (p≤0.002). Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively), suggesting that dystrophin increases with longer treatment. Restoration of functional dystrophin was confirmed by detection of sarcoglycans and neuronal nitric oxide synthase at the sarcolemma. Ambulation-evaluable eteplirsen-treated patients experienced a 67.3 m benefit compared to placebo/delayed patients (p≤0.001). INTERPRETATION: Eteplirsen restored dystrophin in the 30 and 50 mg/kg/wk cohorts, and in subsequently treated, placebo-controlled subjects. Duration, more than dose, accounted for dystrophin production, also resulting in ambulation stability. No severe adverse events were encountered.\"}, {\"id\": \"pmid:31261494\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Long-term treatment with eteplirsen in nonambulatory patients with Duchenne muscular dystrophy.. This analysis aims to describe the outcomes of two nonambulatory patients with Duchenne muscular dystrophy (DMD) who participated in two clinical studies. The two consecutive trials of eteplirsen (studies 201 and 202) were conducted in patients with DMD (N = 12) and confirmed genetic mutations amenable to exon 51 skipping.In study 201, 12 patients were randomized to receive once-weekly, double-blind intravenous infusions of eteplirsen 30 or 50 mg/kg or placebo for 24 weeks; patients then received open-label eteplirsen during weeks 25 through 28. All 12 patients continued onto open-label extension study 202 and received long-term treatment with eteplirsen. We compared cardiac, pulmonary, and upper limb function and dystrophin production in the nonambulatory twin patients versus the 10 ambulatory patients through 240 combined treatment weeks.Ten study patients remained ambulatory through both studies, while the identical twin patients both experienced early, rapid loss of ambulation. The twin patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained ambulatory. Dystrophin production was confirmed following eteplirsen treatment.Despite the loss of ambulation, other markers of disease progression remained relatively stable in the eteplirsen-treated twin patients and were similar to those of the ambulatory patients.\"}, {\"id\": \"pmid:28515510\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Eteplirsen.. Each month, subscribers to The Formulary Monograph Service receive 5 to 6 well-documented monographs on drugs that are newly released or are in late phase 3 trials. The monographs are targeted to Pharmacy & Therapeutics Committees. Subscribers also receive monthly 1-page summary monographs on agents that are useful for agendas and pharmacy/nursing in-services. A comprehensive target drug utilization evaluation/medication use evaluation (DUE/MUE) is also provided each month. With a subscription, the monographs are available online to subscribers. Monographs can be customized to meet the needs of a facility. Through the cooperation of The Formulary, Hospital Pharmacy publishes selected reviews in this column. For more information about The Formulary Monograph Service, contact Wolters Kluwer customer service at 866-397-3433. The April 2017 monograph topics are deflazacort, plecanatide, delafloxacin, oxymetazoline hydrochloride 1% cream, and betrixaban. The DUE is on plecanatide.\"}, {\"id\": \"pmid:28057953\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Daclizumab.. Each month, subscribers to The Formulary Monograph Service receive 5 to 6 well-documented monographs on drugs that are newly released or are in late phase 3 trials. The monographs are targeted to Pharmacy & Therapeutics Committees. Subscribers also receive monthly 1-page summary monographs on agents that are useful for agendas and pharmacy/nursing in-services. A comprehensive target drug utilization evaluation/medication use evaluation (DUE/MUE) is also provided each month. With a subscription, the monographs are are available online to subscribers. Monographs can be customized to meet the needs of a facility. Through the cooperation of The Formulary, Hospital Pharmacy publishes selected reviews in this column. For more information about The Formulary Monograph Service, contact Wolters Kluwer customer service at 866-397-3433. The December 2016 monograph topics are ozenoxacin cream, ocrelizumab, naldemedine, eteplirsen, and abaloparatide. The Safety MUE is on buprenorphine buccal.\"}, {\"id\": \"pmid:34120909\", \"about_drug\": \"ETEPLIRSEN\", \"text\": \"Open-Label Evaluation of Eteplirsen in Patients with Duchenne Muscular Dystrophy Amenable to Exon 51 Skipping: PROMOVI Trial.. BackgroundEteplirsen received accelerated FDA approval for treatment of Duchenne muscular dystrophy (DMD) with mutations amenable to exon 51 skipping, based on demonstrated dystrophin production.ObjectiveTo report results from PROMOVI, a phase 3, multicenter, open-label study evaluating efficacy and safety of eteplirsen in a larger cohort.MethodsAmbulatory patients aged 7-16 years, with confirmed mutations amenable to exon 51 skipping, received eteplirsen 30 mg/kg/week intravenously for 96 weeks. An untreated cohort with DMD not amenable to exon 51 skipping was also enrolled.Results78/79 eteplirsen-treated patients completed 96 weeks of treatment. 15/30 untreated patients completed the study; this cohort was considered an inappropriate control group because of genotype-driven differences in clinical trajectory. At Week 96, eteplirsen-treated patients showed increased exon skipping (18.7-fold) and dystrophin protein (7-fold) versus baseline. Post-hoc comparisons with patients from eteplirsen phase 2 studies (4658-201/202) and mutation-matched external natural history controls confirmed previous results, suggesting clinically notable attenuation of decline on the 6-minute walk test over 96 weeks (PROMOVI: -68.9 m; phase 2 studies: -67.3 m; external controls: -133.8 m) and significant attenuation of percent predicted forced vital capacity annual decline (PROMOVI: -3.3%, phase 2 studies: -2.2%, external controls: -6.0%; p < 0.001). Adverse events were generally mild to moderate and unrelated to eteplirsen. Most frequent treatment-related adverse events were headache and vomiting; none led to treatment discontinuation.ConclusionsThis large, multicenter study contributes to the growing body of evidence for eteplirsen, confirming a positive treatment effect, favorable safety profile, and slowing of disease progression versus natural history.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:42814297",
+    "findings": []
+   },
+   {
+    "id": "pmid:23907995",
+    "findings": [
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "percentage of dystrophin-positive fibers was increased to 23% of normal"
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively)"
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Restoration of functional dystrophin was confirmed by detection of sarcoglycans and neuronal nitric oxide synthase at the sarcolemma."
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Ambulation-evaluable eteplirsen-treated patients experienced a 67.3 m benefit compared to placebo/delayed patients (p≤0.001)."
+     }
+    ]
+   },
+   {
+    "id": "pmid:31261494",
+    "findings": [
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The twin patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m)."
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "The identical twin patients both experienced early, rapid loss of ambulation."
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "They maintained cardiac and upper limb function through combined week 240"
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Dystrophin production was confirmed following eteplirsen treatment."
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "other markers of disease progression remained relatively stable in the eteplirsen-treated twin patients"
+     }
+    ]
+   },
+   {
+    "id": "pmid:28515510",
+    "findings": []
+   },
+   {
+    "id": "pmid:28057953",
+    "findings": []
+   },
+   {
+    "id": "pmid:34120909",
+    "findings": [
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "At Week 96, eteplirsen-treated patients showed increased exon skipping (18.7-fold) and dystrophin protein (7-fold) versus baseline."
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "suggesting clinically notable attenuation of decline on the 6-minute walk test over 96 weeks (PROMOVI: -68.9 m; phase 2 studies: -67.3 m; external controls: -133.8 m)"
+     },
+     {
+      "drug": "ETEPLIRSEN",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "significant attenuation of percent predicted forced vital capacity annual decline (PROMOVI: -3.3%, phase 2 studies: -2.2%, external controls: -6.0%; p < 0.001)."
+     }
+    ]
+   }
+  ]
+ }
+}

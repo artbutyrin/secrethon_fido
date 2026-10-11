@@ -1,0 +1,66 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2400,
+  "output_tokens": 1097,
+  "latency_ms": 10330,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"familial hypercholesterolemia\", \"target\": \"PCSK9\", \"drugs\": [\"ALIROCUMAB\", \"BOCOCIZUMAB\", \"EVOLOCUMAB\", \"FROVOCIMAB\", \"INCLISIRAN\", \"LERODALCIBEP\", \"ONGERICIMAB\", \"RALPANCIZUMAB\", \"TAFOLECIMAB\"], \"documents\": [{\"id\": \"pmid:30403574\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Alirocumab and Cardiovascular Outcomes after Acute Coronary Syndrome.. BACKGROUND: Patients who have had an acute coronary syndrome are at high risk for recurrent ischemic cardiovascular events. We sought to determine whether alirocumab, a human monoclonal antibody to proprotein convertase subtilisin-kexin type 9 (PCSK9), would improve cardiovascular outcomes after an acute coronary syndrome in patients receiving high-intensity statin therapy. METHODS: We conducted a multicenter, randomized, double-blind, placebo-controlled trial involving 18,924 patients who had an acute coronary syndrome 1 to 12 months earlier, had a low-density lipoprotein (LDL) cholesterol level of at least 70 mg per deciliter (1.8 mmol per liter), a non-high-density lipoprotein cholesterol level of at least 100 mg per deciliter (2.6 mmol per liter), or an apolipoprotein B level of at least 80 mg per deciliter, and were receiving statin therapy at a high-intensity dose or at the maximum tolerated dose. Patients were randomly assigned to receive alirocumab subcutaneously at a dose of 75 mg (9462 patients) or matching placebo (9462 patients) every 2 weeks. The dose of alirocumab was adjusted under blinded conditions to target an LDL cholesterol level of 25 to 50 mg per deciliter (0.6 to 1.3 mmol per liter). The primary end point was a composite of death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization. RESULTS: The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary end point was greater among patients who had a baseline LDL cholesterol level of 100 mg or more per deciliter than among patients who had a lower baseline level. The incidence of adverse events was similar in the two groups, with the exception of local injection-site reactions (3.8% in the alirocumab group vs. 2.1% in the placebo group). CONCLUSIONS: Among patients who had a previous acute coronary syndrome and who were receiving high-intensity statin therapy, the risk of recurrent ischemic cardiovascular events was lower among those who received alirocumab than among those who received placebo. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY OUTCOMES ClinicalTrials.gov number, NCT01663402 .).\"}, {\"id\": \"pmid:25773378\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Efficacy and safety of alirocumab in reducing lipids and cardiovascular events.. BACKGROUND: Alirocumab, a monoclonal antibody that inhibits proprotein convertase subtilisin-kexin type 9 (PCSK9), has been shown to reduce low-density lipoprotein (LDL) cholesterol levels in patients who are receiving statin therapy. Larger and longer-term studies are needed to establish safety and efficacy. METHODS: We conducted a randomized trial involving 2341 patients at high risk for cardiovascular events who had LDL cholesterol levels of 70 mg per deciliter (1.8 mmol per liter) or more and were receiving treatment with statins at the maximum tolerated dose (the highest dose associated with an acceptable side-effect profile), with or without other lipid-lowering therapy. Patients were randomly assigned in a 2:1 ratio to receive alirocumab (150 mg) or placebo as a 1-ml subcutaneous injection every 2 weeks for 78 weeks. The primary efficacy end point was the percentage change in calculated LDL cholesterol level from baseline to week 24. RESULTS: At week 24, the difference between the alirocumab and placebo groups in the mean percentage change from baseline in calculated LDL cholesterol level was -62 percentage points (P<0.001); the treatment effect remained consistent over a period of 78 weeks. The alirocumab group, as compared with the placebo group, had higher rates of injection-site reactions (5.9% vs. 4.2%), myalgia (5.4% vs. 2.9%), neurocognitive events (1.2% vs. 0.5%), and ophthalmologic events (2.9% vs. 1.9%). In a post hoc analysis, the rate of major adverse cardiovascular events (death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization) was lower with alirocumab than with placebo (1.7% vs. 3.3%; hazard ratio, 0.52; 95% confidence interval, 0.31 to 0.90; nominal P=0.02). CONCLUSIONS: Over a period of 78 weeks, alirocumab, when added to statin therapy at the maximum tolerated dose, significantly reduced LDL cholesterol levels. In a post hoc analysis, there was evidence of a reduction in the rate of cardiovascular events with alirocumab. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY LONG TERM ClinicalTrials.gov number, NCT01507831.).\"}, {\"id\": \"pmid:26912922\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Ivadradine.. Each month, subscribers to The Formulary Monograph Service receive 5 to 6 well-documented monographs on drugs that are newly released or are in late phase 3 trials. The monographs are targeted to Pharmacy & Therapeutics Committees. Subscribers also receive monthly 1-page summary monographs on agents that are useful for agendas and pharmacy/nursing in-services. A comprehensive target drug utilization evaluation/medication use evaluation (DUE/MUE) is also provided each month. With a subscription, the monographs are sent in print and are also available on-line. Monographs can be customized to meet the needs of a facility. A drug class review is now published monthly with The Formulary Monograph Service. Through the cooperation of The Formulary, Hospital Pharmacy publishes selected reviews in this column. For more information about The Formulary Monograph Service, call The Formulary at 800-322-4349. The October 2015 monograph topics are sacubitril/valsartan, daclatasvir, sonidegib, alirocumab, and sodium zirconium cyclosilicate. The Safety MUE is on sacubitril/valsartan.\"}, {\"id\": \"pmid:27729681\", \"about_drug\": \"ALIROCUMAB\", \"text\": \"Cangrelor.. Each month, subscribers to The Formulary Monograph Service receive 5 to 6 well-documented monographs on drugs that are newly released or are in late phase 3 trials. The monographs are targeted to Pharmacy & Therapeutics Committees. Subscribers also receive monthly 1-page summary monographs on agents that are useful for agendas and pharmacy/nursing in-services. A comprehensive target drug utilization evaluation/medication use evaluation (DUE/MUE) is also provided each month. With a subscription, the monographs are sent in print and are also available on-line. Monographs can be customized to meet the needs of a facility. A drug class review is now published monthly with The Formulary Monograph Service. Through the cooperation of The Formulary, Hospital Pharmacy publishes selected reviews in this column. For more information about The Formulary Monograph Service, call The Formulary at 800-322-4349. The November 2015 monograph topics are evolocumab, dichlorphenamide, necitumumab, cobimetinib, and reslizumab. The Safety MUE is on alirocumab and evolocumab.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:30403574",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died"
+     }
+    ]
+   },
+   {
+    "id": "pmid:25773378",
+    "findings": [
+     {
+      "drug": "ALIROCUMAB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At week 24, the difference between the alirocumab and placebo groups in the mean percentage change from baseline in calculated LDL cholesterol level was -62 percentage points"
+     },
+     {
+      "drug": "ALIROCUMAB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "there was evidence of a reduction in the rate of cardiovascular events with alirocumab."
+     }
+    ]
+   },
+   {
+    "id": "pmid:26912922",
+    "findings": []
+   },
+   {
+    "id": "pmid:27729681",
+    "findings": []
+   }
+  ]
+ }
+}

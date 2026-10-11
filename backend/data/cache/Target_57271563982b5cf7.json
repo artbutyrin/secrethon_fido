@@ -1,0 +1,112 @@
+{
+ "query": "Target",
+ "variables": {
+  "id": "ENSG00000169174"
+ },
+ "fetched_at": "2026-10-10T15:07:21+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "target": {
+    "id": "ENSG00000169174",
+    "approvedSymbol": "PCSK9",
+    "approvedName": "proprotein convertase subtilisin/kexin type 9",
+    "biotype": "protein_coding",
+    "synonyms": [
+     {
+      "label": "Proprotein convertase subtilisin/kexin type 9",
+      "source": "uniprot"
+     },
+     {
+      "label": "NARC-1",
+      "source": "uniprot"
+     },
+     {
+      "label": "PC9",
+      "source": "uniprot"
+     },
+     {
+      "label": "PCSK9",
+      "source": "uniprot"
+     },
+     {
+      "label": "NARC1",
+      "source": "uniprot"
+     },
+     {
+      "label": "PSEC0052",
+      "source": "uniprot"
+     },
+     {
+      "label": "NARC-1",
+      "source": "HGNC"
+     },
+     {
+      "label": "FH3",
+      "source": "HGNC"
+     },
+     {
+      "label": "Neural apoptosis-regulated convertase 1",
+      "source": "uniprot"
+     },
+     {
+      "label": "Proprotein convertase 9",
+      "source": "uniprot"
+     },
+     {
+      "label": "Subtilisin/kexin-like protease PC9",
+      "source": "uniprot"
+     },
+     {
+      "label": "FH3",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "FHCL3",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "HCHOLA3",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "LDLCQ1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "NARC-1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "NARC1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "PC9",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "proprotein convertase subtilisin/kexin type 9",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "convertase subtilisin/kexin type 9 preproprotein",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "neural apoptosis regulated convertase 1",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "subtilisin/kexin-like protease PC9",
+      "source": "NCBI_entrez"
+     },
+     {
+      "label": "PCSK9",
+      "source": "NCBI_entrez"
+     }
+    ]
+   }
+  }
+ }
+}

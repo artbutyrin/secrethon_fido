@@ -1,0 +1,60 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2531,
+  "output_tokens": 285,
+  "latency_ms": 2775,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Tofersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… to SOD1 mRNA, which results in a reduction of SOD1 protein synthesis.\\nPHARMACODYNAMICS: 12.2. Pharmacodynamics Effect of Tofersen on Total CSF SOD1 Protein Total CSF SOD1, an indirect measure of target engagement, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, a reduction in total CSF SOD1 protein of 35% (geometric mean ratio to baseline) in the tofersen-treated group versus a 2% decrease from baseline in the corresponding placebo subjects in the ITT population was observed (difference in geometric mean ratios for tofersen to placebo: 34%; nominal p<0.0001). Effect of Tofersen on Neurofilament Proteins Plasma NfL, a blood-based biomarker of axonal injury and neu…\"}, {\"id\": \"1\", \"claim\": \"Study result for Tofersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…bserved (difference in geometric mean ratios for tofersen to placebo: 34%; nominal p<0.0001). Effect of Tofersen on Neurofilament Proteins Plasma NfL, a blood-based biomarker of axonal injury and neurodegeneration, was evaluated in Study 1 Part C in SOD1-ALS patients [see Clinical Studies ( 14 )] . At Week 28 in Study 1 Part C, mean plasma NfL was reduced 55% (geometric mean ratio to baseline) in the QALSODY-treated subjects, compared to a 12% increase with placebo in ITT population (difference in geometric mean ratios for QALSODY to placebo: 60%; nominal p<0.0001). Plasma NfL declined until approximately Day 113, after which the reductions were sustained. The reductions in phosphorylated neurofilament heavy chain (pNf…\"}, {\"id\": \"2\", \"claim\": \"Study result for Tofersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ometric mean ratio to baseline) in the QALSODY-treated subjects, compared to a 12% increase with placebo in ITT population (difference in geometric mean ratios for QALSODY to placebo: 60%; nominal p<0.0001). Plasma NfL declined until approximately Day 113, after which the reductions were sustained. The reductions in phosphorylated neurofilament heavy chain (pNfH) were similar compared to reductions in NfL, as were reductions in CSF compared to plasma. Cardiac Electrophysiology At the maximum approved recommended dosing regimen, QALSODY does not prolong the QTc interval to any clinically relevant extent.\\nPHARMACOKINETICS: 12.3. Pharmacokinetics Absorption Intrathecal administration of QALSODY into th…\"}, {\"id\": \"3\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… approved recommended dosing regimen, QALSODY does not prolong the QTc interval to any clinically relevant extent.\\nPHARMACOKINETICS: 12.3. Pharmacokinetics Absorption Intrathecal administration of QALSODY into the CSF allows tofersen to be distributed from the CSF to central nervous system tissues. The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen …\"}, {\"id\": \"4\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…t.\\nPHARMACOKINETICS: 12.3. Pharmacokinetics Absorption Intrathecal administration of QALSODY into the CSF allows tofersen to be distributed from the CSF to central nervous system tissues. The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated w…\"}, {\"id\": \"5\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…the CSF allows tofersen to be distributed from the CSF to central nervous system tissues. The maximum CSF trough concentration occurred at the third dose, which was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues. Elimination Metabolism Toferse…\"}, {\"id\": \"6\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…hich was the last dose of the loading period. There was little to no accumulation for CSF tofersen with monthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues. Elimination Metabolism Tofersen is expected to be metabolized through exonuclease (3'- and 5')-mediated hydrolysis and is …\"}, {\"id\": \"7\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…onthly dosing after the loading phase. Tofersen is transferred from CSF into the systemic circulation, with median time to maximum concentration (T max ) plasma values ranging from 2 to 6 hours. There was no accumulation in plasma tofersen exposure following monthly maintenance dosing. Distribution Autopsy tissue from patients treated with tofersen (n=3) showed that tofersen administered intrathecally was distributed within the central nervous system tissues. Elimination Metabolism Tofersen is expected to be metabolized through exonuclease (3'- and 5')-mediated hydrolysis and is not a substrate for, or inhibitor or inducer of CYP450 enzymes. Excretion The primary route of elimination has not been characterized. The effective half-life in CSF is estimate…\"}, {\"id\": \"8\", \"claim\": \"Study result for Tofersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…within the central nervous system tissues. Elimination Metabolism Tofersen is expected to be metabolized through exonuclease (3'- and 5')-mediated hydrolysis and is not a substrate for, or inhibitor or inducer of CYP450 enzymes. Excretion The primary route of elimination has not been characterized. The effective half-life in CSF is estimated to be 4 weeks. Drug Interaction Studies No clinical drug interaction studies have been performed. In vitro, QALSODY is not a substrate or inhibitor/inducer of major CYP enzymes or a substrate or inhibitor of major transporters. Specific Populations Effect of sex, race, age, and body weight on tofersen exposure in…\"}, {\"id\": \"9\", \"claim\": \"Study result for Tofersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…at trial entry (early-start cohort) with those in participants who switched from placebo to the drug at week 28 (delayed-start cohort). RESULTS: A total of 72 participants received tofersen (39 predicted to have faster progression), and 36 received placebo (21 predicted to have faster progression). Tofersen led to greater reductions in concentrations of SOD1 in CSF and of neurofilament light chains in plasma than placebo. In the faster-progression subgroup (primary analysis), the change to week 28 in the ALSFRS-R score was -6.98 with tofersen and -8.14 with placebo (difference, 1.2 points; 95% confidence interval [CI], -3.2 to 5.5; P = 0.97). Results for seco…\"}, {\"id\": \"10\", \"claim\": \"Study result for Tofersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…witched from placebo to the drug at week 28 (delayed-start cohort). RESULTS: A total of 72 participants received tofersen (39 predicted to have faster progression), and 36 received placebo (21 predicted to have faster progression). Tofersen led to greater reductions in concentrations of SOD1 in CSF and of neurofilament light chains in plasma than placebo. In the faster-progression subgroup (primary analysis), the change to week 28 in the ALSFRS-R score was -6.98 with tofersen and -8.14 with placebo (difference, 1.2 points; 95% confidence interval [CI], -3.2 to 5.5; P = 0.97). Results for secondary clinical end points did not differ significantly bet…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": true
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": true
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   },
+   {
+    "id": "10",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "Huntington disease",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-09T12:05:10+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 712,
+    "hits": [
+     {
+      "id": "MONDO_0007739",
+      "name": "Huntington disease",
+      "entity": "disease",
+      "description": "Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia.",
+      "score": 5161.907
+     },
+     {
+      "id": "MONDO_0000167",
+      "name": "Huntington disease and related disorders",
+      "entity": "disease",
+      "description": "A grouping for Huntington disease and similar diseases.",
+      "score": 919.31775
+     },
+     {
+      "id": "MONDO_0016621",
+      "name": "juvenile Huntington disease",
+      "entity": "disease",
+      "description": "Juvenile Huntington disease (JHD) is a form of Huntington disease (HD), characterized by onset of signs and symptoms before 20 years of age.",
+      "score": 841.5524
+     },
+     {
+      "id": "OBA_2001024",
+      "name": "age of onset of Huntington disease",
+      "entity": "disease",
+      "description": "The age at which Huntington disease manifestations first appear.",
+      "score": 748.16644
+     },
+     {
+      "id": "MONDO_0011487",
+      "name": "Huntington disease-like 3",
+      "entity": "disease",
+      "description": "Huntington disease-like 3 is a rare Huntington disease-like syndrome characterized by childhood-onset progressive neurologic deterioration with pyramidal and extrapyramidal abnormalities, chorea, dystonia, ataxia, gait instability, spasticity, seizures, mutism, and (on brain MRI) progressive frontal cortical atrophy and bilateral caudate atrophy.",
+      "score": 722.76013
+     },
+     {
+      "id": "MONDO_0011671",
+      "name": "Huntington disease-like 2",
+      "entity": "disease",
+      "description": "Huntington disease-like 2 (HDL2) is a severe neurodegenerative disorder considered part of the neuroacanthocytosis syndromes characterized by a triad of movement, psychiatric, and cognitive abnormalities.",
+      "score": 686.6092
+     },
+     {
+      "id": "MONDO_0011299",
+      "name": "Huntington disease-like 1",
+      "entity": "disease",
+      "description": "Any neurodegenerative disease with chorea in which the cause of the disease is a mutation in the PRNP gene.",
+      "score": 647.7128
+     },
+     {
+      "id": "MONDO_0015548",
+      "name": "Huntington disease-like syndrome",
+      "entity": "disease",
+      "description": null,
+      "score": 636.1505
+     },
+     {
+      "id": "MONDO_0018425",
+      "name": "Huntington disease-like syndrome due to C9ORF72 expansions",
+      "entity": "disease",
+      "description": null,
+      "score": 547.13885
+     },
+     {
+      "id": "MONDO_0008695",
+      "name": "VPS13A-related neurodegenerative disease",
+      "entity": "disease",
+      "description": "A form of neuroacanthocytosis and is characterized clinically by a Huntington disease-like phenotype with progressive neurological symptoms including movement disorders, psychiatric manifestations and cognitive disturbances, and caused by a variation in the VPS13A gene.",
+      "score": 338.13672
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,75 @@
+[
+ {
+  "version": 1,
+  "trigger": "pipeline",
+  "created_at": "2026-10-10T13:33:34+00:00",
+  "decision": "Do Not Invest",
+  "grounds": "crowded",
+  "pluses": 4,
+  "minuses": 0,
+  "evidence": null,
+  "change": null
+ },
+ {
+  "version": 2,
+  "trigger": "add:clm_8d78ea2e56_15",
+  "created_at": "2026-10-10T13:33:35+00:00",
+  "decision": "Invest",
+  "grounds": "positive",
+  "pluses": 4,
+  "minuses": 0,
+  "evidence": {
+   "action": "add",
+   "claim_id": "clm_8d78ea2e56_15",
+   "fact": "differentiation_claim",
+   "value": "efficacy",
+   "author": "analyst"
+  },
+  "change": {
+   "decision": {
+    "from": "Do Not Invest",
+    "to": "Invest",
+    "changed": true
+   },
+   "grounds": {
+    "from": "crowded",
+    "to": "positive"
+   },
+   "pluses": {
+    "from": 4,
+    "to": 4
+   },
+   "minuses": {
+    "from": 0,
+    "to": 0
+   },
+   "scorecard": [],
+   "rules_added": [
+    {
+     "id": "me_too_differentiated",
+     "name": "Me-too with differentiation",
+     "tier": "note"
+    }
+   ],
+   "rules_removed": [
+    {
+     "id": "me_too",
+     "name": "Crowded: the mechanism is already approved here (2+ drugs) and no advantage is shown",
+     "tier": "kill"
+    }
+   ],
+   "pending_resolved": [],
+   "pending_new": [],
+   "caps_added": [],
+   "caps_removed": [],
+   "question": {
+    "from": "thesis",
+    "to": "thesis"
+   },
+   "rnpv_p50_m": {
+    "from": null,
+    "to": null
+   }
+  }
+ }
+]

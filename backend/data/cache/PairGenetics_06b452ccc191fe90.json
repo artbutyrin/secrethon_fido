@@ -1,0 +1,416 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0007739",
+  "ensemblId": "ENSG00000197386",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-09T12:05:11+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0007739",
+    "evidences": {
+     "count": 30,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "17b89e444b6cf0446df917e707e1e701e02135ed",
+       "datasourceId": "orphanet",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "5682e97935c1c94524a7a076691f7d1517571730",
+       "datasourceId": "clingen",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "62153807f291895ef2298b45335a5ebd6b9a5d2e",
+       "datasourceId": "clingen",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "6f1ed6b53aca19bdaa56b1492bfe5e9d885b78be",
+       "datasourceId": "orphanet",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016621",
+        "name": "juvenile Huntington disease"
+       }
+      },
+      {
+       "id": "b13c13aeb74ff5838395b5a238a5518ed6098f3f",
+       "datasourceId": "uniprot_literature",
+       "datatypeId": "genetic_literature",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "fa31e796b999dba96d63fa6726a5efce14f95630",
+       "datasourceId": "orphanet",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "fb0aa654f3b2280ee55e70a48f1460dae1614010",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 1,
+       "clinicalSignificances": [
+        "pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "6ab7256c076b32ed2b5c0ecf7b986946d7f1a288",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "7b7fb8730cc351ac37943d9d026bca228555a038",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "8853343ace805c14ed29f4c288012e86054e2bc3",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "d105e7f145794536c5b63c2551920384a94eed5e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "df4f5cd789d391610c3717f003877d51ad683f0b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.72,
+       "clinicalSignificances": [
+        "likely pathogenic"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "29ab5faa8bd2ef346e317c9f269b575a399014e5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.4,
+       "clinicalSignificances": [
+        "other"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "788753698ee0d68418a5b7cdb38fe76e7c8d623a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.4,
+       "clinicalSignificances": [
+        "other"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "18afd9dff7c1ffc90c163b46abd24ca43f19ba2c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "4a28d8e15fe26f6349aa02e1f456ea3ebf66e409",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "5aa2eefc840dc3e2accab923c3b06a370b9da6c0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "9cec6a55621896b1fc4b2020c54bd0535cf85471",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "b09a13be9e88851d889471dc0de21e9c38a9d23a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "f05a47d58900018556bf13f9f0bab40cd30e0577",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "f496d38a5625fc24806a35b407686850f25da585",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "fdd09717195b92516f54b6167d2201b9743c3e2e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.32,
+       "clinicalSignificances": [
+        "uncertain significance"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "b0ef015e918786ac638c7dec7c203e3a38865137",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.1,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "36e94bed250890a59676f64a60f87c797011e7a4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "3a9d772a5a53b59c64c4dba1b2e9372fbbb23835",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "445abce862de6eb3e597f9a855b5d6a207bf6465",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "b460c44a67b8b1c8c98d9c28656030263c9750d0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0.02,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "5fa7f21d3568ca5ee2e258c3ffd4e350492693bc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "not provided"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "b54942ccbe72ee55e612cc6d66e5ef5d9188c67c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      },
+      {
+       "id": "ce70fa385b5cacd573c3780aded702d0b577d53b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "not provided"
+       ],
+       "disease": {
+        "id": "MONDO_0007739",
+        "name": "Huntington disease"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

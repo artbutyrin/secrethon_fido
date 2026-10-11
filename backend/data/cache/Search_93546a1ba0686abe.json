@@ -1,0 +1,62 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "SOD1",
+  "entities": [
+   "target"
+  ]
+ },
+ "fetched_at": "2026-10-09T11:59:45+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 6,
+    "hits": [
+     {
+      "id": "ENSG00000142168",
+      "name": "SOD1",
+      "entity": "target",
+      "description": "superoxide dismutase 1",
+      "score": 5328.0225
+     },
+     {
+      "id": "ENSG00000234509",
+      "name": "SOD1-DT",
+      "entity": "target",
+      "description": "SOD1 divergent transcript",
+      "score": 466.62338
+     },
+     {
+      "id": "ENSG00000253651",
+      "name": "SOD1P3",
+      "entity": "target",
+      "description": "superoxide dismutase 1 pseudogene 3",
+      "score": 309.42007
+     },
+     {
+      "id": "ENSG00000273271",
+      "name": "ENSG00000273271",
+      "entity": "target",
+      "description": "novel transcript, antisense to SOD1",
+      "score": 215.99738
+     },
+     {
+      "id": "ENSG00000219074",
+      "name": "SOD1P1",
+      "entity": "target",
+      "description": "superoxide dismutase 1 pseudogene 1",
+      "score": 4.072257
+     },
+     {
+      "id": "ENSG00000261282",
+      "name": "SOD1P2",
+      "entity": "target",
+      "description": "superoxide dismutase 1 pseudogene 2",
+      "score": 4.072257
+     }
+    ]
+   }
+  }
+ }
+}

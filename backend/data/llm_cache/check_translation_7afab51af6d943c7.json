@@ -1,0 +1,72 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3151,
+  "output_tokens": 787,
+  "latency_ms": 5535,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"41\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…). Even greater increases occurred at week 48 (52% and 43% in the 30 and 50 mg/kg cohorts, respectively), suggesting that dystrophin increases with longer treatment. Restoration of functional dystrophin was confirmed by detection of sarcoglycans and neuronal nitric oxide synthase at the sarcolemma. Ambulation-evaluable eteplirsen-treated patients experienced a 67.3 m benefit compared to placebo/delayed patients (p≤0.001). INTERPRETATION: Eteplirsen restored dystrophin in the 30 and 50 mg/kg/wk cohorts, and in subsequently treated, placebo-controlled subjects. Duration, more than dose, accounted for dystrophin production, also resulting in ambulation stability. No severe adverse events were encountered.\"}, {\"id\": \"42\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…nd upper limb function and dystrophin production in the nonambulatory twin patients versus the 10 ambulatory patients through 240 combined treatment weeks.Ten study patients remained ambulatory through both studies, while the identical twin patients both experienced early, rapid loss of ambulation. The twin patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained ambulatory. Dystrophin production was confirmed following eteplirsen treatment.Despite the loss of ambulation, other markers of disease progression remained relativ…\"}, {\"id\": \"43\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…eceived long-term treatment with eteplirsen. We compared cardiac, pulmonary, and upper limb function and dystrophin production in the nonambulatory twin patients versus the 10 ambulatory patients through 240 combined treatment weeks.Ten study patients remained ambulatory through both studies, while the identical twin patients both experienced early, rapid loss of ambulation. The twin patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained amb…\"}, {\"id\": \"44\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…udy patients remained ambulatory through both studies, while the identical twin patients both experienced early, rapid loss of ambulation. The twin patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained ambulatory. Dystrophin production was confirmed following eteplirsen treatment.Despite the loss of ambulation, other markers of disease progression remained relatively stable in the eteplirsen-treated twin patients and were similar to tho…\"}, {\"id\": \"45\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"… patients had greater disease severity at baseline (6-minute walk test [6MWT], 330 and 256 m) versus the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained ambulatory. Dystrophin production was confirmed following eteplirsen treatment.Despite the loss of ambulation, other markers of disease progression remained relatively stable in the eteplirsen-treated twin patients and were similar to those of the ambulatory patients.\"}, {\"id\": \"46\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…s the other patients (n = 10; 6MWT range, 341-418 m). They maintained cardiac and upper limb function through combined week 240, with outcomes similar to those of the patients who remained ambulatory. Dystrophin production was confirmed following eteplirsen treatment.Despite the loss of ambulation, other markers of disease progression remained relatively stable in the eteplirsen-treated twin patients and were similar to those of the ambulatory patients.\"}, {\"id\": \"47\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ith DMD not amenable to exon 51 skipping was also enrolled.Results78/79 eteplirsen-treated patients completed 96 weeks of treatment. 15/30 untreated patients completed the study; this cohort was considered an inappropriate control group because of genotype-driven differences in clinical trajectory. At Week 96, eteplirsen-treated patients showed increased exon skipping (18.7-fold) and dystrophin protein (7-fold) versus baseline. Post-hoc comparisons with patients from eteplirsen phase 2 studies (4658-201/202) and mutation-matched external natural history controls confirmed previous results, suggesting clinically notable attenuation of decline on the 6-minute walk test over 96 weeks (PROMOVI: -68.9 m; phase 2 studies: -67.3…\"}, {\"id\": \"48\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…y. At Week 96, eteplirsen-treated patients showed increased exon skipping (18.7-fold) and dystrophin protein (7-fold) versus baseline. Post-hoc comparisons with patients from eteplirsen phase 2 studies (4658-201/202) and mutation-matched external natural history controls confirmed previous results, suggesting clinically notable attenuation of decline on the 6-minute walk test over 96 weeks (PROMOVI: -68.9 m; phase 2 studies: -67.3 m; external controls: -133.8 m) and significant attenuation of percent predicted forced vital capacity annual decline (PROMOVI: -3.3%, phase 2 studies: -2.2%, external controls: -6.0%; p < 0.001). Adverse events were generally mild to moderate and unrelated to eteplirsen. Most frequent treatment-related adverse events were headac…\"}, {\"id\": \"49\", \"claim\": \"Study result for Eteplirsen, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…rom eteplirsen phase 2 studies (4658-201/202) and mutation-matched external natural history controls confirmed previous results, suggesting clinically notable attenuation of decline on the 6-minute walk test over 96 weeks (PROMOVI: -68.9 m; phase 2 studies: -67.3 m; external controls: -133.8 m) and significant attenuation of percent predicted forced vital capacity annual decline (PROMOVI: -3.3%, phase 2 studies: -2.2%, external controls: -6.0%; p < 0.001). Adverse events were generally mild to moderate and unrelated to eteplirsen. Most frequent treatment-related adverse events were headache and vomiting; none led to treatment discontinuation.ConclusionsThis large, multicenter study contributes to the growing body of evidence for eteplirsen, confirmin…\"}, {\"id\": \"50\", \"claim\": \"Study result for Golodirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…irsen (n = 8) or placebo (n = 4) in part 1. All from part 1 plus 13 additional patients received 30 mg/kg golodirsen in part 2. Safety findings were consistent with those previously observed in pediatric patients with DMD. Most of the study drug was excreted within 4 hours following administration. A significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48, with a mean percent normal dystrophin protein standard of 1.019% (range, 0.09%-4.30%). Sarcolemmal localization of dystrophin was demonstrated by significantly increased dystrophin-positive fibers (week 48, p < 0.001) and a positive correlation (Spearman r = 0.663; p < 0.001) with dystrophin protei…\"}, {\"id\": \"51\", \"claim\": \"Study result for Golodirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…irsen (n = 8) or placebo (n = 4) in part 1. All from part 1 plus 13 additional patients received 30 mg/kg golodirsen in part 2. Safety findings were consistent with those previously observed in pediatric patients with DMD. Most of the study drug was excreted within 4 hours following administration. A significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48, with a mean percent normal dystrophin protein standard of 1.019% (range, 0.09%-4.30%). Sarcolemmal localization of dystrophin was demonstrated by significantly increased dystrophin-positive fibers (week 48, p < 0.001) and a positive correlation (Spearman r = 0.663; p < 0.001) with dystrophin protei…\"}, {\"id\": \"52\", \"claim\": \"Study result for Golodirsen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… of the study drug was excreted within 4 hours following administration. A significant increase in exon 53 skipping was associated with ∼16-fold increase over baseline in dystrophin protein expression at week 48, with a mean percent normal dystrophin protein standard of 1.019% (range, 0.09%-4.30%). Sarcolemmal localization of dystrophin was demonstrated by significantly increased dystrophin-positive fibers (week 48, p < 0.001) and a positive correlation (Spearman r = 0.663; p < 0.001) with dystrophin protein change from baseline, measured by Western blot and immunohistochemistry. CONCLUSION: Golodirsen was well-tolerated; muscle biopsies from golodirsen-treated patients showed increased exon 53 skipping, dystrophin produ…\"}, {\"id\": \"53\", \"claim\": \"Study result for Golodirsen, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…, respectively. Here we report a series of in vivo and in vitro studies characterizing the drug metabolism and pharmacokinetic (DMPK) properties of these three PMOs. Following a single intravenous dose, plasma exposure was consistent for all three PMOs in mouse, rat, and nonhuman primate (NHP), and plasma half-lives were similar for eteplirsen (2.0-4.1 h) and golodirsen (2.1-8.7 h) across species and more variable for casimersen (3.2-18.1 h). Plasma protein binding was low (<40%) for all three PMOs in mouse, rat, NHP, and human and was largely concentration independent. In the mdx mouse model of DMD, following a single intravenous injection, extensive biodistribution was observed in the tar…\"}, {\"id\": \"54\", \"claim\": \"Study result for Golodirsen, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…man primate (NHP), and plasma half-lives were similar for eteplirsen (2.0-4.1 h) and golodirsen (2.1-8.7 h) across species and more variable for casimersen (3.2-18.1 h). Plasma protein binding was low (<40%) for all three PMOs in mouse, rat, NHP, and human and was largely concentration independent. In the mdx mouse model of DMD, following a single intravenous injection, extensive biodistribution was observed in the target skeletal muscle tissues and the kidney for all three PMOs; consistent with the latter finding, the predominant route of elimination was renal. In vitro studies using liver microsomes showed no evidence of hepatic metabolism, and none of the PMOs were identified as inhibitors or inducers of the human cytochrome P450 enzymes or membrane drug transporters te…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "41",
+    "supports": true
+   },
+   {
+    "id": "42",
+    "supports": false
+   },
+   {
+    "id": "43",
+    "supports": false
+   },
+   {
+    "id": "44",
+    "supports": false
+   },
+   {
+    "id": "45",
+    "supports": false
+   },
+   {
+    "id": "46",
+    "supports": false
+   },
+   {
+    "id": "47",
+    "supports": true
+   },
+   {
+    "id": "48",
+    "supports": true
+   },
+   {
+    "id": "49",
+    "supports": true
+   },
+   {
+    "id": "50",
+    "supports": true
+   },
+   {
+    "id": "51",
+    "supports": true
+   },
+   {
+    "id": "52",
+    "supports": true
+   },
+   {
+    "id": "53",
+    "supports": false
+   },
+   {
+    "id": "54",
+    "supports": true
+   }
+  ]
+ }
+}

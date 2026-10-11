@@ -1,0 +1,61 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "EFO_0003776"
+ },
+ "fetched_at": "2026-10-09T12:06:21+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "EFO_0003776",
+    "name": "coronary artery bypass",
+    "description": "Surgical therapy of ischemic coronary artery disease achieved by grafting a section of saphenous vein, internal mammary artery, or other substitute between the aorta and the obstructed coronary artery distal to the obstructive lesion.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "Aortocoronary Bypass",
+       "Aortocoronary Bypasses",
+       "Artery Bypass, Coronary",
+       "Artery Bypasses, Coronary",
+       "BYPASS SURG CORONARY ARTERY",
+       "Bypass Surgery, Coronary Artery",
+       "Bypass, Aortocoronary",
+       "Bypass, Coronary Artery",
+       "Bypasses, Aortocoronary",
+       "Bypasses, Coronary Artery",
+       "CABG",
+       "CORONARY ARTERY BYPASS SURG",
+       "Coronary Artery Bypass Grafting",
+       "Coronary Artery Bypass Surgery",
+       "Coronary Artery Bypasses"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "MESH:D001026",
+     "NCIt:C51998"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "EFO_0002571",
+      "name": "medical procedure"
+     }
+    ]
+   }
+  }
+ }
+}

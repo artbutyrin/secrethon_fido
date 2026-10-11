@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2675,
+  "output_tokens": 226,
+  "latency_ms": 2761,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"10\", \"claim\": \"Study result for Anacetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ollow-up period, blind to their original treatment allocation. The primary outcome was first post-randomization major coronary event (i.e. coronary death, myocardial infarction, or coronary revascularization) during the in-trial and post-trial treatment periods, with analysis by intention-to-treat. Allocation to anacetrapib conferred a 9% [95% confidence interval (CI) 3-15%; P = 0.004] proportional reduction in the incidence of major coronary events during the study treatment period (median 4.1 years). During extended follow-up (median 2.2 years), there was a further 20% (95% CI 10-29%; P < 0.001) reduction. Overall, there was a 12% (95% CI 7-17%, P < 0.001) proportional reduction in major coronary events during the overall follow-up period (median 6.3 years), corresponding to…\"}, {\"id\": \"11\", \"claim\": \"Study result for Anacetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"… during the in-trial and post-trial treatment periods, with analysis by intention-to-treat. Allocation to anacetrapib conferred a 9% [95% confidence interval (CI) 3-15%; P = 0.004] proportional reduction in the incidence of major coronary events during the study treatment period (median 4.1 years). During extended follow-up (median 2.2 years), there was a further 20% (95% CI 10-29%; P < 0.001) reduction. Overall, there was a 12% (95% CI 7-17%, P < 0.001) proportional reduction in major coronary events during the overall follow-up period (median 6.3 years), corresponding to a 1.8% (95% CI 1.0-2.6%) absolute reduction. There were no significant effects on non-vascular mortality, site-specific cancer,…\"}, {\"id\": \"12\", \"claim\": \"Study result for Anacetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…acetrapib conferred a 9% [95% confidence interval (CI) 3-15%; P = 0.004] proportional reduction in the incidence of major coronary events during the study treatment period (median 4.1 years). During extended follow-up (median 2.2 years), there was a further 20% (95% CI 10-29%; P < 0.001) reduction. Overall, there was a 12% (95% CI 7-17%, P < 0.001) proportional reduction in major coronary events during the overall follow-up period (median 6.3 years), corresponding to a 1.8% (95% CI 1.0-2.6%) absolute reduction. There were no significant effects on non-vascular mortality, site-specific cancer, or other serious adverse events. Morbidity follow-up was obtained for 25 784 (99%) participants. CONCLUSION: The beneficial effects of…\"}, {\"id\": \"13\", \"claim\": \"Study result for Anacetrapib, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…, anacetrapib demonstrated a long terminal half-life in all species, thought to be due, in part, to distribution into adipose tissue. We sought to understand the dependence of anacetrapib's long half-life on adipose tissue and to explore potential mechanisms that might contribute to the phenomenon. In mice, anacetrapib localized primarily to the lipid droplet of adipocytes in white adipose tissue; in vitro, anacetrapib entry into cultured human adipocytes depended on the presence of a mature adipocyte and lipid droplet but did not require active transport. In vivo, the entry of anacetrapib into adipose tissue did not require lipase activity, as the distribution of anacetrapib into adipose w…\"}, {\"id\": \"14\", \"claim\": \"Study result for Anacetrapib, in cells: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…istribution into adipose tissue. We sought to understand the dependence of anacetrapib's long half-life on adipose tissue and to explore potential mechanisms that might contribute to the phenomenon. In mice, anacetrapib localized primarily to the lipid droplet of adipocytes in white adipose tissue; in vitro, anacetrapib entry into cultured human adipocytes depended on the presence of a mature adipocyte and lipid droplet but did not require active transport. In vivo, the entry of anacetrapib into adipose tissue did not require lipase activity, as the distribution of anacetrapib into adipose was-not affected by systemic lipase inhibition using poloaxamer-407, a systemic lipase inhibitor. The data from these studies support the notion that the entry of a…\"}, {\"id\": \"15\", \"claim\": \"Study result for Dalcetrapib, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…her than the phase III dose) with ezetimibe was investigated in a three period, three treatment crossover study in healthy males: 7 days of dalcetrapib, 7 days of dalcetrapib plus ezetimibe, 7 days of ezetimibe alone. A full pharmacokinetic profile was performed on day 7 of each treatment. RESULTS: Co-administration of dalcetrapib with ezetimibe was associated with minimal changes in dalcetrapib exposure compared with dalcetrapib alone. Least squares mean ratio (LSMR) (90% confidence interval) was 93.6 (87.1, 100.7) for AUC(0,24 h) and 99.0 (85.2, 115.0) for C(max) . Ezetimibe exposure was reduced with co-administration of ezetimibe with dalcetrapib compared with ezetimibe alone: LSMR 80.3 (74.6, 86.4) for AUC(0,24 h) and 88.9 (80…\"}, {\"id\": \"16\", \"claim\": \"Study result for Dalcetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…idence interval) was 93.6 (87.1, 100.7) for AUC(0,24 h) and 99.0 (85.2, 115.0) for C(max) . Ezetimibe exposure was reduced with co-administration of ezetimibe with dalcetrapib compared with ezetimibe alone: LSMR 80.3 (74.6, 86.4) for AUC(0,24 h) and 88.9 (80.9, 99.9) for C(max) for total ezetimibe. High-density lipoprotein cholesterol increases associated with co-administration of dalcetrapib with ezetimibe (+29.8%) were comparable with those with dalcetrapib alone (+25.6%), while the reduction in low-density lipoprotein cholesterol with co-administration (-35.9%) was greater than with ezetimibe alone (-20.9%). Dalcetrapib was generally well tolerated when administered alone and when co-administered with ezetimibe. CONCLUSION: Co-administration of dalcetrapib with eze…\"}, {\"id\": \"17\", \"claim\": \"Study result for Dalcetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ith ezetimibe alone: LSMR 80.3 (74.6, 86.4) for AUC(0,24 h) and 88.9 (80.9, 99.9) for C(max) for total ezetimibe. High-density lipoprotein cholesterol increases associated with co-administration of dalcetrapib with ezetimibe (+29.8%) were comparable with those with dalcetrapib alone (+25.6%), while the reduction in low-density lipoprotein cholesterol with co-administration (-35.9%) was greater than with ezetimibe alone (-20.9%). Dalcetrapib was generally well tolerated when administered alone and when co-administered with ezetimibe. CONCLUSION: Co-administration of dalcetrapib with ezetimibe was not associated with clinically significant changes in pharmacokinetic parameters or tolerability and did not diminish the lipid e…\"}, {\"id\": \"18\", \"claim\": \"Study result for Dalcetrapib, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ometric method in the meal timing/size and high-fat meal studies. Tolerability was assessed using monitoring of adverse events, laboratory parameters, vital signs, and ECG. RESULTS: Six men were enrolled in the fed versus fasting study (mean age, 37 years; mean body mass index [BMI], 23.6 kg/m(2)). Dalcetrapib exposure was increased by 64% (AUC(0-36)) and 126% (C(max)) after administration in the fed state. Eighteen men were enrolled in the analysis of the effects of meal timing and size on the properties of dalcetrapib (mean age, 30.5 years; mean BMI, 25.1 kg/m(2)). When dalcetrapib was administered after a light morning or a light evening meal, comparable values were found for mean dalcetrapib AUC(0…\"}, {\"id\": \"19\", \"claim\": \"Study result for Dalcetrapib, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…, respectively) and C(max) (589 and 552 ng/mL), whereas administration after a standard evening meal was associated with increased AUC(0-∞) (14.3%-14.7%) and C(max) (25.5%-35.3%). Forty-nine men were included in the analysis in the high-fat meal study (mean age, 32.3 years; mean BMI, 23.9 kg/m(2)). Compared with administration after a standard evening meal, administration after a high-fat evening meal was associated with increased AUC(0-∞) (34.9%) and C(max) (43.7%). Between-treatment differences in exposure within each study also were reflected in apparent differences in CETP activity. All treatments were generally well tolerated. CONCLUSIONS: Dalcetrapib exposure was increased in the fed state and, to a lesser extent, was dependent on the size and fat content…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "10",
+    "supports": true
+   },
+   {
+    "id": "11",
+    "supports": true
+   },
+   {
+    "id": "12",
+    "supports": true
+   },
+   {
+    "id": "13",
+    "supports": true
+   },
+   {
+    "id": "14",
+    "supports": true
+   },
+   {
+    "id": "15",
+    "supports": true
+   },
+   {
+    "id": "16",
+    "supports": true
+   },
+   {
+    "id": "17",
+    "supports": true
+   },
+   {
+    "id": "18",
+    "supports": true
+   },
+   {
+    "id": "19",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 581,
+  "output_tokens": 226,
+  "latency_ms": 2436,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT03917719\", \"reason\": \"The Phase 3 PolarisDMD trial did not meet the primary endpoint. As a result, activities related to the development of edasalonexent have stopped including the CAT-1004-302 Open-Label Study of Edasalonexent in Boys With Duchenne Muscular Dystrophy\"}, {\"nct\": \"NCT04004065\", \"reason\": \"The study was terminated following review of safety data.\"}, {\"nct\": \"NCT04371666\", \"reason\": \"Study did not meet its primary endpoint.\"}, {\"nct\": \"NCT04632940\", \"reason\": \"Study did not meet its primary endpoint.\"}, {\"nct\": \"NCT05689164\", \"reason\": \"All participants who have received fordadistrogene movaparvovec in any Pfizer study will now be assessed for long-term safety in 1 combined study: C3391003\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT03917719",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet the primary endpoint"
+     }
+    ]
+   },
+   {
+    "nct": "NCT040065",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "review of safety data"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04371666",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet its primary endpoint"
+     }
+    ]
+   },
+   {
+    "nct": "NCT04632940",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet its primary endpoint"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05689164",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "will now be assessed for long-term safety in 1 combined study"
+     }
+    ]
+   }
+  ]
+ }
+}

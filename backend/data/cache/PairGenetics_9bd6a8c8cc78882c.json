@@ -1,0 +1,1143 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0005439",
+  "ensemblId": "ENSG00000169174",
+  "datasources": [
+   "gwas_credible_sets",
+   "gene_burden",
+   "eva",
+   "genomics_england",
+   "gene2phenotype",
+   "uniprot_literature",
+   "uniprot_variants",
+   "orphanet",
+   "clingen",
+   "intogen",
+   "cancer_gene_census",
+   "eva_somatic"
+  ],
+  "size": 500,
+  "cursor": "eyJpbmRleCI6NCwic2l6ZSI6NTAwfQ=="
+ },
+ "fetched_at": "2026-10-10T15:07:26+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005439",
+    "evidences": {
+     "count": 2085,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "248d934cdc9282a6c5dd454dddfb6c15cc1c40e1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "29ce9392930d67203bd426fa522ce3cfcb3a2fb4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "2ce982305134eceb92fc245a09a1922e4ecde61a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "308de78623dbce203d14c971b3de0fa70bda9e01",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "338ad00c7eb4cf09fa185773f17bcaf7406cffd7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "341dfb63ad58e931f39a3f6dd9f5a96b8b1012a2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "3a10c3786eb47e5a023d0ac471faaf4396a81822",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "3a26a402346fcd18823a5c300d150ae9187ce7ce",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "3cbd90a7f41870b1a9586ea5b242f2cc856011b7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "3d224cb6d9a227f76a0277d4500fa875834cc2fe",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "404216c710779d5fffc3ff48ca301b27d9c70972",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "4731873293026ba91ef627ddb4cc57049e640257",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "497b6a7992b0f9d42f655797c2f42eaf2e77b1da",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5200d2c041a7c5b2b3b054051c5ede084bfa6d5f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "53b280bca7becd6816168b6964e96d7893eaa208",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "53b56a431b18ca4379a2f6cc2a9adbfa4ac9f077",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "544fae32f2daa3673916daa7545fc2cd793036be",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5d643eceb3c22cae313fcc8904af4363505bd050",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "5e453c7017d7c12144f47926855e33dcfa241892",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5f30054f161cb910d94d6e154bcb1660a3fb783e",
+       "datasourceId": "eva_somatic",
+       "datatypeId": "somatic_mutation",
+       "score": 0,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "60c1ee3242a11a4691bb33f726fa72ca672b30b0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "658757be90e2fff5f0e2cdfb647f3460b93d22dc",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "65c986fdde21d15d70ccb561e7f28f8dd8dd749f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6cde962c34c2bf6744ed25e7a629cf2c416872c4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6e0708d75613a7374a21dc67404f2b9347e0cfde",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "6ecebc114503f465ca15dbcf9837a0ab6a0957ae",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "7011986df04ffe8650bb00e21d0656924b8293eb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7798e27637416751238a93233c4292c922fc5eb5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7a97aee1d9722aab447d41beb050ac6b63dfedeb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7c0e6fa75483294ae2a38a3251a02e83b4d52529",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "7d711b21f78244f205ee72d961541927b02b2213",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "896cb4fc396157d996592065f3f8132195ba0792",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "8a6bf8f45e4e18be1f774022f2ca8ae0db620ed5",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "8b2b1b843b01a43baf87a7b09963dfa71a56a95e",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "9223bc59dfbf477950eb7f1e3701738b842ab046",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "95399d47c01c324cb45e6ae3c3f43a936033aae8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9b30cfee45fbc38e26f56608d280f5272b3a0793",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9be63b714ebc88808654c5258f4aa4c69b283357",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9c65a2ed5f725a34daabb8304c7e5893a9278801",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9d7858947fbfd0148488ace16b0ed9b69710d844",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "9f6e5394a0b0b086fdd3c36a42587b57c8f1378d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a1eb810768a30dabd4771559edc00d6eef0dbc6f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a35a529c378642225417070b52dc47e39dbddde0",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a62aa22f7a52a4bf32d1b24da31dbac7887532fa",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a89cdb1ed7249ff5407add003654a2a0c3fac13b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "aa5da052f1e4ea2b7d4510e632d9f577fb9b516c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "aa975324a1ed233e5a4b1c7af662b1f4e6945a04",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "aa9bb001aa29d9c7815118d0db6873e10ef6304b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "benign"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "ae264b41406564b32f6487ec81e892d7dc64c276",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "ae89968c1ab089495fdccdfa1f3b2ca7aa216d62",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "aedb61f6f48615892b75dfb00a36c09c08f9a0d7",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b487d7da85c756db0bd8dc8dce6d1321721a3425",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "b70c5ea2d1ea3fbc3f80dd971f3393a8fba40402",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "b861cbbcb9d9e108f94c8da39534c534f849841a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ba8a96227f908ba01f910f7757f60600dcb04001",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "bbf71926dc2f2ed4982a17a285f191bec47ea22c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "bfa5caa64352ab80a7abf9ce88ade85256d68210",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c533c7e7545cbfe16e6244f88a01a014acd071aa",
+       "datasourceId": "eva_somatic",
+       "datatypeId": "somatic_mutation",
+       "score": 0,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "c7bce8ee7686041025881539b65fcc2f608ea010",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c9b0e46609ceeaf1ad7bdc6a729f9cc0ec3b7e9d",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "cab5e89d4c19a3db55a02331c753580d70e4e167",
+       "datasourceId": "eva_somatic",
+       "datatypeId": "somatic_mutation",
+       "score": 0,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "cd157528150f190b617db3af622c14f82e653153",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ce2d581be4099b6f9a16516826cd03df3d353c3a",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ceed79a396bd88dc48e0f1fd252009d64224ef0c",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "cf8e378f611bea27e622c27e6a264c85129dd100",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d05b7fcedc36c8048396ff77dbd03e1e18dd3bc1",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "d299b024d119a0bc8fd9bf4756fccabb00470698",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "d511db041e3772af8149fe0a0a49acf4b5471742",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "d6dc2be909d54880ae2daf1a7bbe9fcaf5e68599",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "d8eaf1b89939309016c1cb5d495ba24fcc2537f2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "dfb65e2b3d46def245a526e6c0338ac7abaed95b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e05d89239efcf0486a8003b2274bbd68fa5e586b",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e1cfd17cbce4e4a8c9e17eededec48bdd6f3bc38",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e2e66d65d29c57d69086e9f4d99f169e37e63eb9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e344277fdd0fd7e634ee305bb5580abf6e64dab8",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "e425cc30e54b8faf4364477cfb573a2baeb1791f",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ebfe19df244b666ee180cf3e1a782ed3069d2910",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "ed4488fc767eb5e0e4451082e06342022ff801a4",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f07297cc7b5ed158bef50ba0b6a4bce4c4e1d250",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f274a6f9cc5f8ea7981f74328a88d182ff3e8220",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "f516de252ec393f7fb18f99c6a62910fe3d3e928",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f582d4857bc69f41a72b38d2325a97e0ab13b6d2",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "f8c02340ac12a34d2a11e758258b7a2720499ccb",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fad6708e50032366e0331edb238da2e5986064f9",
+       "datasourceId": "eva",
+       "datatypeId": "genetic_association",
+       "score": 0,
+       "clinicalSignificances": [
+        "conflicting classifications of pathogenicity"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "fc74375722b87fe85f477616105e76c1ca175240",
+       "datasourceId": "eva_somatic",
+       "datatypeId": "somatic_mutation",
+       "score": 0,
+       "clinicalSignificances": [
+        "likely benign"
+       ],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

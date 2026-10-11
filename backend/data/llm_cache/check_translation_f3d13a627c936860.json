@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2517,
+  "output_tokens": 539,
+  "latency_ms": 18496,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"0\", \"claim\": \"Study result for Casimersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…f an internally truncated dystrophin protein in patients with genetic mutations that are amenable to exon 45 skipping [see Clinical Studies ( 14 )] .\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics In the interim analysis of muscle biopsy tissue obtained at baseline and at Week 48 from patients in Study 1, patients who received AMONDYS 45 (n=27) demonstrated a significant increase in skipping of exon 45 (p<0.001) compared to baseline, demonstrated by reverse transcription digital droplet polymerase chain reaction (RT-ddPCR). Patients who received placebo (n=16) did not demonstrate a significant increase in exon 45 skipping (p=0.808). The level of exon skipping is positively correlated with dystrophin protein expression [see Cli…\"}, {\"id\": \"1\", \"claim\": \"Study result for Casimersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ith dystrophin protein expression [see Clinical Studies ( 14 )] . In Study 1 [see Clinical Studies ( 14 )] , dystrophin levels as assessed by the Sarepta Western blot assay increased from 0.93% (SD 1.67) of normal at baseline to 1.74% (SD 1.97) of normal after 48 weeks of treatment with AMONDYS 45. The mean change from baseline in dystrophin after 48 weeks of treatment with AMONDYS 45 was 0.81% (SD 0.70) of normal levels (p<0.001). This increase in dystrophin protein expression after treatment with AMONDYS 45 positively correlated with the level of exon skipping. The mean change from baseline in dystrophin after 48 weeks of treatment with placebo was 0.22% (SD 0.49). Patients who received AMONDYS 45 showed a significantly gre…\"}, {\"id\": \"2\", \"claim\": \"Study result for Casimersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… blot can be meaningfully influenced by differences in sample processing, analytical technique, reference materials, and quantitation methodologies. Therefore, comparing dystrophin results from different assay protocols will require a standardized reference material and additional bridging studies. Correct localization of dystrophin to the sarcolemma in patients treated with AMONDYS 45 was demonstrated by immunofluorescence staining.\\nPHARMACOKINETICS: 12.3 Pharmacokinetics The pharmacokinetics of casimersen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 4 mg/kg/week to 30 mg/kg/week (i.e., recommended dosage). Following a single IV dose of casimersen, C max was reached at the end o…\"}, {\"id\": \"3\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ETICS: 12.3 Pharmacokinetics The pharmacokinetics of casimersen was evaluated in DMD patients following administration of intravenous (IV) doses ranging from 4 mg/kg/week to 30 mg/kg/week (i.e., recommended dosage). Following a single IV dose of casimersen, C max was reached at the end of infusion. Casimersen exposure increased in a proportional manner with dose increment. No accumulation of casimersen was observed in plasma following once weekly dosing. Inter-subject variability (as %CV) for casimersen C max and AUC ranged from 12% to 34% and 16% to 34%, respectively. Distribution Binding of casimersen to human plasma protein was not concentration-dependent and rang…\"}, {\"id\": \"4\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…d in DMD patients following administration of intravenous (IV) doses ranging from 4 mg/kg/week to 30 mg/kg/week (i.e., recommended dosage). Following a single IV dose of casimersen, C max was reached at the end of infusion. Casimersen exposure increased in a proportional manner with dose increment. No accumulation of casimersen was observed in plasma following once weekly dosing. Inter-subject variability (as %CV) for casimersen C max and AUC ranged from 12% to 34% and 16% to 34%, respectively. Distribution Binding of casimersen to human plasma protein was not concentration-dependent and ranged from 8.4% to 31.6%. The mean apparent volume of distribution at steady state (V …\"}, {\"id\": \"5\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…tration-dependent and ranged from 8.4% to 31.6%. The mean apparent volume of distribution at steady state (V ss ) was 367 mL/kg (%CV = 28.9) following a 30 mg/kg dose of casimersen administered intravenously. Elimination The plasma clearance (CL) of casimersen was 180 mL/hr/kg at the 30 mg/kg dose. The elimination half-life (t 1/2 ) was 3.5 hours (SD 0.4 hours). Metabolism Casimersen is metabolically stable in human hepatic microsomal incubations. No metabolites were detected in plasma or urine. Excretion Casimersen is mostly excreted unchanged in the urine. In a clinical study with radiolabeled casimersen, more than 90% of the drug was excreted in urine, …\"}, {\"id\": \"6\", \"claim\": \"Study result for Casimersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…e 2 chronic kidney disease (CKD) (n=8, estimated glomerular filtration rate [eGFR] ≥60 and <90 mL/min/1.73 m 2 ) or Stage 3 CKD (n=8, eGFR ≥30 and <60 mL/min/1.73 m 2 ) and matched healthy subjects (n=9, eGFR ≥90 mL/min/1.73 m 2 ). Subjects received a single 30 mg/kg intravenous dose of casimersen. In subjects with Stage 2 or Stage 3 CKD, exposure (AUC) increased approximately 1.2-fold and 1.8-fold, respectively, compared with subjects with normal renal function. The C max in subjects with Stage 2 CKD was similar to C max in subjects with normal renal function; in subjects with Stage 3 CKD, there was a 1.2-fold increase in C max compared with subjects with normal renal function. The effect of Stage 4 or Stage 5 CKD on casimersen pharmacokinetics and safety …\"}, {\"id\": \"7\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…A processing in patients with genetic mutations that are amenable to exon 51 skipping. Exon skipping is intended to allow for production of an internally truncated dystrophin protein, which was evaluated in Study 2 and Study 3 [ see Clinical Studies ( 14 ) ].\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics All EXONDYS 51-treated patients evaluated (n=36) were found to produce messenger ribonucleic acid (mRNA) for a truncated dystrophin protein by reverse transcription polymerase chain reaction. In Study 2, the average dystrophin protein level in muscle tissue after 180 weeks of treatment with EXONDYS 51 was 0.93% of normal (i.e., 0.93% of the dystrophin level in healthy subjects). Because of insufficient information on dystrophin protein…\"}, {\"id\": \"8\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…s evaluated in Study 2 and Study 3 [ see Clinical Studies ( 14 ) ].\\nPHARMACODYNAMICS: 12.2 Pharmacodynamics All EXONDYS 51-treated patients evaluated (n=36) were found to produce messenger ribonucleic acid (mRNA) for a truncated dystrophin protein by reverse transcription polymerase chain reaction. In Study 2, the average dystrophin protein level in muscle tissue after 180 weeks of treatment with EXONDYS 51 was 0.93% of normal (i.e., 0.93% of the dystrophin level in healthy subjects). Because of insufficient information on dystrophin protein levels before treatment with EXONDYS 51 in Study 1, it is not possible to estimate dystrophin production in response to EXONDYS 51 in Study 1. In Study 3, the average dystrophin prot…\"}, {\"id\": \"9\", \"claim\": \"Study result for Eteplirsen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…ent with EXONDYS 51 was 0.93% of normal (i.e., 0.93% of the dystrophin level in healthy subjects). Because of insufficient information on dystrophin protein levels before treatment with EXONDYS 51 in Study 1, it is not possible to estimate dystrophin production in response to EXONDYS 51 in Study 1. In Study 3, the average dystrophin protein level was 0.16% of normal before treatment, and 0.44% of normal after 48 weeks of treatment with EXONDYS 51 [see Clinical Studies ( 14 )]. The median increase in truncated dystrophin in Study 3 was 0.1% [see Clinical Studies ( 14 )] . Dystrophin levels assessed by western blot can be meaningfully influenced by differences in sample processing, analytical technique, reference materials, and quantitation m…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "0",
+    "supports": true
+   },
+   {
+    "id": "1",
+    "supports": true
+   },
+   {
+    "id": "2",
+    "supports": true
+   },
+   {
+    "id": "3",
+    "supports": true
+   },
+   {
+    "id": "4",
+    "supports": true
+   },
+   {
+    "id": "5",
+    "supports": true
+   },
+   {
+    "id": "6",
+    "supports": true
+   },
+   {
+    "id": "7",
+    "supports": true
+   },
+   {
+    "id": "8",
+    "supports": true
+   },
+   {
+    "id": "9",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,300 @@
+{
+ "query": "PairGenetics",
+ "variables": {
+  "efoId": "MONDO_0005439",
+  "ensemblId": "ENSG00000169174",
+  "datasources": [
+   "impc",
+   "crispr",
+   "crispr_screen",
+   "ot_crispr",
+   "ot_crispr_validation",
+   "expression_atlas",
+   "reactome",
+   "progeny",
+   "slapenrich",
+   "sysbio"
+  ],
+  "size": 500,
+  "cursor": null
+ },
+ "fetched_at": "2026-10-10T15:07:29+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0005439",
+    "evidences": {
+     "count": 24,
+     "cursor": null,
+     "rows": [
+      {
+       "id": "e75f33e5bdc08993cb88ff86f614ab2dcbf280f1",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.7025,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "e876f39720ecbd9a6ca5ebd2f8517d0e7278e71d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6118,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "62d9ebf7ec42426acc95db250197d61b5d13a626",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.6061,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f6f32fe5b08391bc8f8dcbaea2b1a128eab0dd00",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5975,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "24b607aae496ca978994a7f59fe28764c34cadc4",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5971,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a36113f819bff221d66b2ca2c9805e2a8c52000c",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5971,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "f718d3043c1a95409ba4af9f2e47862a207bea1d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5654,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "3cbf4dc3db93664d1feabfb7b4cb33cac759778b",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5367999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a360acfa28ab0211203ba21f48a0107289638171",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5367999999999999,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "5cc30e2171366eacf59ce12a2a50b57ac6549197",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5327000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "a320d8c0f878eb7b3dea391a91549af730580506",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5327000000000001,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "32c2c50a1e705abc84ad261b404a3eab29b2778a",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.5032,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007751",
+        "name": "hypercholesterolemia, autosomal dominant, type B"
+       }
+      },
+      {
+       "id": "3697bb0c61cc2a5f39ec118c32fb28c107bda97f",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4736,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "701fc43b20c57d6703169dc5a732c8ede8e401e9",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4736,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "a575e503c55a61b76ad2e85da1ef4473d9d1ce29",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4672,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0016203",
+        "name": "hypercholesterolemia due to cholesterol 7alpha-hydroxylase deficiency"
+       }
+      },
+      {
+       "id": "17b0b3d95a379c088d761b610cb4fb5ce79fbee4",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4576,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0005439",
+        "name": "familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "4f62a4ecbb9b1fdc0b2108eb77d354670784ec83",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4576,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0011369",
+        "name": "hypercholesterolemia, autosomal dominant, 3"
+       }
+      },
+      {
+       "id": "733e2748bc6eaeab8211cd58050143f3aa114320",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4524,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "c75e4b7f47fc8d9c2a55583339faa0f06342225b",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4524,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "8f577d3946a4d0cd9d442f0409db76475a5240f1",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4522,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007751",
+        "name": "hypercholesterolemia, autosomal dominant, type B"
+       }
+      },
+      {
+       "id": "a1ca9c16342f6d3a0b01811e4dd47e33a81d4b1d",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.44799999999999995,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007751",
+        "name": "hypercholesterolemia, autosomal dominant, type B"
+       }
+      },
+      {
+       "id": "a0eacdfb808af8797d5dfe07ee6564d10254f327",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.4362,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      },
+      {
+       "id": "6a36eda69ece4b4e5fb58bf29c4fcb8bceb0ae76",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41479999999999995,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0007750",
+        "name": "hypercholesterolemia, familial, 1"
+       }
+      },
+      {
+       "id": "aea3c0a5bd7b9311dd3be41441f98fc3dd798d67",
+       "datasourceId": "impc",
+       "datatypeId": "animal_model",
+       "score": 0.41479999999999995,
+       "clinicalSignificances": [],
+       "disease": {
+        "id": "MONDO_0018328",
+        "name": "homozygous familial hypercholesterolemia"
+       }
+      }
+     ]
+    }
+   }
+  }
+ }
+}

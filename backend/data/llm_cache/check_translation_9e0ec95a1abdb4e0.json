@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3130,
+  "output_tokens": 109,
+  "latency_ms": 1536,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"97\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ercent change in the LDL cholesterol level was a reduction of 39.7% (95% confidence interval [CI], -43.7 to -35.7) in the inclisiran group and an increase of 8.2% (95% CI, 4.3 to 12.2) in the placebo group, for a between-group difference of -47.9 percentage points (95% CI, -53.5 to -42.3; P<0.001). The time-averaged percent change in the LDL cholesterol level between day 90 and day 540 was a reduction of 38.1% (95% CI, -41.1 to -35.1) in the inclisiran group and an increase of 6.2% (95% CI, 3.3 to 9.2) in the placebo group, for a between-group difference of -44.3 percentage points (95% CI, -48.5 to -40.1; P<0.001). There were robust reductions in LDL cholesterol levels in all genotypes of familial hypercholesterolemia. Adverse events and serious advers…\"}, {\"id\": \"98\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… myocardial infarction (MI), and fatal and non-fatal stroke, evaluated as part of safety assessments using a standard Medical Dictionary for Regulatory Activities basket. Although not prespecified, total fatal and non-fatal MI, and stroke were also evaluated. Mean LDL-C at baseline was 2.88 mmol/L. At Day 90, the placebo-corrected percentage reduction in LDL-C with inclisiran was 50.6%, corresponding to an absolute reduction of 1.37 mmol/L (both P < 0.0001). Among 3655 patients over 18 months, 303 (8.3%) experienced MACE, including 74 (2.0%) fatal and non-fatal MIs, and 28 (0.8%) fatal and non-fatal strokes. Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)], but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)] o…\"}, {\"id\": \"99\", \"claim\": \"Study result for Inclisiran, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…lacebo-corrected percentage reduction in LDL-C with inclisiran was 50.6%, corresponding to an absolute reduction of 1.37 mmol/L (both P < 0.0001). Among 3655 patients over 18 months, 303 (8.3%) experienced MACE, including 74 (2.0%) fatal and non-fatal MIs, and 28 (0.8%) fatal and non-fatal strokes. Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)], but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)] or fatal and non-fatal stroke [OR (95% CI): 0.86 (0.41-1.81)]. CONCLUSION: This analysis offers early insights into the potential CV benefits of lowering LDL-C with inclisiran and suggests potential benefits for MACE reduction. These …\"}, {\"id\": \"100\", \"claim\": \"Study result for Inclisiran, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…onding to an absolute reduction of 1.37 mmol/L (both P < 0.0001). Among 3655 patients over 18 months, 303 (8.3%) experienced MACE, including 74 (2.0%) fatal and non-fatal MIs, and 28 (0.8%) fatal and non-fatal strokes. Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)], but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)] or fatal and non-fatal stroke [OR (95% CI): 0.86 (0.41-1.81)]. CONCLUSION: This analysis offers early insights into the potential CV benefits of lowering LDL-C with inclisiran and suggests potential benefits for MACE reduction. These findings await confirmation in the larger CV outcomes trials of l…\"}, {\"id\": \"101\", \"claim\": \"Study result for Inclisiran, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…. Among 3655 patients over 18 months, 303 (8.3%) experienced MACE, including 74 (2.0%) fatal and non-fatal MIs, and 28 (0.8%) fatal and non-fatal strokes. Inclisiran significantly reduced composite MACE [OR (95% CI): 0.74 (0.58-0.94)], but not fatal and non-fatal MIs [OR (95% CI): 0.80 (0.50-1.27)] or fatal and non-fatal stroke [OR (95% CI): 0.86 (0.41-1.81)]. CONCLUSION: This analysis offers early insights into the potential CV benefits of lowering LDL-C with inclisiran and suggests potential benefits for MACE reduction. These findings await confirmation in the larger CV outcomes trials of longer duration.\"}, {\"id\": \"102\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…hange in LDL-C level from baseline after day 90 to day 540. Levels of other atherogenic lipoproteins and treatment-emergent adverse events were also assessed. RESULTS: A total of 3,660 participants (n = 482, n = 1,561, and n = 1,617 from ORION-9, -10, and -11, respectively) underwent randomization. The placebo-corrected change in LDL-C with inclisiran at day 510 was -50.7% (95% confidence interval: -52.9% to -48.4%; p < 0.0001). The corresponding time-adjusted change in LDL-C was -50.5% (95% confidence interval: -52.1% to -48.9%; p < 0.0001). Safety was similar in both groups. Treatment-emergent adverse events at the injection site were more frequent with inclisiran than placebo (5.0% vs. 0.7%), but were predominantly mild…\"}, {\"id\": \"103\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…vents were also assessed. RESULTS: A total of 3,660 participants (n = 482, n = 1,561, and n = 1,617 from ORION-9, -10, and -11, respectively) underwent randomization. The placebo-corrected change in LDL-C with inclisiran at day 510 was -50.7% (95% confidence interval: -52.9% to -48.4%; p < 0.0001). The corresponding time-adjusted change in LDL-C was -50.5% (95% confidence interval: -52.1% to -48.9%; p < 0.0001). Safety was similar in both groups. Treatment-emergent adverse events at the injection site were more frequent with inclisiran than placebo (5.0% vs. 0.7%), but were predominantly mild, and none were severe or persistent. Liver and kidney function tests, creatine kinase values, and platelet counts d…\"}, {\"id\": \"104\", \"claim\": \"Study result for Bococizumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…apanese subjects naïve to lipid-lowering agents with LDL-C ≥ 130 mg/dL (n = 97). Subjects were randomized to receive either bococizumab 50, 100, or 150 mg or placebo, every 2 weeks. One arm of subjects in the ator-vastatin-treated population received ezetimibe 10 mg instead of bococizumab. RESULTS: In both populations, bococizumab exposure increased with increasing dose, and subjects with lower body weights tended to have higher exposures. Bococizumab treatment was associated with a dose-dependent reduction in LDL particles and a small increase in total high-density lipoprotein (HDL) particles. Significant reductions in lipoprotein-associated phospholipase A2 (Lp-…\"}, {\"id\": \"105\", \"claim\": \"Study result for Bococizumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… or 150 mg or placebo, every 2 weeks. One arm of subjects in the ator-vastatin-treated population received ezetimibe 10 mg instead of bococizumab. RESULTS: In both populations, bococizumab exposure increased with increasing dose, and subjects with lower body weights tended to have higher exposures. Bococizumab treatment was associated with a dose-dependent reduction in LDL particles and a small increase in total high-density lipoprotein (HDL) particles. Significant reductions in lipoprotein-associated phospholipase A2 (Lp-PLA2) were observed for bococizumab-treated subjects but not for subjects treated with placebo or ezetimibe. CONCLUSION: Increased bococizumab dosage resulted in increased exposure. Levels of LDL and HDL particles and biomarkers …\"}, {\"id\": \"106\", \"claim\": \"Study result for Bococizumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… both populations, bococizumab exposure increased with increasing dose, and subjects with lower body weights tended to have higher exposures. Bococizumab treatment was associated with a dose-dependent reduction in LDL particles and a small increase in total high-density lipoprotein (HDL) particles. Significant reductions in lipoprotein-associated phospholipase A2 (Lp-PLA2) were observed for bococizumab-treated subjects but not for subjects treated with placebo or ezetimibe. CONCLUSION: Increased bococizumab dosage resulted in increased exposure. Levels of LDL and HDL particles and biomarkers such as Lp-PLA2 were also altered with bococizumab treatment. (ClinicalTrials.gov identifier: NCT02055976). .\"}, {\"id\": \"107\", \"claim\": \"Study result for Bococizumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…tinuation of bococizumab administration through to week 24 enabled the collection of safety data over an extended period. Of the 354 subjects randomized, 351 received treatment (placebo [n=100] or bococizumab [n=251]). The most efficacious bococizumab doses were 150 mg Q14 days and 300 mg Q28 days. Compared with placebo, bococizumab 150 mg Q14 days reduced LDL-C at week 12 by 53.4 mg/dl and bococizumab 300 mg Q28 days reduced LDL-C by 44.9 mg/dl; this was despite dose reductions in 32.5% and 34.2% of subjects at week 10 or 8, respectively. Pharmacokinetic/pharmacodynamic model-based simulation assuming no dose reductions predicted that bococizumab would lower LDL-C levels by 72.2 and 55.4 mg/dl, respectively. Adverse events were similar ac…\"}, {\"id\": \"108\", \"claim\": \"Study result for Bococizumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…hat received a single subcutaneous dose of either bococizumab 150, 300, or 450 mg co-mixed with rHuPH20 or bococizumab 300 mg alone. Bioavailability and lipid-lowering effect of bococizumab were evaluated by using ANCOVA models. RESULTS: In the groups administered bococizumab co-mixed with rHuPH20, dose-normalized C max and AUCinf were 26.6 to 39.1% and 18.3 to 36.6% greater, respectively, compared with bococizumab 300 mg alone. Despite these increases, mean percent reductions from baseline in low-density lipoprotein cholesterol were smaller in the bococizumab 300 mg + rHuPH20 group than in the bococizumab 300-mg group at Day 21 (52.2% and 59.5%, respectively) and were similar at Day 29 (51.7% and 49.6%, respectively). Com…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "97",
+    "supports": true
+   },
+   {
+    "id": "98",
+    "supports": true
+   },
+   {
+    "id": "99",
+    "supports": true
+   },
+   {
+    "id": "100",
+    "supports": true
+   },
+   {
+    "id": "101",
+    "supports": false
+   },
+   {
+    "id": "102",
+    "supports": true
+   },
+   {
+    "id": "103",
+    "supports": true
+   },
+   {
+    "id": "104",
+    "supports": true
+   },
+   {
+    "id": "105",
+    "supports": true
+   },
+   {
+    "id": "106",
+    "supports": true
+   },
+   {
+    "id": "107",
+    "supports": true
+   },
+   {
+    "id": "108",
+    "supports": true
+   }
+  ]
+ }
+}

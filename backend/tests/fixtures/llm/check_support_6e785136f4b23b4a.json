@@ -1,0 +1,72 @@
+{
+ "task": "check_support",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1439,
+  "output_tokens": 368,
+  "latency_ms": 3164,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"s01\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"Elevated liver enzymes were observed in several participants.\"}, {\"id\": \"s02\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The sister study was stopped for futility; this study was stopped as a consequence.\"}, {\"id\": \"s03\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"The primary endpoint of the core/TF1 was achieved\"}, {\"id\": \"s04\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"Slow recruitment. No safety concerns during this study.\"}, {\"id\": \"s05\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Study did not meet Phase Ib primary objective to establish the maximum tolerated dose/recommended dose for Phase II\"}, {\"id\": \"s06\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"Due to a pre-specified imbalance of deaths between treatment groups, the DSMB recommended early termination of the trial\"}, {\"id\": \"s07\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is that the drug did not work well enough: futility, lack of efficacy, no benefit, primary endpoint not met or unlikely to be met, or a related trial of the same drug stopped for one of these reasons.\", \"quote\": \"Business decision, not driven by safety or efficacy concerns.\"}, {\"id\": \"s08\", \"claim\": \"The text is the sponsor's stated reason for stopping a trial, so whatever it describes is why the trial stopped (it need not say 'stopped'). Claim: what it describes is a safety problem: side effects, toxicity, abnormal laboratory values such as raised liver enzymes, deaths, no tolerated dose, or a safety signal.\", \"quote\": \"The results of the dose escalation phase did not identify a well-tolerated dose that would permit further study in Phase 2.\"}, {\"id\": \"s09\", \"claim\": \"Study result for Tominersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"Antisense oligonucleotides, such as Tominersen, play a leading role in targeting and modulating the expression of mutant huntingtin.\"}, {\"id\": \"s10\", \"claim\": \"Study result for Tominersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"tominersen led to dose-dependent reductions in the concentration of mutant huntingtin in CSF\"}, {\"id\": \"s11\", \"claim\": \"Study result for Othersen, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"did not improve the primary endpoint, change in ALSFRS-R at 28 weeks, versus placebo\"}, {\"id\": \"s12\", \"claim\": \"Study result for Othersen, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"Othersen was generally well tolerated\"}, {\"id\": \"s13\", \"claim\": \"Study result for Othersen, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"The ongoing study will measure receptor occupancy by PET\"}, {\"id\": \"s14\", \"claim\": \"Study result for Drugomersen, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"Drugomersen concentrations in CSF increased with dose and were measurable in all participants\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "s01",
+    "supports": true
+   },
+   {
+    "id": "s02",
+    "supports": true
+   },
+   {
+    "id": "s03",
+    "supports": false
+   },
+   {
+    "id": "s04",
+    "supports": false
+   },
+   {
+    "id": "s05",
+    "supports": false
+   },
+   {
+    "id": "s06",
+    "supports": true
+   },
+   {
+    "id": "s07",
+    "supports": false
+   },
+   {
+    "id": "s08",
+    "supports": true
+   },
+   {
+    "id": "s09",
+    "supports": false
+   },
+   {
+    "id": "s10",
+    "supports": true
+   },
+   {
+    "id": "s11",
+    "supports": true
+   },
+   {
+    "id": "s12",
+    "supports": false
+   },
+   {
+    "id": "s13",
+    "supports": false
+   },
+   {
+    "id": "s14",
+    "supports": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2276,
+  "output_tokens": 1451,
+  "latency_ms": 11456,
+  "json_mode": "prompt"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"20\", \"claim\": \"Study result for Dalcetrapib, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…35.3%). Forty-nine men were included in the analysis in the high-fat meal study (mean age, 32.3 years; mean BMI, 23.9 kg/m(2)). Compared with administration after a standard evening meal, administration after a high-fat evening meal was associated with increased AUC(0-∞) (34.9%) and C(max) (43.7%). Between-treatment differences in exposure within each study also were reflected in apparent differences in CETP activity. All treatments were generally well tolerated. CONCLUSIONS: Dalcetrapib exposure was increased in the fed state and, to a lesser extent, was dependent on the size and fat content of the meal. Exposure was independent of dosing time. Dalcetrapib was generally well tolerated.\"}, {\"id\": \"21\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…linical trials of unselected patients with coronary disease. Dalcetrapib is a CETP modulator for which effects on cardiovascular outcomes were demonstrated in the dal-OUTCOMES trial to be influenced by correlated polymorphisms in the ADCY9 (adenylate cyclase type 9) gene (P=2.4×10-8 for rs1967309). Patients with the AA genotype at rs1967309 had a relative reduction of 39% in the risk of presenting a cardiovascular event when treated with dalcetrapib compared with placebo (95% confidence interval, 0.41-0.92). In contrast, patients with the GG genotype had a 27% increase in risk, whereas heterozygotes (AG) presented a neutral result. Supporting evidence from the dal-PLAQUE-2 study using carotid ultrasonography revealed that the polymorphisms tested in the ADCY9 linka…\"}, {\"id\": \"22\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…in the ADCY9 (adenylate cyclase type 9) gene (P=2.4×10-8 for rs1967309). Patients with the AA genotype at rs1967309 had a relative reduction of 39% in the risk of presenting a cardiovascular event when treated with dalcetrapib compared with placebo (95% confidence interval, 0.41-0.92). In contrast, patients with the GG genotype had a 27% increase in risk, whereas heterozygotes (AG) presented a neutral result. Supporting evidence from the dal-PLAQUE-2 study using carotid ultrasonography revealed that the polymorphisms tested in the ADCY9 linkage disequilibrium block were associated with disease regression for patients with the protective genotype, p…\"}, {\"id\": \"23\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…7309). Patients with the AA genotype at rs1967309 had a relative reduction of 39% in the risk of presenting a cardiovascular event when treated with dalcetrapib compared with placebo (95% confidence interval, 0.41-0.92). In contrast, patients with the GG genotype had a 27% increase in risk, whereas heterozygotes (AG) presented a neutral result. Supporting evidence from the dal-PLAQUE-2 study using carotid ultrasonography revealed that the polymorphisms tested in the ADCY9 linkage disequilibrium block were associated with disease regression for patients with the protective genotype, progression for the harmful genotype, and no effect in h…\"}, {\"id\": \"24\", \"claim\": \"Study result for Dalcetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… with dalcetrapib compared with placebo (95% confidence interval, 0.41-0.92). In contrast, patients with the GG genotype had a 27% increase in risk, whereas heterozygotes (AG) presented a neutral result. Supporting evidence from the dal-PLAQUE-2 study using carotid ultrasonography revealed that the polymorphisms tested in the ADCY9 linkage disequilibrium block were associated with disease regression for patients with the protective genotype, progression for the harmful genotype, and no effect in heterozygotes (P≤0.05 and ≤0.01 for 10 and 3 polymorphisms, respectively) when comparing dalcetrapib to placebo. Strikingly concordant and significant genotype-dependent effects of dalcetrapib were also obtained for changes in high-sensitivity C-reactive protein and cholesterol efflux capacity. The Dal-GenE rand…\"}, {\"id\": \"25\", \"claim\": \"Study result for Dalcetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…e disequilibrium block were associated with disease regression for patients with the protective genotype, progression for the harmful genotype, and no effect in heterozygotes (P≤0.05 and ≤0.01 for 10 and 3 polymorphisms, respectively) when comparing dalcetrapib to placebo. Strikingly concordant and significant genotype-dependent effects of dalcetrapib were also obtained for changes in high-sensitivity C-reactive protein and cholesterol efflux capacity. The Dal-GenE randomized trial is currently being conducted in patients with a recent acute coronary syndrome bearing the AA genotype at rs1967309 in the ADCY9 gene to confirm the effects of dalcetrapib on hard cardiovascular outcomes.\"}, {\"id\": \"26\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…utral placebo-controlled dal-Outcomes trial, the effect of the cholesteryl ester transfer protein (CETP) modulator dalcetrapib on the composite of cardiovascular death, myocardial infarction or stroke was found to be influenced by a polymorphism in the adenylate cyclase type 9 (ADCY9) gene. Whereas patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib, those with the GG genotype had an increased rate and the heterozygous AG genotype exhibited no difference from placebo. Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings. In a separate, smaller, placebo-controlled trial, reg…\"}, {\"id\": \"27\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ator dalcetrapib on the composite of cardiovascular death, myocardial infarction or stroke was found to be influenced by a polymorphism in the adenylate cyclase type 9 (ADCY9) gene. Whereas patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib, those with the GG genotype had an increased rate and the heterozygous AG genotype exhibited no difference from placebo. Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings. In a separate, smaller, placebo-controlled trial, regression of ultrasonography-determined carotid inti…\"}, {\"id\": \"28\", \"claim\": \"Study result for Dalcetrapib, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…eath, myocardial infarction or stroke was found to be influenced by a polymorphism in the adenylate cyclase type 9 (ADCY9) gene. Whereas patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib, those with the GG genotype had an increased rate and the heterozygous AG genotype exhibited no difference from placebo. Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings. In a separate, smaller, placebo-controlled trial, regression of ultrasonography-determined carotid intimal-medial thickness was only observed in dalcetrapib-treated patients…\"}, {\"id\": \"29\", \"claim\": \"Study result for Dalcetrapib, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"… a polymorphism in the adenylate cyclase type 9 (ADCY9) gene. Whereas patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib, those with the GG genotype had an increased rate and the heterozygous AG genotype exhibited no difference from placebo. Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings. In a separate, smaller, placebo-controlled trial, regression of ultrasonography-determined carotid intimal-medial thickness was only observed in dalcetrapib-treated patients with the AA genotype. Collectively, these observations led to the hypothesis that the cardiovascular effects of dalcetrapib m…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "20",
+    "supports": true
+   },
+   {
+    "id": "21",
+    "supports": true
+   },
+   {
+    "id": "22",
+    "supports": true
+   },
+   {
+    "id": "23",
+    "supports": true
+   },
+   {
+    "id": "24",
+    "supports": true
+   },
+   {
+    "id": "25",
+    "supports": true
+   },
+   {
+    "id": "26",
+    "supports": true
+   },
+   {
+    "id": "27",
+    "supports": true
+   },
+   {
+    "id": "28",
+    "supports": true
+   },
+   {
+    "id": "29",
+    "supports": true
+   }
+  ]
+ }
+}

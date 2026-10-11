@@ -1,0 +1,79 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 643,
+  "output_tokens": 528,
+  "latency_ms": 4641,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT05193994\", \"reason\": \"A planned interim analysis resulted in the recommendation that the trial be stopped. The results showed no benefit of Triumeq for people with ALS compared with placebo on survival, the primary outcome measure.\"}, {\"nct\": \"NCT05237284\", \"reason\": \"The study was terminated as its Part A did not meet the primary endpoint.\"}, {\"nct\": \"NCT05349721\", \"reason\": \"Company decision\"}, {\"nct\": \"NCT05442775\", \"reason\": \"The DMC recommended the trial be discontinued due to futility following a planned second interim analysis of the parent trial (CY 5031).\"}, {\"nct\": \"NCT06008249\", \"reason\": \"The planned interim analysis showed no survival benefit of taking the drug when compared with placebo.\"}, {\"nct\": \"NCT06658977\", \"reason\": \"This is a rollover study following the Lighthouse II trial; it was scheduled to stop when the LH II trial was stopped/completed. The LH II trial has been prematurely terminated so, likewise, this study has also now been stopped.\"}, {\"nct\": \"NCT06903286\", \"reason\": \"patients treated through compassionate use program\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT05193994",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "no benefit of Triumeq for people with ALS compared with placebo on survival"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05237284",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "did not meet the primary endpoint"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05349721",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Company decision"
+     }
+    ]
+   },
+   {
+    "nct": "NCT05442775",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "discontinued due to futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT06008249",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "showed no survival benefit of taking the drug when compared with placebo"
+     }
+    ]
+   },
+   {
+    "nct": "NCT06658977",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "scheduled to stop when the LH II trial was stopped/completed"
+     }
+    ]
+   },
+   {
+    "nct": "NCT06903286",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "patients treated through compassionate use program"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "source": "uniprot",
+ "url": "https://rest.uniprot.org/uniprotkb/search",
+ "params": {
+  "query": "gene_exact:DMD AND organism_id:9606 AND reviewed:true",
+  "fields": "accession,gene_primary,cc_subcellular_location",
+  "format": "json",
+  "size": 5
+ },
+ "fetched_at": "2026-10-09T12:01:32+00:00",
+ "status": 200,
+ "body": {
+  "results": [
+   {
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "P11532",
+    "genes": [
+     {
+      "geneName": {
+       "evidences": [
+        {
+         "evidenceCode": "ECO:0000312",
+         "source": "HGNC",
+         "id": "HGNC:2928"
+        }
+       ],
+       "value": "DMD"
+      }
+     }
+    ],
+    "comments": [
+     {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+       "texts": [
+        {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "In muscle cells, sarcolemma localization requires the presence of ANK2, while localization to costameres requires the presence of ANK3. Localizes to neuromuscular junctions (NMJs). In adult muscle, NMJ localization depends upon ANK2 presence, but not in newborn animals"
+        }
+       ]
+      },
+      "subcellularLocations": [
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "Cell membrane, sarcolemma",
+         "id": "SL-0238"
+        },
+        "topology": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "Peripheral membrane protein",
+         "id": "SL-9903"
+        },
+        "orientation": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "Cytoplasmic side",
+         "id": "SL-9910"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "Cytoplasm, cytoskeleton",
+         "id": "SL-0090"
+        }
+       },
+       {
+        "location": {
+         "evidences": [
+          {
+           "evidenceCode": "ECO:0000250",
+           "source": "UniProtKB",
+           "id": "P11531"
+          }
+         ],
+         "value": "Postsynaptic cell membrane",
+         "id": "SL-0219"
+        }
+       }
+      ]
+     }
+    ],
+    "extraAttributes": {
+     "uniParcId": "UPI000049E111"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "AD",
+  "entities": [
+   "disease"
+  ]
+ },
+ "fetched_at": "2026-10-08T10:29:24+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 20990,
+    "hits": [
+     {
+      "id": "MONDO_0004975",
+      "name": "Alzheimer disease",
+      "entity": "disease",
+      "description": "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+      "score": 3334.7102
+     },
+     {
+      "id": "MONDO_0004980",
+      "name": "atopic eczema",
+      "entity": "disease",
+      "description": "A common chronic pruritic inflammatory skin disease with a strong genetic component. Onset typically occurs during the first 2 years of life.",
+      "score": 3249.6519
+     },
+     {
+      "id": "MONDO_0007088",
+      "name": "Alzheimer disease type 1",
+      "entity": "disease",
+      "description": null,
+      "score": 2710.2212
+     },
+     {
+      "id": "MONDO_0011913",
+      "name": "Alzheimer disease 3",
+      "entity": "disease",
+      "description": "Alzheimer's disease with an early onset (starts before the age of 65). It is caused by mutations in the PSEN1 gene.",
+      "score": 2701.3357
+     },
+     {
+      "id": "EFO_0920013",
+      "name": "axial diffusivity measurement",
+      "entity": "disease",
+      "description": "A quantitative parameter derived from diffusion tensor imaging that measures water molecule diffusion parallel to the principal direction of the diffusion tensor. Axial diffusivity (AD or AxD) represents the largest eigenvalue (λ1) of the diffusion tensor and provides information about axonal integrity and tissue microstructure. This measurement can be applied to various biological tissues including brain white matter, skeletal muscle, kidney, and other organs.",
+      "score": 1016.3288
+     },
+     {
+      "id": "MONDO_0004970",
+      "name": "adenocarcinoma",
+      "entity": "disease",
+      "description": "A common cancer characterized by the presence of malignant glandular cells. Morphologically, adenocarcinomas are classified according to the growth pattern (e.g., papillary, alveolar) or according to the secreting product (e.g., mucinous, serous). Representative examples of adenocarcinoma are ductal and lobular breast carcinoma, lung adenocarcinoma, renal cell carcinoma, hepatocellular carcinoma (hepatoma), colon adenocarcinoma, and prostate adenocarcinoma.",
+      "score": 351.10446
+     },
+     {
+      "id": "MONDO_0005008",
+      "name": "colorectal adenocarcinoma",
+      "entity": "disease",
+      "description": "The most common type of colorectal carcinoma. It is characterized by the presence of malignant glandular epithelial cells invading through the muscularis mucosa into the submucosa. Histologic variants include mucinous adenocarcinoma, signet ring cell carcinoma, medullary carcinoma, serrated adenocarcinoma, cribriform comedo-type adenocarcinoma, and micropapillary adenocarcinoma.",
+      "score": 340.87613
+     },
+     {
+      "id": "MONDO_0004972",
+      "name": "adenoma",
+      "entity": "disease",
+      "description": "A neoplasm arising from the epithelium. It may be encapsulated or non-encapsulated but non-invasive. The neoplastic epithelial cells may or may not display cellular atypia or dysplasia. In the gastrointestinal tract, when dysplasia becomes severe it is sometimes called carcinoma in situ. Representative examples are pituitary gland adenoma, follicular adenoma of the thyroid gland, and adenomas (or adenomatous polyps) of the gastrointestinal tract.",
+      "score": 322.78555
+     },
+     {
+      "id": "OBA_2044945",
+      "name": "level of adipocyte adhesion molecule in blood serum",
+      "entity": "disease",
+      "description": "The amount of a adipocyte adhesion molecule when measured in blood serum.",
+      "score": 315.95096
+     },
+     {
+      "id": "MONDO_0005495",
+      "name": "adrenal gland disorder",
+      "entity": "disease",
+      "description": "A disease involving the adrenal gland.",
+      "score": 314.88882
+     }
+    ]
+   }
+  }
+ }
+}

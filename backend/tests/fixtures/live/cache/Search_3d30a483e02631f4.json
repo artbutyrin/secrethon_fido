@@ -1,0 +1,48 @@
+{
+ "query": "Search",
+ "variables": {
+  "q": "BACE1",
+  "entities": [
+   "target"
+  ]
+ },
+ "fetched_at": "2026-10-08T10:27:44+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "search": {
+    "total": 4,
+    "hits": [
+     {
+      "id": "ENSG00000186318",
+      "name": "BACE1",
+      "entity": "target",
+      "description": "beta-secretase 1",
+      "score": 5009.8726
+     },
+     {
+      "id": "ENSG00000278768",
+      "name": "BACE1-AS",
+      "entity": "target",
+      "description": "BACE1 antisense RNA",
+      "score": 526.95325
+     },
+     {
+      "id": "ENSG00000276505",
+      "name": "ENSG00000276505",
+      "entity": "target",
+      "description": "novel transcript, sense intronic to BACE1",
+      "score": 215.67506
+     },
+     {
+      "id": "ENSG00000047249",
+      "name": "ATP6V1H",
+      "entity": "target",
+      "description": "ATPase H+ transporting V1 subunit H",
+      "score": 63.460693
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "query": "Disease",
+ "variables": {
+  "id": "MONDO_0010679"
+ },
+ "fetched_at": "2026-10-09T12:01:17+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0010679",
+    "name": "Duchenne muscular dystrophy",
+    "description": "Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle.",
+    "synonyms": [
+     {
+      "relation": "hasExactSynonym",
+      "terms": [
+       "DMD",
+       "Duchenne muscular dystrophy",
+       "Duchenne muscular dystrophy, X-linked recessive",
+       "severe dystrophinopathy, Duchenne type"
+      ]
+     },
+     {
+      "relation": "hasRelatedSynonym",
+      "terms": [
+       "muscular dystrophy, Duchenne type"
+      ]
+     },
+     {
+      "relation": "hasNarrowSynonym",
+      "terms": []
+     },
+     {
+      "relation": "hasBroadSynonym",
+      "terms": []
+     }
+    ],
+    "dbXRefs": [
+     "DOID:11723",
+     "GARD:0006291",
+     "MEDGEN:3925",
+     "MESH:D020388",
+     "MedDRA:10013801",
+     "NANDO:1200488",
+     "NANDO:2200856",
+     "NCIT:C75482",
+     "NORD:1065",
+     "OMIM:310200",
+     "Orphanet:98896",
+     "SCTID:76670001",
+     "UMLS:C0013264",
+     "icd11.foundation:1479561744"
+    ],
+    "therapeuticAreas": [
+     {
+      "id": "MONDO_0005071",
+      "name": "nervous system disorder"
+     },
+     {
+      "id": "OTAR_0000018",
+      "name": "genetic, familial or congenital disease"
+     },
+     {
+      "id": "OTAR_0000006",
+      "name": "musculoskeletal or connective tissue disease"
+     },
+     {
+      "id": "EFO_0000651",
+      "name": "phenotype"
+     }
+    ]
+   }
+  }
+ }
+}

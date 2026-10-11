@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2996,
+  "output_tokens": 314,
+  "latency_ms": 3458,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"48\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…pe 2, and 244 (13.1%) as Type 4. Few events were Type 3 (n = 2) or Type 5 (n = 5). Alirocumab reduced first MIs [hazard ratio (HR) 0.85, 95% confidence interval (CI) 0.77-0.95; P = 0.003], with reductions in both Type 1 (HR 0.87, 95% CI 0.77-0.99; P = 0.032) and Type 2 (0.77, 0.61-0.97; P = 0.025), but not Type 4 MI. CONCLUSION: After ACS, alirocumab added to intensive statin therapy favourably impacted on Type 1 and 2 MIs. The data indicate for the first time that a lipid-lowering therapy can attenuate the risk of Type 2 MI. Low-density lipoprotein cholesterol reduction below levels achievable with statins is …\"}, {\"id\": \"49\", \"claim\": \"Study result for Alirocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…thin 24 hours of presentation. LDL-C and inflammatory biomarkers-including C-reactive protein-were obtained at baseline, 72 hours, and 14 days. Median (interquartile range) and number (%) were: age 59 (49, 65) years, 7 (35%) men, 16 (80%) black; baseline characteristics were similar between groups. Alirocumab significantly reduced LDL-C from baseline to 14 days by 64 mg/dL (-96, -47) compared with placebo [+1 mg/dL (-25, +16)] (primary endpoint). There were no significant between-group differences in C-reactive protein changes at any time point (all P > 0.2) or serious adverse events attributable to the study treatment. In conclusion, alirocumab administration at the time of NSTEMI significantly reduced LDL-C levels at 1…\"}, {\"id\": \"50\", \"claim\": \"Study result for Alirocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was NOT shown (no difference from placebo or baseline, not detected, not significant, endpoint not met, or a worse result).\", \"quote\": \"…(interquartile range) and number (%) were: age 59 (49, 65) years, 7 (35%) men, 16 (80%) black; baseline characteristics were similar between groups. Alirocumab significantly reduced LDL-C from baseline to 14 days by 64 mg/dL (-96, -47) compared with placebo [+1 mg/dL (-25, +16)] (primary endpoint). There were no significant between-group differences in C-reactive protein changes at any time point (all P > 0.2) or serious adverse events attributable to the study treatment. In conclusion, alirocumab administration at the time of NSTEMI significantly reduced LDL-C levels at 14 days, was safe, and had neutral effects on inflammatory biomarkers. Further studies are warranted to explore the effects on clinical…\"}, {\"id\": \"51\", \"claim\": \"Study result for Alirocumab, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…ays following study drug administration. Pharmacokinetic (PK) parameters for the systemic exposure of alirocumab were calculated, and levels of free PCSK9 were assessed. Percentage changes from baseline in LDL-C were compared between injection site groups using linear mixed-effects models. RESULTS: Alirocumab concentration-time profiles were similar, and free PCSK9 levels were reduced to approximately zero between Day 3 and Day 4 postinjection in all groups. LDL-C levels reached nadir on Day 15 postinjection in all groups with mean percentage reductions of 48.4% (abdomen), 39.5% (upper arm), and 45.6% (thigh) at this time point. A similar effe…\"}, {\"id\": \"52\", \"claim\": \"Study result for Alirocumab, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…(PK) parameters for the systemic exposure of alirocumab were calculated, and levels of free PCSK9 were assessed. Percentage changes from baseline in LDL-C were compared between injection site groups using linear mixed-effects models. RESULTS: Alirocumab concentration-time profiles were similar, and free PCSK9 levels were reduced to approximately zero between Day 3 and Day 4 postinjection in all groups. LDL-C levels reached nadir on Day 15 postinjection in all groups with mean percentage reductions of 48.4% (abdomen), 39.5% (upper arm), and 45.6% (thigh) at this time point. A similar effect on LDL-C levels was seen across the entire time course of the study at all three injection sites. Treatment…\"}, {\"id\": \"53\", \"claim\": \"Study result for Alirocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…essed. Percentage changes from baseline in LDL-C were compared between injection site groups using linear mixed-effects models. RESULTS: Alirocumab concentration-time profiles were similar, and free PCSK9 levels were reduced to approximately zero between Day 3 and Day 4 postinjection in all groups. LDL-C levels reached nadir on Day 15 postinjection in all groups with mean percentage reductions of 48.4% (abdomen), 39.5% (upper arm), and 45.6% (thigh) at this time point. A similar effect on LDL-C levels was seen across the entire time course of the study at all three injection sites. Treatment-emergent adverse events were experienced by 8/20 (abdomen), 11/20 (upper arm), and 13/20 (thigh) subjects. There were 2 mild/transient injection site reactions. There were n…\"}, {\"id\": \"54\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…5 to 50 mg per deciliter (0.6 to 1.3 mmol per liter). The primary end point was a composite of death from coronary heart disease, nonfatal myocardial infarction, fatal or nonfatal ischemic stroke, or unstable angina requiring hospitalization. RESULTS: The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary en…\"}, {\"id\": \"55\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…equiring hospitalization. RESULTS: The median duration of follow-up was 2.8 years. A composite primary end-point event occurred in 903 patients (9.5%) in the alirocumab group and in 1052 patients (11.1%) in the placebo group (hazard ratio, 0.85; 95% confidence interval [CI], 0.78 to 0.93; P<0.001). A total of 334 patients (3.5%) in the alirocumab group and 392 patients (4.1%) in the placebo group died (hazard ratio, 0.85; 95% CI, 0.73 to 0.98). The absolute benefit of alirocumab with respect to the composite primary end point was greater among patients who had a baseline LDL cholesterol level of 100 mg or more per deciliter than among patients who had a lower baseline level. The incidence of adv…\"}, {\"id\": \"56\", \"claim\": \"Study result for Alirocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…pid-lowering therapy. Patients were randomly assigned in a 2:1 ratio to receive alirocumab (150 mg) or placebo as a 1-ml subcutaneous injection every 2 weeks for 78 weeks. The primary efficacy end point was the percentage change in calculated LDL cholesterol level from baseline to week 24. RESULTS: At week 24, the difference between the alirocumab and placebo groups in the mean percentage change from baseline in calculated LDL cholesterol level was -62 percentage points (P<0.001); the treatment effect remained consistent over a period of 78 weeks. The alirocumab group, as compared with the placebo group, had higher rates of injection-site reactions (5.9% vs. 4.2%), myalgia (5.4% vs. 2.9%), neurocognitive events (1.2% vs. 0.5%), and ophthalmologic events (2.9% vs. …\"}, {\"id\": \"57\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…rocumab than with placebo (1.7% vs. 3.3%; hazard ratio, 0.52; 95% confidence interval, 0.31 to 0.90; nominal P=0.02). CONCLUSIONS: Over a period of 78 weeks, alirocumab, when added to statin therapy at the maximum tolerated dose, significantly reduced LDL cholesterol levels. In a post hoc analysis, there was evidence of a reduction in the rate of cardiovascular events with alirocumab. (Funded by Sanofi and Regeneron Pharmaceuticals; ODYSSEY LONG TERM ClinicalTrials.gov number, NCT01507831.).\"}, {\"id\": \"58\", \"claim\": \"Study result for Alirocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ry heart disease death, nonfatal myocardial infarction, ischemic stroke, or hospitalization for unstable angina. RESULTS: Baseline lipoprotein(a) levels (median: 21.2 mg/dl; interquartile range [IQR]: 6.7 to 59.6 mg/dl) and LDL-C [corrected for cholesterol content in lipoprotein(a)] predicted MACE. Alirocumab reduced lipoprotein(a) by 5.0 mg/dl (IQR: 0 to 13.5 mg/dl), corrected LDL-C by 51.1 mg/dl (IQR: 33.7 to 67.2 mg/dl), and reduced the risk of MACE (hazard ratio [HR]: 0.85; 95% confidence interval [CI]: 0.78 to 0.93). Alirocumab-induced reductions of lipoprotein(a) and corrected LDL-C independently predicted lower risk of MACE, after adjustment for baseline concentrations of both lipoproteins and demographic and …\"}, {\"id\": \"59\", \"claim\": \"Study result for Alirocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…ipoprotein(a) levels (median: 21.2 mg/dl; interquartile range [IQR]: 6.7 to 59.6 mg/dl) and LDL-C [corrected for cholesterol content in lipoprotein(a)] predicted MACE. Alirocumab reduced lipoprotein(a) by 5.0 mg/dl (IQR: 0 to 13.5 mg/dl), corrected LDL-C by 51.1 mg/dl (IQR: 33.7 to 67.2 mg/dl), and reduced the risk of MACE (hazard ratio [HR]: 0.85; 95% confidence interval [CI]: 0.78 to 0.93). Alirocumab-induced reductions of lipoprotein(a) and corrected LDL-C independently predicted lower risk of MACE, after adjustment for baseline concentrations of both lipoproteins and demographic and clinical characteristics. A 1-mg/dl reduction in lipoprotein(a) with alirocumab was associated with …\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "48",
+    "supports": false
+   },
+   {
+    "id": "49",
+    "supports": true
+   },
+   {
+    "id": "50",
+    "supports": false
+   },
+   {
+    "id": "51",
+    "supports": true
+   },
+   {
+    "id": "52",
+    "supports": true
+   },
+   {
+    "id": "53",
+    "supports": true
+   },
+   {
+    "id": "54",
+    "supports": true
+   },
+   {
+    "id": "55",
+    "supports": true
+   },
+   {
+    "id": "56",
+    "supports": true
+   },
+   {
+    "id": "57",
+    "supports": true
+   },
+   {
+    "id": "58",
+    "supports": true
+   },
+   {
+    "id": "59",
+    "supports": true
+   }
+  ]
+ }
+}

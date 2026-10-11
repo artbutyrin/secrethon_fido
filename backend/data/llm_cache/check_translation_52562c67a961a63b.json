@@ -1,0 +1,64 @@
+{
+ "task": "check_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 2940,
+  "output_tokens": 109,
+  "latency_ms": 1819,
+  "json_mode": "json_schema"
+ },
+ "system": "You check evidence. Each item has a claim and a text (a quote with the sentences around it, or a short\nstated reason). Answer supports=true only if the text states the claim. Do not reject only because the text does not\nrepeat the drug name, the species or the disease: reject when it names a different one (cells or animals where the\nclaim says people, another drug, another disease). Answer false if the text says the opposite, says something else, only mentions the topic,\nor only says that something was planned or measured without giving the result. A general description of how a drug\nworks or what it is designed to do does not support a claim that a study showed something. Do not use outside\nknowledge.\nReturn every item you were given, with its id.",
+ "user": "[{\"id\": \"84\", \"claim\": \"Study result for Evolocumab, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…a prespecified exploratory analysis) adjudicated cardiovascular events including death, myocardial infarction, unstable angina, coronary revascularization, stroke, transient ischemic attack, and heart failure. Data from the two trials were combined. RESULTS: As compared with standard therapy alone, evolocumab reduced the level of LDL cholesterol by 61%, from a median of 120 mg per deciliter to 48 mg per deciliter (P<0.001). Most adverse events occurred with similar frequency in the two groups, although neurocognitive events were reported more frequently in the evolocumab group. The risk of adverse events, including neurocognitive events, did not vary significantly according to the achieved level of LDL chol…\"}, {\"id\": \"85\", \"claim\": \"Study result for Evolocumab, in people: clinical benefit for patients (a clinical endpoint improves) was shown.\", \"quote\": \"…). Most adverse events occurred with similar frequency in the two groups, although neurocognitive events were reported more frequently in the evolocumab group. The risk of adverse events, including neurocognitive events, did not vary significantly according to the achieved level of LDL cholesterol. The rate of cardiovascular events at 1 year was reduced from 2.18% in the standard-therapy group to 0.95% in the evolocumab group (hazard ratio in the evolocumab group, 0.47; 95% confidence interval, 0.28 to 0.78; P=0.003). CONCLUSIONS: During approximately 1 year of therapy, the use of evolocumab plus standard therapy, as compared with standard therapy alone, significantly reduced LDL cholesterol levels and reduced the incid…\"}, {\"id\": \"86\", \"claim\": \"Study result for Inclisiran, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…e adverse events were mild or moderate in severity. There were no serious adverse events or discontinuations due to adverse events. There was one grade 3 elevation in the γ-glutamyltransferase level, which was considered by the investigator to be related to statin therapy. In the single-dose phase, inclisiran doses of 300 mg or more reduced the PCSK9 level (up to a least-squares mean reduction of 74.5% from baseline to day 84), and doses of 100 mg or more reduced the LDL cholesterol level (up to a least-squares mean reduction of 50.6% from baseline). Reductions in the levels of PCSK9 and LDL cholesterol were maintained at day 180 for doses of 300 mg or more. All multiple-dose regimens reduced the levels of PCSK9 (up to a…\"}, {\"id\": \"87\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…e was one grade 3 elevation in the γ-glutamyltransferase level, which was considered by the investigator to be related to statin therapy. In the single-dose phase, inclisiran doses of 300 mg or more reduced the PCSK9 level (up to a least-squares mean reduction of 74.5% from baseline to day 84), and doses of 100 mg or more reduced the LDL cholesterol level (up to a least-squares mean reduction of 50.6% from baseline). Reductions in the levels of PCSK9 and LDL cholesterol were maintained at day 180 for doses of 300 mg or more. All multiple-dose regimens reduced the levels of PCSK9 (up to a least-squares mean reduction of 83.8% from baseline to day 84) and LDL cholesterol (up to a least-squares mean reduction of …\"}, {\"id\": \"88\", \"claim\": \"Study result for Inclisiran, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…acebo. Patients who consented to the PK substudy had additional study procedures for blood collection and safety assessment. RESULTS: Overall, 312 patients (mean age, 63.6 years; male, 74.4%; baseline LDL-C, 114.0 mg/dL) were randomized. Baseline characteristics were well balanced among the groups. At Day 180, inclisiran at all doses demonstrated significant LDL-C and proprotein convertase subtilisin/kexin type 9 (PCSK9) reductions (p＜0.0001 for both), which showed a dose-response relationship. The greatest reductions (LDL-C, 65.3%; PCSK9, 79.2%) were with inclisiran sodium 300 mg. At Day 180, ＞86% of the patients receiving inclisiran achieved the Japan Atherosclerosis Society 2017 lipid management targets compared to 8.9% fo…\"}, {\"id\": \"89\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…acebo. Patients who consented to the PK substudy had additional study procedures for blood collection and safety assessment. RESULTS: Overall, 312 patients (mean age, 63.6 years; male, 74.4%; baseline LDL-C, 114.0 mg/dL) were randomized. Baseline characteristics were well balanced among the groups. At Day 180, inclisiran at all doses demonstrated significant LDL-C and proprotein convertase subtilisin/kexin type 9 (PCSK9) reductions (p＜0.0001 for both), which showed a dose-response relationship. The greatest reductions (LDL-C, 65.3%; PCSK9, 79.2%) were with inclisiran sodium 300 mg. At Day 180, ＞86% of the patients receiving inclisiran achieved the Japan Atherosclerosis Society 2017 lipid management targets compared to 8.9% fo…\"}, {\"id\": \"90\", \"claim\": \"Study result for Inclisiran, in people: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"…for both), which showed a dose-response relationship. The greatest reductions (LDL-C, 65.3%; PCSK9, 79.2%) were with inclisiran sodium 300 mg. At Day 180, ＞86% of the patients receiving inclisiran achieved the Japan Atherosclerosis Society 2017 lipid management targets compared to 8.9% for placebo. The mean (SD) plasma half-life for inclisiran was 6.8 (2.0)-7.6 (0.8) h. The incidence of adverse events with inclisiran was similar to that with placebo. CONCLUSION: Inclisiran sodium 100, 200, and 300 mg demonstrated clinically meaningful and statistically significant LDL-C and PCSK9 reductions at Day 180, which were consistent over 12 months. Inclisiran was effectiv…\"}, {\"id\": \"91\", \"claim\": \"Study result for Inclisiran, in animals: drug exposure at the site of action (pharmacokinetics, tissue or CSF levels) was shown.\", \"quote\": \"… of [14C]-inclisiran was administered to 12 male cynomolgus monkeys. Plasma concentrations and tissue binding parameters for inclisiran were assessed up to 42 days after injection using liquid scintillation of blood samples and tissue homogenates, as well as quantitative whole-body autoradiography. Radioactivity was highest in the liver at all time points from 24 h onward and remained elevated throughout the entire study period. Radioactivity was also detected in the kidneys and bladder wall, returning to low levels by 24 h. The concentration of radioactivity in the liver (402.97 μg equivalent/g) was 15.7-fold higher than in the kidneys (25.70 μg equivalent/g). Very low amounts of radioactivity were detected in all other t…\"}, {\"id\": \"93\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…ty of inclisiran. Of 3274 patients, 2446 (74.7%) were followed until end-of-study. Mean age was 64.9 ± 9.9 years, 82.7% (n = 2709) had ASCVD, and mean baseline LDL-C was 2.9 ± 1.2 mmol/L. Mean cumulative exposure to inclisiran (including parent trials) was 3.7 years; maximum exposure was 6.8 years. With inclisiran, 78.4% [95% confidence interval (CI): 76.8, 80.0] of patients achieved pre-specified LDL-C goals and mean percentage change in LDL-C was -49.4% (95% CI: -50.4, -48.3). No attenuation of LDL-C lowering over time was observed. Treatment-emergent adverse events at injection site (all mild/moderate) occurred in 5.9% of the patients. Inclisiran-associated anti-drug antibodies were infrequent (5.5%)…\"}, {\"id\": \"94\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…7% (n = 2709) had ASCVD, and mean baseline LDL-C was 2.9 ± 1.2 mmol/L. Mean cumulative exposure to inclisiran (including parent trials) was 3.7 years; maximum exposure was 6.8 years. With inclisiran, 78.4% [95% confidence interval (CI): 76.8, 80.0] of patients achieved pre-specified LDL-C goals and mean percentage change in LDL-C was -49.4% (95% CI: -50.4, -48.3). No attenuation of LDL-C lowering over time was observed. Treatment-emergent adverse events at injection site (all mild/moderate) occurred in 5.9% of the patients. Inclisiran-associated anti-drug antibodies were infrequent (5.5%) and had no impact on the efficacy or safety of inclisiran. No new safe…\"}, {\"id\": \"95\", \"claim\": \"Study result for Inclisiran, in people: target engagement (the drug binds, blocks or lowers its target) was shown.\", \"quote\": \"…nd an increased risk of premature atherosclerotic cardiovascular disease. Monoclonal antibodies directed against proprotein convertase subtilisin-kexin type 9 (PCSK9) have been shown to reduce LDL cholesterol levels by more than 50% but require administration every 2 to 4 weeks. In a phase 2 trial, a twice-yearly injection of inclisiran, a small interfering RNA, was shown to inhibit hepatic synthesis of PCSK9 in adults with heterozygous familial hypercholesterolemia. METHODS: In this phase 3, double-blind trial, we randomly assigned, in a 1:1 ratio, 482 adults who had heterozygous familial hypercholesterolemia to receive subcutaneous injections of inclisiran sodium (at a dose of 300 mg) or matching placebo on days 1, 90, 270, and 450. The two primary end points…\"}, {\"id\": \"96\", \"claim\": \"Study result for Inclisiran, in people: a pharmacodynamic response (a downstream biomarker changes) was shown.\", \"quote\": \"…m baseline in the LDL cholesterol level on day 510 and the time-adjusted percent change from baseline in the LDL cholesterol level between day 90 and day 540. RESULTS: The median age of the patients was 56 years, and 47% were men; the mean baseline level of LDL cholesterol was 153 mg per deciliter. At day 510, the percent change in the LDL cholesterol level was a reduction of 39.7% (95% confidence interval [CI], -43.7 to -35.7) in the inclisiran group and an increase of 8.2% (95% CI, 4.3 to 12.2) in the placebo group, for a between-group difference of -47.9 percentage points (95% CI, -53.5 to -42.3; P<0.001). The time-averaged percent change in the LDL cholesterol level between day 90 and day 540 was a reduction of 38.1% (95% CI, -41.1 to -35.1)…\"}]",
+ "answer": {
+  "items": [
+   {
+    "id": "84",
+    "supports": true
+   },
+   {
+    "id": "85",
+    "supports": true
+   },
+   {
+    "id": "86",
+    "supports": true
+   },
+   {
+    "id": "87",
+    "supports": true
+   },
+   {
+    "id": "88",
+    "supports": true
+   },
+   {
+    "id": "89",
+    "supports": true
+   },
+   {
+    "id": "90",
+    "supports": true
+   },
+   {
+    "id": "91",
+    "supports": true
+   },
+   {
+    "id": "93",
+    "supports": true
+   },
+   {
+    "id": "94",
+    "supports": true
+   },
+   {
+    "id": "95",
+    "supports": true
+   },
+   {
+    "id": "96",
+    "supports": true
+   }
+  ]
+ }
+}

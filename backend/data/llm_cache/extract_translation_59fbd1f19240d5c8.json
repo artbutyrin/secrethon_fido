@@ -1,0 +1,132 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3769,
+  "output_tokens": 2007,
+  "latency_ms": 12912,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"coronary artery disorder\", \"target\": \"CETP\", \"drugs\": [\"ANACETRAPIB\", \"DALCETRAPIB\", \"EVACETRAPIB\", \"OBICETRAPIB\", \"ROCACETRAPIB\", \"TORCETRAPIB\"], \"documents\": [{\"id\": \"pmid:34910136\", \"about_drug\": \"ANACETRAPIB\", \"text\": \"Long-term safety and efficacy of anacetrapib in patients with atherosclerotic vascular disease.. AIMS: REVEAL was the first randomized controlled trial to demonstrate that adding cholesteryl ester transfer protein inhibitor therapy to intensive statin therapy reduced the risk of major coronary events. We now report results from extended follow-up beyond the scheduled study treatment period. METHODS AND RESULTS: A total of 30 449 adults with prior atherosclerotic vascular disease were randomly allocated to anacetrapib 100 mg daily or matching placebo, in addition to open-label atorvastatin therapy. After stopping the randomly allocated treatment, 26 129 survivors entered a post-trial follow-up period, blind to their original treatment allocation. The primary outcome was first post-randomization major coronary event (i.e. coronary death, myocardial infarction, or coronary revascularization) during the in-trial and post-trial treatment periods, with analysis by intention-to-treat. Allocation to anacetrapib conferred a 9% [95% confidence interval (CI) 3-15%; P = 0.004] proportional reduction in the incidence of major coronary events during the study treatment period (median 4.1 years). During extended follow-up (median 2.2 years), there was a further 20% (95% CI 10-29%; P < 0.001) reduction. Overall, there was a 12% (95% CI 7-17%, P < 0.001) proportional reduction in major coronary events during the overall follow-up period (median 6.3 years), corresponding to a 1.8% (95% CI 1.0-2.6%) absolute reduction. There were no significant effects on non-vascular mortality, site-specific cancer, or other serious adverse events. Morbidity follow-up was obtained for 25 784 (99%) participants. CONCLUSION: The beneficial effects of anacetrapib on major coronary events increased with longer follow-up, and no adverse effects emerged on non-vascular mortality or morbidity. These findings illustrate the importance of sufficiently long treatment and follow-up duration in randomized trials of lipid-modifying agents to assess their full benefits and potential harms. TRIAL REGISTRATION: International Standard Randomized Controlled Trial Number (ISRCTN) 48678192; ClinicalTrials.gov No. NCT01252953; EudraCT No. 2010-023467-18.\"}, {\"id\": \"pmid:23172660\", \"about_drug\": \"ANACETRAPIB\", \"text\": \"Measurement of LDL-C after treatment with the CETP inhibitor anacetrapib.. Estimation of low-density lipoprotein cholesterol (LDL-C) using the Friedewald (FR) formula is often inaccurate when triglycerides are elevated or VLDL particle composition is altered. We hypothesized that LDL-C estimation by the FR formula and other measurement methods might also be inaccurate in individuals treated with a cholesteryl ester transfer protein (CETP) inhibitor. An assay comparison study was conducted using pre and posttreatment serum samples from 280 of the 811 patients treated with the CETP inhibitor anacetrapib in the DEFINE study (determining the efficacy and tolerability of CETP inhibition with anacetrapib). After 24 weeks of treatment with anacetrapib, mean LDL-C values by FR formula, Roche direct method (RDM) and Genzyme direct method (GDM) deviated from that measured by the β-quantification (BQ) reference method by -12.2 ± 7.5, -10.2 ± 6.6, -10.8 ± 8.8 mg/dl, respectively. After treatment with anacetrapib, the FR formula and detergent-based direct methods provided lower LDL-C values than those obtained by the BQ reference method. The bias by the FR formula appeared to be due to an overestimation of VLDL-C by the TG/5 component of the formula. Evaluation of the clinical significance of these findings awaits comprehensive lipid and cardiovascular outcome data from ongoing Phase III clinical studies of anacetrapib.\"}, {\"id\": \"pmid:30567880\", \"about_drug\": \"ANACETRAPIB\", \"text\": \"Characterization of Anacetrapib Distribution into the Lipid Droplet of Adipose Tissue in Mice and Human Cultured Adipocytes.. Anacetrapib is an inhibitor of cholesteryl ester transfer protein (CETP), associated with reduction in LDL cholesterol and increase in HDL cholesterol in hypercholesterolemic patients. Anacetrapib was not taken forward into filing/registration as a new drug for coronary artery diease, despite the observation of a ∼9% reduction in cardiovascular risk in a large phase III cardiovascular outcomes trial (REVEAL). Anacetrapib displayed no adverse effects throughout extensive preclinical safety evaluation, and no major safety signals were observed in clinical trials studying anacetrapib, including REVEAL. However, anacetrapib demonstrated a long terminal half-life in all species, thought to be due, in part, to distribution into adipose tissue. We sought to understand the dependence of anacetrapib's long half-life on adipose tissue and to explore potential mechanisms that might contribute to the phenomenon. In mice, anacetrapib localized primarily to the lipid droplet of adipocytes in white adipose tissue; in vitro, anacetrapib entry into cultured human adipocytes depended on the presence of a mature adipocyte and lipid droplet but did not require active transport. In vivo, the entry of anacetrapib into adipose tissue did not require lipase activity, as the distribution of anacetrapib into adipose was-not affected by systemic lipase inhibition using poloaxamer-407, a systemic lipase inhibitor. The data from these studies support the notion that the entry of anacetrapib into adipose tissue/lipid droplets does not require active transport, nor does it require mobilization or entry of fat into adipose via lipolysis.\"}, {\"id\": \"pmid:21175438\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"Lack of clinically relevant drug-drug interactions when dalcetrapib is co-administered with ezetimibe.. AIMS: Dalcetrapib, which targets cholesteryl ester transfer protein activity, is in development for prevention of cardiovascular events. Because dalcetrapib will likely be prescribed with other lipid-modifying therapies such as ezetimibe, a study was performed to investigate potential pharmacokinetic interactions between dalcetrapib and ezetimibe. Lipids changes and tolerability were secondary endpoints. METHODS: Co-administration of dalcetrapib 900 mg (higher than the phase III dose) with ezetimibe was investigated in a three period, three treatment crossover study in healthy males: 7 days of dalcetrapib, 7 days of dalcetrapib plus ezetimibe, 7 days of ezetimibe alone. A full pharmacokinetic profile was performed on day 7 of each treatment. RESULTS: Co-administration of dalcetrapib with ezetimibe was associated with minimal changes in dalcetrapib exposure compared with dalcetrapib alone. Least squares mean ratio (LSMR) (90% confidence interval) was 93.6 (87.1, 100.7) for AUC(0,24 h) and 99.0 (85.2, 115.0) for C(max) . Ezetimibe exposure was reduced with co-administration of ezetimibe with dalcetrapib compared with ezetimibe alone: LSMR 80.3 (74.6, 86.4) for AUC(0,24 h) and 88.9 (80.9, 99.9) for C(max) for total ezetimibe. High-density lipoprotein cholesterol increases associated with co-administration of dalcetrapib with ezetimibe (+29.8%) were comparable with those with dalcetrapib alone (+25.6%), while the reduction in low-density lipoprotein cholesterol with co-administration (-35.9%) was greater than with ezetimibe alone (-20.9%). Dalcetrapib was generally well tolerated when administered alone and when co-administered with ezetimibe. CONCLUSION: Co-administration of dalcetrapib with ezetimibe was not associated with clinically significant changes in pharmacokinetic parameters or tolerability and did not diminish the lipid effects of either drug.\"}, {\"id\": \"pmid:19245299\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"In vitro and in vivo assessment of the effect of dalcetrapib on a panel of CYP substrates.. OBJECTIVE: The primary objective of this study was to investigate the drug-drug interaction potential of dalcetrapib on drugs metabolized via major cytochrome P450 (CYP) isoforms using both in vitro and clinical approaches. A secondary objective was to investigate the safety and tolerability of dalcetrapib alone or co-administered either with a combination of five probe drugs or with rosiglitazone. RESEARCH DESIGN AND METHODS: Human liver microsomes and a panel of substrates for CYP enzymes were used to determine IC(50) for inhibition of CYP1A2, CYP2C8, CYP2C9, CYP2C19, CYP2D6, and CYP3A4. In addition, two drug-drug interaction studies were conducted in healthy males: dalcetrapib 900 mg plus the Cooperstown 5 + 1 drug cocktail, which includes substrates for CYP1A2, CYP2C9, CYP2C19, CYP2D6, and CYP3A4, and dalcetrapib 900 mg plus rosiglitazone, a substrate for CYP2C8. Pharmacokinetic and safety parameters were assessed. RESULTS: In vitro, dalcetrapib was inhibitory to all CYP enzymes tested. IC(50) values ranged from 1.5 +/- 0.1 microM for CYP2C8 to 82 +/- 4 microM for CYP2D6. Co-administration of dalcetrapib plus drug cocktail showed no clinically relevant effect of 900 mg dalcetrapib on activity of CYP1A2, CYP2C19, CYP2D6, CYP2C9, or CYP3A4 following repeated administration. Co-administration of dalcetrapib plus rosiglitazone showed no clinically relevant effect of dalcetrapib 900 mg on activity of CYP2C8. Dalcetrapib was generally well tolerated. CONCLUSIONS: Although in vitro studies indicated that dalcetrapib inhibits CYP activity, two clinical studies showed no clinically relevant effect on any of the major CYP isoforms at a 900 mg dose, which is higher than the 600 mg dose being explored in phase III studies. Dalcetrapib was generally well tolerated in these studies. However, these studies were limited to a small number of healthy males; additional, larger studies are necessary to study its safety.\"}, {\"id\": \"pmid:21704240\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"Effects of food intake on the pharmacokinetic properties of dalcetrapib: findings from three phase I, single-dose crossover studies in healthy volunteers.. BACKGROUND: Preclinical studies have reported that the relative bioavailability of dalcetrapib, a modulator of cholesteryl ester transfer protein (CETP) inhibitor activity, was ∼60% higher when administered in the fed state compared with the fasting state. OBJECTIVE: This article reports on 3 studies conducted to assess the effects of food intake, timing of administration with respect to meals, and meal size and content on the relative bioavailability of dalcetrapib in healthy male subjects. METHODS: Three Phase I studies were performed in healthy subjects: (1) a 2-period crossover study of a single dose of dalcetrapib 900 mg administered in the fed and fasting states (fed versus fasting study [1999]); (2) a 3-period crossover study of a single dose of dalcetrapib 600 mg administered after a light morning meal, a standard evening meal, and a light evening meal (meal timing/size study [2005]); and (3) a 4-period crossover study of a single dose of dalcetrapib 600 mg administered 30 minutes after a high-fat meal or a standard evening meal, and 30 minutes before or 3 hours after the latter (high-fat meal study [2007]). Blood samples for pharmacokinetic analyses (AUC(0-36) or AUC(0-∞), C(max)) were collected up to 36, 144, and 96 hours after study drug administration in the fed versus fasting, meal timing/size, and high-fat meal studies, respectively. CETP activity was measured using a radioisotopic method in the fed versus fasting study and a fluorometric method in the meal timing/size and high-fat meal studies. Tolerability was assessed using monitoring of adverse events, laboratory parameters, vital signs, and ECG. RESULTS: Six men were enrolled in the fed versus fasting study (mean age, 37 years; mean body mass index [BMI], 23.6 kg/m(2)). Dalcetrapib exposure was increased by 64% (AUC(0-36)) and 126% (C(max)) after administration in the fed state. Eighteen men were enrolled in the analysis of the effects of meal timing and size on the properties of dalcetrapib (mean age, 30.5 years; mean BMI, 25.1 kg/m(2)). When dalcetrapib was administered after a light morning or a light evening meal, comparable values were found for mean dalcetrapib AUC(0-∞) (7400 and 7860 ng·h/mL, respectively) and C(max) (589 and 552 ng/mL), whereas administration after a standard evening meal was associated with increased AUC(0-∞) (14.3%-14.7%) and C(max) (25.5%-35.3%). Forty-nine men were included in the analysis in the high-fat meal study (mean age, 32.3 years; mean BMI, 23.9 kg/m(2)). Compared with administration after a standard evening meal, administration after a high-fat evening meal was associated with increased AUC(0-∞) (34.9%) and C(max) (43.7%). Between-treatment differences in exposure within each study also were reflected in apparent differences in CETP activity. All treatments were generally well tolerated. CONCLUSIONS: Dalcetrapib exposure was increased in the fed state and, to a lesser extent, was dependent on the size and fat content of the meal. Exposure was independent of dosing time. Dalcetrapib was generally well tolerated.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:34910136",
+    "findings": [
+     {
+      "drug": "ANACETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Allocation to anacetrapib conferred a 9% [95% confidence interval (CI) 3-15%; P = 0.004] proportional reduction in the incidence of major coronary events during the study treatment period"
+     },
+     {
+      "drug": "ANACETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "During extended follow-up (median 2.2 years), there was a further 20% (95% CI 10-29%; P < 0.001) reduction."
+     },
+     {
+      "drug": "ANACETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Overall, there was a 12% (95% CI 7-17%, P < 0.001) proportional reduction in major coronary events during the overall follow-up period"
+     }
+    ]
+   },
+   {
+    "id": "pmid:23172660",
+    "findings": []
+   },
+   {
+    "id": "pmid:30567880",
+    "findings": [
+     {
+      "drug": "ANACETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": false,
+      "quote": "In mice, anacetrapib localized primarily to the lipid droplet of adipocytes in white adipose tissue"
+     },
+     {
+      "drug": "ANACETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": false,
+      "quote": "in vitro, anacetrapib entry into cultured human adipocytes depended on the presence of a mature adipocyte and lipid droplet but did not require active transport."
+     }
+    ]
+   },
+   {
+    "id": "pmid:21175438",
+    "findings": [
+     {
+      "drug": "DALCETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Co-administration of dalcetrapib with ezetimibe was associated with minimal changes in dalcetrapib exposure compared with dalcetrapib alone."
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "High-density lipoprotein cholesterol increases associated with co-administration of dalcetrapib with ezetimibe (+29.8%) were comparable with those with dalcetrapib alone (+25.6%)"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "the reduction in low-density lipoprotein cholesterol with co-administration (-35.9%) was greater than with ezetimibe alone (-20.9%)."
+     }
+    ]
+   },
+   {
+    "id": "pmid:19245299",
+    "findings": []
+   },
+   {
+    "id": "pmid:21704240",
+    "findings": [
+     {
+      "drug": "DALCETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Dalcetrapib exposure was increased by 64% (AUC(0-36)) and 126% (C(max)) after administration in the fed state."
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Compared with administration after a standard evening meal, administration after a high-fat evening meal was associated with increased AUC(0-∞) (34.9%) and C(max) (43.7%)."
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Between-treatment differences in exposure within each study also were reflected in apparent differences in CETP activity."
+     }
+    ]
+   }
+  ]
+ }
+}

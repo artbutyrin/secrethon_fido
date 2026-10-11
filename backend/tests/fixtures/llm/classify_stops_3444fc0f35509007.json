@@ -1,0 +1,253 @@
+{
+ "task": "classify_stops",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1208,
+  "output_tokens": 891,
+  "latency_ms": 4738,
+  "json_mode": "json_schema"
+ },
+ "system": "You classify why clinical trials stopped. For each trial you get its ID and the sponsor's stated reason.\nGive one or more labels, each with a short quote copied word for word from the reason that supports it.\nLabels:\n- efficacy: futility, lack or absence of efficacy, primary endpoint not met or unlikely to be met, negative results.\n- safety: adverse events, toxicity, a safety signal, a benefit-risk change caused by side effects.\n- enrollment: slow, poor or insufficient recruitment or accrual.\n- business: sponsor's business, strategic or portfolio decision, development discontinued without a stated\n  scientific reason, company closure or acquisition.\n- funding: lack or withdrawal of funding.\n- other: anything else that is stated (COVID-19, logistics, investigator left, design or protocol change,\n  regulatory feedback, another study answered the question).\n- unknown: no reason is given, or the text only says who decided (for example \"on the advice of the DSMB\").\nRules: use only what the text says; do not infer from the drug or the disease. A trial stopped because another\ntrial of the same drug was stopped for futility is efficacy. If both efficacy and safety are stated, give both.\nThe quote must be an exact substring of the reason, at most 20 words. Return every trial you were given.",
+ "user": "[{\"nct\": \"NCT90000001\", \"reason\": \"Study terminated due to futility at the planned interim analysis.\"}, {\"nct\": \"NCT90000002\", \"reason\": \"Study termination due to insufficient efficacy.\"}, {\"nct\": \"NCT90000003\", \"reason\": \"This study was terminated due to lack of efficacy.\"}, {\"nct\": \"NCT90000004\", \"reason\": \"Terminated due to slow recruitment.\"}, {\"nct\": \"NCT90000005\", \"reason\": \"poor recruitment\"}, {\"nct\": \"NCT90000006\", \"reason\": \"Loss of study funding\"}, {\"nct\": \"NCT90000007\", \"reason\": \"Extreme toxicity of Pertuzumab and Erlotinib combination\"}, {\"nct\": \"NCT90000008\", \"reason\": \"Due to internal reprioritization, trial was cancelled.\"}, {\"nct\": \"NCT90000009\", \"reason\": \"Original principal investigator left institution\"}, {\"nct\": \"NCT90000010\", \"reason\": \"Elevated liver enzymes were observed in several participants.\"}, {\"nct\": \"NCT90000011\", \"reason\": \"Dosing of both study drugs has been discontinued due to observation of liver transaminitis without clinically significant symptoms in some subjects receiving azelaprag. All participant visits have been completed.\"}, {\"nct\": \"NCT90000012\", \"reason\": \"Due to a pre-specified imbalance of deaths between treatment groups, the DSMB recommended early termination of the trial\"}, {\"nct\": \"NCT90000013\", \"reason\": \"The results of the dose escalation phase did not identify a well-tolerated dose that would permit further study in Phase 2.\"}, {\"nct\": \"NCT90000014\", \"reason\": \"Not due to safety but due to a lack of efficacy at the 5 mg azeliragon dose.\"}, {\"nct\": \"NCT90000015\", \"reason\": \"Slow recruitment. No safety concerns during this study.\"}, {\"nct\": \"NCT90000016\", \"reason\": \"This study was closed due to business reasons. Closure was not prompted by any safety or efficacy concerns.\"}, {\"nct\": \"NCT90000017\", \"reason\": \"The termination was result of GSK business considerations and not due to quality, safety or efficacy concerns with any albiglutide formulations or study conduct\"}, {\"nct\": \"NCT90000018\", \"reason\": \"Business decision, not driven by safety concerns; no new safety signals have been observed in the ociperlimab program.\"}, {\"nct\": \"NCT90000019\", \"reason\": \"The sister study was stopped for futility; this study was stopped as a consequence.\"}, {\"nct\": \"NCT90000020\", \"reason\": \"Terminated early because similar study with Ataluren (PTC124-GD-007-DMD; NCT00592553) exhibited lack of efficacy at the high dose (not due to safety concerns).\"}, {\"nct\": \"NCT90000021\", \"reason\": \"The futility analysis of study NCT00910091 in patients with endometrial cancer shows that the primary endpoint will not be reached.\"}, {\"nct\": \"NCT90000022\", \"reason\": \"The DMC recommended the trial be discontinued due to futility following a planned second interim analysis of the parent trial (CY 5031).\"}, {\"nct\": \"NCT90000023\", \"reason\": \"Lack of efficacy and an unfavourable benefit-risk balance due to adverse events.\"}, {\"nct\": \"NCT90000024\", \"reason\": \"Toxicity and Lack of Efficacy\"}, {\"nct\": \"NCT90000025\", \"reason\": \"A planed interim analysis shows no benefits, but higher adverse event rates for the experimental arm.\"}]",
+ "answer": {
+  "trials": [
+   {
+    "nct": "NCT90000001",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "futility at the planned interim analysis"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000002",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "insufficient efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000003",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "lack of efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000004",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "slow recruitment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000005",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "poor recruitment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000006",
+    "labels": [
+     {
+      "label": "funding",
+      "quote": "Loss of study funding"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000007",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "Extreme toxicity"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000008",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "internal reprioritization"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000009",
+    "labels": [
+     {
+      "label": "other",
+      "quote": "principal investigator left institution"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000010",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "Elevated liver enzymes were observed"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000011",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "observation of liver transaminitis"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000012",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "imbalance of deaths between treatment groups"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000013",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "did not identify a well-tolerated dose"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000014",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "lack of efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000015",
+    "labels": [
+     {
+      "label": "enrollment",
+      "quote": "Slow recruitment"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000016",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "business reasons"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000017",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "GSK business considerations"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000018",
+    "labels": [
+     {
+      "label": "business",
+      "quote": "Business decision"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000019",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "sister study was stopped for futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000020",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "exhibited lack of efficacy at the high dose"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000021",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "primary endpoint will not be reached"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000022",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "discontinued due to futility"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000023",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "Lack of efficacy"
+     },
+     {
+      "label": "safety",
+      "quote": "adverse events"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000024",
+    "labels": [
+     {
+      "label": "safety",
+      "quote": "Toxicity"
+     },
+     {
+      "label": "efficacy",
+      "quote": "Lack of Efficacy"
+     }
+    ]
+   },
+   {
+    "nct": "NCT90000025",
+    "labels": [
+     {
+      "label": "efficacy",
+      "quote": "no benefits"
+     },
+     {
+      "label": "safety",
+      "quote": "higher adverse event rates"
+     }
+    ]
+   }
+  ]
+ }
+}

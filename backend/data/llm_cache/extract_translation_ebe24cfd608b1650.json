@@ -1,0 +1,61 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 1694,
+  "output_tokens": 2517,
+  "latency_ms": 17917,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"Huntington disease\", \"target\": \"HTT\", \"drugs\": [\"TOMINERSEN\"], \"documents\": [{\"id\": \"pmid:32675242\", \"about_drug\": \"TARGET\", \"text\": \"Site-specific ubiquitination of pathogenic huntingtin attenuates its deleterious effects.. Huntington's disease (HD) is a progressive incurable neurodegenerative disorder characterized by motor and neuropsychiatric symptoms. It is caused by expansion of a cytosine-adenine-guanine triplet in the N-terminal domain of exon 1 in the huntingtin (HTT) gene that codes for an expanded polyglutamine stretch in the protein product which becomes aggregation prone. The mutant Htt (mHtt) aggregates are associated with components of the ubiquitin-proteasome system, suggesting that mHtt is marked for proteasomal degradation and that, for reasons still debated, are not properly degraded. We used a novel HD rat model, proteomic analysis, and long-term live neuronal imaging to characterize the effects of ubiquitination on aggregation of mHtt and subsequent cellular responses. We identified two lysine residues, 6 and 9, in the first exon of mHtt that are specifically ubiquitinated in striatal and cortical brain tissues of mHtt-transgenic animals. Expression of mHtt exon 1 lacking these ubiquitination sites in cortical neurons and cultured cells was found to slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones. Importantly, expression of this form of mHtt was associated with elevated death rates. Proteomic analysis indicated that cellular reactions to mHtt expression were weaker in cells expressing the lysineless protein, possibly implying a reduced capacity to cope with the proteotoxic stress. Taken together, the findings suggest a novel role for ubiquitination-attenuation of the pathogenic effect of mHtt.\"}, {\"id\": \"pmid:41092345\", \"about_drug\": \"TARGET\", \"text\": \"Genetic dissection of Huntington's disease modification by variation at RRM2B.. Huntington's disease (HD) is driven by somatic expansion of the HTT CAG repeat, with onset modified by genetic factors. One such modifier, 8AM1, maps to chromosome 8 near RRM2B, a gene not directly involved in the machinery that lengthens the repeat. To investigate this locus, we performed capture sequencing and identified variants at both the 5' and 3' ends of RRM2B with expected minor allele frequencies. A polymorphic frameshift variant (rs1037699) in an alternate exon 1 disrupts expression of a previously uncharacterized RRM2B isoform 2, but not isoform 1. Functional analyses in RRM2B knock-out cells and 8AM1 heterozygous LCLs suggest that isoform 2 may function at mitochondria. Several 3' variants, including a 21 bp 3'UTR deletion (rs200678743) and peak tag-SNV (rs79136984), act as cis expression quantitative trait loci. Analysis of HD onset data (n = 12,982) revealed that 5' and 3' variants contribute independently to the 8AM1 modifier effect, with full impact observed only in the absence of the frameshift variant. Knockdown of both isoforms increased neurodegeneration in HD neurons derived from pre-symptomatic patient fibroblasts, supporting an intersection of RRM2B biology and HD pathogenesis. We conclude that the 8AM1 haplotype, present in ~ 14% of Europeans, modifies RRM2B expression in a cell- and context-dependent manner, thereby accelerating HD onset in mutation carriers.\"}, {\"id\": \"pmid:39937881\", \"about_drug\": \"TARGET\", \"text\": \"Antisense oligonucleotide-mediated MSH3 suppression reduces somatic CAG repeat expansion in Huntington's disease iPSC-derived striatal neurons.. Expanded CAG alleles in the huntingtin (HTT) gene that cause the neurodegenerative disorder Huntington's disease (HD) are genetically unstable and continue to expand somatically throughout life, driving HD onset and progression. MSH3, a DNA mismatch repair protein, modifies HD onset and progression by driving this somatic CAG repeat expansion process. MSH3 is relatively tolerant of loss-of-function variation in humans, making it a potential therapeutic target. Here, we show that an MSH3-targeting antisense oligonucleotide (ASO) effectively engaged with its RNA target in induced pluripotent stem cell (iPSC)-derived striatal neurons obtained from a patient with HD carrying 125 HTT CAG repeats (the 125 CAG iPSC line). ASO treatment led to a dose-dependent reduction of MSH3 and subsequent stalling of CAG repeat expansion in these striatal neurons. Bulk RNA sequencing revealed a safe profile for MSH3 reduction, even when reduced by >95%. Maximal knockdown of MSH3 also effectively slowed CAG repeat expansion in striatal neurons with an otherwise accelerated expansion rate, derived from the 125 CAG iPSC line where FAN1 was knocked out by CRISPR-Cas9 editing. Last, we created a knock-in mouse model expressing the human MSH3 gene and demonstrated effective in vivo reduction in human MSH3 after ASO treatment. Our study shows that ASO-mediated MSH3 reduction can prevent HTT CAG repeat expansion in HD 125 CAG iPSC-derived striatal neurons, highlighting the therapeutic potential of this approach.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:32675242",
+    "findings": [
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "animal",
+      "in_disease": true,
+      "quote": "two lysine residues, 6 and 9, in the first exon of mHtt that are specifically ubiquitinated in striatal and cortical brain tissues of mHtt-transgenic animals"
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": true,
+      "quote": "slow aggregate appearance rates and reduce their size but at the same time increase the number of much smaller and less visible ones"
+     },
+     {
+      "drug": "TARGET",
+      "link": "animal_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": true,
+      "quote": "expression of this form of mHtt was associated with elevated death rates"
+     },
+     {
+      "drug": "TARGET",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "cell",
+      "in_disease": true,
+      "quote": "cellular reactions to mHtt expression were weaker in cells expressing the lysineless protein"
+     }
+    ]
+   },
+   {
+    "id": "pmid:41092345",
+    "findings": []
+   },
+   {
+    "id": "pmid:39937881",
+    "findings": []
+   }
+  ]
+ }
+}

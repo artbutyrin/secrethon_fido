@@ -1,0 +1,172 @@
+{
+ "task": "extract_translation",
+ "model": "gpt-6-luna",
+ "usage": {
+  "input_tokens": 3052,
+  "output_tokens": 2481,
+  "latency_ms": 15253,
+  "json_mode": "json_schema"
+ },
+ "system": "You read drug labels and paper abstracts for a biotech investment analysis and extract evidence for the\ntranslation chain of one mechanism. For every document list each finding:\n- drug: one of the given drug names, or TARGET when the finding is about the target itself (knockout, knockdown,\n  model organism) rather than a drug. Each document says which drug it is about (about_drug): a result in that\n  document that names no drug (\"in the 100 mg group\") is about that drug.\n- link: animal_response (effect in an animal or cell model of the disease), exposure (the drug reaches the site of\n  action: plasma, tissue or CSF levels, half-life), target_engagement (the drug binds, blocks or lowers its target, for\n  example receptor occupancy or lower target protein or mRNA), pd_response (a downstream biomarker changes),\n  clinical_benefit (a clinical endpoint in patients).\n- result: shown or not_shown. not_shown only when the text says it was looked for and not found or not met.\n- species: human, animal or cell.\n- in_disease: true if the finding is in the given disease.\n- quote: copied word for word from the document, at most 30 words, that states the finding.\nRules: a finding is a RESULT the document reports from a study (a measurement, a comparison with placebo or\nbaseline, an observed change, an endpoint met or missed). General statements about what a drug does, is designed to\ndo or \"plays a role in\" are not findings. Use only what the document says; do not use outside knowledge; do not count\nplanned or ongoing studies as results; skip findings about other drugs. Return every document id you were given, with an empty list if nothing.",
+ "user": "{\"disease\": \"coronary artery disorder\", \"target\": \"CETP\", \"drugs\": [\"ANACETRAPIB\", \"DALCETRAPIB\", \"EVACETRAPIB\", \"OBICETRAPIB\", \"ROCACETRAPIB\", \"TORCETRAPIB\"], \"documents\": [{\"id\": \"pmid:22456295\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"No clinically relevant drug-drug interactions when dalcetrapib is co-administered with a monophasic oral contraceptive (Microgynon® 30).. UNLABELLED: Dalcetrapib, a cholesteryl ester transfer protein modulator, under development to increase high-density lipoprotein cholesterol and potentially decrease cardiovascular risk, will potentially be co-prescribed to women on oral contraceptive (OC). OBJECTIVE: Assess the effect of dalcetrapib on the pharmacokinetics and ability to suppress ovulation of Microgynon® 30, a representative monophasic OC. MATERIALS AND METHODS: A single-center, randomized, open-label, two-period crossover study in healthy women receiving monophasic OC. Subjects received Microgynon® 30 (ethinylestradiol 0.03 mg/levonorgestrel 0.15 mg) once daily for 21 days followed by 7 treatment-free days (run-in period), then were randomized to Microgynon® 30 daily for 21 days with or without dalcetrapib 900 mg daily for Day 1 - 14. Plasma ethinylestradiol and levonorgestrel were measured on Day 14, and luteinizing hormone, follicle stimulating hormone, progesterone and estrogen from Day 11 - 14. The primary endpoint plasma exposure (AUC0-24 and Cmax) on Day 14 was evaluated for ethinylestradiol and levonorgestrel. Safety was monitored throughout. RESULTS: 30 subjects were randomized. The exposure of ethinylestradiol and levonorgestrel was similar when Microgynon® 30 was administered with or without dalcetrapib; for ethinylestradiol the geometric mean ratio %, (90% confidence interval (CI)) for AUC0-24 and Cmax were 92 (86 - 98) and 105 (95 - 115) and for levonorgestrel 92 (88 - 96) and 93 (87 - 99), respectively. Concentrations of luteinizing hormone, follicle stimulating hormone, estrogen and progesterone were comparable between treatments. CONCLUSIONS: Dalcetrapib has no clinically relevant effect on the pharmacokinetics of ethinylestradiol and levonorgestrel. Contraceptive efficacy of Microgynon® 30 is not anticipated to be compromised by co-administration of dalcetrapib.\"}, {\"id\": \"pmid:28126828\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"CETP: Pharmacogenomics-Based Response to the CETP Inhibitor Dalcetrapib.. High-density lipoproteins are involved in reverse cholesterol transport and possess anti-inflammatory and antioxidative properties. Paradoxically, CETP (cholesteryl ester transfer protein) inhibitors have been shown to increase inflammation as revealed by a raised plasma level of high-sensitivity C-reactive protein. CETP inhibitors did not improve clinical outcomes in large-scale clinical trials of unselected patients with coronary disease. Dalcetrapib is a CETP modulator for which effects on cardiovascular outcomes were demonstrated in the dal-OUTCOMES trial to be influenced by correlated polymorphisms in the ADCY9 (adenylate cyclase type 9) gene (P=2.4×10-8 for rs1967309). Patients with the AA genotype at rs1967309 had a relative reduction of 39% in the risk of presenting a cardiovascular event when treated with dalcetrapib compared with placebo (95% confidence interval, 0.41-0.92). In contrast, patients with the GG genotype had a 27% increase in risk, whereas heterozygotes (AG) presented a neutral result. Supporting evidence from the dal-PLAQUE-2 study using carotid ultrasonography revealed that the polymorphisms tested in the ADCY9 linkage disequilibrium block were associated with disease regression for patients with the protective genotype, progression for the harmful genotype, and no effect in heterozygotes (P≤0.05 and ≤0.01 for 10 and 3 polymorphisms, respectively) when comparing dalcetrapib to placebo. Strikingly concordant and significant genotype-dependent effects of dalcetrapib were also obtained for changes in high-sensitivity C-reactive protein and cholesterol efflux capacity. The Dal-GenE randomized trial is currently being conducted in patients with a recent acute coronary syndrome bearing the AA genotype at rs1967309 in the ADCY9 gene to confirm the effects of dalcetrapib on hard cardiovascular outcomes.\"}, {\"id\": \"pmid:32087417\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"Study design of Dal-GenE, a pharmacogenetic trial targeting reduction of cardiovascular events with dalcetrapib.. The objectives of precision medicine are to better match patient characteristics with the therapeutic intervention to optimize the chances of beneficial actions while reducing the exposure to unneeded adverse drug experiences. In a retrospective genome-wide association study of the overall neutral placebo-controlled dal-Outcomes trial, the effect of the cholesteryl ester transfer protein (CETP) modulator dalcetrapib on the composite of cardiovascular death, myocardial infarction or stroke was found to be influenced by a polymorphism in the adenylate cyclase type 9 (ADCY9) gene. Whereas patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib, those with the GG genotype had an increased rate and the heterozygous AG genotype exhibited no difference from placebo. Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings. In a separate, smaller, placebo-controlled trial, regression of ultrasonography-determined carotid intimal-medial thickness was only observed in dalcetrapib-treated patients with the AA genotype. Collectively, these observations led to the hypothesis that the cardiovascular effects of dalcetrapib may be pharmacogenetically determined, with a favorable benefit-risk ratio only for patients with this specific genotype. We describe below the design of dal-GenE, a precision medicine, placebo-controlled clinical outcome trial of dalcetrapib in patients with a recent acute myocardial infarction with the unique feature of selecting only those with the AA genotype at rs1967309 in the ADCY9 gene.\"}, {\"id\": \"pmid:26371722\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"Will personalized drugs for cardiovascular disease become an option? - Defining 'Evidence-based personalized medicine' for its implementation and future use.. It is generally accepted that the implementation of pharmacogenomics and, more broadly, personalized medicine will have to be 'evidence-based'. However, there is a lack of consensus on the level of evidence required to justify the use of pharmacogenomic testing in clinical practice. In the cardiovascular field, this lack of agreement has led to somewhat contradicting recommendations by different organizations regarding the clinical utility and use of pharmacogenomic tests or information. Here, we argue that randomized, controlled trials are paramount in order to enable and accelerate the widespread implementation of pharmacogenomics, not only to demonstrate the clinical efficacy and cost-effectiveness of such tests, but because such level of evidence is required to support the considerable changes associated with the implantation of pharmacogenomics in clinical practice.\"}, {\"id\": \"pmid:24639426\", \"about_drug\": \"DALCETRAPIB\", \"text\": \"The effect of cholesteryl ester transfer protein inhibition on lipids, lipoproteins, and markers of HDL function after an acute coronary syndrome: the dal-ACUTE randomized trial.. AIMS: The effects of cholesteryl ester transfer protein (CETP) inhibition on lipids, inflammation, and markers of high-density lipoprotein (HDL) function, following an acute coronary syndrome (ACS), are unknown. METHODS AND RESULTS: The dal-ACUTE study randomized 300 patients (1 : 1) to dalcetrapib 600 mg/day or placebo within 1 week of an ACS. The primary endpoint was per cent change in HDL-cholesterol (HDL-C) after 4 weeks. Secondary endpoints included apolipoprotein levels, markers of HDL function, and inflammation. Dalcetrapib treatment increased HDL-C and apolipoprotein A1 by 33.7 and 11.8%, respectively (both P < 0.001) and total cholesterol efflux by 9.5% (P = 0.003) after 4 weeks, principally via an increase in non-ATP-binding cassette transporter (ABC) A1-mediated efflux, without statistically significant changes in pre-β1-HDL levels. The increase in total efflux with dalcetrapib correlated most strongly with increases in apolipoprotein A1 and HDL-C (r = 0.46 and 0.43, respectively) rather than the increase in pre-β1-HDL (r = 0.32). Baseline and on-treatment ABCA1-mediated efflux correlated most strongly with pre-β1-HDL levels; in contrast, non-ABCA1-mediated efflux correlated better with apolipoprotein A1 and HDL-C levels. CONCLUSIONS: High-density lipoprotein raised through CETP inhibition with dalcetrapib improves cholesterol efflux, principally via a non-ABCA1-mediated pathway. While HDL-C was increased by one-third, apolipoprotein A1 and total efflux were increased only by one-tenth, supporting the concept of dissociation between improvements in HDL function and HDL-C levels, which may be of relevance to ongoing trials and the development of therapeutic interventions targeting HDL.\"}, {\"id\": \"pmid:24961753\", \"about_drug\": \"EVACETRAPIB\", \"text\": \"Effects of the cholesteryl ester transfer protein inhibitor evacetrapib on lipoproteins, apolipoproteins and 24-h ambulatory blood pressure in healthy adults.. OBJECTIVES: We investigated the safety, tolerability, pharmacokinetics and pharmacodynamics of evacetrapib. METHODS: Healthy volunteers received multiple daily doses of evacetrapib (10-600 mg) administered for up to 15 days in a placebo-controlled study. KEY FINDINGS: Mean peak plasma concentrations of evacetrapib occurred at 4-6 h and terminal half-life ranged 24-44 h. Steady state was achieved at approximately 10 days; all subjects had undetectable levels of evacetrapib 3 weeks after their last dose. The trough inhibition of cholesteryl ester transfer protein (CETP) activity was 65 and 84% at 100 and 300 mg, respectively. At the highest dose (600 mg), evacetrapib significantly inhibited CETP activity (91%), increased HDL-C (87%) and apo AI (42%), and decreased LDL-C (29%) and apo B (26%) relative to placebo. For the highest dose tested, levels of evacetrapib, CETP activity, CETP mass, HDL-C and LDL-C returned to levels at or near baseline after a 2-week washout period. Evacetrapib at the highest dose tested did not produce any significant effect on 24-h ambulatory systolic or diastolic blood pressure. CONCLUSIONS: Multiple doses of evacetrapib potently inhibited CETP activity, leading to substantial elevations in HDL-C and lowering of LDL-C. Evacetrapib was devoid of clinically relevant effects on blood pressure and mineralocorticoid levels.\"}]}",
+ "answer": {
+  "documents": [
+   {
+    "id": "pmid:22456295",
+    "findings": []
+   },
+   {
+    "id": "pmid:28126828",
+    "findings": [
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Patients with the AA genotype at rs1967309 had a relative reduction of 39% in the risk of presenting a cardiovascular event when treated with dalcetrapib compared with placebo"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "patients with the GG genotype had a 27% increase in risk"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "heterozygotes (AG) presented a neutral result"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "polymorphisms tested in the ADCY9 linkage disequilibrium block were associated with disease regression for patients with the protective genotype, progression for the harmful genotype, and no effect in heterozygotes"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "significant genotype-dependent effects of dalcetrapib were also obtained for changes in high-sensitivity C-reactive protein and cholesterol efflux capacity"
+     }
+    ]
+   },
+   {
+    "id": "pmid:32087417",
+    "findings": [
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "patients with the AA genotype at position rs1967309 experienced fewer cardiovascular events with dalcetrapib"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "those with the GG genotype had an increased rate"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "clinical_benefit",
+      "result": "not_shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "the heterozygous AG genotype exhibited no difference from placebo"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Measurements of cholesterol efflux and C-reactive protein (CRP) offered directionally supportive genotype-specific findings."
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "regression of ultrasonography-determined carotid intimal-medial thickness was only observed in dalcetrapib-treated patients with the AA genotype"
+     }
+    ]
+   },
+   {
+    "id": "pmid:26371722",
+    "findings": []
+   },
+   {
+    "id": "pmid:24639426",
+    "findings": [
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "Dalcetrapib treatment increased HDL-C and apolipoprotein A1 by 33.7 and 11.8%, respectively (both P < 0.001)"
+     },
+     {
+      "drug": "DALCETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": true,
+      "quote": "total cholesterol efflux by 9.5% (P = 0.003) after 4 weeks"
+     }
+    ]
+   },
+   {
+    "id": "pmid:24961753",
+    "findings": [
+     {
+      "drug": "EVACETRAPIB",
+      "link": "exposure",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "Mean peak plasma concentrations of evacetrapib occurred at 4-6 h and terminal half-life ranged 24-44 h."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "The trough inhibition of cholesteryl ester transfer protein (CETP) activity was 65 and 84% at 100 and 300 mg, respectively."
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "target_engagement",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "At the highest dose (600 mg), evacetrapib significantly inhibited CETP activity (91%)"
+     },
+     {
+      "drug": "EVACETRAPIB",
+      "link": "pd_response",
+      "result": "shown",
+      "species": "human",
+      "in_disease": false,
+      "quote": "increased HDL-C (87%) and apo AI (42%), and decreased LDL-C (29%) and apo B (26%) relative to placebo."
+     }
+    ]
+   }
+  ]
+ }
+}

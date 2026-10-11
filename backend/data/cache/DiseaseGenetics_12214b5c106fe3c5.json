@@ -1,0 +1,1985 @@
+{
+ "query": "DiseaseGenetics",
+ "variables": {
+  "efoId": "MONDO_0004976",
+  "size": 100
+ },
+ "fetched_at": "2026-10-09T11:59:46+00:00",
+ "url": "https://api.platform.opentargets.org/api/v4/graphql",
+ "response": {
+  "data": {
+   "disease": {
+    "id": "MONDO_0004976",
+    "associatedTargets": {
+     "count": 6329,
+     "rows": [
+      {
+       "target": {
+        "id": "ENSG00000142168",
+        "approvedSymbol": "SOD1"
+       },
+       "score": 0.8879807865340971,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.9235570623279422
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8382102587722415
+        },
+        {
+         "id": "literature",
+         "score": 0.9975323252211481
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9465253855950023
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5797559215497893
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000120948",
+        "approvedSymbol": "TARDBP"
+       },
+       "score": 0.8498381158327114,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9981371331930855
+        },
+        {
+         "id": "animal_model",
+         "score": 0.6764865535088076
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9518157621173875
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7692185602432756
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000089280",
+        "approvedSymbol": "FUS"
+       },
+       "score": 0.8434273474981544,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9952163225209998
+        },
+        {
+         "id": "animal_model",
+         "score": 0.3312766898885126
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9459172619564963
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7475067460428607
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000188021",
+        "approvedSymbol": "UBQLN2"
+       },
+       "score": 0.8344433804205211,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9618180692851711
+        },
+        {
+         "id": "rna_expression",
+         "score": 0.02882240242908652
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9131067708577368
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8813959152801429
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000183735",
+        "approvedSymbol": "TBK1"
+       },
+       "score": 0.8310190521428995,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9732306670007986
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9288038965857482
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7971337499295236
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000161011",
+        "approvedSymbol": "SQSTM1"
+       },
+       "score": 0.8184341952865708,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9690691256723438
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.934200243005588
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.5831172956682895
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000214274",
+        "approvedSymbol": "ANG"
+       },
+       "score": 0.8148077006888096,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9495239867360677
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9170393173296498
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7200878263954794
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000127824",
+        "approvedSymbol": "TUBA4A"
+       },
+       "score": 0.8088795270014475,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7675410389365958
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.885996282461772
+        },
+        {
+         "id": "clinical",
+         "score": 0.12158615952232422
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8416635516312135
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000204843",
+        "approvedSymbol": "DCTN1"
+       },
+       "score": 0.8049671516079572,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.6671063088595186
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8856994543722383
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8354601761453806
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000165280",
+        "approvedSymbol": "VCP"
+       },
+       "score": 0.8009158573077135,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9455795046770653
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5760484808195548
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8773041775830881
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8606401172017947
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000124164",
+        "approvedSymbol": "VAPB"
+       },
+       "score": 0.7964487162810643,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9167919666092514
+        },
+        {
+         "id": "animal_model",
+         "score": 0.667418386487769
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7874384318485671
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.870683030448081
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000112367",
+        "approvedSymbol": "FIG4"
+       },
+       "score": 0.7936125552557196,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.6458969601430438
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5676642666273009
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8295536641097945
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8044740592558155
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000107290",
+        "approvedSymbol": "SETX"
+       },
+       "score": 0.793324044409646,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.4965867262413373
+        },
+        {
+         "id": "animal_model",
+         "score": 0.48560667764886273
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8857836127240513
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8401603622992603
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000123240",
+        "approvedSymbol": "OPTN"
+       },
+       "score": 0.78388625436517,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.952008363151758
+        },
+        {
+         "id": "animal_model",
+         "score": 0.27162348037287226
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8732659252136001
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7195915563566126
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000003393",
+        "approvedSymbol": "ALS2"
+       },
+       "score": 0.7812801889971122,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.44867513011600896
+        },
+        {
+         "id": "animal_model",
+         "score": 0.6419668030980366
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8639620613987204
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8735719205201049
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000104133",
+        "approvedSymbol": "SPG11"
+       },
+       "score": 0.7800443060964826,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.29359474719037815
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5144029765788809
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8752316062549724
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.856840549716722
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000083937",
+        "approvedSymbol": "CHMP2B"
+       },
+       "score": 0.7785618446308361,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7403627457651842
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8559407685020171
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7971337499295236
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000122359",
+        "approvedSymbol": "ANXA11"
+       },
+       "score": 0.7750670197162972,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9547970335456247
+        },
+        {
+         "id": "animal_model",
+         "score": 0.612220082089709
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8742241486500403
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.6079307976116209
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000108518",
+        "approvedSymbol": "PFN1"
+       },
+       "score": 0.7686138524769013,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8932960392942134
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8344885720094317
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.8250489396157714
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147955",
+        "approvedSymbol": "SIGMAR1"
+       },
+       "score": 0.7524997685563407,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7495051872422916
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8243140814552861
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7295169571339454
+        },
+        {
+         "id": "clinical",
+         "score": 0.4483489632385705
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000015479",
+        "approvedSymbol": "MATR3"
+       },
+       "score": 0.7354948000974094,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9286412772501226
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5118587903769027
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.846683610021755
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.547137717850459
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000155980",
+        "approvedSymbol": "KIF5A"
+       },
+       "score": 0.7234200103187534,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9345034493585025
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8196121512776351
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000178568",
+        "approvedSymbol": "ERBB4"
+       },
+       "score": 0.7040009601188714,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9199501722054503
+        },
+        {
+         "id": "animal_model",
+         "score": 0.3416571082577311
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7264141852105406
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7200878263954794
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000090054",
+        "approvedSymbol": "SPTLC1"
+       },
+       "score": 0.6830438899005977,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.882345189638925
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8055859816982259
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7599134970145264
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000204842",
+        "approvedSymbol": "ATXN2"
+       },
+       "score": 0.6827976708718198,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9732824316963318
+        },
+        {
+         "id": "animal_model",
+         "score": 0.33980291932501555
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7759496416692453
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7295169571339454
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000135486",
+        "approvedSymbol": "HNRNPA1"
+       },
+       "score": 0.6792790951145438,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7375482170471112
+        },
+        {
+         "id": "animal_model",
+         "score": 0.3389214196684787
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7872858913457638
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000116001",
+        "approvedSymbol": "TIA1"
+       },
+       "score": 0.6685619586127877,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8059793309189563
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.780718239866124
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.4875604996845201
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147894",
+        "approvedSymbol": "C9orf72"
+       },
+       "score": 0.6626363010437227,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9940593377889206
+        },
+        {
+         "id": "animal_model",
+         "score": 0.25715472738971573
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7501968950864687
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000160226",
+        "approvedSymbol": "CFAP410"
+       },
+       "score": 0.63161865858569,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8797370465279302
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7550631530514675
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.006079307976116211
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000007314",
+        "approvedSymbol": "SCN4A"
+       },
+       "score": 0.6102825745020724,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.059399905016635474
+        },
+        {
+         "id": "animal_model",
+         "score": 0.8670706659558601
+        },
+        {
+         "id": "clinical",
+         "score": 0.9591949632200268
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000196876",
+        "approvedSymbol": "SCN8A"
+       },
+       "score": 0.6082724876582946,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.18456655898394347
+        },
+        {
+         "id": "animal_model",
+         "score": 0.7495333881200712
+        },
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000144285",
+        "approvedSymbol": "SCN1A"
+       },
+       "score": 0.6030084324773017,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.1896406349216251
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5740988221249718
+        },
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000137601",
+        "approvedSymbol": "NEK1"
+       },
+       "score": 0.5990668886303465,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9483097399781129
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.43871055228987804
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.7295169571339454
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000136546",
+        "approvedSymbol": "SCN7A"
+       },
+       "score": 0.5873365147435335,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.14280125566230975
+        },
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000183873",
+        "approvedSymbol": "SCN5A"
+       },
+       "score": 0.5865633049253831,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.1131426762221628
+        },
+        {
+         "id": "clinical",
+         "score": 0.9591949632200268
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000136531",
+        "approvedSymbol": "SCN2A"
+       },
+       "score": 0.5841225559322317,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.03706689168770857
+        },
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000169432",
+        "approvedSymbol": "SCN9A"
+       },
+       "score": 0.5840583927630156,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.03495602086266821
+        },
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000168356",
+        "approvedSymbol": "SCN11A"
+       },
+       "score": 0.5829958506807971,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000153253",
+        "approvedSymbol": "SCN3A"
+       },
+       "score": 0.5829958506807971,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000185313",
+        "approvedSymbol": "SCN10A"
+       },
+       "score": 0.5829958506807971,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.9589839056866571
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000156304",
+        "approvedSymbol": "SCAF4"
+       },
+       "score": 0.5807733717066039,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.41346893372560384
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9346546498475512
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000009724",
+        "approvedSymbol": "MASP2"
+       },
+       "score": 0.5693414978630938,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.021277577916406734
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.9354596532230769
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000100749",
+        "approvedSymbol": "VRK1"
+       },
+       "score": 0.5411419516390276,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2519149200485615
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.7325566111220034
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000161010",
+        "approvedSymbol": "MRNIP"
+       },
+       "score": 0.5378189089897609,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.8846712670302133
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000213930",
+        "approvedSymbol": "GALT"
+       },
+       "score": 0.5298695811244324,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.8715952263088694
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000131018",
+        "approvedSymbol": "SYNE1"
+       },
+       "score": 0.5266826707264189,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.16097410979335908
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5956968450349072
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6808824933250156
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000147650",
+        "approvedSymbol": "LRP12"
+       },
+       "score": 0.5248289562588921,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.32980245770430444
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6154961586485657
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.5623359877907494
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000100596",
+        "approvedSymbol": "SPTLC2"
+       },
+       "score": 0.5234513654335784,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7774374430124368
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5738866729453702
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000258818",
+        "approvedSymbol": "RNASE4"
+       },
+       "score": 0.5232842258921285,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2706506803255222
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.8472302829819025
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000100285",
+        "approvedSymbol": "NEFH"
+       },
+       "score": 0.4908189972563666,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9434270059140851
+        },
+        {
+         "id": "animal_model",
+         "score": 0.2657265516360396
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5463907740278656
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.4875604996845201
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000130477",
+        "approvedSymbol": "UNC13A"
+       },
+       "score": 0.48807806994959374,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8026162918364903
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6280123569511712
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000135406",
+        "approvedSymbol": "PRPH"
+       },
+       "score": 0.4795555264512029,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8370114146506861
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5954821429366531
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.24438818063987164
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000030582",
+        "approvedSymbol": "GRN"
+       },
+       "score": 0.4744902519301206,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.6430226680018242
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5038036217341201
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000110887",
+        "approvedSymbol": "DAO"
+       },
+       "score": 0.47276374130083626,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.4449059127424693
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5904656212749032
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.24438818063987164
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000160803",
+        "approvedSymbol": "UBQLN4"
+       },
+       "score": 0.46696570341514326,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.3694332127099336
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000145901",
+        "approvedSymbol": "TNIP1"
+       },
+       "score": 0.4576979650461638,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.49555831849867127
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5934927927976297
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000107566",
+        "approvedSymbol": "ERLIN1"
+       },
+       "score": 0.4567144661642927,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.1577581214370313
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5982039048498351
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000211445",
+        "approvedSymbol": "GPX3"
+       },
+       "score": 0.43548557948614747,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7982277804827091
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.676429321459756
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000171680",
+        "approvedSymbol": "PLEKHG5"
+       },
+       "score": 0.4248984301614909,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.604035527742703
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6687238773727833
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000162063",
+        "approvedSymbol": "CCNF"
+       },
+       "score": 0.42407686191543054,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9183094067893406
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5417338885383557
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000120162",
+        "approvedSymbol": "MOB3B"
+       },
+       "score": 0.42303103913600254,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.15739940933494098
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6879839668530358
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000119392",
+        "approvedSymbol": "GLE1"
+       },
+       "score": 0.41642736190516677,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.4717676825711754
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5393021653479091
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.006079307976116211
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000250479",
+        "approvedSymbol": "CHCHD10"
+       },
+       "score": 0.41507708566063983,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.9119023515408431
+        },
+        {
+         "id": "animal_model",
+         "score": 0.47524237597692265
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5252522091364406
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000168259",
+        "approvedSymbol": "DNAJC7"
+       },
+       "score": 0.4134825657302593,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.49696152710614283
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.24317231904464845
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.4875604996845201
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000184402",
+        "approvedSymbol": "SS18L1"
+       },
+       "score": 0.4122204814733943,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.7489463839940861
+        },
+        {
+         "id": "animal_model",
+         "score": 0.36957633013804475
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.19453785523571876
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.4875604996845201
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000106460",
+        "approvedSymbol": "TMEM106B"
+       },
+       "score": 0.4024545708734985,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.8832947629683015
+        },
+        {
+         "id": "animal_model",
+         "score": 0.4460253166343662
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000080644",
+        "approvedSymbol": "CHRNA3"
+       },
+       "score": 0.39902784057100904,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.03706689168770857
+        },
+        {
+         "id": "animal_model",
+         "score": 0.4927241570435221
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.6309105817613403
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000159363",
+        "approvedSymbol": "ATP13A2"
+       },
+       "score": 0.3880240288583658,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.47582351646763454
+        },
+        {
+         "id": "animal_model",
+         "score": 0.2946640576023527
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000157404",
+        "approvedSymbol": "KIT"
+       },
+       "score": 0.3847978573582581,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.6710246941403585
+        },
+        {
+         "id": "rna_expression",
+         "score": 0.03506345779384816
+        },
+        {
+         "id": "clinical",
+         "score": 0.5986328338014834
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000134853",
+        "approvedSymbol": "PDGFRA"
+       },
+       "score": 0.38096415329081174,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.0654932758918083
+        },
+        {
+         "id": "animal_model",
+         "score": 0.5313772888230999
+        },
+        {
+         "id": "clinical",
+         "score": 0.5986328338014834
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000140263",
+        "approvedSymbol": "SORD"
+       },
+       "score": 0.37589032804237227,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.20760498999104854
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000188917",
+        "approvedSymbol": "TRMT2B"
+       },
+       "score": 0.3744915709534615,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.1615880060051689
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000068078",
+        "approvedSymbol": "FGFR3"
+       },
+       "score": 0.3741700136663145,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.04922550763994099
+        },
+        {
+         "id": "animal_model",
+         "score": 0.3150905324021032
+        },
+        {
+         "id": "clinical",
+         "score": 0.5986328338014834
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000130598",
+        "approvedSymbol": "TNNI2"
+       },
+       "score": 0.3735203130075369,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.037995674850726316
+        },
+        {
+         "id": "clinical",
+         "score": 0.6125127685989258
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000172456",
+        "approvedSymbol": "FGGY"
+       },
+       "score": 0.37289890423979194,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.10919168984791308
+        },
+        {
+         "id": "genetic_literature",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000130595",
+        "approvedSymbol": "TNNT3"
+       },
+       "score": 0.37236537596164726,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.6125127685989258
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000101470",
+        "approvedSymbol": "TNNC2"
+       },
+       "score": 0.37236537596164726,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.6125127685989258
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000168314",
+        "approvedSymbol": "MOBP"
+       },
+       "score": 0.37224138618263897,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.40223976108197734
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.48269612277600665
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000159921",
+        "approvedSymbol": "GNE"
+       },
+       "score": 0.37180955048022873,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.0733536055184822
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.607930797611621
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000113721",
+        "approvedSymbol": "PDGFRB"
+       },
+       "score": 0.37087201507083223,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2284693905515237
+        },
+        {
+         "id": "clinical",
+         "score": 0.5986328338014834
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000172572",
+        "approvedSymbol": "PDE3A"
+       },
+       "score": 0.3597226372268495,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.1641413153551377
+        },
+        {
+         "id": "clinical",
+         "score": 0.5835093576147935
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000154429",
+        "approvedSymbol": "CCSAP"
+       },
+       "score": 0.3565181495354922,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.5864452844569575
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000138829",
+        "approvedSymbol": "FBN2"
+       },
+       "score": 0.35529574368344286,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.06079307976116211
+        },
+        {
+         "id": "animal_model",
+         "score": 0.718206963557289
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5471732141455141
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000099994",
+        "approvedSymbol": "SUSD2"
+       },
+       "score": 0.35328719831697397,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.08257726667557853
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5770017517048638
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000183454",
+        "approvedSymbol": "GRIN2A"
+       },
+       "score": 0.3499624350628309,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.16898787476943034
+        },
+        {
+         "id": "clinical",
+         "score": 0.5672122382066923
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000118194",
+        "approvedSymbol": "TNNT2"
+       },
+       "score": 0.3468540699339598,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.5019917229109957
+        },
+        {
+         "id": "clinical",
+         "score": 0.5454490211904267
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000189043",
+        "approvedSymbol": "COXFA4"
+       },
+       "score": 0.3467312069611259,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.06366386408321698
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5385352146592677
+        },
+        {
+         "id": "clinical",
+         "score": 0.12158615952232422
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000149295",
+        "approvedSymbol": "DRD2"
+       },
+       "score": 0.34066054365944476,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.5147615226945852
+        },
+        {
+         "id": "animal_model",
+         "score": 0.2507106609350326
+        },
+        {
+         "id": "clinical",
+         "score": 0.5290513027525524
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000129991",
+        "approvedSymbol": "TNNI3"
+       },
+       "score": 0.33583772725734223,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.139570778951668
+        },
+        {
+         "id": "clinical",
+         "score": 0.5454490211904267
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000152270",
+        "approvedSymbol": "PDE3B"
+       },
+       "score": 0.3334431577821976,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.06079307976116211
+        },
+        {
+         "id": "clinical",
+         "score": 0.5454490211904267
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000183715",
+        "approvedSymbol": "OPCML"
+       },
+       "score": 0.3333327966220387,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.012158615952232422
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.547699208652477
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000114854",
+        "approvedSymbol": "TNNC1"
+       },
+       "score": 0.33159525850877414,
+       "datatypeScores": [
+        {
+         "id": "clinical",
+         "score": 0.5454490211904267
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000183691",
+        "approvedSymbol": "NOG"
+       },
+       "score": 0.3239129042358185,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.0667035180712751
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.5294769558528396
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000163545",
+        "approvedSymbol": "NUAK2"
+       },
+       "score": 0.31789119667920157,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.5229068800727013
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000151466",
+        "approvedSymbol": "SCLT1"
+       },
+       "score": 0.3165568316619263,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.520711950941758
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000133627",
+        "approvedSymbol": "ACTR3B"
+       },
+       "score": 0.31347667204657126,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.5156453222605726
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000131016",
+        "approvedSymbol": "AKAP12"
+       },
+       "score": 0.31248339904777733,
+       "datatypeScores": [
+        {
+         "id": "genetic_association",
+         "score": 0.5140114635998563
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000118263",
+        "approvedSymbol": "KLF7"
+       },
+       "score": 0.30951658771393675,
+       "datatypeScores": [
+        {
+         "id": "animal_model",
+         "score": 0.46472425475090356
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.48589507149733024
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000135049",
+        "approvedSymbol": "AGTPBP1"
+       },
+       "score": 0.30004079533461986,
+       "datatypeScores": [
+        {
+         "id": "literature",
+         "score": 0.2171663904801513
+        },
+        {
+         "id": "animal_model",
+         "score": 0.6631134366891246
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.455562733674302
+        }
+       ]
+      },
+      {
+       "target": {
+        "id": "ENSG00000186439",
+        "approvedSymbol": "TRDN"
+       },
+       "score": 0.29390472179665356,
+       "datatypeScores": [
+        {
+         "id": "animal_model",
+         "score": 0.567275425521344
+        },
+        {
+         "id": "genetic_association",
+         "score": 0.4550871789822807
+        }
+       ]
+      }
+     ]
+    }
+   }
+  }
+ }
+}
